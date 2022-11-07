@@ -1,0 +1,6 @@
+<map id="mpu_get_accel_sens" name="mpu_get_accel_sens">
+<area shape="rect" id="node1" title="Get accel sensitivity scale factor." alt="" coords="489,31,635,56"/>
+<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#gafbd714aee6086836f70aaea847771669" title="Push accel biases to the DMP. These biases will be removed from the DMP 6&#45;axis quaternion." alt="" coords="300,5,441,31"/>
+<area shape="rect" id="node3" href="$group___d_r_i_v_e_r_s.html#gaff893f93277595387023c71d46b03c42" title=" " alt="" coords="156,31,252,56"/>
+<area shape="rect" id="node4" href="$group___d_r_i_v_e_r_s.html#gafac8fcbf24cfa1b69737e02238580f3a" title=" " alt="" coords="5,31,108,56"/>
+</map>

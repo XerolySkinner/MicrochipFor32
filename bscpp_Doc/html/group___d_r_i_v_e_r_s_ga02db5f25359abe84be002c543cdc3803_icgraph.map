@@ -1,0 +1,4 @@
+<map id="dmp_read_fifo" name="dmp_read_fifo">
+<area shape="rect" id="node1" title="Get one packet from the FIFO. If sensors does not contain a particular sensor, disregard the data ret..." alt="" coords="189,5,292,31"/>
+<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#gacb825f2fd99c3044d012a9b25608cc18" title=" " alt="" coords="5,5,141,31"/>
+</map>

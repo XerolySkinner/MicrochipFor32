@@ -1,0 +1,4 @@
+<map id="dmp_set_pedometer_step_count" name="dmp_set_pedometer_step_count">
+<area shape="rect" id="node1" title="Overwrite current step count. WARNING: This function writes to DMP memory and could potentially encou..." alt="" coords="5,5,177,45"/>
+<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#gafea59910bc3dd30ba3356b1c75213a5f" title="Write to the DMP memory. This function prevents I2C writes past the bank boundaries...." alt="" coords="225,13,343,38"/>
+</map>

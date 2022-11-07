@@ -1,0 +1,17 @@
+<map id="dmp_enable_feature" name="dmp_enable_feature">
+<area shape="rect" id="node1" title="Enable DMP features. The following #define&#39;s are used in the input mask: &#160;&#160;DMP_FEATURE_TAP &#160;&#160;DMP_FEAT..." alt="" coords="5,293,144,318"/>
+<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#gaac712ef33727433f666b3861894873be" title="Generate 6&#45;axis quaternions from the DMP. In this driver, the 3&#45;axis and 6&#45;axis DMP quaternion featur..." alt="" coords="203,94,366,120"/>
+<area shape="rect" id="node3" href="$group___d_r_i_v_e_r_s.html#gaf23e9f57c0059be6ec57862f0584de10" title="Reset FIFO read/write pointers." alt="" coords="437,45,544,70"/>
+<area shape="rect" id="node4" href="$group___d_r_i_v_e_r_s.html#gafea59910bc3dd30ba3356b1c75213a5f" title="Write to the DMP memory. This function prevents I2C writes past the bank boundaries...." alt="" coords="432,318,549,344"/>
+<area shape="rect" id="node5" href="$group___d_r_i_v_e_r_s.html#ga653ebcec6758f006dd89939e8f3c6ebb" title="Calibrate the gyro data in the DMP. After eight seconds of no motion, the DMP will compute gyro biase..." alt="" coords="211,344,359,369"/>
+<area shape="rect" id="node6" href="$group___d_r_i_v_e_r_s.html#ga4ee4339b79a58558d121ba8206056394" title="Generate 3&#45;axis quaternions from the DMP. In this driver, the 3&#45;axis and 6&#45;axis DMP quaternion featur..." alt="" coords="214,45,355,70"/>
+<area shape="rect" id="node7" href="$group___d_r_i_v_e_r_s.html#ga62efdae1330d5bcaf4c75b069ded0ed0" title="Set shake rejection threshold. If the DMP detects a gyro sample larger than thresh,..." alt="" coords="208,394,361,434"/>
+<area shape="rect" id="node8" href="$group___d_r_i_v_e_r_s.html#ga09d7a6d90e1bd2e907f1866d850c5608" title="Set shake rejection time. Sets the length of time that the gyro must be outside of the threshold set ..." alt="" coords="192,458,377,484"/>
+<area shape="rect" id="node9" href="$group___d_r_i_v_e_r_s.html#ga5d44d1a32535000e6902cdc5224d1b54" title="Set shake rejection timeout. Sets the length of time after a shake rejection that the gyro must stay ..." alt="" coords="208,508,361,548"/>
+<area shape="rect" id="node10" href="$group___d_r_i_v_e_r_s.html#ga66bc5c8fc26fcb498df53fc62aa87e4f" title="Set which axes will register a tap." alt="" coords="219,573,351,598"/>
+<area shape="rect" id="node11" href="$group___d_r_i_v_e_r_s.html#ga819f947b2cb107ada7b9a94c41be0dad" title="Set minimum number of taps needed for an interrupt." alt="" coords="217,144,353,169"/>
+<area shape="rect" id="node12" href="$group___d_r_i_v_e_r_s.html#ga15da67c0a6c94e0cdaceb8b165e13af9" title="Set tap threshold for a specific axis." alt="" coords="215,622,355,648"/>
+<area shape="rect" id="node14" href="$group___d_r_i_v_e_r_s.html#ga97466067f4a23368f4d7e2547fe359d9" title="Set length between valid taps." alt="" coords="220,193,349,218"/>
+<area shape="rect" id="node15" href="$group___d_r_i_v_e_r_s.html#gaeca250a90eb816eb2609229849481337" title="Set max time between taps to register as a multi&#45;tap." alt="" coords="203,242,367,268"/>
+<area shape="rect" id="node13" href="$group___d_r_i_v_e_r_s.html#gab6087a15ee23db23b6aec41590329a60" title="Get the accel full&#45;scale range." alt="" coords="425,622,556,648"/>
+</map>

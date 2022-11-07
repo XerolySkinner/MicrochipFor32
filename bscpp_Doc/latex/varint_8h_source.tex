@@ -1,0 +1,41 @@
+\hypertarget{varint_8h_source}{}\doxysection{varint.\+h}
+\label{varint_8h_source}\index{D:/gitt/MicrochipFor32/bscpp\_Device/varint.h@{D:/gitt/MicrochipFor32/bscpp\_Device/varint.h}}
+\mbox{\hyperlink{varint_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00001}00001 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00002}00002 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00003}00003 \textcolor{comment}{ \#  Copyright (c) 2022 Yuankang Liang(XerolySkinner)}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00004}00004 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00005}00005 \textcolor{comment}{ \#  本软件按原样提供,无任何明示或暗示}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00006}00006 \textcolor{comment}{ \#  在任何情况下,作者都不承担任何损害赔偿责任}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00007}00007 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00008}00008 \textcolor{comment}{ \#  使用的许可声明:}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00009}00009 \textcolor{comment}{ \#  1.  不得歪曲本软件的来源,你不能声称你编写了原始软件.}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00010}00010 \textcolor{comment}{ \#  2.  免费授予以任何目的,前提是版权声明出现在所有副本中.}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00011}00011 \textcolor{comment}{ \#      并且版权声明和许可声明同时出现.}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00012}00012 \textcolor{comment}{ \#  3.  你有使用,复制,修改,分发,和销售本软件的许可.}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00013}00013 \textcolor{comment}{ \#  4.  如果你在产品中使用,产品文档中的声明是赞赏的但不是必须的.}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00014}00014 \textcolor{comment}{ \#  5.  本通知不得从任何来源删除或更改.}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00015}00015 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00016}00016 \textcolor{comment}{ \#  Yuankang Liang(XerolySkinner)}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00017}00017 \textcolor{comment}{ \#      E-\/mail:zabbcccbbaz@163.com}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00018}00018 \textcolor{comment}{ \#      QQ:2715099320}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00019}00019 \textcolor{comment}{ \#      Mobile Phone:13005636215}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00020}00020 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00021}00021 \textcolor{comment}{ \#  All rights reserved.}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00022}00022 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00034}00034 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00035}00035 \textcolor{preprocessor}{\#include "{}stdint.h"{}}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00037}00037 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00038}00038 \textcolor{comment}{//  程序}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00039}00039 \textcolor{comment}{//  }}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00040}\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{00040}} \textcolor{keyword}{typedef} uint8\_t     \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}};       }
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00041}\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{00041}} \textcolor{keyword}{typedef} uint16\_t    \mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}; }
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00042}\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{00042}} \textcolor{keyword}{typedef} uint32\_t    \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}; }
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00043}\mbox{\hyperlink{varint_8h_ae3702327b5f47e83b431e22b33da7b58}{00043}} \textcolor{keyword}{typedef} int8\_t      \mbox{\hyperlink{varint_8h_ae3702327b5f47e83b431e22b33da7b58}{i8}};       }
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00044}\mbox{\hyperlink{varint_8h_ad309dbcaeea13aa602d686964156ea0b}{00044}} \textcolor{keyword}{typedef} int16\_t     \mbox{\hyperlink{varint_8h_ad309dbcaeea13aa602d686964156ea0b}{i16}}; }
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00045}\mbox{\hyperlink{varint_8h_a48d6cd8e4135fb2ff7e7f2dac84089ec}{00045}} \textcolor{keyword}{typedef} int32\_t     \mbox{\hyperlink{varint_8h_a48d6cd8e4135fb2ff7e7f2dac84089ec}{i32}}; }
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00047}00047 }
+
+\end{DoxyCode}

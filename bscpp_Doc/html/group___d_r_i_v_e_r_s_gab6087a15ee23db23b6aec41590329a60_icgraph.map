@@ -1,0 +1,9 @@
+<map id="mpu_get_accel_fsr" name="mpu_get_accel_fsr">
+<area shape="rect" id="node1" title="Get the accel full&#45;scale range." alt="" coords="555,55,685,80"/>
+<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#ga15da67c0a6c94e0cdaceb8b165e13af9" title="Set tap threshold for a specific axis." alt="" coords="355,5,495,31"/>
+<area shape="rect" id="node5" href="$group___d_r_i_v_e_r_s.html#ga7d0b3259346898ccd1ba6ef78bf7df97" title="Enters LP accel motion interrupt mode. The behavior of this feature is very different between the MPU..." alt="" coords="343,55,507,80"/>
+<area shape="rect" id="node6" href="$group___d_r_i_v_e_r_s.html#ga3773dc98eb1ba15da0091ae75abcf62f" title="Trigger gyro/accel/compass self&#45;test. On success/error, the self&#45;test returns a mask representing the..." alt="" coords="361,104,489,129"/>
+<area shape="rect" id="node3" href="$group___d_r_i_v_e_r_s.html#ga70c485bdfa30515e5b869b081192caa1" title="Enable DMP features. The following #define&#39;s are used in the input mask: &#160;&#160;DMP_FEATURE_TAP &#160;&#160;DMP_FEAT..." alt="" coords="156,19,295,44"/>
+<area shape="rect" id="node4" href="$group___d_r_i_v_e_r_s.html#gafac8fcbf24cfa1b69737e02238580f3a" title=" " alt="" coords="5,56,108,81"/>
+<area shape="rect" id="node7" href="$group___d_r_i_v_e_r_s.html#gaff893f93277595387023c71d46b03c42" title=" " alt="" coords="177,80,273,105"/>
+</map>

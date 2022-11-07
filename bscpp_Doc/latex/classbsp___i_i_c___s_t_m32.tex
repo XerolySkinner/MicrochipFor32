@@ -1,0 +1,216 @@
+\hypertarget{classbsp___i_i_c___s_t_m32}{}\doxysection{bsp\+\_\+\+IIC\+\_\+\+STM32类 参考}
+\label{classbsp___i_i_c___s_t_m32}\index{bsp\_IIC\_STM32@{bsp\_IIC\_STM32}}
+
+
+STM32版本的软件\+IIC 需要使用构造函数初始化  
+
+
+
+
+{\ttfamily \#include $<$bscpp\+\_\+\+IIC\+\_\+\+STM32.\+h$>$}
+
+
+
+类 bsp\+\_\+\+IIC\+\_\+\+STM32 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classbsp___i_i_c___s_t_m32__inherit__graph}
+\end{center}
+\end{figure}
+
+
+bsp\+\_\+\+IIC\+\_\+\+STM32 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=165pt]{classbsp___i_i_c___s_t_m32__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbsp___i_i_c___s_t_m32_a22566656cd2c5e8e1ab6b4c6aa32b63b}{bsp\+\_\+\+IIC\+\_\+\+STM32}} (GPIO\+\_\+\+Type\+Def $\ast$\mbox{\hyperlink{classbsp___i_i_c___s_t_m32_a6258aaa53e12f5502333f4440cdba352}{GPIOx\+\_\+\+SCK}}, uint16\+\_\+t \mbox{\hyperlink{classbsp___i_i_c___s_t_m32_a7a5b57552741573a65114014a146bd5e}{GPIO\+\_\+\+Pin\+\_\+\+SCK}}, GPIO\+\_\+\+Type\+Def $\ast$\mbox{\hyperlink{classbsp___i_i_c___s_t_m32_aae22b18b9aa61649c4abd31f79fa7a82}{GPIOx\+\_\+\+SDA}}, uint16\+\_\+t \mbox{\hyperlink{classbsp___i_i_c___s_t_m32_a73c8aa1aef1ed9e4ff8d46e5c7755272}{GPIO\+\_\+\+Pin\+\_\+\+SDA}})
+\begin{DoxyCompactList}\small\item\em 构造\+STM32的\+IIC软件发生器 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+GPIO\+\_\+\+Type\+Def $\ast$ \mbox{\hyperlink{classbsp___i_i_c___s_t_m32_a6258aaa53e12f5502333f4440cdba352}{GPIOx\+\_\+\+SCK}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classbsp___i_i_c___s_t_m32_a7a5b57552741573a65114014a146bd5e}{GPIO\+\_\+\+Pin\+\_\+\+SCK}}
+\item 
+GPIO\+\_\+\+Type\+Def $\ast$ \mbox{\hyperlink{classbsp___i_i_c___s_t_m32_aae22b18b9aa61649c4abd31f79fa7a82}{GPIOx\+\_\+\+SDA}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classbsp___i_i_c___s_t_m32_a73c8aa1aef1ed9e4ff8d46e5c7755272}{GPIO\+\_\+\+Pin\+\_\+\+SDA}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{classbsp___i_i_c___s_t_m32_a14ca3a4cbeb0122d88391d9f37e1fe27}{IIC\+\_\+\+SCK}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} var)
+\begin{DoxyCompactList}\small\item\em 控制\+SCK管脚口 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{classbsp___i_i_c___s_t_m32_a8e703fab0f20578492ff23cb185b1a8d}{IIC\+\_\+\+SDA}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} var)
+\begin{DoxyCompactList}\small\item\em 控制\+SDA管脚口 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classbsp___i_i_c___s_t_m32_ab76c882803b30793f39b8a3fe4fdef2c}{IIC\+\_\+\+Delay}} (void)
+\begin{DoxyCompactList}\small\item\em 时序中的延时 在此处短暂延时 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+STM32版本的软件\+IIC 需要使用构造函数初始化 
+
+在文件 \mbox{\hyperlink{bscpp___i_i_c___s_t_m32_8h_source}{bscpp\+\_\+\+IIC\+\_\+\+STM32.\+h}} 第 \mbox{\hyperlink{bscpp___i_i_c___s_t_m32_8h_source_l00055}{55}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classbsp___i_i_c___s_t_m32_a22566656cd2c5e8e1ab6b4c6aa32b63b}\label{classbsp___i_i_c___s_t_m32_a22566656cd2c5e8e1ab6b4c6aa32b63b}} 
+\index{bsp\_IIC\_STM32@{bsp\_IIC\_STM32}!bsp\_IIC\_STM32@{bsp\_IIC\_STM32}}
+\index{bsp\_IIC\_STM32@{bsp\_IIC\_STM32}!bsp\_IIC\_STM32@{bsp\_IIC\_STM32}}
+\doxysubsubsection{\texorpdfstring{bsp\_IIC\_STM32()}{bsp\_IIC\_STM32()}}
+{\footnotesize\ttfamily bsp\+\_\+\+IIC\+\_\+\+STM32\+::bsp\+\_\+\+IIC\+\_\+\+STM32 (\begin{DoxyParamCaption}\item[{GPIO\+\_\+\+Type\+Def $\ast$}]{GPIOx\+\_\+\+SCK,  }\item[{uint16\+\_\+t}]{GPIO\+\_\+\+Pin\+\_\+\+SCK,  }\item[{GPIO\+\_\+\+Type\+Def $\ast$}]{GPIOx\+\_\+\+SDA,  }\item[{uint16\+\_\+t}]{GPIO\+\_\+\+Pin\+\_\+\+SDA }\end{DoxyParamCaption})}
+
+
+
+构造\+STM32的\+IIC软件发生器 
+
+
+\begin{DoxyParams}{参数}
+{\em $\ast$\+GPIOx\+\_\+\+SCK} & SCK的端口 \\
+\hline
+{\em GPIO\+\_\+\+Pin\+\_\+\+SCK} & SCK的管口号 \\
+\hline
+{\em $\ast$\+GPIOx\+\_\+\+SDA} & SDA的端口 \\
+\hline
+{\em GPIO\+\_\+\+Pin\+\_\+\+SDA} & SDA的管口号 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bscpp___i_i_c___s_t_m32_8cpp_source}{bscpp\+\_\+\+IIC\+\_\+\+STM32.\+cpp}} 第 \mbox{\hyperlink{bscpp___i_i_c___s_t_m32_8cpp_source_l00051}{51}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classbsp___i_i_c___s_t_m32_ab76c882803b30793f39b8a3fe4fdef2c}\label{classbsp___i_i_c___s_t_m32_ab76c882803b30793f39b8a3fe4fdef2c}} 
+\index{bsp\_IIC\_STM32@{bsp\_IIC\_STM32}!IIC\_Delay@{IIC\_Delay}}
+\index{IIC\_Delay@{IIC\_Delay}!bsp\_IIC\_STM32@{bsp\_IIC\_STM32}}
+\doxysubsubsection{\texorpdfstring{IIC\_Delay()}{IIC\_Delay()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+IIC\+\_\+\+STM32\+::\+IIC\+\_\+\+Delay (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+时序中的延时 在此处短暂延时 
+
+
+
+实现了 \mbox{\hyperlink{classbsp___i_i_c_ad3d17035a8d19842ccabbf743a4405f4}{bsp\+\_\+\+IIC}}.
+
+
+
+被 \mbox{\hyperlink{classbscpp___s_t_m32___a_t24_c00_a1ee5f08945e4fa185735bf25418d7b55}{bscpp\+\_\+\+STM32\+\_\+\+AT24\+C00}} 重载.
+
+
+
+在文件 \mbox{\hyperlink{bscpp___i_i_c___s_t_m32_8cpp_source}{bscpp\+\_\+\+IIC\+\_\+\+STM32.\+cpp}} 第 \mbox{\hyperlink{bscpp___i_i_c___s_t_m32_8cpp_source_l00064}{64}} 行定义.
+
+\mbox{\Hypertarget{classbsp___i_i_c___s_t_m32_a14ca3a4cbeb0122d88391d9f37e1fe27}\label{classbsp___i_i_c___s_t_m32_a14ca3a4cbeb0122d88391d9f37e1fe27}} 
+\index{bsp\_IIC\_STM32@{bsp\_IIC\_STM32}!IIC\_SCK@{IIC\_SCK}}
+\index{IIC\_SCK@{IIC\_SCK}!bsp\_IIC\_STM32@{bsp\_IIC\_STM32}}
+\doxysubsubsection{\texorpdfstring{IIC\_SCK()}{IIC\_SCK()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} bsp\+\_\+\+IIC\+\_\+\+STM32\+::\+IIC\+\_\+\+SCK (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+控制\+SCK管脚口 
+
+
+\begin{DoxyParams}{参数}
+{\em var} & 此处有三个状态,IIC\+\_\+\+SET置位管脚,IIC\+\_\+\+RESET复位管脚 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+当var为\+IIC\+\_\+\+READ时返回管脚状态 
+\end{DoxyReturn}
+
+
+实现了 \mbox{\hyperlink{classbsp___i_i_c_a9c71db14d666983ab15621f119bdc171}{bsp\+\_\+\+IIC}}.
+
+
+
+在文件 \mbox{\hyperlink{bscpp___i_i_c___s_t_m32_8cpp_source}{bscpp\+\_\+\+IIC\+\_\+\+STM32.\+cpp}} 第 \mbox{\hyperlink{bscpp___i_i_c___s_t_m32_8cpp_source_l00073}{73}} 行定义.
+
+\mbox{\Hypertarget{classbsp___i_i_c___s_t_m32_a8e703fab0f20578492ff23cb185b1a8d}\label{classbsp___i_i_c___s_t_m32_a8e703fab0f20578492ff23cb185b1a8d}} 
+\index{bsp\_IIC\_STM32@{bsp\_IIC\_STM32}!IIC\_SDA@{IIC\_SDA}}
+\index{IIC\_SDA@{IIC\_SDA}!bsp\_IIC\_STM32@{bsp\_IIC\_STM32}}
+\doxysubsubsection{\texorpdfstring{IIC\_SDA()}{IIC\_SDA()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} bsp\+\_\+\+IIC\+\_\+\+STM32\+::\+IIC\+\_\+\+SDA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+控制\+SDA管脚口 
+
+
+\begin{DoxyParams}{参数}
+{\em var} & 此处有三个状态,IIC\+\_\+\+SET置位管脚,IIC\+\_\+\+RESET复位管脚 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+当var为\+IIC\+\_\+\+READ时返回管脚状态 
+\end{DoxyReturn}
+
+
+实现了 \mbox{\hyperlink{classbsp___i_i_c_adf1ba1196ef163ab1958747744dd8a14}{bsp\+\_\+\+IIC}}.
+
+
+
+在文件 \mbox{\hyperlink{bscpp___i_i_c___s_t_m32_8cpp_source}{bscpp\+\_\+\+IIC\+\_\+\+STM32.\+cpp}} 第 \mbox{\hyperlink{bscpp___i_i_c___s_t_m32_8cpp_source_l00089}{89}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{classbsp___i_i_c___s_t_m32_a7a5b57552741573a65114014a146bd5e}\label{classbsp___i_i_c___s_t_m32_a7a5b57552741573a65114014a146bd5e}} 
+\index{bsp\_IIC\_STM32@{bsp\_IIC\_STM32}!GPIO\_Pin\_SCK@{GPIO\_Pin\_SCK}}
+\index{GPIO\_Pin\_SCK@{GPIO\_Pin\_SCK}!bsp\_IIC\_STM32@{bsp\_IIC\_STM32}}
+\doxysubsubsection{\texorpdfstring{GPIO\_Pin\_SCK}{GPIO\_Pin\_SCK}}
+{\footnotesize\ttfamily uint16\+\_\+t bsp\+\_\+\+IIC\+\_\+\+STM32\+::\+GPIO\+\_\+\+Pin\+\_\+\+SCK}
+
+
+
+在文件 \mbox{\hyperlink{bscpp___i_i_c___s_t_m32_8h_source}{bscpp\+\_\+\+IIC\+\_\+\+STM32.\+h}} 第 \mbox{\hyperlink{bscpp___i_i_c___s_t_m32_8h_source_l00064}{64}} 行定义.
+
+\mbox{\Hypertarget{classbsp___i_i_c___s_t_m32_a73c8aa1aef1ed9e4ff8d46e5c7755272}\label{classbsp___i_i_c___s_t_m32_a73c8aa1aef1ed9e4ff8d46e5c7755272}} 
+\index{bsp\_IIC\_STM32@{bsp\_IIC\_STM32}!GPIO\_Pin\_SDA@{GPIO\_Pin\_SDA}}
+\index{GPIO\_Pin\_SDA@{GPIO\_Pin\_SDA}!bsp\_IIC\_STM32@{bsp\_IIC\_STM32}}
+\doxysubsubsection{\texorpdfstring{GPIO\_Pin\_SDA}{GPIO\_Pin\_SDA}}
+{\footnotesize\ttfamily uint16\+\_\+t bsp\+\_\+\+IIC\+\_\+\+STM32\+::\+GPIO\+\_\+\+Pin\+\_\+\+SDA}
+
+
+
+在文件 \mbox{\hyperlink{bscpp___i_i_c___s_t_m32_8h_source}{bscpp\+\_\+\+IIC\+\_\+\+STM32.\+h}} 第 \mbox{\hyperlink{bscpp___i_i_c___s_t_m32_8h_source_l00066}{66}} 行定义.
+
+\mbox{\Hypertarget{classbsp___i_i_c___s_t_m32_a6258aaa53e12f5502333f4440cdba352}\label{classbsp___i_i_c___s_t_m32_a6258aaa53e12f5502333f4440cdba352}} 
+\index{bsp\_IIC\_STM32@{bsp\_IIC\_STM32}!GPIOx\_SCK@{GPIOx\_SCK}}
+\index{GPIOx\_SCK@{GPIOx\_SCK}!bsp\_IIC\_STM32@{bsp\_IIC\_STM32}}
+\doxysubsubsection{\texorpdfstring{GPIOx\_SCK}{GPIOx\_SCK}}
+{\footnotesize\ttfamily GPIO\+\_\+\+Type\+Def$\ast$ bsp\+\_\+\+IIC\+\_\+\+STM32\+::\+GPIOx\+\_\+\+SCK}
+
+
+
+在文件 \mbox{\hyperlink{bscpp___i_i_c___s_t_m32_8h_source}{bscpp\+\_\+\+IIC\+\_\+\+STM32.\+h}} 第 \mbox{\hyperlink{bscpp___i_i_c___s_t_m32_8h_source_l00063}{63}} 行定义.
+
+\mbox{\Hypertarget{classbsp___i_i_c___s_t_m32_aae22b18b9aa61649c4abd31f79fa7a82}\label{classbsp___i_i_c___s_t_m32_aae22b18b9aa61649c4abd31f79fa7a82}} 
+\index{bsp\_IIC\_STM32@{bsp\_IIC\_STM32}!GPIOx\_SDA@{GPIOx\_SDA}}
+\index{GPIOx\_SDA@{GPIOx\_SDA}!bsp\_IIC\_STM32@{bsp\_IIC\_STM32}}
+\doxysubsubsection{\texorpdfstring{GPIOx\_SDA}{GPIOx\_SDA}}
+{\footnotesize\ttfamily GPIO\+\_\+\+Type\+Def$\ast$ bsp\+\_\+\+IIC\+\_\+\+STM32\+::\+GPIOx\+\_\+\+SDA}
+
+
+
+在文件 \mbox{\hyperlink{bscpp___i_i_c___s_t_m32_8h_source}{bscpp\+\_\+\+IIC\+\_\+\+STM32.\+h}} 第 \mbox{\hyperlink{bscpp___i_i_c___s_t_m32_8h_source_l00065}{65}} 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/bscpp/bscpp\+\_\+\+Device/\mbox{\hyperlink{bscpp___i_i_c___s_t_m32_8h}{bscpp\+\_\+\+IIC\+\_\+\+STM32.\+h}}\item 
+C\+:/\+Users/\+Xeroly\+Skinner/\+Desktop/bscpp/bscpp\+\_\+\+Device/\mbox{\hyperlink{bscpp___i_i_c___s_t_m32_8cpp}{bscpp\+\_\+\+IIC\+\_\+\+STM32.\+cpp}}\end{DoxyCompactItemize}

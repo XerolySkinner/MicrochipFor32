@@ -1,0 +1,4 @@
+<map id="dmp_set_tap_count" name="dmp_set_tap_count">
+<area shape="rect" id="node1" title="Set minimum number of taps needed for an interrupt." alt="" coords="5,5,141,31"/>
+<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#gafea59910bc3dd30ba3356b1c75213a5f" title="Write to the DMP memory. This function prevents I2C writes past the bank boundaries...." alt="" coords="189,5,307,31"/>
+</map>

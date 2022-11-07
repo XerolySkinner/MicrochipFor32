@@ -1,0 +1,5 @@
+<map id="mpu_configure_fifo" name="mpu_configure_fifo">
+<area shape="rect" id="node1" title="Select which sensors are pushed to FIFO. sensors can contain a combination of the following flags: &#160;&#160;..." alt="" coords="5,31,135,56"/>
+<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#gaf23e9f57c0059be6ec57862f0584de10" title="Reset FIFO read/write pointers." alt="" coords="183,5,289,31"/>
+<area shape="rect" id="node3" href="$group___d_r_i_v_e_r_s.html#gafd5ebff6b0179e1dce0b68c2272cae07" title="Enable/disable data ready interrupt. If the DMP is on, the DMP interrupt is enabled...." alt="" coords="183,55,289,80"/>
+</map>

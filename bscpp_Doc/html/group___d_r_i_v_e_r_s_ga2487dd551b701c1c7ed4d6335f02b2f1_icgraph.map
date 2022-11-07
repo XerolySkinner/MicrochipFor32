@@ -1,0 +1,7 @@
+<map id="mpu_get_sample_rate" name="mpu_get_sample_rate">
+<area shape="rect" id="node1" title="Get sampling rate." alt="" coords="512,31,663,56"/>
+<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#ga7d0b3259346898ccd1ba6ef78bf7df97" title="Enters LP accel motion interrupt mode. The behavior of this feature is very different between the MPU..." alt="" coords="300,5,464,31"/>
+<area shape="rect" id="node3" href="$group___d_r_i_v_e_r_s.html#ga3773dc98eb1ba15da0091ae75abcf62f" title="Trigger gyro/accel/compass self&#45;test. On success/error, the self&#45;test returns a mask representing the..." alt="" coords="318,55,446,80"/>
+<area shape="rect" id="node4" href="$group___d_r_i_v_e_r_s.html#gaff893f93277595387023c71d46b03c42" title=" " alt="" coords="156,55,252,80"/>
+<area shape="rect" id="node5" href="$group___d_r_i_v_e_r_s.html#gafac8fcbf24cfa1b69737e02238580f3a" title=" " alt="" coords="5,55,108,80"/>
+</map>

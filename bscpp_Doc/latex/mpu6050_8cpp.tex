@@ -1,0 +1,483 @@
+\hypertarget{mpu6050_8cpp}{}\doxysection{D\+:/gitt/\+Microchip\+For32/bscpp\+\_\+\+Device/bscpp\+\_\+\+MPU6050/mpu6050.cpp 文件参考}
+\label{mpu6050_8cpp}\index{D:/gitt/MicrochipFor32/bscpp\_Device/bscpp\_MPU6050/mpu6050.cpp@{D:/gitt/MicrochipFor32/bscpp\_Device/bscpp\_MPU6050/mpu6050.cpp}}
+{\ttfamily \#include \char`\"{}bscpp\+\_\+\+IIC\+\_\+\+STM32.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mpu6050.\+h\char`\"{}}\newline
+mpu6050.\+cpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mpu6050_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mpu6050_8cpp_ae7d7fd8356f1a04698bf36a2ff087f7b}{delay\+\_\+ms}}(var)~HAL\+\_\+\+Delay(var)
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{mpu6050_8cpp_ab1f8c6111d59b60a2edb4ee3e8aa3113}{MPU\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em 初始化\+MPU6050 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{mpu6050_8cpp_aa27cc30326ce4980b289a0e1c3f76b5e}{MPU\+\_\+\+Set\+\_\+\+Gyro\+\_\+\+Fsr}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} fsr)
+\begin{DoxyCompactList}\small\item\em 设置\+MPU6050陀螺仪传感器满量程范围 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{mpu6050_8cpp_a6c391137bc5880c3b5e15e84c5a3380f}{MPU\+\_\+\+Set\+\_\+\+Accel\+\_\+\+Fsr}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} fsr)
+\begin{DoxyCompactList}\small\item\em 设置\+MPU6050加速度传感器满量程范围 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{mpu6050_8cpp_a2fb9973c9f5ea5327649d0eef5e96217}{MPU\+\_\+\+Set\+\_\+\+LPF}} (\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} lpf)
+\begin{DoxyCompactList}\small\item\em 设置\+MPU6050的数字低通滤波器 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{mpu6050_8cpp_a04e58232ce838e94d54aa2b53287cb41}{MPU\+\_\+\+Set\+\_\+\+Rate}} (\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} rate)
+\begin{DoxyCompactList}\small\item\em 设置\+MPU6050的采样率(假定\+Fs=1KHz) \end{DoxyCompactList}\item 
+short \mbox{\hyperlink{mpu6050_8cpp_a41eaf87c26b1281d9d5fc6a06abcf2a8}{MPU\+\_\+\+Get\+\_\+\+Temperature}} (void)
+\begin{DoxyCompactList}\small\item\em 得到温度值 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{mpu6050_8cpp_a8f28105f9dcccc709b78d7d0ce497633}{MPU\+\_\+\+Get\+\_\+\+Gyroscope}} (short $\ast$gx, short $\ast$gy, short $\ast$gz)
+\begin{DoxyCompactList}\small\item\em 得到陀螺仪值(原始值) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{mpu6050_8cpp_a2a0a02f6d7c597828a0cc282c76e99e3}{MPU\+\_\+\+Get\+\_\+\+Accelerometer}} (short $\ast$ax, short $\ast$ay, short $\ast$az)
+\begin{DoxyCompactList}\small\item\em 得到加速度值(原始值) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{mpu6050_8cpp_a59b1c26b234be88e97435a1b3c061330}{MPU\+\_\+\+Write\+\_\+\+Len}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} addr, \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga5448c351fc95ff052b110eee80e5f75c}{reg}}, \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} len, \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$buf)
+\begin{DoxyCompactList}\small\item\em IIC连续写 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{mpu6050_8cpp_a63161fa966899e4e7c5791e40ebf2b0a}{MPU\+\_\+\+Read\+\_\+\+Len}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} addr, \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga5448c351fc95ff052b110eee80e5f75c}{reg}}, \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} len, \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$buf)
+\begin{DoxyCompactList}\small\item\em IIC连续读 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{mpu6050_8cpp_a0be9b422bb8613f8444db4af5234e1a1}{MPU\+\_\+\+Write\+\_\+\+Byte}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga5448c351fc95ff052b110eee80e5f75c}{reg}}, \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} data)
+\begin{DoxyCompactList}\small\item\em IIC写一个字节 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{mpu6050_8cpp_a17c11d19a2bb21d61610f08cb2cbe2f7}{MPU\+\_\+\+Read\+\_\+\+Byte}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga5448c351fc95ff052b110eee80e5f75c}{reg}})
+\begin{DoxyCompactList}\small\item\em IIC读一个字节 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbscpp___i_i_c___s_t_m32}{bscpp\+\_\+\+IIC\+\_\+\+STM32}} \mbox{\hyperlink{mpu6050_8cpp_a604895d6ae2b01114260172650252fce}{mpu6050\+IIC}} (IIC\+\_\+\+SCK\+\_\+\+GPIO\+\_\+\+Port, IIC\+\_\+\+SCK\+\_\+\+Pin, IIC\+\_\+\+SDA\+\_\+\+GPIO\+\_\+\+Port, IIC\+\_\+\+SDA\+\_\+\+Pin)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{mpu6050_8cpp_ae7d7fd8356f1a04698bf36a2ff087f7b}\label{mpu6050_8cpp_ae7d7fd8356f1a04698bf36a2ff087f7b}} 
+\index{mpu6050.cpp@{mpu6050.cpp}!delay\_ms@{delay\_ms}}
+\index{delay\_ms@{delay\_ms}!mpu6050.cpp@{mpu6050.cpp}}
+\doxysubsubsection{\texorpdfstring{delay\_ms}{delay\_ms}}
+{\footnotesize\ttfamily \#define delay\+\_\+ms(\begin{DoxyParamCaption}\item[{}]{var }\end{DoxyParamCaption})~HAL\+\_\+\+Delay(var)}
+
+
+
+在文件 \mbox{\hyperlink{mpu6050_8cpp_source}{mpu6050.\+cpp}} 第 \mbox{\hyperlink{mpu6050_8cpp_source_l00016}{16}} 行定义.
+
+
+
+\doxysubsection{函数说明}
+\mbox{\Hypertarget{mpu6050_8cpp_a2a0a02f6d7c597828a0cc282c76e99e3}\label{mpu6050_8cpp_a2a0a02f6d7c597828a0cc282c76e99e3}} 
+\index{mpu6050.cpp@{mpu6050.cpp}!MPU\_Get\_Accelerometer@{MPU\_Get\_Accelerometer}}
+\index{MPU\_Get\_Accelerometer@{MPU\_Get\_Accelerometer}!mpu6050.cpp@{mpu6050.cpp}}
+\doxysubsubsection{\texorpdfstring{MPU\_Get\_Accelerometer()}{MPU\_Get\_Accelerometer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} MPU\+\_\+\+Get\+\_\+\+Accelerometer (\begin{DoxyParamCaption}\item[{short $\ast$}]{ax,  }\item[{short $\ast$}]{ay,  }\item[{short $\ast$}]{az }\end{DoxyParamCaption})}
+
+
+
+得到加速度值(原始值) 
+
+
+\begin{DoxyParams}{参数}
+{\em ax} & 陀螺仪a轴的原始读数(带符号) \\
+\hline
+{\em ay} & 陀螺仪a轴的原始读数(带符号) \\
+\hline
+{\em ax} & 陀螺仪a轴的原始读数(带符号) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0,设置成功 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{mpu6050_8cpp_source}{mpu6050.\+cpp}} 第 \mbox{\hyperlink{mpu6050_8cpp_source_l00137}{137}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mpu6050_8cpp_a2a0a02f6d7c597828a0cc282c76e99e3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mpu6050_8cpp_a8f28105f9dcccc709b78d7d0ce497633}\label{mpu6050_8cpp_a8f28105f9dcccc709b78d7d0ce497633}} 
+\index{mpu6050.cpp@{mpu6050.cpp}!MPU\_Get\_Gyroscope@{MPU\_Get\_Gyroscope}}
+\index{MPU\_Get\_Gyroscope@{MPU\_Get\_Gyroscope}!mpu6050.cpp@{mpu6050.cpp}}
+\doxysubsubsection{\texorpdfstring{MPU\_Get\_Gyroscope()}{MPU\_Get\_Gyroscope()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} MPU\+\_\+\+Get\+\_\+\+Gyroscope (\begin{DoxyParamCaption}\item[{short $\ast$}]{gx,  }\item[{short $\ast$}]{gy,  }\item[{short $\ast$}]{gz }\end{DoxyParamCaption})}
+
+
+
+得到陀螺仪值(原始值) 
+
+
+\begin{DoxyParams}{参数}
+{\em gx} & 陀螺仪x轴的原始读数(带符号) \\
+\hline
+{\em gy} & 陀螺仪y轴的原始读数(带符号) \\
+\hline
+{\em gx} & 陀螺仪z轴的原始读数(带符号) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0,设置成功 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{mpu6050_8cpp_source}{mpu6050.\+cpp}} 第 \mbox{\hyperlink{mpu6050_8cpp_source_l00121}{121}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mpu6050_8cpp_a8f28105f9dcccc709b78d7d0ce497633_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mpu6050_8cpp_a41eaf87c26b1281d9d5fc6a06abcf2a8}\label{mpu6050_8cpp_a41eaf87c26b1281d9d5fc6a06abcf2a8}} 
+\index{mpu6050.cpp@{mpu6050.cpp}!MPU\_Get\_Temperature@{MPU\_Get\_Temperature}}
+\index{MPU\_Get\_Temperature@{MPU\_Get\_Temperature}!mpu6050.cpp@{mpu6050.cpp}}
+\doxysubsubsection{\texorpdfstring{MPU\_Get\_Temperature()}{MPU\_Get\_Temperature()}}
+{\footnotesize\ttfamily short MPU\+\_\+\+Get\+\_\+\+Temperature (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+得到温度值 
+
+\begin{DoxyReturn}{返回}
+温度值(扩大了100倍) 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{mpu6050_8cpp_source}{mpu6050.\+cpp}} 第 \mbox{\hyperlink{mpu6050_8cpp_source_l00105}{105}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mpu6050_8cpp_a41eaf87c26b1281d9d5fc6a06abcf2a8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mpu6050_8cpp_ab1f8c6111d59b60a2edb4ee3e8aa3113}\label{mpu6050_8cpp_ab1f8c6111d59b60a2edb4ee3e8aa3113}} 
+\index{mpu6050.cpp@{mpu6050.cpp}!MPU\_Init@{MPU\_Init}}
+\index{MPU\_Init@{MPU\_Init}!mpu6050.cpp@{mpu6050.cpp}}
+\doxysubsubsection{\texorpdfstring{MPU\_Init()}{MPU\_Init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} MPU\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+初始化\+MPU6050 
+
+\begin{DoxyReturn}{返回}
+0,成功 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{mpu6050_8cpp_source}{mpu6050.\+cpp}} 第 \mbox{\hyperlink{mpu6050_8cpp_source_l00025}{25}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mpu6050_8cpp_ab1f8c6111d59b60a2edb4ee3e8aa3113_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mpu6050_8cpp_a17c11d19a2bb21d61610f08cb2cbe2f7}\label{mpu6050_8cpp_a17c11d19a2bb21d61610f08cb2cbe2f7}} 
+\index{mpu6050.cpp@{mpu6050.cpp}!MPU\_Read\_Byte@{MPU\_Read\_Byte}}
+\index{MPU\_Read\_Byte@{MPU\_Read\_Byte}!mpu6050.cpp@{mpu6050.cpp}}
+\doxysubsubsection{\texorpdfstring{MPU\_Read\_Byte()}{MPU\_Read\_Byte()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} MPU\+\_\+\+Read\+\_\+\+Byte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{reg }\end{DoxyParamCaption})}
+
+
+
+IIC读一个字节 
+
+
+\begin{DoxyParams}{参数}
+{\em reg} & 寄存器地址 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0,设置成功 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{mpu6050_8cpp_source}{mpu6050.\+cpp}} 第 \mbox{\hyperlink{mpu6050_8cpp_source_l00187}{187}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mpu6050_8cpp_a17c11d19a2bb21d61610f08cb2cbe2f7_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{mpu6050_8cpp_a17c11d19a2bb21d61610f08cb2cbe2f7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mpu6050_8cpp_a63161fa966899e4e7c5791e40ebf2b0a}\label{mpu6050_8cpp_a63161fa966899e4e7c5791e40ebf2b0a}} 
+\index{mpu6050.cpp@{mpu6050.cpp}!MPU\_Read\_Len@{MPU\_Read\_Len}}
+\index{MPU\_Read\_Len@{MPU\_Read\_Len}!mpu6050.cpp@{mpu6050.cpp}}
+\doxysubsubsection{\texorpdfstring{MPU\_Read\_Len()}{MPU\_Read\_Len()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} MPU\+\_\+\+Read\+\_\+\+Len (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{addr,  }\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{reg,  }\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{len,  }\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$}]{buf }\end{DoxyParamCaption})}
+
+
+
+IIC连续读 
+
+
+\begin{DoxyParams}{参数}
+{\em addr} & 器件地址 \\
+\hline
+{\em reg} & 寄存器地址 \\
+\hline
+{\em len} & 读取长度 \\
+\hline
+{\em $\ast$buf} & 读取数据区 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0,设置成功 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{mpu6050_8cpp_source}{mpu6050.\+cpp}} 第 \mbox{\hyperlink{mpu6050_8cpp_source_l00168}{168}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mpu6050_8cpp_a63161fa966899e4e7c5791e40ebf2b0a_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{mpu6050_8cpp_a63161fa966899e4e7c5791e40ebf2b0a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mpu6050_8cpp_a6c391137bc5880c3b5e15e84c5a3380f}\label{mpu6050_8cpp_a6c391137bc5880c3b5e15e84c5a3380f}} 
+\index{mpu6050.cpp@{mpu6050.cpp}!MPU\_Set\_Accel\_Fsr@{MPU\_Set\_Accel\_Fsr}}
+\index{MPU\_Set\_Accel\_Fsr@{MPU\_Set\_Accel\_Fsr}!mpu6050.cpp@{mpu6050.cpp}}
+\doxysubsubsection{\texorpdfstring{MPU\_Set\_Accel\_Fsr()}{MPU\_Set\_Accel\_Fsr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} MPU\+\_\+\+Set\+\_\+\+Accel\+\_\+\+Fsr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{fsr }\end{DoxyParamCaption})}
+
+
+
+设置\+MPU6050加速度传感器满量程范围 
+
+
+\begin{DoxyParams}{参数}
+{\em fsr} & 0,±2g 1,±4g 2,±8g 3,±16g \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0,设置成功 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{mpu6050_8cpp_source}{mpu6050.\+cpp}} 第 \mbox{\hyperlink{mpu6050_8cpp_source_l00067}{67}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mpu6050_8cpp_a6c391137bc5880c3b5e15e84c5a3380f_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{mpu6050_8cpp_a6c391137bc5880c3b5e15e84c5a3380f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mpu6050_8cpp_aa27cc30326ce4980b289a0e1c3f76b5e}\label{mpu6050_8cpp_aa27cc30326ce4980b289a0e1c3f76b5e}} 
+\index{mpu6050.cpp@{mpu6050.cpp}!MPU\_Set\_Gyro\_Fsr@{MPU\_Set\_Gyro\_Fsr}}
+\index{MPU\_Set\_Gyro\_Fsr@{MPU\_Set\_Gyro\_Fsr}!mpu6050.cpp@{mpu6050.cpp}}
+\doxysubsubsection{\texorpdfstring{MPU\_Set\_Gyro\_Fsr()}{MPU\_Set\_Gyro\_Fsr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} MPU\+\_\+\+Set\+\_\+\+Gyro\+\_\+\+Fsr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{fsr }\end{DoxyParamCaption})}
+
+
+
+设置\+MPU6050陀螺仪传感器满量程范围 
+
+
+\begin{DoxyParams}{参数}
+{\em fsr} & 0,±250dps 1,±500dps 2,±1000dps 3,±2000dps \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0,设置成功 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{mpu6050_8cpp_source}{mpu6050.\+cpp}} 第 \mbox{\hyperlink{mpu6050_8cpp_source_l00055}{55}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mpu6050_8cpp_aa27cc30326ce4980b289a0e1c3f76b5e_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{mpu6050_8cpp_aa27cc30326ce4980b289a0e1c3f76b5e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mpu6050_8cpp_a2fb9973c9f5ea5327649d0eef5e96217}\label{mpu6050_8cpp_a2fb9973c9f5ea5327649d0eef5e96217}} 
+\index{mpu6050.cpp@{mpu6050.cpp}!MPU\_Set\_LPF@{MPU\_Set\_LPF}}
+\index{MPU\_Set\_LPF@{MPU\_Set\_LPF}!mpu6050.cpp@{mpu6050.cpp}}
+\doxysubsubsection{\texorpdfstring{MPU\_Set\_LPF()}{MPU\_Set\_LPF()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} MPU\+\_\+\+Set\+\_\+\+LPF (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{lpf }\end{DoxyParamCaption})}
+
+
+
+设置\+MPU6050的数字低通滤波器 
+
+
+\begin{DoxyParams}{参数}
+{\em lpf} & 数字低通滤波频率(\+Hz) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0,设置成功 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{mpu6050_8cpp_source}{mpu6050.\+cpp}} 第 \mbox{\hyperlink{mpu6050_8cpp_source_l00076}{76}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mpu6050_8cpp_a2fb9973c9f5ea5327649d0eef5e96217_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mpu6050_8cpp_a2fb9973c9f5ea5327649d0eef5e96217_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mpu6050_8cpp_a04e58232ce838e94d54aa2b53287cb41}\label{mpu6050_8cpp_a04e58232ce838e94d54aa2b53287cb41}} 
+\index{mpu6050.cpp@{mpu6050.cpp}!MPU\_Set\_Rate@{MPU\_Set\_Rate}}
+\index{MPU\_Set\_Rate@{MPU\_Set\_Rate}!mpu6050.cpp@{mpu6050.cpp}}
+\doxysubsubsection{\texorpdfstring{MPU\_Set\_Rate()}{MPU\_Set\_Rate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} MPU\+\_\+\+Set\+\_\+\+Rate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{rate }\end{DoxyParamCaption})}
+
+
+
+设置\+MPU6050的采样率(假定\+Fs=1KHz) 
+
+
+\begin{DoxyParams}{参数}
+{\em rate} & 4$\sim$1000(Hz) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0,设置成功 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{mpu6050_8cpp_source}{mpu6050.\+cpp}} 第 \mbox{\hyperlink{mpu6050_8cpp_source_l00092}{92}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mpu6050_8cpp_a04e58232ce838e94d54aa2b53287cb41_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{mpu6050_8cpp_a04e58232ce838e94d54aa2b53287cb41_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mpu6050_8cpp_a0be9b422bb8613f8444db4af5234e1a1}\label{mpu6050_8cpp_a0be9b422bb8613f8444db4af5234e1a1}} 
+\index{mpu6050.cpp@{mpu6050.cpp}!MPU\_Write\_Byte@{MPU\_Write\_Byte}}
+\index{MPU\_Write\_Byte@{MPU\_Write\_Byte}!mpu6050.cpp@{mpu6050.cpp}}
+\doxysubsubsection{\texorpdfstring{MPU\_Write\_Byte()}{MPU\_Write\_Byte()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} MPU\+\_\+\+Write\+\_\+\+Byte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{reg,  }\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{data }\end{DoxyParamCaption})}
+
+
+
+IIC写一个字节 
+
+
+\begin{DoxyParams}{参数}
+{\em reg} & 寄存器地址 \\
+\hline
+{\em data} & 数据 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0,设置成功 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{mpu6050_8cpp_source}{mpu6050.\+cpp}} 第 \mbox{\hyperlink{mpu6050_8cpp_source_l00178}{178}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mpu6050_8cpp_a0be9b422bb8613f8444db4af5234e1a1_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mpu6050_8cpp_a0be9b422bb8613f8444db4af5234e1a1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mpu6050_8cpp_a59b1c26b234be88e97435a1b3c061330}\label{mpu6050_8cpp_a59b1c26b234be88e97435a1b3c061330}} 
+\index{mpu6050.cpp@{mpu6050.cpp}!MPU\_Write\_Len@{MPU\_Write\_Len}}
+\index{MPU\_Write\_Len@{MPU\_Write\_Len}!mpu6050.cpp@{mpu6050.cpp}}
+\doxysubsubsection{\texorpdfstring{MPU\_Write\_Len()}{MPU\_Write\_Len()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} MPU\+\_\+\+Write\+\_\+\+Len (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{addr,  }\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{reg,  }\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{len,  }\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$}]{buf }\end{DoxyParamCaption})}
+
+
+
+IIC连续写 
+
+
+\begin{DoxyParams}{参数}
+{\em addr} & 器件地址 \\
+\hline
+{\em reg} & 寄存器地址 \\
+\hline
+{\em len} & 写入长度 \\
+\hline
+{\em $\ast$buf} & 数据区 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0,设置成功 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{mpu6050_8cpp_source}{mpu6050.\+cpp}} 第 \mbox{\hyperlink{mpu6050_8cpp_source_l00156}{156}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mpu6050_8cpp_a59b1c26b234be88e97435a1b3c061330_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{变量说明}
+\mbox{\Hypertarget{mpu6050_8cpp_a604895d6ae2b01114260172650252fce}\label{mpu6050_8cpp_a604895d6ae2b01114260172650252fce}} 
+\index{mpu6050.cpp@{mpu6050.cpp}!mpu6050IIC@{mpu6050IIC}}
+\index{mpu6050IIC@{mpu6050IIC}!mpu6050.cpp@{mpu6050.cpp}}
+\doxysubsubsection{\texorpdfstring{mpu6050IIC}{mpu6050IIC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbscpp___i_i_c___s_t_m32}{bscpp\+\_\+\+IIC\+\_\+\+STM32}} mpu6050\+IIC(IIC\+\_\+\+SCK\+\_\+\+GPIO\+\_\+\+Port, IIC\+\_\+\+SCK\+\_\+\+Pin, IIC\+\_\+\+SDA\+\_\+\+GPIO\+\_\+\+Port, IIC\+\_\+\+SDA\+\_\+\+Pin) (\begin{DoxyParamCaption}\item[{IIC\+\_\+\+SCK\+\_\+\+GPIO\+\_\+\+Port}]{,  }\item[{IIC\+\_\+\+SCK\+\_\+\+Pin}]{,  }\item[{IIC\+\_\+\+SDA\+\_\+\+GPIO\+\_\+\+Port}]{,  }\item[{IIC\+\_\+\+SDA\+\_\+\+Pin}]{ }\end{DoxyParamCaption})}
+

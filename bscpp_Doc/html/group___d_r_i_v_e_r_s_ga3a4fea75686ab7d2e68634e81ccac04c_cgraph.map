@@ -1,0 +1,8 @@
+<map id="mpu_lp_accel_mode" name="mpu_lp_accel_mode">
+<area shape="rect" id="node1" title="Enter low&#45;power accel&#45;only mode. In low&#45;power accel mode, the chip goes to sleep and only wakes up to..." alt="" coords="5,79,147,104"/>
+<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#gababbdda287e1f19323489f90a0889dd7" title="Select which sensors are pushed to FIFO. sensors can contain a combination of the following flags: &#160;&#160;..." alt="" coords="201,29,331,55"/>
+<area shape="rect" id="node5" href="$group___d_r_i_v_e_r_s.html#ga653cb855300bff9285ce4b8dca6a503b" title="Enable latched interrupts. Any MPU register will clear the interrupt." alt="" coords="195,79,337,104"/>
+<area shape="rect" id="node6" href="$group___d_r_i_v_e_r_s.html#ga5661a9dee25152166769910767a2a93d" title="Set digital low pass filter. The following LPF settings are supported: 188, 98, 42,..." alt="" coords="220,128,312,153"/>
+<area shape="rect" id="node3" href="$group___d_r_i_v_e_r_s.html#gaf23e9f57c0059be6ec57862f0584de10" title="Reset FIFO read/write pointers." alt="" coords="385,5,492,31"/>
+<area shape="rect" id="node4" href="$group___d_r_i_v_e_r_s.html#gafd5ebff6b0179e1dce0b68c2272cae07" title="Enable/disable data ready interrupt. If the DMP is on, the DMP interrupt is enabled...." alt="" coords="385,55,492,80"/>
+</map>

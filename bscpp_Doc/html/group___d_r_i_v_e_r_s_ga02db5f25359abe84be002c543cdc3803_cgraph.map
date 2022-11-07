@@ -1,0 +1,6 @@
+<map id="dmp_read_fifo" name="dmp_read_fifo">
+<area shape="rect" id="node1" title="Get one packet from the FIFO. If sensors does not contain a particular sensor, disregard the data ret..." alt="" coords="5,55,108,80"/>
+<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#gaee85b322f461f83536e49840651a7576" title="Decode the four&#45;byte gesture data and execute any callbacks." alt="" coords="173,5,288,31"/>
+<area shape="rect" id="node3" href="$group___d_r_i_v_e_r_s.html#ga13593044949b460e9f571eb57e9a0788" title="Get one unparsed packet from the FIFO. This function should be used if the packet is to be parsed els..." alt="" coords="156,55,305,80"/>
+<area shape="rect" id="node4" href="$group___d_r_i_v_e_r_s.html#gaf23e9f57c0059be6ec57862f0584de10" title="Reset FIFO read/write pointers." alt="" coords="353,80,460,105"/>
+</map>

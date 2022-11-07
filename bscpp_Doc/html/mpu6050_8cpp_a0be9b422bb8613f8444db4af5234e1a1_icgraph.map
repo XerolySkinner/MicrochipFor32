@@ -1,0 +1,8 @@
+<map id="MPU_Write_Byte" name="MPU_Write_Byte">
+<area shape="rect" id="node1" title="IIC写一个字节" alt="" coords="507,90,629,115"/>
+<area shape="rect" id="node2" href="$mpu6050_8cpp.html#ab1f8c6111d59b60a2edb4ee3e8aa3113" title="初始化MPU6050" alt="" coords="5,64,80,90"/>
+<area shape="rect" id="node3" href="$mpu6050_8cpp.html#a6c391137bc5880c3b5e15e84c5a3380f" title="设置MPU6050加速度传感器满量程范围" alt="" coords="128,39,272,64"/>
+<area shape="rect" id="node4" href="$mpu6050_8cpp.html#aa27cc30326ce4980b289a0e1c3f76b5e" title="设置MPU6050陀螺仪传感器满量程范围" alt="" coords="320,90,459,115"/>
+<area shape="rect" id="node5" href="$mpu6050_8cpp.html#a2fb9973c9f5ea5327649d0eef5e96217" title="设置MPU6050的数字低通滤波器" alt="" coords="335,139,444,164"/>
+<area shape="rect" id="node6" href="$mpu6050_8cpp.html#a04e58232ce838e94d54aa2b53287cb41" title="设置MPU6050的采样率(假定Fs=1KHz)" alt="" coords="144,140,256,166"/>
+</map>

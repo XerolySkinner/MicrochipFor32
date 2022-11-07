@@ -1,0 +1,25 @@
+<map id="mpu_run_self_test" name="mpu_run_self_test">
+<area shape="rect" id="node1" title="Trigger gyro/accel/compass self&#45;test. On success/error, the self&#45;test returns a mask representing the..." alt="" coords="5,353,133,379"/>
+<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#gaab48ddb3bd05cea3f0fc85a68db9934d" title=" " alt="" coords="202,5,311,31"/>
+<area shape="rect" id="node4" href="$group___d_r_i_v_e_r_s.html#ga8d087842b07e9710be2267adea4b497a" title=" " alt="" coords="205,55,308,80"/>
+<area shape="rect" id="node5" href="$group___d_r_i_v_e_r_s.html#ga267d6f443d5be8b2a7a06aa007116f7a" title=" " alt="" coords="205,104,308,129"/>
+<area shape="rect" id="node6" href="$group___d_r_i_v_e_r_s.html#gababbdda287e1f19323489f90a0889dd7" title="Select which sensors are pushed to FIFO. sensors can contain a combination of the following flags: &#160;&#160;..." alt="" coords="844,400,973,425"/>
+<area shape="rect" id="node9" href="$group___d_r_i_v_e_r_s.html#gab6087a15ee23db23b6aec41590329a60" title="Get the accel full&#45;scale range." alt="" coords="191,205,322,231"/>
+<area shape="rect" id="node10" href="$group___d_r_i_v_e_r_s.html#ga093f11eb10b2639a4b9fe344ea348c54" title="Get current FIFO configuration. sensors can contain a combination of the following flags: &#160;&#160;INV_X_GYR..." alt="" coords="189,255,325,280"/>
+<area shape="rect" id="node11" href="$group___d_r_i_v_e_r_s.html#gaf973c32c73ba912ff512aab948fc31ca" title="Get the gyro full&#45;scale range." alt="" coords="194,304,319,329"/>
+<area shape="rect" id="node12" href="$group___d_r_i_v_e_r_s.html#gaa95c7e216dcb2d888e9796001ca555f8" title="Get the current DLPF setting." alt="" coords="211,353,303,379"/>
+<area shape="rect" id="node13" href="$group___d_r_i_v_e_r_s.html#ga2487dd551b701c1c7ed4d6335f02b2f1" title="Get sampling rate." alt="" coords="181,403,332,428"/>
+<area shape="rect" id="node14" href="$group___d_r_i_v_e_r_s.html#ga2713a96af104cfb2ae8e0ed4c3718119" title="Set the accel full&#45;scale range." alt="" coords="191,452,322,477"/>
+<area shape="rect" id="node15" href="$group___d_r_i_v_e_r_s.html#ga68ed20e6c9663cd7c50469329af8715f" title="Enable/disable DMP support." alt="" coords="187,501,327,527"/>
+<area shape="rect" id="node17" href="$group___d_r_i_v_e_r_s.html#ga0144d666a67a82888b8580002afe8b55" title="Set sampling rate. Sampling rate must be between 4Hz and 1kHz." alt="" coords="380,551,531,576"/>
+<area shape="rect" id="node20" href="$group___d_r_i_v_e_r_s.html#ga5661a9dee25152166769910767a2a93d" title="Set digital low pass filter. The following LPF settings are supported: 188, 98, 42,..." alt="" coords="863,601,955,627"/>
+<area shape="rect" id="node22" href="$group___d_r_i_v_e_r_s.html#gad09e6031c8677adc0b8a39b6deea8e27" title="Set the gyro full&#45;scale range." alt="" coords="194,652,319,677"/>
+<area shape="rect" id="node23" href="$group___d_r_i_v_e_r_s.html#ga6e77e7cc1cf6be5e8fdf617c5b4586d1" title="Turn specific sensors on/off. sensors can contain a combination of the following flags: &#160;&#160;INV_X_GYRO,..." alt="" coords="194,603,319,628"/>
+<area shape="rect" id="node3" href="$group___d_r_i_v_e_r_s.html#gab7ebbe13328466605a20f6ce1a106de8" title=" " alt="" coords="385,5,526,31"/>
+<area shape="rect" id="node7" href="$group___d_r_i_v_e_r_s.html#gaf23e9f57c0059be6ec57862f0584de10" title="Reset FIFO read/write pointers." alt="" coords="1028,376,1135,401"/>
+<area shape="rect" id="node8" href="$group___d_r_i_v_e_r_s.html#gafd5ebff6b0179e1dce0b68c2272cae07" title="Enable/disable data ready interrupt. If the DMP is on, the DMP interrupt is enabled...." alt="" coords="1028,425,1135,451"/>
+<area shape="rect" id="node16" href="$group___d_r_i_v_e_r_s.html#ga36f70f38371b48d81094d3b061233e15" title="Set device to bypass mode." alt="" coords="395,600,516,625"/>
+<area shape="rect" id="node18" href="$group___d_r_i_v_e_r_s.html#ga3a4fea75686ab7d2e68634e81ccac04c" title="Enter low&#45;power accel&#45;only mode. In low&#45;power accel mode, the chip goes to sleep and only wakes up to..." alt="" coords="613,501,755,527"/>
+<area shape="rect" id="node21" href="$group___d_r_i_v_e_r_s.html#ga78da3828de0ef9d080c4d03e7bc45e7b" title="Set compass sampling rate. The compass on the auxiliary I2C bus is read by the MPU hardware at a maxi..." alt="" coords="579,551,789,576"/>
+<area shape="rect" id="node19" href="$group___d_r_i_v_e_r_s.html#ga653cb855300bff9285ce4b8dca6a503b" title="Enable latched interrupts. Any MPU register will clear the interrupt." alt="" coords="837,527,980,552"/>
+</map>

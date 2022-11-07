@@ -1,0 +1,4 @@
+<map id="dmp_set_gyro_bias" name="dmp_set_gyro_bias">
+<area shape="rect" id="node1" title="Push gyro biases to the DMP. Because the gyro integration is handled in the DMP, any gyro biases calc..." alt="" coords="5,5,140,31"/>
+<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#gafea59910bc3dd30ba3356b1c75213a5f" title="Write to the DMP memory. This function prevents I2C writes past the bank boundaries...." alt="" coords="188,5,305,31"/>
+</map>

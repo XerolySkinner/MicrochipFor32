@@ -1,0 +1,805 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>XerolySkinnerBscpp: bscpp_STM32_OLED类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">XerolySkinnerBscpp<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">C++版本的驱动库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classbscpp___s_t_m32___o_l_e_d-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">bscpp_STM32_OLED类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>一个OLED设备,基于STM32使用IIC总线  
+ <a href="classbscpp___s_t_m32___o_l_e_d.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="bscpp___s_t_m32___o_l_e_d_8h_source.html">bscpp_STM32_OLED.h</a>&gt;</code></p>
+<div class="dynheader">
+类 bscpp_STM32_OLED 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbscpp___s_t_m32___o_l_e_d__inherit__graph.png" border="0" usemap="#abscpp___s_t_m32___o_l_e_d_inherit__map" alt="Inheritance graph"/></div>
+<map name="abscpp___s_t_m32___o_l_e_d_inherit__map" id="abscpp___s_t_m32___o_l_e_d_inherit__map">
+<area shape="rect" title="一个OLED设备,基于STM32使用IIC总线" alt="" coords="5,152,152,177"/>
+<area shape="rect" href="classbscpp___i_i_c___s_t_m32.html" title="STM32版本的软件IIC 需要使用构造函数初始化" alt="" coords="15,79,142,104"/>
+<area shape="rect" href="classbscpp___i_i_c.html" title="IIC的基础实现方法 留下三个保护性接口需要实现,分别是控制时钟,控制数据,延时函数" alt="" coords="39,5,118,31"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+bscpp_STM32_OLED 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbscpp___s_t_m32___o_l_e_d__coll__graph.png" border="0" usemap="#abscpp___s_t_m32___o_l_e_d_coll__map" alt="Collaboration graph"/></div>
+<map name="abscpp___s_t_m32___o_l_e_d_coll__map" id="abscpp___s_t_m32___o_l_e_d_coll__map">
+<area shape="rect" title="一个OLED设备,基于STM32使用IIC总线" alt="" coords="5,152,152,177"/>
+<area shape="rect" href="classbscpp___i_i_c___s_t_m32.html" title="STM32版本的软件IIC 需要使用构造函数初始化" alt="" coords="15,79,142,104"/>
+<area shape="rect" href="classbscpp___i_i_c.html" title="IIC的基础实现方法 留下三个保护性接口需要实现,分别是控制时钟,控制数据,延时函数" alt="" coords="39,5,118,31"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a13defd595ec4cae0aeddeadff51c218f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___s_t_m32___o_l_e_d.html#a13defd595ec4cae0aeddeadff51c218f">bscpp_STM32_OLED</a> (<a class="el" href="classbscpp___i_i_c___s_t_m32.html">bscpp_IIC_STM32</a> &amp;IICS)</td></tr>
+<tr class="separator:a13defd595ec4cae0aeddeadff51c218f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eec9e09693faebfcc5da3c7519eefa0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___s_t_m32___o_l_e_d.html#a6eec9e09693faebfcc5da3c7519eefa0">bscpp_STM32_OLED</a> (GPIO_TypeDef *<a class="el" href="classbscpp___i_i_c___s_t_m32.html#aaa9bcc928d28f56f2e9063c0ba838378">GPIOx_SCK</a>, uint16_t <a class="el" href="classbscpp___i_i_c___s_t_m32.html#a72eec04524821ee2bb537351ca0be997">GPIO_Pin_SCK</a>, GPIO_TypeDef *<a class="el" href="classbscpp___i_i_c___s_t_m32.html#a98de2b9e7bd1a15ce951a6b1c58ebdb6">GPIOx_SDA</a>, uint16_t <a class="el" href="classbscpp___i_i_c___s_t_m32.html#a1b7ccf6ed3921d21211d417577b117df">GPIO_Pin_SDA</a>)</td></tr>
+<tr class="separator:a6eec9e09693faebfcc5da3c7519eefa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e7ac26b25be4fb23ae324895a0737c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___s_t_m32___o_l_e_d.html#a9e7ac26b25be4fb23ae324895a0737c5">Init</a> (void)</td></tr>
+<tr class="memdesc:a9e7ac26b25be4fb23ae324895a0737c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED初始化 初始化显示屏的设置  <a href="classbscpp___s_t_m32___o_l_e_d.html#a9e7ac26b25be4fb23ae324895a0737c5">更多...</a><br /></td></tr>
+<tr class="separator:a9e7ac26b25be4fb23ae324895a0737c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab220356456aef32067e2e0839809b05e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___s_t_m32___o_l_e_d.html#ab220356456aef32067e2e0839809b05e">Column_set</a> (<a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> column)</td></tr>
+<tr class="memdesc:ab220356456aef32067e2e0839809b05e"><td class="mdescLeft">&#160;</td><td class="mdescRight">光标定位行中的位置  <a href="classbscpp___s_t_m32___o_l_e_d.html#ab220356456aef32067e2e0839809b05e">更多...</a><br /></td></tr>
+<tr class="separator:ab220356456aef32067e2e0839809b05e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab081cd4537019c24675ff265ba975b9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___s_t_m32___o_l_e_d.html#ab081cd4537019c24675ff265ba975b9b">Page_set</a> (<a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> page)</td></tr>
+<tr class="memdesc:ab081cd4537019c24675ff265ba975b9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">光标定位于一页  <a href="classbscpp___s_t_m32___o_l_e_d.html#ab081cd4537019c24675ff265ba975b9b">更多...</a><br /></td></tr>
+<tr class="separator:ab081cd4537019c24675ff265ba975b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e707aad4ddac3a2de62a32d95b6d9af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___s_t_m32___o_l_e_d.html#a8e707aad4ddac3a2de62a32d95b6d9af">Clear</a> (<a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> dat)</td></tr>
+<tr class="memdesc:a8e707aad4ddac3a2de62a32d95b6d9af"><td class="mdescLeft">&#160;</td><td class="mdescRight">全页绘制  <a href="classbscpp___s_t_m32___o_l_e_d.html#a8e707aad4ddac3a2de62a32d95b6d9af">更多...</a><br /></td></tr>
+<tr class="separator:a8e707aad4ddac3a2de62a32d95b6d9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9812c1053c83781d35857a9d9a80eb77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___s_t_m32___o_l_e_d.html#a9812c1053c83781d35857a9d9a80eb77">Picture_display</a> (const <a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *ptr_pic)</td></tr>
+<tr class="memdesc:a9812c1053c83781d35857a9d9a80eb77"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED绘图  <a href="classbscpp___s_t_m32___o_l_e_d.html#a9812c1053c83781d35857a9d9a80eb77">更多...</a><br /></td></tr>
+<tr class="separator:a9812c1053c83781d35857a9d9a80eb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7055576aee77d633692cf5ae1edf2a76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___s_t_m32___o_l_e_d.html#a7055576aee77d633692cf5ae1edf2a76">Picture_ReverseDisplay</a> (const <a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *ptr_pic)</td></tr>
+<tr class="memdesc:a7055576aee77d633692cf5ae1edf2a76"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED反向绘图  <a href="classbscpp___s_t_m32___o_l_e_d.html#a7055576aee77d633692cf5ae1edf2a76">更多...</a><br /></td></tr>
+<tr class="separator:a7055576aee77d633692cf5ae1edf2a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86586e3d035dd8f05575d115c612f74c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___s_t_m32___o_l_e_d.html#a86586e3d035dd8f05575d115c612f74c">Draw_ASCII</a> (<a class="el" href="varint_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> H, <a class="el" href="varint_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> V, <a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> word)</td></tr>
+<tr class="memdesc:a86586e3d035dd8f05575d115c612f74c"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED绘制ASCII字符  <a href="classbscpp___s_t_m32___o_l_e_d.html#a86586e3d035dd8f05575d115c612f74c">更多...</a><br /></td></tr>
+<tr class="separator:a86586e3d035dd8f05575d115c612f74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a04fa71857475961a800961eb7c03b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___s_t_m32___o_l_e_d.html#a4a04fa71857475961a800961eb7c03b6">Send_dat</a> (<a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> dat)</td></tr>
+<tr class="memdesc:a4a04fa71857475961a800961eb7c03b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送一条数据给OLED  <a href="classbscpp___s_t_m32___o_l_e_d.html#a4a04fa71857475961a800961eb7c03b6">更多...</a><br /></td></tr>
+<tr class="separator:a4a04fa71857475961a800961eb7c03b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f161e52b2bce8043148b4ffbbf8388c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___s_t_m32___o_l_e_d.html#a0f161e52b2bce8043148b4ffbbf8388c">Send_cmd</a> (<a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> cmd)</td></tr>
+<tr class="memdesc:a0f161e52b2bce8043148b4ffbbf8388c"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送一条指令给OLED  <a href="classbscpp___s_t_m32___o_l_e_d.html#a0f161e52b2bce8043148b4ffbbf8388c">更多...</a><br /></td></tr>
+<tr class="separator:a0f161e52b2bce8043148b4ffbbf8388c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0021a0cbcfcd403f0bf26cfd3a7797f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___s_t_m32___o_l_e_d.html#aa0021a0cbcfcd403f0bf26cfd3a7797f">Send_len_dat</a> (<a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *dat, <a class="el" href="varint_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> len)</td></tr>
+<tr class="memdesc:aa0021a0cbcfcd403f0bf26cfd3a7797f"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送一串定长指令给OLED  <a href="classbscpp___s_t_m32___o_l_e_d.html#aa0021a0cbcfcd403f0bf26cfd3a7797f">更多...</a><br /></td></tr>
+<tr class="separator:aa0021a0cbcfcd403f0bf26cfd3a7797f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classbscpp___i_i_c___s_t_m32"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classbscpp___i_i_c___s_t_m32')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classbscpp___i_i_c___s_t_m32.html">bscpp_IIC_STM32</a></td></tr>
+<tr class="memitem:a842dd2f04bece850c49e9c2573256ea2 inherit pro_methods_classbscpp___i_i_c___s_t_m32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___i_i_c___s_t_m32.html#a842dd2f04bece850c49e9c2573256ea2">IIC_SCK</a> (<a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> var)</td></tr>
+<tr class="memdesc:a842dd2f04bece850c49e9c2573256ea2 inherit pro_methods_classbscpp___i_i_c___s_t_m32"><td class="mdescLeft">&#160;</td><td class="mdescRight">控制SCK管脚口  <a href="classbscpp___i_i_c___s_t_m32.html#a842dd2f04bece850c49e9c2573256ea2">更多...</a><br /></td></tr>
+<tr class="separator:a842dd2f04bece850c49e9c2573256ea2 inherit pro_methods_classbscpp___i_i_c___s_t_m32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b92885b85d7254ec833c5bd938223b1 inherit pro_methods_classbscpp___i_i_c___s_t_m32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___i_i_c___s_t_m32.html#a8b92885b85d7254ec833c5bd938223b1">IIC_SDA</a> (<a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> var)</td></tr>
+<tr class="memdesc:a8b92885b85d7254ec833c5bd938223b1 inherit pro_methods_classbscpp___i_i_c___s_t_m32"><td class="mdescLeft">&#160;</td><td class="mdescRight">控制SDA管脚口  <a href="classbscpp___i_i_c___s_t_m32.html#a8b92885b85d7254ec833c5bd938223b1">更多...</a><br /></td></tr>
+<tr class="separator:a8b92885b85d7254ec833c5bd938223b1 inherit pro_methods_classbscpp___i_i_c___s_t_m32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73f7f6eecdc6d099ba43940faa31c7bf inherit pro_methods_classbscpp___i_i_c___s_t_m32"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___i_i_c___s_t_m32.html#a73f7f6eecdc6d099ba43940faa31c7bf">IIC_Delay</a> (void)</td></tr>
+<tr class="memdesc:a73f7f6eecdc6d099ba43940faa31c7bf inherit pro_methods_classbscpp___i_i_c___s_t_m32"><td class="mdescLeft">&#160;</td><td class="mdescRight">时序中的延时 在此处短暂延时  <a href="classbscpp___i_i_c___s_t_m32.html#a73f7f6eecdc6d099ba43940faa31c7bf">更多...</a><br /></td></tr>
+<tr class="separator:a73f7f6eecdc6d099ba43940faa31c7bf inherit pro_methods_classbscpp___i_i_c___s_t_m32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb1e5927855eeb880c2abc4028a77b54 inherit pro_methods_classbscpp___i_i_c___s_t_m32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___i_i_c___s_t_m32.html#acb1e5927855eeb880c2abc4028a77b54">bscpp_IIC_STM32</a> (GPIO_TypeDef *<a class="el" href="classbscpp___i_i_c___s_t_m32.html#aaa9bcc928d28f56f2e9063c0ba838378">GPIOx_SCK</a>, uint16_t <a class="el" href="classbscpp___i_i_c___s_t_m32.html#a72eec04524821ee2bb537351ca0be997">GPIO_Pin_SCK</a>, GPIO_TypeDef *<a class="el" href="classbscpp___i_i_c___s_t_m32.html#a98de2b9e7bd1a15ce951a6b1c58ebdb6">GPIOx_SDA</a>, uint16_t <a class="el" href="classbscpp___i_i_c___s_t_m32.html#a1b7ccf6ed3921d21211d417577b117df">GPIO_Pin_SDA</a>)</td></tr>
+<tr class="memdesc:acb1e5927855eeb880c2abc4028a77b54 inherit pro_methods_classbscpp___i_i_c___s_t_m32"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造STM32的IIC软件发生器  <a href="classbscpp___i_i_c___s_t_m32.html#acb1e5927855eeb880c2abc4028a77b54">更多...</a><br /></td></tr>
+<tr class="separator:acb1e5927855eeb880c2abc4028a77b54 inherit pro_methods_classbscpp___i_i_c___s_t_m32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dfe20de93d00a928e82f087c1f26100"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___i_i_c.html#a1dfe20de93d00a928e82f087c1f26100">IIC_SCK</a> (<a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> var)=0</td></tr>
+<tr class="memdesc:a1dfe20de93d00a928e82f087c1f26100"><td class="mdescLeft">&#160;</td><td class="mdescRight">控制SCK管脚口  <a href="classbscpp___i_i_c.html#a1dfe20de93d00a928e82f087c1f26100">更多...</a><br /></td></tr>
+<tr class="separator:a1dfe20de93d00a928e82f087c1f26100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03b0f1f860d09779d5491c9035fd4c32"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___i_i_c.html#a03b0f1f860d09779d5491c9035fd4c32">IIC_SDA</a> (<a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> var)=0</td></tr>
+<tr class="memdesc:a03b0f1f860d09779d5491c9035fd4c32"><td class="mdescLeft">&#160;</td><td class="mdescRight">控制SDA管脚口  <a href="classbscpp___i_i_c.html#a03b0f1f860d09779d5491c9035fd4c32">更多...</a><br /></td></tr>
+<tr class="separator:a03b0f1f860d09779d5491c9035fd4c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ecb52cad582a9fbf6969fb1869437da"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___i_i_c.html#a9ecb52cad582a9fbf6969fb1869437da">IIC_Delay</a> (void)=0</td></tr>
+<tr class="memdesc:a9ecb52cad582a9fbf6969fb1869437da"><td class="mdescLeft">&#160;</td><td class="mdescRight">时序中的延时 在此处短暂延时  <a href="classbscpp___i_i_c.html#a9ecb52cad582a9fbf6969fb1869437da">更多...</a><br /></td></tr>
+<tr class="separator:a9ecb52cad582a9fbf6969fb1869437da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf6c71a5be44ec8367873501413c4a46 inherit pro_methods_classbscpp___i_i_c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___i_i_c.html#acf6c71a5be44ec8367873501413c4a46">IIC_WriteOneByte</a> (<a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> id, <a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> addr, <a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> dat)</td></tr>
+<tr class="memdesc:acf6c71a5be44ec8367873501413c4a46 inherit pro_methods_classbscpp___i_i_c"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用总线发送一个字节数据  <a href="classbscpp___i_i_c.html#acf6c71a5be44ec8367873501413c4a46">更多...</a><br /></td></tr>
+<tr class="separator:acf6c71a5be44ec8367873501413c4a46 inherit pro_methods_classbscpp___i_i_c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa6332b7a0449f9c539bb783030c29e inherit pro_methods_classbscpp___i_i_c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___i_i_c.html#a9fa6332b7a0449f9c539bb783030c29e">IIC_ReadOneByte</a> (<a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> id, <a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> addr)</td></tr>
+<tr class="memdesc:a9fa6332b7a0449f9c539bb783030c29e inherit pro_methods_classbscpp___i_i_c"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用总线接收一个字节数据  <a href="classbscpp___i_i_c.html#a9fa6332b7a0449f9c539bb783030c29e">更多...</a><br /></td></tr>
+<tr class="separator:a9fa6332b7a0449f9c539bb783030c29e inherit pro_methods_classbscpp___i_i_c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90560b42df225b0af3b0a8c7eef1f6c1 inherit pro_methods_classbscpp___i_i_c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___i_i_c.html#a90560b42df225b0af3b0a8c7eef1f6c1">IIC_Write</a> (<a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> id, <a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> addr, <a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *dat, <a class="el" href="varint_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> len)</td></tr>
+<tr class="memdesc:a90560b42df225b0af3b0a8c7eef1f6c1 inherit pro_methods_classbscpp___i_i_c"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用总线发送定长数据  <a href="classbscpp___i_i_c.html#a90560b42df225b0af3b0a8c7eef1f6c1">更多...</a><br /></td></tr>
+<tr class="separator:a90560b42df225b0af3b0a8c7eef1f6c1 inherit pro_methods_classbscpp___i_i_c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa012a136b05989578a3f1240baadda3d inherit pro_methods_classbscpp___i_i_c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___i_i_c.html#aa012a136b05989578a3f1240baadda3d">IIC_Read</a> (<a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> id, <a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> addr, <a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *dat, <a class="el" href="varint_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> len)</td></tr>
+<tr class="memdesc:aa012a136b05989578a3f1240baadda3d inherit pro_methods_classbscpp___i_i_c"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用总线接收定长数据  <a href="classbscpp___i_i_c.html#aa012a136b05989578a3f1240baadda3d">更多...</a><br /></td></tr>
+<tr class="separator:aa012a136b05989578a3f1240baadda3d inherit pro_methods_classbscpp___i_i_c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd0d1de6960b3c063d76bad5ca6706ad inherit pro_methods_classbscpp___i_i_c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___i_i_c.html#afd0d1de6960b3c063d76bad5ca6706ad">IIC_Start</a> (void)</td></tr>
+<tr class="memdesc:afd0d1de6960b3c063d76bad5ca6706ad inherit pro_methods_classbscpp___i_i_c"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送IIC开始信号  <a href="classbscpp___i_i_c.html#afd0d1de6960b3c063d76bad5ca6706ad">更多...</a><br /></td></tr>
+<tr class="separator:afd0d1de6960b3c063d76bad5ca6706ad inherit pro_methods_classbscpp___i_i_c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b34db5312bee0c9decafc3e12231e65 inherit pro_methods_classbscpp___i_i_c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___i_i_c.html#a9b34db5312bee0c9decafc3e12231e65">IIC_Stop</a> (void)</td></tr>
+<tr class="memdesc:a9b34db5312bee0c9decafc3e12231e65 inherit pro_methods_classbscpp___i_i_c"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送IIC停止信号  <a href="classbscpp___i_i_c.html#a9b34db5312bee0c9decafc3e12231e65">更多...</a><br /></td></tr>
+<tr class="separator:a9b34db5312bee0c9decafc3e12231e65 inherit pro_methods_classbscpp___i_i_c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b3c4c55982c4e07426003dac660ee30 inherit pro_methods_classbscpp___i_i_c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___i_i_c.html#a8b3c4c55982c4e07426003dac660ee30">IIC_SendAck</a> (<a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> ackbit)</td></tr>
+<tr class="memdesc:a8b3c4c55982c4e07426003dac660ee30 inherit pro_methods_classbscpp___i_i_c"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送IIC应答信号  <a href="classbscpp___i_i_c.html#a8b3c4c55982c4e07426003dac660ee30">更多...</a><br /></td></tr>
+<tr class="separator:a8b3c4c55982c4e07426003dac660ee30 inherit pro_methods_classbscpp___i_i_c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1dd077b2e7f83735b2b57edd1aae7a0 inherit pro_methods_classbscpp___i_i_c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___i_i_c.html#aa1dd077b2e7f83735b2b57edd1aae7a0">IIC_WaitAck</a> (void)</td></tr>
+<tr class="memdesc:aa1dd077b2e7f83735b2b57edd1aae7a0 inherit pro_methods_classbscpp___i_i_c"><td class="mdescLeft">&#160;</td><td class="mdescRight">等待应答信号  <a href="classbscpp___i_i_c.html#aa1dd077b2e7f83735b2b57edd1aae7a0">更多...</a><br /></td></tr>
+<tr class="separator:aa1dd077b2e7f83735b2b57edd1aae7a0 inherit pro_methods_classbscpp___i_i_c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7a376c17d9188557c5016213180d628 inherit pro_methods_classbscpp___i_i_c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___i_i_c.html#ac7a376c17d9188557c5016213180d628">IIC_SendByte</a> (<a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> byt)</td></tr>
+<tr class="memdesc:ac7a376c17d9188557c5016213180d628 inherit pro_methods_classbscpp___i_i_c"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送IIC一个字节信号  <a href="classbscpp___i_i_c.html#ac7a376c17d9188557c5016213180d628">更多...</a><br /></td></tr>
+<tr class="separator:ac7a376c17d9188557c5016213180d628 inherit pro_methods_classbscpp___i_i_c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abba11573786999e740a6291c048bdc2d inherit pro_methods_classbscpp___i_i_c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___i_i_c.html#abba11573786999e740a6291c048bdc2d">IIC_RecByte</a> (void)</td></tr>
+<tr class="memdesc:abba11573786999e740a6291c048bdc2d inherit pro_methods_classbscpp___i_i_c"><td class="mdescLeft">&#160;</td><td class="mdescRight">接收IIC一个字节信号  <a href="classbscpp___i_i_c.html#abba11573786999e740a6291c048bdc2d">更多...</a><br /></td></tr>
+<tr class="separator:abba11573786999e740a6291c048bdc2d inherit pro_methods_classbscpp___i_i_c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classbscpp___i_i_c___s_t_m32"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classbscpp___i_i_c___s_t_m32')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classbscpp___i_i_c___s_t_m32.html">bscpp_IIC_STM32</a></td></tr>
+<tr class="memitem:aaa9bcc928d28f56f2e9063c0ba838378 inherit pro_attribs_classbscpp___i_i_c___s_t_m32"><td class="memItemLeft" align="right" valign="top">GPIO_TypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___i_i_c___s_t_m32.html#aaa9bcc928d28f56f2e9063c0ba838378">GPIOx_SCK</a></td></tr>
+<tr class="separator:aaa9bcc928d28f56f2e9063c0ba838378 inherit pro_attribs_classbscpp___i_i_c___s_t_m32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72eec04524821ee2bb537351ca0be997 inherit pro_attribs_classbscpp___i_i_c___s_t_m32"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___i_i_c___s_t_m32.html#a72eec04524821ee2bb537351ca0be997">GPIO_Pin_SCK</a></td></tr>
+<tr class="separator:a72eec04524821ee2bb537351ca0be997 inherit pro_attribs_classbscpp___i_i_c___s_t_m32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98de2b9e7bd1a15ce951a6b1c58ebdb6 inherit pro_attribs_classbscpp___i_i_c___s_t_m32"><td class="memItemLeft" align="right" valign="top">GPIO_TypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___i_i_c___s_t_m32.html#a98de2b9e7bd1a15ce951a6b1c58ebdb6">GPIOx_SDA</a></td></tr>
+<tr class="separator:a98de2b9e7bd1a15ce951a6b1c58ebdb6 inherit pro_attribs_classbscpp___i_i_c___s_t_m32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b7ccf6ed3921d21211d417577b117df inherit pro_attribs_classbscpp___i_i_c___s_t_m32"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbscpp___i_i_c___s_t_m32.html#a1b7ccf6ed3921d21211d417577b117df">GPIO_Pin_SDA</a></td></tr>
+<tr class="separator:a1b7ccf6ed3921d21211d417577b117df inherit pro_attribs_classbscpp___i_i_c___s_t_m32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >一个OLED设备,基于STM32使用IIC总线 </p>
+
+<p class="definition">在文件 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8h_source.html">bscpp_STM32_OLED.h</a> 第 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8h_source.html#l00081">81</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a13defd595ec4cae0aeddeadff51c218f" name="a13defd595ec4cae0aeddeadff51c218f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13defd595ec4cae0aeddeadff51c218f">&#9670;&#160;</a></span>bscpp_STM32_OLED() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bscpp_STM32_OLED::bscpp_STM32_OLED </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classbscpp___i_i_c___s_t_m32.html">bscpp_IIC_STM32</a> &amp;&#160;</td>
+          <td class="paramname"><em>IICS</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8h_source.html">bscpp_STM32_OLED.h</a> 第 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8h_source.html#l00084">84</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6eec9e09693faebfcc5da3c7519eefa0" name="a6eec9e09693faebfcc5da3c7519eefa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eec9e09693faebfcc5da3c7519eefa0">&#9670;&#160;</a></span>bscpp_STM32_OLED() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bscpp_STM32_OLED::bscpp_STM32_OLED </td>
+          <td>(</td>
+          <td class="paramtype">GPIO_TypeDef *&#160;</td>
+          <td class="paramname"><em>GPIOx_SCK</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>GPIO_Pin_SCK</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GPIO_TypeDef *&#160;</td>
+          <td class="paramname"><em>GPIOx_SDA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>GPIO_Pin_SDA</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8h_source.html">bscpp_STM32_OLED.h</a> 第 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8h_source.html#l00088">88</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a8e707aad4ddac3a2de62a32d95b6d9af" name="a8e707aad4ddac3a2de62a32d95b6d9af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e707aad4ddac3a2de62a32d95b6d9af">&#9670;&#160;</a></span>Clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bscpp_STM32_OLED::Clear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
+          <td class="paramname"><em>dat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>全页绘制 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dat</td><td>全页绘制的数据,0x00为清空,0xFF为全涂 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8cpp_source.html">bscpp_STM32_OLED.cpp</a> 第 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8cpp_source.html#l00084">84</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbscpp___s_t_m32___o_l_e_d_a8e707aad4ddac3a2de62a32d95b6d9af_cgraph.png" border="0" usemap="#aclassbscpp___s_t_m32___o_l_e_d_a8e707aad4ddac3a2de62a32d95b6d9af_cgraph" alt=""/></div>
+<map name="aclassbscpp___s_t_m32___o_l_e_d_a8e707aad4ddac3a2de62a32d95b6d9af_cgraph" id="aclassbscpp___s_t_m32___o_l_e_d_a8e707aad4ddac3a2de62a32d95b6d9af_cgraph">
+<area shape="rect" title="全页绘制" alt="" coords="5,118,191,143"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#ab220356456aef32067e2e0839809b05e" title="光标定位行中的位置" alt="" coords="239,142,463,167"/>
+<area shape="rect" href="classbscpp___i_i_c.html#ac7a376c17d9188557c5016213180d628" title="发送IIC一个字节信号" alt="" coords="1015,44,1181,70"/>
+<area shape="rect" href="classbscpp___i_i_c.html#afd0d1de6960b3c063d76bad5ca6706ad" title="发送IIC开始信号" alt="" coords="1029,94,1167,119"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a9b34db5312bee0c9decafc3e12231e65" title="发送IIC停止信号" alt="" coords="1030,143,1166,168"/>
+<area shape="rect" href="classbscpp___i_i_c.html#aa1dd077b2e7f83735b2b57edd1aae7a0" title="等待应答信号" alt="" coords="1019,192,1177,218"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#ab081cd4537019c24675ff265ba975b9b" title="光标定位于一页" alt="" coords="245,92,456,118"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#a0f161e52b2bce8043148b4ffbbf8388c" title="发送一条指令给OLED" alt="" coords="511,118,728,143"/>
+<area shape="rect" href="classbscpp___i_i_c.html#acf6c71a5be44ec8367873501413c4a46" title="使用总线发送一个字节数据" alt="" coords="776,118,967,143"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a9ecb52cad582a9fbf6969fb1869437da" title="时序中的延时 在此处短暂延时" alt="" coords="1229,70,1372,95"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a1dfe20de93d00a928e82f087c1f26100" title="控制SCK管脚口" alt="" coords="1233,119,1369,144"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a03b0f1f860d09779d5491c9035fd4c32" title="控制SDA管脚口" alt="" coords="1233,168,1369,194"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab220356456aef32067e2e0839809b05e" name="ab220356456aef32067e2e0839809b05e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab220356456aef32067e2e0839809b05e">&#9670;&#160;</a></span>Column_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bscpp_STM32_OLED::Column_set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
+          <td class="paramname"><em>column</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>光标定位行中的位置 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">column</td><td>设定的该行位置 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8cpp_source.html">bscpp_STM32_OLED.cpp</a> 第 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8cpp_source.html#l00068">68</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbscpp___s_t_m32___o_l_e_d_ab220356456aef32067e2e0839809b05e_cgraph.png" border="0" usemap="#aclassbscpp___s_t_m32___o_l_e_d_ab220356456aef32067e2e0839809b05e_cgraph" alt=""/></div>
+<map name="aclassbscpp___s_t_m32___o_l_e_d_ab220356456aef32067e2e0839809b05e_cgraph" id="aclassbscpp___s_t_m32___o_l_e_d_ab220356456aef32067e2e0839809b05e_cgraph">
+<area shape="rect" title="光标定位行中的位置" alt="" coords="5,80,229,105"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#a0f161e52b2bce8043148b4ffbbf8388c" title="发送一条指令给OLED" alt="" coords="277,80,495,105"/>
+<area shape="rect" href="classbscpp___i_i_c.html#acf6c71a5be44ec8367873501413c4a46" title="使用总线发送一个字节数据" alt="" coords="543,80,733,105"/>
+<area shape="rect" href="classbscpp___i_i_c.html#ac7a376c17d9188557c5016213180d628" title="发送IIC一个字节信号" alt="" coords="781,104,948,129"/>
+<area shape="rect" href="classbscpp___i_i_c.html#afd0d1de6960b3c063d76bad5ca6706ad" title="发送IIC开始信号" alt="" coords="796,153,933,179"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a9b34db5312bee0c9decafc3e12231e65" title="发送IIC停止信号" alt="" coords="797,5,933,31"/>
+<area shape="rect" href="classbscpp___i_i_c.html#aa1dd077b2e7f83735b2b57edd1aae7a0" title="等待应答信号" alt="" coords="785,55,944,80"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a9ecb52cad582a9fbf6969fb1869437da" title="时序中的延时 在此处短暂延时" alt="" coords="996,31,1139,56"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a1dfe20de93d00a928e82f087c1f26100" title="控制SCK管脚口" alt="" coords="999,80,1135,105"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a03b0f1f860d09779d5491c9035fd4c32" title="控制SDA管脚口" alt="" coords="999,129,1135,155"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbscpp___s_t_m32___o_l_e_d_ab220356456aef32067e2e0839809b05e_icgraph.png" border="0" usemap="#aclassbscpp___s_t_m32___o_l_e_d_ab220356456aef32067e2e0839809b05e_icgraph" alt=""/></div>
+<map name="aclassbscpp___s_t_m32___o_l_e_d_ab220356456aef32067e2e0839809b05e_icgraph" id="aclassbscpp___s_t_m32___o_l_e_d_ab220356456aef32067e2e0839809b05e_icgraph">
+<area shape="rect" title="光标定位行中的位置" alt="" coords="249,95,473,120"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#a8e707aad4ddac3a2de62a32d95b6d9af" title="全页绘制" alt="" coords="11,5,196,31"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#a86586e3d035dd8f05575d115c612f74c" title="OLED绘制ASCII字符" alt="" coords="11,55,195,95"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#a9812c1053c83781d35857a9d9a80eb77" title="OLED绘图" alt="" coords="5,119,201,159"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#a7055576aee77d633692cf5ae1edf2a76" title="OLED反向绘图" alt="" coords="5,183,201,223"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a86586e3d035dd8f05575d115c612f74c" name="a86586e3d035dd8f05575d115c612f74c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86586e3d035dd8f05575d115c612f74c">&#9670;&#160;</a></span>Draw_ASCII()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bscpp_STM32_OLED::Draw_ASCII </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="varint_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>H</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="varint_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>V</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
+          <td class="paramname"><em>word</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OLED绘制ASCII字符 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">H</td><td>行数 </td></tr>
+    <tr><td class="paramname">V</td><td>列数 </td></tr>
+    <tr><td class="paramname">word</td><td>所要显示的字符 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8cpp_source.html">bscpp_STM32_OLED.cpp</a> 第 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8cpp_source.html#l00145">145</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbscpp___s_t_m32___o_l_e_d_a86586e3d035dd8f05575d115c612f74c_cgraph.png" border="0" usemap="#aclassbscpp___s_t_m32___o_l_e_d_a86586e3d035dd8f05575d115c612f74c_cgraph" alt=""/></div>
+<map name="aclassbscpp___s_t_m32___o_l_e_d_a86586e3d035dd8f05575d115c612f74c_cgraph" id="aclassbscpp___s_t_m32___o_l_e_d_a86586e3d035dd8f05575d115c612f74c_cgraph">
+<area shape="rect" title="OLED绘制ASCII字符" alt="" coords="5,47,189,87"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#ab220356456aef32067e2e0839809b05e" title="光标定位行中的位置" alt="" coords="237,55,461,80"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#ab081cd4537019c24675ff265ba975b9b" title="光标定位于一页" alt="" coords="244,5,455,31"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#aa0021a0cbcfcd403f0bf26cfd3a7797f" title="发送一串定长指令给OLED" alt="" coords="257,105,442,145"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#a0f161e52b2bce8043148b4ffbbf8388c" title="发送一条指令给OLED" alt="" coords="509,55,727,80"/>
+<area shape="rect" href="classbscpp___i_i_c.html#acf6c71a5be44ec8367873501413c4a46" title="使用总线发送一个字节数据" alt="" coords="775,59,965,84"/>
+<area shape="rect" href="classbscpp___i_i_c.html#ac7a376c17d9188557c5016213180d628" title="发送IIC一个字节信号" alt="" coords="1013,108,1180,133"/>
+<area shape="rect" href="classbscpp___i_i_c.html#afd0d1de6960b3c063d76bad5ca6706ad" title="发送IIC开始信号" alt="" coords="1028,157,1165,183"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a9b34db5312bee0c9decafc3e12231e65" title="发送IIC停止信号" alt="" coords="1029,9,1165,35"/>
+<area shape="rect" href="classbscpp___i_i_c.html#aa1dd077b2e7f83735b2b57edd1aae7a0" title="等待应答信号" alt="" coords="1017,59,1176,84"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a9ecb52cad582a9fbf6969fb1869437da" title="时序中的延时 在此处短暂延时" alt="" coords="1228,35,1371,60"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a1dfe20de93d00a928e82f087c1f26100" title="控制SCK管脚口" alt="" coords="1231,84,1367,109"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a03b0f1f860d09779d5491c9035fd4c32" title="控制SDA管脚口" alt="" coords="1231,133,1367,159"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a90560b42df225b0af3b0a8c7eef1f6c1" title="使用总线发送定长数据" alt="" coords="800,108,940,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9e7ac26b25be4fb23ae324895a0737c5" name="a9e7ac26b25be4fb23ae324895a0737c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e7ac26b25be4fb23ae324895a0737c5">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bscpp_STM32_OLED::Init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OLED初始化 初始化显示屏的设置 </p>
+
+<p class="definition">在文件 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8cpp_source.html">bscpp_STM32_OLED.cpp</a> 第 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8cpp_source.html#l00158">158</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbscpp___s_t_m32___o_l_e_d_a9e7ac26b25be4fb23ae324895a0737c5_cgraph.png" border="0" usemap="#aclassbscpp___s_t_m32___o_l_e_d_a9e7ac26b25be4fb23ae324895a0737c5_cgraph" alt=""/></div>
+<map name="aclassbscpp___s_t_m32___o_l_e_d_a9e7ac26b25be4fb23ae324895a0737c5_cgraph" id="aclassbscpp___s_t_m32___o_l_e_d_a9e7ac26b25be4fb23ae324895a0737c5_cgraph">
+<area shape="rect" title="OLED初始化 初始化显示屏的设置" alt="" coords="5,80,177,105"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#a0f161e52b2bce8043148b4ffbbf8388c" title="发送一条指令给OLED" alt="" coords="225,80,443,105"/>
+<area shape="rect" href="classbscpp___i_i_c.html#acf6c71a5be44ec8367873501413c4a46" title="使用总线发送一个字节数据" alt="" coords="491,80,681,105"/>
+<area shape="rect" href="classbscpp___i_i_c.html#ac7a376c17d9188557c5016213180d628" title="发送IIC一个字节信号" alt="" coords="729,104,896,129"/>
+<area shape="rect" href="classbscpp___i_i_c.html#afd0d1de6960b3c063d76bad5ca6706ad" title="发送IIC开始信号" alt="" coords="744,153,881,179"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a9b34db5312bee0c9decafc3e12231e65" title="发送IIC停止信号" alt="" coords="745,5,881,31"/>
+<area shape="rect" href="classbscpp___i_i_c.html#aa1dd077b2e7f83735b2b57edd1aae7a0" title="等待应答信号" alt="" coords="733,55,892,80"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a9ecb52cad582a9fbf6969fb1869437da" title="时序中的延时 在此处短暂延时" alt="" coords="944,31,1087,56"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a1dfe20de93d00a928e82f087c1f26100" title="控制SCK管脚口" alt="" coords="947,80,1083,105"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a03b0f1f860d09779d5491c9035fd4c32" title="控制SDA管脚口" alt="" coords="947,129,1083,155"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab081cd4537019c24675ff265ba975b9b" name="ab081cd4537019c24675ff265ba975b9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab081cd4537019c24675ff265ba975b9b">&#9670;&#160;</a></span>Page_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bscpp_STM32_OLED::Page_set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
+          <td class="paramname"><em>page</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>光标定位于一页 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">page</td><td>设定所处的页位置 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8cpp_source.html">bscpp_STM32_OLED.cpp</a> 第 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8cpp_source.html#l00077">77</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbscpp___s_t_m32___o_l_e_d_ab081cd4537019c24675ff265ba975b9b_cgraph.png" border="0" usemap="#aclassbscpp___s_t_m32___o_l_e_d_ab081cd4537019c24675ff265ba975b9b_cgraph" alt=""/></div>
+<map name="aclassbscpp___s_t_m32___o_l_e_d_ab081cd4537019c24675ff265ba975b9b_cgraph" id="aclassbscpp___s_t_m32___o_l_e_d_ab081cd4537019c24675ff265ba975b9b_cgraph">
+<area shape="rect" title="光标定位于一页" alt="" coords="5,80,216,105"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#a0f161e52b2bce8043148b4ffbbf8388c" title="发送一条指令给OLED" alt="" coords="264,80,481,105"/>
+<area shape="rect" href="classbscpp___i_i_c.html#acf6c71a5be44ec8367873501413c4a46" title="使用总线发送一个字节数据" alt="" coords="529,80,720,105"/>
+<area shape="rect" href="classbscpp___i_i_c.html#ac7a376c17d9188557c5016213180d628" title="发送IIC一个字节信号" alt="" coords="768,104,935,129"/>
+<area shape="rect" href="classbscpp___i_i_c.html#afd0d1de6960b3c063d76bad5ca6706ad" title="发送IIC开始信号" alt="" coords="783,153,920,179"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a9b34db5312bee0c9decafc3e12231e65" title="发送IIC停止信号" alt="" coords="783,5,919,31"/>
+<area shape="rect" href="classbscpp___i_i_c.html#aa1dd077b2e7f83735b2b57edd1aae7a0" title="等待应答信号" alt="" coords="772,55,931,80"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a9ecb52cad582a9fbf6969fb1869437da" title="时序中的延时 在此处短暂延时" alt="" coords="983,31,1125,56"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a1dfe20de93d00a928e82f087c1f26100" title="控制SCK管脚口" alt="" coords="986,80,1122,105"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a03b0f1f860d09779d5491c9035fd4c32" title="控制SDA管脚口" alt="" coords="986,129,1122,155"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbscpp___s_t_m32___o_l_e_d_ab081cd4537019c24675ff265ba975b9b_icgraph.png" border="0" usemap="#aclassbscpp___s_t_m32___o_l_e_d_ab081cd4537019c24675ff265ba975b9b_icgraph" alt=""/></div>
+<map name="aclassbscpp___s_t_m32___o_l_e_d_ab081cd4537019c24675ff265ba975b9b_icgraph" id="aclassbscpp___s_t_m32___o_l_e_d_ab081cd4537019c24675ff265ba975b9b_icgraph">
+<area shape="rect" title="光标定位于一页" alt="" coords="249,95,460,120"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#a8e707aad4ddac3a2de62a32d95b6d9af" title="全页绘制" alt="" coords="11,5,196,31"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#a86586e3d035dd8f05575d115c612f74c" title="OLED绘制ASCII字符" alt="" coords="11,55,195,95"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#a9812c1053c83781d35857a9d9a80eb77" title="OLED绘图" alt="" coords="5,119,201,159"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#a7055576aee77d633692cf5ae1edf2a76" title="OLED反向绘图" alt="" coords="5,183,201,223"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9812c1053c83781d35857a9d9a80eb77" name="a9812c1053c83781d35857a9d9a80eb77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9812c1053c83781d35857a9d9a80eb77">&#9670;&#160;</a></span>Picture_display()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bscpp_STM32_OLED::Picture_display </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramname"><em>ptr_pic</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OLED绘图 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*ptr_pic</td><td>图片数据的头 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8cpp_source.html">bscpp_STM32_OLED.cpp</a> 第 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8cpp_source.html#l00103">103</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbscpp___s_t_m32___o_l_e_d_a9812c1053c83781d35857a9d9a80eb77_cgraph.png" border="0" usemap="#aclassbscpp___s_t_m32___o_l_e_d_a9812c1053c83781d35857a9d9a80eb77_cgraph" alt=""/></div>
+<map name="aclassbscpp___s_t_m32___o_l_e_d_a9812c1053c83781d35857a9d9a80eb77_cgraph" id="aclassbscpp___s_t_m32___o_l_e_d_a9812c1053c83781d35857a9d9a80eb77_cgraph">
+<area shape="rect" title="OLED绘图" alt="" coords="5,108,201,148"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#ab220356456aef32067e2e0839809b05e" title="光标定位行中的位置" alt="" coords="249,139,473,164"/>
+<area shape="rect" href="classbscpp___i_i_c.html#ac7a376c17d9188557c5016213180d628" title="发送IIC一个字节信号" alt="" coords="1025,42,1192,67"/>
+<area shape="rect" href="classbscpp___i_i_c.html#afd0d1de6960b3c063d76bad5ca6706ad" title="发送IIC开始信号" alt="" coords="1040,91,1177,116"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a9b34db5312bee0c9decafc3e12231e65" title="发送IIC停止信号" alt="" coords="1041,140,1177,166"/>
+<area shape="rect" href="classbscpp___i_i_c.html#aa1dd077b2e7f83735b2b57edd1aae7a0" title="等待应答信号" alt="" coords="1029,190,1188,215"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#ab081cd4537019c24675ff265ba975b9b" title="光标定位于一页" alt="" coords="256,90,467,115"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#a0f161e52b2bce8043148b4ffbbf8388c" title="发送一条指令给OLED" alt="" coords="521,115,739,140"/>
+<area shape="rect" href="classbscpp___i_i_c.html#acf6c71a5be44ec8367873501413c4a46" title="使用总线发送一个字节数据" alt="" coords="787,115,977,140"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a9ecb52cad582a9fbf6969fb1869437da" title="时序中的延时 在此处短暂延时" alt="" coords="1240,67,1383,92"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a1dfe20de93d00a928e82f087c1f26100" title="控制SCK管脚口" alt="" coords="1243,116,1379,142"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a03b0f1f860d09779d5491c9035fd4c32" title="控制SDA管脚口" alt="" coords="1243,166,1379,191"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7055576aee77d633692cf5ae1edf2a76" name="a7055576aee77d633692cf5ae1edf2a76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7055576aee77d633692cf5ae1edf2a76">&#9670;&#160;</a></span>Picture_ReverseDisplay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bscpp_STM32_OLED::Picture_ReverseDisplay </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramname"><em>ptr_pic</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OLED反向绘图 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*ptr_pic</td><td>图片数据的头 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8cpp_source.html">bscpp_STM32_OLED.cpp</a> 第 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8cpp_source.html#l00123">123</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbscpp___s_t_m32___o_l_e_d_a7055576aee77d633692cf5ae1edf2a76_cgraph.png" border="0" usemap="#aclassbscpp___s_t_m32___o_l_e_d_a7055576aee77d633692cf5ae1edf2a76_cgraph" alt=""/></div>
+<map name="aclassbscpp___s_t_m32___o_l_e_d_a7055576aee77d633692cf5ae1edf2a76_cgraph" id="aclassbscpp___s_t_m32___o_l_e_d_a7055576aee77d633692cf5ae1edf2a76_cgraph">
+<area shape="rect" title="OLED反向绘图" alt="" coords="5,108,201,148"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#ab220356456aef32067e2e0839809b05e" title="光标定位行中的位置" alt="" coords="249,139,473,164"/>
+<area shape="rect" href="classbscpp___i_i_c.html#ac7a376c17d9188557c5016213180d628" title="发送IIC一个字节信号" alt="" coords="1025,42,1192,67"/>
+<area shape="rect" href="classbscpp___i_i_c.html#afd0d1de6960b3c063d76bad5ca6706ad" title="发送IIC开始信号" alt="" coords="1040,91,1177,116"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a9b34db5312bee0c9decafc3e12231e65" title="发送IIC停止信号" alt="" coords="1041,140,1177,166"/>
+<area shape="rect" href="classbscpp___i_i_c.html#aa1dd077b2e7f83735b2b57edd1aae7a0" title="等待应答信号" alt="" coords="1029,190,1188,215"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#ab081cd4537019c24675ff265ba975b9b" title="光标定位于一页" alt="" coords="256,90,467,115"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#a0f161e52b2bce8043148b4ffbbf8388c" title="发送一条指令给OLED" alt="" coords="521,115,739,140"/>
+<area shape="rect" href="classbscpp___i_i_c.html#acf6c71a5be44ec8367873501413c4a46" title="使用总线发送一个字节数据" alt="" coords="787,115,977,140"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a9ecb52cad582a9fbf6969fb1869437da" title="时序中的延时 在此处短暂延时" alt="" coords="1240,67,1383,92"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a1dfe20de93d00a928e82f087c1f26100" title="控制SCK管脚口" alt="" coords="1243,116,1379,142"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a03b0f1f860d09779d5491c9035fd4c32" title="控制SDA管脚口" alt="" coords="1243,166,1379,191"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0f161e52b2bce8043148b4ffbbf8388c" name="a0f161e52b2bce8043148b4ffbbf8388c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f161e52b2bce8043148b4ffbbf8388c">&#9670;&#160;</a></span>Send_cmd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bscpp_STM32_OLED::Send_cmd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送一条指令给OLED </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>要发送的指令 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8cpp_source.html">bscpp_STM32_OLED.cpp</a> 第 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8cpp_source.html#l00046">46</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbscpp___s_t_m32___o_l_e_d_a0f161e52b2bce8043148b4ffbbf8388c_cgraph.png" border="0" usemap="#aclassbscpp___s_t_m32___o_l_e_d_a0f161e52b2bce8043148b4ffbbf8388c_cgraph" alt=""/></div>
+<map name="aclassbscpp___s_t_m32___o_l_e_d_a0f161e52b2bce8043148b4ffbbf8388c_cgraph" id="aclassbscpp___s_t_m32___o_l_e_d_a0f161e52b2bce8043148b4ffbbf8388c_cgraph">
+<area shape="rect" title="发送一条指令给OLED" alt="" coords="5,80,223,105"/>
+<area shape="rect" href="classbscpp___i_i_c.html#acf6c71a5be44ec8367873501413c4a46" title="使用总线发送一个字节数据" alt="" coords="271,80,461,105"/>
+<area shape="rect" href="classbscpp___i_i_c.html#ac7a376c17d9188557c5016213180d628" title="发送IIC一个字节信号" alt="" coords="509,104,676,129"/>
+<area shape="rect" href="classbscpp___i_i_c.html#afd0d1de6960b3c063d76bad5ca6706ad" title="发送IIC开始信号" alt="" coords="524,153,661,179"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a9b34db5312bee0c9decafc3e12231e65" title="发送IIC停止信号" alt="" coords="525,5,661,31"/>
+<area shape="rect" href="classbscpp___i_i_c.html#aa1dd077b2e7f83735b2b57edd1aae7a0" title="等待应答信号" alt="" coords="513,55,672,80"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a9ecb52cad582a9fbf6969fb1869437da" title="时序中的延时 在此处短暂延时" alt="" coords="724,31,867,56"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a1dfe20de93d00a928e82f087c1f26100" title="控制SCK管脚口" alt="" coords="727,80,863,105"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a03b0f1f860d09779d5491c9035fd4c32" title="控制SDA管脚口" alt="" coords="727,129,863,155"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbscpp___s_t_m32___o_l_e_d_a0f161e52b2bce8043148b4ffbbf8388c_icgraph.png" border="0" usemap="#aclassbscpp___s_t_m32___o_l_e_d_a0f161e52b2bce8043148b4ffbbf8388c_icgraph" alt=""/></div>
+<map name="aclassbscpp___s_t_m32___o_l_e_d_a0f161e52b2bce8043148b4ffbbf8388c_icgraph" id="aclassbscpp___s_t_m32___o_l_e_d_a0f161e52b2bce8043148b4ffbbf8388c_icgraph">
+<area shape="rect" title="发送一条指令给OLED" alt="" coords="521,130,739,155"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#ab220356456aef32067e2e0839809b05e" title="光标定位行中的位置" alt="" coords="249,130,473,155"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#a9e7ac26b25be4fb23ae324895a0737c5" title="OLED初始化 初始化显示屏的设置" alt="" coords="275,179,447,205"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#ab081cd4537019c24675ff265ba975b9b" title="光标定位于一页" alt="" coords="256,81,467,106"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#a8e707aad4ddac3a2de62a32d95b6d9af" title="全页绘制" alt="" coords="11,134,196,159"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#a86586e3d035dd8f05575d115c612f74c" title="OLED绘制ASCII字符" alt="" coords="11,184,195,224"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#a9812c1053c83781d35857a9d9a80eb77" title="OLED绘图" alt="" coords="5,5,201,45"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#a7055576aee77d633692cf5ae1edf2a76" title="OLED反向绘图" alt="" coords="5,69,201,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4a04fa71857475961a800961eb7c03b6" name="a4a04fa71857475961a800961eb7c03b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a04fa71857475961a800961eb7c03b6">&#9670;&#160;</a></span>Send_dat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bscpp_STM32_OLED::Send_dat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
+          <td class="paramname"><em>dat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送一条数据给OLED </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dat</td><td>要发送的数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8cpp_source.html">bscpp_STM32_OLED.cpp</a> 第 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8cpp_source.html#l00053">53</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbscpp___s_t_m32___o_l_e_d_a4a04fa71857475961a800961eb7c03b6_cgraph.png" border="0" usemap="#aclassbscpp___s_t_m32___o_l_e_d_a4a04fa71857475961a800961eb7c03b6_cgraph" alt=""/></div>
+<map name="aclassbscpp___s_t_m32___o_l_e_d_a4a04fa71857475961a800961eb7c03b6_cgraph" id="aclassbscpp___s_t_m32___o_l_e_d_a4a04fa71857475961a800961eb7c03b6_cgraph">
+<area shape="rect" title="发送一条数据给OLED" alt="" coords="5,80,216,105"/>
+<area shape="rect" href="classbscpp___i_i_c.html#acf6c71a5be44ec8367873501413c4a46" title="使用总线发送一个字节数据" alt="" coords="264,80,455,105"/>
+<area shape="rect" href="classbscpp___i_i_c.html#ac7a376c17d9188557c5016213180d628" title="发送IIC一个字节信号" alt="" coords="503,104,669,129"/>
+<area shape="rect" href="classbscpp___i_i_c.html#afd0d1de6960b3c063d76bad5ca6706ad" title="发送IIC开始信号" alt="" coords="517,153,655,179"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a9b34db5312bee0c9decafc3e12231e65" title="发送IIC停止信号" alt="" coords="518,5,654,31"/>
+<area shape="rect" href="classbscpp___i_i_c.html#aa1dd077b2e7f83735b2b57edd1aae7a0" title="等待应答信号" alt="" coords="507,55,665,80"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a9ecb52cad582a9fbf6969fb1869437da" title="时序中的延时 在此处短暂延时" alt="" coords="717,31,860,56"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a1dfe20de93d00a928e82f087c1f26100" title="控制SCK管脚口" alt="" coords="721,80,857,105"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a03b0f1f860d09779d5491c9035fd4c32" title="控制SDA管脚口" alt="" coords="721,129,857,155"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa0021a0cbcfcd403f0bf26cfd3a7797f" name="aa0021a0cbcfcd403f0bf26cfd3a7797f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0021a0cbcfcd403f0bf26cfd3a7797f">&#9670;&#160;</a></span>Send_len_dat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bscpp_STM32_OLED::Send_len_dat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramname"><em>dat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="varint_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送一串定长指令给OLED </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*dat</td><td>要发送的指令头 </td></tr>
+    <tr><td class="paramname">len</td><td>指令长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8cpp_source.html">bscpp_STM32_OLED.cpp</a> 第 <a class="el" href="bscpp___s_t_m32___o_l_e_d_8cpp_source.html#l00061">61</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbscpp___s_t_m32___o_l_e_d_aa0021a0cbcfcd403f0bf26cfd3a7797f_cgraph.png" border="0" usemap="#aclassbscpp___s_t_m32___o_l_e_d_aa0021a0cbcfcd403f0bf26cfd3a7797f_cgraph" alt=""/></div>
+<map name="aclassbscpp___s_t_m32___o_l_e_d_aa0021a0cbcfcd403f0bf26cfd3a7797f_cgraph" id="aclassbscpp___s_t_m32___o_l_e_d_aa0021a0cbcfcd403f0bf26cfd3a7797f_cgraph">
+<area shape="rect" title="发送一串定长指令给OLED" alt="" coords="5,73,191,113"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a90560b42df225b0af3b0a8c7eef1f6c1" title="使用总线发送定长数据" alt="" coords="239,80,379,105"/>
+<area shape="rect" href="classbscpp___i_i_c.html#ac7a376c17d9188557c5016213180d628" title="发送IIC一个字节信号" alt="" coords="427,104,593,129"/>
+<area shape="rect" href="classbscpp___i_i_c.html#afd0d1de6960b3c063d76bad5ca6706ad" title="发送IIC开始信号" alt="" coords="441,153,579,179"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a9b34db5312bee0c9decafc3e12231e65" title="发送IIC停止信号" alt="" coords="442,5,578,31"/>
+<area shape="rect" href="classbscpp___i_i_c.html#aa1dd077b2e7f83735b2b57edd1aae7a0" title="等待应答信号" alt="" coords="431,55,589,80"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a9ecb52cad582a9fbf6969fb1869437da" title="时序中的延时 在此处短暂延时" alt="" coords="641,31,784,56"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a1dfe20de93d00a928e82f087c1f26100" title="控制SCK管脚口" alt="" coords="645,80,781,105"/>
+<area shape="rect" href="classbscpp___i_i_c.html#a03b0f1f860d09779d5491c9035fd4c32" title="控制SDA管脚口" alt="" coords="645,129,781,155"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbscpp___s_t_m32___o_l_e_d_aa0021a0cbcfcd403f0bf26cfd3a7797f_icgraph.png" border="0" usemap="#aclassbscpp___s_t_m32___o_l_e_d_aa0021a0cbcfcd403f0bf26cfd3a7797f_icgraph" alt=""/></div>
+<map name="aclassbscpp___s_t_m32___o_l_e_d_aa0021a0cbcfcd403f0bf26cfd3a7797f_icgraph" id="aclassbscpp___s_t_m32___o_l_e_d_aa0021a0cbcfcd403f0bf26cfd3a7797f_icgraph">
+<area shape="rect" title="发送一串定长指令给OLED" alt="" coords="237,5,423,45"/>
+<area shape="rect" href="classbscpp___s_t_m32___o_l_e_d.html#a86586e3d035dd8f05575d115c612f74c" title="OLED绘制ASCII字符" alt="" coords="5,5,189,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>D:/gitt/MicrochipFor32/bscpp_Device/<a class="el" href="bscpp___s_t_m32___o_l_e_d_8h_source.html">bscpp_STM32_OLED.h</a></li>
+<li>D:/gitt/MicrochipFor32/bscpp_Device/<a class="el" href="bscpp___s_t_m32___o_l_e_d_8cpp_source.html">bscpp_STM32_OLED.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<map id="mpu_set_sensors" name="mpu_set_sensors">
+<area shape="rect" id="node1" title="Turn specific sensors on/off. sensors can contain a combination of the following flags: &#160;&#160;INV_X_GYRO,..." alt="" coords="5,31,131,56"/>
+<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#ga36f70f38371b48d81094d3b061233e15" title="Set device to bypass mode." alt="" coords="189,5,311,31"/>
+<area shape="rect" id="node3" href="$group___d_r_i_v_e_r_s.html#ga653cb855300bff9285ce4b8dca6a503b" title="Enable latched interrupts. Any MPU register will clear the interrupt." alt="" coords="179,55,321,80"/>
+</map>
