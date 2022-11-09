@@ -22,7 +22,7 @@
  */
 
  /**
-  * @file		STL_Stack.h
+  * @file		STL_Stack.cpp
   * @brief		实现了STL库中的Stack
   * @mainpage	主要信息
   * @author		Yuankang Liang(XerolySkinner)
