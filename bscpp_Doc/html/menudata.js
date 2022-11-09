@@ -50,7 +50,8 @@ var menudata={children:[
 {text:"s",url:"functions.html#index_s"},
 {text:"t",url:"functions.html#index_t"},
 {text:"u",url:"functions.html#index_u"},
-{text:"w",url:"functions.html#index_w"}]},
+{text:"w",url:"functions.html#index_w"},
+{text:"~",url:"functions.html#index__7E"}]},
 {text:"函数",url:"functions_func.html",children:[
 {text:"a",url:"functions_func.html#index_a"},
 {text:"b",url:"functions_func.html#index_b"},
@@ -60,7 +61,9 @@ var menudata={children:[
 {text:"p",url:"functions_func.html#index_p"},
 {text:"r",url:"functions_func.html#index_r"},
 {text:"s",url:"functions_func.html#index_s"},
-{text:"w",url:"functions_func.html#index_w"}]},
+{text:"t",url:"functions_func.html#index_t"},
+{text:"w",url:"functions_func.html#index_w"},
+{text:"~",url:"functions_func.html#index__7E"}]},
 {text:"变量",url:"functions_vars.html",children:[
 {text:"a",url:"functions_vars.html#index_a"},
 {text:"b",url:"functions_vars.html#index_b"},
@@ -118,7 +121,11 @@ var menudata={children:[
 {text:"变量",url:"globals_vars.html"},
 {text:"类型定义",url:"globals_type.html"},
 {text:"枚举",url:"globals_enum.html"},
-{text:"枚举值",url:"globals_eval.html"},
+{text:"枚举值",url:"globals_eval.html",children:[
+{text:"i",url:"globals_eval.html#index_i"},
+{text:"n",url:"globals_eval.html#index_n"},
+{text:"q",url:"globals_eval.html#index_q"},
+{text:"s",url:"globals_eval.html#index_s"}]},
 {text:"宏定义",url:"globals_defs.html",children:[
 {text:"_",url:"globals_defs.html#index__5F"},
 {text:"a",url:"globals_defs_a.html#index_a"},

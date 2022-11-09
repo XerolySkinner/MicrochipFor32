@@ -1,0 +1,386 @@
+\hypertarget{class_s_t_l__r_stack}{}\doxysection{STL\+\_\+r\+Stack类 参考}
+\label{class_s_t_l__r_stack}\index{STL\_rStack@{STL\_rStack}}
+
+
+一个栈的类  
+
+
+
+
+{\ttfamily \#include $<$STL\+\_\+\+Stack.\+h$>$}
+
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s_t_l__r_stack_a55a54a57fe2f6625ef6b995f2d95e026}{STL\+\_\+r\+Stack}} (void)
+\item 
+\mbox{\hyperlink{class_s_t_l__r_stack_aed992153d5efc1cd3007863c8c08797c}{$\sim$\+STL\+\_\+r\+Stack}} (void)
+\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{class_s_t_l__r_stack_a153de2f05c0e0164ad68fb09130bf475}{push}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} var)
+\begin{DoxyCompactList}\small\item\em 压入一个成员 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{class_s_t_l__r_stack_a5c7016a370c7665d554dda4b8f7dee22}{pop}} (void)
+\begin{DoxyCompactList}\small\item\em 弹出一个成员 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{class_s_t_l__r_stack_a49d2ca43dafd695e4e0d92018736f732}{top}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \&var)
+\begin{DoxyCompactList}\small\item\em 显示最后压入的数值 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} \mbox{\hyperlink{class_s_t_l__r_stack_ac63cd564c04e4481925ead650dfb2edf}{The\+\_\+size}} (void)
+\begin{DoxyCompactList}\small\item\em 返回成员数量 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} \mbox{\hyperlink{class_s_t_l__r_stack_a22c1e309f6476f31f1e5c313b01afd13}{The\+\_\+room}} (void)
+\begin{DoxyCompactList}\small\item\em 返回占用的内存数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{class_s_t_l__r_stack_a843cc47e7a2c281dd82392c8ed257dc1}{clean}} (void)
+\begin{DoxyCompactList}\small\item\em 将申请的空间比对所需空间,腾出冗余空间 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{class_s_t_l__r_stack_a31fd424472fcf069ec2cbcb50ab34ed1}{poptop}} (void)
+\begin{DoxyCompactList}\small\item\em 弹出并且返回一个成员 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{class_s_t_l__r_stack_a8a72b28e3a7faa2aae9272d90032d5a5}{push32}} (\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} var)
+\begin{DoxyCompactList}\small\item\em 压入一个32位成员 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} \mbox{\hyperlink{class_s_t_l__r_stack_ad64450c2168e2551ed8fad637a8b9c99}{poptop32}} (void)
+\begin{DoxyCompactList}\small\item\em 弹出并且返回一个32位成员 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_t_l__r_stack_a4287e70b3adaf5e2a3a941299a085b09}{pushfun}} (void($\ast$fun)(void))
+\begin{DoxyCompactList}\small\item\em 压入一个void($\ast$)void函数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$)(void) \mbox{\hyperlink{class_s_t_l__r_stack_a4d702aae14e43421c0818dba3b8c99a1}{poptopfun}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} \mbox{\hyperlink{class_s_t_l__r_stack_a857415d9ae151b6acd395760b2e9cedf}{room}}
+\item 
+\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} \mbox{\hyperlink{class_s_t_l__r_stack_adf95fc53b74c9955a648f3500ae1e746}{size}}
+\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$ \mbox{\hyperlink{class_s_t_l__r_stack_a2ff878cef1cc42db3c31812e654c8674}{dat}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+一个栈的类 
+
+\begin{DoxyNote}{注解}
+使用realloc重新分配方式组织 栈的内存空间的连续的,适合小数据常规速度交换数据 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{_s_t_l___stack_8h_source}{STL\+\_\+\+Stack.\+h}} 第 \mbox{\hyperlink{_s_t_l___stack_8h_source_l00059}{59}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{class_s_t_l__r_stack_a55a54a57fe2f6625ef6b995f2d95e026}\label{class_s_t_l__r_stack_a55a54a57fe2f6625ef6b995f2d95e026}} 
+\index{STL\_rStack@{STL\_rStack}!STL\_rStack@{STL\_rStack}}
+\index{STL\_rStack@{STL\_rStack}!STL\_rStack@{STL\_rStack}}
+\doxysubsubsection{\texorpdfstring{STL\_rStack()}{STL\_rStack()}}
+{\footnotesize\ttfamily STL\+\_\+r\+Stack\+::\+STL\+\_\+r\+Stack (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{_s_t_l___stack_8cpp_source}{STL\+\_\+\+Stack.\+cpp}} 第 \mbox{\hyperlink{_s_t_l___stack_8cpp_source_l00041}{41}} 行定义.
+
+\mbox{\Hypertarget{class_s_t_l__r_stack_aed992153d5efc1cd3007863c8c08797c}\label{class_s_t_l__r_stack_aed992153d5efc1cd3007863c8c08797c}} 
+\index{STL\_rStack@{STL\_rStack}!````~STL\_rStack@{$\sim$STL\_rStack}}
+\index{````~STL\_rStack@{$\sim$STL\_rStack}!STL\_rStack@{STL\_rStack}}
+\doxysubsubsection{\texorpdfstring{$\sim$STL\_rStack()}{~STL\_rStack()}}
+{\footnotesize\ttfamily STL\+\_\+r\+Stack\+::$\sim$\+STL\+\_\+r\+Stack (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{_s_t_l___stack_8cpp_source}{STL\+\_\+\+Stack.\+cpp}} 第 \mbox{\hyperlink{_s_t_l___stack_8cpp_source_l00046}{46}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{class_s_t_l__r_stack_a843cc47e7a2c281dd82392c8ed257dc1}\label{class_s_t_l__r_stack_a843cc47e7a2c281dd82392c8ed257dc1}} 
+\index{STL\_rStack@{STL\_rStack}!clean@{clean}}
+\index{clean@{clean}!STL\_rStack@{STL\_rStack}}
+\doxysubsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} STL\+\_\+r\+Stack\+::clean (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+将申请的空间比对所需空间,腾出冗余空间 
+
+\begin{DoxyReturn}{返回}
+错误号 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{_s_t_l___stack_8cpp_source}{STL\+\_\+\+Stack.\+cpp}} 第 \mbox{\hyperlink{_s_t_l___stack_8cpp_source_l00125}{125}} 行定义.
+
+\mbox{\Hypertarget{class_s_t_l__r_stack_a5c7016a370c7665d554dda4b8f7dee22}\label{class_s_t_l__r_stack_a5c7016a370c7665d554dda4b8f7dee22}} 
+\index{STL\_rStack@{STL\_rStack}!pop@{pop}}
+\index{pop@{pop}!STL\_rStack@{STL\_rStack}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} STL\+\_\+r\+Stack\+::pop (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+弹出一个成员 
+
+\begin{DoxyReturn}{返回}
+错误号 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{_s_t_l___stack_8cpp_source}{STL\+\_\+\+Stack.\+cpp}} 第 \mbox{\hyperlink{_s_t_l___stack_8cpp_source_l00083}{83}} 行定义.
+
+这是这个函数的调用关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_s_t_l__r_stack_a5c7016a370c7665d554dda4b8f7dee22_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_t_l__r_stack_a31fd424472fcf069ec2cbcb50ab34ed1}\label{class_s_t_l__r_stack_a31fd424472fcf069ec2cbcb50ab34ed1}} 
+\index{STL\_rStack@{STL\_rStack}!poptop@{poptop}}
+\index{poptop@{poptop}!STL\_rStack@{STL\_rStack}}
+\doxysubsubsection{\texorpdfstring{poptop()}{poptop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} STL\+\_\+r\+Stack\+::poptop (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+弹出并且返回一个成员 
+
+\begin{DoxyReturn}{返回}
+弹出的成员值 
+\end{DoxyReturn}
+\begin{DoxyNote}{注解}
+该函数不会检查成功与否 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{_s_t_l___stack_8cpp_source}{STL\+\_\+\+Stack.\+cpp}} 第 \mbox{\hyperlink{_s_t_l___stack_8cpp_source_l00164}{164}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{class_s_t_l__r_stack_a31fd424472fcf069ec2cbcb50ab34ed1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_t_l__r_stack_ad64450c2168e2551ed8fad637a8b9c99}\label{class_s_t_l__r_stack_ad64450c2168e2551ed8fad637a8b9c99}} 
+\index{STL\_rStack@{STL\_rStack}!poptop32@{poptop32}}
+\index{poptop32@{poptop32}!STL\_rStack@{STL\_rStack}}
+\doxysubsubsection{\texorpdfstring{poptop32()}{poptop32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} STL\+\_\+r\+Stack\+::poptop32 (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+弹出并且返回一个32位成员 
+
+\begin{DoxyReturn}{返回}
+弹出的成员值 
+\end{DoxyReturn}
+\begin{DoxyNote}{注解}
+该函数不会检查成功与否 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{_s_t_l___stack_8cpp_source}{STL\+\_\+\+Stack.\+cpp}} 第 \mbox{\hyperlink{_s_t_l___stack_8cpp_source_l00174}{174}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_s_t_l__r_stack_ad64450c2168e2551ed8fad637a8b9c99_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_t_l__r_stack_a153de2f05c0e0164ad68fb09130bf475}\label{class_s_t_l__r_stack_a153de2f05c0e0164ad68fb09130bf475}} 
+\index{STL\_rStack@{STL\_rStack}!push@{push}}
+\index{push@{push}!STL\_rStack@{STL\_rStack}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} STL\+\_\+r\+Stack\+::push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{var }\end{DoxyParamCaption})}
+
+
+
+压入一个成员 
+
+
+\begin{DoxyParams}{参数}
+{\em var} & 需要压入的数值 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+错误号 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{_s_t_l___stack_8cpp_source}{STL\+\_\+\+Stack.\+cpp}} 第 \mbox{\hyperlink{_s_t_l___stack_8cpp_source_l00056}{56}} 行定义.
+
+这是这个函数的调用关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_t_l__r_stack_a153de2f05c0e0164ad68fb09130bf475_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_t_l__r_stack_a8a72b28e3a7faa2aae9272d90032d5a5}\label{class_s_t_l__r_stack_a8a72b28e3a7faa2aae9272d90032d5a5}} 
+\index{STL\_rStack@{STL\_rStack}!push32@{push32}}
+\index{push32@{push32}!STL\_rStack@{STL\_rStack}}
+\doxysubsubsection{\texorpdfstring{push32()}{push32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} STL\+\_\+r\+Stack\+::push32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}}]{var }\end{DoxyParamCaption})}
+
+
+
+压入一个32位成员 
+
+
+\begin{DoxyParams}{参数}
+{\em var} & 需要压入的数值 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+错误号 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{_s_t_l___stack_8cpp_source}{STL\+\_\+\+Stack.\+cpp}} 第 \mbox{\hyperlink{_s_t_l___stack_8cpp_source_l00152}{152}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{class_s_t_l__r_stack_a8a72b28e3a7faa2aae9272d90032d5a5_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_s_t_l__r_stack_a8a72b28e3a7faa2aae9272d90032d5a5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_t_l__r_stack_a4287e70b3adaf5e2a3a941299a085b09}\label{class_s_t_l__r_stack_a4287e70b3adaf5e2a3a941299a085b09}} 
+\index{STL\_rStack@{STL\_rStack}!pushfun@{pushfun}}
+\index{pushfun@{pushfun}!STL\_rStack@{STL\_rStack}}
+\doxysubsubsection{\texorpdfstring{pushfun()}{pushfun()}}
+{\footnotesize\ttfamily void STL\+\_\+r\+Stack\+::pushfun (\begin{DoxyParamCaption}\item[{void($\ast$)(void)}]{fun }\end{DoxyParamCaption})}
+
+
+
+压入一个void($\ast$)void函数 
+
+\begin{DoxyNote}{注解}
+该函数不会检查成功与否 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{_s_t_l___stack_8cpp_source}{STL\+\_\+\+Stack.\+cpp}} 第 \mbox{\hyperlink{_s_t_l___stack_8cpp_source_l00194}{194}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_t_l__r_stack_a4287e70b3adaf5e2a3a941299a085b09_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_t_l__r_stack_a22c1e309f6476f31f1e5c313b01afd13}\label{class_s_t_l__r_stack_a22c1e309f6476f31f1e5c313b01afd13}} 
+\index{STL\_rStack@{STL\_rStack}!The\_room@{The\_room}}
+\index{The\_room@{The\_room}!STL\_rStack@{STL\_rStack}}
+\doxysubsubsection{\texorpdfstring{The\_room()}{The\_room()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} STL\+\_\+r\+Stack\+::\+The\+\_\+room (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+返回占用的内存数 
+
+\begin{DoxyReturn}{返回}
+内存数,u8类型 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{_s_t_l___stack_8cpp_source}{STL\+\_\+\+Stack.\+cpp}} 第 \mbox{\hyperlink{_s_t_l___stack_8cpp_source_l00118}{118}} 行定义.
+
+\mbox{\Hypertarget{class_s_t_l__r_stack_ac63cd564c04e4481925ead650dfb2edf}\label{class_s_t_l__r_stack_ac63cd564c04e4481925ead650dfb2edf}} 
+\index{STL\_rStack@{STL\_rStack}!The\_size@{The\_size}}
+\index{The\_size@{The\_size}!STL\_rStack@{STL\_rStack}}
+\doxysubsubsection{\texorpdfstring{The\_size()}{The\_size()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} STL\+\_\+r\+Stack\+::\+The\+\_\+size (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+返回成员数量 
+
+\begin{DoxyReturn}{返回}
+成员数量,为u8类型,如u32将占4个元素 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{_s_t_l___stack_8cpp_source}{STL\+\_\+\+Stack.\+cpp}} 第 \mbox{\hyperlink{_s_t_l___stack_8cpp_source_l00111}{111}} 行定义.
+
+\mbox{\Hypertarget{class_s_t_l__r_stack_a49d2ca43dafd695e4e0d92018736f732}\label{class_s_t_l__r_stack_a49d2ca43dafd695e4e0d92018736f732}} 
+\index{STL\_rStack@{STL\_rStack}!top@{top}}
+\index{top@{top}!STL\_rStack@{STL\_rStack}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} STL\+\_\+r\+Stack\+::top (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \&}]{var }\end{DoxyParamCaption})}
+
+
+
+显示最后压入的数值 
+
+
+\begin{DoxyParams}{参数}
+{\em \&var} & 最后压入数值的储存变量 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+错误号 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{_s_t_l___stack_8cpp_source}{STL\+\_\+\+Stack.\+cpp}} 第 \mbox{\hyperlink{_s_t_l___stack_8cpp_source_l00101}{101}} 行定义.
+
+这是这个函数的调用关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{class_s_t_l__r_stack_a49d2ca43dafd695e4e0d92018736f732_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{class_s_t_l__r_stack_a2ff878cef1cc42db3c31812e654c8674}\label{class_s_t_l__r_stack_a2ff878cef1cc42db3c31812e654c8674}} 
+\index{STL\_rStack@{STL\_rStack}!dat@{dat}}
+\index{dat@{dat}!STL\_rStack@{STL\_rStack}}
+\doxysubsubsection{\texorpdfstring{dat}{dat}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}$\ast$ STL\+\_\+r\+Stack\+::dat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{_s_t_l___stack_8h_source}{STL\+\_\+\+Stack.\+h}} 第 \mbox{\hyperlink{_s_t_l___stack_8h_source_l00082}{82}} 行定义.
+
+\mbox{\Hypertarget{class_s_t_l__r_stack_a4d702aae14e43421c0818dba3b8c99a1}\label{class_s_t_l__r_stack_a4d702aae14e43421c0818dba3b8c99a1}} 
+\index{STL\_rStack@{STL\_rStack}!poptopfun@{poptopfun}}
+\index{poptopfun@{poptopfun}!STL\_rStack@{STL\_rStack}}
+\doxysubsubsection{\texorpdfstring{poptopfun}{poptopfun}}
+{\footnotesize\ttfamily void($\ast$)(void) STL\+\_\+r\+Stack\+::poptopfun(void)}
+
+
+
+在文件 \mbox{\hyperlink{_s_t_l___stack_8h_source}{STL\+\_\+\+Stack.\+h}} 第 \mbox{\hyperlink{_s_t_l___stack_8h_source_l00078}{78}} 行定义.
+
+\mbox{\Hypertarget{class_s_t_l__r_stack_a857415d9ae151b6acd395760b2e9cedf}\label{class_s_t_l__r_stack_a857415d9ae151b6acd395760b2e9cedf}} 
+\index{STL\_rStack@{STL\_rStack}!room@{room}}
+\index{room@{room}!STL\_rStack@{STL\_rStack}}
+\doxysubsubsection{\texorpdfstring{room}{room}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} STL\+\_\+r\+Stack\+::room\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{_s_t_l___stack_8h_source}{STL\+\_\+\+Stack.\+h}} 第 \mbox{\hyperlink{_s_t_l___stack_8h_source_l00080}{80}} 行定义.
+
+\mbox{\Hypertarget{class_s_t_l__r_stack_adf95fc53b74c9955a648f3500ae1e746}\label{class_s_t_l__r_stack_adf95fc53b74c9955a648f3500ae1e746}} 
+\index{STL\_rStack@{STL\_rStack}!size@{size}}
+\index{size@{size}!STL\_rStack@{STL\_rStack}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} STL\+\_\+r\+Stack\+::size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{_s_t_l___stack_8h_source}{STL\+\_\+\+Stack.\+h}} 第 \mbox{\hyperlink{_s_t_l___stack_8h_source_l00081}{81}} 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/gitt/\+Microchip\+For32/\+STL\+\_\+\+Device/\mbox{\hyperlink{_s_t_l___stack_8h}{STL\+\_\+\+Stack.\+h}}\item 
+D\+:/gitt/\+Microchip\+For32/\+STL\+\_\+\+Device/\mbox{\hyperlink{_s_t_l___stack_8cpp}{STL\+\_\+\+Stack.\+cpp}}\end{DoxyCompactItemize}

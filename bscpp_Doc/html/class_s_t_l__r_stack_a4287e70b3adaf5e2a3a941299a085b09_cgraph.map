@@ -1,0 +1,5 @@
+<map id="STL_rStack::pushfun" name="STL_rStack::pushfun">
+<area shape="rect" id="node1" title="压入一个void(*)void函数" alt="" coords="5,5,148,31"/>
+<area shape="rect" id="node2" href="$class_s_t_l__r_stack.html#a8a72b28e3a7faa2aae9272d90032d5a5" title="压入一个32位成员" alt="" coords="196,5,336,31"/>
+<area shape="rect" id="node3" href="$class_s_t_l__r_stack.html#a153de2f05c0e0164ad68fb09130bf475" title="压入一个成员" alt="" coords="384,5,511,31"/>
+</map>

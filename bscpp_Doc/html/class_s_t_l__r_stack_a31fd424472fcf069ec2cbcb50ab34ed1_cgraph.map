@@ -1,0 +1,5 @@
+<map id="STL_rStack::poptop" name="STL_rStack::poptop">
+<area shape="rect" id="node1" title="弹出并且返回一个成员" alt="" coords="5,31,143,56"/>
+<area shape="rect" id="node2" href="$class_s_t_l__r_stack.html#a5c7016a370c7665d554dda4b8f7dee22" title="弹出一个成员" alt="" coords="191,5,309,31"/>
+<area shape="rect" id="node3" href="$class_s_t_l__r_stack.html#a49d2ca43dafd695e4e0d92018736f732" title="显示最后压入的数值" alt="" coords="192,55,308,80"/>
+</map>
