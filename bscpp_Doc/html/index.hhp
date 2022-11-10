@@ -39,6 +39,10 @@ bscpp___i_i_c___s_t_m32_8cpp.html
 bscpp___i_i_c___s_t_m32_8cpp_source.html
 bscpp___i_i_c___s_t_m32_8h.html
 bscpp___i_i_c___s_t_m32_8h_source.html
+bscpp___m_a_x6675_8cpp.html
+bscpp___m_a_x6675_8cpp_source.html
+bscpp___m_a_x6675_8h.html
+bscpp___m_a_x6675_8h_source.html
 bscpp___s_t_m32___o_l_e_d_8cpp.html
 bscpp___s_t_m32___o_l_e_d_8cpp_source.html
 bscpp___s_t_m32___o_l_e_d_8h.html
@@ -53,6 +57,8 @@ classbscpp___i_i_c-members.html
 classbscpp___i_i_c.html
 classbscpp___i_i_c___s_t_m32-members.html
 classbscpp___i_i_c___s_t_m32.html
+classbscpp___m_a_x6675-members.html
+classbscpp___m_a_x6675.html
 classbscpp___s_t_m32___a_t24_c00-members.html
 classbscpp___s_t_m32___a_t24_c00.html
 classbscpp___s_t_m32___o_l_e_d-members.html
@@ -204,6 +210,12 @@ bscpp___i_i_c___s_t_m32_8h__dep__incl.pdf
 bscpp___i_i_c___s_t_m32_8h__dep__incl.png
 bscpp___i_i_c___s_t_m32_8h__incl.pdf
 bscpp___i_i_c___s_t_m32_8h__incl.png
+bscpp___m_a_x6675_8cpp__incl.pdf
+bscpp___m_a_x6675_8cpp__incl.png
+bscpp___m_a_x6675_8h__dep__incl.pdf
+bscpp___m_a_x6675_8h__dep__incl.png
+bscpp___m_a_x6675_8h__incl.pdf
+bscpp___m_a_x6675_8h__incl.png
 bscpp___s_t_m32___o_l_e_d_8cpp__incl.pdf
 bscpp___s_t_m32___o_l_e_d_8cpp__incl.png
 bscpp___s_t_m32___o_l_e_d_8h__dep__incl.pdf
@@ -420,6 +432,7 @@ inherit_graph_10.png
 inherit_graph_11.png
 inherit_graph_12.png
 inherit_graph_13.png
+inherit_graph_14.png
 inherit_graph_2.png
 inherit_graph_3.png
 inherit_graph_4.png

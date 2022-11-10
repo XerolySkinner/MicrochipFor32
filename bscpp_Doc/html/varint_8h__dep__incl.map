@@ -1,24 +1,26 @@
 <map id="D:/gitt/MicrochipFor32/bscpp_Device/varint.h" name="D:/gitt/MicrochipFor32/bscpp_Device/varint.h">
-<area shape="rect" id="node1" title=" " alt="" coords="908,5,1058,45"/>
-<area shape="rect" id="node2" href="$_s_t_l___queue_8h.html" title="实现了STL库中的Queue" alt="" coords="34,101,212,141"/>
-<area shape="rect" id="node4" href="$vartable_8h.html" title="全局向量在此生成" alt="" coords="482,409,654,449"/>
-<area shape="rect" id="node8" href="$_s_t_l___stack_8h.html" title="实现了STL库中的Stack" alt="" coords="307,101,480,141"/>
-<area shape="rect" id="node10" href="$bscpp___a_t24_c00_8cpp.html" title="本类实现AT24C00的通讯" alt="" coords="1300,409,1530,449"/>
-<area shape="rect" id="node11" href="$bscpp___a_t24_c00_8h.html" title="本类实现AT24C00的通讯" alt="" coords="1118,306,1334,346"/>
-<area shape="rect" id="node12" href="$bscpp___i_i_c_8h.html" title="本类实现软件IIC功能 依此类派生出其他软件IIC功能" alt="" coords="728,101,907,141"/>
-<area shape="rect" id="node14" href="$bscpp___i_i_c___s_t_m32_8h.html" title="实现针对STM32的软件IIC类" alt="" coords="900,196,1066,251"/>
-<area shape="rect" id="node18" href="$bscpp___s_t_m32___o_l_e_d_8h.html" title=" " alt="" coords="606,299,800,353"/>
-<area shape="rect" id="node19" href="$inv__mpu_8c.html" title="An I2C&#45;based driver for Invensense gyroscopes." alt="" coords="1644,196,1853,251"/>
-<area shape="rect" id="node20" href="$inv__mpu_8h.html" title="An I2C&#45;based driver for Invensense gyroscopes." alt="" coords="1694,93,1904,148"/>
-<area shape="rect" id="node22" href="$mpu6050_8h.html" title=" " alt="" coords="1358,93,1568,148"/>
-<area shape="rect" id="node3" href="$_s_t_l___queue_8cpp.html" title="实现了STL库中的Queue" alt="" coords="28,203,218,243"/>
-<area shape="rect" id="node5" href="$_callback_8cpp.html" title="全局中断在此实现" alt="" coords="244,504,436,544"/>
-<area shape="rect" id="node6" href="$_main_system_8cpp.html" title="实现了一个C++库针对单片机开发" alt="" coords="461,504,676,544"/>
-<area shape="rect" id="node7" href="$vartable_8cpp.html" title="全局向量在此生成" alt="" coords="700,504,887,544"/>
-<area shape="rect" id="node9" href="$_s_t_l___stack_8cpp.html" title="实现了STL库中的Stack" alt="" coords="243,203,430,243"/>
-<area shape="rect" id="node13" href="$bscpp___i_i_c_8cpp.html" title="本类实现软件IIC功能 依此类派生出其他软件IIC功能" alt="" coords="683,203,875,243"/>
-<area shape="rect" id="node15" href="$bscpp___i_i_c___s_t_m32_8cpp.html" title="实现针对STM32的软件IIC类" alt="" coords="926,299,1093,353"/>
-<area shape="rect" id="node16" href="$mpu6050_8cpp.html" title=" " alt="" coords="1358,299,1568,353"/>
-<area shape="rect" id="node17" href="$bscpp___s_t_m32___o_l_e_d_8cpp.html" title=" " alt="" coords="736,401,929,456"/>
-<area shape="rect" id="node21" href="$inv__mpu__dmp__motion__driver_8c.html" title="DMP image and interface functions." alt="" coords="1877,196,2086,251"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1094,5,1245,45"/>
+<area shape="rect" id="node2" href="$_s_t_l___queue_8h.html" title="实现了STL库中的Queue" alt="" coords="72,101,249,141"/>
+<area shape="rect" id="node4" href="$vartable_8h.html" title="全局向量在此生成" alt="" coords="469,409,641,449"/>
+<area shape="rect" id="node8" href="$_s_t_l___stack_8h.html" title="实现了STL库中的Stack" alt="" coords="418,101,591,141"/>
+<area shape="rect" id="node10" href="$bscpp___a_t24_c00_8cpp.html" title="本类实现AT24C00的通讯" alt="" coords="1196,409,1426,449"/>
+<area shape="rect" id="node11" href="$bscpp___a_t24_c00_8h.html" title="本类实现AT24C00的通讯" alt="" coords="1104,306,1320,346"/>
+<area shape="rect" id="node12" href="$bscpp___i_i_c_8h.html" title="本类实现软件IIC功能 依此类派生出其他软件IIC功能" alt="" coords="727,101,906,141"/>
+<area shape="rect" id="node14" href="$bscpp___i_i_c___s_t_m32_8h.html" title="实现针对STM32的软件IIC类" alt="" coords="984,196,1150,251"/>
+<area shape="rect" id="node18" href="$bscpp___s_t_m32___o_l_e_d_8h.html" title=" " alt="" coords="593,299,786,353"/>
+<area shape="rect" id="node19" href="$bscpp___m_a_x6675_8h.html" title="实现了MAX6675的驱动" alt="" coords="1878,101,2096,141"/>
+<area shape="rect" id="node21" href="$inv__mpu_8c.html" title="An I2C&#45;based driver for Invensense gyroscopes." alt="" coords="1453,196,1662,251"/>
+<area shape="rect" id="node22" href="$inv__mpu_8h.html" title="An I2C&#45;based driver for Invensense gyroscopes." alt="" coords="1596,93,1805,148"/>
+<area shape="rect" id="node24" href="$mpu6050_8h.html" title=" " alt="" coords="1310,93,1520,148"/>
+<area shape="rect" id="node3" href="$_s_t_l___queue_8cpp.html" title="实现了STL库中的Queue" alt="" coords="65,203,256,243"/>
+<area shape="rect" id="node5" href="$_callback_8cpp.html" title="全局中断在此实现" alt="" coords="231,504,423,544"/>
+<area shape="rect" id="node6" href="$_main_system_8cpp.html" title="实现了一个C++库针对单片机开发" alt="" coords="448,504,662,544"/>
+<area shape="rect" id="node7" href="$vartable_8cpp.html" title="全局向量在此生成" alt="" coords="687,504,874,544"/>
+<area shape="rect" id="node9" href="$_s_t_l___stack_8cpp.html" title="实现了STL库中的Stack" alt="" coords="280,203,467,243"/>
+<area shape="rect" id="node13" href="$bscpp___i_i_c_8cpp.html" title="本类实现软件IIC功能 依此类派生出其他软件IIC功能" alt="" coords="716,203,908,243"/>
+<area shape="rect" id="node15" href="$bscpp___i_i_c___s_t_m32_8cpp.html" title="实现针对STM32的软件IIC类" alt="" coords="862,299,1029,353"/>
+<area shape="rect" id="node16" href="$mpu6050_8cpp.html" title=" " alt="" coords="1345,299,1554,353"/>
+<area shape="rect" id="node17" href="$bscpp___s_t_m32___o_l_e_d_8cpp.html" title=" " alt="" coords="872,401,1065,456"/>
+<area shape="rect" id="node20" href="$bscpp___m_a_x6675_8cpp.html" title="实现了MAX6675的驱动" alt="" coords="1920,203,2152,243"/>
+<area shape="rect" id="node23" href="$inv__mpu__dmp__motion__driver_8c.html" title="DMP image and interface functions." alt="" coords="1686,196,1896,251"/>
 </map>
