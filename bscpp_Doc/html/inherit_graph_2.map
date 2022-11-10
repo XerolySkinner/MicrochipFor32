@@ -1,3 +1,6 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$classbscpp___m_a_x6675.html" title="MAX6675的一个对象类" alt="" coords="5,5,124,31"/>
+<area shape="rect" id="node1" href="$classbscpp___i_i_c.html" title="IIC的基础实现方法 留下三个保护性接口需要实现,分别是控制时钟,控制数据,延时函数" alt="" coords="5,31,84,56"/>
+<area shape="rect" id="node2" href="$classbscpp___i_i_c___s_t_m32.html" title="STM32版本的软件IIC 需要使用构造函数初始化" alt="" coords="132,31,259,56"/>
+<area shape="rect" id="node3" href="$classbscpp___s_t_m32___a_t24_c00.html" title="一个AT24设备,基于STM32的IIC总线" alt="" coords="307,5,472,31"/>
+<area shape="rect" id="node4" href="$classbscpp___s_t_m32___o_l_e_d.html" title="一个OLED设备,基于STM32使用IIC总线" alt="" coords="316,55,463,80"/>
 </map>

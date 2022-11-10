@@ -194,3 +194,161 @@ void(*STL_rQueue::poptopfun(void))(void) {
 void STL_rQueue::pushfun(void(*fun)(void)) {
 	push32((u32)fun);}
 //////////////////////////////////////////////////////////////////////////////////////////////////////
+//----------------------------------------------------------------------------------------------------
+//	构造函数
+STL_lQueue::STL_lQueue(void) {
+	STL_lQueue::Hdat = NULL;
+	STL_lQueue::Tdat = NULL;
+	STL_lQueue::mem = 0;
+	}
+STL_lQueue::~STL_lQueue(void) {
+	if (mem)pop();}
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//----------------------------------------------------------------------------------------------------
+//	成员函数
+/**
+ * @brief			压入一个成员
+ * @param	*&var 	需要压入的数值的地址
+ * @param	size 	需要压入的数值的长度
+ * @return			错误号
+ */
+u8 STL_lQueue::push(void*& var, u32 size) {
+	_lQueue* newdat = (_lQueue*)malloc(sizeof(_lQueue));
+	if (newdat == NULL)return QUEUES_MALL_ERROR;
+	newdat->dat = var;
+	newdat->size = size;
+	newdat->back = NULL;
+	if (mem == 0) {
+		Hdat = newdat;
+		Tdat = newdat;}
+	else {
+		Hdat->back = newdat;
+		Hdat = newdat;}
+	++mem;
+	return QUEUES_OK;}
+//----------------------------------------------------------------------------------------------------
+/**
+ * @brief			弹出一个成员
+ * @return			错误号
+ * @note			无论push进去的是32位还是8位数,都用这个弹出
+ */
+u8 STL_lQueue::pop(void) {
+	if (mem == 0) return QUEUES_EMPTY;
+	_lQueue* savedat = Tdat;			//	保存尾部
+	if (mem == 1) {
+		Tdat = NULL;
+		Hdat = NULL;}
+	else if(mem>1) {
+		Tdat = Tdat->back;}
+	free(savedat->dat);
+	free(savedat);
+	--mem;
+	return QUEUES_OK;}
+//----------------------------------------------------------------------------------------------------
+/**
+ * @brief			显示队列顶部成员
+ * @param	*&var 	需要赋予的数值的地址
+ * @param	&size 	需要赋予的数值的长度
+ * @return			错误号
+ */
+u8 STL_lQueue::top(void*& var, u32& size) {
+	if (mem == 0) return QUEUES_EMPTY;
+	var = Tdat->dat;
+	size = Tdat->size;
+	return QUEUES_OK;}
+//----------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------
+/**
+ * @brief			压入一个8位成员
+ * @param	var 	需要压入的8位数据
+ * @return			错误号
+ */
+u8 STL_lQueue::push8(u8 var) {
+	void* num = (u8*)malloc(sizeof(u8));
+	if (num == NULL)return QUEUES_MALL_ERROR;
+	*(u8*)num = var;
+	push(num, sizeof(u8));
+	return QUEUES_OK;}
+//----------------------------------------------------------------------------------------------------
+/**
+ * @brief			显示队列顶成员
+ * @param	&var 	结果赋予给该变量
+ * @return			错误号
+ */
+u8 STL_lQueue::top8(u8& var) {
+	void* vars = NULL;
+	u32 sizes = 0;
+	if (top(vars, sizes) == QUEUES_EMPTY)
+		return QUEUES_EMPTY;
+	var = *((u8*)vars);
+	return QUEUES_OK;}
+//----------------------------------------------------------------------------------------------------
+/**
+ * @brief			显示并且弹出一个队列顶成员
+ * @return			返回弹出的数值
+ */
+u8 STL_lQueue::poptop8(void) {
+	u8 temp = 0;
+	top8(temp);
+	pop();
+	return temp;}
+//----------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------
+/**
+ * @brief			压入一个32位成员
+ * @param	var 	需要压入的32位数据
+ * @return			错误号
+ */
+u8 STL_lQueue::push32(u32 var) {
+	void* num = (u32*)malloc(sizeof(u32));
+	if (num == NULL)return QUEUES_MALL_ERROR;
+	*(u32*)num = var;
+	push(num, sizeof(u32));
+	return QUEUES_OK;}
+//----------------------------------------------------------------------------------------------------
+/**
+ * @brief			显示队列顶成员
+ * @param	&var 	结果赋予给该变量
+ * @return			错误号
+ */
+u8 STL_lQueue::top32(u32& var) {
+	void* vars = NULL;
+	u32 sizes = 0;
+	if (top(vars, sizes) == QUEUES_EMPTY)
+		return QUEUES_EMPTY;
+	var = *((u32*)vars);
+	return QUEUES_OK;}
+//----------------------------------------------------------------------------------------------------
+/**
+ * @brief			显示并且弹出一个队列顶成员
+ * @return			返回弹出的数值
+ */
+u32 STL_lQueue::poptop32(void) {
+	u32 temp = 0;
+	top32(temp);
+	pop();
+	return temp;}
+//----------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------
+/**
+ * @brief			压入一个void(*)(void)函数指针
+ * @param	*fun 	需要压入的函数
+ * @return			错误号
+ * @note			如果有个函数是
+ *					void fun(void);
+ *					可以通过pushfun(fun);将其压入
+ */
+u8 STL_lQueue::pushfun(void(*fun)(void)) {
+	u8 res;
+	res = push32((u32)fun);
+	return res;}
+//----------------------------------------------------------------------------------------------------
+/**
+ * @brief			弹出一个void(*)(void)函数指针
+ * @return			函数的指针
+ * @note			可以通过poptopfun();弹出一个函数指针
+ *					如果确定指针非空,可以通过poptopfun()();直接弹出并执行该函数
+ */
+void(*STL_lQueue::poptopfun(void))(void) {
+	return (void(*)(void))poptop32();}
+//////////////////////////////////////////////////////////////////////////////////////////////////////
