@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="structmotion__int__cache__s" kind="struct" language="C++" prot="public">
+    <compoundname>motion_int_cache_s</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1gae9614e4c92be9fc08f2aec7f34853fbc" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short motion_int_cache_s::gyro_fsr</definition>
+        <argsstring></argsstring>
+        <name>gyro_fsr</name>
+        <qualifiedname>motion_int_cache_s::gyro_fsr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="222" column="20" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="222" bodyend="-1"/>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga7d0b3259346898ccd1ba6ef78bf7df97" compoundref="inv__mpu_8c" startline="2642" endline="2848">mpu_lp_motion_interrupt</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1gacfb901facda5ef8a02d47726db98e58e" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char motion_int_cache_s::accel_fsr</definition>
+        <argsstring></argsstring>
+        <name>accel_fsr</name>
+        <qualifiedname>motion_int_cache_s::accel_fsr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="223" column="19" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="223" bodyend="-1"/>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga7d0b3259346898ccd1ba6ef78bf7df97" compoundref="inv__mpu_8c" startline="2642" endline="2848">mpu_lp_motion_interrupt</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1gac1a1eb41631eb71481d6d247d9c67d4a" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short motion_int_cache_s::lpf</definition>
+        <argsstring></argsstring>
+        <name>lpf</name>
+        <qualifiedname>motion_int_cache_s::lpf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="224" column="20" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="224" bodyend="-1"/>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga7d0b3259346898ccd1ba6ef78bf7df97" compoundref="inv__mpu_8c" startline="2642" endline="2848">mpu_lp_motion_interrupt</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1ga1cf6b7edfe37a51209897ccc448ec0e6" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short motion_int_cache_s::sample_rate</definition>
+        <argsstring></argsstring>
+        <name>sample_rate</name>
+        <qualifiedname>motion_int_cache_s::sample_rate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="225" column="20" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="225" bodyend="-1"/>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga7d0b3259346898ccd1ba6ef78bf7df97" compoundref="inv__mpu_8c" startline="2642" endline="2848">mpu_lp_motion_interrupt</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1gae5416a4097b0cf39460df70094bc474d" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char motion_int_cache_s::sensors_on</definition>
+        <argsstring></argsstring>
+        <name>sensors_on</name>
+        <qualifiedname>motion_int_cache_s::sensors_on</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="226" column="19" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="226" bodyend="-1"/>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga7d0b3259346898ccd1ba6ef78bf7df97" compoundref="inv__mpu_8c" startline="2642" endline="2848">mpu_lp_motion_interrupt</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1ga41501694a84bdf70e9c660852b653273" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char motion_int_cache_s::fifo_sensors</definition>
+        <argsstring></argsstring>
+        <name>fifo_sensors</name>
+        <qualifiedname>motion_int_cache_s::fifo_sensors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="227" column="19" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="227" bodyend="-1"/>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga7d0b3259346898ccd1ba6ef78bf7df97" compoundref="inv__mpu_8c" startline="2642" endline="2848">mpu_lp_motion_interrupt</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1ga6461e400e336d2ccbc8c7d95ace9461d" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char motion_int_cache_s::dmp_on</definition>
+        <argsstring></argsstring>
+        <name>dmp_on</name>
+        <qualifiedname>motion_int_cache_s::dmp_on</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="228" column="19" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="228" bodyend="-1"/>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga7d0b3259346898ccd1ba6ef78bf7df97" compoundref="inv__mpu_8c" startline="2642" endline="2848">mpu_lp_motion_interrupt</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="221" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="221" bodyend="229"/>
+    <listofallmembers>
+      <member refid="group___d_r_i_v_e_r_s_1gacfb901facda5ef8a02d47726db98e58e" prot="public" virt="non-virtual"><scope>motion_int_cache_s</scope><name>accel_fsr</name></member>
+      <member refid="group___d_r_i_v_e_r_s_1ga6461e400e336d2ccbc8c7d95ace9461d" prot="public" virt="non-virtual"><scope>motion_int_cache_s</scope><name>dmp_on</name></member>
+      <member refid="group___d_r_i_v_e_r_s_1ga41501694a84bdf70e9c660852b653273" prot="public" virt="non-virtual"><scope>motion_int_cache_s</scope><name>fifo_sensors</name></member>
+      <member refid="group___d_r_i_v_e_r_s_1gae9614e4c92be9fc08f2aec7f34853fbc" prot="public" virt="non-virtual"><scope>motion_int_cache_s</scope><name>gyro_fsr</name></member>
+      <member refid="group___d_r_i_v_e_r_s_1gac1a1eb41631eb71481d6d247d9c67d4a" prot="public" virt="non-virtual"><scope>motion_int_cache_s</scope><name>lpf</name></member>
+      <member refid="group___d_r_i_v_e_r_s_1ga1cf6b7edfe37a51209897ccc448ec0e6" prot="public" virt="non-virtual"><scope>motion_int_cache_s</scope><name>sample_rate</name></member>
+      <member refid="group___d_r_i_v_e_r_s_1gae5416a4097b0cf39460df70094bc474d" prot="public" virt="non-virtual"><scope>motion_int_cache_s</scope><name>sensors_on</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,5 @@
+<map id="bsp_ModBus_Tx::WriteCoilsVar" name="bsp_ModBus_Tx::WriteCoilsVar">
+<area shape="rect" id="node1" title="发送写多个线圈的指令" alt="" coords="5,31,212,56"/>
+<area shape="rect" id="node2" href="$bsp___c_r_c_8cpp.html#abb1fda5ed561362d12fe987758986919" title=" " alt="" coords="285,5,412,31"/>
+<area shape="rect" id="node3" href="$classbsp___mod_bus___tx.html#ac017f6145ba6f87c69a16510f868dcc2" title=" " alt="" coords="260,55,437,80"/>
+</map>

@@ -1,0 +1,72 @@
+\hypertarget{bsp___a_t24_c00_8cpp_source}{}\doxysection{bsp\+\_\+\+AT24\+C00.\+cpp}
+\label{bsp___a_t24_c00_8cpp_source}\index{D:/gitt/MicrochipFor32/bsp\_Device/bsp\_AT24C00.cpp@{D:/gitt/MicrochipFor32/bsp\_Device/bsp\_AT24C00.cpp}}
+\mbox{\hyperlink{bsp___a_t24_c00_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00001}00001 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00002}00002 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00003}00003 \textcolor{comment}{ \#  Copyright (c) 2022 Yuankang Liang(XerolySkinner)}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00004}00004 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00005}00005 \textcolor{comment}{ \#  本软件按原样提供,无任何明示或暗示}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00006}00006 \textcolor{comment}{ \#  在任何情况下,作者都不承担任何损害赔偿责任}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00007}00007 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00008}00008 \textcolor{comment}{ \#  使用的许可声明:}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00009}00009 \textcolor{comment}{ \#  1.  不得歪曲本软件的来源,你不能声称你编写了原始软件.}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00010}00010 \textcolor{comment}{ \#  2.  免费授予以任何目的,前提是版权声明出现在所有副本中.}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00011}00011 \textcolor{comment}{ \#      并且版权声明和许可声明同时出现.}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00012}00012 \textcolor{comment}{ \#  3.  你有使用,复制,修改,分发,和销售本软件的许可.}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00013}00013 \textcolor{comment}{ \#  4.  如果你在产品中使用,产品文档中的声明是赞赏的但不是必须的.}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00014}00014 \textcolor{comment}{ \#  5.  本通知不得从任何来源删除或更改.}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00015}00015 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00016}00016 \textcolor{comment}{ \#  Yuankang Liang(XerolySkinner)}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00017}00017 \textcolor{comment}{ \#      E-\/mail:zabbcccbbaz@163.com}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00018}00018 \textcolor{comment}{ \#      QQ:2715099320}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00019}00019 \textcolor{comment}{ \#      Mobile Phone:13005636215}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00020}00020 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00021}00021 \textcolor{comment}{ \#  All rights reserved.}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00022}00022 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00035}00035 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00036}00036 \textcolor{comment}{//  头文件}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00037}00037 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{varint_8h}{varint.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00038}00038 \textcolor{preprocessor}{\#include "{}main.h"{}}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00039}00039 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{bsp___a_t24_c00_8h}{bsp\_AT24C00.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00041}00041 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00042}00042 \textcolor{comment}{//  程序}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00043}00043 \textcolor{comment}{//  }}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00047}\mbox{\hyperlink{classbsp___s_t_m32___a_t24_c00_a7ba3cbef5e2eea37f514948f12f2119d}{00047}} \textcolor{comment}{}\textcolor{keywordtype}{void} \mbox{\hyperlink{classbsp___s_t_m32___a_t24_c00_a7ba3cbef5e2eea37f514948f12f2119d}{bsp\_STM32\_AT24C00::IIC\_Delay}}(\textcolor{keywordtype}{void})\{}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00048}00048     HAL\_Delay(5);\}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00049}00049 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00055}\mbox{\hyperlink{classbsp___s_t_m32___a_t24_c00_a43f5fb06621d92865d9289d996b3211a}{00055}} \textcolor{comment}{}\textcolor{keywordtype}{void} \mbox{\hyperlink{classbsp___s_t_m32___a_t24_c00_a43f5fb06621d92865d9289d996b3211a}{bsp\_STM32\_AT24C00::WriteOneByte}}(\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} addr,\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} dat)\{}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00056}00056     \mbox{\hyperlink{classbsp___i_i_c_a9f4cdf777e69f407b155ffdba5b9e7c8}{IIC\_WriteOneByte}}(\mbox{\hyperlink{classbsp___s_t_m32___a_t24_c00_a7b81cd0d8fea1bb0ce4e4b0143612bde}{Address}},addr,dat);\}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00057}00057 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00063}\mbox{\hyperlink{classbsp___s_t_m32___a_t24_c00_a950e3a80ff49c538294bfedf8e893ff7}{00063}} \textcolor{comment}{}\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{classbsp___s_t_m32___a_t24_c00_a950e3a80ff49c538294bfedf8e893ff7}{bsp\_STM32\_AT24C00::ReadOneByte}}(\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} addr)\{}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00064}00064     \textcolor{keywordflow}{return} \mbox{\hyperlink{classbsp___i_i_c_a9effd40b26cbf6f321d0f0db3e2f09c3}{IIC\_ReadOneByte}}(\mbox{\hyperlink{classbsp___s_t_m32___a_t24_c00_a7b81cd0d8fea1bb0ce4e4b0143612bde}{Address}},addr);\}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00065}00065 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00072}\mbox{\hyperlink{classbsp___s_t_m32___a_t24_c00_a2c0bcf4f2ffd4ef242c8d4423dca1ad0}{00072}} \textcolor{comment}{}\textcolor{keywordtype}{void} \mbox{\hyperlink{classbsp___s_t_m32___a_t24_c00_a2c0bcf4f2ffd4ef242c8d4423dca1ad0}{bsp\_STM32\_AT24C00::WriteByte}}(\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} addr,\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} *dat,\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} len)\{}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00073}00073     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} member=0;}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00074}00074     \mbox{\hyperlink{classbsp___i_i_c_a97ad38a37ad0140987ba79d878f0d9e9}{IIC\_Start}}();}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00075}00075     \mbox{\hyperlink{classbsp___i_i_c_ae2e78aae0c89a4d6063d8ba60752acd5}{IIC\_SendByte}}(\mbox{\hyperlink{classbsp___s_t_m32___a_t24_c00_a7b81cd0d8fea1bb0ce4e4b0143612bde}{Address}}<<1);}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00076}00076     \mbox{\hyperlink{classbsp___i_i_c_a3f14f230b5876c529380d4f51a9c9c12}{IIC\_WaitAck}}();}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00077}00077     \mbox{\hyperlink{classbsp___i_i_c_ae2e78aae0c89a4d6063d8ba60752acd5}{IIC\_SendByte}}(addr);}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00078}00078     \mbox{\hyperlink{classbsp___i_i_c_a3f14f230b5876c529380d4f51a9c9c12}{IIC\_WaitAck}}();}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00079}00079     \textcolor{keywordflow}{do}\{}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00080}00080         \mbox{\hyperlink{classbsp___i_i_c_ae2e78aae0c89a4d6063d8ba60752acd5}{IIC\_SendByte}}(dat[member]);}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00081}00081         \mbox{\hyperlink{classbsp___i_i_c_a3f14f230b5876c529380d4f51a9c9c12}{IIC\_WaitAck}}();}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00082}00082         member++;}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00083}00083         \textcolor{keywordflow}{if}(((member+addr)\%\mbox{\hyperlink{classbsp___s_t_m32___a_t24_c00_a5c1a52c22b16f15bf07358a4b181e2ff}{Page}})==0)\{}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00084}00084             \mbox{\hyperlink{classbsp___i_i_c_ae513e1a05cbbae2a6f37e6cbb3bb63e2}{IIC\_Stop}}();}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00085}00085             \mbox{\hyperlink{classbsp___s_t_m32___a_t24_c00_a7ba3cbef5e2eea37f514948f12f2119d}{IIC\_Delay}}();}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00086}00086             \mbox{\hyperlink{classbsp___i_i_c_a97ad38a37ad0140987ba79d878f0d9e9}{IIC\_Start}}();}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00087}00087             \mbox{\hyperlink{classbsp___i_i_c_ae2e78aae0c89a4d6063d8ba60752acd5}{IIC\_SendByte}}(\mbox{\hyperlink{classbsp___s_t_m32___a_t24_c00_a7b81cd0d8fea1bb0ce4e4b0143612bde}{Address}}<<1);}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00088}00088             \mbox{\hyperlink{classbsp___i_i_c_a3f14f230b5876c529380d4f51a9c9c12}{IIC\_WaitAck}}();}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00089}00089             \mbox{\hyperlink{classbsp___i_i_c_ae2e78aae0c89a4d6063d8ba60752acd5}{IIC\_SendByte}}(addr+member);}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00090}00090             \mbox{\hyperlink{classbsp___i_i_c_a3f14f230b5876c529380d4f51a9c9c12}{IIC\_WaitAck}}();\}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00091}00091         \}\textcolor{keywordflow}{while}(member!=len);}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00092}00092     \mbox{\hyperlink{classbsp___i_i_c_ae513e1a05cbbae2a6f37e6cbb3bb63e2}{IIC\_Stop}}();}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00093}00093     \mbox{\hyperlink{classbsp___s_t_m32___a_t24_c00_a7ba3cbef5e2eea37f514948f12f2119d}{IIC\_Delay}}();\}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00094}00094 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00101}\mbox{\hyperlink{classbsp___s_t_m32___a_t24_c00_ad5b68ee911f6e46ab877049eaadc5b1c}{00101}} \textcolor{comment}{}\textcolor{keywordtype}{void} \mbox{\hyperlink{classbsp___s_t_m32___a_t24_c00_ad5b68ee911f6e46ab877049eaadc5b1c}{bsp\_STM32\_AT24C00::AT\_ReadByte}}(\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} addr,\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} *dat,\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} len)\{}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00102}00102     \mbox{\hyperlink{classbsp___i_i_c_aae8c08f59f3fce9dce27f9f04beda683}{IIC\_Read}}(\mbox{\hyperlink{classbsp___s_t_m32___a_t24_c00_a7b81cd0d8fea1bb0ce4e4b0143612bde}{Address}},addr,dat,len);\}}
+\DoxyCodeLine{\Hypertarget{bsp___a_t24_c00_8cpp_source_l00104}00104 }
+
+\end{DoxyCode}

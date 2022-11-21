@@ -1,0 +1,263 @@
+.TH "D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" 3 "2022年 十一月 22日 星期二" "Version 1.0.0" "Bscpp" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h \- DMP image and interface functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "宏定义"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTAP_X\fP   (0x01)"
+.br
+.ti -1c
+.RI "#define \fBTAP_Y\fP   (0x02)"
+.br
+.ti -1c
+.RI "#define \fBTAP_Z\fP   (0x04)"
+.br
+.ti -1c
+.RI "#define \fBTAP_XYZ\fP   (0x07)"
+.br
+.ti -1c
+.RI "#define \fBTAP_X_UP\fP   (0x01)"
+.br
+.ti -1c
+.RI "#define \fBTAP_X_DOWN\fP   (0x02)"
+.br
+.ti -1c
+.RI "#define \fBTAP_Y_UP\fP   (0x03)"
+.br
+.ti -1c
+.RI "#define \fBTAP_Y_DOWN\fP   (0x04)"
+.br
+.ti -1c
+.RI "#define \fBTAP_Z_UP\fP   (0x05)"
+.br
+.ti -1c
+.RI "#define \fBTAP_Z_DOWN\fP   (0x06)"
+.br
+.ti -1c
+.RI "#define \fBANDROID_ORIENT_PORTRAIT\fP   (0x00)"
+.br
+.ti -1c
+.RI "#define \fBANDROID_ORIENT_LANDSCAPE\fP   (0x01)"
+.br
+.ti -1c
+.RI "#define \fBANDROID_ORIENT_REVERSE_PORTRAIT\fP   (0x02)"
+.br
+.ti -1c
+.RI "#define \fBANDROID_ORIENT_REVERSE_LANDSCAPE\fP   (0x03)"
+.br
+.ti -1c
+.RI "#define \fBDMP_INT_GESTURE\fP   (0x01)"
+.br
+.ti -1c
+.RI "#define \fBDMP_INT_CONTINUOUS\fP   (0x02)"
+.br
+.ti -1c
+.RI "#define \fBDMP_FEATURE_TAP\fP   (0x001)"
+.br
+.ti -1c
+.RI "#define \fBDMP_FEATURE_ANDROID_ORIENT\fP   (0x002)"
+.br
+.ti -1c
+.RI "#define \fBDMP_FEATURE_LP_QUAT\fP   (0x004)"
+.br
+.ti -1c
+.RI "#define \fBDMP_FEATURE_PEDOMETER\fP   (0x008)"
+.br
+.ti -1c
+.RI "#define \fBDMP_FEATURE_6X_LP_QUAT\fP   (0x010)"
+.br
+.ti -1c
+.RI "#define \fBDMP_FEATURE_GYRO_CAL\fP   (0x020)"
+.br
+.ti -1c
+.RI "#define \fBDMP_FEATURE_SEND_RAW_ACCEL\fP   (0x040)"
+.br
+.ti -1c
+.RI "#define \fBDMP_FEATURE_SEND_RAW_GYRO\fP   (0x080)"
+.br
+.ti -1c
+.RI "#define \fBDMP_FEATURE_SEND_CAL_GYRO\fP   (0x100)"
+.br
+.ti -1c
+.RI "#define \fBINV_WXYZ_QUAT\fP   (0x100)"
+.br
+.in -1c
+.SS "函数"
+
+.in +1c
+.ti -1c
+.RI "int \fBdmp_load_motion_driver_firmware\fP (void)"
+.br
+.RI "Load the DMP with this image\&. "
+.ti -1c
+.RI "int \fBdmp_set_fifo_rate\fP (unsigned short rate)"
+.br
+.RI "Set DMP output rate\&. Only used when DMP is on\&. "
+.ti -1c
+.RI "int \fBdmp_get_fifo_rate\fP (unsigned short *rate)"
+.br
+.RI "Get DMP output rate\&. "
+.ti -1c
+.RI "int \fBdmp_enable_feature\fP (unsigned short mask)"
+.br
+.RI "Enable DMP features\&. The following #define's are used in the input mask: 
+.br
+ DMP_FEATURE_TAP 
+.br
+ DMP_FEATURE_ANDROID_ORIENT 
+.br
+ DMP_FEATURE_LP_QUAT 
+.br
+ DMP_FEATURE_6X_LP_QUAT 
+.br
+ DMP_FEATURE_GYRO_CAL 
+.br
+ DMP_FEATURE_SEND_RAW_ACCEL 
+.br
+ DMP_FEATURE_SEND_RAW_GYRO 
+.br
+ NOTE: DMP_FEATURE_LP_QUAT and DMP_FEATURE_6X_LP_QUAT are mutually exclusive\&. 
+.br
+ NOTE: DMP_FEATURE_SEND_RAW_GYRO and DMP_FEATURE_SEND_CAL_GYRO are also mutually exclusive\&. "
+.ti -1c
+.RI "int \fBdmp_get_enabled_features\fP (unsigned short *mask)"
+.br
+.RI "Get list of currently enabled DMP features\&. "
+.ti -1c
+.RI "int \fBdmp_set_interrupt_mode\fP (unsigned char mode)"
+.br
+.RI "Specify when a DMP interrupt should occur\&. A DMP interrupt can be configured to trigger on either of the two conditions below: 
+.br
+ a\&. One FIFO period has elapsed (set by \fImpu_set_sample_rate\fP)\&. 
+.br
+ b\&. A tap event has been detected\&. "
+.ti -1c
+.RI "int \fBdmp_set_orientation\fP (unsigned short orient)"
+.br
+.RI "Push gyro and accel orientation to the DMP\&. The orientation is represented here as the output of \fIinv_orientation_matrix_to_scalar\fP\&. "
+.ti -1c
+.RI "int \fBdmp_set_gyro_bias\fP (long *bias)"
+.br
+.RI "Push gyro biases to the DMP\&. Because the gyro integration is handled in the DMP, any gyro biases calculated by the MPL should be pushed down to DMP memory to remove 3-axis quaternion drift\&. 
+.br
+ NOTE: If the DMP-based gyro calibration is enabled, the DMP will overwrite the biases written to this location once a new one is computed\&. "
+.ti -1c
+.RI "int \fBdmp_set_accel_bias\fP (long *bias)"
+.br
+.RI "Push accel biases to the DMP\&. These biases will be removed from the DMP 6-axis quaternion\&. "
+.ti -1c
+.RI "int \fBdmp_register_tap_cb\fP (void(*func)(unsigned char, unsigned char))"
+.br
+.RI "Register a function to be executed on a tap event\&. The tap direction is represented by one of the following: 
+.br
+ TAP_X_UP 
+.br
+ TAP_X_DOWN 
+.br
+ TAP_Y_UP 
+.br
+ TAP_Y_DOWN 
+.br
+ TAP_Z_UP 
+.br
+ TAP_Z_DOWN "
+.ti -1c
+.RI "int \fBdmp_set_tap_thresh\fP (unsigned char axis, unsigned short thresh)"
+.br
+.RI "Set tap threshold for a specific axis\&. "
+.ti -1c
+.RI "int \fBdmp_set_tap_axes\fP (unsigned char axis)"
+.br
+.RI "Set which axes will register a tap\&. "
+.ti -1c
+.RI "int \fBdmp_set_tap_count\fP (unsigned char min_taps)"
+.br
+.RI "Set minimum number of taps needed for an interrupt\&. "
+.ti -1c
+.RI "int \fBdmp_set_tap_time\fP (unsigned short time)"
+.br
+.RI "Set length between valid taps\&. "
+.ti -1c
+.RI "int \fBdmp_set_tap_time_multi\fP (unsigned short time)"
+.br
+.RI "Set max time between taps to register as a multi-tap\&. "
+.ti -1c
+.RI "int \fBdmp_set_shake_reject_thresh\fP (long sf, unsigned short thresh)"
+.br
+.RI "Set shake rejection threshold\&. If the DMP detects a gyro sample larger than \fIthresh\fP, taps are rejected\&. "
+.ti -1c
+.RI "int \fBdmp_set_shake_reject_time\fP (unsigned short time)"
+.br
+.RI "Set shake rejection time\&. Sets the length of time that the gyro must be outside of the threshold set by \fIgyro_set_shake_reject_thresh\fP before taps are rejected\&. A mandatory 60 ms is added to this parameter\&. "
+.ti -1c
+.RI "int \fBdmp_set_shake_reject_timeout\fP (unsigned short time)"
+.br
+.RI "Set shake rejection timeout\&. Sets the length of time after a shake rejection that the gyro must stay inside of the threshold before taps can be detected again\&. A mandatory 60 ms is added to this parameter\&. "
+.ti -1c
+.RI "int \fBdmp_register_android_orient_cb\fP (void(*func)(unsigned char))"
+.br
+.RI "Register a function to be executed on a android orientation event\&. "
+.ti -1c
+.RI "int \fBdmp_enable_lp_quat\fP (unsigned char enable)"
+.br
+.RI "Generate 3-axis quaternions from the DMP\&. In this driver, the 3-axis and 6-axis DMP quaternion features are mutually exclusive\&. "
+.ti -1c
+.RI "int \fBdmp_enable_6x_lp_quat\fP (unsigned char enable)"
+.br
+.RI "Generate 6-axis quaternions from the DMP\&. In this driver, the 3-axis and 6-axis DMP quaternion features are mutually exclusive\&. "
+.ti -1c
+.RI "int \fBdmp_get_pedometer_step_count\fP (unsigned long *count)"
+.br
+.RI "Get current step count\&. "
+.ti -1c
+.RI "int \fBdmp_set_pedometer_step_count\fP (unsigned long count)"
+.br
+.RI "Overwrite current step count\&. WARNING: This function writes to DMP memory and could potentially encounter a race condition if called while the pedometer is enabled\&. "
+.ti -1c
+.RI "int \fBdmp_get_pedometer_walk_time\fP (unsigned long *time)"
+.br
+.RI "Get duration of walking time\&. "
+.ti -1c
+.RI "int \fBdmp_set_pedometer_walk_time\fP (unsigned long time)"
+.br
+.RI "Overwrite current walk time\&. WARNING: This function writes to DMP memory and could potentially encounter a race condition if called while the pedometer is enabled\&. "
+.ti -1c
+.RI "int \fBdmp_enable_gyro_cal\fP (unsigned char enable)"
+.br
+.RI "Calibrate the gyro data in the DMP\&. After eight seconds of no motion, the DMP will compute gyro biases and subtract them from the quaternion output\&. If \fIdmp_enable_feature\fP is called with \fIDMP_FEATURE_SEND_CAL_GYRO\fP, the biases will also be subtracted from the gyro output\&. "
+.ti -1c
+.RI "int \fBdmp_read_fifo\fP (short *gyro, short *accel, long *quat, unsigned long *timestamp, short *sensors, unsigned char *more)"
+.br
+.RI "Get one packet from the FIFO\&. If \fIsensors\fP does not contain a particular sensor, disregard the data returned to that pointer\&. 
+.br
+ \fIsensors\fP can contain a combination of the following flags: 
+.br
+ INV_X_GYRO, INV_Y_GYRO, INV_Z_GYRO 
+.br
+ INV_XYZ_GYRO 
+.br
+ INV_XYZ_ACCEL 
+.br
+ INV_WXYZ_QUAT 
+.br
+ If the FIFO has no new data, \fIsensors\fP will be zero\&. 
+.br
+ If the FIFO is disabled, \fIsensors\fP will be zero and this function will return a non-zero error code\&. "
+.in -1c
+.SH "详细描述"
+.PP 
+DMP image and interface functions\&. 
+
+All functions are preceded by the dmp_ prefix to differentiate among MPL and general driver function calls\&. 
+.PP
+在文件 \fBinv_mpu_dmp_motion_driver\&.h\fP 中定义\&.
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 Bscpp 的 源代码自动生成\&.

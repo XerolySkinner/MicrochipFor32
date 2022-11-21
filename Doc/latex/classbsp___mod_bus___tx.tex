@@ -1,0 +1,442 @@
+\hypertarget{classbsp___mod_bus___tx}{}\doxysection{bsp\+\_\+\+Mod\+Bus\+\_\+\+Tx类 参考}
+\label{classbsp___mod_bus___tx}\index{bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}}
+
+
+Mod\+Bus发送器  
+
+
+
+
+{\ttfamily \#include $<$bsp\+\_\+\+Mod\+Bus.\+h$>$}
+
+
+
+类 bsp\+\_\+\+Mod\+Bus\+\_\+\+Tx 继承关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classbsp___mod_bus___tx__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbsp___mod_bus___tx_ac277122ddb733aa37a0000086d5ae239}{bsp\+\_\+\+Mod\+Bus\+\_\+\+Tx}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{classbsp___mod_bus___tx_a4ee454ddd116e2b608d9b35b02eee0e4}{ID}})
+\item 
+void \mbox{\hyperlink{classbsp___mod_bus___tx_ada605c0e9195aefd43968cfe5b347565}{Read\+Keep\+Reg}} (\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} address, \mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} mem)
+\begin{DoxyCompactList}\small\item\em 发送读取保存寄存器的指令 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___mod_bus___tx_af055e2569107b8ece7abdce3301e9444}{Read\+In\+Reg}} (\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} address, \mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} mem)
+\begin{DoxyCompactList}\small\item\em 发送读取输入寄存器的指令 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___mod_bus___tx_a02ea1680f5c361f2cf4ebcb48b565281}{Write\+One\+Reg}} (\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} address, \mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} var)
+\begin{DoxyCompactList}\small\item\em 发送写一个寄存器的指令 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___mod_bus___tx_a268c136782f8146662f33878522c270c}{Write\+Regs}} (\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} address, \mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} mem, \mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} $\ast$var)
+\begin{DoxyCompactList}\small\item\em 发送写多个寄存器的指令 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___mod_bus___tx_acc267977d61716e25fd3e3ec57bc2960}{Write\+Regs\+Var}} (\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} address, \mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} mem,...)
+\begin{DoxyCompactList}\small\item\em 发送写多个寄存器的指令 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___mod_bus___tx_abc721f5c61e236df505f3447818be921}{Read\+Out\+Coil}} (\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} address, \mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} mem)
+\begin{DoxyCompactList}\small\item\em 发送读输出线圈的指令 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___mod_bus___tx_a76e712e8d638ecc7b453e1c8afbbad98}{Read\+In\+Coil}} (\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} address, \mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} mem)
+\begin{DoxyCompactList}\small\item\em 发送读输入线圈的指令 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___mod_bus___tx_aa8d37cc0cefaad8f41bc1d195a326d95}{Write\+One\+Coil}} (\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} address, \mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} state)
+\begin{DoxyCompactList}\small\item\em 发送写入一个线圈的指令 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___mod_bus___tx_a630ac7566fe9d1773baa813802202d0f}{Write\+Coils}} (\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} address, \mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} mem, \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$var)
+\begin{DoxyCompactList}\small\item\em 发送写多个线圈的指令 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___mod_bus___tx_a280c5d7c99196a11b5fee7b34421a8ff}{Write\+Coils\+Var}} (\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} address, \mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} mem,...)
+\begin{DoxyCompactList}\small\item\em 发送写多个线圈的指令 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classbsp___mod_bus___tx_ac017f6145ba6f87c69a16510f868dcc2}{Transmit}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$dat, \mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} len)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{classbsp___mod_bus___tx_a4ee454ddd116e2b608d9b35b02eee0e4}{ID}}
+\begin{DoxyCompactList}\small\item\em 器件\+ID \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Mod\+Bus发送器 
+
+在文件 \mbox{\hyperlink{bsp___mod_bus_8h_source}{bsp\+\_\+\+Mod\+Bus.\+h}} 第 \mbox{\hyperlink{bsp___mod_bus_8h_source_l00058}{58}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classbsp___mod_bus___tx_ac277122ddb733aa37a0000086d5ae239}\label{classbsp___mod_bus___tx_ac277122ddb733aa37a0000086d5ae239}} 
+\index{bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}!bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}}
+\index{bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}!bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}}
+\doxysubsubsection{\texorpdfstring{bsp\_ModBus\_Tx()}{bsp\_ModBus\_Tx()}}
+{\footnotesize\ttfamily bsp\+\_\+\+Mod\+Bus\+\_\+\+Tx\+::bsp\+\_\+\+Mod\+Bus\+\_\+\+Tx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{ID }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{bsp___mod_bus_8cpp_source}{bsp\+\_\+\+Mod\+Bus.\+cpp}} 第 \mbox{\hyperlink{bsp___mod_bus_8cpp_source_l00362}{362}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classbsp___mod_bus___tx_a76e712e8d638ecc7b453e1c8afbbad98}\label{classbsp___mod_bus___tx_a76e712e8d638ecc7b453e1c8afbbad98}} 
+\index{bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}!ReadInCoil@{ReadInCoil}}
+\index{ReadInCoil@{ReadInCoil}!bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}}
+\doxysubsubsection{\texorpdfstring{ReadInCoil()}{ReadInCoil()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+Mod\+Bus\+\_\+\+Tx\+::\+Read\+In\+Coil (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{address,  }\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{mem }\end{DoxyParamCaption})}
+
+
+
+发送读输入线圈的指令 
+
+
+\begin{DoxyParams}{参数}
+{\em address} & 读取的地址 \\
+\hline
+{\em mem} & 读取的个数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+无返回值 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___mod_bus_8cpp_source}{bsp\+\_\+\+Mod\+Bus.\+cpp}} 第 \mbox{\hyperlink{bsp___mod_bus_8cpp_source_l00195}{195}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___mod_bus___tx_a76e712e8d638ecc7b453e1c8afbbad98_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___mod_bus___tx_af055e2569107b8ece7abdce3301e9444}\label{classbsp___mod_bus___tx_af055e2569107b8ece7abdce3301e9444}} 
+\index{bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}!ReadInReg@{ReadInReg}}
+\index{ReadInReg@{ReadInReg}!bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}}
+\doxysubsubsection{\texorpdfstring{ReadInReg()}{ReadInReg()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+Mod\+Bus\+\_\+\+Tx\+::\+Read\+In\+Reg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{address,  }\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{mem }\end{DoxyParamCaption})}
+
+
+
+发送读取输入寄存器的指令 
+
+
+\begin{DoxyParams}{参数}
+{\em address} & 读取的地址 \\
+\hline
+{\em mem} & 读取的个数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+无返回值 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___mod_bus_8cpp_source}{bsp\+\_\+\+Mod\+Bus.\+cpp}} 第 \mbox{\hyperlink{bsp___mod_bus_8cpp_source_l00070}{70}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___mod_bus___tx_af055e2569107b8ece7abdce3301e9444_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___mod_bus___tx_ada605c0e9195aefd43968cfe5b347565}\label{classbsp___mod_bus___tx_ada605c0e9195aefd43968cfe5b347565}} 
+\index{bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}!ReadKeepReg@{ReadKeepReg}}
+\index{ReadKeepReg@{ReadKeepReg}!bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}}
+\doxysubsubsection{\texorpdfstring{ReadKeepReg()}{ReadKeepReg()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+Mod\+Bus\+\_\+\+Tx\+::\+Read\+Keep\+Reg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{address,  }\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{mem }\end{DoxyParamCaption})}
+
+
+
+发送读取保存寄存器的指令 
+
+
+\begin{DoxyParams}{参数}
+{\em address} & 读取的地址 \\
+\hline
+{\em mem} & 读取的个数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+无返回值 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___mod_bus_8cpp_source}{bsp\+\_\+\+Mod\+Bus.\+cpp}} 第 \mbox{\hyperlink{bsp___mod_bus_8cpp_source_l00050}{50}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___mod_bus___tx_ada605c0e9195aefd43968cfe5b347565_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___mod_bus___tx_abc721f5c61e236df505f3447818be921}\label{classbsp___mod_bus___tx_abc721f5c61e236df505f3447818be921}} 
+\index{bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}!ReadOutCoil@{ReadOutCoil}}
+\index{ReadOutCoil@{ReadOutCoil}!bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}}
+\doxysubsubsection{\texorpdfstring{ReadOutCoil()}{ReadOutCoil()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+Mod\+Bus\+\_\+\+Tx\+::\+Read\+Out\+Coil (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{address,  }\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{mem }\end{DoxyParamCaption})}
+
+
+
+发送读输出线圈的指令 
+
+
+\begin{DoxyParams}{参数}
+{\em address} & 读取的地址 \\
+\hline
+{\em mem} & 读取的个数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+无返回值 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___mod_bus_8cpp_source}{bsp\+\_\+\+Mod\+Bus.\+cpp}} 第 \mbox{\hyperlink{bsp___mod_bus_8cpp_source_l00175}{175}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___mod_bus___tx_abc721f5c61e236df505f3447818be921_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___mod_bus___tx_ac017f6145ba6f87c69a16510f868dcc2}\label{classbsp___mod_bus___tx_ac017f6145ba6f87c69a16510f868dcc2}} 
+\index{bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}!Transmit@{Transmit}}
+\index{Transmit@{Transmit}!bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}}
+\doxysubsubsection{\texorpdfstring{Transmit()}{Transmit()}}
+{\footnotesize\ttfamily virtual void bsp\+\_\+\+Mod\+Bus\+\_\+\+Tx\+::\+Transmit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$}]{dat,  }\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classbsp___mod_bus___s_t_m32_a3dda1f4a2a120c6a4482ff6d9d82f4e8}{bsp\+\_\+\+Mod\+Bus\+\_\+\+STM32}} 内被实现.
+
+这是这个函数的调用关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___mod_bus___tx_ac017f6145ba6f87c69a16510f868dcc2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___mod_bus___tx_a630ac7566fe9d1773baa813802202d0f}\label{classbsp___mod_bus___tx_a630ac7566fe9d1773baa813802202d0f}} 
+\index{bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}!WriteCoils@{WriteCoils}}
+\index{WriteCoils@{WriteCoils}!bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}}
+\doxysubsubsection{\texorpdfstring{WriteCoils()}{WriteCoils()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+Mod\+Bus\+\_\+\+Tx\+::\+Write\+Coils (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{address,  }\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{mem,  }\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$}]{var }\end{DoxyParamCaption})}
+
+
+
+发送写多个线圈的指令 
+
+
+\begin{DoxyParams}{参数}
+{\em address} & 写入的地址 \\
+\hline
+{\em mem} & 写入的个数 \\
+\hline
+{\em $\ast$var} & 待写入数据的缓冲区 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+无返回值 
+\end{DoxyReturn}
+\begin{DoxyNote}{注解}
+简单通信建议使用\+Write\+Coils\+Var 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{bsp___mod_bus_8cpp_source}{bsp\+\_\+\+Mod\+Bus.\+cpp}} 第 \mbox{\hyperlink{bsp___mod_bus_8cpp_source_l00240}{240}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___mod_bus___tx_a630ac7566fe9d1773baa813802202d0f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___mod_bus___tx_a280c5d7c99196a11b5fee7b34421a8ff}\label{classbsp___mod_bus___tx_a280c5d7c99196a11b5fee7b34421a8ff}} 
+\index{bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}!WriteCoilsVar@{WriteCoilsVar}}
+\index{WriteCoilsVar@{WriteCoilsVar}!bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}}
+\doxysubsubsection{\texorpdfstring{WriteCoilsVar()}{WriteCoilsVar()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+Mod\+Bus\+\_\+\+Tx\+::\+Write\+Coils\+Var (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{address,  }\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{mem,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+发送写多个线圈的指令 
+
+
+\begin{DoxyParams}{参数}
+{\em address} & 写入的地址 \\
+\hline
+{\em mem} & 写入的个数 \\
+\hline
+{\em var} & 写入的数据 根据mem的数量决定此处数量 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+无返回值 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___mod_bus_8cpp_source}{bsp\+\_\+\+Mod\+Bus.\+cpp}} 第 \mbox{\hyperlink{bsp___mod_bus_8cpp_source_l00268}{268}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___mod_bus___tx_a280c5d7c99196a11b5fee7b34421a8ff_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___mod_bus___tx_aa8d37cc0cefaad8f41bc1d195a326d95}\label{classbsp___mod_bus___tx_aa8d37cc0cefaad8f41bc1d195a326d95}} 
+\index{bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}!WriteOneCoil@{WriteOneCoil}}
+\index{WriteOneCoil@{WriteOneCoil}!bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}}
+\doxysubsubsection{\texorpdfstring{WriteOneCoil()}{WriteOneCoil()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+Mod\+Bus\+\_\+\+Tx\+::\+Write\+One\+Coil (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{address,  }\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{state }\end{DoxyParamCaption})}
+
+
+
+发送写入一个线圈的指令 
+
+
+\begin{DoxyParams}{参数}
+{\em address} & 写入的地址 \\
+\hline
+{\em state} & 写入的状态 0\+:复位 其他\+:置位 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+无返回值 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___mod_bus_8cpp_source}{bsp\+\_\+\+Mod\+Bus.\+cpp}} 第 \mbox{\hyperlink{bsp___mod_bus_8cpp_source_l00217}{217}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___mod_bus___tx_aa8d37cc0cefaad8f41bc1d195a326d95_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___mod_bus___tx_a02ea1680f5c361f2cf4ebcb48b565281}\label{classbsp___mod_bus___tx_a02ea1680f5c361f2cf4ebcb48b565281}} 
+\index{bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}!WriteOneReg@{WriteOneReg}}
+\index{WriteOneReg@{WriteOneReg}!bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}}
+\doxysubsubsection{\texorpdfstring{WriteOneReg()}{WriteOneReg()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+Mod\+Bus\+\_\+\+Tx\+::\+Write\+One\+Reg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{address,  }\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{var }\end{DoxyParamCaption})}
+
+
+
+发送写一个寄存器的指令 
+
+
+\begin{DoxyParams}{参数}
+{\em address} & 写入的地址 \\
+\hline
+{\em var} & 写入的值 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+无返回值 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___mod_bus_8cpp_source}{bsp\+\_\+\+Mod\+Bus.\+cpp}} 第 \mbox{\hyperlink{bsp___mod_bus_8cpp_source_l00090}{90}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___mod_bus___tx_a02ea1680f5c361f2cf4ebcb48b565281_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___mod_bus___tx_a268c136782f8146662f33878522c270c}\label{classbsp___mod_bus___tx_a268c136782f8146662f33878522c270c}} 
+\index{bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}!WriteRegs@{WriteRegs}}
+\index{WriteRegs@{WriteRegs}!bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}}
+\doxysubsubsection{\texorpdfstring{WriteRegs()}{WriteRegs()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+Mod\+Bus\+\_\+\+Tx\+::\+Write\+Regs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{address,  }\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{mem,  }\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} $\ast$}]{var }\end{DoxyParamCaption})}
+
+
+
+发送写多个寄存器的指令 
+
+
+\begin{DoxyParams}{参数}
+{\em address} & 写入的地址 \\
+\hline
+{\em mem} & 写入的个数 \\
+\hline
+{\em $\ast$var} & 待写入数据的缓冲区 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+无返回值 
+\end{DoxyReturn}
+\begin{DoxyNote}{注解}
+简单通信建议使用\+Write\+Regs\+Var 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{bsp___mod_bus_8cpp_source}{bsp\+\_\+\+Mod\+Bus.\+cpp}} 第 \mbox{\hyperlink{bsp___mod_bus_8cpp_source_l00112}{112}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___mod_bus___tx_a268c136782f8146662f33878522c270c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___mod_bus___tx_acc267977d61716e25fd3e3ec57bc2960}\label{classbsp___mod_bus___tx_acc267977d61716e25fd3e3ec57bc2960}} 
+\index{bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}!WriteRegsVar@{WriteRegsVar}}
+\index{WriteRegsVar@{WriteRegsVar}!bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}}
+\doxysubsubsection{\texorpdfstring{WriteRegsVar()}{WriteRegsVar()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+Mod\+Bus\+\_\+\+Tx\+::\+Write\+Regs\+Var (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{address,  }\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{mem,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+发送写多个寄存器的指令 
+
+
+\begin{DoxyParams}{参数}
+{\em address} & 写入的地址 \\
+\hline
+{\em mem} & 写入的个数 \\
+\hline
+{\em var} & 写入的数据 根据mem的数量决定此处数量 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+无返回值 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___mod_bus_8cpp_source}{bsp\+\_\+\+Mod\+Bus.\+cpp}} 第 \mbox{\hyperlink{bsp___mod_bus_8cpp_source_l00142}{142}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___mod_bus___tx_acc267977d61716e25fd3e3ec57bc2960_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{classbsp___mod_bus___tx_a4ee454ddd116e2b608d9b35b02eee0e4}\label{classbsp___mod_bus___tx_a4ee454ddd116e2b608d9b35b02eee0e4}} 
+\index{bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}!ID@{ID}}
+\index{ID@{ID}!bsp\_ModBus\_Tx@{bsp\_ModBus\_Tx}}
+\doxysubsubsection{\texorpdfstring{ID}{ID}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} bsp\+\_\+\+Mod\+Bus\+\_\+\+Tx\+::\+ID\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+器件\+ID 
+
+
+
+在文件 \mbox{\hyperlink{bsp___mod_bus_8h_source}{bsp\+\_\+\+Mod\+Bus.\+h}} 第 \mbox{\hyperlink{bsp___mod_bus_8h_source_l00076}{76}} 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/gitt/\+Microchip\+For32/bsp\+\_\+\+Device/\mbox{\hyperlink{bsp___mod_bus_8h}{bsp\+\_\+\+Mod\+Bus.\+h}}\item 
+D\+:/gitt/\+Microchip\+For32/bsp\+\_\+\+Device/\mbox{\hyperlink{bsp___mod_bus_8cpp}{bsp\+\_\+\+Mod\+Bus.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="bsp___mod_bus_8h" kind="file" language="C++">
+    <compoundname>bsp_ModBus.h</compoundname>
+    <includes refid="varint_8h" local="yes">varint.h</includes>
+    <includes local="yes">usart.h</includes>
+    <includes local="no">stdarg.h</includes>
+    <includedby refid="bsp___mod_bus_8cpp" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp</includedby>
+    <includedby refid="bsp___mod_bus___s_t_m32_8h" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus_STM32.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h</label>
+        <link refid="bsp___mod_bus_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>varint.h</label>
+        <link refid="varint_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stdarg.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="4">
+        <label>usart.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp</label>
+        <link refid="bsp___mod_bus_8cpp"/>
+      </node>
+      <node id="1">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h</label>
+        <link refid="bsp___mod_bus_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus_STM32.cpp</label>
+        <link refid="bsp___mod_bus___s_t_m32_8cpp"/>
+      </node>
+      <node id="3">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus_STM32.h</label>
+        <link refid="bsp___mod_bus___s_t_m32_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classbsp___mod_bus___tx" prot="public">bsp_ModBus_Tx</innerclass>
+    <innerclass refid="classbsp___mod_bus___rx" prot="public">bsp_ModBus_Rx</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Fun_ModBus</name>
+        <enumvalue id="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643afa0834864982fdb57c9a954bdbd1599b" prot="public">
+          <name>Fun_R_OutCoil</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>读取输出线圈 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a8c70d4d5036c1a3f9c51a545d13fdd92" prot="public">
+          <name>Fun_R_InCoil</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+<para>读取输入线圈 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a9ec5f1febebcade07d80148f67d51594" prot="public">
+          <name>Fun_R_KeepReg</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+<para>读取保持寄存 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643ab285b7d7c40fa9a85adba60a3a769fca" prot="public">
+          <name>Fun_R_InReg</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+<para>读取输入寄存 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a95bb48bd2de82de8a2f5684a6cccff0f" prot="public">
+          <name>Fun_W_OneCoil</name>
+          <initializer>= 0x05</initializer>
+          <briefdescription>
+<para>写入单线圈 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a2e8689560573f300af3a6c48fdd6ce86" prot="public">
+          <name>Fun_W_OneReg</name>
+          <initializer>= 0x06</initializer>
+          <briefdescription>
+<para>写入单寄存 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a0a40a9622af4e5cb7daecbdb303ee35e" prot="public">
+          <name>Fun_W_Coils</name>
+          <initializer>= 0x0F</initializer>
+          <briefdescription>
+<para>写入多线圈 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a54562faaab8c1c932c46c6c4cb2552f9" prot="public">
+          <name>Fun_W_Regs</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+<para>写入多寄存 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="41" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" bodystart="41" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ModBus通信函数 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*----------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>#<sp/><sp/>Copyright<sp/>(c)<sp/>2022<sp/>Yuankang<sp/>Liang(XerolySkinner)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>#<sp/><sp/>本软件按原样提供,无任何明示或暗示</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>#<sp/><sp/>在任何情况下,作者都不承担任何损害赔偿责任</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>#<sp/><sp/>使用的许可声明:</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>#<sp/><sp/>1.<sp/><sp/>不得歪曲本软件的来源,你不能声称你编写了原始软件.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>#<sp/><sp/>2.<sp/><sp/>免费授予以任何目的,前提是版权声明出现在所有副本中.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>并且版权声明和许可声明同时出现.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>#<sp/><sp/>3.<sp/><sp/>你有使用,复制,修改,分发,和销售本软件的许可.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>#<sp/><sp/>4.<sp/><sp/>如果你在产品中使用,产品文档中的声明是赞赏的但不是必须的.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>#<sp/><sp/>5.<sp/><sp/>本通知不得从任何来源删除或更改.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>#<sp/><sp/>Yuankang<sp/>Liang(XerolySkinner)</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>E-mail:zabbcccbbaz@163.com</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>QQ:2715099320</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>Mobile<sp/>Phone:13005636215</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>#<sp/><sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="varint_8h" kindref="compound">varint.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usart.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">//----------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>数据码</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643" kindref="member">Fun_ModBus</ref><sp/>{</highlight></codeline>
+<codeline lineno="42" refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643afa0834864982fdb57c9a954bdbd1599b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643afa0834864982fdb57c9a954bdbd1599b" kindref="member">Fun_R_OutCoil</ref><sp/><sp/><sp/>=<sp/>0x01,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43" refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a8c70d4d5036c1a3f9c51a545d13fdd92" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a8c70d4d5036c1a3f9c51a545d13fdd92" kindref="member">Fun_R_InCoil</ref><sp/><sp/><sp/><sp/>=<sp/>0x02,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44" refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a9ec5f1febebcade07d80148f67d51594" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a9ec5f1febebcade07d80148f67d51594" kindref="member">Fun_R_KeepReg</ref><sp/><sp/><sp/>=<sp/>0x03,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45" refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643ab285b7d7c40fa9a85adba60a3a769fca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643ab285b7d7c40fa9a85adba60a3a769fca" kindref="member">Fun_R_InReg</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0x04,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a95bb48bd2de82de8a2f5684a6cccff0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a95bb48bd2de82de8a2f5684a6cccff0f" kindref="member">Fun_W_OneCoil</ref><sp/><sp/><sp/>=<sp/>0x05,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a2e8689560573f300af3a6c48fdd6ce86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a2e8689560573f300af3a6c48fdd6ce86" kindref="member">Fun_W_OneReg</ref><sp/><sp/><sp/><sp/>=<sp/>0x06,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a0a40a9622af4e5cb7daecbdb303ee35e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a0a40a9622af4e5cb7daecbdb303ee35e" kindref="member">Fun_W_Coils</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0F,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50" refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a54562faaab8c1c932c46c6c4cb2552f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a54562faaab8c1c932c46c6c4cb2552f9" kindref="member">Fun_W_Regs</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x10,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="53"><highlight class="comment">//----------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>类目</highlight></codeline>
+<codeline lineno="58" refid="classbsp___mod_bus___tx" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbsp___mod_bus___tx" kindref="compound">bsp_ModBus_Tx</ref>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___mod_bus___tx" kindref="compound">bsp_ModBus_Tx</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><ref refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" kindref="member">ID</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___mod_bus___tx_1ada605c0e9195aefd43968cfe5b347565" kindref="member">ReadKeepReg</ref>(<ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>address,<ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>mem);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___mod_bus___tx_1af055e2569107b8ece7abdce3301e9444" kindref="member">ReadInReg</ref>(<ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>address,<sp/><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>mem);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___mod_bus___tx_1a02ea1680f5c361f2cf4ebcb48b565281" kindref="member">WriteOneReg</ref>(<ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>address,<sp/><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>var);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___mod_bus___tx_1a268c136782f8146662f33878522c270c" kindref="member">WriteRegs</ref>(<ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>address,<sp/><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>mem,<sp/><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref>*<sp/>var);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___mod_bus___tx_1acc267977d61716e25fd3e3ec57bc2960" kindref="member">WriteRegsVar</ref>(<ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>address,<sp/><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>mem,...);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___mod_bus___tx_1abc721f5c61e236df505f3447818be921" kindref="member">ReadOutCoil</ref>(<ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>address,<ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>mem);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___mod_bus___tx_1a76e712e8d638ecc7b453e1c8afbbad98" kindref="member">ReadInCoil</ref>(<ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>address,<sp/><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>mem);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___mod_bus___tx_1aa8d37cc0cefaad8f41bc1d195a326d95" kindref="member">WriteOneCoil</ref>(<ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>address,<sp/><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>state);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___mod_bus___tx_1a630ac7566fe9d1773baa813802202d0f" kindref="member">WriteCoils</ref>(<ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>address,<sp/><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>mem,<sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref>*<sp/>var);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___mod_bus___tx_1a280c5d7c99196a11b5fee7b34421a8ff" kindref="member">WriteCoilsVar</ref>(<ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>address,<sp/><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>mem,...);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="74" refid="classbsp___mod_bus___tx_1ac017f6145ba6f87c69a16510f868dcc2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___mod_bus___tx_1ac017f6145ba6f87c69a16510f868dcc2" kindref="member">Transmit</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>*dat,<sp/><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>len)=0;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="76" refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" kindref="member">ID</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="82" refid="classbsp___mod_bus___rx" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbsp___mod_bus___rx" kindref="compound">bsp_ModBus_Rx</ref>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___mod_bus___rx_1a87e68578770301c3d78c9b7f551bb627" kindref="member">bsp_ModBus_Rx</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___mod_bus___rx_1afa1dac97034b51725349ab5b1a2aa909" kindref="member">~bsp_ModBus_Rx</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___mod_bus___rx_1a39330845d4ced51850b9edaaab052e0f" kindref="member">analysis</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref>*<sp/>dat);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>共有变量</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="classbsp___mod_bus___rx_1a045cc9c5f9d26ad5be1da2d2cfdcbefc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___mod_bus___rx_1a045cc9c5f9d26ad5be1da2d2cfdcbefc" kindref="member">ID</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90" refid="classbsp___mod_bus___rx_1a0a5cdc492b09b33ae665706c9968e5d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___mod_bus___rx_1a0a5cdc492b09b33ae665706c9968e5d5" kindref="member">Func</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91" refid="classbsp___mod_bus___rx_1ac1a35ae91223298913373de0d3e7c02d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___mod_bus___rx_1ac1a35ae91223298913373de0d3e7c02d" kindref="member">crcts</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>保持寄存器特有</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classbsp___mod_bus___rx_1a091cc0733eb4aa6b06c10afdbfd46b7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/><sp/><sp/><sp/><sp/>*<ref refid="classbsp___mod_bus___rx_1a091cc0733eb4aa6b06c10afdbfd46b7f" kindref="member">KeepRegDat</ref>;</highlight></codeline>
+<codeline lineno="94" refid="classbsp___mod_bus___rx_1a7622d0c8c56feb97d263f57115ef3f6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___mod_bus___rx_1a7622d0c8c56feb97d263f57115ef3f6a" kindref="member">KeepRegMem</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>输入寄存器特有</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="classbsp___mod_bus___rx_1ab275dbfa83dd90eff0cbf0411dfe8e4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref>*<sp/><sp/><sp/><sp/><ref refid="classbsp___mod_bus___rx_1ab275dbfa83dd90eff0cbf0411dfe8e4a" kindref="member">InRegDat</ref>;</highlight></codeline>
+<codeline lineno="97" refid="classbsp___mod_bus___rx_1a37508047d184916eb7133a4ad8f10a6c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___mod_bus___rx_1a37508047d184916eb7133a4ad8f10a6c" kindref="member">InRegMem</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>输出线圈特有</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="classbsp___mod_bus___rx_1a6612d15d148b4944662851bd8fabae04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref>*<sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___mod_bus___rx_1a6612d15d148b4944662851bd8fabae04" kindref="member">OutCoilDat</ref>;</highlight></codeline>
+<codeline lineno="100" refid="classbsp___mod_bus___rx_1a062f82edfe722d8cb783b67a5a085bee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___mod_bus___rx_1a062f82edfe722d8cb783b67a5a085bee" kindref="member">OutCoilMem</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>输入线圈特有</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="classbsp___mod_bus___rx_1a8ca97f2e7b033faddbb1772f15d91d4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref>*<sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___mod_bus___rx_1a8ca97f2e7b033faddbb1772f15d91d4d" kindref="member">InCoilDat</ref>;</highlight></codeline>
+<codeline lineno="103" refid="classbsp___mod_bus___rx_1a22f49f0782c4580b0f582c27fbd758a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___mod_bus___rx_1a22f49f0782c4580b0f582c27fbd758a3" kindref="member">InCoilMem</ref>;};</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h"/>
+  </compounddef>
+</doxygen>

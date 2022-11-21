@@ -1,0 +1,73 @@
+\hypertarget{bsp___i_i_c_8h}{}\doxysection{D\+:/gitt/\+Microchip\+For32/bsp\+\_\+\+Device/bsp\+\_\+\+IIC.h 文件参考}
+\label{bsp___i_i_c_8h}\index{D:/gitt/MicrochipFor32/bsp\_Device/bsp\_IIC.h@{D:/gitt/MicrochipFor32/bsp\_Device/bsp\_IIC.h}}
+
+
+本类实现软件\+IIC功能 依此类派生出其他软件\+IIC功能  
+
+
+{\ttfamily \#include \char`\"{}varint.\+h\char`\"{}}\newline
+bsp\+\_\+\+IIC.\+h 的引用(Include)关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{bsp___i_i_c_8h__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{bsp___i_i_c_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classbsp___i_i_c}{bsp\+\_\+\+IIC}}
+\begin{DoxyCompactList}\small\item\em IIC的基础实现方法 留下三个保护性接口需要实现,分别是控制时钟,控制数据,延时函数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{bsp___i_i_c_8h_adf764cbdea00d65edcd07bb9953ad2b7a048bbf954430bbc34fa11280165ed534}{IIC\+\_\+\+RESET}}
+, \mbox{\hyperlink{bsp___i_i_c_8h_adf764cbdea00d65edcd07bb9953ad2b7a9e128b73c7beb33be6b4e953a7fddc66}{IIC\+\_\+\+SET}}
+, \mbox{\hyperlink{bsp___i_i_c_8h_adf764cbdea00d65edcd07bb9953ad2b7ae4ead84d2c3bbc3f2403d9a5157a3f94}{IIC\+\_\+\+READ}}
+ \}
+\begin{DoxyCompactList}\small\item\em 控制管脚的三种状态(置位,复位,读取) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+本类实现软件\+IIC功能 依此类派生出其他软件\+IIC功能 
+
+
+
+在文件 \mbox{\hyperlink{bsp___i_i_c_8h_source}{bsp\+\_\+\+IIC.\+h}} 中定义.
+
+
+
+\doxysubsection{枚举类型说明}
+\mbox{\Hypertarget{bsp___i_i_c_8h_adf764cbdea00d65edcd07bb9953ad2b7}\label{bsp___i_i_c_8h_adf764cbdea00d65edcd07bb9953ad2b7}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+
+
+控制管脚的三种状态(置位,复位,读取) 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IIC\_RESET@{IIC\_RESET}!bsp\_IIC.h@{bsp\_IIC.h}}\index{bsp\_IIC.h@{bsp\_IIC.h}!IIC\_RESET@{IIC\_RESET}}}\mbox{\Hypertarget{bsp___i_i_c_8h_adf764cbdea00d65edcd07bb9953ad2b7a048bbf954430bbc34fa11280165ed534}\label{bsp___i_i_c_8h_adf764cbdea00d65edcd07bb9953ad2b7a048bbf954430bbc34fa11280165ed534}} 
+IIC\+\_\+\+RESET&管脚复位状态 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IIC\_SET@{IIC\_SET}!bsp\_IIC.h@{bsp\_IIC.h}}\index{bsp\_IIC.h@{bsp\_IIC.h}!IIC\_SET@{IIC\_SET}}}\mbox{\Hypertarget{bsp___i_i_c_8h_adf764cbdea00d65edcd07bb9953ad2b7a9e128b73c7beb33be6b4e953a7fddc66}\label{bsp___i_i_c_8h_adf764cbdea00d65edcd07bb9953ad2b7a9e128b73c7beb33be6b4e953a7fddc66}} 
+IIC\+\_\+\+SET&管脚置位状态 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IIC\_READ@{IIC\_READ}!bsp\_IIC.h@{bsp\_IIC.h}}\index{bsp\_IIC.h@{bsp\_IIC.h}!IIC\_READ@{IIC\_READ}}}\mbox{\Hypertarget{bsp___i_i_c_8h_adf764cbdea00d65edcd07bb9953ad2b7ae4ead84d2c3bbc3f2403d9a5157a3f94}\label{bsp___i_i_c_8h_adf764cbdea00d65edcd07bb9953ad2b7ae4ead84d2c3bbc3f2403d9a5157a3f94}} 
+IIC\+\_\+\+READ&读取管脚状态 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{bsp___i_i_c_8h_source}{bsp\+\_\+\+IIC.\+h}} 第 \mbox{\hyperlink{bsp___i_i_c_8h_source_l00044}{44}} 行定义.
+

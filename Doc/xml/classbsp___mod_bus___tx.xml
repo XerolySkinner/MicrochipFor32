@@ -1,0 +1,645 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="classbsp___mod_bus___tx" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>bsp_ModBus_Tx</compoundname>
+    <derivedcompoundref refid="classbsp___mod_bus___s_t_m32" prot="public" virt="non-virtual">bsp_ModBus_STM32</derivedcompoundref>
+    <includes refid="bsp___mod_bus_8h" local="no">bsp_ModBus.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" prot="protected" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 bsp_ModBus_Tx::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <qualifiedname>bsp_ModBus_Tx::ID</qualifiedname>
+        <briefdescription>
+<para>器件ID </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="76" column="3" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" bodystart="76" bodyend="-1"/>
+        <referencedby refid="classbsp___mod_bus___tx_1ac277122ddb733aa37a0000086d5ae239" compoundref="bsp___mod_bus_8cpp" startline="362" endline="363">bsp_ModBus_Tx</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1a76e712e8d638ecc7b453e1c8afbbad98" compoundref="bsp___mod_bus_8cpp" startline="195" endline="207">ReadInCoil</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1af055e2569107b8ece7abdce3301e9444" compoundref="bsp___mod_bus_8cpp" startline="70" endline="82">ReadInReg</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1ada605c0e9195aefd43968cfe5b347565" compoundref="bsp___mod_bus_8cpp" startline="50" endline="62">ReadKeepReg</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1abc721f5c61e236df505f3447818be921" compoundref="bsp___mod_bus_8cpp" startline="175" endline="187">ReadOutCoil</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1a630ac7566fe9d1773baa813802202d0f" compoundref="bsp___mod_bus_8cpp" startline="240" endline="258">WriteCoils</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1a280c5d7c99196a11b5fee7b34421a8ff" compoundref="bsp___mod_bus_8cpp" startline="268" endline="295">WriteCoilsVar</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1aa8d37cc0cefaad8f41bc1d195a326d95" compoundref="bsp___mod_bus_8cpp" startline="217" endline="230">WriteOneCoil</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1a02ea1680f5c361f2cf4ebcb48b565281" compoundref="bsp___mod_bus_8cpp" startline="90" endline="102">WriteOneReg</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1a268c136782f8146662f33878522c270c" compoundref="bsp___mod_bus_8cpp" startline="112" endline="132">WriteRegs</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1acc267977d61716e25fd3e3ec57bc2960" compoundref="bsp___mod_bus_8cpp" startline="142" endline="167">WriteRegsVar</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbsp___mod_bus___tx_1ac277122ddb733aa37a0000086d5ae239" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsp_ModBus_Tx::bsp_ModBus_Tx</definition>
+        <argsstring>(u8 ID)</argsstring>
+        <name>bsp_ModBus_Tx</name>
+        <qualifiedname>bsp_ModBus_Tx::bsp_ModBus_Tx</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+          <declname>ID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="60" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp" bodystart="362" bodyend="363"/>
+        <references refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" compoundref="bsp___mod_bus_8h" startline="76">ID</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___mod_bus___tx_1ada605c0e9195aefd43968cfe5b347565" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsp_ModBus_Tx::ReadKeepReg</definition>
+        <argsstring>(u16 address, u16 mem)</argsstring>
+        <name>ReadKeepReg</name>
+        <qualifiedname>bsp_ModBus_Tx::ReadKeepReg</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>mem</declname>
+        </param>
+        <briefdescription>
+<para>发送读取保存寄存器的指令 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>读取的地址 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>读取的个数 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>无返回值 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="62" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp" bodystart="50" bodyend="62"/>
+        <references refid="bsp___c_r_c_8cpp_1abb1fda5ed561362d12fe987758986919" compoundref="bsp___c_r_c_8cpp" startline="91" endline="99">CRC16_MODBUS</references>
+        <references refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a9ec5f1febebcade07d80148f67d51594" compoundref="bsp___mod_bus_8h" startline="44">Fun_R_KeepReg</references>
+        <references refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" compoundref="bsp___mod_bus_8h" startline="76">ID</references>
+        <references refid="classbsp___mod_bus___tx_1ac017f6145ba6f87c69a16510f868dcc2">Transmit</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___mod_bus___tx_1af055e2569107b8ece7abdce3301e9444" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsp_ModBus_Tx::ReadInReg</definition>
+        <argsstring>(u16 address, u16 mem)</argsstring>
+        <name>ReadInReg</name>
+        <qualifiedname>bsp_ModBus_Tx::ReadInReg</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>mem</declname>
+        </param>
+        <briefdescription>
+<para>发送读取输入寄存器的指令 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>读取的地址 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>读取的个数 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>无返回值 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="63" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp" bodystart="70" bodyend="82"/>
+        <references refid="bsp___c_r_c_8cpp_1abb1fda5ed561362d12fe987758986919" compoundref="bsp___c_r_c_8cpp" startline="91" endline="99">CRC16_MODBUS</references>
+        <references refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643ab285b7d7c40fa9a85adba60a3a769fca" compoundref="bsp___mod_bus_8h" startline="45">Fun_R_InReg</references>
+        <references refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" compoundref="bsp___mod_bus_8h" startline="76">ID</references>
+        <references refid="classbsp___mod_bus___tx_1ac017f6145ba6f87c69a16510f868dcc2">Transmit</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___mod_bus___tx_1a02ea1680f5c361f2cf4ebcb48b565281" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsp_ModBus_Tx::WriteOneReg</definition>
+        <argsstring>(u16 address, u16 var)</argsstring>
+        <name>WriteOneReg</name>
+        <qualifiedname>bsp_ModBus_Tx::WriteOneReg</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>发送写一个寄存器的指令 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>写入的地址 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>写入的值 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>无返回值 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="64" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp" bodystart="90" bodyend="102"/>
+        <references refid="bsp___c_r_c_8cpp_1abb1fda5ed561362d12fe987758986919" compoundref="bsp___c_r_c_8cpp" startline="91" endline="99">CRC16_MODBUS</references>
+        <references refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a2e8689560573f300af3a6c48fdd6ce86" compoundref="bsp___mod_bus_8h" startline="48">Fun_W_OneReg</references>
+        <references refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" compoundref="bsp___mod_bus_8h" startline="76">ID</references>
+        <references refid="classbsp___mod_bus___tx_1ac017f6145ba6f87c69a16510f868dcc2">Transmit</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___mod_bus___tx_1a268c136782f8146662f33878522c270c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsp_ModBus_Tx::WriteRegs</definition>
+        <argsstring>(u16 address, u16 mem, u16 *var)</argsstring>
+        <name>WriteRegs</name>
+        <qualifiedname>bsp_ModBus_Tx::WriteRegs</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>mem</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref> *</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>发送写多个寄存器的指令 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>写入的地址 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>写入的个数 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>*var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>待写入数据的缓冲区 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>无返回值 </para>
+</simplesect>
+<simplesect kind="note"><para>简单通信建议使用WriteRegsVar </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="65" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp" bodystart="112" bodyend="132"/>
+        <references refid="bsp___c_r_c_8cpp_1abb1fda5ed561362d12fe987758986919" compoundref="bsp___c_r_c_8cpp" startline="91" endline="99">CRC16_MODBUS</references>
+        <references refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a54562faaab8c1c932c46c6c4cb2552f9" compoundref="bsp___mod_bus_8h" startline="50">Fun_W_Regs</references>
+        <references refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" compoundref="bsp___mod_bus_8h" startline="76">ID</references>
+        <references refid="classbsp___mod_bus___tx_1ac017f6145ba6f87c69a16510f868dcc2">Transmit</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___mod_bus___tx_1acc267977d61716e25fd3e3ec57bc2960" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsp_ModBus_Tx::WriteRegsVar</definition>
+        <argsstring>(u16 address, u16 mem,...)</argsstring>
+        <name>WriteRegsVar</name>
+        <qualifiedname>bsp_ModBus_Tx::WriteRegsVar</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>mem</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>发送写多个寄存器的指令 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>写入的地址 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>写入的个数 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>写入的数据 根据mem的数量决定此处数量 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>无返回值 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="66" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp" bodystart="142" bodyend="167"/>
+        <references refid="bsp___c_r_c_8cpp_1abb1fda5ed561362d12fe987758986919" compoundref="bsp___c_r_c_8cpp" startline="91" endline="99">CRC16_MODBUS</references>
+        <references refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a54562faaab8c1c932c46c6c4cb2552f9" compoundref="bsp___mod_bus_8h" startline="50">Fun_W_Regs</references>
+        <references refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" compoundref="bsp___mod_bus_8h" startline="76">ID</references>
+        <references refid="classbsp___mod_bus___tx_1ac017f6145ba6f87c69a16510f868dcc2">Transmit</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___mod_bus___tx_1abc721f5c61e236df505f3447818be921" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsp_ModBus_Tx::ReadOutCoil</definition>
+        <argsstring>(u16 address, u16 mem)</argsstring>
+        <name>ReadOutCoil</name>
+        <qualifiedname>bsp_ModBus_Tx::ReadOutCoil</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>mem</declname>
+        </param>
+        <briefdescription>
+<para>发送读输出线圈的指令 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>读取的地址 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>读取的个数 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>无返回值 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="68" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp" bodystart="175" bodyend="187"/>
+        <references refid="bsp___c_r_c_8cpp_1abb1fda5ed561362d12fe987758986919" compoundref="bsp___c_r_c_8cpp" startline="91" endline="99">CRC16_MODBUS</references>
+        <references refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643afa0834864982fdb57c9a954bdbd1599b" compoundref="bsp___mod_bus_8h" startline="42">Fun_R_OutCoil</references>
+        <references refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" compoundref="bsp___mod_bus_8h" startline="76">ID</references>
+        <references refid="classbsp___mod_bus___tx_1ac017f6145ba6f87c69a16510f868dcc2">Transmit</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___mod_bus___tx_1a76e712e8d638ecc7b453e1c8afbbad98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsp_ModBus_Tx::ReadInCoil</definition>
+        <argsstring>(u16 address, u16 mem)</argsstring>
+        <name>ReadInCoil</name>
+        <qualifiedname>bsp_ModBus_Tx::ReadInCoil</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>mem</declname>
+        </param>
+        <briefdescription>
+<para>发送读输入线圈的指令 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>读取的地址 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>读取的个数 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>无返回值 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="69" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp" bodystart="195" bodyend="207"/>
+        <references refid="bsp___c_r_c_8cpp_1abb1fda5ed561362d12fe987758986919" compoundref="bsp___c_r_c_8cpp" startline="91" endline="99">CRC16_MODBUS</references>
+        <references refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a8c70d4d5036c1a3f9c51a545d13fdd92" compoundref="bsp___mod_bus_8h" startline="43">Fun_R_InCoil</references>
+        <references refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" compoundref="bsp___mod_bus_8h" startline="76">ID</references>
+        <references refid="classbsp___mod_bus___tx_1ac017f6145ba6f87c69a16510f868dcc2">Transmit</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___mod_bus___tx_1aa8d37cc0cefaad8f41bc1d195a326d95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsp_ModBus_Tx::WriteOneCoil</definition>
+        <argsstring>(u16 address, u16 state)</argsstring>
+        <name>WriteOneCoil</name>
+        <qualifiedname>bsp_ModBus_Tx::WriteOneCoil</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>发送写入一个线圈的指令 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>写入的地址 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>写入的状态 0:复位 其他:置位 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>无返回值 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="70" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp" bodystart="217" bodyend="230"/>
+        <references refid="bsp___c_r_c_8cpp_1abb1fda5ed561362d12fe987758986919" compoundref="bsp___c_r_c_8cpp" startline="91" endline="99">CRC16_MODBUS</references>
+        <references refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a95bb48bd2de82de8a2f5684a6cccff0f" compoundref="bsp___mod_bus_8h" startline="47">Fun_W_OneCoil</references>
+        <references refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" compoundref="bsp___mod_bus_8h" startline="76">ID</references>
+        <references refid="classbsp___mod_bus___tx_1ac017f6145ba6f87c69a16510f868dcc2">Transmit</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___mod_bus___tx_1a630ac7566fe9d1773baa813802202d0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsp_ModBus_Tx::WriteCoils</definition>
+        <argsstring>(u16 address, u16 mem, u8 *var)</argsstring>
+        <name>WriteCoils</name>
+        <qualifiedname>bsp_ModBus_Tx::WriteCoils</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>mem</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref> *</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>发送写多个线圈的指令 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>写入的地址 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>写入的个数 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>*var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>待写入数据的缓冲区 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>无返回值 </para>
+</simplesect>
+<simplesect kind="note"><para>简单通信建议使用WriteCoilsVar </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="71" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp" bodystart="240" bodyend="258"/>
+        <references refid="bsp___c_r_c_8cpp_1abb1fda5ed561362d12fe987758986919" compoundref="bsp___c_r_c_8cpp" startline="91" endline="99">CRC16_MODBUS</references>
+        <references refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a0a40a9622af4e5cb7daecbdb303ee35e" compoundref="bsp___mod_bus_8h" startline="49">Fun_W_Coils</references>
+        <references refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" compoundref="bsp___mod_bus_8h" startline="76">ID</references>
+        <references refid="classbsp___mod_bus___tx_1ac017f6145ba6f87c69a16510f868dcc2">Transmit</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___mod_bus___tx_1a280c5d7c99196a11b5fee7b34421a8ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsp_ModBus_Tx::WriteCoilsVar</definition>
+        <argsstring>(u16 address, u16 mem,...)</argsstring>
+        <name>WriteCoilsVar</name>
+        <qualifiedname>bsp_ModBus_Tx::WriteCoilsVar</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>mem</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>发送写多个线圈的指令 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>写入的地址 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>写入的个数 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>写入的数据 根据mem的数量决定此处数量 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>无返回值 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="72" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp" bodystart="268" bodyend="295"/>
+        <references refid="bsp___c_r_c_8cpp_1abb1fda5ed561362d12fe987758986919" compoundref="bsp___c_r_c_8cpp" startline="91" endline="99">CRC16_MODBUS</references>
+        <references refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a0a40a9622af4e5cb7daecbdb303ee35e" compoundref="bsp___mod_bus_8h" startline="49">Fun_W_Coils</references>
+        <references refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" compoundref="bsp___mod_bus_8h" startline="76">ID</references>
+        <references refid="classbsp___mod_bus___tx_1ac017f6145ba6f87c69a16510f868dcc2">Transmit</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classbsp___mod_bus___tx_1ac017f6145ba6f87c69a16510f868dcc2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void bsp_ModBus_Tx::Transmit</definition>
+        <argsstring>(u8 *dat, u16 len)=0</argsstring>
+        <name>Transmit</name>
+        <qualifiedname>bsp_ModBus_Tx::Transmit</qualifiedname>
+        <reimplementedby refid="classbsp___mod_bus___s_t_m32_1a3dda1f4a2a120c6a4482ff6d9d82f4e8">Transmit</reimplementedby>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref> *</type>
+          <declname>dat</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="74" column="14"/>
+        <referencedby refid="classbsp___mod_bus___tx_1a76e712e8d638ecc7b453e1c8afbbad98" compoundref="bsp___mod_bus_8cpp" startline="195" endline="207">ReadInCoil</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1af055e2569107b8ece7abdce3301e9444" compoundref="bsp___mod_bus_8cpp" startline="70" endline="82">ReadInReg</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1ada605c0e9195aefd43968cfe5b347565" compoundref="bsp___mod_bus_8cpp" startline="50" endline="62">ReadKeepReg</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1abc721f5c61e236df505f3447818be921" compoundref="bsp___mod_bus_8cpp" startline="175" endline="187">ReadOutCoil</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1a630ac7566fe9d1773baa813802202d0f" compoundref="bsp___mod_bus_8cpp" startline="240" endline="258">WriteCoils</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1a280c5d7c99196a11b5fee7b34421a8ff" compoundref="bsp___mod_bus_8cpp" startline="268" endline="295">WriteCoilsVar</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1aa8d37cc0cefaad8f41bc1d195a326d95" compoundref="bsp___mod_bus_8cpp" startline="217" endline="230">WriteOneCoil</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1a02ea1680f5c361f2cf4ebcb48b565281" compoundref="bsp___mod_bus_8cpp" startline="90" endline="102">WriteOneReg</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1a268c136782f8146662f33878522c270c" compoundref="bsp___mod_bus_8cpp" startline="112" endline="132">WriteRegs</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1acc267977d61716e25fd3e3ec57bc2960" compoundref="bsp___mod_bus_8cpp" startline="142" endline="167">WriteRegsVar</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ModBus发送器 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>bsp_ModBus_STM32</label>
+        <link refid="classbsp___mod_bus___s_t_m32"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>bsp_ModBus_Tx</label>
+        <link refid="classbsp___mod_bus___tx"/>
+      </node>
+    </inheritancegraph>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="58" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" bodystart="58" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classbsp___mod_bus___tx_1ac277122ddb733aa37a0000086d5ae239" prot="public" virt="non-virtual"><scope>bsp_ModBus_Tx</scope><name>bsp_ModBus_Tx</name></member>
+      <member refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" prot="protected" virt="non-virtual"><scope>bsp_ModBus_Tx</scope><name>ID</name></member>
+      <member refid="classbsp___mod_bus___tx_1a76e712e8d638ecc7b453e1c8afbbad98" prot="public" virt="non-virtual"><scope>bsp_ModBus_Tx</scope><name>ReadInCoil</name></member>
+      <member refid="classbsp___mod_bus___tx_1af055e2569107b8ece7abdce3301e9444" prot="public" virt="non-virtual"><scope>bsp_ModBus_Tx</scope><name>ReadInReg</name></member>
+      <member refid="classbsp___mod_bus___tx_1ada605c0e9195aefd43968cfe5b347565" prot="public" virt="non-virtual"><scope>bsp_ModBus_Tx</scope><name>ReadKeepReg</name></member>
+      <member refid="classbsp___mod_bus___tx_1abc721f5c61e236df505f3447818be921" prot="public" virt="non-virtual"><scope>bsp_ModBus_Tx</scope><name>ReadOutCoil</name></member>
+      <member refid="classbsp___mod_bus___tx_1ac017f6145ba6f87c69a16510f868dcc2" prot="protected" virt="pure-virtual"><scope>bsp_ModBus_Tx</scope><name>Transmit</name></member>
+      <member refid="classbsp___mod_bus___tx_1a630ac7566fe9d1773baa813802202d0f" prot="public" virt="non-virtual"><scope>bsp_ModBus_Tx</scope><name>WriteCoils</name></member>
+      <member refid="classbsp___mod_bus___tx_1a280c5d7c99196a11b5fee7b34421a8ff" prot="public" virt="non-virtual"><scope>bsp_ModBus_Tx</scope><name>WriteCoilsVar</name></member>
+      <member refid="classbsp___mod_bus___tx_1aa8d37cc0cefaad8f41bc1d195a326d95" prot="public" virt="non-virtual"><scope>bsp_ModBus_Tx</scope><name>WriteOneCoil</name></member>
+      <member refid="classbsp___mod_bus___tx_1a02ea1680f5c361f2cf4ebcb48b565281" prot="public" virt="non-virtual"><scope>bsp_ModBus_Tx</scope><name>WriteOneReg</name></member>
+      <member refid="classbsp___mod_bus___tx_1a268c136782f8146662f33878522c270c" prot="public" virt="non-virtual"><scope>bsp_ModBus_Tx</scope><name>WriteRegs</name></member>
+      <member refid="classbsp___mod_bus___tx_1acc267977d61716e25fd3e3ec57bc2960" prot="public" virt="non-virtual"><scope>bsp_ModBus_Tx</scope><name>WriteRegsVar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

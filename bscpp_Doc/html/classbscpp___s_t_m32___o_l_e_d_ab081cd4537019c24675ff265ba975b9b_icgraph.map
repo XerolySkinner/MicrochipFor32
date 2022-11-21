@@ -1,7 +1,0 @@
-<map id="bscpp_STM32_OLED::Page_set" name="bscpp_STM32_OLED::Page_set">
-<area shape="rect" id="node1" title="光标定位于一页" alt="" coords="249,95,460,120"/>
-<area shape="rect" id="node2" href="$classbscpp___s_t_m32___o_l_e_d.html#a8e707aad4ddac3a2de62a32d95b6d9af" title="全页绘制" alt="" coords="11,5,196,31"/>
-<area shape="rect" id="node3" href="$classbscpp___s_t_m32___o_l_e_d.html#a86586e3d035dd8f05575d115c612f74c" title="OLED绘制ASCII字符" alt="" coords="11,55,195,95"/>
-<area shape="rect" id="node4" href="$classbscpp___s_t_m32___o_l_e_d.html#a9812c1053c83781d35857a9d9a80eb77" title="OLED绘图" alt="" coords="5,119,201,159"/>
-<area shape="rect" id="node5" href="$classbscpp___s_t_m32___o_l_e_d.html#a7055576aee77d633692cf5ae1edf2a76" title="OLED反向绘图" alt="" coords="5,183,201,223"/>
-</map>

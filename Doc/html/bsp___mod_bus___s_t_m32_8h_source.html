@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MF32BSP_XerolySkinner: D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus_STM32.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MF32BSP_XerolySkinner<span id="projectnumber">&#160;2.0.0</span>
+   </div>
+   <div id="projectbrief">C++版本的驱动库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_7d600478d4be1ed73c651a71d29ab217.html">bsp_Device</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">bsp_ModBus_STM32.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="bsp___mod_bus___s_t_m32_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> #  Copyright (c) 2022 Yuankang Liang(XerolySkinner)</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> #  本软件按原样提供,无任何明示或暗示</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> #  在任何情况下,作者都不承担任何损害赔偿责任</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> #  使用的许可声明:</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> #  1.  不得歪曲本软件的来源,你不能声称你编写了原始软件.</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> #  2.  免费授予以任何目的,前提是版权声明出现在所有副本中.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> #      并且版权声明和许可声明同时出现.</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> #  3.  你有使用,复制,修改,分发,和销售本软件的许可.</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> #  4.  如果你在产品中使用,产品文档中的声明是赞赏的但不是必须的.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> #  5.  本通知不得从任何来源删除或更改.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> #  Yuankang Liang(XerolySkinner)</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> #      E-mail:zabbcccbbaz@163.com</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> #      QQ:2715099320</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> #      Mobile Phone:13005636215</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> #  All rights reserved.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;<a class="code" href="bsp___mod_bus_8h.html">bsp_ModBus.h</a>&quot;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;usart.h&quot;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &quot;<a class="code" href="varint_8h.html">varint.h</a>&quot;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">//----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">//  类目</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classbsp___mod_bus___s_t_m32.html">   45</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="classbsp___mod_bus___s_t_m32.html">bsp_ModBus_STM32</a>:<span class="keyword">public</span> <a class="code hl_class" href="classbsp___mod_bus___tx.html">bsp_ModBus_Tx</a> {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classbsp___mod_bus___s_t_m32.html#a5ad770cac0532b9b5eb76c11ebef0435">   47</a></span>        <a class="code hl_function" href="classbsp___mod_bus___s_t_m32.html#a5ad770cac0532b9b5eb76c11ebef0435">bsp_ModBus_STM32</a>(UART_HandleTypeDef* <a class="code hl_variable" href="classbsp___mod_bus___s_t_m32.html#a2f27c0f66492c3064f28698ce055039d">huart</a>,<a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> <a class="code hl_variable" href="classbsp___mod_bus___tx.html#a4ee454ddd116e2b608d9b35b02eee0e4">ID</a>,uint32_t <a class="code hl_variable" href="classbsp___mod_bus___s_t_m32.html#a41fc083e184c2f3a6e5225b2a8212347">Timeout</a>):<a class="code hl_class" href="classbsp___mod_bus___tx.html">bsp_ModBus_Tx</a>(<a class="code hl_variable" href="classbsp___mod_bus___tx.html#a4ee454ddd116e2b608d9b35b02eee0e4">ID</a>){</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <a class="code hl_variable" href="classbsp___mod_bus___s_t_m32.html#a2f27c0f66492c3064f28698ce055039d">bsp_ModBus_STM32::huart</a> = <a class="code hl_variable" href="classbsp___mod_bus___s_t_m32.html#a2f27c0f66492c3064f28698ce055039d">huart</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <a class="code hl_variable" href="classbsp___mod_bus___s_t_m32.html#a41fc083e184c2f3a6e5225b2a8212347">bsp_ModBus_STM32::Timeout</a> = <a class="code hl_variable" href="classbsp___mod_bus___s_t_m32.html#a41fc083e184c2f3a6e5225b2a8212347">Timeout</a>;}</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classbsp___mod_bus___s_t_m32.html#a3dda1f4a2a120c6a4482ff6d9d82f4e8">   51</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___mod_bus___s_t_m32.html#a3dda1f4a2a120c6a4482ff6d9d82f4e8">Transmit</a>(<a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *dat, <a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> len){</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            HAL_UART_Transmit(<a class="code hl_variable" href="classbsp___mod_bus___s_t_m32.html#a2f27c0f66492c3064f28698ce055039d">huart</a>,dat,len,0xFF);}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classbsp___mod_bus___s_t_m32.html#a2f27c0f66492c3064f28698ce055039d">   54</a></span>        UART_HandleTypeDef* <a class="code hl_variable" href="classbsp___mod_bus___s_t_m32.html#a2f27c0f66492c3064f28698ce055039d">huart</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classbsp___mod_bus___s_t_m32.html#a41fc083e184c2f3a6e5225b2a8212347">   55</a></span>        uint32_t <a class="code hl_variable" href="classbsp___mod_bus___s_t_m32.html#a41fc083e184c2f3a6e5225b2a8212347">Timeout</a>;};</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="absp___mod_bus_8h_html"><div class="ttname"><a href="bsp___mod_bus_8h.html">bsp_ModBus.h</a></div><div class="ttdoc">ModBus通信函数</div></div>
+<div class="ttc" id="aclassbsp___mod_bus___s_t_m32_html"><div class="ttname"><a href="classbsp___mod_bus___s_t_m32.html">bsp_ModBus_STM32</a></div><div class="ttdoc">STM32用串口的ModBus发送器</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus___s_t_m32_8h_source.html#l00045">bsp_ModBus_STM32.h:45</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___s_t_m32_html_a2f27c0f66492c3064f28698ce055039d"><div class="ttname"><a href="classbsp___mod_bus___s_t_m32.html#a2f27c0f66492c3064f28698ce055039d">bsp_ModBus_STM32::huart</a></div><div class="ttdeci">UART_HandleTypeDef * huart</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus___s_t_m32_8h_source.html#l00054">bsp_ModBus_STM32.h:54</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___s_t_m32_html_a3dda1f4a2a120c6a4482ff6d9d82f4e8"><div class="ttname"><a href="classbsp___mod_bus___s_t_m32.html#a3dda1f4a2a120c6a4482ff6d9d82f4e8">bsp_ModBus_STM32::Transmit</a></div><div class="ttdeci">virtual void Transmit(u8 *dat, u16 len)</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus___s_t_m32_8h_source.html#l00051">bsp_ModBus_STM32.h:51</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___s_t_m32_html_a41fc083e184c2f3a6e5225b2a8212347"><div class="ttname"><a href="classbsp___mod_bus___s_t_m32.html#a41fc083e184c2f3a6e5225b2a8212347">bsp_ModBus_STM32::Timeout</a></div><div class="ttdeci">uint32_t Timeout</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus___s_t_m32_8h_source.html#l00055">bsp_ModBus_STM32.h:55</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___s_t_m32_html_a5ad770cac0532b9b5eb76c11ebef0435"><div class="ttname"><a href="classbsp___mod_bus___s_t_m32.html#a5ad770cac0532b9b5eb76c11ebef0435">bsp_ModBus_STM32::bsp_ModBus_STM32</a></div><div class="ttdeci">bsp_ModBus_STM32(UART_HandleTypeDef *huart, u8 ID, uint32_t Timeout)</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus___s_t_m32_8h_source.html#l00047">bsp_ModBus_STM32.h:47</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___tx_html"><div class="ttname"><a href="classbsp___mod_bus___tx.html">bsp_ModBus_Tx</a></div><div class="ttdoc">ModBus发送器</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00058">bsp_ModBus.h:58</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___tx_html_a4ee454ddd116e2b608d9b35b02eee0e4"><div class="ttname"><a href="classbsp___mod_bus___tx.html#a4ee454ddd116e2b608d9b35b02eee0e4">bsp_ModBus_Tx::ID</a></div><div class="ttdeci">u8 ID</div><div class="ttdoc">器件ID</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00076">bsp_ModBus.h:76</a></div></div>
+<div class="ttc" id="avarint_8h_html"><div class="ttname"><a href="varint_8h.html">varint.h</a></div></div>
+<div class="ttc" id="avarint_8h_html_a92c50087ca0e64fa93fc59402c55f8ca"><div class="ttname"><a href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a></div><div class="ttdeci">uint8_t u8</div><div class="ttdoc">8位无符号数类型</div><div class="ttdef"><b>Definition:</b> <a href="varint_8h_source.html#l00040">varint.h:40</a></div></div>
+<div class="ttc" id="avarint_8h_html_ace9d960e74685e2cd84b36132dbbf8aa"><div class="ttname"><a href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a></div><div class="ttdeci">uint16_t u16</div><div class="ttdoc">16位无符号数类型</div><div class="ttdef"><b>Definition:</b> <a href="varint_8h_source.html#l00041">varint.h:41</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

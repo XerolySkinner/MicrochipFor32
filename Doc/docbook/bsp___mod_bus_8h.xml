@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_bsp___mod_bus_8h" xml:lang="zh">
+<title>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h 文件参考</title>
+<indexterm><primary>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h</primary></indexterm>
+<para>
+
+<para>ModBus通信函数 </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;varint.h&quot;<?linebreak?>#include &quot;usart.h&quot;<?linebreak?>#include &lt;stdarg.h&gt;<?linebreak?></programlisting>bsp_ModBus.h 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="bsp___mod_bus_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+此图展示该文件直接或间接的被哪些文件引用了:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="bsp___mod_bus_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>类    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbsp___mod_bus___tx">bsp_ModBus_Tx</link></para>
+
+<para>ModBus发送器 </para>
+</listitem>
+            <listitem><para>class <link linkend="_classbsp___mod_bus___rx">bsp_ModBus_Rx</link></para>
+
+<para>ModBus协议分析器 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>枚举    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643">Fun_ModBus</link> { <?linebreak?><link linkend="_bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643afa0834864982fdb57c9a954bdbd1599b">Fun_R_OutCoil</link> = 0x01
+, <link linkend="_bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a8c70d4d5036c1a3f9c51a545d13fdd92">Fun_R_InCoil</link> = 0x02
+, <link linkend="_bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a9ec5f1febebcade07d80148f67d51594">Fun_R_KeepReg</link> = 0x03
+, <link linkend="_bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643ab285b7d7c40fa9a85adba60a3a769fca">Fun_R_InReg</link> = 0x04
+, <?linebreak?><link linkend="_bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a95bb48bd2de82de8a2f5684a6cccff0f">Fun_W_OneCoil</link> = 0x05
+, <link linkend="_bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a2e8689560573f300af3a6c48fdd6ce86">Fun_W_OneReg</link> = 0x06
+, <link linkend="_bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a0a40a9622af4e5cb7daecbdb303ee35e">Fun_W_Coils</link> = 0x0F
+, <link linkend="_bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a54562faaab8c1c932c46c6c4cb2552f9">Fun_W_Regs</link> = 0x10
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>ModBus通信函数 </para>
+<para>
+在文件 <link linkend="_bsp___mod_bus_8h_source">bsp_ModBus.h</link> 中定义.</para>
+</section>
+<section>
+<title>枚举类型说明</title>
+<anchor xml:id="_bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643"/><section>
+    <title>Fun_ModBus</title>
+<indexterm><primary>Fun_ModBus</primary><secondary>bsp_ModBus.h</secondary></indexterm>
+<indexterm><primary>bsp_ModBus.h</primary><secondary>Fun_ModBus</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643">Fun_ModBus</link></computeroutput></para><informaltable frame="all">
+<title>枚举值</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Fun_R_OutCoil</primary><secondary>bsp_ModBus.h</secondary></indexterm>
+<indexterm><primary>bsp_ModBus.h</primary><secondary>Fun_R_OutCoil</secondary></indexterm>
+<anchor xml:id="_bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643afa0834864982fdb57c9a954bdbd1599b"/>Fun_R_OutCoil</entry><entry>
+<para>读取输出线圈 </para>
+</entry></row><row><entry><indexterm><primary>Fun_R_InCoil</primary><secondary>bsp_ModBus.h</secondary></indexterm>
+<indexterm><primary>bsp_ModBus.h</primary><secondary>Fun_R_InCoil</secondary></indexterm>
+<anchor xml:id="_bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a8c70d4d5036c1a3f9c51a545d13fdd92"/>Fun_R_InCoil</entry><entry>
+<para>读取输入线圈 </para>
+</entry></row><row><entry><indexterm><primary>Fun_R_KeepReg</primary><secondary>bsp_ModBus.h</secondary></indexterm>
+<indexterm><primary>bsp_ModBus.h</primary><secondary>Fun_R_KeepReg</secondary></indexterm>
+<anchor xml:id="_bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a9ec5f1febebcade07d80148f67d51594"/>Fun_R_KeepReg</entry><entry>
+<para>读取保持寄存 </para>
+</entry></row><row><entry><indexterm><primary>Fun_R_InReg</primary><secondary>bsp_ModBus.h</secondary></indexterm>
+<indexterm><primary>bsp_ModBus.h</primary><secondary>Fun_R_InReg</secondary></indexterm>
+<anchor xml:id="_bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643ab285b7d7c40fa9a85adba60a3a769fca"/>Fun_R_InReg</entry><entry>
+<para>读取输入寄存 </para>
+</entry></row><row><entry><indexterm><primary>Fun_W_OneCoil</primary><secondary>bsp_ModBus.h</secondary></indexterm>
+<indexterm><primary>bsp_ModBus.h</primary><secondary>Fun_W_OneCoil</secondary></indexterm>
+<anchor xml:id="_bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a95bb48bd2de82de8a2f5684a6cccff0f"/>Fun_W_OneCoil</entry><entry>
+<para>写入单线圈 </para>
+</entry></row><row><entry><indexterm><primary>Fun_W_OneReg</primary><secondary>bsp_ModBus.h</secondary></indexterm>
+<indexterm><primary>bsp_ModBus.h</primary><secondary>Fun_W_OneReg</secondary></indexterm>
+<anchor xml:id="_bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a2e8689560573f300af3a6c48fdd6ce86"/>Fun_W_OneReg</entry><entry>
+<para>写入单寄存 </para>
+</entry></row><row><entry><indexterm><primary>Fun_W_Coils</primary><secondary>bsp_ModBus.h</secondary></indexterm>
+<indexterm><primary>bsp_ModBus.h</primary><secondary>Fun_W_Coils</secondary></indexterm>
+<anchor xml:id="_bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a0a40a9622af4e5cb7daecbdb303ee35e"/>Fun_W_Coils</entry><entry>
+<para>写入多线圈 </para>
+</entry></row><row><entry><indexterm><primary>Fun_W_Regs</primary><secondary>bsp_ModBus.h</secondary></indexterm>
+<indexterm><primary>bsp_ModBus.h</primary><secondary>Fun_W_Regs</secondary></indexterm>
+<anchor xml:id="_bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a54562faaab8c1c932c46c6c4cb2552f9"/>Fun_W_Regs</entry><entry>
+<para>写入多寄存 </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+在文件 <link linkend="_bsp___mod_bus_8h_source">bsp_ModBus.h</link> 第 <link linkend="_bsp___mod_bus_8h_source_1l00041">41</link> 行定义.</para>
+</section>
+</section>
+</section>

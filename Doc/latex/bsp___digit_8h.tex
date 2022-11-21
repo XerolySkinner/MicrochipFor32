@@ -1,0 +1,100 @@
+\hypertarget{bsp___digit_8h}{}\doxysection{D\+:/gitt/\+Microchip\+For32/bsp\+\_\+\+Device/bsp\+\_\+\+Digit.h 文件参考}
+\label{bsp___digit_8h}\index{D:/gitt/MicrochipFor32/bsp\_Device/bsp\_Digit.h@{D:/gitt/MicrochipFor32/bsp\_Device/bsp\_Digit.h}}
+
+
+数码管显示类  
+
+
+{\ttfamily \#include \char`\"{}varint.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gpio.\+h\char`\"{}}\newline
+bsp\+\_\+\+Digit.\+h 的引用(Include)关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{bsp___digit_8h__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{bsp___digit_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classbsp___digit}{bsp\+\_\+\+Digit}}
+\begin{DoxyCompactList}\small\item\em 一个面向数码管的类,使用级联的\+HC595 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{bsp___digit_8h_a06fc87d81c62e9abb8790b6e5713c55ba4c86d712c35fc61b110859b9f8c622f5}{anode}}
+, \mbox{\hyperlink{bsp___digit_8h_a06fc87d81c62e9abb8790b6e5713c55ba5802523c5519b4792ac2433404f6de26}{cathode}}
+ \}
+\begin{DoxyCompactList}\small\item\em 数码管的共阳极或共阴极选择 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{bsp___digit_8h_a9c1f3d665aa750ca904e9e547a2c98f8}{digit\+\_\+ca}} \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em 共阳极数码管的段码表,共阴极由此反相得到 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+数码管显示类 
+
+
+
+在文件 \mbox{\hyperlink{bsp___digit_8h_source}{bsp\+\_\+\+Digit.\+h}} 中定义.
+
+
+
+\doxysubsection{枚举类型说明}
+\mbox{\Hypertarget{bsp___digit_8h_a06fc87d81c62e9abb8790b6e5713c55b}\label{bsp___digit_8h_a06fc87d81c62e9abb8790b6e5713c55b}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+
+
+数码管的共阳极或共阴极选择 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{anode@{anode}!bsp\_Digit.h@{bsp\_Digit.h}}\index{bsp\_Digit.h@{bsp\_Digit.h}!anode@{anode}}}\mbox{\Hypertarget{bsp___digit_8h_a06fc87d81c62e9abb8790b6e5713c55ba4c86d712c35fc61b110859b9f8c622f5}\label{bsp___digit_8h_a06fc87d81c62e9abb8790b6e5713c55ba4c86d712c35fc61b110859b9f8c622f5}} 
+anode&共阳极 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{cathode@{cathode}!bsp\_Digit.h@{bsp\_Digit.h}}\index{bsp\_Digit.h@{bsp\_Digit.h}!cathode@{cathode}}}\mbox{\Hypertarget{bsp___digit_8h_a06fc87d81c62e9abb8790b6e5713c55ba5802523c5519b4792ac2433404f6de26}\label{bsp___digit_8h_a06fc87d81c62e9abb8790b6e5713c55ba5802523c5519b4792ac2433404f6de26}} 
+cathode&共阴极 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{bsp___digit_8h_source}{bsp\+\_\+\+Digit.\+h}} 第 \mbox{\hyperlink{bsp___digit_8h_source_l00046}{46}} 行定义.
+
+
+
+\doxysubsection{变量说明}
+\mbox{\Hypertarget{bsp___digit_8h_a9c1f3d665aa750ca904e9e547a2c98f8}\label{bsp___digit_8h_a9c1f3d665aa750ca904e9e547a2c98f8}} 
+\index{bsp\_Digit.h@{bsp\_Digit.h}!digit\_ca@{digit\_ca}}
+\index{digit\_ca@{digit\_ca}!bsp\_Digit.h@{bsp\_Digit.h}}
+\doxysubsubsection{\texorpdfstring{digit\_ca}{digit\_ca}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} digit\+\_\+ca\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries 初始值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{     }
+\DoxyCodeLine{    0xc0,0xf9,0xa4,0xb0,}
+\DoxyCodeLine{    0x99,0x92,0x82,0xf8,}
+\DoxyCodeLine{    0x80,0x90,0x88,0x83,}
+\DoxyCodeLine{    0xc6,0xa1,0x86,0x8e\}}
+
+\end{DoxyCode}
+
+
+共阳极数码管的段码表,共阴极由此反相得到 
+
+
+
+在文件 \mbox{\hyperlink{bsp___digit_8h_source}{bsp\+\_\+\+Digit.\+h}} 第 \mbox{\hyperlink{bsp___digit_8h_source_l00056}{56}} 行定义.
+

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__main_system_8cpp" xml:lang="zh">
+<title>D:/gitt/MicrochipFor32/bsp_System/MainSystem.cpp 文件参考</title>
+<indexterm><primary>D:/gitt/MicrochipFor32/bsp_System/MainSystem.cpp</primary></indexterm>
+<para>
+
+<para>实现了一个C++库针对单片机开发 </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;vartable.h&quot;<?linebreak?></programlisting>MainSystem.cpp 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_main_system_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>函数    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="__main_system_8cpp_1a848c96750b960675b1bd032c1c2725e5">MainInit</link> (void)</para>
+
+<para>初始化步骤的首部 </para>
+</listitem>
+            <listitem><para>void <link linkend="__main_system_8cpp_1af89e02f2d993332a8dea8fef6b78a7bc">MainSystem</link> (void)</para>
+
+<para>循环主程序函数 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>实现了一个C++库针对单片机开发 </para>
+<para>
+在文件 <link linkend="__main_system_8cpp_source">MainSystem.cpp</link> 中定义.</para>
+</section>
+<section>
+<title>函数说明</title>
+<anchor xml:id="__main_system_8cpp_1a848c96750b960675b1bd032c1c2725e5"/><section>
+    <title>MainInit()</title>
+<indexterm><primary>MainInit</primary><secondary>MainSystem.cpp</secondary></indexterm>
+<indexterm><primary>MainSystem.cpp</primary><secondary>MainInit</secondary></indexterm>
+<para><computeroutput>void MainInit (void )</computeroutput></para><para>
+
+<para>初始化步骤的首部 </para>
+</para>
+
+<para><note><title>注解</title>
+
+<para>在MX生成的main中,进入循环前放置本函数 </para>
+</note>
+</para>
+
+<para><para><link linkend="_todo_1_todo000004">待办事项</link> 
+<para>在此处填写初始化程序 </para>
+</para></para>
+<para>
+在文件 <link linkend="__main_system_8cpp_source">MainSystem.cpp</link> 第 <link linkend="__main_system_8cpp_source_1l00047">47</link> 行定义.</para>
+</section>
+<anchor xml:id="__main_system_8cpp_1af89e02f2d993332a8dea8fef6b78a7bc"/><section>
+    <title>MainSystem()</title>
+<indexterm><primary>MainSystem</primary><secondary>MainSystem.cpp</secondary></indexterm>
+<indexterm><primary>MainSystem.cpp</primary><secondary>MainSystem</secondary></indexterm>
+<para><computeroutput>void MainSystem (void )</computeroutput></para><para>
+
+<para>循环主程序函数 </para>
+</para>
+
+<para><note><title>注解</title>
+
+<para>在MX生成的main中,进入循环后放置本函数 </para>
+</note>
+</para>
+
+<para><para><link linkend="_todo_1_todo000005">待办事项</link> 
+<para>在此处填写主进程程序 </para>
+</para></para>
+<para>
+在文件 <link linkend="__main_system_8cpp_source">MainSystem.cpp</link> 第 <link linkend="__main_system_8cpp_source_1l00056">56</link> 行定义.</para>
+</section>
+</section>
+</section>

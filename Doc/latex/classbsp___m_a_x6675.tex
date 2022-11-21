@@ -1,0 +1,127 @@
+\hypertarget{classbsp___m_a_x6675}{}\doxysection{bsp\+\_\+\+MAX6675类 参考}
+\label{classbsp___m_a_x6675}\index{bsp\_MAX6675@{bsp\_MAX6675}}
+
+
+MAX6675的一个对象类  
+
+
+
+
+{\ttfamily \#include $<$bsp\+\_\+\+MAX6675.\+h$>$}
+
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbsp___m_a_x6675_ae241abb7c21d7bf551543046a92e6025}{bsp\+\_\+\+MAX6675}} (SPI\+\_\+\+Handle\+Type\+Def $\ast$\mbox{\hyperlink{classbsp___m_a_x6675_a6b4e52e8861a88b7201c1bb5e70aa40a}{hspi}}, GPIO\+\_\+\+Type\+Def $\ast$\mbox{\hyperlink{classbsp___m_a_x6675_a546cf5ce462d8bee441b66ca7e6c270a}{GPIOx\+\_\+\+CS}}, uint16\+\_\+t \mbox{\hyperlink{classbsp___m_a_x6675_a925d408718c644d56e5ffebd25150c4f}{GPIO\+\_\+\+Pin\+\_\+\+CS}})
+\begin{DoxyCompactList}\small\item\em 构造一个\+MAX6675对象 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classbsp___m_a_x6675_aaf35defa67c560c795005ba8ee61324c}{Read\+Temperature}} (void)
+\begin{DoxyCompactList}\small\item\em 访问目前温度 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+SPI\+\_\+\+Handle\+Type\+Def $\ast$ \mbox{\hyperlink{classbsp___m_a_x6675_a6b4e52e8861a88b7201c1bb5e70aa40a}{hspi}}
+\item 
+GPIO\+\_\+\+Type\+Def $\ast$ \mbox{\hyperlink{classbsp___m_a_x6675_a546cf5ce462d8bee441b66ca7e6c270a}{GPIOx\+\_\+\+CS}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classbsp___m_a_x6675_a925d408718c644d56e5ffebd25150c4f}{GPIO\+\_\+\+Pin\+\_\+\+CS}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+MAX6675的一个对象类 
+
+\begin{DoxyNote}{注解}
+硬件\+SPI需要设置如下 Date Size\+:16 Bits MSB First 分频速度合适即可 需要准备一个\+CS管脚以控制选通 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{bsp___m_a_x6675_8h_source}{bsp\+\_\+\+MAX6675.\+h}} 第 \mbox{\hyperlink{bsp___m_a_x6675_8h_source_l00049}{49}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classbsp___m_a_x6675_ae241abb7c21d7bf551543046a92e6025}\label{classbsp___m_a_x6675_ae241abb7c21d7bf551543046a92e6025}} 
+\index{bsp\_MAX6675@{bsp\_MAX6675}!bsp\_MAX6675@{bsp\_MAX6675}}
+\index{bsp\_MAX6675@{bsp\_MAX6675}!bsp\_MAX6675@{bsp\_MAX6675}}
+\doxysubsubsection{\texorpdfstring{bsp\_MAX6675()}{bsp\_MAX6675()}}
+{\footnotesize\ttfamily bsp\+\_\+\+MAX6675\+::bsp\+\_\+\+MAX6675 (\begin{DoxyParamCaption}\item[{SPI\+\_\+\+Handle\+Type\+Def $\ast$}]{hspi,  }\item[{GPIO\+\_\+\+Type\+Def $\ast$}]{GPIOx\+\_\+\+CS,  }\item[{uint16\+\_\+t}]{GPIO\+\_\+\+Pin\+\_\+\+CS }\end{DoxyParamCaption})}
+
+
+
+构造一个\+MAX6675对象 
+
+
+\begin{DoxyParams}{参数}
+{\em $\ast$hspi} & 设置的hspi,举例输入\+:\&hspi1 \\
+\hline
+{\em $\ast$\+GPIOx\+\_\+\+CS} & 设置的选通端口,举例输入\+:GPIOA \\
+\hline
+{\em GPIO\+\_\+\+Pin\+\_\+\+CS} & 设置的选通针脚,举例输入\+:GPIO\+\_\+\+PIN\+\_\+0 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+无返回 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___m_a_x6675_8cpp_source}{bsp\+\_\+\+MAX6675.\+cpp}} 第 \mbox{\hyperlink{bsp___m_a_x6675_8cpp_source_l00049}{49}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classbsp___m_a_x6675_aaf35defa67c560c795005ba8ee61324c}\label{classbsp___m_a_x6675_aaf35defa67c560c795005ba8ee61324c}} 
+\index{bsp\_MAX6675@{bsp\_MAX6675}!ReadTemperature@{ReadTemperature}}
+\index{ReadTemperature@{ReadTemperature}!bsp\_MAX6675@{bsp\_MAX6675}}
+\doxysubsubsection{\texorpdfstring{ReadTemperature()}{ReadTemperature()}}
+{\footnotesize\ttfamily float bsp\+\_\+\+MAX6675\+::\+Read\+Temperature (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+访问目前温度 
+
+\begin{DoxyReturn}{返回}
+返回浮点类型温度 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___m_a_x6675_8cpp_source}{bsp\+\_\+\+MAX6675.\+cpp}} 第 \mbox{\hyperlink{bsp___m_a_x6675_8cpp_source_l00064}{64}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{classbsp___m_a_x6675_a925d408718c644d56e5ffebd25150c4f}\label{classbsp___m_a_x6675_a925d408718c644d56e5ffebd25150c4f}} 
+\index{bsp\_MAX6675@{bsp\_MAX6675}!GPIO\_Pin\_CS@{GPIO\_Pin\_CS}}
+\index{GPIO\_Pin\_CS@{GPIO\_Pin\_CS}!bsp\_MAX6675@{bsp\_MAX6675}}
+\doxysubsubsection{\texorpdfstring{GPIO\_Pin\_CS}{GPIO\_Pin\_CS}}
+{\footnotesize\ttfamily uint16\+\_\+t bsp\+\_\+\+MAX6675\+::\+GPIO\+\_\+\+Pin\+\_\+\+CS\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{bsp___m_a_x6675_8h_source}{bsp\+\_\+\+MAX6675.\+h}} 第 \mbox{\hyperlink{bsp___m_a_x6675_8h_source_l00059}{59}} 行定义.
+
+\mbox{\Hypertarget{classbsp___m_a_x6675_a546cf5ce462d8bee441b66ca7e6c270a}\label{classbsp___m_a_x6675_a546cf5ce462d8bee441b66ca7e6c270a}} 
+\index{bsp\_MAX6675@{bsp\_MAX6675}!GPIOx\_CS@{GPIOx\_CS}}
+\index{GPIOx\_CS@{GPIOx\_CS}!bsp\_MAX6675@{bsp\_MAX6675}}
+\doxysubsubsection{\texorpdfstring{GPIOx\_CS}{GPIOx\_CS}}
+{\footnotesize\ttfamily GPIO\+\_\+\+Type\+Def$\ast$ bsp\+\_\+\+MAX6675\+::\+GPIOx\+\_\+\+CS\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{bsp___m_a_x6675_8h_source}{bsp\+\_\+\+MAX6675.\+h}} 第 \mbox{\hyperlink{bsp___m_a_x6675_8h_source_l00058}{58}} 行定义.
+
+\mbox{\Hypertarget{classbsp___m_a_x6675_a6b4e52e8861a88b7201c1bb5e70aa40a}\label{classbsp___m_a_x6675_a6b4e52e8861a88b7201c1bb5e70aa40a}} 
+\index{bsp\_MAX6675@{bsp\_MAX6675}!hspi@{hspi}}
+\index{hspi@{hspi}!bsp\_MAX6675@{bsp\_MAX6675}}
+\doxysubsubsection{\texorpdfstring{hspi}{hspi}}
+{\footnotesize\ttfamily SPI\+\_\+\+Handle\+Type\+Def$\ast$ bsp\+\_\+\+MAX6675\+::hspi\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{bsp___m_a_x6675_8h_source}{bsp\+\_\+\+MAX6675.\+h}} 第 \mbox{\hyperlink{bsp___m_a_x6675_8h_source_l00057}{57}} 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/gitt/\+Microchip\+For32/bsp\+\_\+\+Device/\mbox{\hyperlink{bsp___m_a_x6675_8h}{bsp\+\_\+\+MAX6675.\+h}}\item 
+D\+:/gitt/\+Microchip\+For32/bsp\+\_\+\+Device/\mbox{\hyperlink{bsp___m_a_x6675_8cpp}{bsp\+\_\+\+MAX6675.\+cpp}}\end{DoxyCompactItemize}

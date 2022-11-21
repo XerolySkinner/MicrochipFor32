@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_bsp___o_l_e_d___s_t_m32_8cpp" xml:lang="zh">
+<title>D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp 文件参考</title>
+<indexterm><primary>D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp</primary></indexterm>
+<para>
+
+<para>在STM32下实现OLED通信 </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;bsp_IIC_STM32.h&quot;<?linebreak?>#include &quot;bsp_OLED_STM32.h&quot;<?linebreak?></programlisting>bsp_OLED_STM32.cpp 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="bsp___o_l_e_d___s_t_m32_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>变量    </title>
+        <itemizedlist>
+            <listitem><para>const <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp_1a1044366356ed639ee7754656558a44fb">OLED_WORD_ASCII</link> []</para>
+
+<para>OLED的ASCII字符集 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>在STM32下实现OLED通信 </para>
+<para>
+在文件 <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp_source">bsp_OLED_STM32.cpp</link> 中定义.</para>
+</section>
+<section>
+<title>变量说明</title>
+<anchor xml:id="_bsp___o_l_e_d___s_t_m32_8cpp_1a1044366356ed639ee7754656558a44fb"/><section>
+    <title>OLED_WORD_ASCII</title>
+<indexterm><primary>OLED_WORD_ASCII</primary><secondary>bsp_OLED_STM32.cpp</secondary></indexterm>
+<indexterm><primary>bsp_OLED_STM32.cpp</primary><secondary>OLED_WORD_ASCII</secondary></indexterm>
+<para><computeroutput>const <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> OLED_WORD_ASCII[]<computeroutput>[extern]</computeroutput></computeroutput></para><para>
+
+<para>OLED的ASCII字符集 </para>
+</para>
+<para>
+在文件 <link linkend="_bsp___o_l_e_d___s_t_m32_8h_source">bsp_OLED_STM32.h</link> 第 <link linkend="_bsp___o_l_e_d___s_t_m32_8h_source_1l00110">110</link> 行定义.</para>
+</section>
+</section>
+</section>

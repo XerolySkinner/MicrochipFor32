@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_inv__mpu__dmp__motion__driver_8h" xml:lang="zh">
+<title>D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h 文件参考</title>
+<indexterm><primary>D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h</primary></indexterm>
+<para>
+
+<para>DMP image and interface functions. </para>
+ 
+</para>
+此图展示该文件直接或间接的被哪些文件引用了:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="inv__mpu__dmp__motion__driver_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>宏定义    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga22a5ea75ee18a788b441f66fffe83586">TAP_X</link>&#160;&#160;&#160;(0x01)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga762f9521bf33c9ba7a77595268b108ec">TAP_Y</link>&#160;&#160;&#160;(0x02)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gac2949c36d5f4eeb4769fdcf2d99284fd">TAP_Z</link>&#160;&#160;&#160;(0x04)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaa2b8e1661eb53aeac3ff4877ff2b79d9">TAP_XYZ</link>&#160;&#160;&#160;(0x07)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaa979b4cd872ade6f4904199e83e9f3f4">TAP_X_UP</link>&#160;&#160;&#160;(0x01)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gad3263c4a492cc11a014800d4a6e3311a">TAP_X_DOWN</link>&#160;&#160;&#160;(0x02)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga70ea99c21d573b870b91909faf677107">TAP_Y_UP</link>&#160;&#160;&#160;(0x03)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga3d35b3c219083d14f9fff4a9c65cf783">TAP_Y_DOWN</link>&#160;&#160;&#160;(0x04)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gab240d8ebc872ea183523f4b3c3f9e346">TAP_Z_UP</link>&#160;&#160;&#160;(0x05)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga8f0f8c5db2a60932cfde68ca0b9c2032">TAP_Z_DOWN</link>&#160;&#160;&#160;(0x06)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga5198482b1487f06b71c9393847ae1897">ANDROID_ORIENT_PORTRAIT</link>&#160;&#160;&#160;(0x00)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga388a7f6ac0d53cf96318b0bafa5c1c0a">ANDROID_ORIENT_LANDSCAPE</link>&#160;&#160;&#160;(0x01)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga63b8f82e9d60a84b6fca8c680d78c866">ANDROID_ORIENT_REVERSE_PORTRAIT</link>&#160;&#160;&#160;(0x02)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga98dc7e42de72097f62612c758de3ba16">ANDROID_ORIENT_REVERSE_LANDSCAPE</link>&#160;&#160;&#160;(0x03)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaab5d80253aaee2470c95c6981b731255">DMP_INT_GESTURE</link>&#160;&#160;&#160;(0x01)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaabccda0e9ccd1a2f4287d23fe4b0c776">DMP_INT_CONTINUOUS</link>&#160;&#160;&#160;(0x02)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga87fac39cf95e2c56afdf507a986fa00b">DMP_FEATURE_TAP</link>&#160;&#160;&#160;(0x001)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaf2b250fc928390d562f7bd80300ce419">DMP_FEATURE_ANDROID_ORIENT</link>&#160;&#160;&#160;(0x002)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gabf442c0477f8f7704a8094519ddfe38e">DMP_FEATURE_LP_QUAT</link>&#160;&#160;&#160;(0x004)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gabcf6a5bc9703782d711d0c6ba92ade85">DMP_FEATURE_PEDOMETER</link>&#160;&#160;&#160;(0x008)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gae879a3c9729f9e1be5e6d7c9211c69c0">DMP_FEATURE_6X_LP_QUAT</link>&#160;&#160;&#160;(0x010)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaaf0ac890c1f83106c08b722f1e865fdb">DMP_FEATURE_GYRO_CAL</link>&#160;&#160;&#160;(0x020)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga9eeb257febe4a305df7ad4cf31dc2755">DMP_FEATURE_SEND_RAW_ACCEL</link>&#160;&#160;&#160;(0x040)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaa59d3ed6f0cbc66e99ce637546434b34">DMP_FEATURE_SEND_RAW_GYRO</link>&#160;&#160;&#160;(0x080)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga40462c6fd55b04b2f79723dd737ee795">DMP_FEATURE_SEND_CAL_GYRO</link>&#160;&#160;&#160;(0x100)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga3d79cffe845a796a27d03432a1f2ade0">INV_WXYZ_QUAT</link>&#160;&#160;&#160;(0x100)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>函数    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga66626a842452f444e9af29cb0d2c6150">dmp_load_motion_driver_firmware</link> (void)</para>
+
+<para>Load the DMP with this image. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga5399728fd572a7694af20286cc9d4121">dmp_set_fifo_rate</link> (unsigned short rate)</para>
+
+<para>Set DMP output rate. Only used when DMP is on. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gaf3f9953bc04af751b1101700daffa951">dmp_get_fifo_rate</link> (unsigned short *rate)</para>
+
+<para>Get DMP output rate. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga70c485bdfa30515e5b869b081192caa1">dmp_enable_feature</link> (unsigned short mask)</para>
+
+<para>Enable DMP features. The following #define&apos;s are used in the input mask: <?linebreak?> DMP_FEATURE_TAP <?linebreak?> DMP_FEATURE_ANDROID_ORIENT <?linebreak?> DMP_FEATURE_LP_QUAT <?linebreak?> DMP_FEATURE_6X_LP_QUAT <?linebreak?> DMP_FEATURE_GYRO_CAL <?linebreak?> DMP_FEATURE_SEND_RAW_ACCEL <?linebreak?> DMP_FEATURE_SEND_RAW_GYRO <?linebreak?> NOTE: DMP_FEATURE_LP_QUAT and DMP_FEATURE_6X_LP_QUAT are mutually exclusive. <?linebreak?> NOTE: DMP_FEATURE_SEND_RAW_GYRO and DMP_FEATURE_SEND_CAL_GYRO are also mutually exclusive. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga92b920b72f5146ea14d45ad2d529b64c">dmp_get_enabled_features</link> (unsigned short *mask)</para>
+
+<para>Get list of currently enabled DMP features. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gaf10c08103d2aec9aa5555a5694bafced">dmp_set_interrupt_mode</link> (unsigned char mode)</para>
+
+<para>Specify when a DMP interrupt should occur. A DMP interrupt can be configured to trigger on either of the two conditions below: <?linebreak?> a. One FIFO period has elapsed (set by <emphasis>mpu_set_sample_rate</emphasis>). <?linebreak?> b. A tap event has been detected. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga6cb5ff144ce6e1546f00809de8bb24a4">dmp_set_orientation</link> (unsigned short orient)</para>
+
+<para>Push gyro and accel orientation to the DMP. The orientation is represented here as the output of <emphasis>inv_orientation_matrix_to_scalar</emphasis>. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga4766e37ef95cbf0044c8f9594ed811d1">dmp_set_gyro_bias</link> (long *bias)</para>
+
+<para>Push gyro biases to the DMP. Because the gyro integration is handled in the DMP, any gyro biases calculated by the MPL should be pushed down to DMP memory to remove 3-axis quaternion drift. <?linebreak?> NOTE: If the DMP-based gyro calibration is enabled, the DMP will overwrite the biases written to this location once a new one is computed. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gafbd714aee6086836f70aaea847771669">dmp_set_accel_bias</link> (long *bias)</para>
+
+<para>Push accel biases to the DMP. These biases will be removed from the DMP 6-axis quaternion. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga8a2df36126e34b78863e3acf1249d814">dmp_register_tap_cb</link> (void(*func)(unsigned char, unsigned char))</para>
+
+<para>Register a function to be executed on a tap event. The tap direction is represented by one of the following: <?linebreak?> TAP_X_UP <?linebreak?> TAP_X_DOWN <?linebreak?> TAP_Y_UP <?linebreak?> TAP_Y_DOWN <?linebreak?> TAP_Z_UP <?linebreak?> TAP_Z_DOWN </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga15da67c0a6c94e0cdaceb8b165e13af9">dmp_set_tap_thresh</link> (unsigned char axis, unsigned short thresh)</para>
+
+<para>Set tap threshold for a specific axis. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga66bc5c8fc26fcb498df53fc62aa87e4f">dmp_set_tap_axes</link> (unsigned char axis)</para>
+
+<para>Set which axes will register a tap. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga819f947b2cb107ada7b9a94c41be0dad">dmp_set_tap_count</link> (unsigned char min_taps)</para>
+
+<para>Set minimum number of taps needed for an interrupt. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga97466067f4a23368f4d7e2547fe359d9">dmp_set_tap_time</link> (unsigned short time)</para>
+
+<para>Set length between valid taps. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gaeca250a90eb816eb2609229849481337">dmp_set_tap_time_multi</link> (unsigned short time)</para>
+
+<para>Set max time between taps to register as a multi-tap. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga62efdae1330d5bcaf4c75b069ded0ed0">dmp_set_shake_reject_thresh</link> (long sf, unsigned short thresh)</para>
+
+<para>Set shake rejection threshold. If the DMP detects a gyro sample larger than <emphasis>thresh</emphasis>, taps are rejected. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga09d7a6d90e1bd2e907f1866d850c5608">dmp_set_shake_reject_time</link> (unsigned short time)</para>
+
+<para>Set shake rejection time. Sets the length of time that the gyro must be outside of the threshold set by <emphasis>gyro_set_shake_reject_thresh</emphasis> before taps are rejected. A mandatory 60 ms is added to this parameter. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga5d44d1a32535000e6902cdc5224d1b54">dmp_set_shake_reject_timeout</link> (unsigned short time)</para>
+
+<para>Set shake rejection timeout. Sets the length of time after a shake rejection that the gyro must stay inside of the threshold before taps can be detected again. A mandatory 60 ms is added to this parameter. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga2e66a02d29ec89466cf339587592943c">dmp_register_android_orient_cb</link> (void(*func)(unsigned char))</para>
+
+<para>Register a function to be executed on a android orientation event. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga4ee4339b79a58558d121ba8206056394">dmp_enable_lp_quat</link> (unsigned char enable)</para>
+
+<para>Generate 3-axis quaternions from the DMP. In this driver, the 3-axis and 6-axis DMP quaternion features are mutually exclusive. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gaac712ef33727433f666b3861894873be">dmp_enable_6x_lp_quat</link> (unsigned char enable)</para>
+
+<para>Generate 6-axis quaternions from the DMP. In this driver, the 3-axis and 6-axis DMP quaternion features are mutually exclusive. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gad8f4d1a93e0f03d950559501c5a7255b">dmp_get_pedometer_step_count</link> (unsigned long *count)</para>
+
+<para>Get current step count. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga568562c19998f585b1d2ba056cd209db">dmp_set_pedometer_step_count</link> (unsigned long count)</para>
+
+<para>Overwrite current step count. WARNING: This function writes to DMP memory and could potentially encounter a race condition if called while the pedometer is enabled. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga62c8e5e99986b0e60ca0dc9a9b9c3fcc">dmp_get_pedometer_walk_time</link> (unsigned long *time)</para>
+
+<para>Get duration of walking time. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga62f469269047f8cba16a2b7f5349acc0">dmp_set_pedometer_walk_time</link> (unsigned long time)</para>
+
+<para>Overwrite current walk time. WARNING: This function writes to DMP memory and could potentially encounter a race condition if called while the pedometer is enabled. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga653ebcec6758f006dd89939e8f3c6ebb">dmp_enable_gyro_cal</link> (unsigned char enable)</para>
+
+<para>Calibrate the gyro data in the DMP. After eight seconds of no motion, the DMP will compute gyro biases and subtract them from the quaternion output. If <emphasis>dmp_enable_feature</emphasis> is called with <emphasis>DMP_FEATURE_SEND_CAL_GYRO</emphasis>, the biases will also be subtracted from the gyro output. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga02db5f25359abe84be002c543cdc3803">dmp_read_fifo</link> (short *gyro, short *accel, long *quat, unsigned long *timestamp, short *sensors, unsigned char *more)</para>
+
+<para>Get one packet from the FIFO. If <emphasis>sensors</emphasis> does not contain a particular sensor, disregard the data returned to that pointer. <?linebreak?> <emphasis>sensors</emphasis> can contain a combination of the following flags: <?linebreak?> INV_X_GYRO, INV_Y_GYRO, INV_Z_GYRO <?linebreak?> INV_XYZ_GYRO <?linebreak?> INV_XYZ_ACCEL <?linebreak?> INV_WXYZ_QUAT <?linebreak?> If the FIFO has no new data, <emphasis>sensors</emphasis> will be zero. <?linebreak?> If the FIFO is disabled, <emphasis>sensors</emphasis> will be zero and this function will return a non-zero error code. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>DMP image and interface functions. </para>
+
+<para>All functions are preceded by the dmp_ prefix to differentiate among MPL and general driver function calls. </para>
+<para>
+在文件 <link linkend="_inv__mpu__dmp__motion__driver_8h_source">inv_mpu_dmp_motion_driver.h</link> 中定义.</para>
+</section>
+</section>

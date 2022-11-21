@@ -1,0 +1,363 @@
+\hypertarget{inv__mpu_8c}{}\doxysection{D\+:/gitt/\+Microchip\+For32/bsp\+\_\+\+MPU6050/inv\+\_\+mpu.c 文件参考}
+\label{inv__mpu_8c}\index{D:/gitt/MicrochipFor32/bsp\_MPU6050/inv\_mpu.c@{D:/gitt/MicrochipFor32/bsp\_MPU6050/inv\_mpu.c}}
+
+
+An I2\+C-\/based driver for Invensense gyroscopes.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}inv\+\_\+mpu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}inv\+\_\+mpu\+\_\+dmp\+\_\+motion\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mpu6050.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}usart.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}varint.\+h\char`\"{}}\newline
+inv\+\_\+mpu.\+c 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{inv__mpu_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgyro__reg__s}{gyro\+\_\+reg\+\_\+s}}
+\item 
+struct \mbox{\hyperlink{structhw__s}{hw\+\_\+s}}
+\item 
+struct \mbox{\hyperlink{structmotion__int__cache__s}{motion\+\_\+int\+\_\+cache\+\_\+s}}
+\item 
+struct \mbox{\hyperlink{structchip__cfg__s}{chip\+\_\+cfg\+\_\+s}}
+\item 
+struct \mbox{\hyperlink{structtest__s}{test\+\_\+s}}
+\item 
+struct \mbox{\hyperlink{structgyro__state__s}{gyro\+\_\+state\+\_\+s}}
+\end{DoxyCompactItemize}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga6d132f914f18cb144a0eaf36312045c8}{MPU6050}}
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_gaf5aa4c072d42b67d74043f642b68ddd7}{MOTION\+\_\+\+DRIVER\+\_\+\+TARGET\+\_\+\+MSP430}}
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_gaa248719e0ea03e6601004693d74890e0}{i2c\+\_\+write}}~\mbox{\hyperlink{mpu6050_8cpp_a59b1c26b234be88e97435a1b3c061330}{MPU\+\_\+\+Write\+\_\+\+Len}}
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga838d8f1c7b0d8cc83923b93bbafe1b33}{i2c\+\_\+read}}~\mbox{\hyperlink{mpu6050_8cpp_a63161fa966899e4e7c5791e40ebf2b0a}{MPU\+\_\+\+Read\+\_\+\+Len}}
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_gae36aca5baf9b6b7d74992aef00686d67}{delay\+\_\+ms}}~HAL\+\_\+\+Delay
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga3e6b6bc6d1cd2956353a31bfadd3c332}{get\+\_\+ms}}~\mbox{\hyperlink{group___d_r_i_v_e_r_s_gafa3071c8321f6e8dd2036be8a1e57ad0}{mget\+\_\+ms}}
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga2905fba7885cd95057e1655cb4d16bda}{log\+\_\+i}}~\mbox{\hyperlink{group___d_r_i_v_e_r_s_ga69f90a1116c37ff659a096f2932c3988}{log\+\_\+none}}
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_gab354affc295f7d61fe8a355c9361cc5a}{log\+\_\+e}}~\mbox{\hyperlink{group___d_r_i_v_e_r_s_ga69f90a1116c37ff659a096f2932c3988}{log\+\_\+none}}
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga95bcc5f260df5ce993730008a1dcb45a}{fabs}}~fabsf
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_gac6afabdc09a49a433ee19d8a9486056d}{min}}(a,  b)~((a$<$b)?a\+:b)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_gac52d7caf4efc485ef6faa1211bfe60dc}{BIT\+\_\+\+I2\+C\+\_\+\+MST\+\_\+\+VDDIO}}~(0x80)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_gae3c4a18accb84992faaf2534a84a147c}{BIT\+\_\+\+FIFO\+\_\+\+EN}}~(0x40)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga02c3e9ddd63128f1c3cf50bf1e9b5fe6}{BIT\+\_\+\+DMP\+\_\+\+EN}}~(0x80)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_gaeae2cc64314ad05f3a93d2358a2369db}{BIT\+\_\+\+FIFO\+\_\+\+RST}}~(0x04)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga37d5ceb74c3568e4bab6dcdd0afaa95b}{BIT\+\_\+\+DMP\+\_\+\+RST}}~(0x08)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_gafb9b49ce5dd973b3c29ae72680924fa7}{BIT\+\_\+\+FIFO\+\_\+\+OVERFLOW}}~(0x10)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga45eec9dbc46778c356703dcf90b9e0c3}{BIT\+\_\+\+DATA\+\_\+\+RDY\+\_\+\+EN}}~(0x01)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga4dc5309ed09fc683d8e5a247feaad69d}{BIT\+\_\+\+DMP\+\_\+\+INT\+\_\+\+EN}}~(0x02)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga6a8f2f7f3dd17bc05d9c6286d15c7ada}{BIT\+\_\+\+MOT\+\_\+\+INT\+\_\+\+EN}}~(0x40)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga2d9aff1be96b1fc021ca96f251c3e72b}{BITS\+\_\+\+FSR}}~(0x18)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga4d83411e736da86163a61828816a200a}{BITS\+\_\+\+LPF}}~(0x07)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga3c9c0234d4a71c9d35bb0da64ea867eb}{BITS\+\_\+\+HPF}}~(0x07)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga1823f90ac353cf4cde25d297a8627dd4}{BITS\+\_\+\+CLK}}~(0x07)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga3769fd3fa71deaef1e77ce14c26f679d}{BIT\+\_\+\+FIFO\+\_\+\+SIZE\+\_\+1024}}~(0x40)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga0fa95b278851b0c05a9995f65ba2b895}{BIT\+\_\+\+FIFO\+\_\+\+SIZE\+\_\+2048}}~(0x80)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_gac067df9d789eaae04585abfc5ffdb2b6}{BIT\+\_\+\+FIFO\+\_\+\+SIZE\+\_\+4096}}~(0x\+C0)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_gaf4ce49fd1fc9b1461b5241f9ef4812f4}{BIT\+\_\+\+RESET}}~(0x80)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga1fed8bd436e9b7dfccb1cae99ca89103}{BIT\+\_\+\+SLEEP}}~(0x40)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_gac4b33689dd697c1cf2411638a017c009}{BIT\+\_\+\+S0\+\_\+\+DELAY\+\_\+\+EN}}~(0x01)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga22e4452fe8abca7fe12a2dc45194e6df}{BIT\+\_\+\+S2\+\_\+\+DELAY\+\_\+\+EN}}~(0x04)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_gabc5c2ee59baeb02a0f761740466f3c28}{BITS\+\_\+\+SLAVE\+\_\+\+LENGTH}}~(0x0F)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga5e8f3ccff1b3eeb95a938b207ca873ff}{BIT\+\_\+\+SLAVE\+\_\+\+BYTE\+\_\+\+SW}}~(0x40)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_gaf616c3ecf97ffd7bde444f0b74e7453e}{BIT\+\_\+\+SLAVE\+\_\+\+GROUP}}~(0x10)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_gae9440f48b6d70d900366dc040a8714d7}{BIT\+\_\+\+SLAVE\+\_\+\+EN}}~(0x80)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga8ef1963ec6fb3df5586e50959cf00a70}{BIT\+\_\+\+I2\+C\+\_\+\+READ}}~(0x80)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_gab470b625fa05ff228b3fdb94802b1c0d}{BITS\+\_\+\+I2\+C\+\_\+\+MASTER\+\_\+\+DLY}}~(0x1F)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_gabcdedbd3098140aa14ad17bcaca8e176}{BIT\+\_\+\+AUX\+\_\+\+IF\+\_\+\+EN}}~(0x20)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga8467782bedc44051c95643e303543655}{BIT\+\_\+\+ACTL}}~(0x80)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga588b5a95724c4a68c6868faa78fd3a7f}{BIT\+\_\+\+LATCH\+\_\+\+EN}}~(0x20)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga1f50796ca0363292d9ac9cc1d29d9225}{BIT\+\_\+\+ANY\+\_\+\+RD\+\_\+\+CLR}}~(0x10)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_gadd12a8d89e1a4c4e008b12a96dd4c75d}{BIT\+\_\+\+BYPASS\+\_\+\+EN}}~(0x02)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga75b1479e451b747afb3b24cbc4df99f7}{BITS\+\_\+\+WOM\+\_\+\+EN}}~(0x\+C0)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga63e6f23af37626aa1498d8c248f259e7}{BIT\+\_\+\+LPA\+\_\+\+CYCLE}}~(0x20)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_gacfc46ee2ea036d16b3df45c8fb241b5b}{BIT\+\_\+\+STBY\+\_\+\+XA}}~(0x20)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga49e6d38569bfc4b58ccc45dbb19001fa}{BIT\+\_\+\+STBY\+\_\+\+YA}}~(0x10)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_gafac8114288bae2db7ea7dbf0f6fb755c}{BIT\+\_\+\+STBY\+\_\+\+ZA}}~(0x08)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga82256fedeffe5b2443ab3ae34cf032d9}{BIT\+\_\+\+STBY\+\_\+\+XG}}~(0x04)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_gabf1c0a844906a5e887a659971a4af417}{BIT\+\_\+\+STBY\+\_\+\+YG}}~(0x02)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga30967a4efdf3c3f1e39814e72a4168b0}{BIT\+\_\+\+STBY\+\_\+\+ZG}}~(0x01)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga04a57159e34387dafe9b86b171c4654c}{BIT\+\_\+\+STBY\+\_\+\+XYZA}}~(\mbox{\hyperlink{group___d_r_i_v_e_r_s_gacfc46ee2ea036d16b3df45c8fb241b5b}{BIT\+\_\+\+STBY\+\_\+\+XA}} $\vert$ \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga49e6d38569bfc4b58ccc45dbb19001fa}{BIT\+\_\+\+STBY\+\_\+\+YA}} $\vert$ \mbox{\hyperlink{group___d_r_i_v_e_r_s_gafac8114288bae2db7ea7dbf0f6fb755c}{BIT\+\_\+\+STBY\+\_\+\+ZA}})
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga4e2ef22b94b90f9b83394dfe1f688ce4}{BIT\+\_\+\+STBY\+\_\+\+XYZG}}~(\mbox{\hyperlink{group___d_r_i_v_e_r_s_ga82256fedeffe5b2443ab3ae34cf032d9}{BIT\+\_\+\+STBY\+\_\+\+XG}} $\vert$ \mbox{\hyperlink{group___d_r_i_v_e_r_s_gabf1c0a844906a5e887a659971a4af417}{BIT\+\_\+\+STBY\+\_\+\+YG}} $\vert$ \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga30967a4efdf3c3f1e39814e72a4168b0}{BIT\+\_\+\+STBY\+\_\+\+ZG}})
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga973c680573b37fc359fc68d0707da355}{MAX\+\_\+\+PACKET\+\_\+\+LENGTH}}~(12)
+\item 
+\#define \mbox{\hyperlink{inv__mpu_8c_a7750730ae7e5c713b619e347d44185fe}{LOAD\+\_\+\+CHUNK}}~(16)
+\item 
+\#define \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga0c2ff73765f99e113d4f99826f9601e5}{q30}}~1073741824.\+0f
+\end{DoxyCompactItemize}
+\doxysubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga91c762a5bd71461f7911dc49ee7696e9}{lpf\+\_\+e}} \{ \newline
+\mbox{\hyperlink{group___d_r_i_v_e_r_s_gga91c762a5bd71461f7911dc49ee7696e9a9f0263fbbdccd3c5a18fcb65be278d24}{INV\+\_\+\+FILTER\+\_\+256\+HZ\+\_\+\+NOLPF2}} = 0
+, \mbox{\hyperlink{group___d_r_i_v_e_r_s_gga91c762a5bd71461f7911dc49ee7696e9ab58e52e0b6be4cbaf0c7f32705a9fcec}{INV\+\_\+\+FILTER\+\_\+188\+HZ}}
+, \mbox{\hyperlink{group___d_r_i_v_e_r_s_gga91c762a5bd71461f7911dc49ee7696e9a0f288da0c97b325a6cb57f1223f0cf98}{INV\+\_\+\+FILTER\+\_\+98\+HZ}}
+, \mbox{\hyperlink{group___d_r_i_v_e_r_s_gga91c762a5bd71461f7911dc49ee7696e9a995b18a52a5bd919aa9c1411a2292110}{INV\+\_\+\+FILTER\+\_\+42\+HZ}}
+, \newline
+\mbox{\hyperlink{group___d_r_i_v_e_r_s_gga91c762a5bd71461f7911dc49ee7696e9aebecb86604e475ed8e2cb68340010ff1}{INV\+\_\+\+FILTER\+\_\+20\+HZ}}
+, \mbox{\hyperlink{group___d_r_i_v_e_r_s_gga91c762a5bd71461f7911dc49ee7696e9a327619f406c6b2f6a221793881013508}{INV\+\_\+\+FILTER\+\_\+10\+HZ}}
+, \mbox{\hyperlink{group___d_r_i_v_e_r_s_gga91c762a5bd71461f7911dc49ee7696e9abdaaf85666fd6a490ee01dcd8a315678}{INV\+\_\+\+FILTER\+\_\+5\+HZ}}
+, \mbox{\hyperlink{group___d_r_i_v_e_r_s_gga91c762a5bd71461f7911dc49ee7696e9a76de97a6c2f8eb3c5d1a73d717513f5d}{INV\+\_\+\+FILTER\+\_\+2100\+HZ\+\_\+\+NOLPF}}
+, \newline
+\mbox{\hyperlink{group___d_r_i_v_e_r_s_gga91c762a5bd71461f7911dc49ee7696e9a053f39f04904f6103090bcba3002c4a3}{NUM\+\_\+\+FILTER}}
+ \}
+\item 
+enum \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga83acdc0eb37e8bfe0c2ae2348ded0a90}{gyro\+\_\+fsr\+\_\+e}} \{ \newline
+\mbox{\hyperlink{group___d_r_i_v_e_r_s_gga83acdc0eb37e8bfe0c2ae2348ded0a90a5b8251a49db5cb8a676076b0b308ae35}{INV\+\_\+\+FSR\+\_\+250\+DPS}} = 0
+, \mbox{\hyperlink{group___d_r_i_v_e_r_s_gga83acdc0eb37e8bfe0c2ae2348ded0a90a50901470ff389927fd010081e2b8fd09}{INV\+\_\+\+FSR\+\_\+500\+DPS}}
+, \mbox{\hyperlink{group___d_r_i_v_e_r_s_gga83acdc0eb37e8bfe0c2ae2348ded0a90aee922e0daa4fbb404c3db6c49d897a13}{INV\+\_\+\+FSR\+\_\+1000\+DPS}}
+, \mbox{\hyperlink{group___d_r_i_v_e_r_s_gga83acdc0eb37e8bfe0c2ae2348ded0a90ac0c37efc1c8acd6f70c0c5a768e5b8be}{INV\+\_\+\+FSR\+\_\+2000\+DPS}}
+, \newline
+\mbox{\hyperlink{group___d_r_i_v_e_r_s_gga83acdc0eb37e8bfe0c2ae2348ded0a90ab50b300433c5bc3cbc7ae8adb980c815}{NUM\+\_\+\+GYRO\+\_\+\+FSR}}
+ \}
+\item 
+enum \mbox{\hyperlink{group___d_r_i_v_e_r_s_gaec8501b935143099e5f729dee221a81e}{accel\+\_\+fsr\+\_\+e}} \{ \newline
+\mbox{\hyperlink{group___d_r_i_v_e_r_s_ggaec8501b935143099e5f729dee221a81eae27c6f69463dab7de81fac0c51ff8aa7}{INV\+\_\+\+FSR\+\_\+2G}} = 0
+, \mbox{\hyperlink{group___d_r_i_v_e_r_s_ggaec8501b935143099e5f729dee221a81eaa91e3a89d0bbd01149fe71148595be6d}{INV\+\_\+\+FSR\+\_\+4G}}
+, \mbox{\hyperlink{group___d_r_i_v_e_r_s_ggaec8501b935143099e5f729dee221a81ea0a40371bdda397d234c53d0ee2f3be8b}{INV\+\_\+\+FSR\+\_\+8G}}
+, \mbox{\hyperlink{group___d_r_i_v_e_r_s_ggaec8501b935143099e5f729dee221a81ea6712e8563c97c11b458ef721d4f5f9d5}{INV\+\_\+\+FSR\+\_\+16G}}
+, \newline
+\mbox{\hyperlink{group___d_r_i_v_e_r_s_ggaec8501b935143099e5f729dee221a81ea6d466b2f73b176f1dfc8a3f94ae8a4df}{NUM\+\_\+\+ACCEL\+\_\+\+FSR}}
+ \}
+\item 
+enum \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga75570f009627c6f4ddfb2d936d81e207}{clock\+\_\+sel\+\_\+e}} \{ \mbox{\hyperlink{group___d_r_i_v_e_r_s_gga75570f009627c6f4ddfb2d936d81e207a92059acf8d0ff5b7e12580c15f88466f}{INV\+\_\+\+CLK\+\_\+\+INTERNAL}} = 0
+, \mbox{\hyperlink{group___d_r_i_v_e_r_s_gga75570f009627c6f4ddfb2d936d81e207a01b240917a78674d3e387110a6a8f94c}{INV\+\_\+\+CLK\+\_\+\+PLL}}
+, \mbox{\hyperlink{group___d_r_i_v_e_r_s_gga75570f009627c6f4ddfb2d936d81e207a7f075b0360037232fdf24f90de7be1d7}{NUM\+\_\+\+CLK}}
+ \}
+\item 
+enum \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga23c3fcde795e5aa2b141232d490c9ca7}{lp\+\_\+accel\+\_\+rate\+\_\+e}} \{ \mbox{\hyperlink{group___d_r_i_v_e_r_s_gga23c3fcde795e5aa2b141232d490c9ca7ab44c7d0127a9466747853533a537b567}{INV\+\_\+\+LPA\+\_\+1\+\_\+25\+HZ}}
+, \mbox{\hyperlink{group___d_r_i_v_e_r_s_gga23c3fcde795e5aa2b141232d490c9ca7a474cac76bff369dd656cc973207a1ca5}{INV\+\_\+\+LPA\+\_\+5\+HZ}}
+, \mbox{\hyperlink{group___d_r_i_v_e_r_s_gga23c3fcde795e5aa2b141232d490c9ca7accaaf47c58dfe32cbf2ffa11fdb83108}{INV\+\_\+\+LPA\+\_\+20\+HZ}}
+, \mbox{\hyperlink{group___d_r_i_v_e_r_s_gga23c3fcde795e5aa2b141232d490c9ca7a798d2b86eafcf3fc7c7fe775f46cb4cb}{INV\+\_\+\+LPA\+\_\+40\+HZ}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga69f90a1116c37ff659a096f2932c3988}{log\+\_\+none}} (char $\ast$fmt,...)
+\item 
+static int \mbox{\hyperlink{group___d_r_i_v_e_r_s_gafd5ebff6b0179e1dce0b68c2272cae07}{set\+\_\+int\+\_\+enable}} (unsigned char enable)
+\begin{DoxyCompactList}\small\item\em Enable/disable data ready interrupt. If the DMP is on, the DMP interrupt is enabled. Otherwise, the data ready interrupt is used. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga0e1201ecfd8453f1d89e4299528baaf6}{mpu\+\_\+reg\+\_\+dump}} (void)
+\begin{DoxyCompactList}\small\item\em Register dump for testing. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga5c35a3363337014e11769a0ea7c0dfa9}{mpu\+\_\+read\+\_\+reg}} (unsigned char \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga5448c351fc95ff052b110eee80e5f75c}{reg}}, unsigned char $\ast$data)
+\begin{DoxyCompactList}\small\item\em Read from a single register. NOTE\+: The memory and FIFO read/write registers cannot be accessed. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_gac48a36b51e23bc4191ec13916bbb9d0b}{mpu\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Initialize hardware. Initial configuration\+:~\newline
+Gyro FSR\+: +/-\/ 2000DPS~\newline
+Accel FSR +/-\/ 2G~\newline
+DLPF\+: 42Hz~\newline
+FIFO rate\+: 50Hz~\newline
+Clock source\+: Gyro PLL~\newline
+FIFO\+: Disabled.~\newline
+Data ready interrupt\+: Disabled, active low, unlatched. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga3a4fea75686ab7d2e68634e81ccac04c}{mpu\+\_\+lp\+\_\+accel\+\_\+mode}} (unsigned char rate)
+\begin{DoxyCompactList}\small\item\em Enter low-\/power accel-\/only mode. In low-\/power accel mode, the chip goes to sleep and only wakes up to sample the accelerometer at one of the following frequencies\+: ~\newline
+ MPU6050\+: 1.\+25\+Hz, 5Hz, 20Hz, 40Hz ~\newline
+ MPU6500\+: 1.\+25\+Hz, 2.\+5\+Hz, 5Hz, 10Hz, 20Hz, 40Hz, 80Hz, 160Hz, 320Hz, 640Hz ~\newline
+ If the requested rate is not one listed above, the device will be set to the next highest rate. Requesting a rate above the maximum supported frequency will result in an error. ~\newline
+ To select a fractional wake-\/up frequency, round down the value passed to {\itshape rate}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga5555854590ad11495c0e30401294bae2}{mpu\+\_\+get\+\_\+gyro\+\_\+reg}} (short $\ast$data, unsigned long $\ast$timestamp)
+\begin{DoxyCompactList}\small\item\em Read raw gyro data directly from the registers. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_gae4ae960e5df78049ece2647772a3d809}{mpu\+\_\+get\+\_\+accel\+\_\+reg}} (short $\ast$data, unsigned long $\ast$timestamp)
+\begin{DoxyCompactList}\small\item\em Read raw accel data directly from the registers. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_gaa449b565a157b4b8ca0f491b7ed46018}{mpu\+\_\+get\+\_\+temperature}} (long $\ast$data, unsigned long $\ast$timestamp)
+\begin{DoxyCompactList}\small\item\em Read temperature data directly from the registers. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga4968cc2ec80f0da0d72436551c81f134}{mpu\+\_\+set\+\_\+accel\+\_\+bias}} (const long $\ast$accel\+\_\+bias)
+\begin{DoxyCompactList}\small\item\em Push biases to the accel bias registers. This function expects biases relative to the current sensor output, and these biases will be added to the factory-\/supplied values. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_gaf23e9f57c0059be6ec57862f0584de10}{mpu\+\_\+reset\+\_\+fifo}} (void)
+\begin{DoxyCompactList}\small\item\em Reset FIFO read/write pointers. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_gaf973c32c73ba912ff512aab948fc31ca}{mpu\+\_\+get\+\_\+gyro\+\_\+fsr}} (unsigned short $\ast$fsr)
+\begin{DoxyCompactList}\small\item\em Get the gyro full-\/scale range. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_gad09e6031c8677adc0b8a39b6deea8e27}{mpu\+\_\+set\+\_\+gyro\+\_\+fsr}} (unsigned short fsr)
+\begin{DoxyCompactList}\small\item\em Set the gyro full-\/scale range. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_gab6087a15ee23db23b6aec41590329a60}{mpu\+\_\+get\+\_\+accel\+\_\+fsr}} (unsigned char $\ast$fsr)
+\begin{DoxyCompactList}\small\item\em Get the accel full-\/scale range. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga2713a96af104cfb2ae8e0ed4c3718119}{mpu\+\_\+set\+\_\+accel\+\_\+fsr}} (unsigned char fsr)
+\begin{DoxyCompactList}\small\item\em Set the accel full-\/scale range. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_gaa95c7e216dcb2d888e9796001ca555f8}{mpu\+\_\+get\+\_\+lpf}} (unsigned short $\ast$lpf)
+\begin{DoxyCompactList}\small\item\em Get the current DLPF setting. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga5661a9dee25152166769910767a2a93d}{mpu\+\_\+set\+\_\+lpf}} (unsigned short lpf)
+\begin{DoxyCompactList}\small\item\em Set digital low pass filter. The following LPF settings are supported\+: 188, 98, 42, 20, 10, 5. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga2487dd551b701c1c7ed4d6335f02b2f1}{mpu\+\_\+get\+\_\+sample\+\_\+rate}} (unsigned short $\ast$rate)
+\begin{DoxyCompactList}\small\item\em Get sampling rate. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga0144d666a67a82888b8580002afe8b55}{mpu\+\_\+set\+\_\+sample\+\_\+rate}} (unsigned short rate)
+\begin{DoxyCompactList}\small\item\em Set sampling rate. Sampling rate must be between 4Hz and 1k\+Hz. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_gab5a45cd7783f6937788c0decb0b18b16}{mpu\+\_\+get\+\_\+compass\+\_\+sample\+\_\+rate}} (unsigned short $\ast$rate)
+\begin{DoxyCompactList}\small\item\em Get compass sampling rate. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga78da3828de0ef9d080c4d03e7bc45e7b}{mpu\+\_\+set\+\_\+compass\+\_\+sample\+\_\+rate}} (unsigned short rate)
+\begin{DoxyCompactList}\small\item\em Set compass sampling rate. The compass on the auxiliary I2C bus is read by the MPU hardware at a maximum of 100Hz. The actual rate can be set to a fraction of the gyro sampling rate. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga023c0cc94aa8f162dc33b15048a49421}{mpu\+\_\+get\+\_\+gyro\+\_\+sens}} (float $\ast$sens)
+\begin{DoxyCompactList}\small\item\em Get gyro sensitivity scale factor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga620408949052b96e856cad920f856583}{mpu\+\_\+get\+\_\+accel\+\_\+sens}} (unsigned short $\ast$sens)
+\begin{DoxyCompactList}\small\item\em Get accel sensitivity scale factor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga093f11eb10b2639a4b9fe344ea348c54}{mpu\+\_\+get\+\_\+fifo\+\_\+config}} (unsigned char $\ast$sensors)
+\begin{DoxyCompactList}\small\item\em Get current FIFO configuration. {\itshape sensors} can contain a combination of the following flags\+: ~\newline
+ INV\+\_\+\+X\+\_\+\+GYRO, INV\+\_\+\+Y\+\_\+\+GYRO, INV\+\_\+\+Z\+\_\+\+GYRO ~\newline
+ INV\+\_\+\+XYZ\+\_\+\+GYRO ~\newline
+ INV\+\_\+\+XYZ\+\_\+\+ACCEL \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_gababbdda287e1f19323489f90a0889dd7}{mpu\+\_\+configure\+\_\+fifo}} (unsigned char sensors)
+\begin{DoxyCompactList}\small\item\em Select which sensors are pushed to FIFO. {\itshape sensors} can contain a combination of the following flags\+: ~\newline
+ INV\+\_\+\+X\+\_\+\+GYRO, INV\+\_\+\+Y\+\_\+\+GYRO, INV\+\_\+\+Z\+\_\+\+GYRO ~\newline
+ INV\+\_\+\+XYZ\+\_\+\+GYRO ~\newline
+ INV\+\_\+\+XYZ\+\_\+\+ACCEL \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_gaec8fa7a067988d174516bb735a4a0bc9}{mpu\+\_\+get\+\_\+power\+\_\+state}} (unsigned char $\ast$power\+\_\+on)
+\begin{DoxyCompactList}\small\item\em Get current power state. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga6e77e7cc1cf6be5e8fdf617c5b4586d1}{mpu\+\_\+set\+\_\+sensors}} (unsigned char sensors)
+\begin{DoxyCompactList}\small\item\em Turn specific sensors on/off. {\itshape sensors} can contain a combination of the following flags\+: ~\newline
+ INV\+\_\+\+X\+\_\+\+GYRO, INV\+\_\+\+Y\+\_\+\+GYRO, INV\+\_\+\+Z\+\_\+\+GYRO ~\newline
+ INV\+\_\+\+XYZ\+\_\+\+GYRO ~\newline
+ INV\+\_\+\+XYZ\+\_\+\+ACCEL ~\newline
+ INV\+\_\+\+XYZ\+\_\+\+COMPASS \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga0afd02d8c76d3278b488ef7038c26e3e}{mpu\+\_\+get\+\_\+int\+\_\+status}} (short $\ast$status)
+\begin{DoxyCompactList}\small\item\em Read the MPU interrupt status registers. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga2da20453aafbbba4a0f6fb9fbdd25572}{mpu\+\_\+read\+\_\+fifo}} (short $\ast$gyro, short $\ast$accel, unsigned long $\ast$timestamp, unsigned char $\ast$sensors, unsigned char $\ast$more)
+\begin{DoxyCompactList}\small\item\em Get one packet from the FIFO. If {\itshape sensors} does not contain a particular sensor, disregard the data returned to that pointer. ~\newline
+ {\itshape sensors} can contain a combination of the following flags\+: ~\newline
+ INV\+\_\+\+X\+\_\+\+GYRO, INV\+\_\+\+Y\+\_\+\+GYRO, INV\+\_\+\+Z\+\_\+\+GYRO ~\newline
+ INV\+\_\+\+XYZ\+\_\+\+GYRO ~\newline
+ INV\+\_\+\+XYZ\+\_\+\+ACCEL ~\newline
+ If the FIFO has no new data, {\itshape sensors} will be zero. ~\newline
+ If the FIFO is disabled, {\itshape sensors} will be zero and this function will return a non-\/zero error code. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga13593044949b460e9f571eb57e9a0788}{mpu\+\_\+read\+\_\+fifo\+\_\+stream}} (unsigned short length, unsigned char $\ast$data, unsigned char $\ast$more)
+\begin{DoxyCompactList}\small\item\em Get one unparsed packet from the FIFO. This function should be used if the packet is to be parsed elsewhere. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga36f70f38371b48d81094d3b061233e15}{mpu\+\_\+set\+\_\+bypass}} (unsigned char bypass\+\_\+on)
+\begin{DoxyCompactList}\small\item\em Set device to bypass mode. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_gacc92fb1489ef32a04bcb6b0ebde4d657}{mpu\+\_\+set\+\_\+int\+\_\+level}} (unsigned char active\+\_\+low)
+\begin{DoxyCompactList}\small\item\em Set interrupt level. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga653cb855300bff9285ce4b8dca6a503b}{mpu\+\_\+set\+\_\+int\+\_\+latched}} (unsigned char enable)
+\begin{DoxyCompactList}\small\item\em Enable latched interrupts. Any MPU register will clear the interrupt. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{group___d_r_i_v_e_r_s_gab7ebbe13328466605a20f6ce1a106de8}{get\+\_\+accel\+\_\+prod\+\_\+shift}} (float $\ast$st\+\_\+shift)
+\item 
+static int \mbox{\hyperlink{group___d_r_i_v_e_r_s_gaab48ddb3bd05cea3f0fc85a68db9934d}{accel\+\_\+self\+\_\+test}} (long $\ast$bias\+\_\+regular, long $\ast$bias\+\_\+st)
+\item 
+static int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga267d6f443d5be8b2a7a06aa007116f7a}{gyro\+\_\+self\+\_\+test}} (long $\ast$bias\+\_\+regular, long $\ast$bias\+\_\+st)
+\item 
+static int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga8d087842b07e9710be2267adea4b497a}{get\+\_\+st\+\_\+biases}} (long $\ast$gyro, long $\ast$accel, unsigned char hw\+\_\+test)
+\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga3773dc98eb1ba15da0091ae75abcf62f}{mpu\+\_\+run\+\_\+self\+\_\+test}} (long $\ast$gyro, long $\ast$accel)
+\begin{DoxyCompactList}\small\item\em Trigger gyro/accel/compass self-\/test. On success/error, the self-\/test returns a mask representing the sensor(s) that failed. For each bit, a one (1) represents a \char`\"{}pass\char`\"{} case; conversely, a zero (0) indicates a failure. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_gafea59910bc3dd30ba3356b1c75213a5f}{mpu\+\_\+write\+\_\+mem}} (unsigned short mem\+\_\+addr, unsigned short length, unsigned char $\ast$data)
+\begin{DoxyCompactList}\small\item\em Write to the DMP memory. This function prevents I2C writes past the bank boundaries. The DMP memory is only accessible when the chip is awake. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga3374bececb6743893c9eab27645c1182}{mpu\+\_\+read\+\_\+mem}} (unsigned short mem\+\_\+addr, unsigned short length, unsigned char $\ast$data)
+\begin{DoxyCompactList}\small\item\em Read from the DMP memory. This function prevents I2C reads past the bank boundaries. The DMP memory is only accessible when the chip is awake. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga8fbdfe1a50285d4ab438e29c2efc70f5}{mpu\+\_\+load\+\_\+firmware}} (unsigned short length, const unsigned char $\ast$firmware, unsigned short start\+\_\+addr, unsigned short sample\+\_\+rate)
+\begin{DoxyCompactList}\small\item\em Load and verify DMP image. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga68ed20e6c9663cd7c50469329af8715f}{mpu\+\_\+set\+\_\+dmp\+\_\+state}} (unsigned char enable)
+\begin{DoxyCompactList}\small\item\em Enable/disable DMP support. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_gafe0f60ed0d7f8fd2dcd55d45b95a2363}{mpu\+\_\+get\+\_\+dmp\+\_\+state}} (unsigned char $\ast$enabled)
+\begin{DoxyCompactList}\small\item\em Get DMP state. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga4764ce0ba4e07a4c774f69ab3b83d1f9}{setup\+\_\+compass}} (void)
+\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga65e6b0ce980b8c0255d7be9b55c88c08}{mpu\+\_\+get\+\_\+compass\+\_\+reg}} (short $\ast$data, unsigned long $\ast$timestamp)
+\begin{DoxyCompactList}\small\item\em Read raw compass data. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_gade8589573d09e0f14b84130428f286df}{mpu\+\_\+get\+\_\+compass\+\_\+fsr}} (unsigned short $\ast$fsr)
+\begin{DoxyCompactList}\small\item\em Get the compass full-\/scale range. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga7d0b3259346898ccd1ba6ef78bf7df97}{mpu\+\_\+lp\+\_\+motion\+\_\+interrupt}} (unsigned short thresh, unsigned char time, unsigned char lpa\+\_\+freq)
+\begin{DoxyCompactList}\small\item\em Enters LP accel motion interrupt mode. The behavior of this feature is very different between the MPU6050 and the MPU6500. Each chip\textquotesingle{}s version of this feature is explained below. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{group___d_r_i_v_e_r_s_gaff893f93277595387023c71d46b03c42}{run\+\_\+self\+\_\+test}} (void)
+\item 
+unsigned short \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga3ff6037a69f37bb6174355936ad67ef3}{inv\+\_\+orientation\+\_\+matrix\+\_\+to\+\_\+scalar}} (const signed char $\ast$mtx)
+\item 
+unsigned short \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga2b58dae1c0567f3f9f6dcbfb07476de7}{inv\+\_\+row\+\_\+2\+\_\+scale}} (const signed char $\ast$row)
+\item 
+void \mbox{\hyperlink{group___d_r_i_v_e_r_s_gafa3071c8321f6e8dd2036be8a1e57ad0}{mget\+\_\+ms}} (unsigned long $\ast$time)
+\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{group___d_r_i_v_e_r_s_gafac8fcbf24cfa1b69737e02238580f3a}{mpu\+\_\+dmp\+\_\+init}} (void)
+\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{group___d_r_i_v_e_r_s_gacb825f2fd99c3044d012a9b25608cc18}{mpu\+\_\+dmp\+\_\+get\+\_\+data}} (float $\ast$pitch, float $\ast$roll, float $\ast$yaw)
+\end{DoxyCompactItemize}
+\doxysubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+const struct \mbox{\hyperlink{structgyro__reg__s}{gyro\+\_\+reg\+\_\+s}} \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga5448c351fc95ff052b110eee80e5f75c}{reg}}
+\item 
+const struct \mbox{\hyperlink{structhw__s}{hw\+\_\+s}} \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga7fefd0bb47e09b7e39e25e9795cd7edc}{hw}}
+\item 
+const struct \mbox{\hyperlink{structtest__s}{test\+\_\+s}} \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga1e8f8b1ef7fb2c429e1ce7c2f9985530}{test}}
+\item 
+static struct \mbox{\hyperlink{structgyro__state__s}{gyro\+\_\+state\+\_\+s}} \mbox{\hyperlink{group___d_r_i_v_e_r_s_ga3854b4875f6db26c2a1a707885f1fc78}{st}}
+\item 
+static signed char \mbox{\hyperlink{group___d_r_i_v_e_r_s_gadcca9e3dfdbc53cc5509fabdaede02b8}{gyro\+\_\+orientation}} \mbox{[}9\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+An I2\+C-\/based driver for Invensense gyroscopes. 
+
+This driver currently works for the following devices\+: MPU6050 MPU6500 MPU9150 (or MPU6050 w/ AK8975 on the auxiliary bus) MPU9250 (or MPU6500 w/ AK8963 on the auxiliary bus) 
+
+在文件 \mbox{\hyperlink{inv__mpu_8c_source}{inv\+\_\+mpu.\+c}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{inv__mpu_8c_a7750730ae7e5c713b619e347d44185fe}\label{inv__mpu_8c_a7750730ae7e5c713b619e347d44185fe}} 
+\index{inv\_mpu.c@{inv\_mpu.c}!LOAD\_CHUNK@{LOAD\_CHUNK}}
+\index{LOAD\_CHUNK@{LOAD\_CHUNK}!inv\_mpu.c@{inv\_mpu.c}}
+\doxysubsubsection{\texorpdfstring{LOAD\_CHUNK}{LOAD\_CHUNK}}
+{\footnotesize\ttfamily \#define LOAD\+\_\+\+CHUNK~(16)}
+

@@ -1,0 +1,77 @@
+\hypertarget{bsp___digit_8h_source}{}\doxysection{bsp\+\_\+\+Digit.\+h}
+\label{bsp___digit_8h_source}\index{D:/gitt/MicrochipFor32/bsp\_Device/bsp\_Digit.h@{D:/gitt/MicrochipFor32/bsp\_Device/bsp\_Digit.h}}
+\mbox{\hyperlink{bsp___digit_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00001}00001 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00002}00002 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00003}00003 \textcolor{comment}{ \#  Copyright (c) 2022 Yuankang Liang(XerolySkinner)}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00004}00004 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00005}00005 \textcolor{comment}{ \#  本软件按原样提供,无任何明示或暗示}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00006}00006 \textcolor{comment}{ \#  在任何情况下,作者都不承担任何损害赔偿责任}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00007}00007 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00008}00008 \textcolor{comment}{ \#  使用的许可声明:}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00009}00009 \textcolor{comment}{ \#  1.  不得歪曲本软件的来源,你不能声称你编写了原始软件.}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00010}00010 \textcolor{comment}{ \#  2.  免费授予以任何目的,前提是版权声明出现在所有副本中.}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00011}00011 \textcolor{comment}{ \#      并且版权声明和许可声明同时出现.}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00012}00012 \textcolor{comment}{ \#  3.  你有使用,复制,修改,分发,和销售本软件的许可.}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00013}00013 \textcolor{comment}{ \#  4.  如果你在产品中使用,产品文档中的声明是赞赏的但不是必须的.}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00014}00014 \textcolor{comment}{ \#  5.  本通知不得从任何来源删除或更改.}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00015}00015 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00016}00016 \textcolor{comment}{ \#  Yuankang Liang(XerolySkinner)}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00017}00017 \textcolor{comment}{ \#      E-\/mail:zabbcccbbaz@163.com}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00018}00018 \textcolor{comment}{ \#      QQ:2715099320}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00019}00019 \textcolor{comment}{ \#      Mobile Phone:13005636215}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00020}00020 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00021}00021 \textcolor{comment}{ \#  All rights reserved.}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00022}00022 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00034}00034 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00035}00035 \textcolor{comment}{//  头文件}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00036}00036 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00037}00037 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00038}00038 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{varint_8h}{varint.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00039}00039 \textcolor{preprocessor}{\#include "{}gpio.h"{}}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00041}00041 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00042}00042 \textcolor{comment}{//  枚举}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00046}00046 \textcolor{comment}{}\textcolor{keyword}{enum} \{}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00047}\mbox{\hyperlink{bsp___digit_8h_a06fc87d81c62e9abb8790b6e5713c55ba4c86d712c35fc61b110859b9f8c622f5}{00047}}     \mbox{\hyperlink{bsp___digit_8h_a06fc87d81c62e9abb8790b6e5713c55ba4c86d712c35fc61b110859b9f8c622f5}{anode}},                         }
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00048}00048     \mbox{\hyperlink{bsp___digit_8h_a06fc87d81c62e9abb8790b6e5713c55ba5802523c5519b4792ac2433404f6de26}{cathode}}                          }
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00049}\mbox{\hyperlink{bsp___digit_8h_a06fc87d81c62e9abb8790b6e5713c55ba5802523c5519b4792ac2433404f6de26}{00049}}     \};}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00051}00051 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00052}00052 \textcolor{comment}{//  段码表}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00056}\mbox{\hyperlink{bsp___digit_8h_a9c1f3d665aa750ca904e9e547a2c98f8}{00056}} \textcolor{comment}{}\textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{bsp___digit_8h_a9c1f3d665aa750ca904e9e547a2c98f8}{digit\_ca}}[] = \{        }
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00057}00057     0xc0,0xf9,0xa4,0xb0,}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00058}00058     0x99,0x92,0x82,0xf8,}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00059}00059     0x80,0x90,0x88,0x83,}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00060}00060     0xc6,0xa1,0x86,0x8e\};}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00062}00062 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00063}00063 \textcolor{comment}{//  类目}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00067}\mbox{\hyperlink{classbsp___digit}{00067}} \textcolor{comment}{}\textcolor{keyword}{class }\mbox{\hyperlink{classbsp___digit}{bsp\_Digit}}\{}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00068}00068 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00069}00069     \mbox{\hyperlink{classbsp___digit}{bsp\_Digit}}(}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00070}00070         GPIO\_TypeDef* \mbox{\hyperlink{classbsp___digit_a74829f4e2ae8a7a041b8bd249d93242f}{GPIOx\_MOSIO}}, uint16\_t \mbox{\hyperlink{classbsp___digit_ac3fb901cccd34c97bcdff090060d0eb9}{GPIO\_Pin\_MOSIO}},}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00071}00071         GPIO\_TypeDef* \mbox{\hyperlink{classbsp___digit_a128d72d3f9705a6635fd5ba3a8f11219}{GPIOx\_S\_CLK}}, uint16\_t \mbox{\hyperlink{classbsp___digit_af642ff2d193c72cd6e44da895997936e}{GPIO\_Pin\_S\_CLK}},}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00072}00072         GPIO\_TypeDef* \mbox{\hyperlink{classbsp___digit_a35b4df52093b6f34e2bd0e99a6fac473}{GPIOx\_R\_CLK}}, uint16\_t \mbox{\hyperlink{classbsp___digit_a3914358421f51f43a9098ddd37d83a59}{GPIO\_Pin\_R\_CLK}},}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00073}00073         \textcolor{keywordtype}{bool} \mbox{\hyperlink{classbsp___digit_af87156a3cca1c199e469b0ce7b8ce7f9}{Polarity}}}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00074}00074     );}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00075}00075 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00076}00076     \textcolor{keywordtype}{void} \mbox{\hyperlink{classbsp___digit_a9f91f206f32eef69e91c5975ad12db6b}{DatCom}}(\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} SendVal,\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} cha);       }
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00077}00077     \textcolor{keywordtype}{void} \mbox{\hyperlink{classbsp___digit_a37e6984660f0b60322d420c766107b40}{num}}(\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} \mbox{\hyperlink{classbsp___digit_a37e6984660f0b60322d420c766107b40}{num}});                 }
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00078}\mbox{\hyperlink{classbsp___digit_a26571e190c198e068d6aa92af584352d}{00078}}     \mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}  \mbox{\hyperlink{classbsp___digit_a26571e190c198e068d6aa92af584352d}{division}};                       }
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00079}00079     \textcolor{keywordtype}{void} \mbox{\hyperlink{classbsp___digit_a1b609eee1a20e598fdb7090b8a0b0524}{dop}}(\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} cha);                  }
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00080}00080     \textcolor{keywordtype}{void} \mbox{\hyperlink{classbsp___digit_a7bde5d953a88e04dae985b3ce82a386e}{numdop}}(\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} \mbox{\hyperlink{classbsp___digit_a37e6984660f0b60322d420c766107b40}{num}},\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} cha);      }
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00081}00081 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00082}00082     \textcolor{keywordtype}{void} \mbox{\hyperlink{classbsp___digit_a0608eae8fc20fea488b578b4440a5973}{dat}}(\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} SendVal);}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00083}00083     \textcolor{keywordtype}{void} \mbox{\hyperlink{classbsp___digit_a8362aa8c9725ab2000e4b1f3c816de8b}{com}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00084}00084 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00085}\mbox{\hyperlink{classbsp___digit_af87156a3cca1c199e469b0ce7b8ce7f9}{00085}}     \textcolor{keywordtype}{bool}            \mbox{\hyperlink{classbsp___digit_af87156a3cca1c199e469b0ce7b8ce7f9}{Polarity}};           }
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00086}\mbox{\hyperlink{classbsp___digit_a74829f4e2ae8a7a041b8bd249d93242f}{00086}}     GPIO\_TypeDef*   \mbox{\hyperlink{classbsp___digit_a74829f4e2ae8a7a041b8bd249d93242f}{GPIOx\_MOSIO}};}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00087}\mbox{\hyperlink{classbsp___digit_ac3fb901cccd34c97bcdff090060d0eb9}{00087}}     uint16\_t        \mbox{\hyperlink{classbsp___digit_ac3fb901cccd34c97bcdff090060d0eb9}{GPIO\_Pin\_MOSIO}};}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00088}\mbox{\hyperlink{classbsp___digit_a128d72d3f9705a6635fd5ba3a8f11219}{00088}}     GPIO\_TypeDef*   \mbox{\hyperlink{classbsp___digit_a128d72d3f9705a6635fd5ba3a8f11219}{GPIOx\_S\_CLK}};}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00089}\mbox{\hyperlink{classbsp___digit_af642ff2d193c72cd6e44da895997936e}{00089}}     uint16\_t        \mbox{\hyperlink{classbsp___digit_af642ff2d193c72cd6e44da895997936e}{GPIO\_Pin\_S\_CLK}};}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00090}\mbox{\hyperlink{classbsp___digit_a35b4df52093b6f34e2bd0e99a6fac473}{00090}}     GPIO\_TypeDef*   \mbox{\hyperlink{classbsp___digit_a35b4df52093b6f34e2bd0e99a6fac473}{GPIOx\_R\_CLK}};}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00091}\mbox{\hyperlink{classbsp___digit_a3914358421f51f43a9098ddd37d83a59}{00091}}     uint16\_t        \mbox{\hyperlink{classbsp___digit_a3914358421f51f43a9098ddd37d83a59}{GPIO\_Pin\_R\_CLK}};}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00092}00092     \};}
+\DoxyCodeLine{\Hypertarget{bsp___digit_8h_source_l00094}00094 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

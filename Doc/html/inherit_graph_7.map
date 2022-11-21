@@ -1,0 +1,4 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" href="$classbsp___mod_bus___tx.html" title="ModBus发送器" alt="" coords="5,5,124,31"/>
+<area shape="rect" id="node2" href="$classbsp___mod_bus___s_t_m32.html" title="STM32用串口的ModBus发送器" alt="" coords="172,5,319,31"/>
+</map>

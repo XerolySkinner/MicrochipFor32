@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MF32BSP_XerolySkinner: D:/gitt/MicrochipFor32/bsp_Device/bsp_Digit.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MF32BSP_XerolySkinner<span id="projectnumber">&#160;2.0.0</span>
+   </div>
+   <div id="projectbrief">C++版本的驱动库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_7d600478d4be1ed73c651a71d29ab217.html">bsp_Device</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">bsp_Digit.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="bsp___digit_8cpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> #  Copyright (c) 2022 Yuankang Liang(XerolySkinner)</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> #  本软件按原样提供,无任何明示或暗示</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> #  在任何情况下,作者都不承担任何损害赔偿责任</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> #  使用的许可声明:</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> #  1.  不得歪曲本软件的来源,你不能声称你编写了原始软件.</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> #  2.  免费授予以任何目的,前提是版权声明出现在所有副本中.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> #      并且版权声明和许可声明同时出现.</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> #  3.  你有使用,复制,修改,分发,和销售本软件的许可.</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> #  4.  如果你在产品中使用,产品文档中的声明是赞赏的但不是必须的.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> #  5.  本通知不得从任何来源删除或更改.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> #  Yuankang Liang(XerolySkinner)</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> #      E-mail:zabbcccbbaz@163.com</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> #      QQ:2715099320</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> #      Mobile Phone:13005636215</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> #  All rights reserved.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">//----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">//  头文件</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;<a class="code" href="bsp___digit_8h.html">bsp_Digit.h</a>&quot;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">//----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">//  成员函数</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">//----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classbsp___digit.html#a0608eae8fc20fea488b578b4440a5973">   41</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___digit.html#a0608eae8fc20fea488b578b4440a5973">bsp_Digit::dat</a>(<a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> SendVal) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> i = 0; i &lt; 8; i++) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        HAL_GPIO_WritePin(<a class="code hl_variable" href="classbsp___digit.html#a74829f4e2ae8a7a041b8bd249d93242f">GPIOx_MOSIO</a>,<a class="code hl_variable" href="classbsp___digit.html#ac3fb901cccd34c97bcdff090060d0eb9">GPIO_Pin_MOSIO</a>,((SendVal &lt;&lt; i) &amp; 0x80)?GPIO_PIN_SET: GPIO_PIN_RESET);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        HAL_GPIO_WritePin(<a class="code hl_variable" href="classbsp___digit.html#a128d72d3f9705a6635fd5ba3a8f11219">GPIOx_S_CLK</a>,<a class="code hl_variable" href="classbsp___digit.html#af642ff2d193c72cd6e44da895997936e">GPIO_Pin_S_CLK</a>,GPIO_PIN_RESET);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        HAL_GPIO_WritePin(<a class="code hl_variable" href="classbsp___digit.html#a128d72d3f9705a6635fd5ba3a8f11219">GPIOx_S_CLK</a>, <a class="code hl_variable" href="classbsp___digit.html#af642ff2d193c72cd6e44da895997936e">GPIO_Pin_S_CLK</a>, GPIO_PIN_SET);}}</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">//----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classbsp___digit.html#a8362aa8c9725ab2000e4b1f3c816de8b">   47</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___digit.html#a8362aa8c9725ab2000e4b1f3c816de8b">bsp_Digit::com</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    HAL_GPIO_WritePin(<a class="code hl_variable" href="classbsp___digit.html#a35b4df52093b6f34e2bd0e99a6fac473">GPIOx_R_CLK</a>, <a class="code hl_variable" href="classbsp___digit.html#a3914358421f51f43a9098ddd37d83a59">GPIO_Pin_R_CLK</a>, GPIO_PIN_RESET);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    HAL_GPIO_WritePin(<a class="code hl_variable" href="classbsp___digit.html#a35b4df52093b6f34e2bd0e99a6fac473">GPIOx_R_CLK</a>, <a class="code hl_variable" href="classbsp___digit.html#a3914358421f51f43a9098ddd37d83a59">GPIO_Pin_R_CLK</a>, GPIO_PIN_SET);}</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">//----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classbsp___digit.html#a9f91f206f32eef69e91c5975ad12db6b">   51</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___digit.html#a9f91f206f32eef69e91c5975ad12db6b">bsp_Digit::DatCom</a>(<a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> SendVal,<a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> cha){</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> i=0xFFFF/<a class="code hl_variable" href="classbsp___digit.html#a26571e190c198e068d6aa92af584352d">division</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_function" href="classbsp___digit.html#a0608eae8fc20fea488b578b4440a5973">dat</a>(<a class="code hl_variable" href="classbsp___digit.html#af87156a3cca1c199e469b0ce7b8ce7f9">Polarity</a>?~<a class="code hl_variable" href="bsp___digit_8h.html#a9c1f3d665aa750ca904e9e547a2c98f8">digit_ca</a>[SendVal]:<a class="code hl_variable" href="bsp___digit_8h.html#a9c1f3d665aa750ca904e9e547a2c98f8">digit_ca</a>[SendVal]);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_function" href="classbsp___digit.html#a0608eae8fc20fea488b578b4440a5973">dat</a>(1&lt;&lt;cha);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_function" href="classbsp___digit.html#a8362aa8c9725ab2000e4b1f3c816de8b">com</a>();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">while</span>(++i);}</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">//----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classbsp___digit.html#a37e6984660f0b60322d420c766107b40">   58</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___digit.html#a37e6984660f0b60322d420c766107b40">bsp_Digit::num</a>(<a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> num){</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_function" href="classbsp___digit.html#a9f91f206f32eef69e91c5975ad12db6b">DatCom</a>(<a class="code hl_function" href="classbsp___digit.html#a37e6984660f0b60322d420c766107b40">num</a>%10,0);<a class="code hl_function" href="classbsp___digit.html#a37e6984660f0b60322d420c766107b40">num</a>/=10;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_function" href="classbsp___digit.html#a9f91f206f32eef69e91c5975ad12db6b">DatCom</a>(<a class="code hl_function" href="classbsp___digit.html#a37e6984660f0b60322d420c766107b40">num</a>%10,1);<a class="code hl_function" href="classbsp___digit.html#a37e6984660f0b60322d420c766107b40">num</a>/=10;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_function" href="classbsp___digit.html#a9f91f206f32eef69e91c5975ad12db6b">DatCom</a>(<a class="code hl_function" href="classbsp___digit.html#a37e6984660f0b60322d420c766107b40">num</a>%10,2);<a class="code hl_function" href="classbsp___digit.html#a37e6984660f0b60322d420c766107b40">num</a>/=10;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_function" href="classbsp___digit.html#a9f91f206f32eef69e91c5975ad12db6b">DatCom</a>(<a class="code hl_function" href="classbsp___digit.html#a37e6984660f0b60322d420c766107b40">num</a>%10,3);<a class="code hl_function" href="classbsp___digit.html#a37e6984660f0b60322d420c766107b40">num</a>/=10;}</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">//----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classbsp___digit.html#a1b609eee1a20e598fdb7090b8a0b0524">   64</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___digit.html#a1b609eee1a20e598fdb7090b8a0b0524">bsp_Digit::dop</a>(<a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> cha){</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> i=0xFFFF/<a class="code hl_variable" href="classbsp___digit.html#a26571e190c198e068d6aa92af584352d">division</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_function" href="classbsp___digit.html#a0608eae8fc20fea488b578b4440a5973">dat</a>(<a class="code hl_variable" href="classbsp___digit.html#af87156a3cca1c199e469b0ce7b8ce7f9">Polarity</a>?0x80:0x7E);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_function" href="classbsp___digit.html#a0608eae8fc20fea488b578b4440a5973">dat</a>(1&lt;&lt;cha);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_function" href="classbsp___digit.html#a8362aa8c9725ab2000e4b1f3c816de8b">com</a>();</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">while</span>(++i);}</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">//----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classbsp___digit.html#a7bde5d953a88e04dae985b3ce82a386e">   71</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___digit.html#a7bde5d953a88e04dae985b3ce82a386e">bsp_Digit::numdop</a>(<a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> num,<a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> cha){</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <a class="code hl_function" href="classbsp___digit.html#a37e6984660f0b60322d420c766107b40">bsp_Digit::num</a>(<a class="code hl_function" href="classbsp___digit.html#a37e6984660f0b60322d420c766107b40">num</a>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_function" href="classbsp___digit.html#a1b609eee1a20e598fdb7090b8a0b0524">bsp_Digit::dop</a>(cha);}</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">//----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">//  构造函数</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classbsp___digit.html#a83071caacf301b37cf47b6eee55c2818">   77</a></span><a class="code hl_function" href="classbsp___digit.html#a83071caacf301b37cf47b6eee55c2818">bsp_Digit::bsp_Digit</a>(</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    GPIO_TypeDef* GPIOx_MOSIO, uint16_t GPIO_Pin_MOSIO,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    GPIO_TypeDef* GPIOx_S_CLK, uint16_t GPIO_Pin_S_CLK,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    GPIO_TypeDef* GPIOx_R_CLK, uint16_t GPIO_Pin_R_CLK,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">bool</span> Polarity){</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <a class="code hl_variable" href="classbsp___digit.html#a26571e190c198e068d6aa92af584352d">bsp_Digit::division</a>=2;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <a class="code hl_variable" href="classbsp___digit.html#af87156a3cca1c199e469b0ce7b8ce7f9">bsp_Digit::Polarity</a> = <a class="code hl_variable" href="classbsp___digit.html#af87156a3cca1c199e469b0ce7b8ce7f9">Polarity</a>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_variable" href="classbsp___digit.html#a74829f4e2ae8a7a041b8bd249d93242f">bsp_Digit::GPIOx_MOSIO</a> = <a class="code hl_variable" href="classbsp___digit.html#a74829f4e2ae8a7a041b8bd249d93242f">GPIOx_MOSIO</a>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_variable" href="classbsp___digit.html#ac3fb901cccd34c97bcdff090060d0eb9">bsp_Digit::GPIO_Pin_MOSIO</a> = <a class="code hl_variable" href="classbsp___digit.html#ac3fb901cccd34c97bcdff090060d0eb9">GPIO_Pin_MOSIO</a>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <a class="code hl_variable" href="classbsp___digit.html#a128d72d3f9705a6635fd5ba3a8f11219">bsp_Digit::GPIOx_S_CLK</a> = <a class="code hl_variable" href="classbsp___digit.html#a128d72d3f9705a6635fd5ba3a8f11219">GPIOx_S_CLK</a>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <a class="code hl_variable" href="classbsp___digit.html#af642ff2d193c72cd6e44da895997936e">bsp_Digit::GPIO_Pin_S_CLK</a> = <a class="code hl_variable" href="classbsp___digit.html#af642ff2d193c72cd6e44da895997936e">GPIO_Pin_S_CLK</a>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_variable" href="classbsp___digit.html#a35b4df52093b6f34e2bd0e99a6fac473">bsp_Digit::GPIOx_R_CLK</a> = <a class="code hl_variable" href="classbsp___digit.html#a35b4df52093b6f34e2bd0e99a6fac473">GPIOx_R_CLK</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <a class="code hl_variable" href="classbsp___digit.html#a3914358421f51f43a9098ddd37d83a59">bsp_Digit::GPIO_Pin_R_CLK</a> = <a class="code hl_variable" href="classbsp___digit.html#a3914358421f51f43a9098ddd37d83a59">GPIO_Pin_R_CLK</a>;}</div>
+<div class="ttc" id="absp___digit_8h_html"><div class="ttname"><a href="bsp___digit_8h.html">bsp_Digit.h</a></div><div class="ttdoc">数码管显示类</div></div>
+<div class="ttc" id="absp___digit_8h_html_a9c1f3d665aa750ca904e9e547a2c98f8"><div class="ttname"><a href="bsp___digit_8h.html#a9c1f3d665aa750ca904e9e547a2c98f8">digit_ca</a></div><div class="ttdeci">static const u8 digit_ca[]</div><div class="ttdoc">共阳极数码管的段码表,共阴极由此反相得到</div><div class="ttdef"><b>Definition:</b> <a href="bsp___digit_8h_source.html#l00056">bsp_Digit.h:56</a></div></div>
+<div class="ttc" id="aclassbsp___digit_html_a0608eae8fc20fea488b578b4440a5973"><div class="ttname"><a href="classbsp___digit.html#a0608eae8fc20fea488b578b4440a5973">bsp_Digit::dat</a></div><div class="ttdeci">void dat(u8 SendVal)</div><div class="ttdef"><b>Definition:</b> <a href="bsp___digit_8cpp_source.html#l00041">bsp_Digit.cpp:41</a></div></div>
+<div class="ttc" id="aclassbsp___digit_html_a128d72d3f9705a6635fd5ba3a8f11219"><div class="ttname"><a href="classbsp___digit.html#a128d72d3f9705a6635fd5ba3a8f11219">bsp_Digit::GPIOx_S_CLK</a></div><div class="ttdeci">GPIO_TypeDef * GPIOx_S_CLK</div><div class="ttdef"><b>Definition:</b> <a href="bsp___digit_8h_source.html#l00088">bsp_Digit.h:88</a></div></div>
+<div class="ttc" id="aclassbsp___digit_html_a1b609eee1a20e598fdb7090b8a0b0524"><div class="ttname"><a href="classbsp___digit.html#a1b609eee1a20e598fdb7090b8a0b0524">bsp_Digit::dop</a></div><div class="ttdeci">void dop(u8 cha)</div><div class="ttdoc">显示一个小数点</div><div class="ttdef"><b>Definition:</b> <a href="bsp___digit_8cpp_source.html#l00064">bsp_Digit.cpp:64</a></div></div>
+<div class="ttc" id="aclassbsp___digit_html_a26571e190c198e068d6aa92af584352d"><div class="ttname"><a href="classbsp___digit.html#a26571e190c198e068d6aa92af584352d">bsp_Digit::division</a></div><div class="ttdeci">u16 division</div><div class="ttdoc">分频系数,越大越慢</div><div class="ttdef"><b>Definition:</b> <a href="bsp___digit_8h_source.html#l00078">bsp_Digit.h:78</a></div></div>
+<div class="ttc" id="aclassbsp___digit_html_a35b4df52093b6f34e2bd0e99a6fac473"><div class="ttname"><a href="classbsp___digit.html#a35b4df52093b6f34e2bd0e99a6fac473">bsp_Digit::GPIOx_R_CLK</a></div><div class="ttdeci">GPIO_TypeDef * GPIOx_R_CLK</div><div class="ttdef"><b>Definition:</b> <a href="bsp___digit_8h_source.html#l00090">bsp_Digit.h:90</a></div></div>
+<div class="ttc" id="aclassbsp___digit_html_a37e6984660f0b60322d420c766107b40"><div class="ttname"><a href="classbsp___digit.html#a37e6984660f0b60322d420c766107b40">bsp_Digit::num</a></div><div class="ttdeci">void num(u16 num)</div><div class="ttdoc">显示一个四位数据</div><div class="ttdef"><b>Definition:</b> <a href="bsp___digit_8cpp_source.html#l00058">bsp_Digit.cpp:58</a></div></div>
+<div class="ttc" id="aclassbsp___digit_html_a3914358421f51f43a9098ddd37d83a59"><div class="ttname"><a href="classbsp___digit.html#a3914358421f51f43a9098ddd37d83a59">bsp_Digit::GPIO_Pin_R_CLK</a></div><div class="ttdeci">uint16_t GPIO_Pin_R_CLK</div><div class="ttdef"><b>Definition:</b> <a href="bsp___digit_8h_source.html#l00091">bsp_Digit.h:91</a></div></div>
+<div class="ttc" id="aclassbsp___digit_html_a74829f4e2ae8a7a041b8bd249d93242f"><div class="ttname"><a href="classbsp___digit.html#a74829f4e2ae8a7a041b8bd249d93242f">bsp_Digit::GPIOx_MOSIO</a></div><div class="ttdeci">GPIO_TypeDef * GPIOx_MOSIO</div><div class="ttdef"><b>Definition:</b> <a href="bsp___digit_8h_source.html#l00086">bsp_Digit.h:86</a></div></div>
+<div class="ttc" id="aclassbsp___digit_html_a7bde5d953a88e04dae985b3ce82a386e"><div class="ttname"><a href="classbsp___digit.html#a7bde5d953a88e04dae985b3ce82a386e">bsp_Digit::numdop</a></div><div class="ttdeci">void numdop(u16 num, u8 cha)</div><div class="ttdoc">显示数据与一个像素点</div><div class="ttdef"><b>Definition:</b> <a href="bsp___digit_8cpp_source.html#l00071">bsp_Digit.cpp:71</a></div></div>
+<div class="ttc" id="aclassbsp___digit_html_a83071caacf301b37cf47b6eee55c2818"><div class="ttname"><a href="classbsp___digit.html#a83071caacf301b37cf47b6eee55c2818">bsp_Digit::bsp_Digit</a></div><div class="ttdeci">bsp_Digit(GPIO_TypeDef *GPIOx_MOSIO, uint16_t GPIO_Pin_MOSIO, GPIO_TypeDef *GPIOx_S_CLK, uint16_t GPIO_Pin_S_CLK, GPIO_TypeDef *GPIOx_R_CLK, uint16_t GPIO_Pin_R_CLK, bool Polarity)</div><div class="ttdef"><b>Definition:</b> <a href="bsp___digit_8cpp_source.html#l00077">bsp_Digit.cpp:77</a></div></div>
+<div class="ttc" id="aclassbsp___digit_html_a8362aa8c9725ab2000e4b1f3c816de8b"><div class="ttname"><a href="classbsp___digit.html#a8362aa8c9725ab2000e4b1f3c816de8b">bsp_Digit::com</a></div><div class="ttdeci">void com(void)</div><div class="ttdef"><b>Definition:</b> <a href="bsp___digit_8cpp_source.html#l00047">bsp_Digit.cpp:47</a></div></div>
+<div class="ttc" id="aclassbsp___digit_html_a9f91f206f32eef69e91c5975ad12db6b"><div class="ttname"><a href="classbsp___digit.html#a9f91f206f32eef69e91c5975ad12db6b">bsp_Digit::DatCom</a></div><div class="ttdeci">void DatCom(u8 SendVal, u8 cha)</div><div class="ttdoc">在某位显示一个数字</div><div class="ttdef"><b>Definition:</b> <a href="bsp___digit_8cpp_source.html#l00051">bsp_Digit.cpp:51</a></div></div>
+<div class="ttc" id="aclassbsp___digit_html_ac3fb901cccd34c97bcdff090060d0eb9"><div class="ttname"><a href="classbsp___digit.html#ac3fb901cccd34c97bcdff090060d0eb9">bsp_Digit::GPIO_Pin_MOSIO</a></div><div class="ttdeci">uint16_t GPIO_Pin_MOSIO</div><div class="ttdef"><b>Definition:</b> <a href="bsp___digit_8h_source.html#l00087">bsp_Digit.h:87</a></div></div>
+<div class="ttc" id="aclassbsp___digit_html_af642ff2d193c72cd6e44da895997936e"><div class="ttname"><a href="classbsp___digit.html#af642ff2d193c72cd6e44da895997936e">bsp_Digit::GPIO_Pin_S_CLK</a></div><div class="ttdeci">uint16_t GPIO_Pin_S_CLK</div><div class="ttdef"><b>Definition:</b> <a href="bsp___digit_8h_source.html#l00089">bsp_Digit.h:89</a></div></div>
+<div class="ttc" id="aclassbsp___digit_html_af87156a3cca1c199e469b0ce7b8ce7f9"><div class="ttname"><a href="classbsp___digit.html#af87156a3cca1c199e469b0ce7b8ce7f9">bsp_Digit::Polarity</a></div><div class="ttdeci">bool Polarity</div><div class="ttdoc">共阴或共阳</div><div class="ttdef"><b>Definition:</b> <a href="bsp___digit_8h_source.html#l00085">bsp_Digit.h:85</a></div></div>
+<div class="ttc" id="avarint_8h_html_a92c50087ca0e64fa93fc59402c55f8ca"><div class="ttname"><a href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a></div><div class="ttdeci">uint8_t u8</div><div class="ttdoc">8位无符号数类型</div><div class="ttdef"><b>Definition:</b> <a href="varint_8h_source.html#l00040">varint.h:40</a></div></div>
+<div class="ttc" id="avarint_8h_html_ace9d960e74685e2cd84b36132dbbf8aa"><div class="ttname"><a href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a></div><div class="ttdeci">uint16_t u16</div><div class="ttdoc">16位无符号数类型</div><div class="ttdef"><b>Definition:</b> <a href="varint_8h_source.html#l00041">varint.h:41</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_bsp___m_a_x6675_8h" xml:lang="zh">
+<title>D:/gitt/MicrochipFor32/bsp_Device/bsp_MAX6675.h 文件参考</title>
+<indexterm><primary>D:/gitt/MicrochipFor32/bsp_Device/bsp_MAX6675.h</primary></indexterm>
+<para>
+
+<para>实现了MAX6675的驱动 </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;varint.h&quot;<?linebreak?>#include &quot;spi.h&quot;<?linebreak?></programlisting>bsp_MAX6675.h 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="bsp___m_a_x6675_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+此图展示该文件直接或间接的被哪些文件引用了:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="bsp___m_a_x6675_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>类    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbsp___m_a_x6675">bsp_MAX6675</link></para>
+
+<para>MAX6675的一个对象类 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>实现了MAX6675的驱动 </para>
+<para>
+在文件 <link linkend="_bsp___m_a_x6675_8h_source">bsp_MAX6675.h</link> 中定义.</para>
+</section>
+</section>

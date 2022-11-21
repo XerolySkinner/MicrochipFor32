@@ -1,0 +1,43 @@
+\hypertarget{_main_system_8cpp_source}{}\doxysection{Main\+System.\+cpp}
+\label{_main_system_8cpp_source}\index{D:/gitt/MicrochipFor32/bsp\_System/MainSystem.cpp@{D:/gitt/MicrochipFor32/bsp\_System/MainSystem.cpp}}
+\mbox{\hyperlink{_main_system_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00001}00001 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00002}00002 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00003}00003 \textcolor{comment}{ \#  Copyright (c) 2022 Yuankang Liang(XerolySkinner)}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00004}00004 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00005}00005 \textcolor{comment}{ \#  本软件按原样提供,无任何明示或暗示}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00006}00006 \textcolor{comment}{ \#  在任何情况下,作者都不承担任何损害赔偿责任}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00007}00007 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00008}00008 \textcolor{comment}{ \#  使用的许可声明:}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00009}00009 \textcolor{comment}{ \#  1.  不得歪曲本软件的来源,你不能声称你编写了原始软件.}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00010}00010 \textcolor{comment}{ \#  2.  免费授予以任何目的,前提是版权声明出现在所有副本中.}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00011}00011 \textcolor{comment}{ \#      并且版权声明和许可声明同时出现.}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00012}00012 \textcolor{comment}{ \#  3.  你有使用,复制,修改,分发,和销售本软件的许可.}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00013}00013 \textcolor{comment}{ \#  4.  如果你在产品中使用,产品文档中的声明是赞赏的但不是必须的.}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00014}00014 \textcolor{comment}{ \#  5.  本通知不得从任何来源删除或更改.}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00015}00015 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00016}00016 \textcolor{comment}{ \#  Yuankang Liang(XerolySkinner)}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00017}00017 \textcolor{comment}{ \#      E-\/mail:zabbcccbbaz@163.com}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00018}00018 \textcolor{comment}{ \#      QQ:2715099320}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00019}00019 \textcolor{comment}{ \#      Mobile Phone:13005636215}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00020}00020 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00021}00021 \textcolor{comment}{ \#  All rights reserved.}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00022}00022 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00035}00035 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00036}00036 \textcolor{comment}{//  头文件}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00037}00037 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{vartable_8h}{vartable.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00039}00039 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00040}00040 \textcolor{comment}{//  程序}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00041}00041 \textcolor{comment}{//  }}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00047}\mbox{\hyperlink{_main_system_8cpp_a848c96750b960675b1bd032c1c2725e5}{00047}} \textcolor{comment}{}\textcolor{keywordtype}{void} \mbox{\hyperlink{_main_system_8cpp_a848c96750b960675b1bd032c1c2725e5}{MainInit}}(\textcolor{keywordtype}{void})\{}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00049}00049     \textcolor{keywordflow}{return};\}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00050}00050 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00056}\mbox{\hyperlink{_main_system_8cpp_af89e02f2d993332a8dea8fef6b78a7bc}{00056}} \textcolor{comment}{}\textcolor{keywordtype}{void} \mbox{\hyperlink{_main_system_8cpp_af89e02f2d993332a8dea8fef6b78a7bc}{MainSystem}}(\textcolor{keywordtype}{void})\{}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00057}00057     \textcolor{keywordflow}{while}(1)\{}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00059}00059     \}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00060}00060 \}}
+\DoxyCodeLine{\Hypertarget{_main_system_8cpp_source_l00062}00062 }
+
+\end{DoxyCode}

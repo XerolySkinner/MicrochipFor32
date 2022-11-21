@@ -1,0 +1,661 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MF32BSP_XerolySkinner: bsp_Digit类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MF32BSP_XerolySkinner<span id="projectnumber">&#160;2.0.0</span>
+   </div>
+   <div id="projectbrief">C++版本的驱动库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classbsp___digit-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">bsp_Digit类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>一个面向数码管的类,使用级联的HC595  
+ <a href="classbsp___digit.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="bsp___digit_8h_source.html">bsp_Digit.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a83071caacf301b37cf47b6eee55c2818"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___digit.html#a83071caacf301b37cf47b6eee55c2818">bsp_Digit</a> (GPIO_TypeDef *<a class="el" href="classbsp___digit.html#a74829f4e2ae8a7a041b8bd249d93242f">GPIOx_MOSIO</a>, uint16_t <a class="el" href="classbsp___digit.html#ac3fb901cccd34c97bcdff090060d0eb9">GPIO_Pin_MOSIO</a>, GPIO_TypeDef *<a class="el" href="classbsp___digit.html#a128d72d3f9705a6635fd5ba3a8f11219">GPIOx_S_CLK</a>, uint16_t <a class="el" href="classbsp___digit.html#af642ff2d193c72cd6e44da895997936e">GPIO_Pin_S_CLK</a>, GPIO_TypeDef *<a class="el" href="classbsp___digit.html#a35b4df52093b6f34e2bd0e99a6fac473">GPIOx_R_CLK</a>, uint16_t <a class="el" href="classbsp___digit.html#a3914358421f51f43a9098ddd37d83a59">GPIO_Pin_R_CLK</a>, bool <a class="el" href="classbsp___digit.html#af87156a3cca1c199e469b0ce7b8ce7f9">Polarity</a>)</td></tr>
+<tr class="separator:a83071caacf301b37cf47b6eee55c2818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f91f206f32eef69e91c5975ad12db6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___digit.html#a9f91f206f32eef69e91c5975ad12db6b">DatCom</a> (<a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> SendVal, <a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> cha)</td></tr>
+<tr class="memdesc:a9f91f206f32eef69e91c5975ad12db6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">在某位显示一个数字  <a href="classbsp___digit.html#a9f91f206f32eef69e91c5975ad12db6b">更多...</a><br /></td></tr>
+<tr class="separator:a9f91f206f32eef69e91c5975ad12db6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37e6984660f0b60322d420c766107b40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___digit.html#a37e6984660f0b60322d420c766107b40">num</a> (<a class="el" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> num)</td></tr>
+<tr class="memdesc:a37e6984660f0b60322d420c766107b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示一个四位数据  <a href="classbsp___digit.html#a37e6984660f0b60322d420c766107b40">更多...</a><br /></td></tr>
+<tr class="separator:a37e6984660f0b60322d420c766107b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b609eee1a20e598fdb7090b8a0b0524"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___digit.html#a1b609eee1a20e598fdb7090b8a0b0524">dop</a> (<a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> cha)</td></tr>
+<tr class="memdesc:a1b609eee1a20e598fdb7090b8a0b0524"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示一个小数点  <a href="classbsp___digit.html#a1b609eee1a20e598fdb7090b8a0b0524">更多...</a><br /></td></tr>
+<tr class="separator:a1b609eee1a20e598fdb7090b8a0b0524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bde5d953a88e04dae985b3ce82a386e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___digit.html#a7bde5d953a88e04dae985b3ce82a386e">numdop</a> (<a class="el" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> <a class="el" href="classbsp___digit.html#a37e6984660f0b60322d420c766107b40">num</a>, <a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> cha)</td></tr>
+<tr class="memdesc:a7bde5d953a88e04dae985b3ce82a386e"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示数据与一个像素点  <a href="classbsp___digit.html#a7bde5d953a88e04dae985b3ce82a386e">更多...</a><br /></td></tr>
+<tr class="separator:a7bde5d953a88e04dae985b3ce82a386e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a26571e190c198e068d6aa92af584352d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___digit.html#a26571e190c198e068d6aa92af584352d">division</a></td></tr>
+<tr class="memdesc:a26571e190c198e068d6aa92af584352d"><td class="mdescLeft">&#160;</td><td class="mdescRight">分频系数,越大越慢  <a href="classbsp___digit.html#a26571e190c198e068d6aa92af584352d">更多...</a><br /></td></tr>
+<tr class="separator:a26571e190c198e068d6aa92af584352d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a0608eae8fc20fea488b578b4440a5973"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___digit.html#a0608eae8fc20fea488b578b4440a5973">dat</a> (<a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> SendVal)</td></tr>
+<tr class="separator:a0608eae8fc20fea488b578b4440a5973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8362aa8c9725ab2000e4b1f3c816de8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___digit.html#a8362aa8c9725ab2000e4b1f3c816de8b">com</a> (void)</td></tr>
+<tr class="separator:a8362aa8c9725ab2000e4b1f3c816de8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:af87156a3cca1c199e469b0ce7b8ce7f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___digit.html#af87156a3cca1c199e469b0ce7b8ce7f9">Polarity</a></td></tr>
+<tr class="memdesc:af87156a3cca1c199e469b0ce7b8ce7f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">共阴或共阳  <a href="classbsp___digit.html#af87156a3cca1c199e469b0ce7b8ce7f9">更多...</a><br /></td></tr>
+<tr class="separator:af87156a3cca1c199e469b0ce7b8ce7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74829f4e2ae8a7a041b8bd249d93242f"><td class="memItemLeft" align="right" valign="top">GPIO_TypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___digit.html#a74829f4e2ae8a7a041b8bd249d93242f">GPIOx_MOSIO</a></td></tr>
+<tr class="separator:a74829f4e2ae8a7a041b8bd249d93242f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3fb901cccd34c97bcdff090060d0eb9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___digit.html#ac3fb901cccd34c97bcdff090060d0eb9">GPIO_Pin_MOSIO</a></td></tr>
+<tr class="separator:ac3fb901cccd34c97bcdff090060d0eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a128d72d3f9705a6635fd5ba3a8f11219"><td class="memItemLeft" align="right" valign="top">GPIO_TypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___digit.html#a128d72d3f9705a6635fd5ba3a8f11219">GPIOx_S_CLK</a></td></tr>
+<tr class="separator:a128d72d3f9705a6635fd5ba3a8f11219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af642ff2d193c72cd6e44da895997936e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___digit.html#af642ff2d193c72cd6e44da895997936e">GPIO_Pin_S_CLK</a></td></tr>
+<tr class="separator:af642ff2d193c72cd6e44da895997936e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35b4df52093b6f34e2bd0e99a6fac473"><td class="memItemLeft" align="right" valign="top">GPIO_TypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___digit.html#a35b4df52093b6f34e2bd0e99a6fac473">GPIOx_R_CLK</a></td></tr>
+<tr class="separator:a35b4df52093b6f34e2bd0e99a6fac473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3914358421f51f43a9098ddd37d83a59"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___digit.html#a3914358421f51f43a9098ddd37d83a59">GPIO_Pin_R_CLK</a></td></tr>
+<tr class="separator:a3914358421f51f43a9098ddd37d83a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >一个面向数码管的类,使用级联的HC595 </p>
+
+<p class="definition">在文件 <a class="el" href="bsp___digit_8h_source.html">bsp_Digit.h</a> 第 <a class="el" href="bsp___digit_8h_source.html#l00067">67</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a83071caacf301b37cf47b6eee55c2818" name="a83071caacf301b37cf47b6eee55c2818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83071caacf301b37cf47b6eee55c2818">&#9670;&#160;</a></span>bsp_Digit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bsp_Digit::bsp_Digit </td>
+          <td>(</td>
+          <td class="paramtype">GPIO_TypeDef *&#160;</td>
+          <td class="paramname"><em>GPIOx_MOSIO</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>GPIO_Pin_MOSIO</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GPIO_TypeDef *&#160;</td>
+          <td class="paramname"><em>GPIOx_S_CLK</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>GPIO_Pin_S_CLK</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GPIO_TypeDef *&#160;</td>
+          <td class="paramname"><em>GPIOx_R_CLK</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>GPIO_Pin_R_CLK</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>Polarity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp___digit_8cpp_source.html">bsp_Digit.cpp</a> 第 <a class="el" href="bsp___digit_8cpp_source.html#l00077">77</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a8362aa8c9725ab2000e4b1f3c816de8b" name="a8362aa8c9725ab2000e4b1f3c816de8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8362aa8c9725ab2000e4b1f3c816de8b">&#9670;&#160;</a></span>com()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bsp_Digit::com </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp___digit_8cpp_source.html">bsp_Digit.cpp</a> 第 <a class="el" href="bsp___digit_8cpp_source.html#l00047">47</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbsp___digit_a8362aa8c9725ab2000e4b1f3c816de8b_icgraph.png" border="0" usemap="#aclassbsp___digit_a8362aa8c9725ab2000e4b1f3c816de8b_icgraph" alt=""/></div>
+<map name="aclassbsp___digit_a8362aa8c9725ab2000e4b1f3c816de8b_icgraph" id="aclassbsp___digit_a8362aa8c9725ab2000e4b1f3c816de8b_icgraph">
+<area shape="rect" title=" " alt="" coords="520,53,629,79"/>
+<area shape="rect" href="classbsp___digit.html#a9f91f206f32eef69e91c5975ad12db6b" title="在某位显示一个数字" alt="" coords="341,28,472,53"/>
+<area shape="rect" href="classbsp___digit.html#a1b609eee1a20e598fdb7090b8a0b0524" title="显示一个小数点" alt="" coords="186,79,291,104"/>
+<area shape="rect" href="classbsp___digit.html#a37e6984660f0b60322d420c766107b40" title="显示一个四位数据" alt="" coords="184,29,293,55"/>
+<area shape="rect" href="classbsp___digit.html#a7bde5d953a88e04dae985b3ce82a386e" title="显示数据与一个像素点" alt="" coords="5,55,136,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0608eae8fc20fea488b578b4440a5973" name="a0608eae8fc20fea488b578b4440a5973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0608eae8fc20fea488b578b4440a5973">&#9670;&#160;</a></span>dat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bsp_Digit::dat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
+          <td class="paramname"><em>SendVal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp___digit_8cpp_source.html">bsp_Digit.cpp</a> 第 <a class="el" href="bsp___digit_8cpp_source.html#l00041">41</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbsp___digit_a0608eae8fc20fea488b578b4440a5973_icgraph.png" border="0" usemap="#aclassbsp___digit_a0608eae8fc20fea488b578b4440a5973_icgraph" alt=""/></div>
+<map name="aclassbsp___digit_a0608eae8fc20fea488b578b4440a5973_icgraph" id="aclassbsp___digit_a0608eae8fc20fea488b578b4440a5973_icgraph">
+<area shape="rect" title=" " alt="" coords="520,53,623,79"/>
+<area shape="rect" href="classbsp___digit.html#a9f91f206f32eef69e91c5975ad12db6b" title="在某位显示一个数字" alt="" coords="341,28,472,53"/>
+<area shape="rect" href="classbsp___digit.html#a1b609eee1a20e598fdb7090b8a0b0524" title="显示一个小数点" alt="" coords="186,79,291,104"/>
+<area shape="rect" href="classbsp___digit.html#a37e6984660f0b60322d420c766107b40" title="显示一个四位数据" alt="" coords="184,29,293,55"/>
+<area shape="rect" href="classbsp___digit.html#a7bde5d953a88e04dae985b3ce82a386e" title="显示数据与一个像素点" alt="" coords="5,55,136,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9f91f206f32eef69e91c5975ad12db6b" name="a9f91f206f32eef69e91c5975ad12db6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f91f206f32eef69e91c5975ad12db6b">&#9670;&#160;</a></span>DatCom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bsp_Digit::DatCom </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
+          <td class="paramname"><em>SendVal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
+          <td class="paramname"><em>cha</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在某位显示一个数字 </p>
+
+<p class="definition">在文件 <a class="el" href="bsp___digit_8cpp_source.html">bsp_Digit.cpp</a> 第 <a class="el" href="bsp___digit_8cpp_source.html#l00051">51</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbsp___digit_a9f91f206f32eef69e91c5975ad12db6b_cgraph.png" border="0" usemap="#aclassbsp___digit_a9f91f206f32eef69e91c5975ad12db6b_cgraph" alt=""/></div>
+<map name="aclassbsp___digit_a9f91f206f32eef69e91c5975ad12db6b_cgraph" id="aclassbsp___digit_a9f91f206f32eef69e91c5975ad12db6b_cgraph">
+<area shape="rect" title="在某位显示一个数字" alt="" coords="5,31,136,56"/>
+<area shape="rect" href="classbsp___digit.html#a8362aa8c9725ab2000e4b1f3c816de8b" title=" " alt="" coords="184,5,293,31"/>
+<area shape="rect" href="classbsp___digit.html#a0608eae8fc20fea488b578b4440a5973" title=" " alt="" coords="187,55,290,80"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbsp___digit_a9f91f206f32eef69e91c5975ad12db6b_icgraph.png" border="0" usemap="#aclassbsp___digit_a9f91f206f32eef69e91c5975ad12db6b_icgraph" alt=""/></div>
+<map name="aclassbsp___digit_a9f91f206f32eef69e91c5975ad12db6b_icgraph" id="aclassbsp___digit_a9f91f206f32eef69e91c5975ad12db6b_icgraph">
+<area shape="rect" title="在某位显示一个数字" alt="" coords="341,29,472,55"/>
+<area shape="rect" href="classbsp___digit.html#a37e6984660f0b60322d420c766107b40" title="显示一个四位数据" alt="" coords="184,29,293,55"/>
+<area shape="rect" href="classbsp___digit.html#a7bde5d953a88e04dae985b3ce82a386e" title="显示数据与一个像素点" alt="" coords="5,29,136,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1b609eee1a20e598fdb7090b8a0b0524" name="a1b609eee1a20e598fdb7090b8a0b0524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b609eee1a20e598fdb7090b8a0b0524">&#9670;&#160;</a></span>dop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bsp_Digit::dop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
+          <td class="paramname"><em>cha</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>显示一个小数点 </p>
+
+<p class="definition">在文件 <a class="el" href="bsp___digit_8cpp_source.html">bsp_Digit.cpp</a> 第 <a class="el" href="bsp___digit_8cpp_source.html#l00064">64</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbsp___digit_a1b609eee1a20e598fdb7090b8a0b0524_cgraph.png" border="0" usemap="#aclassbsp___digit_a1b609eee1a20e598fdb7090b8a0b0524_cgraph" alt=""/></div>
+<map name="aclassbsp___digit_a1b609eee1a20e598fdb7090b8a0b0524_cgraph" id="aclassbsp___digit_a1b609eee1a20e598fdb7090b8a0b0524_cgraph">
+<area shape="rect" title="显示一个小数点" alt="" coords="5,31,111,56"/>
+<area shape="rect" href="classbsp___digit.html#a8362aa8c9725ab2000e4b1f3c816de8b" title=" " alt="" coords="159,5,268,31"/>
+<area shape="rect" href="classbsp___digit.html#a0608eae8fc20fea488b578b4440a5973" title=" " alt="" coords="162,55,265,80"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbsp___digit_a1b609eee1a20e598fdb7090b8a0b0524_icgraph.png" border="0" usemap="#aclassbsp___digit_a1b609eee1a20e598fdb7090b8a0b0524_icgraph" alt=""/></div>
+<map name="aclassbsp___digit_a1b609eee1a20e598fdb7090b8a0b0524_icgraph" id="aclassbsp___digit_a1b609eee1a20e598fdb7090b8a0b0524_icgraph">
+<area shape="rect" title="显示一个小数点" alt="" coords="184,5,289,31"/>
+<area shape="rect" href="classbsp___digit.html#a7bde5d953a88e04dae985b3ce82a386e" title="显示数据与一个像素点" alt="" coords="5,5,136,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a37e6984660f0b60322d420c766107b40" name="a37e6984660f0b60322d420c766107b40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37e6984660f0b60322d420c766107b40">&#9670;&#160;</a></span>num()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bsp_Digit::num </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
+          <td class="paramname"><em>num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>显示一个四位数据 </p>
+
+<p class="definition">在文件 <a class="el" href="bsp___digit_8cpp_source.html">bsp_Digit.cpp</a> 第 <a class="el" href="bsp___digit_8cpp_source.html#l00058">58</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbsp___digit_a37e6984660f0b60322d420c766107b40_cgraph.png" border="0" usemap="#aclassbsp___digit_a37e6984660f0b60322d420c766107b40_cgraph" alt=""/></div>
+<map name="aclassbsp___digit_a37e6984660f0b60322d420c766107b40_cgraph" id="aclassbsp___digit_a37e6984660f0b60322d420c766107b40_cgraph">
+<area shape="rect" title="显示一个四位数据" alt="" coords="5,31,115,56"/>
+<area shape="rect" href="classbsp___digit.html#a9f91f206f32eef69e91c5975ad12db6b" title="在某位显示一个数字" alt="" coords="163,31,293,56"/>
+<area shape="rect" href="classbsp___digit.html#a8362aa8c9725ab2000e4b1f3c816de8b" title=" " alt="" coords="341,5,451,31"/>
+<area shape="rect" href="classbsp___digit.html#a0608eae8fc20fea488b578b4440a5973" title=" " alt="" coords="345,55,447,80"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbsp___digit_a37e6984660f0b60322d420c766107b40_icgraph.png" border="0" usemap="#aclassbsp___digit_a37e6984660f0b60322d420c766107b40_icgraph" alt=""/></div>
+<map name="aclassbsp___digit_a37e6984660f0b60322d420c766107b40_icgraph" id="aclassbsp___digit_a37e6984660f0b60322d420c766107b40_icgraph">
+<area shape="rect" title="显示一个四位数据" alt="" coords="184,29,293,55"/>
+<area shape="rect" href="classbsp___digit.html#a7bde5d953a88e04dae985b3ce82a386e" title="显示数据与一个像素点" alt="" coords="5,29,136,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7bde5d953a88e04dae985b3ce82a386e" name="a7bde5d953a88e04dae985b3ce82a386e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bde5d953a88e04dae985b3ce82a386e">&#9670;&#160;</a></span>numdop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bsp_Digit::numdop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
+          <td class="paramname"><em>cha</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>显示数据与一个像素点 </p>
+
+<p class="definition">在文件 <a class="el" href="bsp___digit_8cpp_source.html">bsp_Digit.cpp</a> 第 <a class="el" href="bsp___digit_8cpp_source.html#l00071">71</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbsp___digit_a7bde5d953a88e04dae985b3ce82a386e_cgraph.png" border="0" usemap="#aclassbsp___digit_a7bde5d953a88e04dae985b3ce82a386e_cgraph" alt=""/></div>
+<map name="aclassbsp___digit_a7bde5d953a88e04dae985b3ce82a386e_cgraph" id="aclassbsp___digit_a7bde5d953a88e04dae985b3ce82a386e_cgraph">
+<area shape="rect" title="显示数据与一个像素点" alt="" coords="5,29,136,55"/>
+<area shape="rect" href="classbsp___digit.html#a1b609eee1a20e598fdb7090b8a0b0524" title="显示一个小数点" alt="" coords="354,5,459,31"/>
+<area shape="rect" href="classbsp___digit.html#a37e6984660f0b60322d420c766107b40" title="显示一个四位数据" alt="" coords="184,67,293,92"/>
+<area shape="rect" href="classbsp___digit.html#a8362aa8c9725ab2000e4b1f3c816de8b" title=" " alt="" coords="520,5,629,31"/>
+<area shape="rect" href="classbsp___digit.html#a0608eae8fc20fea488b578b4440a5973" title=" " alt="" coords="523,55,626,80"/>
+<area shape="rect" href="classbsp___digit.html#a9f91f206f32eef69e91c5975ad12db6b" title="在某位显示一个数字" alt="" coords="341,55,472,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a26571e190c198e068d6aa92af584352d" name="a26571e190c198e068d6aa92af584352d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26571e190c198e068d6aa92af584352d">&#9670;&#160;</a></span>division</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> bsp_Digit::division</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>分频系数,越大越慢 </p>
+
+<p class="definition">在文件 <a class="el" href="bsp___digit_8h_source.html">bsp_Digit.h</a> 第 <a class="el" href="bsp___digit_8h_source.html#l00078">78</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac3fb901cccd34c97bcdff090060d0eb9" name="ac3fb901cccd34c97bcdff090060d0eb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3fb901cccd34c97bcdff090060d0eb9">&#9670;&#160;</a></span>GPIO_Pin_MOSIO</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t bsp_Digit::GPIO_Pin_MOSIO</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp___digit_8h_source.html">bsp_Digit.h</a> 第 <a class="el" href="bsp___digit_8h_source.html#l00087">87</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3914358421f51f43a9098ddd37d83a59" name="a3914358421f51f43a9098ddd37d83a59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3914358421f51f43a9098ddd37d83a59">&#9670;&#160;</a></span>GPIO_Pin_R_CLK</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t bsp_Digit::GPIO_Pin_R_CLK</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp___digit_8h_source.html">bsp_Digit.h</a> 第 <a class="el" href="bsp___digit_8h_source.html#l00091">91</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af642ff2d193c72cd6e44da895997936e" name="af642ff2d193c72cd6e44da895997936e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af642ff2d193c72cd6e44da895997936e">&#9670;&#160;</a></span>GPIO_Pin_S_CLK</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t bsp_Digit::GPIO_Pin_S_CLK</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp___digit_8h_source.html">bsp_Digit.h</a> 第 <a class="el" href="bsp___digit_8h_source.html#l00089">89</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a74829f4e2ae8a7a041b8bd249d93242f" name="a74829f4e2ae8a7a041b8bd249d93242f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74829f4e2ae8a7a041b8bd249d93242f">&#9670;&#160;</a></span>GPIOx_MOSIO</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GPIO_TypeDef* bsp_Digit::GPIOx_MOSIO</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp___digit_8h_source.html">bsp_Digit.h</a> 第 <a class="el" href="bsp___digit_8h_source.html#l00086">86</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a35b4df52093b6f34e2bd0e99a6fac473" name="a35b4df52093b6f34e2bd0e99a6fac473"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35b4df52093b6f34e2bd0e99a6fac473">&#9670;&#160;</a></span>GPIOx_R_CLK</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GPIO_TypeDef* bsp_Digit::GPIOx_R_CLK</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp___digit_8h_source.html">bsp_Digit.h</a> 第 <a class="el" href="bsp___digit_8h_source.html#l00090">90</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a128d72d3f9705a6635fd5ba3a8f11219" name="a128d72d3f9705a6635fd5ba3a8f11219"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a128d72d3f9705a6635fd5ba3a8f11219">&#9670;&#160;</a></span>GPIOx_S_CLK</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GPIO_TypeDef* bsp_Digit::GPIOx_S_CLK</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp___digit_8h_source.html">bsp_Digit.h</a> 第 <a class="el" href="bsp___digit_8h_source.html#l00088">88</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af87156a3cca1c199e469b0ce7b8ce7f9" name="af87156a3cca1c199e469b0ce7b8ce7f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af87156a3cca1c199e469b0ce7b8ce7f9">&#9670;&#160;</a></span>Polarity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bsp_Digit::Polarity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>共阴或共阳 </p>
+
+<p class="definition">在文件 <a class="el" href="bsp___digit_8h_source.html">bsp_Digit.h</a> 第 <a class="el" href="bsp___digit_8h_source.html#l00085">85</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>D:/gitt/MicrochipFor32/bsp_Device/<a class="el" href="bsp___digit_8h_source.html">bsp_Digit.h</a></li>
+<li>D:/gitt/MicrochipFor32/bsp_Device/<a class="el" href="bsp___digit_8cpp_source.html">bsp_Digit.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

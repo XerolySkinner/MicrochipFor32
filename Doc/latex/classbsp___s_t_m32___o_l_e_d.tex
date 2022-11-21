@@ -1,0 +1,385 @@
+\hypertarget{classbsp___s_t_m32___o_l_e_d}{}\doxysection{bsp\+\_\+\+STM32\+\_\+\+OLED类 参考}
+\label{classbsp___s_t_m32___o_l_e_d}\index{bsp\_STM32\_OLED@{bsp\_STM32\_OLED}}
+
+
+一个\+OLED设备,基于\+STM32使用\+IIC总线  
+
+
+
+
+{\ttfamily \#include $<$bsp\+\_\+\+OLED\+\_\+\+STM32.\+h$>$}
+
+
+
+类 bsp\+\_\+\+STM32\+\_\+\+OLED 继承关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classbsp___s_t_m32___o_l_e_d__inherit__graph}
+\end{center}
+\end{figure}
+
+
+bsp\+\_\+\+STM32\+\_\+\+OLED 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classbsp___s_t_m32___o_l_e_d__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbsp___s_t_m32___o_l_e_d_a130ba2e9f83b4f6dd70154cb7561db35}{bsp\+\_\+\+STM32\+\_\+\+OLED}} (\mbox{\hyperlink{classbsp___i_i_c___s_t_m32}{bsp\+\_\+\+IIC\+\_\+\+STM32}} \&IICS)
+\item 
+\mbox{\hyperlink{classbsp___s_t_m32___o_l_e_d_a72b5fb72becf87a1b1a0cd34f4e7a6d5}{bsp\+\_\+\+STM32\+\_\+\+OLED}} (GPIO\+\_\+\+Type\+Def $\ast$\mbox{\hyperlink{classbsp___i_i_c___s_t_m32_a6258aaa53e12f5502333f4440cdba352}{GPIOx\+\_\+\+SCK}}, uint16\+\_\+t \mbox{\hyperlink{classbsp___i_i_c___s_t_m32_a7a5b57552741573a65114014a146bd5e}{GPIO\+\_\+\+Pin\+\_\+\+SCK}}, GPIO\+\_\+\+Type\+Def $\ast$\mbox{\hyperlink{classbsp___i_i_c___s_t_m32_aae22b18b9aa61649c4abd31f79fa7a82}{GPIOx\+\_\+\+SDA}}, uint16\+\_\+t \mbox{\hyperlink{classbsp___i_i_c___s_t_m32_a73c8aa1aef1ed9e4ff8d46e5c7755272}{GPIO\+\_\+\+Pin\+\_\+\+SDA}})
+\item 
+void \mbox{\hyperlink{classbsp___s_t_m32___o_l_e_d_a8d7c3a121efe0f93f01b4c0423843d7a}{Init}} (void)
+\begin{DoxyCompactList}\small\item\em OLED初始化 初始化显示屏的设置 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___s_t_m32___o_l_e_d_a8650b7dca00244d1c6a5b1530e08be20}{Column\+\_\+set}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} column)
+\begin{DoxyCompactList}\small\item\em 光标定位行中的位置 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___s_t_m32___o_l_e_d_ace503e57e2f9abe155bd1bae7eb83bff}{Page\+\_\+set}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} page)
+\begin{DoxyCompactList}\small\item\em 光标定位于一页 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___s_t_m32___o_l_e_d_a1d6d3de485739ab13cde6f4c51a97e72}{Clear}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} dat)
+\begin{DoxyCompactList}\small\item\em 全页绘制 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___s_t_m32___o_l_e_d_a60d512f9509a7809566159058caa8a01}{Picture\+\_\+display}} (const \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$ptr\+\_\+pic)
+\begin{DoxyCompactList}\small\item\em OLED绘图 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___s_t_m32___o_l_e_d_acbb37e4600b98dd8e16b6a8750daae15}{Picture\+\_\+\+Reverse\+Display}} (const \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$ptr\+\_\+pic)
+\begin{DoxyCompactList}\small\item\em OLED反向绘图 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___s_t_m32___o_l_e_d_a2fd3f6c887830072509f5aa916ad8751}{Draw\+\_\+\+ASCII}} (\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} H, \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} V, \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} word)
+\begin{DoxyCompactList}\small\item\em OLED绘制\+ASCII字符 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___s_t_m32___o_l_e_d_a7d11c69d54c2fac372a9e690319c111e}{Send\+\_\+dat}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} dat)
+\begin{DoxyCompactList}\small\item\em 发送一条数据给\+OLED \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___s_t_m32___o_l_e_d_a4ce72ba6b9e7c027ecfaf9ad8fc30135}{Send\+\_\+cmd}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} cmd)
+\begin{DoxyCompactList}\small\item\em 发送一条指令给\+OLED \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___s_t_m32___o_l_e_d_a333b835b09d4471f1be248b88c527d68}{Send\+\_\+len\+\_\+dat}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$dat, \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} len)
+\begin{DoxyCompactList}\small\item\em 发送一串定长指令给\+OLED \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{额外继承的成员函数}
+
+
+\doxysubsection{详细描述}
+一个\+OLED设备,基于\+STM32使用\+IIC总线 
+
+在文件 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8h_source}{bsp\+\_\+\+OLED\+\_\+\+STM32.\+h}} 第 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8h_source_l00081}{81}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classbsp___s_t_m32___o_l_e_d_a130ba2e9f83b4f6dd70154cb7561db35}\label{classbsp___s_t_m32___o_l_e_d_a130ba2e9f83b4f6dd70154cb7561db35}} 
+\index{bsp\_STM32\_OLED@{bsp\_STM32\_OLED}!bsp\_STM32\_OLED@{bsp\_STM32\_OLED}}
+\index{bsp\_STM32\_OLED@{bsp\_STM32\_OLED}!bsp\_STM32\_OLED@{bsp\_STM32\_OLED}}
+\doxysubsubsection{\texorpdfstring{bsp\_STM32\_OLED()}{bsp\_STM32\_OLED()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bsp\+\_\+\+STM32\+\_\+\+OLED\+::bsp\+\_\+\+STM32\+\_\+\+OLED (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbsp___i_i_c___s_t_m32}{bsp\+\_\+\+IIC\+\_\+\+STM32}} \&}]{IICS }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8h_source}{bsp\+\_\+\+OLED\+\_\+\+STM32.\+h}} 第 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8h_source_l00084}{84}} 行定义.
+
+\mbox{\Hypertarget{classbsp___s_t_m32___o_l_e_d_a72b5fb72becf87a1b1a0cd34f4e7a6d5}\label{classbsp___s_t_m32___o_l_e_d_a72b5fb72becf87a1b1a0cd34f4e7a6d5}} 
+\index{bsp\_STM32\_OLED@{bsp\_STM32\_OLED}!bsp\_STM32\_OLED@{bsp\_STM32\_OLED}}
+\index{bsp\_STM32\_OLED@{bsp\_STM32\_OLED}!bsp\_STM32\_OLED@{bsp\_STM32\_OLED}}
+\doxysubsubsection{\texorpdfstring{bsp\_STM32\_OLED()}{bsp\_STM32\_OLED()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bsp\+\_\+\+STM32\+\_\+\+OLED\+::bsp\+\_\+\+STM32\+\_\+\+OLED (\begin{DoxyParamCaption}\item[{GPIO\+\_\+\+Type\+Def $\ast$}]{GPIOx\+\_\+\+SCK,  }\item[{uint16\+\_\+t}]{GPIO\+\_\+\+Pin\+\_\+\+SCK,  }\item[{GPIO\+\_\+\+Type\+Def $\ast$}]{GPIOx\+\_\+\+SDA,  }\item[{uint16\+\_\+t}]{GPIO\+\_\+\+Pin\+\_\+\+SDA }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8h_source}{bsp\+\_\+\+OLED\+\_\+\+STM32.\+h}} 第 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8h_source_l00088}{88}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classbsp___s_t_m32___o_l_e_d_a1d6d3de485739ab13cde6f4c51a97e72}\label{classbsp___s_t_m32___o_l_e_d_a1d6d3de485739ab13cde6f4c51a97e72}} 
+\index{bsp\_STM32\_OLED@{bsp\_STM32\_OLED}!Clear@{Clear}}
+\index{Clear@{Clear}!bsp\_STM32\_OLED@{bsp\_STM32\_OLED}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+STM32\+\_\+\+OLED\+::\+Clear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{dat }\end{DoxyParamCaption})}
+
+
+
+全页绘制 
+
+
+\begin{DoxyParams}{参数}
+{\em dat} & 全页绘制的数据,0x00为清空,0x\+FF为全涂 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8cpp_source}{bsp\+\_\+\+OLED\+\_\+\+STM32.\+cpp}} 第 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8cpp_source_l00084}{84}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_t_m32___o_l_e_d_a1d6d3de485739ab13cde6f4c51a97e72_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_t_m32___o_l_e_d_a8650b7dca00244d1c6a5b1530e08be20}\label{classbsp___s_t_m32___o_l_e_d_a8650b7dca00244d1c6a5b1530e08be20}} 
+\index{bsp\_STM32\_OLED@{bsp\_STM32\_OLED}!Column\_set@{Column\_set}}
+\index{Column\_set@{Column\_set}!bsp\_STM32\_OLED@{bsp\_STM32\_OLED}}
+\doxysubsubsection{\texorpdfstring{Column\_set()}{Column\_set()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+STM32\+\_\+\+OLED\+::\+Column\+\_\+set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{column }\end{DoxyParamCaption})}
+
+
+
+光标定位行中的位置 
+
+
+\begin{DoxyParams}{参数}
+{\em column} & 设定的该行位置 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8cpp_source}{bsp\+\_\+\+OLED\+\_\+\+STM32.\+cpp}} 第 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8cpp_source_l00068}{68}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_t_m32___o_l_e_d_a8650b7dca00244d1c6a5b1530e08be20_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_t_m32___o_l_e_d_a8650b7dca00244d1c6a5b1530e08be20_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_t_m32___o_l_e_d_a2fd3f6c887830072509f5aa916ad8751}\label{classbsp___s_t_m32___o_l_e_d_a2fd3f6c887830072509f5aa916ad8751}} 
+\index{bsp\_STM32\_OLED@{bsp\_STM32\_OLED}!Draw\_ASCII@{Draw\_ASCII}}
+\index{Draw\_ASCII@{Draw\_ASCII}!bsp\_STM32\_OLED@{bsp\_STM32\_OLED}}
+\doxysubsubsection{\texorpdfstring{Draw\_ASCII()}{Draw\_ASCII()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+STM32\+\_\+\+OLED\+::\+Draw\+\_\+\+ASCII (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}}]{H,  }\item[{\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}}]{V,  }\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{word }\end{DoxyParamCaption})}
+
+
+
+OLED绘制\+ASCII字符 
+
+
+\begin{DoxyParams}{参数}
+{\em H} & 行数 \\
+\hline
+{\em V} & 列数 \\
+\hline
+{\em word} & 所要显示的字符 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8cpp_source}{bsp\+\_\+\+OLED\+\_\+\+STM32.\+cpp}} 第 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8cpp_source_l00145}{145}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_t_m32___o_l_e_d_a2fd3f6c887830072509f5aa916ad8751_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_t_m32___o_l_e_d_a8d7c3a121efe0f93f01b4c0423843d7a}\label{classbsp___s_t_m32___o_l_e_d_a8d7c3a121efe0f93f01b4c0423843d7a}} 
+\index{bsp\_STM32\_OLED@{bsp\_STM32\_OLED}!Init@{Init}}
+\index{Init@{Init}!bsp\_STM32\_OLED@{bsp\_STM32\_OLED}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+STM32\+\_\+\+OLED\+::\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+OLED初始化 初始化显示屏的设置 
+
+
+
+在文件 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8cpp_source}{bsp\+\_\+\+OLED\+\_\+\+STM32.\+cpp}} 第 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8cpp_source_l00158}{158}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_t_m32___o_l_e_d_a8d7c3a121efe0f93f01b4c0423843d7a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_t_m32___o_l_e_d_ace503e57e2f9abe155bd1bae7eb83bff}\label{classbsp___s_t_m32___o_l_e_d_ace503e57e2f9abe155bd1bae7eb83bff}} 
+\index{bsp\_STM32\_OLED@{bsp\_STM32\_OLED}!Page\_set@{Page\_set}}
+\index{Page\_set@{Page\_set}!bsp\_STM32\_OLED@{bsp\_STM32\_OLED}}
+\doxysubsubsection{\texorpdfstring{Page\_set()}{Page\_set()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+STM32\+\_\+\+OLED\+::\+Page\+\_\+set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{page }\end{DoxyParamCaption})}
+
+
+
+光标定位于一页 
+
+
+\begin{DoxyParams}{参数}
+{\em page} & 设定所处的页位置 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8cpp_source}{bsp\+\_\+\+OLED\+\_\+\+STM32.\+cpp}} 第 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8cpp_source_l00077}{77}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_t_m32___o_l_e_d_ace503e57e2f9abe155bd1bae7eb83bff_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_t_m32___o_l_e_d_ace503e57e2f9abe155bd1bae7eb83bff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_t_m32___o_l_e_d_a60d512f9509a7809566159058caa8a01}\label{classbsp___s_t_m32___o_l_e_d_a60d512f9509a7809566159058caa8a01}} 
+\index{bsp\_STM32\_OLED@{bsp\_STM32\_OLED}!Picture\_display@{Picture\_display}}
+\index{Picture\_display@{Picture\_display}!bsp\_STM32\_OLED@{bsp\_STM32\_OLED}}
+\doxysubsubsection{\texorpdfstring{Picture\_display()}{Picture\_display()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+STM32\+\_\+\+OLED\+::\+Picture\+\_\+display (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$}]{ptr\+\_\+pic }\end{DoxyParamCaption})}
+
+
+
+OLED绘图 
+
+
+\begin{DoxyParams}{参数}
+{\em $\ast$ptr\+\_\+pic} & 图片数据的头 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8cpp_source}{bsp\+\_\+\+OLED\+\_\+\+STM32.\+cpp}} 第 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8cpp_source_l00103}{103}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_t_m32___o_l_e_d_a60d512f9509a7809566159058caa8a01_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_t_m32___o_l_e_d_acbb37e4600b98dd8e16b6a8750daae15}\label{classbsp___s_t_m32___o_l_e_d_acbb37e4600b98dd8e16b6a8750daae15}} 
+\index{bsp\_STM32\_OLED@{bsp\_STM32\_OLED}!Picture\_ReverseDisplay@{Picture\_ReverseDisplay}}
+\index{Picture\_ReverseDisplay@{Picture\_ReverseDisplay}!bsp\_STM32\_OLED@{bsp\_STM32\_OLED}}
+\doxysubsubsection{\texorpdfstring{Picture\_ReverseDisplay()}{Picture\_ReverseDisplay()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+STM32\+\_\+\+OLED\+::\+Picture\+\_\+\+Reverse\+Display (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$}]{ptr\+\_\+pic }\end{DoxyParamCaption})}
+
+
+
+OLED反向绘图 
+
+
+\begin{DoxyParams}{参数}
+{\em $\ast$ptr\+\_\+pic} & 图片数据的头 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8cpp_source}{bsp\+\_\+\+OLED\+\_\+\+STM32.\+cpp}} 第 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8cpp_source_l00123}{123}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_t_m32___o_l_e_d_acbb37e4600b98dd8e16b6a8750daae15_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_t_m32___o_l_e_d_a4ce72ba6b9e7c027ecfaf9ad8fc30135}\label{classbsp___s_t_m32___o_l_e_d_a4ce72ba6b9e7c027ecfaf9ad8fc30135}} 
+\index{bsp\_STM32\_OLED@{bsp\_STM32\_OLED}!Send\_cmd@{Send\_cmd}}
+\index{Send\_cmd@{Send\_cmd}!bsp\_STM32\_OLED@{bsp\_STM32\_OLED}}
+\doxysubsubsection{\texorpdfstring{Send\_cmd()}{Send\_cmd()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+STM32\+\_\+\+OLED\+::\+Send\+\_\+cmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{cmd }\end{DoxyParamCaption})}
+
+
+
+发送一条指令给\+OLED 
+
+
+\begin{DoxyParams}{参数}
+{\em cmd} & 要发送的指令 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8cpp_source}{bsp\+\_\+\+OLED\+\_\+\+STM32.\+cpp}} 第 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8cpp_source_l00046}{46}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_t_m32___o_l_e_d_a4ce72ba6b9e7c027ecfaf9ad8fc30135_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_t_m32___o_l_e_d_a4ce72ba6b9e7c027ecfaf9ad8fc30135_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_t_m32___o_l_e_d_a7d11c69d54c2fac372a9e690319c111e}\label{classbsp___s_t_m32___o_l_e_d_a7d11c69d54c2fac372a9e690319c111e}} 
+\index{bsp\_STM32\_OLED@{bsp\_STM32\_OLED}!Send\_dat@{Send\_dat}}
+\index{Send\_dat@{Send\_dat}!bsp\_STM32\_OLED@{bsp\_STM32\_OLED}}
+\doxysubsubsection{\texorpdfstring{Send\_dat()}{Send\_dat()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+STM32\+\_\+\+OLED\+::\+Send\+\_\+dat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{dat }\end{DoxyParamCaption})}
+
+
+
+发送一条数据给\+OLED 
+
+
+\begin{DoxyParams}{参数}
+{\em dat} & 要发送的数据 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8cpp_source}{bsp\+\_\+\+OLED\+\_\+\+STM32.\+cpp}} 第 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8cpp_source_l00053}{53}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_t_m32___o_l_e_d_a7d11c69d54c2fac372a9e690319c111e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_t_m32___o_l_e_d_a333b835b09d4471f1be248b88c527d68}\label{classbsp___s_t_m32___o_l_e_d_a333b835b09d4471f1be248b88c527d68}} 
+\index{bsp\_STM32\_OLED@{bsp\_STM32\_OLED}!Send\_len\_dat@{Send\_len\_dat}}
+\index{Send\_len\_dat@{Send\_len\_dat}!bsp\_STM32\_OLED@{bsp\_STM32\_OLED}}
+\doxysubsubsection{\texorpdfstring{Send\_len\_dat()}{Send\_len\_dat()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+STM32\+\_\+\+OLED\+::\+Send\+\_\+len\+\_\+dat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$}]{dat,  }\item[{\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}}]{len }\end{DoxyParamCaption})}
+
+
+
+发送一串定长指令给\+OLED 
+
+
+\begin{DoxyParams}{参数}
+{\em $\ast$dat} & 要发送的指令头 \\
+\hline
+{\em len} & 指令长度 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8cpp_source}{bsp\+\_\+\+OLED\+\_\+\+STM32.\+cpp}} 第 \mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8cpp_source_l00061}{61}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_t_m32___o_l_e_d_a333b835b09d4471f1be248b88c527d68_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_t_m32___o_l_e_d_a333b835b09d4471f1be248b88c527d68_icgraph}
+\end{center}
+\end{figure}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/gitt/\+Microchip\+For32/bsp\+\_\+\+Device/\mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8h}{bsp\+\_\+\+OLED\+\_\+\+STM32.\+h}}\item 
+D\+:/gitt/\+Microchip\+For32/bsp\+\_\+\+Device/\mbox{\hyperlink{bsp___o_l_e_d___s_t_m32_8cpp}{bsp\+\_\+\+OLED\+\_\+\+STM32.\+cpp}}\end{DoxyCompactItemize}

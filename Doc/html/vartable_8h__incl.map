@@ -1,0 +1,10 @@
+<map id="D:/gitt/MicrochipFor32/bsp_System/vartable.h" name="D:/gitt/MicrochipFor32/bsp_System/vartable.h">
+<area shape="rect" id="node1" title="全局向量在此生成" alt="" coords="176,5,335,45"/>
+<area shape="rect" id="node2" href="$_user_8h.html" title="用户设置信息" alt="" coords="5,93,65,119"/>
+<area shape="rect" id="node3" href="$varint_8h.html" title=" " alt="" coords="89,93,152,119"/>
+<area shape="rect" id="node5" title=" " alt="" coords="177,93,238,119"/>
+<area shape="rect" id="node6" href="$_callback_8h.html" title="全局中断在此实现" alt="" coords="262,93,347,119"/>
+<area shape="rect" id="node7" title=" " alt="" coords="371,93,433,119"/>
+<area shape="rect" id="node8" title=" " alt="" coords="457,93,515,119"/>
+<area shape="rect" id="node4" title=" " alt="" coords="88,167,153,192"/>
+</map>

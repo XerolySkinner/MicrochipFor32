@@ -1,0 +1,5 @@
+<map id="bsp_ModBus_Tx::WriteRegs" name="bsp_ModBus_Tx::WriteRegs">
+<area shape="rect" id="node1" title="发送写多个寄存器的指令" alt="" coords="5,31,193,56"/>
+<area shape="rect" id="node2" href="$bsp___c_r_c_8cpp.html#abb1fda5ed561362d12fe987758986919" title=" " alt="" coords="267,5,393,31"/>
+<area shape="rect" id="node3" href="$classbsp___mod_bus___tx.html#ac017f6145ba6f87c69a16510f868dcc2" title=" " alt="" coords="241,55,419,80"/>
+</map>

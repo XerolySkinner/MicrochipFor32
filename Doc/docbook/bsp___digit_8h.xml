@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_bsp___digit_8h" xml:lang="zh">
+<title>D:/gitt/MicrochipFor32/bsp_Device/bsp_Digit.h 文件参考</title>
+<indexterm><primary>D:/gitt/MicrochipFor32/bsp_Device/bsp_Digit.h</primary></indexterm>
+<para>
+
+<para>数码管显示类 </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;varint.h&quot;<?linebreak?>#include &quot;gpio.h&quot;<?linebreak?></programlisting>bsp_Digit.h 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="bsp___digit_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+此图展示该文件直接或间接的被哪些文件引用了:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="bsp___digit_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>类    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbsp___digit">bsp_Digit</link></para>
+
+<para>一个面向数码管的类,使用级联的HC595 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>枚举    </title>
+        <itemizedlist>
+            <listitem><para>enum { <link linkend="_bsp___digit_8h_1a06fc87d81c62e9abb8790b6e5713c55ba4c86d712c35fc61b110859b9f8c622f5">anode</link>
+, <link linkend="_bsp___digit_8h_1a06fc87d81c62e9abb8790b6e5713c55ba5802523c5519b4792ac2433404f6de26">cathode</link>
+ }</para>
+
+<para>数码管的共阳极或共阴极选择 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>变量    </title>
+        <itemizedlist>
+            <listitem><para>static const <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_bsp___digit_8h_1a9c1f3d665aa750ca904e9e547a2c98f8">digit_ca</link> []</para>
+
+<para>共阳极数码管的段码表,共阴极由此反相得到 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>数码管显示类 </para>
+<para>
+在文件 <link linkend="_bsp___digit_8h_source">bsp_Digit.h</link> 中定义.</para>
+</section>
+<section>
+<title>枚举类型说明</title>
+<anchor xml:id="_bsp___digit_8h_1a06fc87d81c62e9abb8790b6e5713c55b"/><section>
+    <title>anonymous enum</title>
+<para><computeroutput>anonymous enum</computeroutput></para><para>
+
+<para>数码管的共阳极或共阴极选择 </para>
+</para>
+<informaltable frame="all">
+<title>枚举值</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>anode</primary><secondary>bsp_Digit.h</secondary></indexterm>
+<indexterm><primary>bsp_Digit.h</primary><secondary>anode</secondary></indexterm>
+<anchor xml:id="_bsp___digit_8h_1a06fc87d81c62e9abb8790b6e5713c55ba4c86d712c35fc61b110859b9f8c622f5"/>anode</entry><entry>
+<para>共阳极 </para>
+</entry></row><row><entry><indexterm><primary>cathode</primary><secondary>bsp_Digit.h</secondary></indexterm>
+<indexterm><primary>bsp_Digit.h</primary><secondary>cathode</secondary></indexterm>
+<anchor xml:id="_bsp___digit_8h_1a06fc87d81c62e9abb8790b6e5713c55ba5802523c5519b4792ac2433404f6de26"/>cathode</entry><entry>
+<para>共阴极 </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+在文件 <link linkend="_bsp___digit_8h_source">bsp_Digit.h</link> 第 <link linkend="_bsp___digit_8h_source_1l00046">46</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>变量说明</title>
+<anchor xml:id="_bsp___digit_8h_1a9c1f3d665aa750ca904e9e547a2c98f8"/><section>
+    <title>digit_ca</title>
+<indexterm><primary>digit_ca</primary><secondary>bsp_Digit.h</secondary></indexterm>
+<indexterm><primary>bsp_Digit.h</primary><secondary>digit_ca</secondary></indexterm>
+<para><computeroutput>const <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> digit_ca[]<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">初始值:</emphasis><programlisting linenumbering="unnumbered">=&#32;{&#32;&#32;&#32;&#32;&#32;
+&#32;&#32;&#32;&#32;0xc0,0xf9,0xa4,0xb0,
+&#32;&#32;&#32;&#32;0x99,0x92,0x82,0xf8,
+&#32;&#32;&#32;&#32;0x80,0x90,0x88,0x83,
+&#32;&#32;&#32;&#32;0xc6,0xa1,0x86,0x8e}
+</programlisting><para>
+
+<para>共阳极数码管的段码表,共阴极由此反相得到 </para>
+</para>
+<para>
+在文件 <link linkend="_bsp___digit_8h_source">bsp_Digit.h</link> 第 <link linkend="_bsp___digit_8h_source_1l00056">56</link> 行定义.</para>
+</section>
+</section>
+</section>

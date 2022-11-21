@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="bsp___a_t24_c00_8h" kind="file" language="C++">
+    <compoundname>bsp_AT24C00.h</compoundname>
+    <includes refid="varint_8h" local="yes">varint.h</includes>
+    <includes refid="bsp___i_i_c___s_t_m32_8h" local="yes">bsp_IIC_STM32.h</includes>
+    <includedby refid="bsp___a_t24_c00_8cpp" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h</label>
+        <link refid="bsp___a_t24_c00_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>bsp_IIC.h</label>
+        <link refid="bsp___i_i_c_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>bsp_IIC_STM32.h</label>
+        <link refid="bsp___i_i_c___s_t_m32_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>varint.h</label>
+        <link refid="varint_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>gpio.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.cpp</label>
+        <link refid="bsp___a_t24_c00_8cpp"/>
+      </node>
+      <node id="1">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h</label>
+        <link refid="bsp___a_t24_c00_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classbsp___s_t_m32___a_t24_c00" prot="public">bsp_STM32_AT24C00</innerclass>
+    <briefdescription>
+<para>本类实现AT24C00的通讯 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*----------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>#<sp/><sp/>Copyright<sp/>(c)<sp/>2022<sp/>Yuankang<sp/>Liang(XerolySkinner)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>#<sp/><sp/>本软件按原样提供,无任何明示或暗示</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>#<sp/><sp/>在任何情况下,作者都不承担任何损害赔偿责任</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>#<sp/><sp/>使用的许可声明:</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>#<sp/><sp/>1.<sp/><sp/>不得歪曲本软件的来源,你不能声称你编写了原始软件.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>#<sp/><sp/>2.<sp/><sp/>免费授予以任何目的,前提是版权声明出现在所有副本中.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>并且版权声明和许可声明同时出现.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>#<sp/><sp/>3.<sp/><sp/>你有使用,复制,修改,分发,和销售本软件的许可.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>#<sp/><sp/>4.<sp/><sp/>如果你在产品中使用,产品文档中的声明是赞赏的但不是必须的.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>#<sp/><sp/>5.<sp/><sp/>本通知不得从任何来源删除或更改.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>#<sp/><sp/>Yuankang<sp/>Liang(XerolySkinner)</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>E-mail:zabbcccbbaz@163.com</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>QQ:2715099320</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>Mobile<sp/>Phone:13005636215</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>#<sp/><sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="varint_8h" kindref="compound">varint.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bsp___i_i_c___s_t_m32_8h" kindref="compound">bsp_IIC_STM32.h</ref>&quot;</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">//----------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>类目</highlight></codeline>
+<codeline lineno="44" refid="classbsp___s_t_m32___a_t24_c00" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbsp___s_t_m32___a_t24_c00" kindref="compound">bsp_STM32_AT24C00</ref>:</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classbsp___i_i_c___s_t_m32" kindref="compound">bsp_IIC_STM32</ref>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="46" refid="classbsp___s_t_m32___a_t24_c00_1a5509d16dc81dcc75acb287f802e5740a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1a5509d16dc81dcc75acb287f802e5740a" kindref="member">bsp_STM32_AT24C00</ref>(<ref refid="classbsp___i_i_c___s_t_m32" kindref="compound">bsp_IIC_STM32</ref>&amp;<sp/>_bsp_IIC_STM32)<sp/>:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c___s_t_m32" kindref="compound">bsp_IIC_STM32</ref>(_bsp_IIC_STM32.<ref refid="classbsp___i_i_c___s_t_m32_1a6258aaa53e12f5502333f4440cdba352" kindref="member">GPIOx_SCK</ref>,<sp/>_bsp_IIC_STM32.<ref refid="classbsp___i_i_c___s_t_m32_1a7a5b57552741573a65114014a146bd5e" kindref="member">GPIO_Pin_SCK</ref>,_bsp_IIC_STM32.<ref refid="classbsp___i_i_c___s_t_m32_1aae22b18b9aa61649c4abd31f79fa7a82" kindref="member">GPIOx_SDA</ref>,_bsp_IIC_STM32.<ref refid="classbsp___i_i_c___s_t_m32_1a73c8aa1aef1ed9e4ff8d46e5c7755272" kindref="member">GPIO_Pin_SDA</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1a7b81cd0d8fea1bb0ce4e4b0143612bde" kindref="member">bsp_STM32_AT24C00::Address</ref><sp/><sp/>=<sp/>0x50;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1a5c1a52c22b16f15bf07358a4b181e2ff" kindref="member">bsp_STM32_AT24C00::Page</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>8;};</highlight></codeline>
+<codeline lineno="50" refid="classbsp___s_t_m32___a_t24_c00_1a6501d9fa92d1ae5f9c43a125f0e106a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1a6501d9fa92d1ae5f9c43a125f0e106a0" kindref="member">bsp_STM32_AT24C00</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1a7b81cd0d8fea1bb0ce4e4b0143612bde" kindref="member">Address</ref>,<sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1a5c1a52c22b16f15bf07358a4b181e2ff" kindref="member">Page</ref>,<sp/><ref refid="classbsp___i_i_c___s_t_m32" kindref="compound">bsp_IIC_STM32</ref>&amp;<sp/>_bsp_IIC_STM32)<sp/>:</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c___s_t_m32" kindref="compound">bsp_IIC_STM32</ref>(_bsp_IIC_STM32.<ref refid="classbsp___i_i_c___s_t_m32_1a6258aaa53e12f5502333f4440cdba352" kindref="member">GPIOx_SCK</ref>,<sp/>_bsp_IIC_STM32.<ref refid="classbsp___i_i_c___s_t_m32_1a7a5b57552741573a65114014a146bd5e" kindref="member">GPIO_Pin_SCK</ref>,_bsp_IIC_STM32.<ref refid="classbsp___i_i_c___s_t_m32_1aae22b18b9aa61649c4abd31f79fa7a82" kindref="member">GPIOx_SDA</ref>,_bsp_IIC_STM32.<ref refid="classbsp___i_i_c___s_t_m32_1a73c8aa1aef1ed9e4ff8d46e5c7755272" kindref="member">GPIO_Pin_SDA</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1a7b81cd0d8fea1bb0ce4e4b0143612bde" kindref="member">bsp_STM32_AT24C00::Address</ref><sp/>=<sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1a7b81cd0d8fea1bb0ce4e4b0143612bde" kindref="member">Address</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1a5c1a52c22b16f15bf07358a4b181e2ff" kindref="member">bsp_STM32_AT24C00::Page</ref><sp/>=<sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1a5c1a52c22b16f15bf07358a4b181e2ff" kindref="member">Page</ref>;};</highlight></codeline>
+<codeline lineno="54" refid="classbsp___s_t_m32___a_t24_c00_1add0323d62cef144dbd1e1b7b548a09f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1add0323d62cef144dbd1e1b7b548a09f9" kindref="member">bsp_STM32_AT24C00</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1a7b81cd0d8fea1bb0ce4e4b0143612bde" kindref="member">Address</ref>,<sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1a5c1a52c22b16f15bf07358a4b181e2ff" kindref="member">Page</ref>,GPIO_TypeDef<sp/>*<ref refid="classbsp___i_i_c___s_t_m32_1a6258aaa53e12f5502333f4440cdba352" kindref="member">GPIOx_SCK</ref>,uint16_t<sp/><ref refid="classbsp___i_i_c___s_t_m32_1a7a5b57552741573a65114014a146bd5e" kindref="member">GPIO_Pin_SCK</ref>,GPIO_TypeDef<sp/>*<ref refid="classbsp___i_i_c___s_t_m32_1aae22b18b9aa61649c4abd31f79fa7a82" kindref="member">GPIOx_SDA</ref>,uint16_t<sp/><ref refid="classbsp___i_i_c___s_t_m32_1a73c8aa1aef1ed9e4ff8d46e5c7755272" kindref="member">GPIO_Pin_SDA</ref>)<sp/>:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c___s_t_m32" kindref="compound">bsp_IIC_STM32</ref>(<ref refid="classbsp___i_i_c___s_t_m32_1a6258aaa53e12f5502333f4440cdba352" kindref="member">GPIOx_SCK</ref>,<ref refid="classbsp___i_i_c___s_t_m32_1a7a5b57552741573a65114014a146bd5e" kindref="member">GPIO_Pin_SCK</ref>,<ref refid="classbsp___i_i_c___s_t_m32_1aae22b18b9aa61649c4abd31f79fa7a82" kindref="member">GPIOx_SDA</ref>,<ref refid="classbsp___i_i_c___s_t_m32_1a73c8aa1aef1ed9e4ff8d46e5c7755272" kindref="member">GPIO_Pin_SDA</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1a7b81cd0d8fea1bb0ce4e4b0143612bde" kindref="member">bsp_STM32_AT24C00::Address</ref><sp/>=<sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1a7b81cd0d8fea1bb0ce4e4b0143612bde" kindref="member">Address</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1a5c1a52c22b16f15bf07358a4b181e2ff" kindref="member">bsp_STM32_AT24C00::Page</ref><sp/>=<sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1a5c1a52c22b16f15bf07358a4b181e2ff" kindref="member">Page</ref>;};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1a43f5fb06621d92865d9289d996b3211a" kindref="member">WriteOneByte</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>addr,<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>dat);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1a950e3a80ff49c538294bfedf8e893ff7" kindref="member">ReadOneByte</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>addr);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1a2c0bcf4f2ffd4ef242c8d4423dca1ad0" kindref="member">WriteByte</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>addr,<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>*dat,<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>len);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1ad5b68ee911f6e46ab877049eaadc5b1c" kindref="member">AT_ReadByte</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>addr,<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>*dat,<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>len);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="64" refid="classbsp___s_t_m32___a_t24_c00_1a7b81cd0d8fea1bb0ce4e4b0143612bde" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1a7b81cd0d8fea1bb0ce4e4b0143612bde" kindref="member">Address</ref><sp/>=<sp/>0x50;</highlight></codeline>
+<codeline lineno="65" refid="classbsp___s_t_m32___a_t24_c00_1a5c1a52c22b16f15bf07358a4b181e2ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1a5c1a52c22b16f15bf07358a4b181e2ff" kindref="member">Page</ref><sp/><sp/><sp/><sp/>=<sp/>8;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___a_t24_c00_1a7ba3cbef5e2eea37f514948f12f2119d" kindref="member">IIC_Delay</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h"/>
+  </compounddef>
+</doxygen>

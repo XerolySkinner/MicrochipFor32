@@ -1,8 +1,0 @@
-<map id="bscpp_IIC::IIC_Read" name="bscpp_IIC::IIC_Read">
-<area shape="rect" id="node1" title="使用总线接收定长数据" alt="" coords="437,42,576,67"/>
-<area shape="rect" id="node2" href="$classbscpp___s_t_m32___a_t24_c00.html#a73e0f9631de4b08ac64fbbed7ffd7c1f" title="读取定长度的字节" alt="" coords="224,5,389,45"/>
-<area shape="rect" id="node3" href="$mpu6050_8cpp.html#a63161fa966899e4e7c5791e40ebf2b0a" title="IIC连续读" alt="" coords="249,70,365,95"/>
-<area shape="rect" id="node4" href="$mpu6050_8cpp.html#a2a0a02f6d7c597828a0cc282c76e99e3" title="得到加速度值(原始值)" alt="" coords="5,21,176,46"/>
-<area shape="rect" id="node5" href="$mpu6050_8cpp.html#a8f28105f9dcccc709b78d7d0ce497633" title="得到陀螺仪值(原始值)" alt="" coords="16,70,165,95"/>
-<area shape="rect" id="node6" href="$mpu6050_8cpp.html#a41eaf87c26b1281d9d5fc6a06abcf2a8" title="得到温度值" alt="" coords="11,119,170,145"/>
-</map>

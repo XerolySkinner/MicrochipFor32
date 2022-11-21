@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_bsp___s_t_m32___o_l_e_d_8cpp" xml:lang="zh">
+<title>D:/gitt/MicrochipFor32/bsp_Device/bsp_STM32_OLED.cpp 文件参考</title>
+<indexterm><primary>D:/gitt/MicrochipFor32/bsp_Device/bsp_STM32_OLED.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;bsp_IIC_STM32.h&quot;<?linebreak?>#include &quot;bsp_STM32_OLED.h&quot;<?linebreak?></programlisting>bsp_STM32_OLED.cpp 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="bsp___s_t_m32___o_l_e_d_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>变量    </title>
+        <itemizedlist>
+            <listitem><para>const <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_bsp___s_t_m32___o_l_e_d_8cpp_1a1044366356ed639ee7754656558a44fb">OLED_WORD_ASCII</link> []</para>
+
+<para>OLED的ASCII字符集 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>变量说明</title>
+<anchor xml:id="_bsp___s_t_m32___o_l_e_d_8cpp_1a1044366356ed639ee7754656558a44fb"/><section>
+    <title>OLED_WORD_ASCII</title>
+<indexterm><primary>OLED_WORD_ASCII</primary><secondary>bsp_STM32_OLED.cpp</secondary></indexterm>
+<indexterm><primary>bsp_STM32_OLED.cpp</primary><secondary>OLED_WORD_ASCII</secondary></indexterm>
+<para><computeroutput>const <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> OLED_WORD_ASCII[]<computeroutput>[extern]</computeroutput></computeroutput></para><para>
+
+<para>OLED的ASCII字符集 </para>
+</para>
+<para>
+在文件 <link linkend="_bsp___s_t_m32___o_l_e_d_8h_source">bsp_STM32_OLED.h</link> 第 <link linkend="_bsp___s_t_m32___o_l_e_d_8h_source_1l00110">110</link> 行定义.</para>
+</section>
+</section>
+</section>

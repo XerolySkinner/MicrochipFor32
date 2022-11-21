@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbsp___mod_bus___s_t_m32" xml:lang="zh">
+<title>bsp_ModBus_STM32类 参考</title>
+<indexterm><primary>bsp_ModBus_STM32</primary></indexterm>
+<para>
+
+<para>STM32用串口的ModBus发送器 </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;bsp_ModBus_STM32.h&gt;</computeroutput>
+</para>
+类 bsp_ModBus_STM32 继承关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___mod_bus___s_t_m32__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+bsp_ModBus_STM32 的协作图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___mod_bus___s_t_m32__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbsp___mod_bus___s_t_m32_1a5ad770cac0532b9b5eb76c11ebef0435">bsp_ModBus_STM32</link> (UART_HandleTypeDef *<link linkend="_classbsp___mod_bus___s_t_m32_1a2f27c0f66492c3064f28698ce055039d">huart</link>, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4">ID</link>, uint32_t <link linkend="_classbsp___mod_bus___s_t_m32_1a41fc083e184c2f3a6e5225b2a8212347">Timeout</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected 成员函数    </title>
+        <itemizedlist>
+            <listitem><para>virtual void <link linkend="_classbsp___mod_bus___s_t_m32_1a3dda1f4a2a120c6a4482ff6d9d82f4e8">Transmit</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> *dat, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> len)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 属性    </title>
+        <itemizedlist>
+            <listitem><para>UART_HandleTypeDef * <link linkend="_classbsp___mod_bus___s_t_m32_1a2f27c0f66492c3064f28698ce055039d">huart</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_classbsp___mod_bus___s_t_m32_1a41fc083e184c2f3a6e5225b2a8212347">Timeout</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>额外继承的成员函数    </title>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>STM32用串口的ModBus发送器 </para>
+<para>
+在文件 <link linkend="_bsp___mod_bus___s_t_m32_8h_source">bsp_ModBus_STM32.h</link> 第 <link linkend="_bsp___mod_bus___s_t_m32_8h_source_1l00045">45</link> 行定义.</para>
+</section>
+<section>
+<title>构造及析构函数说明</title>
+<anchor xml:id="_classbsp___mod_bus___s_t_m32_1a5ad770cac0532b9b5eb76c11ebef0435"/><section>
+    <title>bsp_ModBus_STM32()</title>
+<indexterm><primary>bsp_ModBus_STM32</primary><secondary>bsp_ModBus_STM32</secondary></indexterm>
+<indexterm><primary>bsp_ModBus_STM32</primary><secondary>bsp_ModBus_STM32</secondary></indexterm>
+<para><computeroutput>bsp_ModBus_STM32::bsp_ModBus_STM32 (UART_HandleTypeDef * huart, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> ID, uint32_t Timeout)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_bsp___mod_bus___s_t_m32_8h_source">bsp_ModBus_STM32.h</link> 第 <link linkend="_bsp___mod_bus___s_t_m32_8h_source_1l00047">47</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_classbsp___mod_bus___s_t_m32_1a3dda1f4a2a120c6a4482ff6d9d82f4e8"/><section>
+    <title>Transmit()</title>
+<indexterm><primary>Transmit</primary><secondary>bsp_ModBus_STM32</secondary></indexterm>
+<indexterm><primary>bsp_ModBus_STM32</primary><secondary>Transmit</secondary></indexterm>
+<para><computeroutput>virtual void bsp_ModBus_STM32::Transmit (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> * dat, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> len)<computeroutput>[inline]</computeroutput>, <computeroutput>[protected]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+实现了 <link linkend="_classbsp___mod_bus___tx_1ac017f6145ba6f87c69a16510f868dcc2">bsp_ModBus_Tx</link>.</para>
+<para>
+在文件 <link linkend="_bsp___mod_bus___s_t_m32_8h_source">bsp_ModBus_STM32.h</link> 第 <link linkend="_bsp___mod_bus___s_t_m32_8h_source_1l00051">51</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_classbsp___mod_bus___s_t_m32_1a2f27c0f66492c3064f28698ce055039d"/><section>
+    <title>huart</title>
+<indexterm><primary>huart</primary><secondary>bsp_ModBus_STM32</secondary></indexterm>
+<indexterm><primary>bsp_ModBus_STM32</primary><secondary>huart</secondary></indexterm>
+<para><computeroutput>UART_HandleTypeDef* bsp_ModBus_STM32::huart<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_bsp___mod_bus___s_t_m32_8h_source">bsp_ModBus_STM32.h</link> 第 <link linkend="_bsp___mod_bus___s_t_m32_8h_source_1l00054">54</link> 行定义.</para>
+</section>
+<anchor xml:id="_classbsp___mod_bus___s_t_m32_1a41fc083e184c2f3a6e5225b2a8212347"/><section>
+    <title>Timeout</title>
+<indexterm><primary>Timeout</primary><secondary>bsp_ModBus_STM32</secondary></indexterm>
+<indexterm><primary>bsp_ModBus_STM32</primary><secondary>Timeout</secondary></indexterm>
+<para><computeroutput>uint32_t bsp_ModBus_STM32::Timeout<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_bsp___mod_bus___s_t_m32_8h_source">bsp_ModBus_STM32.h</link> 第 <link linkend="_bsp___mod_bus___s_t_m32_8h_source_1l00055">55</link> 行定义.</para>
+</section>
+<para>
+该类的文档由以下文件生成:</para>
+D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp___mod_bus___s_t_m32_8h">bsp_ModBus_STM32.h</link></section>
+</section>

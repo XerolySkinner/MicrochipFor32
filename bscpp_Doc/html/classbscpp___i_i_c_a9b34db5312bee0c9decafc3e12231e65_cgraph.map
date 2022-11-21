@@ -1,6 +1,0 @@
-<map id="bscpp_IIC::IIC_Stop" name="bscpp_IIC::IIC_Stop">
-<area shape="rect" id="node1" title="发送IIC停止信号" alt="" coords="5,55,141,80"/>
-<area shape="rect" id="node2" href="$classbscpp___i_i_c.html#a9ecb52cad582a9fbf6969fb1869437da" title="时序中的延时 在此处短暂延时" alt="" coords="189,5,332,31"/>
-<area shape="rect" id="node3" href="$classbscpp___i_i_c.html#a1dfe20de93d00a928e82f087c1f26100" title="控制SCK管脚口" alt="" coords="193,55,329,80"/>
-<area shape="rect" id="node4" href="$classbscpp___i_i_c.html#a03b0f1f860d09779d5491c9035fd4c32" title="控制SDA管脚口" alt="" coords="193,104,329,129"/>
-</map>

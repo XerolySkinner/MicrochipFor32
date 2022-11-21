@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_bsp___mod_bus___s_t_m32_8h_source" xml:lang="zh">
+<title>bsp_ModBus_STM32.h</title>
+<indexterm><primary>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus_STM32.h</primary></indexterm>
+浏览该文件的文档.<programlisting linenumbering="unnumbered"><anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00001"/>00001 <emphasis role="comment">/*----------------------------------------------------------------------------------------------------</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00002"/>00002 <emphasis role="comment">&#32;#</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00003"/>00003 <emphasis role="comment">&#32;#&#32;&#32;Copyright&#32;(c)&#32;2022&#32;Yuankang&#32;Liang(XerolySkinner)</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00004"/>00004 <emphasis role="comment">&#32;#</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00005"/>00005 <emphasis role="comment">&#32;#&#32;&#32;本软件按原样提供,无任何明示或暗示</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00006"/>00006 <emphasis role="comment">&#32;#&#32;&#32;在任何情况下,作者都不承担任何损害赔偿责任</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00007"/>00007 <emphasis role="comment">&#32;#</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00008"/>00008 <emphasis role="comment">&#32;#&#32;&#32;使用的许可声明:</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00009"/>00009 <emphasis role="comment">&#32;#&#32;&#32;1.&#32;&#32;不得歪曲本软件的来源,你不能声称你编写了原始软件.</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00010"/>00010 <emphasis role="comment">&#32;#&#32;&#32;2.&#32;&#32;免费授予以任何目的,前提是版权声明出现在所有副本中.</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00011"/>00011 <emphasis role="comment">&#32;#&#32;&#32;&#32;&#32;&#32;&#32;并且版权声明和许可声明同时出现.</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00012"/>00012 <emphasis role="comment">&#32;#&#32;&#32;3.&#32;&#32;你有使用,复制,修改,分发,和销售本软件的许可.</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00013"/>00013 <emphasis role="comment">&#32;#&#32;&#32;4.&#32;&#32;如果你在产品中使用,产品文档中的声明是赞赏的但不是必须的.</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00014"/>00014 <emphasis role="comment">&#32;#&#32;&#32;5.&#32;&#32;本通知不得从任何来源删除或更改.</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00015"/>00015 <emphasis role="comment">&#32;#</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00016"/>00016 <emphasis role="comment">&#32;#&#32;&#32;Yuankang&#32;Liang(XerolySkinner)</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00017"/>00017 <emphasis role="comment">&#32;#&#32;&#32;&#32;&#32;&#32;&#32;E-mail:zabbcccbbaz@163.com</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00018"/>00018 <emphasis role="comment">&#32;#&#32;&#32;&#32;&#32;&#32;&#32;QQ:2715099320</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00019"/>00019 <emphasis role="comment">&#32;#&#32;&#32;&#32;&#32;&#32;&#32;Mobile&#32;Phone:13005636215</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00020"/>00020 <emphasis role="comment">&#32;#</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00021"/>00021 <emphasis role="comment">&#32;#&#32;&#32;All&#32;rights&#32;reserved.</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00022"/>00022 <emphasis role="comment">&#32;*/</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00023"/>00023 
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00034"/>00034 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00035"/>00035 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_bsp___mod_bus_8h">bsp_ModBus.h</link>&quot;</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00036"/>00036 <emphasis role="preprocessor">#include&#32;&quot;usart.h&quot;</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00037"/>00037 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_varint_8h">varint.h</link>&quot;</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00038"/>00038 <emphasis role="preprocessor">#ifdef&#32;__cplusplus</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00040"/>00040 <emphasis role="comment">//----------------------------------------------------------------------------------------------------</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00041"/>00041 <emphasis role="comment">//&#32;&#32;类目</emphasis>
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00045"/><link linkend="_classbsp___mod_bus___s_t_m32">00045</link> <emphasis role="comment"></emphasis><emphasis role="keyword">class&#32;</emphasis><link linkend="_classbsp___mod_bus___s_t_m32">bsp_ModBus_STM32</link>:<emphasis role="keyword">public</emphasis>&#32;<link linkend="_classbsp___mod_bus___tx">bsp_ModBus_Tx</link>&#32;{
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00046"/>00046 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00047"/><link linkend="_classbsp___mod_bus___s_t_m32_1a5ad770cac0532b9b5eb76c11ebef0435">00047</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classbsp___mod_bus___s_t_m32_1a5ad770cac0532b9b5eb76c11ebef0435">bsp_ModBus_STM32</link>(UART_HandleTypeDef*&#32;<link linkend="_classbsp___mod_bus___s_t_m32_1a2f27c0f66492c3064f28698ce055039d">huart</link>,<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link>&#32;<link linkend="_classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4">ID</link>,uint32_t&#32;<link linkend="_classbsp___mod_bus___s_t_m32_1a41fc083e184c2f3a6e5225b2a8212347">Timeout</link>):<link linkend="_classbsp___mod_bus___tx">bsp_ModBus_Tx</link>(<link linkend="_classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4">ID</link>){
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00048"/>00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classbsp___mod_bus___s_t_m32_1a2f27c0f66492c3064f28698ce055039d">bsp_ModBus_STM32::huart</link>&#32;=&#32;<link linkend="_classbsp___mod_bus___s_t_m32_1a2f27c0f66492c3064f28698ce055039d">huart</link>;
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00049"/>00049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classbsp___mod_bus___s_t_m32_1a41fc083e184c2f3a6e5225b2a8212347">bsp_ModBus_STM32::Timeout</link>&#32;=&#32;<link linkend="_classbsp___mod_bus___s_t_m32_1a41fc083e184c2f3a6e5225b2a8212347">Timeout</link>;}
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00050"/>00050 &#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>:
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00051"/><link linkend="_classbsp___mod_bus___s_t_m32_1a3dda1f4a2a120c6a4482ff6d9d82f4e8">00051</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classbsp___mod_bus___s_t_m32_1a3dda1f4a2a120c6a4482ff6d9d82f4e8">Transmit</link>(<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link>&#32;*dat,&#32;<link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link>&#32;len){
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00052"/>00052 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;HAL_UART_Transmit(<link linkend="_classbsp___mod_bus___s_t_m32_1a2f27c0f66492c3064f28698ce055039d">huart</link>,dat,len,0xFF);}
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00053"/>00053 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00054"/><link linkend="_classbsp___mod_bus___s_t_m32_1a2f27c0f66492c3064f28698ce055039d">00054</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;UART_HandleTypeDef*&#32;<link linkend="_classbsp___mod_bus___s_t_m32_1a2f27c0f66492c3064f28698ce055039d">huart</link>;
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00055"/><link linkend="_classbsp___mod_bus___s_t_m32_1a41fc083e184c2f3a6e5225b2a8212347">00055</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;<link linkend="_classbsp___mod_bus___s_t_m32_1a41fc083e184c2f3a6e5225b2a8212347">Timeout</link>;};
+<anchor xml:id="_bsp___mod_bus___s_t_m32_8h_source_1l00057"/>00057 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

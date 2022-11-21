@@ -1,0 +1,171 @@
+.TH "bsp_STM32_AT24C00" 3 "2022年 十一月 22日 星期二" "Version 2.0.0" "MF32BSP_XerolySkinner" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bsp_STM32_AT24C00 \- 一个AT24设备,基于STM32的IIC总线  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <bsp_AT24C00\&.h>\fP
+.PP
+继承自 \fBbsp_IIC_STM32\fP \&.
+.SS "Public 成员函数"
+
+.in +1c
+.ti -1c
+.RI "\fBbsp_STM32_AT24C00\fP (\fBbsp_IIC_STM32\fP &_bsp_IIC_STM32)"
+.br
+.ti -1c
+.RI "\fBbsp_STM32_AT24C00\fP (\fBu8\fP \fBAddress\fP, \fBu8\fP \fBPage\fP, \fBbsp_IIC_STM32\fP &_bsp_IIC_STM32)"
+.br
+.ti -1c
+.RI "\fBbsp_STM32_AT24C00\fP (\fBu8\fP \fBAddress\fP, \fBu8\fP \fBPage\fP, GPIO_TypeDef *\fBGPIOx_SCK\fP, uint16_t \fBGPIO_Pin_SCK\fP, GPIO_TypeDef *\fBGPIOx_SDA\fP, uint16_t \fBGPIO_Pin_SDA\fP)"
+.br
+.ti -1c
+.RI "void \fBWriteOneByte\fP (\fBu8\fP addr, \fBu8\fP dat)"
+.br
+.RI "储存一个字节 "
+.ti -1c
+.RI "\fBu8\fP \fBReadOneByte\fP (\fBu8\fP addr)"
+.br
+.RI "读取一个字节 "
+.ti -1c
+.RI "void \fBWriteByte\fP (\fBu8\fP addr, \fBu8\fP *dat, \fBu8\fP len)"
+.br
+.RI "写入定长度的字节 "
+.ti -1c
+.RI "void \fBAT_ReadByte\fP (\fBu8\fP addr, \fBu8\fP *dat, \fBu8\fP len)"
+.br
+.RI "读取定长度的字节 "
+.in -1c
+.SS "Private 成员函数"
+
+.in +1c
+.ti -1c
+.RI "void \fBIIC_Delay\fP (void)"
+.br
+.RI "实现AT定制的IIC延时时间 "
+.in -1c
+.SS "Private 属性"
+
+.in +1c
+.ti -1c
+.RI "\fBu8\fP \fBAddress\fP = 0x50"
+.br
+.ti -1c
+.RI "\fBu8\fP \fBPage\fP = 8"
+.br
+.in -1c
+.SS "额外继承的成员函数"
+.SH "详细描述"
+.PP 
+一个AT24设备,基于STM32的IIC总线 
+.PP
+在文件 \fBbsp_AT24C00\&.h\fP 第 \fB44\fP 行定义\&.
+.SH "构造及析构函数说明"
+.PP 
+.SS "bsp_STM32_AT24C00::bsp_STM32_AT24C00 (\fBbsp_IIC_STM32\fP & _bsp_IIC_STM32)\fC [inline]\fP"
+
+.PP
+在文件 \fBbsp_AT24C00\&.h\fP 第 \fB46\fP 行定义\&.
+.SS "bsp_STM32_AT24C00::bsp_STM32_AT24C00 (\fBu8\fP Address, \fBu8\fP Page, \fBbsp_IIC_STM32\fP & _bsp_IIC_STM32)\fC [inline]\fP"
+
+.PP
+在文件 \fBbsp_AT24C00\&.h\fP 第 \fB50\fP 行定义\&.
+.SS "bsp_STM32_AT24C00::bsp_STM32_AT24C00 (\fBu8\fP Address, \fBu8\fP Page, GPIO_TypeDef * GPIOx_SCK, uint16_t GPIO_Pin_SCK, GPIO_TypeDef * GPIOx_SDA, uint16_t GPIO_Pin_SDA)\fC [inline]\fP"
+
+.PP
+在文件 \fBbsp_AT24C00\&.h\fP 第 \fB54\fP 行定义\&.
+.SH "成员函数说明"
+.PP 
+.SS "void bsp_STM32_AT24C00::AT_ReadByte (\fBu8\fP addr, \fBu8\fP * dat, \fBu8\fP len)"
+
+.PP
+读取定长度的字节 
+.PP
+\fB参数\fP
+.RS 4
+\fIaddr\fP 读取的位置 
+.br
+\fI*dat\fP 读取到的数据头 
+.br
+\fIlen\fP 读取的数据长度 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_AT24C00\&.cpp\fP 第 \fB101\fP 行定义\&.
+.SS "void bsp_STM32_AT24C00::IIC_Delay (void)\fC [private]\fP, \fC [virtual]\fP"
+
+.PP
+实现AT定制的IIC延时时间 
+.PP
+重载 \fBbsp_IIC_STM32\fP \&.
+.PP
+在文件 \fBbsp_AT24C00\&.cpp\fP 第 \fB47\fP 行定义\&.
+.SS "\fBu8\fP bsp_STM32_AT24C00::ReadOneByte (\fBu8\fP addr)"
+
+.PP
+读取一个字节 
+.PP
+\fB参数\fP
+.RS 4
+\fIaddr\fP 读取的位置 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+返回读取的字节 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_AT24C00\&.cpp\fP 第 \fB63\fP 行定义\&.
+.SS "void bsp_STM32_AT24C00::WriteByte (\fBu8\fP addr, \fBu8\fP * dat, \fBu8\fP len)"
+
+.PP
+写入定长度的字节 
+.PP
+\fB参数\fP
+.RS 4
+\fIaddr\fP 写入的位置 
+.br
+\fI*dat\fP 写入的数据头 
+.br
+\fIlen\fP 写入的数据长度 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_AT24C00\&.cpp\fP 第 \fB72\fP 行定义\&.
+.SS "void bsp_STM32_AT24C00::WriteOneByte (\fBu8\fP addr, \fBu8\fP dat)"
+
+.PP
+储存一个字节 
+.PP
+\fB参数\fP
+.RS 4
+\fIaddr\fP 储存的位置 
+.br
+\fIdat\fP 储存的字节 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_AT24C00\&.cpp\fP 第 \fB55\fP 行定义\&.
+.SH "类成员变量说明"
+.PP 
+.SS "\fBu8\fP bsp_STM32_AT24C00::Address = 0x50\fC [private]\fP"
+
+.PP
+在文件 \fBbsp_AT24C00\&.h\fP 第 \fB64\fP 行定义\&.
+.SS "\fBu8\fP bsp_STM32_AT24C00::Page = 8\fC [private]\fP"
+
+.PP
+在文件 \fBbsp_AT24C00\&.h\fP 第 \fB65\fP 行定义\&.
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 MF32BSP_XerolySkinner 的 源代码自动生成\&.

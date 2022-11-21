@@ -1,1 +1,1 @@
-start .\bscpp_Doc\html\index.html
+start .\Doc\html\index.html

@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="bsp___c_r_c_8h" kind="file" language="C++">
+    <compoundname>bsp_CRC.h</compoundname>
+    <includes refid="varint_8h" local="yes">varint.h</includes>
+    <includedby refid="bsp___c_r_c_8cpp" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_CRC.cpp</includedby>
+    <includedby refid="bsp___mod_bus_8cpp" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_CRC.h</label>
+        <link refid="bsp___c_r_c_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>varint.h</label>
+        <link refid="varint_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_CRC.cpp</label>
+        <link refid="bsp___c_r_c_8cpp"/>
+      </node>
+      <node id="1">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_CRC.h</label>
+        <link refid="bsp___c_r_c_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp</label>
+        <link refid="bsp___mod_bus_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="bsp___c_r_c_8h_1abb1fda5ed561362d12fe987758986919" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+        <definition>u16 CRC16_MODBUS</definition>
+        <argsstring>(u8 *pucFrame, u16 usLen)</argsstring>
+        <name>CRC16_MODBUS</name>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref> *</type>
+          <declname>pucFrame</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>usLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_CRC.h" line="38" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_CRC.cpp" bodystart="91" bodyend="99" declfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_CRC.h" declline="38" declcolumn="5"/>
+        <references refid="bsp___c_r_c_8cpp_1a7a737378eb1c2e4d7d493764c6e7647f" compoundref="bsp___c_r_c_8cpp" startline="38">aucCRCHi</references>
+        <references refid="bsp___c_r_c_8cpp_1a1ec224bcb81fbefe6d11364dcd71e5a0" compoundref="bsp___c_r_c_8cpp" startline="64">aucCRCLo</references>
+        <referencedby refid="classbsp___mod_bus___rx_1a39330845d4ced51850b9edaaab052e0f" compoundref="bsp___mod_bus_8cpp" startline="304" endline="358">bsp_ModBus_Rx::analysis</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1a76e712e8d638ecc7b453e1c8afbbad98" compoundref="bsp___mod_bus_8cpp" startline="195" endline="207">bsp_ModBus_Tx::ReadInCoil</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1af055e2569107b8ece7abdce3301e9444" compoundref="bsp___mod_bus_8cpp" startline="70" endline="82">bsp_ModBus_Tx::ReadInReg</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1ada605c0e9195aefd43968cfe5b347565" compoundref="bsp___mod_bus_8cpp" startline="50" endline="62">bsp_ModBus_Tx::ReadKeepReg</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1abc721f5c61e236df505f3447818be921" compoundref="bsp___mod_bus_8cpp" startline="175" endline="187">bsp_ModBus_Tx::ReadOutCoil</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1a630ac7566fe9d1773baa813802202d0f" compoundref="bsp___mod_bus_8cpp" startline="240" endline="258">bsp_ModBus_Tx::WriteCoils</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1a280c5d7c99196a11b5fee7b34421a8ff" compoundref="bsp___mod_bus_8cpp" startline="268" endline="295">bsp_ModBus_Tx::WriteCoilsVar</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1aa8d37cc0cefaad8f41bc1d195a326d95" compoundref="bsp___mod_bus_8cpp" startline="217" endline="230">bsp_ModBus_Tx::WriteOneCoil</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1a02ea1680f5c361f2cf4ebcb48b565281" compoundref="bsp___mod_bus_8cpp" startline="90" endline="102">bsp_ModBus_Tx::WriteOneReg</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1a268c136782f8146662f33878522c270c" compoundref="bsp___mod_bus_8cpp" startline="112" endline="132">bsp_ModBus_Tx::WriteRegs</referencedby>
+        <referencedby refid="classbsp___mod_bus___tx_1acc267977d61716e25fd3e3ec57bc2960" compoundref="bsp___mod_bus_8cpp" startline="142" endline="167">bsp_ModBus_Tx::WriteRegsVar</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CRC16校验 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*----------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>#<sp/><sp/>Copyright<sp/>(c)<sp/>2022<sp/>Yuankang<sp/>Liang(XerolySkinner)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>#<sp/><sp/>本软件按原样提供,无任何明示或暗示</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>#<sp/><sp/>在任何情况下,作者都不承担任何损害赔偿责任</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>#<sp/><sp/>使用的许可声明:</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>#<sp/><sp/>1.<sp/><sp/>不得歪曲本软件的来源,你不能声称你编写了原始软件.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>#<sp/><sp/>2.<sp/><sp/>免费授予以任何目的,前提是版权声明出现在所有副本中.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>并且版权声明和许可声明同时出现.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>#<sp/><sp/>3.<sp/><sp/>你有使用,复制,修改,分发,和销售本软件的许可.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>#<sp/><sp/>4.<sp/><sp/>如果你在产品中使用,产品文档中的声明是赞赏的但不是必须的.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>#<sp/><sp/>5.<sp/><sp/>本通知不得从任何来源删除或更改.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>#<sp/><sp/>Yuankang<sp/>Liang(XerolySkinner)</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>E-mail:zabbcccbbaz@163.com</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>QQ:2715099320</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>Mobile<sp/>Phone:13005636215</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>#<sp/><sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="varint_8h" kindref="compound">varint.h</ref>&quot;</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">//--------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>函数</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/><ref refid="bsp___c_r_c_8h_1abb1fda5ed561362d12fe987758986919" kindref="member">CRC16_MODBUS</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>*pucFrame,<ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>usLen);</highlight></codeline>
+    </programlisting>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_CRC.h"/>
+  </compounddef>
+</doxygen>

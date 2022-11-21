@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_bsp___i_i_c_8h" xml:lang="zh">
+<title>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h 文件参考</title>
+<indexterm><primary>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h</primary></indexterm>
+<para>
+
+<para>本类实现软件IIC功能 依此类派生出其他软件IIC功能 </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;varint.h&quot;<?linebreak?></programlisting>bsp_IIC.h 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="bsp___i_i_c_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+此图展示该文件直接或间接的被哪些文件引用了:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="bsp___i_i_c_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>类    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbsp___i_i_c">bsp_IIC</link></para>
+
+<para>IIC的基础实现方法 留下三个保护性接口需要实现,分别是控制时钟,控制数据,延时函数 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>枚举    </title>
+        <itemizedlist>
+            <listitem><para>enum { <link linkend="_bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a048bbf954430bbc34fa11280165ed534">IIC_RESET</link>
+, <link linkend="_bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a9e128b73c7beb33be6b4e953a7fddc66">IIC_SET</link>
+, <link linkend="_bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7ae4ead84d2c3bbc3f2403d9a5157a3f94">IIC_READ</link>
+ }</para>
+
+<para>控制管脚的三种状态(置位,复位,读取) </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>本类实现软件IIC功能 依此类派生出其他软件IIC功能 </para>
+<para>
+在文件 <link linkend="_bsp___i_i_c_8h_source">bsp_IIC.h</link> 中定义.</para>
+</section>
+<section>
+<title>枚举类型说明</title>
+<anchor xml:id="_bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7"/><section>
+    <title>anonymous enum</title>
+<para><computeroutput>anonymous enum</computeroutput></para><para>
+
+<para>控制管脚的三种状态(置位,复位,读取) </para>
+</para>
+<informaltable frame="all">
+<title>枚举值</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>IIC_RESET</primary><secondary>bsp_IIC.h</secondary></indexterm>
+<indexterm><primary>bsp_IIC.h</primary><secondary>IIC_RESET</secondary></indexterm>
+<anchor xml:id="_bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a048bbf954430bbc34fa11280165ed534"/>IIC_RESET</entry><entry>
+<para>管脚复位状态 </para>
+</entry></row><row><entry><indexterm><primary>IIC_SET</primary><secondary>bsp_IIC.h</secondary></indexterm>
+<indexterm><primary>bsp_IIC.h</primary><secondary>IIC_SET</secondary></indexterm>
+<anchor xml:id="_bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a9e128b73c7beb33be6b4e953a7fddc66"/>IIC_SET</entry><entry>
+<para>管脚置位状态 </para>
+</entry></row><row><entry><indexterm><primary>IIC_READ</primary><secondary>bsp_IIC.h</secondary></indexterm>
+<indexterm><primary>bsp_IIC.h</primary><secondary>IIC_READ</secondary></indexterm>
+<anchor xml:id="_bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7ae4ead84d2c3bbc3f2403d9a5157a3f94"/>IIC_READ</entry><entry>
+<para>读取管脚状态 </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+在文件 <link linkend="_bsp___i_i_c_8h_source">bsp_IIC.h</link> 第 <link linkend="_bsp___i_i_c_8h_source_1l00044">44</link> 行定义.</para>
+</section>
+</section>
+</section>

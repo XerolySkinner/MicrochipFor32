@@ -1,0 +1,214 @@
+.TH "bsp_STM32_OLED" 3 "2022年 十一月 22日 星期二" "Version 2.0.0" "MF32BSP_XerolySkinner" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bsp_STM32_OLED \- 一个OLED设备,基于STM32使用IIC总线  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <bsp_OLED_STM32\&.h>\fP
+.PP
+继承自 \fBbsp_IIC_STM32\fP \&.
+.SS "Public 成员函数"
+
+.in +1c
+.ti -1c
+.RI "\fBbsp_STM32_OLED\fP (\fBbsp_IIC_STM32\fP &IICS)"
+.br
+.ti -1c
+.RI "\fBbsp_STM32_OLED\fP (GPIO_TypeDef *\fBGPIOx_SCK\fP, uint16_t \fBGPIO_Pin_SCK\fP, GPIO_TypeDef *\fBGPIOx_SDA\fP, uint16_t \fBGPIO_Pin_SDA\fP)"
+.br
+.ti -1c
+.RI "void \fBInit\fP (void)"
+.br
+.RI "OLED初始化 初始化显示屏的设置 "
+.ti -1c
+.RI "void \fBColumn_set\fP (\fBu8\fP column)"
+.br
+.RI "光标定位行中的位置 "
+.ti -1c
+.RI "void \fBPage_set\fP (\fBu8\fP page)"
+.br
+.RI "光标定位于一页 "
+.ti -1c
+.RI "void \fBClear\fP (\fBu8\fP dat)"
+.br
+.RI "全页绘制 "
+.ti -1c
+.RI "void \fBPicture_display\fP (const \fBu8\fP *ptr_pic)"
+.br
+.RI "OLED绘图 "
+.ti -1c
+.RI "void \fBPicture_ReverseDisplay\fP (const \fBu8\fP *ptr_pic)"
+.br
+.RI "OLED反向绘图 "
+.ti -1c
+.RI "void \fBDraw_ASCII\fP (\fBu32\fP H, \fBu32\fP V, \fBu8\fP word)"
+.br
+.RI "OLED绘制ASCII字符 "
+.ti -1c
+.RI "void \fBSend_dat\fP (\fBu8\fP dat)"
+.br
+.RI "发送一条数据给OLED "
+.ti -1c
+.RI "void \fBSend_cmd\fP (\fBu8\fP cmd)"
+.br
+.RI "发送一条指令给OLED "
+.ti -1c
+.RI "void \fBSend_len_dat\fP (\fBu8\fP *dat, \fBu32\fP len)"
+.br
+.RI "发送一串定长指令给OLED "
+.in -1c
+.SS "额外继承的成员函数"
+.SH "详细描述"
+.PP 
+一个OLED设备,基于STM32使用IIC总线 
+.PP
+在文件 \fBbsp_OLED_STM32\&.h\fP 第 \fB81\fP 行定义\&.
+.SH "构造及析构函数说明"
+.PP 
+.SS "bsp_STM32_OLED::bsp_STM32_OLED (\fBbsp_IIC_STM32\fP & IICS)\fC [inline]\fP"
+
+.PP
+在文件 \fBbsp_OLED_STM32\&.h\fP 第 \fB84\fP 行定义\&.
+.SS "bsp_STM32_OLED::bsp_STM32_OLED (GPIO_TypeDef * GPIOx_SCK, uint16_t GPIO_Pin_SCK, GPIO_TypeDef * GPIOx_SDA, uint16_t GPIO_Pin_SDA)\fC [inline]\fP"
+
+.PP
+在文件 \fBbsp_OLED_STM32\&.h\fP 第 \fB88\fP 行定义\&.
+.SH "成员函数说明"
+.PP 
+.SS "void bsp_STM32_OLED::Clear (\fBu8\fP dat)"
+
+.PP
+全页绘制 
+.PP
+\fB参数\fP
+.RS 4
+\fIdat\fP 全页绘制的数据,0x00为清空,0xFF为全涂 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_OLED_STM32\&.cpp\fP 第 \fB84\fP 行定义\&.
+.SS "void bsp_STM32_OLED::Column_set (\fBu8\fP column)"
+
+.PP
+光标定位行中的位置 
+.PP
+\fB参数\fP
+.RS 4
+\fIcolumn\fP 设定的该行位置 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_OLED_STM32\&.cpp\fP 第 \fB68\fP 行定义\&.
+.SS "void bsp_STM32_OLED::Draw_ASCII (\fBu32\fP H, \fBu32\fP V, \fBu8\fP word)"
+
+.PP
+OLED绘制ASCII字符 
+.PP
+\fB参数\fP
+.RS 4
+\fIH\fP 行数 
+.br
+\fIV\fP 列数 
+.br
+\fIword\fP 所要显示的字符 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_OLED_STM32\&.cpp\fP 第 \fB145\fP 行定义\&.
+.SS "void bsp_STM32_OLED::Init (void)"
+
+.PP
+OLED初始化 初始化显示屏的设置 
+.PP
+在文件 \fBbsp_OLED_STM32\&.cpp\fP 第 \fB158\fP 行定义\&.
+.SS "void bsp_STM32_OLED::Page_set (\fBu8\fP page)"
+
+.PP
+光标定位于一页 
+.PP
+\fB参数\fP
+.RS 4
+\fIpage\fP 设定所处的页位置 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_OLED_STM32\&.cpp\fP 第 \fB77\fP 行定义\&.
+.SS "void bsp_STM32_OLED::Picture_display (const \fBu8\fP * ptr_pic)"
+
+.PP
+OLED绘图 
+.PP
+\fB参数\fP
+.RS 4
+\fI*ptr_pic\fP 图片数据的头 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_OLED_STM32\&.cpp\fP 第 \fB103\fP 行定义\&.
+.SS "void bsp_STM32_OLED::Picture_ReverseDisplay (const \fBu8\fP * ptr_pic)"
+
+.PP
+OLED反向绘图 
+.PP
+\fB参数\fP
+.RS 4
+\fI*ptr_pic\fP 图片数据的头 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_OLED_STM32\&.cpp\fP 第 \fB123\fP 行定义\&.
+.SS "void bsp_STM32_OLED::Send_cmd (\fBu8\fP cmd)"
+
+.PP
+发送一条指令给OLED 
+.PP
+\fB参数\fP
+.RS 4
+\fIcmd\fP 要发送的指令 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_OLED_STM32\&.cpp\fP 第 \fB46\fP 行定义\&.
+.SS "void bsp_STM32_OLED::Send_dat (\fBu8\fP dat)"
+
+.PP
+发送一条数据给OLED 
+.PP
+\fB参数\fP
+.RS 4
+\fIdat\fP 要发送的数据 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_OLED_STM32\&.cpp\fP 第 \fB53\fP 行定义\&.
+.SS "void bsp_STM32_OLED::Send_len_dat (\fBu8\fP * dat, \fBu32\fP len)"
+
+.PP
+发送一串定长指令给OLED 
+.PP
+\fB参数\fP
+.RS 4
+\fI*dat\fP 要发送的指令头 
+.br
+\fIlen\fP 指令长度 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_OLED_STM32\&.cpp\fP 第 \fB61\fP 行定义\&.
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 MF32BSP_XerolySkinner 的 源代码自动生成\&.

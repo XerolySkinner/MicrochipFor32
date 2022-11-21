@@ -1,0 +1,524 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_inv__mpu__dmp__motion__driver_8c" xml:lang="zh">
+<title>D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c 文件参考</title>
+<indexterm><primary>D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c</primary></indexterm>
+<para>
+
+<para>DMP image and interface functions. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;stdio.h&gt;<?linebreak?>#include &lt;stdint.h&gt;<?linebreak?>#include &lt;stdlib.h&gt;<?linebreak?>#include &lt;string.h&gt;<?linebreak?>#include &lt;math.h&gt;<?linebreak?>#include &quot;inv_mpu.h&quot;<?linebreak?>#include &quot;inv_mpu_dmp_motion_driver.h&quot;<?linebreak?>#include &quot;dmpKey.h&quot;<?linebreak?>#include &quot;dmpmap.h&quot;<?linebreak?>#include &quot;usart.h&quot;<?linebreak?></programlisting>inv_mpu_dmp_motion_driver.c 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="inv__mpu__dmp__motion__driver_8c__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>类    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structdmp__s">dmp_s</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>宏定义    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaf5aa4c072d42b67d74043f642b68ddd7">MOTION_DRIVER_TARGET_MSP430</link></para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gae36aca5baf9b6b7d74992aef00686d67">delay_ms</link>&#160;&#160;&#160;HAL_Delay</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga3e6b6bc6d1cd2956353a31bfadd3c332">get_ms</link>&#160;&#160;&#160;<link linkend="_group___d_r_i_v_e_r_s_1gafa3071c8321f6e8dd2036be8a1e57ad0">mget_ms</link></para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga2905fba7885cd95057e1655cb4d16bda">log_i</link>&#160;&#160;&#160;printf</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gab354affc295f7d61fe8a355c9361cc5a">log_e</link>&#160;&#160;&#160;printf</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gadf5652e51b8c08c2eb6a902d1d1f319c">CFG_LP_QUAT</link>&#160;&#160;&#160;(2712)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga5c2c9516862587e8e1aa8c0c428076d9">END_ORIENT_TEMP</link>&#160;&#160;&#160;(1866)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaae53afa64170cb4723c04f16c2fa5f30">CFG_27</link>&#160;&#160;&#160;(2742)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga12aa4c3bdc65c24ca29ef08e62fd3e13">CFG_20</link>&#160;&#160;&#160;(2224)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga18ca772a0ce432c5ccb0e318af3c2b86">CFG_23</link>&#160;&#160;&#160;(2745)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga7aa6ed56d6fd41be120b9bdb488c220a">CFG_FIFO_ON_EVENT</link>&#160;&#160;&#160;(2690)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga89e5662bddc67ac00f5b85035bd60ed8">END_PREDICTION_UPDATE</link>&#160;&#160;&#160;(1761)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gafd43f64b7c6bc86374cedfcf69c6b12f">CGNOTICE_INTR</link>&#160;&#160;&#160;(2620)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga0ff907b44d0e42641e71e6da41829090">X_GRT_Y_TMP</link>&#160;&#160;&#160;(1358)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaca5a7c1f2519e622571bda2aa2311553">CFG_DR_INT</link>&#160;&#160;&#160;(1029)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga93cd3f526d9e31b00c9364bab3df41e0">CFG_AUTH</link>&#160;&#160;&#160;(1035)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gac90829b4b9a77480e0582bb7551e182e">UPDATE_PROP_ROT</link>&#160;&#160;&#160;(1835)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga7b344f27570daf0f096213bfcd8e0627">END_COMPARE_Y_X_TMP2</link>&#160;&#160;&#160;(1455)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gab280108da935f42e6a3e30d6af04a7c1">SKIP_X_GRT_Y_TMP</link>&#160;&#160;&#160;(1359)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga962a3b26ee2dd822ebc67d5ed7e01bc1">SKIP_END_COMPARE</link>&#160;&#160;&#160;(1435)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga68df22b3699418acab9063ee5f996d8e">FCFG_3</link>&#160;&#160;&#160;(1088)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gac0e79063d1a071c1a8bd3f7081e4299e">FCFG_2</link>&#160;&#160;&#160;(1066)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga9a7d63d6add8f9fdf9edc722a01aeb92">FCFG_1</link>&#160;&#160;&#160;(1062)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga3658f219d52dff5022cc499a747ca589">END_COMPARE_Y_X_TMP3</link>&#160;&#160;&#160;(1434)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga687777b4390e4a84ac774cf0600abe20">FCFG_7</link>&#160;&#160;&#160;(1073)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga2ba17b85493f082e37d7e57f45200144">FCFG_6</link>&#160;&#160;&#160;(1106)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga5c1ebd0914bd0e30766c9cbcc25c31c5">FLAT_STATE_END</link>&#160;&#160;&#160;(1713)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaa6efdc55c49bd242ffafb9a9b227cca8">SWING_END_4</link>&#160;&#160;&#160;(1616)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga8a156eab56c25c1f9156a2751fa2155d">SWING_END_2</link>&#160;&#160;&#160;(1565)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga3ff31c1255dc1fceb7c590bc7f0b3ab0">SWING_END_3</link>&#160;&#160;&#160;(1587)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga6f4579a77f23d509cd63d4506e44fa23">SWING_END_1</link>&#160;&#160;&#160;(1550)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga3dc0e5c81e361fb871fbf63eeba82520">CFG_8</link>&#160;&#160;&#160;(2718)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga1fe6e4489855269e7197beb38b07c723">CFG_15</link>&#160;&#160;&#160;(2727)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga7e9d5deadbd595432b6319178d573cd3">CFG_16</link>&#160;&#160;&#160;(2746)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga63971727875ac02e2ce6632bd3f82bc2">CFG_EXT_GYRO_BIAS</link>&#160;&#160;&#160;(1189)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gae9f800bcc27bb65de184d1dbe9c0ce24">END_COMPARE_Y_X_TMP</link>&#160;&#160;&#160;(1407)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gae7f639b1d39b818bc03ba14cf334bf68">DO_NOT_UPDATE_PROP_ROT</link>&#160;&#160;&#160;(1839)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaf07742dc92c885f8f7d59e70683f9257">CFG_7</link>&#160;&#160;&#160;(1205)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaba18283a93fa46f0251d4a6131ed2d5d">FLAT_STATE_END_TEMP</link>&#160;&#160;&#160;(1683)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gab843d731bb3863d28961b6a92f302053">END_COMPARE_Y_X</link>&#160;&#160;&#160;(1484)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gae14f280fb2449ecb6dcb8782a8dfd088">SKIP_SWING_END_1</link>&#160;&#160;&#160;(1551)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga17ac0b4bafc904502e30e9c718a83d15">SKIP_SWING_END_3</link>&#160;&#160;&#160;(1588)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gad179280ab7654fcada6f0816f6b0eda8">SKIP_SWING_END_2</link>&#160;&#160;&#160;(1566)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga158f88485952a3849f3833c145854d99">TILTG75_START</link>&#160;&#160;&#160;(1672)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga40938f669c5b33b4316a7a5fba679eba">CFG_6</link>&#160;&#160;&#160;(2753)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gac23b1dfe6637cd51283c18aa3d2e9c50">TILTL75_END</link>&#160;&#160;&#160;(1669)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gabe465e03425237cc6043670f55f28d02">END_ORIENT</link>&#160;&#160;&#160;(1884)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gad4e759975ee4ab865e8bd1ebd7f48908">CFG_FLICK_IN</link>&#160;&#160;&#160;(2573)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga0ca3aa6c4c503f68cab0bbba28325f12">TILTL75_START</link>&#160;&#160;&#160;(1643)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga8214527cbba23694722d04715126be0f">CFG_MOTION_BIAS</link>&#160;&#160;&#160;(1208)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga70e52e79b5774e056a86795a52e3b027">X_GRT_Y</link>&#160;&#160;&#160;(1408)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaf08a08d5d5c6944564fe84a46227968d">TEMPLABEL</link>&#160;&#160;&#160;(2324)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gacc91af9a664cf438b93a3faa108bb603">CFG_ANDROID_ORIENT_INT</link>&#160;&#160;&#160;(1853)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga01dcbc69fa28559529653a3b4aabea00">CFG_GYRO_RAW_DATA</link>&#160;&#160;&#160;(2722)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga193d85c2bd5dd9e43c1f89445e999ac6">X_GRT_Y_TMP2</link>&#160;&#160;&#160;(1379)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga155b1481095edac7a26c8c3d5b9c5a24">D_0_22</link>&#160;&#160;&#160;(22+512)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga15d46d25c01d6bc9c849c3ba42dcfa54">D_0_24</link>&#160;&#160;&#160;(24+512)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga98e58a52ab30dcc007284b185347cf0f">D_0_36</link>&#160;&#160;&#160;(36)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaa3d478603bf46f77a6eb95f2c71ee48e">D_0_52</link>&#160;&#160;&#160;(52)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga7e992a46da86f1d053f9ef5fc2e53b7a">D_0_96</link>&#160;&#160;&#160;(96)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga5edbce4fdd515aa31a227fb8eaf0151f">D_0_104</link>&#160;&#160;&#160;(104)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gabbbb1d6730f23abc1e951d7741fa24d5">D_0_108</link>&#160;&#160;&#160;(108)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga4d6d669548fe77f07062baf9e452fb06">D_0_163</link>&#160;&#160;&#160;(163)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gabe9d05e6c0b53d1452944c767ec4e39f">D_0_188</link>&#160;&#160;&#160;(188)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga737381384143cf039503023e04037a26">D_0_192</link>&#160;&#160;&#160;(192)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gafd5baf97b37c848b12dec9b718d27188">D_0_224</link>&#160;&#160;&#160;(224)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga87090eb84fc9a689a087e9f7e59cd4fb">D_0_228</link>&#160;&#160;&#160;(228)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gafd752a244bd3eb5e07f77712d9653197">D_0_232</link>&#160;&#160;&#160;(232)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga9141d44a2f2636d23c001b5832118326">D_0_236</link>&#160;&#160;&#160;(236)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gab444dc9d9eaf98f46563cc87fcb965a4">D_1_2</link>&#160;&#160;&#160;(256 + 2)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga83973bf9de6879524cca19f3332e707e">D_1_4</link>&#160;&#160;&#160;(256 + 4)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga2f44fbe8696fcc34619d6e61916c22d0">D_1_8</link>&#160;&#160;&#160;(256 + 8)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga6b208218857c2067078082e832148f61">D_1_10</link>&#160;&#160;&#160;(256 + 10)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gac84316958d525db0c89e1519e8af6637">D_1_24</link>&#160;&#160;&#160;(256 + 24)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga2533cfdd19cb87a86667620a33a9d561">D_1_28</link>&#160;&#160;&#160;(256 + 28)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga359aac18087bef8a3f044faf13952fa2">D_1_36</link>&#160;&#160;&#160;(256 + 36)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gae0dfa8b55558dff48604d4ac2c28fa9c">D_1_40</link>&#160;&#160;&#160;(256 + 40)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga4fd075d6c0e817fbafca24af8305386e">D_1_44</link>&#160;&#160;&#160;(256 + 44)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga065f93eacb4dcc7020cc21146e533110">D_1_72</link>&#160;&#160;&#160;(256 + 72)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaadac9643410cb6abb08481bebc549d0d">D_1_74</link>&#160;&#160;&#160;(256 + 74)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gae6ba99808ab9bc8eaddbc7c7cc6af1f3">D_1_79</link>&#160;&#160;&#160;(256 + 79)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga05bc14cf9653fc7778acfa75c9ac19df">D_1_88</link>&#160;&#160;&#160;(256 + 88)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga63bb29a8be69128a60f4716aacc447a8">D_1_90</link>&#160;&#160;&#160;(256 + 90)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gabd8a1ea9b71ac9389116a33e317aad6c">D_1_92</link>&#160;&#160;&#160;(256 + 92)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga9deaa01235044f6470a4269db6b624ea">D_1_96</link>&#160;&#160;&#160;(256 + 96)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaa3060f343d69794f21fcb65974c135bd">D_1_98</link>&#160;&#160;&#160;(256 + 98)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga1a90f348e71ec52d2ae6af1b56a513e6">D_1_106</link>&#160;&#160;&#160;(256 + 106)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga0443e52a615f3203ebc5ca43189bdcb8">D_1_108</link>&#160;&#160;&#160;(256 + 108)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga2c149c0691ea56561d9f3cd0f34bb1d9">D_1_112</link>&#160;&#160;&#160;(256 + 112)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga782fd500c37614a9a83b50adf3f18a2d">D_1_128</link>&#160;&#160;&#160;(256 + 144)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga3248b12d5c7a9f33e19f32da0822ce60">D_1_152</link>&#160;&#160;&#160;(256 + 12)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga97169732d7858751120c9b32109f5875">D_1_160</link>&#160;&#160;&#160;(256 + 160)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gab7a349f836821460da79b4bbcb1089c2">D_1_176</link>&#160;&#160;&#160;(256 + 176)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga783f9fddb57c3462c7d4344c46cbec51">D_1_178</link>&#160;&#160;&#160;(256 + 178)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga0c4568c70e2cd501e8de6c3147eb0276">D_1_218</link>&#160;&#160;&#160;(256 + 218)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga2b58e015c2162382339b7c57607ee32c">D_1_232</link>&#160;&#160;&#160;(256 + 232)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga1ac208ac9e1ba17e8b116176c2878068">D_1_236</link>&#160;&#160;&#160;(256 + 236)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga9156998202039a8904e4733bd37faf4e">D_1_240</link>&#160;&#160;&#160;(256 + 240)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaa65adef1ba1e6fd197e3058089c559fb">D_1_244</link>&#160;&#160;&#160;(256 + 244)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gab5988bd1329cb108a57a5e81ecd2c26b">D_1_250</link>&#160;&#160;&#160;(256 + 250)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga0f11a9f42b3d13434b8a62aefd077912">D_1_252</link>&#160;&#160;&#160;(256 + 252)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga57d4674cf7793419f7dfa54606c73bf2">D_2_12</link>&#160;&#160;&#160;(512 + 12)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga36e10f13d70b3d8e038d39d807587202">D_2_96</link>&#160;&#160;&#160;(512 + 96)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga09ccdf661a9ab9f8df8f2c7070d0dff9">D_2_108</link>&#160;&#160;&#160;(512 + 108)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gae2175af550784283fee34f3e67ba9c35">D_2_208</link>&#160;&#160;&#160;(512 + 208)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga08f00bcef1e8814906c2354dc8b9e8b8">D_2_224</link>&#160;&#160;&#160;(512 + 224)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gafe0c8ed2924052fe714ec9174389bbe0">D_2_236</link>&#160;&#160;&#160;(512 + 236)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaf53e9ad71a55861be572b74497681bb1">D_2_244</link>&#160;&#160;&#160;(512 + 244)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gab8953d8cd2c2dbeea3cc33ee50d0e3e1">D_2_248</link>&#160;&#160;&#160;(512 + 248)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga94327b4d894185063c5104a02d9714ee">D_2_252</link>&#160;&#160;&#160;(512 + 252)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaaf010f875dd67b0107be3e9fa31b3e27">CPASS_BIAS_X</link>&#160;&#160;&#160;(35 * 16 + 4)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga6d24a81ab42b7fa4eb8139de1f61dabd">CPASS_BIAS_Y</link>&#160;&#160;&#160;(35 * 16 + 8)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gab931596f83f81d20cb6f79b99a6d71c7">CPASS_BIAS_Z</link>&#160;&#160;&#160;(35 * 16 + 12)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga6a6966c355589a06d8fb29efaff9902f">CPASS_MTX_00</link>&#160;&#160;&#160;(36 * 16)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaf0c24262e6d095fbd0b259111221d22f">CPASS_MTX_01</link>&#160;&#160;&#160;(36 * 16 + 4)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gac5f1350e9764b47bad1e5338e1f42e42">CPASS_MTX_02</link>&#160;&#160;&#160;(36 * 16 + 8)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga345d7d640ac1340e3eaf23c4efc9cd80">CPASS_MTX_10</link>&#160;&#160;&#160;(36 * 16 + 12)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gad6a7e3d40cf198dd69e7d3caeefc8453">CPASS_MTX_11</link>&#160;&#160;&#160;(37 * 16)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga5f4053bd26eb944d431d93d282be9296">CPASS_MTX_12</link>&#160;&#160;&#160;(37 * 16 + 4)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga452f20a72e035275b876e8cc592691f6">CPASS_MTX_20</link>&#160;&#160;&#160;(37 * 16 + 8)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gae126c2fef7bf856f38d6d04b7504a3c4">CPASS_MTX_21</link>&#160;&#160;&#160;(37 * 16 + 12)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gab45a80c778b591671aa8f10a64209423">CPASS_MTX_22</link>&#160;&#160;&#160;(43 * 16 + 12)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gae48ad5d76a4abec0759ff23ba2b2a68e">D_EXT_GYRO_BIAS_X</link>&#160;&#160;&#160;(61 * 16)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga6de6f7302f19c1f63f1a04b51ff14b1a">D_EXT_GYRO_BIAS_Y</link>&#160;&#160;&#160;(61 * 16) + 4</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gacd6dead1c0b0458f1ec5d66914a1cf90">D_EXT_GYRO_BIAS_Z</link>&#160;&#160;&#160;(61 * 16) + 8</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga5d68a8e4a168cc789fb481ba9b1ac431">D_ACT0</link>&#160;&#160;&#160;(40 * 16)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga3d6aba10b057d1b66f0c5f33334afb07">D_ACSX</link>&#160;&#160;&#160;(40 * 16 + 4)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga289d47aab7f881d4e0c1233229462644">D_ACSY</link>&#160;&#160;&#160;(40 * 16 + 8)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaae2baed3a317cde49f3ab8af10e73e97">D_ACSZ</link>&#160;&#160;&#160;(40 * 16 + 12)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga045a0c3dbfc3523917e914681f437c3f">FLICK_MSG</link>&#160;&#160;&#160;(45 * 16 + 4)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gae0cb172ae789a96d344d5dd008aca254">FLICK_COUNTER</link>&#160;&#160;&#160;(45 * 16 + 8)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga2e56bca3c291c9a618b572307216ec1d">FLICK_LOWER</link>&#160;&#160;&#160;(45 * 16 + 12)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gadf0738d3c6f0096ecb157aa2b296f1e1">FLICK_UPPER</link>&#160;&#160;&#160;(46 * 16 + 12)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gafcd825024b1b4f2dd4570e897c3fe24e">D_AUTH_OUT</link>&#160;&#160;&#160;(992)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gad59a17a973be28ebc0d0bc3ae1e3316f">D_AUTH_IN</link>&#160;&#160;&#160;(996)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaf2eaee2b8c50adbd556a815d7ab795e9">D_AUTH_A</link>&#160;&#160;&#160;(1000)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga7ee552ff37e87403b24788c2b8e80ce6">D_AUTH_B</link>&#160;&#160;&#160;(1004)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga2c2d27ad76c61cf19da3460f810eefb1">D_PEDSTD_BP_B</link>&#160;&#160;&#160;(768 + 0x1C)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga14795bbdfea8a4d5961d2e0d0affe162">D_PEDSTD_HP_A</link>&#160;&#160;&#160;(768 + 0x78)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga36c0d5ca76fbb5df31ec8ca0a26db835">D_PEDSTD_HP_B</link>&#160;&#160;&#160;(768 + 0x7C)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gac2bece455bcecb189a347b6c0edf2b6f">D_PEDSTD_BP_A4</link>&#160;&#160;&#160;(768 + 0x40)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga41557d8ab6be78f157aa4770d5123235">D_PEDSTD_BP_A3</link>&#160;&#160;&#160;(768 + 0x44)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga000da9f0c92ec1a103f8e1c50e7e61fd">D_PEDSTD_BP_A2</link>&#160;&#160;&#160;(768 + 0x48)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga6c42f0b2097fe55659dc5ec653681d50">D_PEDSTD_BP_A1</link>&#160;&#160;&#160;(768 + 0x4C)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga35d9c5ca325de3055539cdae8e5b497c">D_PEDSTD_INT_THRSH</link>&#160;&#160;&#160;(768 + 0x68)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga211abccbe885d02059206ca4da711b54">D_PEDSTD_CLIP</link>&#160;&#160;&#160;(768 + 0x6C)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga50a1a44c925cadaa77b3b88e08db7e08">D_PEDSTD_SB</link>&#160;&#160;&#160;(768 + 0x28)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga0d3790675bcf0bbb837f2834523aca11">D_PEDSTD_SB_TIME</link>&#160;&#160;&#160;(768 + 0x2C)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga3b281a8de65d0ac3ed6321b4df4ab6d0">D_PEDSTD_PEAKTHRSH</link>&#160;&#160;&#160;(768 + 0x98)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga1968b4f2f2daece7e19a24bad6388864">D_PEDSTD_TIML</link>&#160;&#160;&#160;(768 + 0x2A)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga3c410f5ee95cf78486e71a276ed8b36a">D_PEDSTD_TIMH</link>&#160;&#160;&#160;(768 + 0x2E)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga1e71c4f2fc11aa787bd4c8a5a4126525">D_PEDSTD_PEAK</link>&#160;&#160;&#160;(768 + 0X94)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga4925c8f2bfe6e2698c10bf5b1094dc54">D_PEDSTD_STEPCTR</link>&#160;&#160;&#160;(768 + 0x60)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaee461dfb8a3fcd18ea6dddeaba63457b">D_PEDSTD_TIMECTR</link>&#160;&#160;&#160;(964)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gae84f6c1fd0f4ccc0f0b5aedc01d48636">D_PEDSTD_DECI</link>&#160;&#160;&#160;(768 + 0xA0)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga0ee24f50eee31a512b652647521d24bb">D_HOST_NO_MOT</link>&#160;&#160;&#160;(976)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga2cc522b8f621f32418257ab61144a744">D_ACCEL_BIAS</link>&#160;&#160;&#160;(660)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gac74c2352245609d469f38d6ffff9030e">D_ORIENT_GAP</link>&#160;&#160;&#160;(76)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga214de0f949e6ed8fcf11ce1b3b6eebad">D_TILT0_H</link>&#160;&#160;&#160;(48)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga6c85fceb5f74a918b0399d0307158ff7">D_TILT0_L</link>&#160;&#160;&#160;(50)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga4e1a6f62758ed17f6f950a15dae3f71f">D_TILT1_H</link>&#160;&#160;&#160;(52)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga4e42a147afc872019b8affbbe545e233">D_TILT1_L</link>&#160;&#160;&#160;(54)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga9325b74799bbe82c52821c1a3d31cb0a">D_TILT2_H</link>&#160;&#160;&#160;(56)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga1f94ccf82d2693832423d759dba5dbfa">D_TILT2_L</link>&#160;&#160;&#160;(58)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga296360133bdb8e75a844083e52ae6542">D_TILT3_H</link>&#160;&#160;&#160;(60)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gab62313b938bb0a02efe7584203c0c950">D_TILT3_L</link>&#160;&#160;&#160;(62)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga304702b72a030fceea30b45d1ab53a5c">DMP_CODE_SIZE</link>&#160;&#160;&#160;(3062)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gac5690dcf21f75f38bc3ea13ad4799714">INT_SRC_TAP</link>&#160;&#160;&#160;(0x01)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga7c3f4a57d404a1321ce6dfc00e33ac4d">INT_SRC_ANDROID_ORIENT</link>&#160;&#160;&#160;(0x08)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gadda8f4118bd084cfb4fcda3571585c56">DMP_FEATURE_SEND_ANY_GYRO</link></para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga973c680573b37fc359fc68d0707da355">MAX_PACKET_LENGTH</link>&#160;&#160;&#160;(32)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga9d0f0425cbcb58186500cb8686e41e67">DMP_SAMPLE_RATE</link>&#160;&#160;&#160;(200)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gac0325c658f2911bdfc3b44fca31c684f">GYRO_SF</link>&#160;&#160;&#160;(46850825LL * 200 / <link linkend="_group___d_r_i_v_e_r_s_1ga9d0f0425cbcb58186500cb8686e41e67">DMP_SAMPLE_RATE</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gabb3bcb4d19c847aa89a356478b7da027">FIFO_CORRUPTION_CHECK</link></para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga633dcbd524d41e6f76c0fda39828c8e1">QUAT_ERROR_THRESH</link>&#160;&#160;&#160;(1L&lt;&lt;24)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga290880f86641e11d62db9792eab808bd">QUAT_MAG_SQ_NORMALIZED</link>&#160;&#160;&#160;(1L&lt;&lt;28)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gae76871da254b93d8b944ec65792db252">QUAT_MAG_SQ_MIN</link>&#160;&#160;&#160;(<link linkend="_group___d_r_i_v_e_r_s_1ga290880f86641e11d62db9792eab808bd">QUAT_MAG_SQ_NORMALIZED</link> - <link linkend="_group___d_r_i_v_e_r_s_1ga633dcbd524d41e6f76c0fda39828c8e1">QUAT_ERROR_THRESH</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga3036f612f259f4e13c631a31fb0e7176">QUAT_MAG_SQ_MAX</link>&#160;&#160;&#160;(<link linkend="_group___d_r_i_v_e_r_s_1ga290880f86641e11d62db9792eab808bd">QUAT_MAG_SQ_NORMALIZED</link> + <link linkend="_group___d_r_i_v_e_r_s_1ga633dcbd524d41e6f76c0fda39828c8e1">QUAT_ERROR_THRESH</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>函数    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga66626a842452f444e9af29cb0d2c6150">dmp_load_motion_driver_firmware</link> (void)</para>
+
+<para>Load the DMP with this image. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga6cb5ff144ce6e1546f00809de8bb24a4">dmp_set_orientation</link> (unsigned short orient)</para>
+
+<para>Push gyro and accel orientation to the DMP. The orientation is represented here as the output of <emphasis>inv_orientation_matrix_to_scalar</emphasis>. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga4766e37ef95cbf0044c8f9594ed811d1">dmp_set_gyro_bias</link> (long *bias)</para>
+
+<para>Push gyro biases to the DMP. Because the gyro integration is handled in the DMP, any gyro biases calculated by the MPL should be pushed down to DMP memory to remove 3-axis quaternion drift. <?linebreak?> NOTE: If the DMP-based gyro calibration is enabled, the DMP will overwrite the biases written to this location once a new one is computed. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gafbd714aee6086836f70aaea847771669">dmp_set_accel_bias</link> (long *bias)</para>
+
+<para>Push accel biases to the DMP. These biases will be removed from the DMP 6-axis quaternion. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga5399728fd572a7694af20286cc9d4121">dmp_set_fifo_rate</link> (unsigned short rate)</para>
+
+<para>Set DMP output rate. Only used when DMP is on. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gaf3f9953bc04af751b1101700daffa951">dmp_get_fifo_rate</link> (unsigned short *rate)</para>
+
+<para>Get DMP output rate. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga15da67c0a6c94e0cdaceb8b165e13af9">dmp_set_tap_thresh</link> (unsigned char axis, unsigned short thresh)</para>
+
+<para>Set tap threshold for a specific axis. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga66bc5c8fc26fcb498df53fc62aa87e4f">dmp_set_tap_axes</link> (unsigned char axis)</para>
+
+<para>Set which axes will register a tap. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga819f947b2cb107ada7b9a94c41be0dad">dmp_set_tap_count</link> (unsigned char min_taps)</para>
+
+<para>Set minimum number of taps needed for an interrupt. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga97466067f4a23368f4d7e2547fe359d9">dmp_set_tap_time</link> (unsigned short time)</para>
+
+<para>Set length between valid taps. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gaeca250a90eb816eb2609229849481337">dmp_set_tap_time_multi</link> (unsigned short time)</para>
+
+<para>Set max time between taps to register as a multi-tap. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga62efdae1330d5bcaf4c75b069ded0ed0">dmp_set_shake_reject_thresh</link> (long sf, unsigned short thresh)</para>
+
+<para>Set shake rejection threshold. If the DMP detects a gyro sample larger than <emphasis>thresh</emphasis>, taps are rejected. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga09d7a6d90e1bd2e907f1866d850c5608">dmp_set_shake_reject_time</link> (unsigned short time)</para>
+
+<para>Set shake rejection time. Sets the length of time that the gyro must be outside of the threshold set by <emphasis>gyro_set_shake_reject_thresh</emphasis> before taps are rejected. A mandatory 60 ms is added to this parameter. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga5d44d1a32535000e6902cdc5224d1b54">dmp_set_shake_reject_timeout</link> (unsigned short time)</para>
+
+<para>Set shake rejection timeout. Sets the length of time after a shake rejection that the gyro must stay inside of the threshold before taps can be detected again. A mandatory 60 ms is added to this parameter. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gad8f4d1a93e0f03d950559501c5a7255b">dmp_get_pedometer_step_count</link> (unsigned long *count)</para>
+
+<para>Get current step count. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga568562c19998f585b1d2ba056cd209db">dmp_set_pedometer_step_count</link> (unsigned long count)</para>
+
+<para>Overwrite current step count. WARNING: This function writes to DMP memory and could potentially encounter a race condition if called while the pedometer is enabled. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga62c8e5e99986b0e60ca0dc9a9b9c3fcc">dmp_get_pedometer_walk_time</link> (unsigned long *time)</para>
+
+<para>Get duration of walking time. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga62f469269047f8cba16a2b7f5349acc0">dmp_set_pedometer_walk_time</link> (unsigned long time)</para>
+
+<para>Overwrite current walk time. WARNING: This function writes to DMP memory and could potentially encounter a race condition if called while the pedometer is enabled. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga70c485bdfa30515e5b869b081192caa1">dmp_enable_feature</link> (unsigned short mask)</para>
+
+<para>Enable DMP features. The following #define&apos;s are used in the input mask: <?linebreak?> DMP_FEATURE_TAP <?linebreak?> DMP_FEATURE_ANDROID_ORIENT <?linebreak?> DMP_FEATURE_LP_QUAT <?linebreak?> DMP_FEATURE_6X_LP_QUAT <?linebreak?> DMP_FEATURE_GYRO_CAL <?linebreak?> DMP_FEATURE_SEND_RAW_ACCEL <?linebreak?> DMP_FEATURE_SEND_RAW_GYRO <?linebreak?> NOTE: DMP_FEATURE_LP_QUAT and DMP_FEATURE_6X_LP_QUAT are mutually exclusive. <?linebreak?> NOTE: DMP_FEATURE_SEND_RAW_GYRO and DMP_FEATURE_SEND_CAL_GYRO are also mutually exclusive. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga92b920b72f5146ea14d45ad2d529b64c">dmp_get_enabled_features</link> (unsigned short *mask)</para>
+
+<para>Get list of currently enabled DMP features. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga653ebcec6758f006dd89939e8f3c6ebb">dmp_enable_gyro_cal</link> (unsigned char enable)</para>
+
+<para>Calibrate the gyro data in the DMP. After eight seconds of no motion, the DMP will compute gyro biases and subtract them from the quaternion output. If <emphasis>dmp_enable_feature</emphasis> is called with <emphasis>DMP_FEATURE_SEND_CAL_GYRO</emphasis>, the biases will also be subtracted from the gyro output. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga4ee4339b79a58558d121ba8206056394">dmp_enable_lp_quat</link> (unsigned char enable)</para>
+
+<para>Generate 3-axis quaternions from the DMP. In this driver, the 3-axis and 6-axis DMP quaternion features are mutually exclusive. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gaac712ef33727433f666b3861894873be">dmp_enable_6x_lp_quat</link> (unsigned char enable)</para>
+
+<para>Generate 6-axis quaternions from the DMP. In this driver, the 3-axis and 6-axis DMP quaternion features are mutually exclusive. </para>
+</listitem>
+            <listitem><para>static int <link linkend="_group___d_r_i_v_e_r_s_1gaee85b322f461f83536e49840651a7576">decode_gesture</link> (unsigned char *gesture)</para>
+
+<para>Decode the four-byte gesture data and execute any callbacks. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gaf10c08103d2aec9aa5555a5694bafced">dmp_set_interrupt_mode</link> (unsigned char mode)</para>
+
+<para>Specify when a DMP interrupt should occur. A DMP interrupt can be configured to trigger on either of the two conditions below: <?linebreak?> a. One FIFO period has elapsed (set by <emphasis>mpu_set_sample_rate</emphasis>). <?linebreak?> b. A tap event has been detected. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga02db5f25359abe84be002c543cdc3803">dmp_read_fifo</link> (short *gyro, short *accel, long *quat, unsigned long *timestamp, short *sensors, unsigned char *more)</para>
+
+<para>Get one packet from the FIFO. If <emphasis>sensors</emphasis> does not contain a particular sensor, disregard the data returned to that pointer. <?linebreak?> <emphasis>sensors</emphasis> can contain a combination of the following flags: <?linebreak?> INV_X_GYRO, INV_Y_GYRO, INV_Z_GYRO <?linebreak?> INV_XYZ_GYRO <?linebreak?> INV_XYZ_ACCEL <?linebreak?> INV_WXYZ_QUAT <?linebreak?> If the FIFO has no new data, <emphasis>sensors</emphasis> will be zero. <?linebreak?> If the FIFO is disabled, <emphasis>sensors</emphasis> will be zero and this function will return a non-zero error code. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga8a2df36126e34b78863e3acf1249d814">dmp_register_tap_cb</link> (void(*func)(unsigned char, unsigned char))</para>
+
+<para>Register a function to be executed on a tap event. The tap direction is represented by one of the following: <?linebreak?> TAP_X_UP <?linebreak?> TAP_X_DOWN <?linebreak?> TAP_Y_UP <?linebreak?> TAP_Y_DOWN <?linebreak?> TAP_Z_UP <?linebreak?> TAP_Z_DOWN </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga2e66a02d29ec89466cf339587592943c">dmp_register_android_orient_cb</link> (void(*func)(unsigned char))</para>
+
+<para>Register a function to be executed on a android orientation event. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>变量    </title>
+        <itemizedlist>
+            <listitem><para>static const unsigned char <link linkend="_group___d_r_i_v_e_r_s_1ga18acad3bc779e5f0fcb478454ed3018c">dmp_memory</link> [<link linkend="_group___d_r_i_v_e_r_s_1ga304702b72a030fceea30b45d1ab53a5c">DMP_CODE_SIZE</link>]</para>
+</listitem>
+            <listitem><para>static const unsigned short <link linkend="_group___d_r_i_v_e_r_s_1ga4c3bab083aa4c83b435dcfa14b881165">sStartAddress</link> = 0x0400</para>
+</listitem>
+            <listitem><para>static struct <link linkend="_structdmp__s">dmp_s</link> <link linkend="_group___d_r_i_v_e_r_s_1gab873eceb75f8d47f6a04c9d2db1a36e5">dmp</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>DMP image and interface functions. </para>
+
+<para>All functions are preceded by the dmp_ prefix to differentiate among MPL and general driver function calls. </para>
+<para>
+在文件 <link linkend="_inv__mpu__dmp__motion__driver_8c_source">inv_mpu_dmp_motion_driver.c</link> 中定义.</para>
+</section>
+</section>

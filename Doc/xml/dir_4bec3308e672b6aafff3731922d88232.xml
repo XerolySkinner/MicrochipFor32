@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="dir_4bec3308e672b6aafff3731922d88232" kind="dir">
+    <compoundname>D:/gitt/MicrochipFor32/bsp_MPU6050</compoundname>
+    <innerfile refid="mpu6050_8cpp">mpu6050.cpp</innerfile>
+    <innerfile refid="mpu6050_8h">mpu6050.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/"/>
+  </compounddef>
+</doxygen>

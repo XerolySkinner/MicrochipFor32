@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="struct__l_stack" kind="struct" language="C++" prot="public">
+    <compoundname>_lStack</compoundname>
+    <includes refid="_s_t_l___stack_8h" local="no">STL_Stack.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__l_stack_1affc30df8369219ce967936b083106ee4" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__l_stack" kindref="compound">_lStack</ref> *</type>
+        <definition>struct _lStack* _lStack::front</definition>
+        <argsstring></argsstring>
+        <name>front</name>
+        <qualifiedname>_lStack::front</qualifiedname>
+        <briefdescription>
+<para>前一个节点的指针 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" line="89" column="14" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" bodystart="89" bodyend="-1"/>
+        <referencedby refid="class_s_t_l__l_stack_1a8122fd4341e6851961a210e2361c55b0" compoundref="_s_t_l___stack_8cpp" startline="229" endline="236">STL_lStack::pop</referencedby>
+        <referencedby refid="class_s_t_l__l_stack_1a19b8e4216ae1fad27b58bc6b9c10af2e" compoundref="_s_t_l___stack_8cpp" startline="214" endline="222">STL_lStack::push</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct__l_stack_1a560ebf00b475d44dc7a96c9c15d91bc8" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _lStack::dat</definition>
+        <argsstring></argsstring>
+        <name>dat</name>
+        <qualifiedname>_lStack::dat</qualifiedname>
+        <briefdescription>
+<para>数据的指针 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" line="90" column="5" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" bodystart="90" bodyend="-1"/>
+        <referencedby refid="class_s_t_l__l_stack_1a8122fd4341e6851961a210e2361c55b0" compoundref="_s_t_l___stack_8cpp" startline="229" endline="236">STL_lStack::pop</referencedby>
+        <referencedby refid="class_s_t_l__l_stack_1a19b8e4216ae1fad27b58bc6b9c10af2e" compoundref="_s_t_l___stack_8cpp" startline="214" endline="222">STL_lStack::push</referencedby>
+        <referencedby refid="class_s_t_l__l_stack_1a1e1f0b6f70bff3c9dbb95a90cac0f261" compoundref="_s_t_l___stack_8cpp" startline="244" endline="248">STL_lStack::top</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct__l_stack_1a6bdae5ac1294a8f08f4b5b8a809e4f32" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref></type>
+        <definition>u32 _lStack::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>_lStack::size</qualifiedname>
+        <briefdescription>
+<para>该数据的大小 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" line="91" column="4" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" bodystart="91" bodyend="-1"/>
+        <referencedby refid="class_s_t_l__l_stack_1a19b8e4216ae1fad27b58bc6b9c10af2e" compoundref="_s_t_l___stack_8cpp" startline="214" endline="222">STL_lStack::push</referencedby>
+        <referencedby refid="class_s_t_l__l_stack_1a1e1f0b6f70bff3c9dbb95a90cac0f261" compoundref="_s_t_l___stack_8cpp" startline="244" endline="248">STL_lStack::top</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>链表方式栈的节点 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_lStack</label>
+        <link refid="struct__l_stack"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>front</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" line="88" column="1" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" bodystart="88" bodyend="92"/>
+    <listofallmembers>
+      <member refid="struct__l_stack_1a560ebf00b475d44dc7a96c9c15d91bc8" prot="public" virt="non-virtual"><scope>_lStack</scope><name>dat</name></member>
+      <member refid="struct__l_stack_1affc30df8369219ce967936b083106ee4" prot="public" virt="non-virtual"><scope>_lStack</scope><name>front</name></member>
+      <member refid="struct__l_stack_1a6bdae5ac1294a8f08f4b5b8a809e4f32" prot="public" virt="non-virtual"><scope>_lStack</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

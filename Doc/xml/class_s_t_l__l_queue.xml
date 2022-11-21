@@ -1,0 +1,520 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="class_s_t_l__l_queue" kind="class" language="C++" prot="public">
+    <compoundname>STL_lQueue</compoundname>
+    <includes refid="_s_t_l___queue_8h" local="no">STL_Queue.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_s_t_l__l_queue_1a32f62d0933c052bcebeb318c1230f3f7" prot="public" static="no" mutable="no">
+        <type>void(*)(void)</type>
+        <definition>void(*)(void) STL_lQueue::poptopfun(void)</definition>
+        <argsstring>(void)</argsstring>
+        <name>poptopfun</name>
+        <qualifiedname>STL_lQueue::poptopfun</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" line="116" column="1" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_t_l__l_queue_1aa30f82a9e8ccf14839fb0d4bc0060428" prot="private" static="no" mutable="no">
+        <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref></type>
+        <definition>u32 STL_lQueue::mem</definition>
+        <argsstring></argsstring>
+        <name>mem</name>
+        <qualifiedname>STL_lQueue::mem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" line="118" column="4" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" bodystart="118" bodyend="-1"/>
+        <referencedby refid="class_s_t_l__l_queue_1a9c9a5811f43677f8d70d19377e276510" compoundref="_s_t_l___queue_8cpp" startline="235" endline="246">pop</referencedby>
+        <referencedby refid="class_s_t_l__l_queue_1ab551099da5beb93d91db4472ffd4d5c3" compoundref="_s_t_l___queue_8cpp" startline="215" endline="228">push</referencedby>
+        <referencedby refid="class_s_t_l__l_queue_1a144e383b154698f69348bb8f901bdb81" compoundref="_s_t_l___queue_8cpp" startline="199" endline="203">STL_lQueue</referencedby>
+        <referencedby refid="class_s_t_l__l_queue_1a1abec6afbc25d3cc7b3e3cc94c265f9c" compoundref="_s_t_l___queue_8cpp" startline="254" endline="258">top</referencedby>
+        <referencedby refid="class_s_t_l__l_queue_1a9c77d831feed1543e4fdefc811580a51" compoundref="_s_t_l___queue_8cpp" startline="204" endline="205">~STL_lQueue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_t_l__l_queue_1aff375614989295d36b7b30467946332f" prot="private" static="no" mutable="no">
+        <type><ref refid="struct__l_queue" kindref="compound">_lQueue</ref> *</type>
+        <definition>_lQueue* STL_lQueue::Hdat</definition>
+        <argsstring></argsstring>
+        <name>Hdat</name>
+        <qualifiedname>STL_lQueue::Hdat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" line="119" column="8" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" bodystart="119" bodyend="-1"/>
+        <referencedby refid="class_s_t_l__l_queue_1a9c9a5811f43677f8d70d19377e276510" compoundref="_s_t_l___queue_8cpp" startline="235" endline="246">pop</referencedby>
+        <referencedby refid="class_s_t_l__l_queue_1ab551099da5beb93d91db4472ffd4d5c3" compoundref="_s_t_l___queue_8cpp" startline="215" endline="228">push</referencedby>
+        <referencedby refid="class_s_t_l__l_queue_1a144e383b154698f69348bb8f901bdb81" compoundref="_s_t_l___queue_8cpp" startline="199" endline="203">STL_lQueue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_t_l__l_queue_1a5019da13d4ba25f2bf7668770be14cfd" prot="private" static="no" mutable="no">
+        <type><ref refid="struct__l_queue" kindref="compound">_lQueue</ref> *</type>
+        <definition>_lQueue* STL_lQueue::Tdat</definition>
+        <argsstring></argsstring>
+        <name>Tdat</name>
+        <qualifiedname>STL_lQueue::Tdat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" line="120" column="8" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" bodystart="120" bodyend="-1"/>
+        <referencedby refid="class_s_t_l__l_queue_1a9c9a5811f43677f8d70d19377e276510" compoundref="_s_t_l___queue_8cpp" startline="235" endline="246">pop</referencedby>
+        <referencedby refid="class_s_t_l__l_queue_1ab551099da5beb93d91db4472ffd4d5c3" compoundref="_s_t_l___queue_8cpp" startline="215" endline="228">push</referencedby>
+        <referencedby refid="class_s_t_l__l_queue_1a144e383b154698f69348bb8f901bdb81" compoundref="_s_t_l___queue_8cpp" startline="199" endline="203">STL_lQueue</referencedby>
+        <referencedby refid="class_s_t_l__l_queue_1a1abec6afbc25d3cc7b3e3cc94c265f9c" compoundref="_s_t_l___queue_8cpp" startline="254" endline="258">top</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_t_l__l_queue_1a144e383b154698f69348bb8f901bdb81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>STL_lQueue::STL_lQueue</definition>
+        <argsstring>(void)</argsstring>
+        <name>STL_lQueue</name>
+        <qualifiedname>STL_lQueue::STL_lQueue</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" line="100" column="1" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.cpp" bodystart="199" bodyend="203"/>
+        <references refid="class_s_t_l__l_queue_1aff375614989295d36b7b30467946332f" compoundref="_s_t_l___queue_8h" startline="119">Hdat</references>
+        <references refid="class_s_t_l__l_queue_1aa30f82a9e8ccf14839fb0d4bc0060428" compoundref="_s_t_l___queue_8h" startline="118">mem</references>
+        <references refid="class_s_t_l__l_queue_1a5019da13d4ba25f2bf7668770be14cfd" compoundref="_s_t_l___queue_8h" startline="120">Tdat</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_t_l__l_queue_1a9c77d831feed1543e4fdefc811580a51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>STL_lQueue::~STL_lQueue</definition>
+        <argsstring>(void)</argsstring>
+        <name>~STL_lQueue</name>
+        <qualifiedname>STL_lQueue::~STL_lQueue</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" line="101" column="1" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.cpp" bodystart="204" bodyend="205"/>
+        <references refid="class_s_t_l__l_queue_1aa30f82a9e8ccf14839fb0d4bc0060428" compoundref="_s_t_l___queue_8h" startline="118">mem</references>
+        <references refid="class_s_t_l__l_queue_1a9c9a5811f43677f8d70d19377e276510" compoundref="_s_t_l___queue_8cpp" startline="235" endline="246">pop</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_t_l__l_queue_1ab551099da5beb93d91db4472ffd4d5c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 STL_lQueue::push</definition>
+        <argsstring>(void *&amp;var, u32 size)</argsstring>
+        <name>push</name>
+        <qualifiedname>STL_lQueue::push</qualifiedname>
+        <param>
+          <type>void *&amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>压入一个成员 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>*&amp;var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>需要压入的数值的地址 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>需要压入的数值的长度 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>错误号 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" line="103" column="3" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.cpp" bodystart="215" bodyend="228"/>
+        <references refid="struct__l_queue_1a3be42777ab564c447ca2b0978e04ef68" compoundref="_s_t_l___queue_8h" startline="88">_lQueue::back</references>
+        <references refid="struct__l_queue_1acc0ce814c36fdba1027d1639236c14cb" compoundref="_s_t_l___queue_8h" startline="89">_lQueue::dat</references>
+        <references refid="class_s_t_l__l_queue_1aff375614989295d36b7b30467946332f" compoundref="_s_t_l___queue_8h" startline="119">Hdat</references>
+        <references refid="class_s_t_l__l_queue_1aa30f82a9e8ccf14839fb0d4bc0060428" compoundref="_s_t_l___queue_8h" startline="118">mem</references>
+        <references refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5a0ecfdce5da7daaea657afe0c2060d8e6" compoundref="_s_t_l___queue_8h" startline="49">QUEUES_MALL_ERROR</references>
+        <references refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5a277fc31bdbe46a70ffc98da7a7468162" compoundref="_s_t_l___queue_8h" startline="46">QUEUES_OK</references>
+        <references refid="struct__l_queue_1a87b92ef47f15b682394c69d2f687550a" compoundref="_s_t_l___queue_8h" startline="90">_lQueue::size</references>
+        <references refid="class_s_t_l__l_queue_1a5019da13d4ba25f2bf7668770be14cfd" compoundref="_s_t_l___queue_8h" startline="120">Tdat</references>
+        <referencedby refid="class_s_t_l__l_queue_1a1231a845c0a916e43c74a18c8b7c1920" compoundref="_s_t_l___queue_8cpp" startline="302" endline="307">push32</referencedby>
+        <referencedby refid="class_s_t_l__l_queue_1af2ee00997d848e132c3140e347b7220c" compoundref="_s_t_l___queue_8cpp" startline="266" endline="271">push8</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_t_l__l_queue_1a9c9a5811f43677f8d70d19377e276510" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 STL_lQueue::pop</definition>
+        <argsstring>(void)</argsstring>
+        <name>pop</name>
+        <qualifiedname>STL_lQueue::pop</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>弹出一个成员 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>错误号 </para>
+</simplesect>
+<simplesect kind="note"><para>无论push进去的是32位还是8位数,都用这个弹出 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" line="104" column="3" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.cpp" bodystart="235" bodyend="246"/>
+        <references refid="struct__l_queue_1a3be42777ab564c447ca2b0978e04ef68" compoundref="_s_t_l___queue_8h" startline="88">_lQueue::back</references>
+        <references refid="struct__l_queue_1acc0ce814c36fdba1027d1639236c14cb" compoundref="_s_t_l___queue_8h" startline="89">_lQueue::dat</references>
+        <references refid="class_s_t_l__l_queue_1aff375614989295d36b7b30467946332f" compoundref="_s_t_l___queue_8h" startline="119">Hdat</references>
+        <references refid="class_s_t_l__l_queue_1aa30f82a9e8ccf14839fb0d4bc0060428" compoundref="_s_t_l___queue_8h" startline="118">mem</references>
+        <references refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5ad39f1a970bf2ee35cee3b69168e7d4d1" compoundref="_s_t_l___queue_8h" startline="47">QUEUES_EMPTY</references>
+        <references refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5a277fc31bdbe46a70ffc98da7a7468162" compoundref="_s_t_l___queue_8h" startline="46">QUEUES_OK</references>
+        <references refid="class_s_t_l__l_queue_1a5019da13d4ba25f2bf7668770be14cfd" compoundref="_s_t_l___queue_8h" startline="120">Tdat</references>
+        <referencedby refid="class_s_t_l__l_queue_1a4bf8d4647c741289056d30184e97531b" compoundref="_s_t_l___queue_8cpp" startline="326" endline="330">poptop32</referencedby>
+        <referencedby refid="class_s_t_l__l_queue_1a4c67b2f6364aa9105e8754c51bb2ad6a" compoundref="_s_t_l___queue_8cpp" startline="290" endline="294">poptop8</referencedby>
+        <referencedby refid="class_s_t_l__l_queue_1a9c77d831feed1543e4fdefc811580a51" compoundref="_s_t_l___queue_8cpp" startline="204" endline="205">~STL_lQueue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_t_l__l_queue_1a1abec6afbc25d3cc7b3e3cc94c265f9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 STL_lQueue::top</definition>
+        <argsstring>(void *&amp;var, u32 &amp;size)</argsstring>
+        <name>top</name>
+        <qualifiedname>STL_lQueue::top</qualifiedname>
+        <param>
+          <type>void *&amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>显示队列顶部成员 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>*&amp;var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>需要赋予的数值的地址 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>需要赋予的数值的长度 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>错误号 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" line="105" column="3" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.cpp" bodystart="254" bodyend="258"/>
+        <references refid="struct__l_queue_1acc0ce814c36fdba1027d1639236c14cb" compoundref="_s_t_l___queue_8h" startline="89">_lQueue::dat</references>
+        <references refid="class_s_t_l__l_queue_1aa30f82a9e8ccf14839fb0d4bc0060428" compoundref="_s_t_l___queue_8h" startline="118">mem</references>
+        <references refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5ad39f1a970bf2ee35cee3b69168e7d4d1" compoundref="_s_t_l___queue_8h" startline="47">QUEUES_EMPTY</references>
+        <references refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5a277fc31bdbe46a70ffc98da7a7468162" compoundref="_s_t_l___queue_8h" startline="46">QUEUES_OK</references>
+        <references refid="struct__l_queue_1a87b92ef47f15b682394c69d2f687550a" compoundref="_s_t_l___queue_8h" startline="90">_lQueue::size</references>
+        <references refid="class_s_t_l__l_queue_1a5019da13d4ba25f2bf7668770be14cfd" compoundref="_s_t_l___queue_8h" startline="120">Tdat</references>
+        <referencedby refid="class_s_t_l__l_queue_1ade1f8e34538de4ae43f7ad2ca46ab493" compoundref="_s_t_l___queue_8cpp" startline="314" endline="320">top32</referencedby>
+        <referencedby refid="class_s_t_l__l_queue_1a7ff92acc4b520646801c93816faf2f07" compoundref="_s_t_l___queue_8cpp" startline="278" endline="284">top8</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_t_l__l_queue_1af2ee00997d848e132c3140e347b7220c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 STL_lQueue::push8</definition>
+        <argsstring>(u8 var)</argsstring>
+        <name>push8</name>
+        <qualifiedname>STL_lQueue::push8</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>压入一个8位成员 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>需要压入的8位数据 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>错误号 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" line="107" column="3" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.cpp" bodystart="266" bodyend="271"/>
+        <references refid="class_s_t_l__l_queue_1ab551099da5beb93d91db4472ffd4d5c3" compoundref="_s_t_l___queue_8cpp" startline="215" endline="228">push</references>
+        <references refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5a0ecfdce5da7daaea657afe0c2060d8e6" compoundref="_s_t_l___queue_8h" startline="49">QUEUES_MALL_ERROR</references>
+        <references refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5a277fc31bdbe46a70ffc98da7a7468162" compoundref="_s_t_l___queue_8h" startline="46">QUEUES_OK</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_t_l__l_queue_1a7ff92acc4b520646801c93816faf2f07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 STL_lQueue::top8</definition>
+        <argsstring>(u8 &amp;var)</argsstring>
+        <name>top8</name>
+        <qualifiedname>STL_lQueue::top8</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>显示队列顶成员 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&amp;var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>结果赋予给该变量 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>错误号 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" line="108" column="3" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.cpp" bodystart="278" bodyend="284"/>
+        <references refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5ad39f1a970bf2ee35cee3b69168e7d4d1" compoundref="_s_t_l___queue_8h" startline="47">QUEUES_EMPTY</references>
+        <references refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5a277fc31bdbe46a70ffc98da7a7468162" compoundref="_s_t_l___queue_8h" startline="46">QUEUES_OK</references>
+        <references refid="class_s_t_l__l_queue_1a1abec6afbc25d3cc7b3e3cc94c265f9c" compoundref="_s_t_l___queue_8cpp" startline="254" endline="258">top</references>
+        <referencedby refid="class_s_t_l__l_queue_1a4c67b2f6364aa9105e8754c51bb2ad6a" compoundref="_s_t_l___queue_8cpp" startline="290" endline="294">poptop8</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_t_l__l_queue_1a4c67b2f6364aa9105e8754c51bb2ad6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 STL_lQueue::poptop8</definition>
+        <argsstring>(void)</argsstring>
+        <name>poptop8</name>
+        <qualifiedname>STL_lQueue::poptop8</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>显示并且弹出一个队列顶成员 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>返回弹出的数值 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" line="109" column="3" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.cpp" bodystart="290" bodyend="294"/>
+        <references refid="class_s_t_l__l_queue_1a9c9a5811f43677f8d70d19377e276510" compoundref="_s_t_l___queue_8cpp" startline="235" endline="246">pop</references>
+        <references refid="class_s_t_l__l_queue_1a7ff92acc4b520646801c93816faf2f07" compoundref="_s_t_l___queue_8cpp" startline="278" endline="284">top8</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_t_l__l_queue_1a1231a845c0a916e43c74a18c8b7c1920" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 STL_lQueue::push32</definition>
+        <argsstring>(u32 var)</argsstring>
+        <name>push32</name>
+        <qualifiedname>STL_lQueue::push32</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref></type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>压入一个32位成员 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>需要压入的32位数据 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>错误号 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" line="111" column="3" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.cpp" bodystart="302" bodyend="307"/>
+        <references refid="class_s_t_l__l_queue_1ab551099da5beb93d91db4472ffd4d5c3" compoundref="_s_t_l___queue_8cpp" startline="215" endline="228">push</references>
+        <references refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5a0ecfdce5da7daaea657afe0c2060d8e6" compoundref="_s_t_l___queue_8h" startline="49">QUEUES_MALL_ERROR</references>
+        <references refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5a277fc31bdbe46a70ffc98da7a7468162" compoundref="_s_t_l___queue_8h" startline="46">QUEUES_OK</references>
+        <referencedby refid="class_s_t_l__l_queue_1ad702c50174ed400838db74915c0eefda" compoundref="_s_t_l___queue_8cpp" startline="341" endline="344">pushfun</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_t_l__l_queue_1ade1f8e34538de4ae43f7ad2ca46ab493" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 STL_lQueue::top32</definition>
+        <argsstring>(u32 &amp;var)</argsstring>
+        <name>top32</name>
+        <qualifiedname>STL_lQueue::top32</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>显示队列顶成员 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&amp;var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>结果赋予给该变量 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>错误号 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" line="112" column="3" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.cpp" bodystart="314" bodyend="320"/>
+        <references refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5ad39f1a970bf2ee35cee3b69168e7d4d1" compoundref="_s_t_l___queue_8h" startline="47">QUEUES_EMPTY</references>
+        <references refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5a277fc31bdbe46a70ffc98da7a7468162" compoundref="_s_t_l___queue_8h" startline="46">QUEUES_OK</references>
+        <references refid="class_s_t_l__l_queue_1a1abec6afbc25d3cc7b3e3cc94c265f9c" compoundref="_s_t_l___queue_8cpp" startline="254" endline="258">top</references>
+        <referencedby refid="class_s_t_l__l_queue_1a4bf8d4647c741289056d30184e97531b" compoundref="_s_t_l___queue_8cpp" startline="326" endline="330">poptop32</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_t_l__l_queue_1a4bf8d4647c741289056d30184e97531b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref></type>
+        <definition>u32 STL_lQueue::poptop32</definition>
+        <argsstring>(void)</argsstring>
+        <name>poptop32</name>
+        <qualifiedname>STL_lQueue::poptop32</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>显示并且弹出一个队列顶成员 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>返回弹出的数值 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" line="113" column="4" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.cpp" bodystart="326" bodyend="330"/>
+        <references refid="class_s_t_l__l_queue_1a9c9a5811f43677f8d70d19377e276510" compoundref="_s_t_l___queue_8cpp" startline="235" endline="246">pop</references>
+        <references refid="class_s_t_l__l_queue_1ade1f8e34538de4ae43f7ad2ca46ab493" compoundref="_s_t_l___queue_8cpp" startline="314" endline="320">top32</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_t_l__l_queue_1ad702c50174ed400838db74915c0eefda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 STL_lQueue::pushfun</definition>
+        <argsstring>(void(*fun)(void))</argsstring>
+        <name>pushfun</name>
+        <qualifiedname>STL_lQueue::pushfun</qualifiedname>
+        <param>
+          <type>void(*)(void)</type>
+          <declname>fun</declname>
+        </param>
+        <briefdescription>
+<para>压入一个void(*)(void)函数指针 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>*fun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>需要压入的函数 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>错误号 </para>
+</simplesect>
+<simplesect kind="note"><para>如果有个函数是 void fun(void); 可以通过pushfun(fun);将其压入 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" line="115" column="3" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.cpp" bodystart="341" bodyend="344"/>
+        <references refid="class_s_t_l__l_queue_1a1231a845c0a916e43c74a18c8b7c1920" compoundref="_s_t_l___queue_8cpp" startline="302" endline="307">push32</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>一个队列的类 </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>使用链表重新分配方式组织 队列的内存空间是非连续的,适合快速交换数据 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>STL_lQueue</label>
+        <link refid="class_s_t_l__l_queue"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Hdat</edgelabel>
+          <edgelabel>Tdat</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_lQueue</label>
+        <link refid="struct__l_queue"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>back</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" line="98" column="1" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" bodystart="98" bodyend="121"/>
+    <listofallmembers>
+      <member refid="class_s_t_l__l_queue_1aff375614989295d36b7b30467946332f" prot="private" virt="non-virtual"><scope>STL_lQueue</scope><name>Hdat</name></member>
+      <member refid="class_s_t_l__l_queue_1aa30f82a9e8ccf14839fb0d4bc0060428" prot="private" virt="non-virtual"><scope>STL_lQueue</scope><name>mem</name></member>
+      <member refid="class_s_t_l__l_queue_1a9c9a5811f43677f8d70d19377e276510" prot="public" virt="non-virtual"><scope>STL_lQueue</scope><name>pop</name></member>
+      <member refid="class_s_t_l__l_queue_1a4bf8d4647c741289056d30184e97531b" prot="public" virt="non-virtual"><scope>STL_lQueue</scope><name>poptop32</name></member>
+      <member refid="class_s_t_l__l_queue_1a4c67b2f6364aa9105e8754c51bb2ad6a" prot="public" virt="non-virtual"><scope>STL_lQueue</scope><name>poptop8</name></member>
+      <member refid="class_s_t_l__l_queue_1a32f62d0933c052bcebeb318c1230f3f7" prot="public" virt="non-virtual"><scope>STL_lQueue</scope><name>poptopfun</name></member>
+      <member refid="class_s_t_l__l_queue_1ab551099da5beb93d91db4472ffd4d5c3" prot="public" virt="non-virtual"><scope>STL_lQueue</scope><name>push</name></member>
+      <member refid="class_s_t_l__l_queue_1a1231a845c0a916e43c74a18c8b7c1920" prot="public" virt="non-virtual"><scope>STL_lQueue</scope><name>push32</name></member>
+      <member refid="class_s_t_l__l_queue_1af2ee00997d848e132c3140e347b7220c" prot="public" virt="non-virtual"><scope>STL_lQueue</scope><name>push8</name></member>
+      <member refid="class_s_t_l__l_queue_1ad702c50174ed400838db74915c0eefda" prot="public" virt="non-virtual"><scope>STL_lQueue</scope><name>pushfun</name></member>
+      <member refid="class_s_t_l__l_queue_1a144e383b154698f69348bb8f901bdb81" prot="public" virt="non-virtual"><scope>STL_lQueue</scope><name>STL_lQueue</name></member>
+      <member refid="class_s_t_l__l_queue_1a5019da13d4ba25f2bf7668770be14cfd" prot="private" virt="non-virtual"><scope>STL_lQueue</scope><name>Tdat</name></member>
+      <member refid="class_s_t_l__l_queue_1a1abec6afbc25d3cc7b3e3cc94c265f9c" prot="public" virt="non-virtual"><scope>STL_lQueue</scope><name>top</name></member>
+      <member refid="class_s_t_l__l_queue_1ade1f8e34538de4ae43f7ad2ca46ab493" prot="public" virt="non-virtual"><scope>STL_lQueue</scope><name>top32</name></member>
+      <member refid="class_s_t_l__l_queue_1a7ff92acc4b520646801c93816faf2f07" prot="public" virt="non-virtual"><scope>STL_lQueue</scope><name>top8</name></member>
+      <member refid="class_s_t_l__l_queue_1a9c77d831feed1543e4fdefc811580a51" prot="public" virt="non-virtual"><scope>STL_lQueue</scope><name>~STL_lQueue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

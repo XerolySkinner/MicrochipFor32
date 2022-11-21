@@ -1,0 +1,415 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_inv__mpu_8c" xml:lang="zh">
+<title>D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c 文件参考</title>
+<indexterm><primary>D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c</primary></indexterm>
+<para>
+
+<para>An I2C-based driver for Invensense gyroscopes. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;stdio.h&gt;<?linebreak?>#include &lt;stdlib.h&gt;<?linebreak?>#include &lt;string.h&gt;<?linebreak?>#include &lt;math.h&gt;<?linebreak?>#include &quot;inv_mpu.h&quot;<?linebreak?>#include &quot;inv_mpu_dmp_motion_driver.h&quot;<?linebreak?>#include &quot;mpu6050.h&quot;<?linebreak?>#include &quot;usart.h&quot;<?linebreak?>#include &quot;varint.h&quot;<?linebreak?></programlisting>inv_mpu.c 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="inv__mpu_8c__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>类    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structgyro__reg__s">gyro_reg_s</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structhw__s">hw_s</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmotion__int__cache__s">motion_int_cache_s</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structchip__cfg__s">chip_cfg_s</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structtest__s">test_s</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structgyro__state__s">gyro_state_s</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>宏定义    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga6d132f914f18cb144a0eaf36312045c8">MPU6050</link></para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaf5aa4c072d42b67d74043f642b68ddd7">MOTION_DRIVER_TARGET_MSP430</link></para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaa248719e0ea03e6601004693d74890e0">i2c_write</link>&#160;&#160;&#160;<link linkend="_mpu6050_8cpp_1a59b1c26b234be88e97435a1b3c061330">MPU_Write_Len</link></para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga838d8f1c7b0d8cc83923b93bbafe1b33">i2c_read</link>&#160;&#160;&#160;<link linkend="_mpu6050_8cpp_1a63161fa966899e4e7c5791e40ebf2b0a">MPU_Read_Len</link></para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gae36aca5baf9b6b7d74992aef00686d67">delay_ms</link>&#160;&#160;&#160;HAL_Delay</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga3e6b6bc6d1cd2956353a31bfadd3c332">get_ms</link>&#160;&#160;&#160;<link linkend="_group___d_r_i_v_e_r_s_1gafa3071c8321f6e8dd2036be8a1e57ad0">mget_ms</link></para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga2905fba7885cd95057e1655cb4d16bda">log_i</link>&#160;&#160;&#160;<link linkend="_group___d_r_i_v_e_r_s_1ga69f90a1116c37ff659a096f2932c3988">log_none</link></para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gab354affc295f7d61fe8a355c9361cc5a">log_e</link>&#160;&#160;&#160;<link linkend="_group___d_r_i_v_e_r_s_1ga69f90a1116c37ff659a096f2932c3988">log_none</link></para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga95bcc5f260df5ce993730008a1dcb45a">fabs</link>&#160;&#160;&#160;fabsf</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gac6afabdc09a49a433ee19d8a9486056d">min</link>(a,  b)&#160;&#160;&#160;((a&lt;b)?a:b)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gac52d7caf4efc485ef6faa1211bfe60dc">BIT_I2C_MST_VDDIO</link>&#160;&#160;&#160;(0x80)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gae3c4a18accb84992faaf2534a84a147c">BIT_FIFO_EN</link>&#160;&#160;&#160;(0x40)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga02c3e9ddd63128f1c3cf50bf1e9b5fe6">BIT_DMP_EN</link>&#160;&#160;&#160;(0x80)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaeae2cc64314ad05f3a93d2358a2369db">BIT_FIFO_RST</link>&#160;&#160;&#160;(0x04)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga37d5ceb74c3568e4bab6dcdd0afaa95b">BIT_DMP_RST</link>&#160;&#160;&#160;(0x08)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gafb9b49ce5dd973b3c29ae72680924fa7">BIT_FIFO_OVERFLOW</link>&#160;&#160;&#160;(0x10)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga45eec9dbc46778c356703dcf90b9e0c3">BIT_DATA_RDY_EN</link>&#160;&#160;&#160;(0x01)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga4dc5309ed09fc683d8e5a247feaad69d">BIT_DMP_INT_EN</link>&#160;&#160;&#160;(0x02)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga6a8f2f7f3dd17bc05d9c6286d15c7ada">BIT_MOT_INT_EN</link>&#160;&#160;&#160;(0x40)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga2d9aff1be96b1fc021ca96f251c3e72b">BITS_FSR</link>&#160;&#160;&#160;(0x18)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga4d83411e736da86163a61828816a200a">BITS_LPF</link>&#160;&#160;&#160;(0x07)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga3c9c0234d4a71c9d35bb0da64ea867eb">BITS_HPF</link>&#160;&#160;&#160;(0x07)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga1823f90ac353cf4cde25d297a8627dd4">BITS_CLK</link>&#160;&#160;&#160;(0x07)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga3769fd3fa71deaef1e77ce14c26f679d">BIT_FIFO_SIZE_1024</link>&#160;&#160;&#160;(0x40)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga0fa95b278851b0c05a9995f65ba2b895">BIT_FIFO_SIZE_2048</link>&#160;&#160;&#160;(0x80)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gac067df9d789eaae04585abfc5ffdb2b6">BIT_FIFO_SIZE_4096</link>&#160;&#160;&#160;(0xC0)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaf4ce49fd1fc9b1461b5241f9ef4812f4">BIT_RESET</link>&#160;&#160;&#160;(0x80)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga1fed8bd436e9b7dfccb1cae99ca89103">BIT_SLEEP</link>&#160;&#160;&#160;(0x40)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gac4b33689dd697c1cf2411638a017c009">BIT_S0_DELAY_EN</link>&#160;&#160;&#160;(0x01)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga22e4452fe8abca7fe12a2dc45194e6df">BIT_S2_DELAY_EN</link>&#160;&#160;&#160;(0x04)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gabc5c2ee59baeb02a0f761740466f3c28">BITS_SLAVE_LENGTH</link>&#160;&#160;&#160;(0x0F)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga5e8f3ccff1b3eeb95a938b207ca873ff">BIT_SLAVE_BYTE_SW</link>&#160;&#160;&#160;(0x40)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaf616c3ecf97ffd7bde444f0b74e7453e">BIT_SLAVE_GROUP</link>&#160;&#160;&#160;(0x10)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gae9440f48b6d70d900366dc040a8714d7">BIT_SLAVE_EN</link>&#160;&#160;&#160;(0x80)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga8ef1963ec6fb3df5586e50959cf00a70">BIT_I2C_READ</link>&#160;&#160;&#160;(0x80)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gab470b625fa05ff228b3fdb94802b1c0d">BITS_I2C_MASTER_DLY</link>&#160;&#160;&#160;(0x1F)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gabcdedbd3098140aa14ad17bcaca8e176">BIT_AUX_IF_EN</link>&#160;&#160;&#160;(0x20)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga8467782bedc44051c95643e303543655">BIT_ACTL</link>&#160;&#160;&#160;(0x80)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga588b5a95724c4a68c6868faa78fd3a7f">BIT_LATCH_EN</link>&#160;&#160;&#160;(0x20)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga1f50796ca0363292d9ac9cc1d29d9225">BIT_ANY_RD_CLR</link>&#160;&#160;&#160;(0x10)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gadd12a8d89e1a4c4e008b12a96dd4c75d">BIT_BYPASS_EN</link>&#160;&#160;&#160;(0x02)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga75b1479e451b747afb3b24cbc4df99f7">BITS_WOM_EN</link>&#160;&#160;&#160;(0xC0)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga63e6f23af37626aa1498d8c248f259e7">BIT_LPA_CYCLE</link>&#160;&#160;&#160;(0x20)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gacfc46ee2ea036d16b3df45c8fb241b5b">BIT_STBY_XA</link>&#160;&#160;&#160;(0x20)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga49e6d38569bfc4b58ccc45dbb19001fa">BIT_STBY_YA</link>&#160;&#160;&#160;(0x10)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gafac8114288bae2db7ea7dbf0f6fb755c">BIT_STBY_ZA</link>&#160;&#160;&#160;(0x08)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga82256fedeffe5b2443ab3ae34cf032d9">BIT_STBY_XG</link>&#160;&#160;&#160;(0x04)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gabf1c0a844906a5e887a659971a4af417">BIT_STBY_YG</link>&#160;&#160;&#160;(0x02)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga30967a4efdf3c3f1e39814e72a4168b0">BIT_STBY_ZG</link>&#160;&#160;&#160;(0x01)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga04a57159e34387dafe9b86b171c4654c">BIT_STBY_XYZA</link>&#160;&#160;&#160;(<link linkend="_group___d_r_i_v_e_r_s_1gacfc46ee2ea036d16b3df45c8fb241b5b">BIT_STBY_XA</link> | <link linkend="_group___d_r_i_v_e_r_s_1ga49e6d38569bfc4b58ccc45dbb19001fa">BIT_STBY_YA</link> | <link linkend="_group___d_r_i_v_e_r_s_1gafac8114288bae2db7ea7dbf0f6fb755c">BIT_STBY_ZA</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga4e2ef22b94b90f9b83394dfe1f688ce4">BIT_STBY_XYZG</link>&#160;&#160;&#160;(<link linkend="_group___d_r_i_v_e_r_s_1ga82256fedeffe5b2443ab3ae34cf032d9">BIT_STBY_XG</link> | <link linkend="_group___d_r_i_v_e_r_s_1gabf1c0a844906a5e887a659971a4af417">BIT_STBY_YG</link> | <link linkend="_group___d_r_i_v_e_r_s_1ga30967a4efdf3c3f1e39814e72a4168b0">BIT_STBY_ZG</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga973c680573b37fc359fc68d0707da355">MAX_PACKET_LENGTH</link>&#160;&#160;&#160;(12)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_inv__mpu_8c_1a7750730ae7e5c713b619e347d44185fe">LOAD_CHUNK</link>&#160;&#160;&#160;(16)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga0c2ff73765f99e113d4f99826f9601e5">q30</link>&#160;&#160;&#160;1073741824.0f</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>枚举    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_group___d_r_i_v_e_r_s_1ga91c762a5bd71461f7911dc49ee7696e9">lpf_e</link> { <?linebreak?><link linkend="_group___d_r_i_v_e_r_s_1gga91c762a5bd71461f7911dc49ee7696e9a9f0263fbbdccd3c5a18fcb65be278d24">INV_FILTER_256HZ_NOLPF2</link> = 0
+, <link linkend="_group___d_r_i_v_e_r_s_1gga91c762a5bd71461f7911dc49ee7696e9ab58e52e0b6be4cbaf0c7f32705a9fcec">INV_FILTER_188HZ</link>
+, <link linkend="_group___d_r_i_v_e_r_s_1gga91c762a5bd71461f7911dc49ee7696e9a0f288da0c97b325a6cb57f1223f0cf98">INV_FILTER_98HZ</link>
+, <link linkend="_group___d_r_i_v_e_r_s_1gga91c762a5bd71461f7911dc49ee7696e9a995b18a52a5bd919aa9c1411a2292110">INV_FILTER_42HZ</link>
+, <?linebreak?><link linkend="_group___d_r_i_v_e_r_s_1gga91c762a5bd71461f7911dc49ee7696e9aebecb86604e475ed8e2cb68340010ff1">INV_FILTER_20HZ</link>
+, <link linkend="_group___d_r_i_v_e_r_s_1gga91c762a5bd71461f7911dc49ee7696e9a327619f406c6b2f6a221793881013508">INV_FILTER_10HZ</link>
+, <link linkend="_group___d_r_i_v_e_r_s_1gga91c762a5bd71461f7911dc49ee7696e9abdaaf85666fd6a490ee01dcd8a315678">INV_FILTER_5HZ</link>
+, <link linkend="_group___d_r_i_v_e_r_s_1gga91c762a5bd71461f7911dc49ee7696e9a76de97a6c2f8eb3c5d1a73d717513f5d">INV_FILTER_2100HZ_NOLPF</link>
+, <?linebreak?><link linkend="_group___d_r_i_v_e_r_s_1gga91c762a5bd71461f7911dc49ee7696e9a053f39f04904f6103090bcba3002c4a3">NUM_FILTER</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_group___d_r_i_v_e_r_s_1ga83acdc0eb37e8bfe0c2ae2348ded0a90">gyro_fsr_e</link> { <?linebreak?><link linkend="_group___d_r_i_v_e_r_s_1gga83acdc0eb37e8bfe0c2ae2348ded0a90a5b8251a49db5cb8a676076b0b308ae35">INV_FSR_250DPS</link> = 0
+, <link linkend="_group___d_r_i_v_e_r_s_1gga83acdc0eb37e8bfe0c2ae2348ded0a90a50901470ff389927fd010081e2b8fd09">INV_FSR_500DPS</link>
+, <link linkend="_group___d_r_i_v_e_r_s_1gga83acdc0eb37e8bfe0c2ae2348ded0a90aee922e0daa4fbb404c3db6c49d897a13">INV_FSR_1000DPS</link>
+, <link linkend="_group___d_r_i_v_e_r_s_1gga83acdc0eb37e8bfe0c2ae2348ded0a90ac0c37efc1c8acd6f70c0c5a768e5b8be">INV_FSR_2000DPS</link>
+, <?linebreak?><link linkend="_group___d_r_i_v_e_r_s_1gga83acdc0eb37e8bfe0c2ae2348ded0a90ab50b300433c5bc3cbc7ae8adb980c815">NUM_GYRO_FSR</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_group___d_r_i_v_e_r_s_1gaec8501b935143099e5f729dee221a81e">accel_fsr_e</link> { <?linebreak?><link linkend="_group___d_r_i_v_e_r_s_1ggaec8501b935143099e5f729dee221a81eae27c6f69463dab7de81fac0c51ff8aa7">INV_FSR_2G</link> = 0
+, <link linkend="_group___d_r_i_v_e_r_s_1ggaec8501b935143099e5f729dee221a81eaa91e3a89d0bbd01149fe71148595be6d">INV_FSR_4G</link>
+, <link linkend="_group___d_r_i_v_e_r_s_1ggaec8501b935143099e5f729dee221a81ea0a40371bdda397d234c53d0ee2f3be8b">INV_FSR_8G</link>
+, <link linkend="_group___d_r_i_v_e_r_s_1ggaec8501b935143099e5f729dee221a81ea6712e8563c97c11b458ef721d4f5f9d5">INV_FSR_16G</link>
+, <?linebreak?><link linkend="_group___d_r_i_v_e_r_s_1ggaec8501b935143099e5f729dee221a81ea6d466b2f73b176f1dfc8a3f94ae8a4df">NUM_ACCEL_FSR</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_group___d_r_i_v_e_r_s_1ga75570f009627c6f4ddfb2d936d81e207">clock_sel_e</link> { <link linkend="_group___d_r_i_v_e_r_s_1gga75570f009627c6f4ddfb2d936d81e207a92059acf8d0ff5b7e12580c15f88466f">INV_CLK_INTERNAL</link> = 0
+, <link linkend="_group___d_r_i_v_e_r_s_1gga75570f009627c6f4ddfb2d936d81e207a01b240917a78674d3e387110a6a8f94c">INV_CLK_PLL</link>
+, <link linkend="_group___d_r_i_v_e_r_s_1gga75570f009627c6f4ddfb2d936d81e207a7f075b0360037232fdf24f90de7be1d7">NUM_CLK</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_group___d_r_i_v_e_r_s_1ga23c3fcde795e5aa2b141232d490c9ca7">lp_accel_rate_e</link> { <link linkend="_group___d_r_i_v_e_r_s_1gga23c3fcde795e5aa2b141232d490c9ca7ab44c7d0127a9466747853533a537b567">INV_LPA_1_25HZ</link>
+, <link linkend="_group___d_r_i_v_e_r_s_1gga23c3fcde795e5aa2b141232d490c9ca7a474cac76bff369dd656cc973207a1ca5">INV_LPA_5HZ</link>
+, <link linkend="_group___d_r_i_v_e_r_s_1gga23c3fcde795e5aa2b141232d490c9ca7accaaf47c58dfe32cbf2ffa11fdb83108">INV_LPA_20HZ</link>
+, <link linkend="_group___d_r_i_v_e_r_s_1gga23c3fcde795e5aa2b141232d490c9ca7a798d2b86eafcf3fc7c7fe775f46cb4cb">INV_LPA_40HZ</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>函数    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_group___d_r_i_v_e_r_s_1ga69f90a1116c37ff659a096f2932c3988">log_none</link> (char *fmt,...)</para>
+</listitem>
+            <listitem><para>static int <link linkend="_group___d_r_i_v_e_r_s_1gafd5ebff6b0179e1dce0b68c2272cae07">set_int_enable</link> (unsigned char enable)</para>
+
+<para>Enable/disable data ready interrupt. If the DMP is on, the DMP interrupt is enabled. Otherwise, the data ready interrupt is used. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga0e1201ecfd8453f1d89e4299528baaf6">mpu_reg_dump</link> (void)</para>
+
+<para>Register dump for testing. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga5c35a3363337014e11769a0ea7c0dfa9">mpu_read_reg</link> (unsigned char <link linkend="_group___d_r_i_v_e_r_s_1ga5448c351fc95ff052b110eee80e5f75c">reg</link>, unsigned char *data)</para>
+
+<para>Read from a single register. NOTE: The memory and FIFO read/write registers cannot be accessed. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gac48a36b51e23bc4191ec13916bbb9d0b">mpu_init</link> (void)</para>
+
+<para>Initialize hardware. Initial configuration:<?linebreak?>Gyro FSR: +/- 2000DPS<?linebreak?>Accel FSR +/- 2G<?linebreak?>DLPF: 42Hz<?linebreak?>FIFO rate: 50Hz<?linebreak?>Clock source: Gyro PLL<?linebreak?>FIFO: Disabled.<?linebreak?>Data ready interrupt: Disabled, active low, unlatched. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga3a4fea75686ab7d2e68634e81ccac04c">mpu_lp_accel_mode</link> (unsigned char rate)</para>
+
+<para>Enter low-power accel-only mode. In low-power accel mode, the chip goes to sleep and only wakes up to sample the accelerometer at one of the following frequencies: <?linebreak?> MPU6050: 1.25Hz, 5Hz, 20Hz, 40Hz <?linebreak?> MPU6500: 1.25Hz, 2.5Hz, 5Hz, 10Hz, 20Hz, 40Hz, 80Hz, 160Hz, 320Hz, 640Hz <?linebreak?> If the requested rate is not one listed above, the device will be set to the next highest rate. Requesting a rate above the maximum supported frequency will result in an error. <?linebreak?> To select a fractional wake-up frequency, round down the value passed to <emphasis>rate</emphasis>. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga5555854590ad11495c0e30401294bae2">mpu_get_gyro_reg</link> (short *data, unsigned long *timestamp)</para>
+
+<para>Read raw gyro data directly from the registers. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gae4ae960e5df78049ece2647772a3d809">mpu_get_accel_reg</link> (short *data, unsigned long *timestamp)</para>
+
+<para>Read raw accel data directly from the registers. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gaa449b565a157b4b8ca0f491b7ed46018">mpu_get_temperature</link> (long *data, unsigned long *timestamp)</para>
+
+<para>Read temperature data directly from the registers. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga4968cc2ec80f0da0d72436551c81f134">mpu_set_accel_bias</link> (const long *accel_bias)</para>
+
+<para>Push biases to the accel bias registers. This function expects biases relative to the current sensor output, and these biases will be added to the factory-supplied values. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gaf23e9f57c0059be6ec57862f0584de10">mpu_reset_fifo</link> (void)</para>
+
+<para>Reset FIFO read/write pointers. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gaf973c32c73ba912ff512aab948fc31ca">mpu_get_gyro_fsr</link> (unsigned short *fsr)</para>
+
+<para>Get the gyro full-scale range. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gad09e6031c8677adc0b8a39b6deea8e27">mpu_set_gyro_fsr</link> (unsigned short fsr)</para>
+
+<para>Set the gyro full-scale range. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gab6087a15ee23db23b6aec41590329a60">mpu_get_accel_fsr</link> (unsigned char *fsr)</para>
+
+<para>Get the accel full-scale range. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga2713a96af104cfb2ae8e0ed4c3718119">mpu_set_accel_fsr</link> (unsigned char fsr)</para>
+
+<para>Set the accel full-scale range. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gaa95c7e216dcb2d888e9796001ca555f8">mpu_get_lpf</link> (unsigned short *lpf)</para>
+
+<para>Get the current DLPF setting. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga5661a9dee25152166769910767a2a93d">mpu_set_lpf</link> (unsigned short lpf)</para>
+
+<para>Set digital low pass filter. The following LPF settings are supported: 188, 98, 42, 20, 10, 5. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga2487dd551b701c1c7ed4d6335f02b2f1">mpu_get_sample_rate</link> (unsigned short *rate)</para>
+
+<para>Get sampling rate. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga0144d666a67a82888b8580002afe8b55">mpu_set_sample_rate</link> (unsigned short rate)</para>
+
+<para>Set sampling rate. Sampling rate must be between 4Hz and 1kHz. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gab5a45cd7783f6937788c0decb0b18b16">mpu_get_compass_sample_rate</link> (unsigned short *rate)</para>
+
+<para>Get compass sampling rate. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga78da3828de0ef9d080c4d03e7bc45e7b">mpu_set_compass_sample_rate</link> (unsigned short rate)</para>
+
+<para>Set compass sampling rate. The compass on the auxiliary I2C bus is read by the MPU hardware at a maximum of 100Hz. The actual rate can be set to a fraction of the gyro sampling rate. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga023c0cc94aa8f162dc33b15048a49421">mpu_get_gyro_sens</link> (float *sens)</para>
+
+<para>Get gyro sensitivity scale factor. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga620408949052b96e856cad920f856583">mpu_get_accel_sens</link> (unsigned short *sens)</para>
+
+<para>Get accel sensitivity scale factor. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga093f11eb10b2639a4b9fe344ea348c54">mpu_get_fifo_config</link> (unsigned char *sensors)</para>
+
+<para>Get current FIFO configuration. <emphasis>sensors</emphasis> can contain a combination of the following flags: <?linebreak?> INV_X_GYRO, INV_Y_GYRO, INV_Z_GYRO <?linebreak?> INV_XYZ_GYRO <?linebreak?> INV_XYZ_ACCEL </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gababbdda287e1f19323489f90a0889dd7">mpu_configure_fifo</link> (unsigned char sensors)</para>
+
+<para>Select which sensors are pushed to FIFO. <emphasis>sensors</emphasis> can contain a combination of the following flags: <?linebreak?> INV_X_GYRO, INV_Y_GYRO, INV_Z_GYRO <?linebreak?> INV_XYZ_GYRO <?linebreak?> INV_XYZ_ACCEL </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gaec8fa7a067988d174516bb735a4a0bc9">mpu_get_power_state</link> (unsigned char *power_on)</para>
+
+<para>Get current power state. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga6e77e7cc1cf6be5e8fdf617c5b4586d1">mpu_set_sensors</link> (unsigned char sensors)</para>
+
+<para>Turn specific sensors on/off. <emphasis>sensors</emphasis> can contain a combination of the following flags: <?linebreak?> INV_X_GYRO, INV_Y_GYRO, INV_Z_GYRO <?linebreak?> INV_XYZ_GYRO <?linebreak?> INV_XYZ_ACCEL <?linebreak?> INV_XYZ_COMPASS </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga0afd02d8c76d3278b488ef7038c26e3e">mpu_get_int_status</link> (short *status)</para>
+
+<para>Read the MPU interrupt status registers. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga2da20453aafbbba4a0f6fb9fbdd25572">mpu_read_fifo</link> (short *gyro, short *accel, unsigned long *timestamp, unsigned char *sensors, unsigned char *more)</para>
+
+<para>Get one packet from the FIFO. If <emphasis>sensors</emphasis> does not contain a particular sensor, disregard the data returned to that pointer. <?linebreak?> <emphasis>sensors</emphasis> can contain a combination of the following flags: <?linebreak?> INV_X_GYRO, INV_Y_GYRO, INV_Z_GYRO <?linebreak?> INV_XYZ_GYRO <?linebreak?> INV_XYZ_ACCEL <?linebreak?> If the FIFO has no new data, <emphasis>sensors</emphasis> will be zero. <?linebreak?> If the FIFO is disabled, <emphasis>sensors</emphasis> will be zero and this function will return a non-zero error code. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga13593044949b460e9f571eb57e9a0788">mpu_read_fifo_stream</link> (unsigned short length, unsigned char *data, unsigned char *more)</para>
+
+<para>Get one unparsed packet from the FIFO. This function should be used if the packet is to be parsed elsewhere. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga36f70f38371b48d81094d3b061233e15">mpu_set_bypass</link> (unsigned char bypass_on)</para>
+
+<para>Set device to bypass mode. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gacc92fb1489ef32a04bcb6b0ebde4d657">mpu_set_int_level</link> (unsigned char active_low)</para>
+
+<para>Set interrupt level. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga653cb855300bff9285ce4b8dca6a503b">mpu_set_int_latched</link> (unsigned char enable)</para>
+
+<para>Enable latched interrupts. Any MPU register will clear the interrupt. </para>
+</listitem>
+            <listitem><para>static int <link linkend="_group___d_r_i_v_e_r_s_1gab7ebbe13328466605a20f6ce1a106de8">get_accel_prod_shift</link> (float *st_shift)</para>
+</listitem>
+            <listitem><para>static int <link linkend="_group___d_r_i_v_e_r_s_1gaab48ddb3bd05cea3f0fc85a68db9934d">accel_self_test</link> (long *bias_regular, long *bias_st)</para>
+</listitem>
+            <listitem><para>static int <link linkend="_group___d_r_i_v_e_r_s_1ga267d6f443d5be8b2a7a06aa007116f7a">gyro_self_test</link> (long *bias_regular, long *bias_st)</para>
+</listitem>
+            <listitem><para>static int <link linkend="_group___d_r_i_v_e_r_s_1ga8d087842b07e9710be2267adea4b497a">get_st_biases</link> (long *gyro, long *accel, unsigned char hw_test)</para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga3773dc98eb1ba15da0091ae75abcf62f">mpu_run_self_test</link> (long *gyro, long *accel)</para>
+
+<para>Trigger gyro/accel/compass self-test. On success/error, the self-test returns a mask representing the sensor(s) that failed. For each bit, a one (1) represents a &quot;pass&quot; case; conversely, a zero (0) indicates a failure. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gafea59910bc3dd30ba3356b1c75213a5f">mpu_write_mem</link> (unsigned short mem_addr, unsigned short length, unsigned char *data)</para>
+
+<para>Write to the DMP memory. This function prevents I2C writes past the bank boundaries. The DMP memory is only accessible when the chip is awake. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga3374bececb6743893c9eab27645c1182">mpu_read_mem</link> (unsigned short mem_addr, unsigned short length, unsigned char *data)</para>
+
+<para>Read from the DMP memory. This function prevents I2C reads past the bank boundaries. The DMP memory is only accessible when the chip is awake. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga8fbdfe1a50285d4ab438e29c2efc70f5">mpu_load_firmware</link> (unsigned short length, const unsigned char *firmware, unsigned short start_addr, unsigned short sample_rate)</para>
+
+<para>Load and verify DMP image. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga68ed20e6c9663cd7c50469329af8715f">mpu_set_dmp_state</link> (unsigned char enable)</para>
+
+<para>Enable/disable DMP support. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gafe0f60ed0d7f8fd2dcd55d45b95a2363">mpu_get_dmp_state</link> (unsigned char *enabled)</para>
+
+<para>Get DMP state. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga4764ce0ba4e07a4c774f69ab3b83d1f9">setup_compass</link> (void)</para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga65e6b0ce980b8c0255d7be9b55c88c08">mpu_get_compass_reg</link> (short *data, unsigned long *timestamp)</para>
+
+<para>Read raw compass data. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gade8589573d09e0f14b84130428f286df">mpu_get_compass_fsr</link> (unsigned short *fsr)</para>
+
+<para>Get the compass full-scale range. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga7d0b3259346898ccd1ba6ef78bf7df97">mpu_lp_motion_interrupt</link> (unsigned short thresh, unsigned char time, unsigned char lpa_freq)</para>
+
+<para>Enters LP accel motion interrupt mode. The behavior of this feature is very different between the MPU6050 and the MPU6500. Each chip&apos;s version of this feature is explained below. </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_group___d_r_i_v_e_r_s_1gaff893f93277595387023c71d46b03c42">run_self_test</link> (void)</para>
+</listitem>
+            <listitem><para>unsigned short <link linkend="_group___d_r_i_v_e_r_s_1ga3ff6037a69f37bb6174355936ad67ef3">inv_orientation_matrix_to_scalar</link> (const signed char *mtx)</para>
+</listitem>
+            <listitem><para>unsigned short <link linkend="_group___d_r_i_v_e_r_s_1ga2b58dae1c0567f3f9f6dcbfb07476de7">inv_row_2_scale</link> (const signed char *row)</para>
+</listitem>
+            <listitem><para>void <link linkend="_group___d_r_i_v_e_r_s_1gafa3071c8321f6e8dd2036be8a1e57ad0">mget_ms</link> (unsigned long *time)</para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_group___d_r_i_v_e_r_s_1gafac8fcbf24cfa1b69737e02238580f3a">mpu_dmp_init</link> (void)</para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_group___d_r_i_v_e_r_s_1gacb825f2fd99c3044d012a9b25608cc18">mpu_dmp_get_data</link> (float *pitch, float *roll, float *yaw)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>变量    </title>
+        <itemizedlist>
+            <listitem><para>const struct <link linkend="_structgyro__reg__s">gyro_reg_s</link> <link linkend="_group___d_r_i_v_e_r_s_1ga5448c351fc95ff052b110eee80e5f75c">reg</link></para>
+</listitem>
+            <listitem><para>const struct <link linkend="_structhw__s">hw_s</link> <link linkend="_group___d_r_i_v_e_r_s_1ga7fefd0bb47e09b7e39e25e9795cd7edc">hw</link></para>
+</listitem>
+            <listitem><para>const struct <link linkend="_structtest__s">test_s</link> <link linkend="_group___d_r_i_v_e_r_s_1ga1e8f8b1ef7fb2c429e1ce7c2f9985530">test</link></para>
+</listitem>
+            <listitem><para>static struct <link linkend="_structgyro__state__s">gyro_state_s</link> <link linkend="_group___d_r_i_v_e_r_s_1ga3854b4875f6db26c2a1a707885f1fc78">st</link></para>
+</listitem>
+            <listitem><para>static signed char <link linkend="_group___d_r_i_v_e_r_s_1gadcca9e3dfdbc53cc5509fabdaede02b8">gyro_orientation</link> [9]</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>An I2C-based driver for Invensense gyroscopes. </para>
+
+<para>This driver currently works for the following devices: MPU6050 MPU6500 MPU9150 (or MPU6050 w/ AK8975 on the auxiliary bus) MPU9250 (or MPU6500 w/ AK8963 on the auxiliary bus) </para>
+<para>
+在文件 <link linkend="_inv__mpu_8c_source">inv_mpu.c</link> 中定义.</para>
+</section>
+<section>
+<title>宏定义说明</title>
+<anchor xml:id="_inv__mpu_8c_1a7750730ae7e5c713b619e347d44185fe"/><section>
+    <title>LOAD_CHUNK</title>
+<indexterm><primary>LOAD_CHUNK</primary><secondary>inv_mpu.c</secondary></indexterm>
+<indexterm><primary>inv_mpu.c</primary><secondary>LOAD_CHUNK</secondary></indexterm>
+<para><computeroutput>#define LOAD_CHUNK&#160;&#160;&#160;(16)</computeroutput></para></section>
+</section>
+</section>

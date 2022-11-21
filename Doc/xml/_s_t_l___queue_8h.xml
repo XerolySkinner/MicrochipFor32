@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="_s_t_l___queue_8h" kind="file" language="C++">
+    <compoundname>STL_Queue.h</compoundname>
+    <includes refid="varint_8h" local="yes">varint.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includedby refid="_s_t_l___queue_8cpp" local="yes">D:/gitt/MicrochipFor32/STL_Device/STL_Queue.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h</label>
+        <link refid="_s_t_l___queue_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>varint.h</label>
+        <link refid="varint_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>D:/gitt/MicrochipFor32/STL_Device/STL_Queue.cpp</label>
+        <link refid="_s_t_l___queue_8cpp"/>
+      </node>
+      <node id="1">
+        <label>D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h</label>
+        <link refid="_s_t_l___queue_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_s_t_l__r_queue" prot="public">STL_rQueue</innerclass>
+    <innerclass refid="struct__l_queue" prot="public">_lQueue</innerclass>
+    <innerclass refid="class_s_t_l__l_queue" prot="public">STL_lQueue</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>QUEUES_RES</name>
+        <enumvalue id="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5a277fc31bdbe46a70ffc98da7a7468162" prot="public">
+          <name>QUEUES_OK</name>
+          <briefdescription>
+<para>成功 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5ad39f1a970bf2ee35cee3b69168e7d4d1" prot="public">
+          <name>QUEUES_EMPTY</name>
+          <briefdescription>
+<para>队列是空的 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5a3df7082063e14f0ae068a2feb3e4a03d" prot="public">
+          <name>QUEUES_REAL_ERROR</name>
+          <briefdescription>
+<para>重分配出错realloc </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5a0ecfdce5da7daaea657afe0c2060d8e6" prot="public">
+          <name>QUEUES_MALL_ERROR</name>
+          <briefdescription>
+<para>重分配出错malloc </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>队列的返回值 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" line="45" column="1" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" bodystart="45" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_s_t_l___queue_8h_1aada22826b142eb6c31504dc1b12452d6" prot="public" static="no">
+        <type>struct <ref refid="_s_t_l___queue_8h_1aada22826b142eb6c31504dc1b12452d6" kindref="member">_lQueues</ref></type>
+        <definition>typedef struct _lQueues _lQueues</definition>
+        <argsstring></argsstring>
+        <name>_lQueues</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" line="92" column="23" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>实现了STL库中的Queue </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*----------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>#<sp/><sp/>Copyright<sp/>(c)<sp/>2022<sp/>Yuankang<sp/>Liang(XerolySkinner)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>#<sp/><sp/>本软件按原样提供,无任何明示或暗示</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>#<sp/><sp/>在任何情况下,作者都不承担任何损害赔偿责任</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>#<sp/><sp/>使用的许可声明:</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>#<sp/><sp/>1.<sp/><sp/>不得歪曲本软件的来源,你不能声称你编写了原始软件.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>#<sp/><sp/>2.<sp/><sp/>免费授予以任何目的,前提是版权声明出现在所有副本中.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>并且版权声明和许可声明同时出现.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>#<sp/><sp/>3.<sp/><sp/>你有使用,复制,修改,分发,和销售本软件的许可.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>#<sp/><sp/>4.<sp/><sp/>如果你在产品中使用,产品文档中的声明是赞赏的但不是必须的.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>#<sp/><sp/>5.<sp/><sp/>本通知不得从任何来源删除或更改.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>#<sp/><sp/>Yuankang<sp/>Liang(XerolySkinner)</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>E-mail:zabbcccbbaz@163.com</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>QQ:2715099320</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>Mobile<sp/>Phone:13005636215</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>#<sp/><sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="varint_8h" kindref="compound">varint.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">//----------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>返回值枚举</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/></highlight></codeline>
+<codeline lineno="45" refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5" refkind="member"><highlight class="comment"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5" kindref="member">QUEUES_RES</ref><sp/>{</highlight></codeline>
+<codeline lineno="46" refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5a277fc31bdbe46a70ffc98da7a7468162" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5a277fc31bdbe46a70ffc98da7a7468162" kindref="member">QUEUES_OK</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5ad39f1a970bf2ee35cee3b69168e7d4d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5ad39f1a970bf2ee35cee3b69168e7d4d1" kindref="member">QUEUES_EMPTY</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5a3df7082063e14f0ae068a2feb3e4a03d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5a3df7082063e14f0ae068a2feb3e4a03d" kindref="member">QUEUES_REAL_ERROR</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5a0ecfdce5da7daaea657afe0c2060d8e6" kindref="member">QUEUES_MALL_ERROR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50" refid="_s_t_l___queue_8h_1aa246d039fae29502aba4ffde61bebaa5a0ecfdce5da7daaea657afe0c2060d8e6" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="52"><highlight class="comment">//----------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>类目</highlight></codeline>
+<codeline lineno="57" refid="class_s_t_l__r_queue" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_s_t_l__r_queue" kindref="compound">STL_rQueue</ref>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__r_queue_1aa590a265ee2309e6150adcdf377f32b6" kindref="member">STL_rQueue</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__r_queue_1a96e6153133db180421c9321fb6ee83a8" kindref="member">~STL_rQueue</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__r_queue_1a20a4e57dc9a4350f49cfada5cf083881" kindref="member">push</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>var);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__r_queue_1a6fcfa9e50f6719e2f3632a6ad333542f" kindref="member">pop</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__r_queue_1a3507658579a1abb5e50b34b6bb536ece" kindref="member">top</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref>&amp;<sp/>var);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__r_queue_1a9892dad9a7802f12a8bad524aefbe162" kindref="member">The_size</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__r_queue_1a3f1905efcb68f543a152abc8fa1214e3" kindref="member">The_room</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__r_queue_1a554dd220ac324bec51a6cde43116efc3" kindref="member">clean</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__r_queue_1a3431ef2eff0319a93be5dac50bd19b99" kindref="member">poptop</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__r_queue_1ac57bfdea03866852334cbf52e262e286" kindref="member">push32</ref>(<ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref><sp/>var);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__r_queue_1a9362012b2eda4207d130e03f420c11a8" kindref="member">poptop32</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__r_queue_1a6279ce46687da109354f7f84b979343f" kindref="member">pushfun</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(*fun)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="75" refid="class_s_t_l__r_queue_1a8deafb8a60277665e85b99deeff96d8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/><sp/><sp/><sp/>(*<ref refid="class_s_t_l__r_queue_1a8deafb8a60277665e85b99deeff96d8c" kindref="member">poptopfun</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">))(void);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="77" refid="class_s_t_l__r_queue_1a42636190858b2aa8bdf93b80f2e3ed33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__r_queue_1a42636190858b2aa8bdf93b80f2e3ed33" kindref="member">room</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>分配空间</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="class_s_t_l__r_queue_1ae5ab3dd9890cb990edaf511174da12a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__r_queue_1ae5ab3dd9890cb990edaf511174da12a1" kindref="member">size</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>已有成员</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="class_s_t_l__r_queue_1a32e298e5a9194d97492496f5f311068b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref>*<sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__r_queue_1a32e298e5a9194d97492496f5f311068b" kindref="member">dat</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>数据头</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="82"><highlight class="comment">//----------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>类目</highlight></codeline>
+<codeline lineno="87" refid="struct__l_queue" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__l_queue" kindref="compound">_lQueue</ref><sp/>{</highlight></codeline>
+<codeline lineno="88" refid="struct__l_queue_1a3be42777ab564c447ca2b0978e04ef68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__l_queue" kindref="compound">_lQueue</ref>*<sp/><ref refid="struct__l_queue_1a3be42777ab564c447ca2b0978e04ef68" kindref="member">back</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89" refid="struct__l_queue_1acc0ce814c36fdba1027d1639236c14cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__l_queue_1acc0ce814c36fdba1027d1639236c14cb" kindref="member">dat</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90" refid="struct__l_queue_1a87b92ef47f15b682394c69d2f687550a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__l_queue_1a87b92ef47f15b682394c69d2f687550a" kindref="member">size</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="92" refid="_s_t_l___queue_8h_1aada22826b142eb6c31504dc1b12452d6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="_s_t_l___queue_8h_1aada22826b142eb6c31504dc1b12452d6" kindref="member">_lQueues</ref><sp/><ref refid="_s_t_l___queue_8h_1aada22826b142eb6c31504dc1b12452d6" kindref="member">_lQueues</ref>;</highlight></codeline>
+<codeline lineno="98" refid="class_s_t_l__l_queue" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_s_t_l__l_queue" kindref="compound">STL_lQueue</ref><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__l_queue_1a144e383b154698f69348bb8f901bdb81" kindref="member">STL_lQueue</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__l_queue_1a9c77d831feed1543e4fdefc811580a51" kindref="member">~STL_lQueue</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__l_queue_1ab551099da5beb93d91db4472ffd4d5c3" kindref="member">push</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;<sp/>var,<sp/><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref><sp/>size);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__l_queue_1a9c9a5811f43677f8d70d19377e276510" kindref="member">pop</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__l_queue_1a1abec6afbc25d3cc7b3e3cc94c265f9c" kindref="member">top</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;<sp/>var,<sp/><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref>&amp;<sp/>size);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__l_queue_1af2ee00997d848e132c3140e347b7220c" kindref="member">push8</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>var);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__l_queue_1a7ff92acc4b520646801c93816faf2f07" kindref="member">top8</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref>&amp;<sp/>var);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__l_queue_1a4c67b2f6364aa9105e8754c51bb2ad6a" kindref="member">poptop8</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__l_queue_1a1231a845c0a916e43c74a18c8b7c1920" kindref="member">push32</ref>(<ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref><sp/>var);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__l_queue_1ade1f8e34538de4ae43f7ad2ca46ab493" kindref="member">top32</ref>(<ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref>&amp;<sp/>var);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__l_queue_1a4bf8d4647c741289056d30184e97531b" kindref="member">poptop32</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__l_queue_1ad702c50174ed400838db74915c0eefda" kindref="member">pushfun</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(*fun)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="116" refid="class_s_t_l__l_queue_1a32f62d0933c052bcebeb318c1230f3f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/><sp/><sp/><sp/>(*<ref refid="class_s_t_l__l_queue_1a32f62d0933c052bcebeb318c1230f3f7" kindref="member">poptopfun</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">))(void);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="118" refid="class_s_t_l__l_queue_1aa30f82a9e8ccf14839fb0d4bc0060428" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_t_l__l_queue_1aa30f82a9e8ccf14839fb0d4bc0060428" kindref="member">mem</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>已有成员</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="class_s_t_l__l_queue_1aff375614989295d36b7b30467946332f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__l_queue" kindref="compound">_lQueue</ref>*<sp/><sp/><sp/><sp/><ref refid="class_s_t_l__l_queue_1aff375614989295d36b7b30467946332f" kindref="member">Hdat</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>队列进入</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="class_s_t_l__l_queue_1a5019da13d4ba25f2bf7668770be14cfd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__l_queue" kindref="compound">_lQueue</ref>*<sp/><sp/><sp/><sp/><ref refid="class_s_t_l__l_queue_1a5019da13d4ba25f2bf7668770be14cfd" kindref="member">Tdat</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>队列弹出</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h"/>
+  </compounddef>
+</doxygen>

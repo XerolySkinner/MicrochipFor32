@@ -1,0 +1,1512 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="inv__mpu__dmp__motion__driver_8h" kind="file" language="C++">
+    <compoundname>inv_mpu_dmp_motion_driver.h</compoundname>
+    <includedby refid="inv__mpu_8c" local="yes">D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c</includedby>
+    <includedby refid="inv__mpu__dmp__motion__driver_8c" local="yes">D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c</label>
+        <link refid="inv__mpu_8c"/>
+      </node>
+      <node id="3">
+        <label>D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c</label>
+        <link refid="inv__mpu__dmp__motion__driver_8c"/>
+      </node>
+      <node id="1">
+        <label>D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h</label>
+        <link refid="inv__mpu__dmp__motion__driver_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1ga22a5ea75ee18a788b441f66fffe83586" prot="public" static="no">
+        <name>TAP_X</name>
+        <initializer>(0x01)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="20" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1ga762f9521bf33c9ba7a77595268b108ec" prot="public" static="no">
+        <name>TAP_Y</name>
+        <initializer>(0x02)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="21" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1gac2949c36d5f4eeb4769fdcf2d99284fd" prot="public" static="no">
+        <name>TAP_Z</name>
+        <initializer>(0x04)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="22" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1gaa2b8e1661eb53aeac3ff4877ff2b79d9" prot="public" static="no">
+        <name>TAP_XYZ</name>
+        <initializer>(0x07)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="23" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1gaa979b4cd872ade6f4904199e83e9f3f4" prot="public" static="no">
+        <name>TAP_X_UP</name>
+        <initializer>(0x01)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="25" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1gad3263c4a492cc11a014800d4a6e3311a" prot="public" static="no">
+        <name>TAP_X_DOWN</name>
+        <initializer>(0x02)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="26" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1ga70ea99c21d573b870b91909faf677107" prot="public" static="no">
+        <name>TAP_Y_UP</name>
+        <initializer>(0x03)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="27" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1ga3d35b3c219083d14f9fff4a9c65cf783" prot="public" static="no">
+        <name>TAP_Y_DOWN</name>
+        <initializer>(0x04)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="28" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1gab240d8ebc872ea183523f4b3c3f9e346" prot="public" static="no">
+        <name>TAP_Z_UP</name>
+        <initializer>(0x05)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="29" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1ga8f0f8c5db2a60932cfde68ca0b9c2032" prot="public" static="no">
+        <name>TAP_Z_DOWN</name>
+        <initializer>(0x06)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="30" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1ga5198482b1487f06b71c9393847ae1897" prot="public" static="no">
+        <name>ANDROID_ORIENT_PORTRAIT</name>
+        <initializer>(0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="32" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1ga388a7f6ac0d53cf96318b0bafa5c1c0a" prot="public" static="no">
+        <name>ANDROID_ORIENT_LANDSCAPE</name>
+        <initializer>(0x01)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="33" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1ga63b8f82e9d60a84b6fca8c680d78c866" prot="public" static="no">
+        <name>ANDROID_ORIENT_REVERSE_PORTRAIT</name>
+        <initializer>(0x02)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="34" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1ga98dc7e42de72097f62612c758de3ba16" prot="public" static="no">
+        <name>ANDROID_ORIENT_REVERSE_LANDSCAPE</name>
+        <initializer>(0x03)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="35" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1gaab5d80253aaee2470c95c6981b731255" prot="public" static="no">
+        <name>DMP_INT_GESTURE</name>
+        <initializer>(0x01)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="37" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1gaabccda0e9ccd1a2f4287d23fe4b0c776" prot="public" static="no">
+        <name>DMP_INT_CONTINUOUS</name>
+        <initializer>(0x02)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="38" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1ga87fac39cf95e2c56afdf507a986fa00b" prot="public" static="no">
+        <name>DMP_FEATURE_TAP</name>
+        <initializer>(0x001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="40" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1gaf2b250fc928390d562f7bd80300ce419" prot="public" static="no">
+        <name>DMP_FEATURE_ANDROID_ORIENT</name>
+        <initializer>(0x002)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="41" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1gabf442c0477f8f7704a8094519ddfe38e" prot="public" static="no">
+        <name>DMP_FEATURE_LP_QUAT</name>
+        <initializer>(0x004)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="42" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1gabcf6a5bc9703782d711d0c6ba92ade85" prot="public" static="no">
+        <name>DMP_FEATURE_PEDOMETER</name>
+        <initializer>(0x008)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="43" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1gae879a3c9729f9e1be5e6d7c9211c69c0" prot="public" static="no">
+        <name>DMP_FEATURE_6X_LP_QUAT</name>
+        <initializer>(0x010)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="44" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1gaaf0ac890c1f83106c08b722f1e865fdb" prot="public" static="no">
+        <name>DMP_FEATURE_GYRO_CAL</name>
+        <initializer>(0x020)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="45" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1ga9eeb257febe4a305df7ad4cf31dc2755" prot="public" static="no">
+        <name>DMP_FEATURE_SEND_RAW_ACCEL</name>
+        <initializer>(0x040)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="46" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1gaa59d3ed6f0cbc66e99ce637546434b34" prot="public" static="no">
+        <name>DMP_FEATURE_SEND_RAW_GYRO</name>
+        <initializer>(0x080)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="47" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1ga40462c6fd55b04b2f79723dd737ee795" prot="public" static="no">
+        <name>DMP_FEATURE_SEND_CAL_GYRO</name>
+        <initializer>(0x100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="48" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_r_i_v_e_r_s_1ga3d79cffe845a796a27d03432a1f2ade0" prot="public" static="no">
+        <name>INV_WXYZ_QUAT</name>
+        <initializer>(0x100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" line="50" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1ga66626a842452f444e9af29cb0d2c6150" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_load_motion_driver_firmware</definition>
+        <argsstring>(void)</argsstring>
+        <name>dmp_load_motion_driver_firmware</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Load the DMP with this image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="512" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="512" bodyend="516" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="53" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1ga304702b72a030fceea30b45d1ab53a5c" compoundref="inv__mpu__dmp__motion__driver_8c" startline="248">DMP_CODE_SIZE</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga18acad3bc779e5f0fcb478454ed3018c" compoundref="inv__mpu__dmp__motion__driver_8c" startline="250">dmp_memory</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga9d0f0425cbcb58186500cb8686e41e67" compoundref="inv__mpu__dmp__motion__driver_8c" startline="470">DMP_SAMPLE_RATE</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga8fbdfe1a50285d4ab438e29c2efc70f5" compoundref="inv__mpu_8c" startline="2336" endline="2370">mpu_load_firmware</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga4c3bab083aa4c83b435dcfa14b881165" compoundref="inv__mpu__dmp__motion__driver_8c" startline="458">sStartAddress</references>
+        <referencedby refid="group___d_r_i_v_e_r_s_1gafac8fcbf24cfa1b69737e02238580f3a" compoundref="inv__mpu_8c" startline="2937" endline="2963">mpu_dmp_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1ga5399728fd572a7694af20286cc9d4121" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_set_fifo_rate</definition>
+        <argsstring>(unsigned short rate)</argsstring>
+        <name>dmp_set_fifo_rate</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+<para>Set DMP output rate. Only used when DMP is on. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired fifo rate (Hz). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="684" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="684" bodyend="703" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="54" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1ga40938f669c5b33b4316a7a5fba679eba" compoundref="inv__mpu__dmp__motion__driver_8c" startline="115">CFG_6</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga155b1481095edac7a26c8c3d5b9c5a24" compoundref="inv__mpu__dmp__motion__driver_8c" startline="127">D_0_22</references>
+        <references refid="dmp_key_8h_1adc43f6e3194e06db0cb9ef1d76fc75fa" compoundref="dmp_key_8h" startline="379">DINAAA</references>
+        <references refid="dmp_key_8h_1a6afb3fa4c11350dbd2ab8cb2a486d441" compoundref="dmp_key_8h" startline="378">DINAAB</references>
+        <references refid="dmp_key_8h_1adc331c8f66eebd5902aaa688b2f92999" compoundref="dmp_key_8h" startline="381">DINADF</references>
+        <references refid="dmp_key_8h_1aaa9602f10af03cf274745cf22ec87667" compoundref="dmp_key_8h" startline="380">DINAF1</references>
+        <references refid="dmp_key_8h_1a02164a87762ad628851cb75fb3862e64" compoundref="dmp_key_8h" startline="377">DINAF2</references>
+        <references refid="dmp_key_8h_1a371499e1b724b447dfd2293c3567b5bb" compoundref="dmp_key_8h" startline="478">DINAFE</references>
+        <references refid="group___d_r_i_v_e_r_s_1gab873eceb75f8d47f6a04c9d2db1a36e5" compoundref="inv__mpu__dmp__motion__driver_8c" startline="499">dmp</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga9d0f0425cbcb58186500cb8686e41e67" compoundref="inv__mpu__dmp__motion__driver_8c" startline="470">DMP_SAMPLE_RATE</references>
+        <references refid="structdmp__s_1af3324bce8756b2cbf3cb0abcf022488c" compoundref="inv__mpu__dmp__motion__driver_8c" startline="486">dmp_s::fifo_rate</references>
+        <references refid="group___d_r_i_v_e_r_s_1gafea59910bc3dd30ba3356b1c75213a5f" compoundref="inv__mpu_8c" startline="2271" endline="2293">mpu_write_mem</references>
+        <referencedby refid="group___d_r_i_v_e_r_s_1gafac8fcbf24cfa1b69737e02238580f3a" compoundref="inv__mpu_8c" startline="2937" endline="2963">mpu_dmp_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1gaf3f9953bc04af751b1101700daffa951" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_get_fifo_rate</definition>
+        <argsstring>(unsigned short *rate)</argsstring>
+        <name>dmp_get_fifo_rate</name>
+        <param>
+          <type>unsigned short *</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+<para>Get DMP output rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current fifo rate (Hz). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="710" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="710" bodyend="714" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="55" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1gab873eceb75f8d47f6a04c9d2db1a36e5" compoundref="inv__mpu__dmp__motion__driver_8c" startline="499">dmp</references>
+        <references refid="structdmp__s_1af3324bce8756b2cbf3cb0abcf022488c" compoundref="inv__mpu__dmp__motion__driver_8c" startline="486">dmp_s::fifo_rate</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1ga70c485bdfa30515e5b869b081192caa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_enable_feature</definition>
+        <argsstring>(unsigned short mask)</argsstring>
+        <name>dmp_enable_feature</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>Enable DMP features. The following #define&apos;s are used in the input mask: <linebreak/>
+ DMP_FEATURE_TAP <linebreak/>
+ DMP_FEATURE_ANDROID_ORIENT <linebreak/>
+ DMP_FEATURE_LP_QUAT <linebreak/>
+ DMP_FEATURE_6X_LP_QUAT <linebreak/>
+ DMP_FEATURE_GYRO_CAL <linebreak/>
+ DMP_FEATURE_SEND_RAW_ACCEL <linebreak/>
+ DMP_FEATURE_SEND_RAW_GYRO <linebreak/>
+ NOTE: DMP_FEATURE_LP_QUAT and DMP_FEATURE_6X_LP_QUAT are mutually exclusive. <linebreak/>
+ NOTE: DMP_FEATURE_SEND_RAW_GYRO and DMP_FEATURE_SEND_CAL_GYRO are also mutually exclusive. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mask of features to enable. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="997" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="997" bodyend="1112" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="56" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1ga1fe6e4489855269e7197beb38b07c723" compoundref="inv__mpu__dmp__motion__driver_8c" startline="103">CFG_15</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga12aa4c3bdc65c24ca29ef08e62fd3e13" compoundref="inv__mpu__dmp__motion__driver_8c" startline="79">CFG_20</references>
+        <references refid="group___d_r_i_v_e_r_s_1gaae53afa64170cb4723c04f16c2fa5f30" compoundref="inv__mpu__dmp__motion__driver_8c" startline="78">CFG_27</references>
+        <references refid="group___d_r_i_v_e_r_s_1gacc91af9a664cf438b93a3faa108bb603" compoundref="inv__mpu__dmp__motion__driver_8c" startline="123">CFG_ANDROID_ORIENT_INT</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga01dcbc69fa28559529653a3b4aabea00" compoundref="inv__mpu__dmp__motion__driver_8c" startline="124">CFG_GYRO_RAW_DATA</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga5edbce4fdd515aa31a227fb8eaf0151f" compoundref="inv__mpu__dmp__motion__driver_8c" startline="133">D_0_104</references>
+        <references refid="dmp_key_8h_1a2b6f6c9e544536e4c10f2a828621b87b" compoundref="dmp_key_8h" startline="318">DINA20</references>
+        <references refid="dmp_key_8h_1afc42e54169b23fd9319d59cccde6199f" compoundref="dmp_key_8h" startline="464">DINA80</references>
+        <references refid="dmp_key_8h_1a067d7d3582cec5360b65783c031b8a05" compoundref="dmp_key_8h" startline="465">DINA90</references>
+        <references refid="dmp_key_8h_1a090e2de2c4154541f57ae6b818884cf4" compoundref="dmp_key_8h" startline="481">DINAC0</references>
+        <references refid="dmp_key_8h_1ac75342203eb32cb43e0f9404accb37a3" compoundref="dmp_key_8h" startline="483">DINAC2</references>
+        <references refid="group___d_r_i_v_e_r_s_1gab873eceb75f8d47f6a04c9d2db1a36e5" compoundref="inv__mpu__dmp__motion__driver_8c" startline="499">dmp</references>
+        <references refid="group___d_r_i_v_e_r_s_1gaac712ef33727433f666b3861894873be" compoundref="inv__mpu__dmp__motion__driver_8c" startline="1176" endline="1190">dmp_enable_6x_lp_quat</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga653ebcec6758f006dd89939e8f3c6ebb" compoundref="inv__mpu__dmp__motion__driver_8c" startline="1134" endline="1143">dmp_enable_gyro_cal</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga4ee4339b79a58558d121ba8206056394" compoundref="inv__mpu__dmp__motion__driver_8c" startline="1152" endline="1167">dmp_enable_lp_quat</references>
+        <references refid="group___d_r_i_v_e_r_s_1gae879a3c9729f9e1be5e6d7c9211c69c0" compoundref="inv__mpu__dmp__motion__driver_8h" startline="44">DMP_FEATURE_6X_LP_QUAT</references>
+        <references refid="group___d_r_i_v_e_r_s_1gaf2b250fc928390d562f7bd80300ce419" compoundref="inv__mpu__dmp__motion__driver_8h" startline="41">DMP_FEATURE_ANDROID_ORIENT</references>
+        <references refid="group___d_r_i_v_e_r_s_1gaaf0ac890c1f83106c08b722f1e865fdb" compoundref="inv__mpu__dmp__motion__driver_8h" startline="45">DMP_FEATURE_GYRO_CAL</references>
+        <references refid="group___d_r_i_v_e_r_s_1gabf442c0477f8f7704a8094519ddfe38e" compoundref="inv__mpu__dmp__motion__driver_8h" startline="42">DMP_FEATURE_LP_QUAT</references>
+        <references refid="group___d_r_i_v_e_r_s_1gabcf6a5bc9703782d711d0c6ba92ade85" compoundref="inv__mpu__dmp__motion__driver_8h" startline="43">DMP_FEATURE_PEDOMETER</references>
+        <references refid="group___d_r_i_v_e_r_s_1gadda8f4118bd084cfb4fcda3571585c56" compoundref="inv__mpu__dmp__motion__driver_8c" startline="465">DMP_FEATURE_SEND_ANY_GYRO</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga40462c6fd55b04b2f79723dd737ee795" compoundref="inv__mpu__dmp__motion__driver_8h" startline="48">DMP_FEATURE_SEND_CAL_GYRO</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga9eeb257febe4a305df7ad4cf31dc2755" compoundref="inv__mpu__dmp__motion__driver_8h" startline="46">DMP_FEATURE_SEND_RAW_ACCEL</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga87fac39cf95e2c56afdf507a986fa00b" compoundref="inv__mpu__dmp__motion__driver_8h" startline="40">DMP_FEATURE_TAP</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga62efdae1330d5bcaf4c75b069ded0ed0" compoundref="inv__mpu__dmp__motion__driver_8c" startline="858" endline="867">dmp_set_shake_reject_thresh</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga09d7a6d90e1bd2e907f1866d850c5608" compoundref="inv__mpu__dmp__motion__driver_8c" startline="877" endline="885">dmp_set_shake_reject_time</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga5d44d1a32535000e6902cdc5224d1b54" compoundref="inv__mpu__dmp__motion__driver_8c" startline="895" endline="903">dmp_set_shake_reject_timeout</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga66bc5c8fc26fcb498df53fc62aa87e4f" compoundref="inv__mpu__dmp__motion__driver_8c" startline="788" endline="799">dmp_set_tap_axes</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga819f947b2cb107ada7b9a94c41be0dad" compoundref="inv__mpu__dmp__motion__driver_8c" startline="806" endline="817">dmp_set_tap_count</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga15da67c0a6c94e0cdaceb8b165e13af9" compoundref="inv__mpu__dmp__motion__driver_8c" startline="722" endline="781">dmp_set_tap_thresh</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga97466067f4a23368f4d7e2547fe359d9" compoundref="inv__mpu__dmp__motion__driver_8c" startline="824" endline="833">dmp_set_tap_time</references>
+        <references refid="group___d_r_i_v_e_r_s_1gaeca250a90eb816eb2609229849481337" compoundref="inv__mpu__dmp__motion__driver_8c" startline="840" endline="849">dmp_set_tap_time_multi</references>
+        <references refid="structdmp__s_1a302548ec958df24e63eb21f268772a60" compoundref="inv__mpu__dmp__motion__driver_8c" startline="485">dmp_s::feature_mask</references>
+        <references refid="group___d_r_i_v_e_r_s_1gac0325c658f2911bdfc3b44fca31c684f" compoundref="inv__mpu__dmp__motion__driver_8c" startline="471">GYRO_SF</references>
+        <references refid="group___d_r_i_v_e_r_s_1gaf23e9f57c0059be6ec57862f0584de10" compoundref="inv__mpu_8c" startline="1092" endline="1147">mpu_reset_fifo</references>
+        <references refid="group___d_r_i_v_e_r_s_1gafea59910bc3dd30ba3356b1c75213a5f" compoundref="inv__mpu_8c" startline="2271" endline="2293">mpu_write_mem</references>
+        <references refid="structdmp__s_1aa62a501c4d9335b7685c0ca96ab02c95" compoundref="inv__mpu__dmp__motion__driver_8c" startline="487">dmp_s::packet_length</references>
+        <references refid="group___d_r_i_v_e_r_s_1gaa2b8e1661eb53aeac3ff4877ff2b79d9" compoundref="inv__mpu__dmp__motion__driver_8h" startline="23">TAP_XYZ</references>
+        <referencedby refid="group___d_r_i_v_e_r_s_1gafac8fcbf24cfa1b69737e02238580f3a" compoundref="inv__mpu_8c" startline="2937" endline="2963">mpu_dmp_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1ga92b920b72f5146ea14d45ad2d529b64c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_get_enabled_features</definition>
+        <argsstring>(unsigned short *mask)</argsstring>
+        <name>dmp_get_enabled_features</name>
+        <param>
+          <type>unsigned short *</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>Get list of currently enabled DMP features. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">Mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of enabled features. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="1119" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="1119" bodyend="1123" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="57" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1gab873eceb75f8d47f6a04c9d2db1a36e5" compoundref="inv__mpu__dmp__motion__driver_8c" startline="499">dmp</references>
+        <references refid="structdmp__s_1a302548ec958df24e63eb21f268772a60" compoundref="inv__mpu__dmp__motion__driver_8c" startline="485">dmp_s::feature_mask</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1gaf10c08103d2aec9aa5555a5694bafced" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_set_interrupt_mode</definition>
+        <argsstring>(unsigned char mode)</argsstring>
+        <name>dmp_set_interrupt_mode</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Specify when a DMP interrupt should occur. A DMP interrupt can be configured to trigger on either of the two conditions below: <linebreak/>
+ a. One FIFO period has elapsed (set by <emphasis>mpu_set_sample_rate</emphasis>). <linebreak/>
+ b. A tap event has been detected. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DMP_INT_GESTURE or DMP_INT_CONTINUOUS. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="1229" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="1229" bodyend="1246" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="58" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1ga7aa6ed56d6fd41be120b9bdb488c220a" compoundref="inv__mpu__dmp__motion__driver_8c" startline="81">CFG_FIFO_ON_EVENT</references>
+        <references refid="group___d_r_i_v_e_r_s_1gaabccda0e9ccd1a2f4287d23fe4b0c776" compoundref="inv__mpu__dmp__motion__driver_8h" startline="38">DMP_INT_CONTINUOUS</references>
+        <references refid="group___d_r_i_v_e_r_s_1gaab5d80253aaee2470c95c6981b731255" compoundref="inv__mpu__dmp__motion__driver_8h" startline="37">DMP_INT_GESTURE</references>
+        <references refid="group___d_r_i_v_e_r_s_1gafea59910bc3dd30ba3356b1c75213a5f" compoundref="inv__mpu_8c" startline="2271" endline="2293">mpu_write_mem</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1ga6cb5ff144ce6e1546f00809de8bb24a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_set_orientation</definition>
+        <argsstring>(unsigned short orient)</argsstring>
+        <name>dmp_set_orientation</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>orient</declname>
+        </param>
+        <briefdescription>
+<para>Push gyro and accel orientation to the DMP. The orientation is represented here as the output of <emphasis>inv_orientation_matrix_to_scalar</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">orient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Gyro and accel orientation in body frame. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="525" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="525" bodyend="568" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="59" declcolumn="5"/>
+        <references refid="dmp_key_8h_1ae5613957164ac19bde823e6e03857f95" compoundref="dmp_key_8h" startline="332">DINA0C</references>
+        <references refid="dmp_key_8h_1ab20b98c1b6b4a1826769b8ff3e2b559d" compoundref="dmp_key_8h" startline="301">DINA26</references>
+        <references refid="dmp_key_8h_1a167b76fbcef1ddcd2535deaa5716e75a" compoundref="dmp_key_8h" startline="336">DINA2C</references>
+        <references refid="dmp_key_8h_1a3bf2a77c13703721c9908a2f0427aa51" compoundref="dmp_key_8h" startline="303">DINA36</references>
+        <references refid="dmp_key_8h_1a8b9b8c9cc6e238b2a63696e7fe73b312" compoundref="dmp_key_8h" startline="305">DINA46</references>
+        <references refid="dmp_key_8h_1a9b27e6d8cc2695be889396deba983c68" compoundref="dmp_key_8h" startline="340">DINA4C</references>
+        <references refid="dmp_key_8h_1ad99c60f48e726f6b1b1a0b5dd8ef0b2a" compoundref="dmp_key_8h" startline="307">DINA56</references>
+        <references refid="dmp_key_8h_1a99ecf6ce38fef8eabcf7f618f37f5f88" compoundref="dmp_key_8h" startline="309">DINA66</references>
+        <references refid="dmp_key_8h_1a7b67d759acd8c51da25770cea5909bfc" compoundref="dmp_key_8h" startline="344">DINA6C</references>
+        <references refid="dmp_key_8h_1a2d212a13b747010ba331de74d408fce6" compoundref="dmp_key_8h" startline="311">DINA76</references>
+        <references refid="dmp_key_8h_1abf1781aef14b0bf60cede867717c0acb" compoundref="dmp_key_8h" startline="467">DINAC9</references>
+        <references refid="dmp_key_8h_1a42a4b57f7ce73c019a5456aed0777ae2" compoundref="dmp_key_8h" startline="469">DINACD</references>
+        <references refid="group___d_r_i_v_e_r_s_1gab873eceb75f8d47f6a04c9d2db1a36e5" compoundref="inv__mpu__dmp__motion__driver_8c" startline="499">dmp</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga9a7d63d6add8f9fdf9edc722a01aeb92" compoundref="inv__mpu__dmp__motion__driver_8c" startline="93">FCFG_1</references>
+        <references refid="group___d_r_i_v_e_r_s_1gac0e79063d1a071c1a8bd3f7081e4299e" compoundref="inv__mpu__dmp__motion__driver_8c" startline="92">FCFG_2</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga68df22b3699418acab9063ee5f996d8e" compoundref="inv__mpu__dmp__motion__driver_8c" startline="91">FCFG_3</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga687777b4390e4a84ac774cf0600abe20" compoundref="inv__mpu__dmp__motion__driver_8c" startline="95">FCFG_7</references>
+        <references refid="group___d_r_i_v_e_r_s_1gafea59910bc3dd30ba3356b1c75213a5f" compoundref="inv__mpu_8c" startline="2271" endline="2293">mpu_write_mem</references>
+        <references refid="structdmp__s_1a191a6e89e9f575bc030a0cac5613b6a8" compoundref="inv__mpu__dmp__motion__driver_8c" startline="484">dmp_s::orient</references>
+        <referencedby refid="group___d_r_i_v_e_r_s_1gafac8fcbf24cfa1b69737e02238580f3a" compoundref="inv__mpu_8c" startline="2937" endline="2963">mpu_dmp_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1ga4766e37ef95cbf0044c8f9594ed811d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_set_gyro_bias</definition>
+        <argsstring>(long *bias)</argsstring>
+        <name>dmp_set_gyro_bias</name>
+        <param>
+          <type>long *</type>
+          <declname>bias</declname>
+        </param>
+        <briefdescription>
+<para>Push gyro biases to the DMP. Because the gyro integration is handled in the DMP, any gyro biases calculated by the MPL should be pushed down to DMP memory to remove 3-axis quaternion drift. <linebreak/>
+ NOTE: If the DMP-based gyro calibration is enabled, the DMP will overwrite the biases written to this location once a new one is computed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Gyro biases in q16. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="580" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="580" bodyend="624" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="60" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1gae48ad5d76a4abec0759ff23ba2b2a68e" compoundref="inv__mpu__dmp__motion__driver_8c" startline="197">D_EXT_GYRO_BIAS_X</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga6de6f7302f19c1f63f1a04b51ff14b1a" compoundref="inv__mpu__dmp__motion__driver_8c" startline="198">D_EXT_GYRO_BIAS_Y</references>
+        <references refid="group___d_r_i_v_e_r_s_1gacd6dead1c0b0458f1ec5d66914a1cf90" compoundref="inv__mpu__dmp__motion__driver_8c" startline="199">D_EXT_GYRO_BIAS_Z</references>
+        <references refid="group___d_r_i_v_e_r_s_1gab873eceb75f8d47f6a04c9d2db1a36e5" compoundref="inv__mpu__dmp__motion__driver_8c" startline="499">dmp</references>
+        <references refid="group___d_r_i_v_e_r_s_1gac0325c658f2911bdfc3b44fca31c684f" compoundref="inv__mpu__dmp__motion__driver_8c" startline="471">GYRO_SF</references>
+        <references refid="group___d_r_i_v_e_r_s_1gafea59910bc3dd30ba3356b1c75213a5f" compoundref="inv__mpu_8c" startline="2271" endline="2293">mpu_write_mem</references>
+        <references refid="structdmp__s_1a191a6e89e9f575bc030a0cac5613b6a8" compoundref="inv__mpu__dmp__motion__driver_8c" startline="484">dmp_s::orient</references>
+        <referencedby refid="group___d_r_i_v_e_r_s_1gaff893f93277595387023c71d46b03c42" compoundref="inv__mpu_8c" startline="2874" endline="2896">run_self_test</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1gafbd714aee6086836f70aaea847771669" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_set_accel_bias</definition>
+        <argsstring>(long *bias)</argsstring>
+        <name>dmp_set_accel_bias</name>
+        <param>
+          <type>long *</type>
+          <declname>bias</declname>
+        </param>
+        <briefdescription>
+<para>Push accel biases to the DMP. These biases will be removed from the DMP 6-axis quaternion. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Accel biases in q16. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="632" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="632" bodyend="676" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="61" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1ga2cc522b8f621f32418257ab61144a744" compoundref="inv__mpu__dmp__motion__driver_8c" startline="235">D_ACCEL_BIAS</references>
+        <references refid="group___d_r_i_v_e_r_s_1gab873eceb75f8d47f6a04c9d2db1a36e5" compoundref="inv__mpu__dmp__motion__driver_8c" startline="499">dmp</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga620408949052b96e856cad920f856583" compoundref="inv__mpu_8c" startline="1484" endline="1505">mpu_get_accel_sens</references>
+        <references refid="group___d_r_i_v_e_r_s_1gafea59910bc3dd30ba3356b1c75213a5f" compoundref="inv__mpu_8c" startline="2271" endline="2293">mpu_write_mem</references>
+        <references refid="structdmp__s_1a191a6e89e9f575bc030a0cac5613b6a8" compoundref="inv__mpu__dmp__motion__driver_8c" startline="484">dmp_s::orient</references>
+        <referencedby refid="group___d_r_i_v_e_r_s_1gaff893f93277595387023c71d46b03c42" compoundref="inv__mpu_8c" startline="2874" endline="2896">run_self_test</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1ga8a2df36126e34b78863e3acf1249d814" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_register_tap_cb</definition>
+        <argsstring>(void(*func)(unsigned char, unsigned char))</argsstring>
+        <name>dmp_register_tap_cb</name>
+        <param>
+          <type>void(*)(unsigned char, unsigned char)</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+<para>Register a function to be executed on a tap event. The tap direction is represented by one of the following: <linebreak/>
+ TAP_X_UP <linebreak/>
+ TAP_X_DOWN <linebreak/>
+ TAP_Y_UP <linebreak/>
+ TAP_Y_DOWN <linebreak/>
+ TAP_Z_UP <linebreak/>
+ TAP_Z_DOWN </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="1361" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="1361" bodyend="1365" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="64" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1gab873eceb75f8d47f6a04c9d2db1a36e5" compoundref="inv__mpu__dmp__motion__driver_8c" startline="499">dmp</references>
+        <references refid="structdmp__s_1af3acbe90fd87e158bb93137a830319ba" compoundref="inv__mpu__dmp__motion__driver_8c" startline="482">dmp_s::tap_cb</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1ga15da67c0a6c94e0cdaceb8b165e13af9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_set_tap_thresh</definition>
+        <argsstring>(unsigned char axis, unsigned short thresh)</argsstring>
+        <name>dmp_set_tap_thresh</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>thresh</declname>
+        </param>
+        <briefdescription>
+<para>Set tap threshold for a specific axis. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">axis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1, 2, and 4 for XYZ accel, respectively. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">thresh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tap threshold, in mg/ms. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="722" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="722" bodyend="781" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="65" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1ga359aac18087bef8a3f044faf13952fa2" compoundref="inv__mpu__dmp__motion__driver_8c" startline="149">D_1_36</references>
+        <references refid="group___d_r_i_v_e_r_s_1gae0dfa8b55558dff48604d4ac2c28fa9c" compoundref="inv__mpu__dmp__motion__driver_8c" startline="150">D_1_40</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga4fd075d6c0e817fbafca24af8305386e" compoundref="inv__mpu__dmp__motion__driver_8c" startline="151">D_1_44</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga9d0f0425cbcb58186500cb8686e41e67" compoundref="inv__mpu__dmp__motion__driver_8c" startline="470">DMP_SAMPLE_RATE</references>
+        <references refid="dmpmap_8h_1a81e1f8686497fc2d846c8747c479466a" compoundref="dmpmap_8h" startline="241">DMP_TAP_THX</references>
+        <references refid="dmpmap_8h_1a5008aa495d3ab6e59429cdc9c9e39c31" compoundref="dmpmap_8h" startline="242">DMP_TAP_THY</references>
+        <references refid="dmpmap_8h_1a54cb4c0d23dd19747f5199a36f624b40" compoundref="dmpmap_8h" startline="243">DMP_TAP_THZ</references>
+        <references refid="group___d_r_i_v_e_r_s_1gab6087a15ee23db23b6aec41590329a60" compoundref="inv__mpu_8c" startline="1218" endline="1239">mpu_get_accel_fsr</references>
+        <references refid="group___d_r_i_v_e_r_s_1gafea59910bc3dd30ba3356b1c75213a5f" compoundref="inv__mpu_8c" startline="2271" endline="2293">mpu_write_mem</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga22a5ea75ee18a788b441f66fffe83586" compoundref="inv__mpu__dmp__motion__driver_8h" startline="20">TAP_X</references>
+        <references refid="group___d_r_i_v_e_r_s_1gaa2b8e1661eb53aeac3ff4877ff2b79d9" compoundref="inv__mpu__dmp__motion__driver_8h" startline="23">TAP_XYZ</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga762f9521bf33c9ba7a77595268b108ec" compoundref="inv__mpu__dmp__motion__driver_8h" startline="21">TAP_Y</references>
+        <references refid="group___d_r_i_v_e_r_s_1gac2949c36d5f4eeb4769fdcf2d99284fd" compoundref="inv__mpu__dmp__motion__driver_8h" startline="22">TAP_Z</references>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga70c485bdfa30515e5b869b081192caa1" compoundref="inv__mpu__dmp__motion__driver_8c" startline="997" endline="1112">dmp_enable_feature</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1ga66bc5c8fc26fcb498df53fc62aa87e4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_set_tap_axes</definition>
+        <argsstring>(unsigned char axis)</argsstring>
+        <name>dmp_set_tap_axes</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>axis</declname>
+        </param>
+        <briefdescription>
+<para>Set which axes will register a tap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">axis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1, 2, and 4 for XYZ, respectively. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="788" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="788" bodyend="799" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="66" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1ga065f93eacb4dcc7020cc21146e533110" compoundref="inv__mpu__dmp__motion__driver_8c" startline="152">D_1_72</references>
+        <references refid="group___d_r_i_v_e_r_s_1gafea59910bc3dd30ba3356b1c75213a5f" compoundref="inv__mpu_8c" startline="2271" endline="2293">mpu_write_mem</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga22a5ea75ee18a788b441f66fffe83586" compoundref="inv__mpu__dmp__motion__driver_8h" startline="20">TAP_X</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga762f9521bf33c9ba7a77595268b108ec" compoundref="inv__mpu__dmp__motion__driver_8h" startline="21">TAP_Y</references>
+        <references refid="group___d_r_i_v_e_r_s_1gac2949c36d5f4eeb4769fdcf2d99284fd" compoundref="inv__mpu__dmp__motion__driver_8h" startline="22">TAP_Z</references>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga70c485bdfa30515e5b869b081192caa1" compoundref="inv__mpu__dmp__motion__driver_8c" startline="997" endline="1112">dmp_enable_feature</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1ga819f947b2cb107ada7b9a94c41be0dad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_set_tap_count</definition>
+        <argsstring>(unsigned char min_taps)</argsstring>
+        <name>dmp_set_tap_count</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>min_taps</declname>
+        </param>
+        <briefdescription>
+<para>Set minimum number of taps needed for an interrupt. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">min_taps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum consecutive taps (1-4). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="806" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="806" bodyend="817" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="67" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1gae6ba99808ab9bc8eaddbc7c7cc6af1f3" compoundref="inv__mpu__dmp__motion__driver_8c" startline="154">D_1_79</references>
+        <references refid="group___d_r_i_v_e_r_s_1gafea59910bc3dd30ba3356b1c75213a5f" compoundref="inv__mpu_8c" startline="2271" endline="2293">mpu_write_mem</references>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga70c485bdfa30515e5b869b081192caa1" compoundref="inv__mpu__dmp__motion__driver_8c" startline="997" endline="1112">dmp_enable_feature</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1ga97466067f4a23368f4d7e2547fe359d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_set_tap_time</definition>
+        <argsstring>(unsigned short time)</argsstring>
+        <name>dmp_set_tap_time</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Set length between valid taps. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Milliseconds between taps. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="824" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="824" bodyend="833" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="68" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1ga9d0f0425cbcb58186500cb8686e41e67" compoundref="inv__mpu__dmp__motion__driver_8c" startline="470">DMP_SAMPLE_RATE</references>
+        <references refid="dmpmap_8h_1ad1ab58d13c100d9413f61df40d52f95f" compoundref="dmpmap_8h" startline="244">DMP_TAPW_MIN</references>
+        <references refid="group___d_r_i_v_e_r_s_1gafea59910bc3dd30ba3356b1c75213a5f" compoundref="inv__mpu_8c" startline="2271" endline="2293">mpu_write_mem</references>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga70c485bdfa30515e5b869b081192caa1" compoundref="inv__mpu__dmp__motion__driver_8c" startline="997" endline="1112">dmp_enable_feature</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1gaeca250a90eb816eb2609229849481337" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_set_tap_time_multi</definition>
+        <argsstring>(unsigned short time)</argsstring>
+        <name>dmp_set_tap_time_multi</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Set max time between taps to register as a multi-tap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Max milliseconds between taps. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="840" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="840" bodyend="849" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="69" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1ga0c4568c70e2cd501e8de6c3147eb0276" compoundref="inv__mpu__dmp__motion__driver_8c" startline="168">D_1_218</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga9d0f0425cbcb58186500cb8686e41e67" compoundref="inv__mpu__dmp__motion__driver_8c" startline="470">DMP_SAMPLE_RATE</references>
+        <references refid="group___d_r_i_v_e_r_s_1gafea59910bc3dd30ba3356b1c75213a5f" compoundref="inv__mpu_8c" startline="2271" endline="2293">mpu_write_mem</references>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga70c485bdfa30515e5b869b081192caa1" compoundref="inv__mpu__dmp__motion__driver_8c" startline="997" endline="1112">dmp_enable_feature</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1ga62efdae1330d5bcaf4c75b069ded0ed0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_set_shake_reject_thresh</definition>
+        <argsstring>(long sf, unsigned short thresh)</argsstring>
+        <name>dmp_set_shake_reject_thresh</name>
+        <param>
+          <type>long</type>
+          <declname>sf</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>thresh</declname>
+        </param>
+        <briefdescription>
+<para>Set shake rejection threshold. If the DMP detects a gyro sample larger than <emphasis>thresh</emphasis>, taps are rejected. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Gyro scale factor. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">thresh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Gyro threshold in dps. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="858" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="858" bodyend="867" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="70" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1gabd8a1ea9b71ac9389116a33e317aad6c" compoundref="inv__mpu__dmp__motion__driver_8c" startline="157">D_1_92</references>
+        <references refid="group___d_r_i_v_e_r_s_1gafea59910bc3dd30ba3356b1c75213a5f" compoundref="inv__mpu_8c" startline="2271" endline="2293">mpu_write_mem</references>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga70c485bdfa30515e5b869b081192caa1" compoundref="inv__mpu__dmp__motion__driver_8c" startline="997" endline="1112">dmp_enable_feature</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1ga09d7a6d90e1bd2e907f1866d850c5608" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_set_shake_reject_time</definition>
+        <argsstring>(unsigned short time)</argsstring>
+        <name>dmp_set_shake_reject_time</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Set shake rejection time. Sets the length of time that the gyro must be outside of the threshold set by <emphasis>gyro_set_shake_reject_thresh</emphasis> before taps are rejected. A mandatory 60 ms is added to this parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time in milliseconds. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="877" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="877" bodyend="885" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="71" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1ga63bb29a8be69128a60f4716aacc447a8" compoundref="inv__mpu__dmp__motion__driver_8c" startline="156">D_1_90</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga9d0f0425cbcb58186500cb8686e41e67" compoundref="inv__mpu__dmp__motion__driver_8c" startline="470">DMP_SAMPLE_RATE</references>
+        <references refid="group___d_r_i_v_e_r_s_1gafea59910bc3dd30ba3356b1c75213a5f" compoundref="inv__mpu_8c" startline="2271" endline="2293">mpu_write_mem</references>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga70c485bdfa30515e5b869b081192caa1" compoundref="inv__mpu__dmp__motion__driver_8c" startline="997" endline="1112">dmp_enable_feature</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1ga5d44d1a32535000e6902cdc5224d1b54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_set_shake_reject_timeout</definition>
+        <argsstring>(unsigned short time)</argsstring>
+        <name>dmp_set_shake_reject_timeout</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Set shake rejection timeout. Sets the length of time after a shake rejection that the gyro must stay inside of the threshold before taps can be detected again. A mandatory 60 ms is added to this parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time in milliseconds. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="895" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="895" bodyend="903" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="72" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1ga05bc14cf9653fc7778acfa75c9ac19df" compoundref="inv__mpu__dmp__motion__driver_8c" startline="155">D_1_88</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga9d0f0425cbcb58186500cb8686e41e67" compoundref="inv__mpu__dmp__motion__driver_8c" startline="470">DMP_SAMPLE_RATE</references>
+        <references refid="group___d_r_i_v_e_r_s_1gafea59910bc3dd30ba3356b1c75213a5f" compoundref="inv__mpu_8c" startline="2271" endline="2293">mpu_write_mem</references>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga70c485bdfa30515e5b869b081192caa1" compoundref="inv__mpu__dmp__motion__driver_8c" startline="997" endline="1112">dmp_enable_feature</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1ga2e66a02d29ec89466cf339587592943c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_register_android_orient_cb</definition>
+        <argsstring>(void(*func)(unsigned char))</argsstring>
+        <name>dmp_register_android_orient_cb</name>
+        <param>
+          <type>void(*)(unsigned char)</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+<para>Register a function to be executed on a android orientation event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="1372" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="1372" bodyend="1376" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="75" declcolumn="5"/>
+        <references refid="structdmp__s_1ad0ff81aabe90ff753a3c94757d73ef76" compoundref="inv__mpu__dmp__motion__driver_8c" startline="483">dmp_s::android_orient_cb</references>
+        <references refid="group___d_r_i_v_e_r_s_1gab873eceb75f8d47f6a04c9d2db1a36e5" compoundref="inv__mpu__dmp__motion__driver_8c" startline="499">dmp</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1ga4ee4339b79a58558d121ba8206056394" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_enable_lp_quat</definition>
+        <argsstring>(unsigned char enable)</argsstring>
+        <name>dmp_enable_lp_quat</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Generate 3-axis quaternions from the DMP. In this driver, the 3-axis and 6-axis DMP quaternion features are mutually exclusive. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1 to enable 3-axis quaternion. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="1152" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="1152" bodyend="1167" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="78" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1gadf5652e51b8c08c2eb6a902d1d1f319c" compoundref="inv__mpu__dmp__motion__driver_8c" startline="76">CFG_LP_QUAT</references>
+        <references refid="dmp_key_8h_1a0ab58ef64f279a76d1f1be67616cf579" compoundref="dmp_key_8h" startline="487">DINBC0</references>
+        <references refid="dmp_key_8h_1a9e426a02a039b5e6c2e1d641077af3e9" compoundref="dmp_key_8h" startline="488">DINBC2</references>
+        <references refid="dmp_key_8h_1aa9e0a837de04950e42f00e074c3d6566" compoundref="dmp_key_8h" startline="489">DINBC4</references>
+        <references refid="dmp_key_8h_1a0677bcabb419e066434b7163a109d9a1" compoundref="dmp_key_8h" startline="490">DINBC6</references>
+        <references refid="group___d_r_i_v_e_r_s_1gaf23e9f57c0059be6ec57862f0584de10" compoundref="inv__mpu_8c" startline="1092" endline="1147">mpu_reset_fifo</references>
+        <references refid="group___d_r_i_v_e_r_s_1gafea59910bc3dd30ba3356b1c75213a5f" compoundref="inv__mpu_8c" startline="2271" endline="2293">mpu_write_mem</references>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga70c485bdfa30515e5b869b081192caa1" compoundref="inv__mpu__dmp__motion__driver_8c" startline="997" endline="1112">dmp_enable_feature</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1gaac712ef33727433f666b3861894873be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_enable_6x_lp_quat</definition>
+        <argsstring>(unsigned char enable)</argsstring>
+        <name>dmp_enable_6x_lp_quat</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Generate 6-axis quaternions from the DMP. In this driver, the 3-axis and 6-axis DMP quaternion features are mutually exclusive. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1 to enable 6-axis quaternion. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="1176" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="1176" bodyend="1190" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="79" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1ga3dc0e5c81e361fb871fbf63eeba82520" compoundref="inv__mpu__dmp__motion__driver_8c" startline="102">CFG_8</references>
+        <references refid="dmp_key_8h_1a2b6f6c9e544536e4c10f2a828621b87b" compoundref="dmp_key_8h" startline="318">DINA20</references>
+        <references refid="dmp_key_8h_1a9bf039b1ae9e7538e239094efd52ccac" compoundref="dmp_key_8h" startline="319">DINA28</references>
+        <references refid="dmp_key_8h_1a36e38090f76b423468d88f275b02b8bb" compoundref="dmp_key_8h" startline="320">DINA30</references>
+        <references refid="dmp_key_8h_1ab904b6b28e9710721475f247140ec7aa" compoundref="dmp_key_8h" startline="321">DINA38</references>
+        <references refid="group___d_r_i_v_e_r_s_1gaf23e9f57c0059be6ec57862f0584de10" compoundref="inv__mpu_8c" startline="1092" endline="1147">mpu_reset_fifo</references>
+        <references refid="group___d_r_i_v_e_r_s_1gafea59910bc3dd30ba3356b1c75213a5f" compoundref="inv__mpu_8c" startline="2271" endline="2293">mpu_write_mem</references>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga70c485bdfa30515e5b869b081192caa1" compoundref="inv__mpu__dmp__motion__driver_8c" startline="997" endline="1112">dmp_enable_feature</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1gad8f4d1a93e0f03d950559501c5a7255b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_get_pedometer_step_count</definition>
+        <argsstring>(unsigned long *count)</argsstring>
+        <name>dmp_get_pedometer_step_count</name>
+        <param>
+          <type>unsigned long *</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Get current step count. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of steps detected. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="910" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="910" bodyend="922" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="82" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1ga4925c8f2bfe6e2698c10bf5b1094dc54" compoundref="inv__mpu__dmp__motion__driver_8c" startline="230">D_PEDSTD_STEPCTR</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga3374bececb6743893c9eab27645c1182" compoundref="inv__mpu_8c" startline="2304" endline="2326">mpu_read_mem</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1ga568562c19998f585b1d2ba056cd209db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_set_pedometer_step_count</definition>
+        <argsstring>(unsigned long count)</argsstring>
+        <name>dmp_set_pedometer_step_count</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Overwrite current step count. WARNING: This function writes to DMP memory and could potentially encounter a race condition if called while the pedometer is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New step count. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="931" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="931" bodyend="940" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="83" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1ga4925c8f2bfe6e2698c10bf5b1094dc54" compoundref="inv__mpu__dmp__motion__driver_8c" startline="230">D_PEDSTD_STEPCTR</references>
+        <references refid="group___d_r_i_v_e_r_s_1gafea59910bc3dd30ba3356b1c75213a5f" compoundref="inv__mpu_8c" startline="2271" endline="2293">mpu_write_mem</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1ga62c8e5e99986b0e60ca0dc9a9b9c3fcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_get_pedometer_walk_time</definition>
+        <argsstring>(unsigned long *time)</argsstring>
+        <name>dmp_get_pedometer_walk_time</name>
+        <param>
+          <type>unsigned long *</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Get duration of walking time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Walk time in milliseconds. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="947" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="947" bodyend="959" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="84" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1gaee461dfb8a3fcd18ea6dddeaba63457b" compoundref="inv__mpu__dmp__motion__driver_8c" startline="231">D_PEDSTD_TIMECTR</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga3374bececb6743893c9eab27645c1182" compoundref="inv__mpu_8c" startline="2304" endline="2326">mpu_read_mem</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1ga62f469269047f8cba16a2b7f5349acc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_set_pedometer_walk_time</definition>
+        <argsstring>(unsigned long time)</argsstring>
+        <name>dmp_set_pedometer_walk_time</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Overwrite current walk time. WARNING: This function writes to DMP memory and could potentially encounter a race condition if called while the pedometer is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New walk time in milliseconds. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="967" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="967" bodyend="978" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="85" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1gaee461dfb8a3fcd18ea6dddeaba63457b" compoundref="inv__mpu__dmp__motion__driver_8c" startline="231">D_PEDSTD_TIMECTR</references>
+        <references refid="group___d_r_i_v_e_r_s_1gafea59910bc3dd30ba3356b1c75213a5f" compoundref="inv__mpu_8c" startline="2271" endline="2293">mpu_write_mem</references>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1ga653ebcec6758f006dd89939e8f3c6ebb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_enable_gyro_cal</definition>
+        <argsstring>(unsigned char enable)</argsstring>
+        <name>dmp_enable_gyro_cal</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Calibrate the gyro data in the DMP. After eight seconds of no motion, the DMP will compute gyro biases and subtract them from the quaternion output. If <emphasis>dmp_enable_feature</emphasis> is called with <emphasis>DMP_FEATURE_SEND_CAL_GYRO</emphasis>, the biases will also be subtracted from the gyro output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1 to enable gyro calibration. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="1134" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="1134" bodyend="1143" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="88" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1ga8214527cbba23694722d04715126be0f" compoundref="inv__mpu__dmp__motion__driver_8c" startline="120">CFG_MOTION_BIAS</references>
+        <references refid="group___d_r_i_v_e_r_s_1gafea59910bc3dd30ba3356b1c75213a5f" compoundref="inv__mpu_8c" startline="2271" endline="2293">mpu_write_mem</references>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga70c485bdfa30515e5b869b081192caa1" compoundref="inv__mpu__dmp__motion__driver_8c" startline="997" endline="1112">dmp_enable_feature</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___d_r_i_v_e_r_s_1ga02db5f25359abe84be002c543cdc3803" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dmp_read_fifo</definition>
+        <argsstring>(short *gyro, short *accel, long *quat, unsigned long *timestamp, short *sensors, unsigned char *more)</argsstring>
+        <name>dmp_read_fifo</name>
+        <param>
+          <type>short *</type>
+          <declname>gyro</declname>
+        </param>
+        <param>
+          <type>short *</type>
+          <declname>accel</declname>
+        </param>
+        <param>
+          <type>long *</type>
+          <declname>quat</declname>
+        </param>
+        <param>
+          <type>unsigned long *</type>
+          <declname>timestamp</declname>
+        </param>
+        <param>
+          <type>short *</type>
+          <declname>sensors</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>more</declname>
+        </param>
+        <briefdescription>
+<para>Get one packet from the FIFO. If <emphasis>sensors</emphasis> does not contain a particular sensor, disregard the data returned to that pointer. <linebreak/>
+ <emphasis>sensors</emphasis> can contain a combination of the following flags: <linebreak/>
+ INV_X_GYRO, INV_Y_GYRO, INV_Z_GYRO <linebreak/>
+ INV_XYZ_GYRO <linebreak/>
+ INV_XYZ_ACCEL <linebreak/>
+ INV_WXYZ_QUAT <linebreak/>
+ If the FIFO has no new data, <emphasis>sensors</emphasis> will be zero. <linebreak/>
+ If the FIFO is disabled, <emphasis>sensors</emphasis> will be zero and this function will return a non-zero error code. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">gyro</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Gyro data in hardware units. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">accel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Accel data in hardware units. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">quat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>3-axis quaternion data in hardware units. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">timestamp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timestamp in milliseconds. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">sensors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mask of sensors read from FIFO. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">more</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of remaining packets. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" line="1268" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.c" bodystart="1268" bodyend="1347" declfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h" declline="93" declcolumn="5"/>
+        <references refid="group___d_r_i_v_e_r_s_1gaee85b322f461f83536e49840651a7576" compoundref="inv__mpu__dmp__motion__driver_8c" startline="1197" endline="1218">decode_gesture</references>
+        <references refid="group___d_r_i_v_e_r_s_1gab873eceb75f8d47f6a04c9d2db1a36e5" compoundref="inv__mpu__dmp__motion__driver_8c" startline="499">dmp</references>
+        <references refid="group___d_r_i_v_e_r_s_1gae879a3c9729f9e1be5e6d7c9211c69c0" compoundref="inv__mpu__dmp__motion__driver_8h" startline="44">DMP_FEATURE_6X_LP_QUAT</references>
+        <references refid="group___d_r_i_v_e_r_s_1gaf2b250fc928390d562f7bd80300ce419" compoundref="inv__mpu__dmp__motion__driver_8h" startline="41">DMP_FEATURE_ANDROID_ORIENT</references>
+        <references refid="group___d_r_i_v_e_r_s_1gabf442c0477f8f7704a8094519ddfe38e" compoundref="inv__mpu__dmp__motion__driver_8h" startline="42">DMP_FEATURE_LP_QUAT</references>
+        <references refid="group___d_r_i_v_e_r_s_1gadda8f4118bd084cfb4fcda3571585c56" compoundref="inv__mpu__dmp__motion__driver_8c" startline="465">DMP_FEATURE_SEND_ANY_GYRO</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga9eeb257febe4a305df7ad4cf31dc2755" compoundref="inv__mpu__dmp__motion__driver_8h" startline="46">DMP_FEATURE_SEND_RAW_ACCEL</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga87fac39cf95e2c56afdf507a986fa00b" compoundref="inv__mpu__dmp__motion__driver_8h" startline="40">DMP_FEATURE_TAP</references>
+        <references refid="structdmp__s_1a302548ec958df24e63eb21f268772a60" compoundref="inv__mpu__dmp__motion__driver_8c" startline="485">dmp_s::feature_mask</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga3e6b6bc6d1cd2956353a31bfadd3c332" compoundref="inv__mpu__dmp__motion__driver_8c" startline="42">get_ms</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga3d79cffe845a796a27d03432a1f2ade0" compoundref="inv__mpu__dmp__motion__driver_8h" startline="50">INV_WXYZ_QUAT</references>
+        <references refid="group___d_r_i_v_e_r_s_1gaa03f025a17ed491e70b88274e89c75c5" compoundref="inv__mpu_8h" startline="33">INV_XYZ_ACCEL</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga3fdc30f9c0a26c2c4e2bb88921f91629" compoundref="inv__mpu_8h" startline="32">INV_XYZ_GYRO</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga973c680573b37fc359fc68d0707da355" compoundref="inv__mpu__dmp__motion__driver_8c" startline="468">MAX_PACKET_LENGTH</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga13593044949b460e9f571eb57e9a0788" compoundref="inv__mpu_8c" startline="1779" endline="1810">mpu_read_fifo_stream</references>
+        <references refid="group___d_r_i_v_e_r_s_1gaf23e9f57c0059be6ec57862f0584de10" compoundref="inv__mpu_8c" startline="1092" endline="1147">mpu_reset_fifo</references>
+        <references refid="structdmp__s_1aa62a501c4d9335b7685c0ca96ab02c95" compoundref="inv__mpu__dmp__motion__driver_8c" startline="487">dmp_s::packet_length</references>
+        <references refid="group___d_r_i_v_e_r_s_1ga3036f612f259f4e13c631a31fb0e7176" compoundref="inv__mpu__dmp__motion__driver_8c" startline="478">QUAT_MAG_SQ_MAX</references>
+        <references refid="group___d_r_i_v_e_r_s_1gae76871da254b93d8b944ec65792db252" compoundref="inv__mpu__dmp__motion__driver_8c" startline="477">QUAT_MAG_SQ_MIN</references>
+        <referencedby refid="group___d_r_i_v_e_r_s_1gacb825f2fd99c3044d012a9b25608cc18" compoundref="inv__mpu_8c" startline="2970" endline="2999">mpu_dmp_get_data</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>DMP image and interface functions. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>All functions are preceded by the dmp_ prefix to differentiate among MPL and general driver function calls. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>$License:</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2011-2012<sp/>InvenSense<sp/>Corporation,<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>See<sp/>included<sp/>License.txt<sp/>for<sp/>License<sp/>information.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>$</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_INV_MPU_DMP_MOTION_DRIVER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_INV_MPU_DMP_MOTION_DRIVER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="group___d_r_i_v_e_r_s_1ga22a5ea75ee18a788b441f66fffe83586" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAP_X<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="group___d_r_i_v_e_r_s_1ga762f9521bf33c9ba7a77595268b108ec" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAP_Y<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x02)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="group___d_r_i_v_e_r_s_1gac2949c36d5f4eeb4769fdcf2d99284fd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAP_Z<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x04)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="group___d_r_i_v_e_r_s_1gaa2b8e1661eb53aeac3ff4877ff2b79d9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAP_XYZ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x07)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="group___d_r_i_v_e_r_s_1gaa979b4cd872ade6f4904199e83e9f3f4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAP_X_UP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="group___d_r_i_v_e_r_s_1gad3263c4a492cc11a014800d4a6e3311a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAP_X_DOWN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x02)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="group___d_r_i_v_e_r_s_1ga70ea99c21d573b870b91909faf677107" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAP_Y_UP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x03)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="group___d_r_i_v_e_r_s_1ga3d35b3c219083d14f9fff4a9c65cf783" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAP_Y_DOWN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x04)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="group___d_r_i_v_e_r_s_1gab240d8ebc872ea183523f4b3c3f9e346" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAP_Z_UP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x05)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="group___d_r_i_v_e_r_s_1ga8f0f8c5db2a60932cfde68ca0b9c2032" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAP_Z_DOWN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x06)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="group___d_r_i_v_e_r_s_1ga5198482b1487f06b71c9393847ae1897" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ANDROID_ORIENT_PORTRAIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="group___d_r_i_v_e_r_s_1ga388a7f6ac0d53cf96318b0bafa5c1c0a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ANDROID_ORIENT_LANDSCAPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="group___d_r_i_v_e_r_s_1ga63b8f82e9d60a84b6fca8c680d78c866" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ANDROID_ORIENT_REVERSE_PORTRAIT<sp/><sp/><sp/><sp/><sp/>(0x02)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="group___d_r_i_v_e_r_s_1ga98dc7e42de72097f62612c758de3ba16" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ANDROID_ORIENT_REVERSE_LANDSCAPE<sp/><sp/><sp/><sp/>(0x03)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="group___d_r_i_v_e_r_s_1gaab5d80253aaee2470c95c6981b731255" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMP_INT_GESTURE<sp/><sp/><sp/><sp/><sp/>(0x01)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="group___d_r_i_v_e_r_s_1gaabccda0e9ccd1a2f4287d23fe4b0c776" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMP_INT_CONTINUOUS<sp/><sp/>(0x02)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="group___d_r_i_v_e_r_s_1ga87fac39cf95e2c56afdf507a986fa00b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMP_FEATURE_TAP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x001)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="group___d_r_i_v_e_r_s_1gaf2b250fc928390d562f7bd80300ce419" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMP_FEATURE_ANDROID_ORIENT<sp/><sp/>(0x002)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="group___d_r_i_v_e_r_s_1gabf442c0477f8f7704a8094519ddfe38e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMP_FEATURE_LP_QUAT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x004)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="group___d_r_i_v_e_r_s_1gabcf6a5bc9703782d711d0c6ba92ade85" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMP_FEATURE_PEDOMETER<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x008)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="group___d_r_i_v_e_r_s_1gae879a3c9729f9e1be5e6d7c9211c69c0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMP_FEATURE_6X_LP_QUAT<sp/><sp/><sp/><sp/><sp/><sp/>(0x010)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="group___d_r_i_v_e_r_s_1gaaf0ac890c1f83106c08b722f1e865fdb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMP_FEATURE_GYRO_CAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x020)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="group___d_r_i_v_e_r_s_1ga9eeb257febe4a305df7ad4cf31dc2755" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMP_FEATURE_SEND_RAW_ACCEL<sp/><sp/>(0x040)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="group___d_r_i_v_e_r_s_1gaa59d3ed6f0cbc66e99ce637546434b34" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMP_FEATURE_SEND_RAW_GYRO<sp/><sp/><sp/>(0x080)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="group___d_r_i_v_e_r_s_1ga40462c6fd55b04b2f79723dd737ee795" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMP_FEATURE_SEND_CAL_GYRO<sp/><sp/><sp/>(0x100)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="group___d_r_i_v_e_r_s_1ga3d79cffe845a796a27d03432a1f2ade0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INV_WXYZ_QUAT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x100)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Set<sp/>up<sp/>functions.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1ga66626a842452f444e9af29cb0d2c6150" kindref="member">dmp_load_motion_driver_firmware</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1ga5399728fd572a7694af20286cc9d4121" kindref="member">dmp_set_fifo_rate</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>rate);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1gaf3f9953bc04af751b1101700daffa951" kindref="member">dmp_get_fifo_rate</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*rate);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1ga70c485bdfa30515e5b869b081192caa1" kindref="member">dmp_enable_feature</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>mask);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1ga92b920b72f5146ea14d45ad2d529b64c" kindref="member">dmp_get_enabled_features</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*mask);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1gaf10c08103d2aec9aa5555a5694bafced" kindref="member">dmp_set_interrupt_mode</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>mode);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1ga6cb5ff144ce6e1546f00809de8bb24a4" kindref="member">dmp_set_orientation</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>orient);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1ga4766e37ef95cbf0044c8f9594ed811d1" kindref="member">dmp_set_gyro_bias</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>*bias);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1gafbd714aee6086836f70aaea847771669" kindref="member">dmp_set_accel_bias</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>*bias);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Tap<sp/>functions.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1ga8a2df36126e34b78863e3acf1249d814" kindref="member">dmp_register_tap_cb</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*func)(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1ga15da67c0a6c94e0cdaceb8b165e13af9" kindref="member">dmp_set_tap_thresh</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>axis,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>thresh);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1ga66bc5c8fc26fcb498df53fc62aa87e4f" kindref="member">dmp_set_tap_axes</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>axis);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1ga819f947b2cb107ada7b9a94c41be0dad" kindref="member">dmp_set_tap_count</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>min_taps);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1ga97466067f4a23368f4d7e2547fe359d9" kindref="member">dmp_set_tap_time</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>time);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1gaeca250a90eb816eb2609229849481337" kindref="member">dmp_set_tap_time_multi</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>time);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1ga62efdae1330d5bcaf4c75b069ded0ed0" kindref="member">dmp_set_shake_reject_thresh</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>sf,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>thresh);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1ga09d7a6d90e1bd2e907f1866d850c5608" kindref="member">dmp_set_shake_reject_time</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>time);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1ga5d44d1a32535000e6902cdc5224d1b54" kindref="member">dmp_set_shake_reject_timeout</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>time);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Android<sp/>orientation<sp/>functions.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1ga2e66a02d29ec89466cf339587592943c" kindref="member">dmp_register_android_orient_cb</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*func)(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>LP<sp/>quaternion<sp/>functions.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1ga4ee4339b79a58558d121ba8206056394" kindref="member">dmp_enable_lp_quat</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1gaac712ef33727433f666b3861894873be" kindref="member">dmp_enable_6x_lp_quat</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Pedometer<sp/>functions.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1gad8f4d1a93e0f03d950559501c5a7255b" kindref="member">dmp_get_pedometer_step_count</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>*count);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1ga568562c19998f585b1d2ba056cd209db" kindref="member">dmp_set_pedometer_step_count</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>count);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1ga62c8e5e99986b0e60ca0dc9a9b9c3fcc" kindref="member">dmp_get_pedometer_walk_time</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>*time);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1ga62f469269047f8cba16a2b7f5349acc0" kindref="member">dmp_set_pedometer_walk_time</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>time);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>DMP<sp/>gyro<sp/>calibration<sp/>functions.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1ga653ebcec6758f006dd89939e8f3c6ebb" kindref="member">dmp_enable_gyro_cal</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Read<sp/>function.<sp/>This<sp/>function<sp/>should<sp/>be<sp/>called<sp/>whenever<sp/>the<sp/>MPU<sp/>interrupt<sp/>is</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/>*<sp/>detected.</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___d_r_i_v_e_r_s_1ga02db5f25359abe84be002c543cdc3803" kindref="member">dmp_read_fifo</ref>(</highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*gyro,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*accel,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>*quat,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>*timestamp,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*sensors,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*more);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>#ifndef<sp/>_INV_MPU_DMP_MOTION_DRIVER_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu_dmp_motion_driver.h"/>
+  </compounddef>
+</doxygen>

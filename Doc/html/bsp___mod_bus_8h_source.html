@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MF32BSP_XerolySkinner: D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MF32BSP_XerolySkinner<span id="projectnumber">&#160;2.0.0</span>
+   </div>
+   <div id="projectbrief">C++版本的驱动库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_7d600478d4be1ed73c651a71d29ab217.html">bsp_Device</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">bsp_ModBus.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="bsp___mod_bus_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> #  Copyright (c) 2022 Yuankang Liang(XerolySkinner)</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> #  本软件按原样提供,无任何明示或暗示</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> #  在任何情况下,作者都不承担任何损害赔偿责任</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> #  使用的许可声明:</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> #  1.  不得歪曲本软件的来源,你不能声称你编写了原始软件.</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> #  2.  免费授予以任何目的,前提是版权声明出现在所有副本中.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> #      并且版权声明和许可声明同时出现.</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> #  3.  你有使用,复制,修改,分发,和销售本软件的许可.</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> #  4.  如果你在产品中使用,产品文档中的声明是赞赏的但不是必须的.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> #  5.  本通知不得从任何来源删除或更改.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> #  Yuankang Liang(XerolySkinner)</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> #      E-mail:zabbcccbbaz@163.com</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> #      QQ:2715099320</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> #      Mobile Phone:13005636215</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> #  All rights reserved.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;<a class="code" href="varint_8h.html">varint.h</a>&quot;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;usart.h&quot;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;stdarg.h&gt;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">//----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">//  数据码</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643">   41</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643">Fun_ModBus</a> {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643afa0834864982fdb57c9a954bdbd1599b">   42</a></span>    <a class="code hl_enumvalue" href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643afa0834864982fdb57c9a954bdbd1599b">Fun_R_OutCoil</a>   = 0x01,             </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643a8c70d4d5036c1a3f9c51a545d13fdd92">   43</a></span>    <a class="code hl_enumvalue" href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643a8c70d4d5036c1a3f9c51a545d13fdd92">Fun_R_InCoil</a>    = 0x02,             </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643a9ec5f1febebcade07d80148f67d51594">   44</a></span>    <a class="code hl_enumvalue" href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643a9ec5f1febebcade07d80148f67d51594">Fun_R_KeepReg</a>   = 0x03,             </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643ab285b7d7c40fa9a85adba60a3a769fca">   45</a></span>    <a class="code hl_enumvalue" href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643ab285b7d7c40fa9a85adba60a3a769fca">Fun_R_InReg</a>     = 0x04,             </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643a95bb48bd2de82de8a2f5684a6cccff0f">   47</a></span>    <a class="code hl_enumvalue" href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643a95bb48bd2de82de8a2f5684a6cccff0f">Fun_W_OneCoil</a>   = 0x05,             </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643a2e8689560573f300af3a6c48fdd6ce86">   48</a></span>    <a class="code hl_enumvalue" href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643a2e8689560573f300af3a6c48fdd6ce86">Fun_W_OneReg</a>    = 0x06,             </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643a0a40a9622af4e5cb7daecbdb303ee35e">   49</a></span>    <a class="code hl_enumvalue" href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643a0a40a9622af4e5cb7daecbdb303ee35e">Fun_W_Coils</a>     = 0x0F,             </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643a54562faaab8c1c932c46c6c4cb2552f9">   50</a></span>    <a class="code hl_enumvalue" href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643a54562faaab8c1c932c46c6c4cb2552f9">Fun_W_Regs</a>      = 0x10,             </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">//----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">//  类目</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classbsp___mod_bus___tx.html">   58</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="classbsp___mod_bus___tx.html">bsp_ModBus_Tx</a>{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <a class="code hl_class" href="classbsp___mod_bus___tx.html">bsp_ModBus_Tx</a>(<a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> <a class="code hl_variable" href="classbsp___mod_bus___tx.html#a4ee454ddd116e2b608d9b35b02eee0e4">ID</a>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___mod_bus___tx.html#ada605c0e9195aefd43968cfe5b347565">ReadKeepReg</a>(<a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> address,<a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> mem);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___mod_bus___tx.html#af055e2569107b8ece7abdce3301e9444">ReadInReg</a>(<a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> address, <a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> mem);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___mod_bus___tx.html#a02ea1680f5c361f2cf4ebcb48b565281">WriteOneReg</a>(<a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> address, <a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> var);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___mod_bus___tx.html#a268c136782f8146662f33878522c270c">WriteRegs</a>(<a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> address, <a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> mem, <a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>* var);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___mod_bus___tx.html#acc267977d61716e25fd3e3ec57bc2960">WriteRegsVar</a>(<a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> address, <a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> mem,...);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___mod_bus___tx.html#abc721f5c61e236df505f3447818be921">ReadOutCoil</a>(<a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> address,<a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> mem);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___mod_bus___tx.html#a76e712e8d638ecc7b453e1c8afbbad98">ReadInCoil</a>(<a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> address, <a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> mem);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___mod_bus___tx.html#aa8d37cc0cefaad8f41bc1d195a326d95">WriteOneCoil</a>(<a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> address, <a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> state);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___mod_bus___tx.html#a630ac7566fe9d1773baa813802202d0f">WriteCoils</a>(<a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> address, <a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> mem, <a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>* var);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___mod_bus___tx.html#a280c5d7c99196a11b5fee7b34421a8ff">WriteCoilsVar</a>(<a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> address, <a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> mem,...);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classbsp___mod_bus___tx.html#ac017f6145ba6f87c69a16510f868dcc2">   74</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___mod_bus___tx.html#ac017f6145ba6f87c69a16510f868dcc2">Transmit</a>(<a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *dat, <a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> len)=0;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classbsp___mod_bus___tx.html#a4ee454ddd116e2b608d9b35b02eee0e4">   76</a></span>        <a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>      <a class="code hl_variable" href="classbsp___mod_bus___tx.html#a4ee454ddd116e2b608d9b35b02eee0e4">ID</a>;                     </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    };</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">//----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classbsp___mod_bus___rx.html">   82</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="classbsp___mod_bus___rx.html">bsp_ModBus_Rx</a>{</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <a class="code hl_function" href="classbsp___mod_bus___rx.html#a87e68578770301c3d78c9b7f551bb627">bsp_ModBus_Rx</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <a class="code hl_function" href="classbsp___mod_bus___rx.html#afa1dac97034b51725349ab5b1a2aa909">~bsp_ModBus_Rx</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___mod_bus___rx.html#a39330845d4ced51850b9edaaab052e0f">analysis</a>(<a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>* dat);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="comment">//      共有变量</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="classbsp___mod_bus___rx.html#a045cc9c5f9d26ad5be1da2d2cfdcbefc">   89</a></span>        <a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>      <a class="code hl_variable" href="classbsp___mod_bus___rx.html#a045cc9c5f9d26ad5be1da2d2cfdcbefc">ID</a>;                     </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classbsp___mod_bus___rx.html#a0a5cdc492b09b33ae665706c9968e5d5">   90</a></span>        <a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>      <a class="code hl_variable" href="classbsp___mod_bus___rx.html#a0a5cdc492b09b33ae665706c9968e5d5">Func</a>;                   </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classbsp___mod_bus___rx.html#ac1a35ae91223298913373de0d3e7c02d">   91</a></span>        <a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>      <a class="code hl_variable" href="classbsp___mod_bus___rx.html#ac1a35ae91223298913373de0d3e7c02d">crcts</a>;                  </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="comment">//      保持寄存器特有</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classbsp___mod_bus___rx.html#a091cc0733eb4aa6b06c10afdbfd46b7f">   93</a></span>        <a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>     *<a class="code hl_variable" href="classbsp___mod_bus___rx.html#a091cc0733eb4aa6b06c10afdbfd46b7f">KeepRegDat</a>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classbsp___mod_bus___rx.html#a7622d0c8c56feb97d263f57115ef3f6a">   94</a></span>        <a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>      <a class="code hl_variable" href="classbsp___mod_bus___rx.html#a7622d0c8c56feb97d263f57115ef3f6a">KeepRegMem</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="comment">//      输入寄存器特有</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classbsp___mod_bus___rx.html#ab275dbfa83dd90eff0cbf0411dfe8e4a">   96</a></span>        <a class="code hl_typedef" href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>*    <a class="code hl_variable" href="classbsp___mod_bus___rx.html#ab275dbfa83dd90eff0cbf0411dfe8e4a">InRegDat</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classbsp___mod_bus___rx.html#a37508047d184916eb7133a4ad8f10a6c">   97</a></span>        <a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>      <a class="code hl_variable" href="classbsp___mod_bus___rx.html#a37508047d184916eb7133a4ad8f10a6c">InRegMem</a>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="comment">//      输出线圈特有</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="classbsp___mod_bus___rx.html#a6612d15d148b4944662851bd8fabae04">   99</a></span>        <a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>*     <a class="code hl_variable" href="classbsp___mod_bus___rx.html#a6612d15d148b4944662851bd8fabae04">OutCoilDat</a>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classbsp___mod_bus___rx.html#a062f82edfe722d8cb783b67a5a085bee">  100</a></span>        <a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>      <a class="code hl_variable" href="classbsp___mod_bus___rx.html#a062f82edfe722d8cb783b67a5a085bee">OutCoilMem</a>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="comment">//      输入线圈特有</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classbsp___mod_bus___rx.html#a8ca97f2e7b033faddbb1772f15d91d4d">  102</a></span>        <a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>*     <a class="code hl_variable" href="classbsp___mod_bus___rx.html#a8ca97f2e7b033faddbb1772f15d91d4d">InCoilDat</a>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classbsp___mod_bus___rx.html#a22f49f0782c4580b0f582c27fbd758a3">  103</a></span>        <a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>      <a class="code hl_variable" href="classbsp___mod_bus___rx.html#a22f49f0782c4580b0f582c27fbd758a3">InCoilMem</a>;};</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="absp___mod_bus_8h_html_ac6d9f6c262df700be9045045502e7643"><div class="ttname"><a href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643">Fun_ModBus</a></div><div class="ttdeci">Fun_ModBus</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00041">bsp_ModBus.h:41</a></div></div>
+<div class="ttc" id="absp___mod_bus_8h_html_ac6d9f6c262df700be9045045502e7643a0a40a9622af4e5cb7daecbdb303ee35e"><div class="ttname"><a href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643a0a40a9622af4e5cb7daecbdb303ee35e">Fun_W_Coils</a></div><div class="ttdeci">@ Fun_W_Coils</div><div class="ttdoc">写入多线圈</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00049">bsp_ModBus.h:49</a></div></div>
+<div class="ttc" id="absp___mod_bus_8h_html_ac6d9f6c262df700be9045045502e7643a2e8689560573f300af3a6c48fdd6ce86"><div class="ttname"><a href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643a2e8689560573f300af3a6c48fdd6ce86">Fun_W_OneReg</a></div><div class="ttdeci">@ Fun_W_OneReg</div><div class="ttdoc">写入单寄存</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00048">bsp_ModBus.h:48</a></div></div>
+<div class="ttc" id="absp___mod_bus_8h_html_ac6d9f6c262df700be9045045502e7643a54562faaab8c1c932c46c6c4cb2552f9"><div class="ttname"><a href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643a54562faaab8c1c932c46c6c4cb2552f9">Fun_W_Regs</a></div><div class="ttdeci">@ Fun_W_Regs</div><div class="ttdoc">写入多寄存</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00050">bsp_ModBus.h:50</a></div></div>
+<div class="ttc" id="absp___mod_bus_8h_html_ac6d9f6c262df700be9045045502e7643a8c70d4d5036c1a3f9c51a545d13fdd92"><div class="ttname"><a href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643a8c70d4d5036c1a3f9c51a545d13fdd92">Fun_R_InCoil</a></div><div class="ttdeci">@ Fun_R_InCoil</div><div class="ttdoc">读取输入线圈</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00043">bsp_ModBus.h:43</a></div></div>
+<div class="ttc" id="absp___mod_bus_8h_html_ac6d9f6c262df700be9045045502e7643a95bb48bd2de82de8a2f5684a6cccff0f"><div class="ttname"><a href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643a95bb48bd2de82de8a2f5684a6cccff0f">Fun_W_OneCoil</a></div><div class="ttdeci">@ Fun_W_OneCoil</div><div class="ttdoc">写入单线圈</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00047">bsp_ModBus.h:47</a></div></div>
+<div class="ttc" id="absp___mod_bus_8h_html_ac6d9f6c262df700be9045045502e7643a9ec5f1febebcade07d80148f67d51594"><div class="ttname"><a href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643a9ec5f1febebcade07d80148f67d51594">Fun_R_KeepReg</a></div><div class="ttdeci">@ Fun_R_KeepReg</div><div class="ttdoc">读取保持寄存</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00044">bsp_ModBus.h:44</a></div></div>
+<div class="ttc" id="absp___mod_bus_8h_html_ac6d9f6c262df700be9045045502e7643ab285b7d7c40fa9a85adba60a3a769fca"><div class="ttname"><a href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643ab285b7d7c40fa9a85adba60a3a769fca">Fun_R_InReg</a></div><div class="ttdeci">@ Fun_R_InReg</div><div class="ttdoc">读取输入寄存</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00045">bsp_ModBus.h:45</a></div></div>
+<div class="ttc" id="absp___mod_bus_8h_html_ac6d9f6c262df700be9045045502e7643afa0834864982fdb57c9a954bdbd1599b"><div class="ttname"><a href="bsp___mod_bus_8h.html#ac6d9f6c262df700be9045045502e7643afa0834864982fdb57c9a954bdbd1599b">Fun_R_OutCoil</a></div><div class="ttdeci">@ Fun_R_OutCoil</div><div class="ttdoc">读取输出线圈</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00042">bsp_ModBus.h:42</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___rx_html"><div class="ttname"><a href="classbsp___mod_bus___rx.html">bsp_ModBus_Rx</a></div><div class="ttdoc">ModBus协议分析器</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00082">bsp_ModBus.h:82</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___rx_html_a045cc9c5f9d26ad5be1da2d2cfdcbefc"><div class="ttname"><a href="classbsp___mod_bus___rx.html#a045cc9c5f9d26ad5be1da2d2cfdcbefc">bsp_ModBus_Rx::ID</a></div><div class="ttdeci">u8 ID</div><div class="ttdoc">器件ID</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00089">bsp_ModBus.h:89</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___rx_html_a062f82edfe722d8cb783b67a5a085bee"><div class="ttname"><a href="classbsp___mod_bus___rx.html#a062f82edfe722d8cb783b67a5a085bee">bsp_ModBus_Rx::OutCoilMem</a></div><div class="ttdeci">u8 OutCoilMem</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00100">bsp_ModBus.h:100</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___rx_html_a091cc0733eb4aa6b06c10afdbfd46b7f"><div class="ttname"><a href="classbsp___mod_bus___rx.html#a091cc0733eb4aa6b06c10afdbfd46b7f">bsp_ModBus_Rx::KeepRegDat</a></div><div class="ttdeci">u16 * KeepRegDat</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00093">bsp_ModBus.h:93</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___rx_html_a0a5cdc492b09b33ae665706c9968e5d5"><div class="ttname"><a href="classbsp___mod_bus___rx.html#a0a5cdc492b09b33ae665706c9968e5d5">bsp_ModBus_Rx::Func</a></div><div class="ttdeci">u8 Func</div><div class="ttdoc">功能号</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00090">bsp_ModBus.h:90</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___rx_html_a22f49f0782c4580b0f582c27fbd758a3"><div class="ttname"><a href="classbsp___mod_bus___rx.html#a22f49f0782c4580b0f582c27fbd758a3">bsp_ModBus_Rx::InCoilMem</a></div><div class="ttdeci">u8 InCoilMem</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00103">bsp_ModBus.h:103</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___rx_html_a37508047d184916eb7133a4ad8f10a6c"><div class="ttname"><a href="classbsp___mod_bus___rx.html#a37508047d184916eb7133a4ad8f10a6c">bsp_ModBus_Rx::InRegMem</a></div><div class="ttdeci">u8 InRegMem</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00097">bsp_ModBus.h:97</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___rx_html_a39330845d4ced51850b9edaaab052e0f"><div class="ttname"><a href="classbsp___mod_bus___rx.html#a39330845d4ced51850b9edaaab052e0f">bsp_ModBus_Rx::analysis</a></div><div class="ttdeci">void analysis(u8 *dat)</div><div class="ttdoc">以ModBus协议分析缓冲区内数据</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8cpp_source.html#l00304">bsp_ModBus.cpp:304</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___rx_html_a6612d15d148b4944662851bd8fabae04"><div class="ttname"><a href="classbsp___mod_bus___rx.html#a6612d15d148b4944662851bd8fabae04">bsp_ModBus_Rx::OutCoilDat</a></div><div class="ttdeci">u8 * OutCoilDat</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00099">bsp_ModBus.h:99</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___rx_html_a7622d0c8c56feb97d263f57115ef3f6a"><div class="ttname"><a href="classbsp___mod_bus___rx.html#a7622d0c8c56feb97d263f57115ef3f6a">bsp_ModBus_Rx::KeepRegMem</a></div><div class="ttdeci">u8 KeepRegMem</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00094">bsp_ModBus.h:94</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___rx_html_a87e68578770301c3d78c9b7f551bb627"><div class="ttname"><a href="classbsp___mod_bus___rx.html#a87e68578770301c3d78c9b7f551bb627">bsp_ModBus_Rx::bsp_ModBus_Rx</a></div><div class="ttdeci">bsp_ModBus_Rx(void)</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8cpp_source.html#l00365">bsp_ModBus.cpp:365</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___rx_html_a8ca97f2e7b033faddbb1772f15d91d4d"><div class="ttname"><a href="classbsp___mod_bus___rx.html#a8ca97f2e7b033faddbb1772f15d91d4d">bsp_ModBus_Rx::InCoilDat</a></div><div class="ttdeci">u8 * InCoilDat</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00102">bsp_ModBus.h:102</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___rx_html_ab275dbfa83dd90eff0cbf0411dfe8e4a"><div class="ttname"><a href="classbsp___mod_bus___rx.html#ab275dbfa83dd90eff0cbf0411dfe8e4a">bsp_ModBus_Rx::InRegDat</a></div><div class="ttdeci">u16 * InRegDat</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00096">bsp_ModBus.h:96</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___rx_html_ac1a35ae91223298913373de0d3e7c02d"><div class="ttname"><a href="classbsp___mod_bus___rx.html#ac1a35ae91223298913373de0d3e7c02d">bsp_ModBus_Rx::crcts</a></div><div class="ttdeci">u8 crcts</div><div class="ttdoc">CRC测试</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00091">bsp_ModBus.h:91</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___rx_html_afa1dac97034b51725349ab5b1a2aa909"><div class="ttname"><a href="classbsp___mod_bus___rx.html#afa1dac97034b51725349ab5b1a2aa909">bsp_ModBus_Rx::~bsp_ModBus_Rx</a></div><div class="ttdeci">~bsp_ModBus_Rx(void)</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8cpp_source.html#l00371">bsp_ModBus.cpp:371</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___tx_html"><div class="ttname"><a href="classbsp___mod_bus___tx.html">bsp_ModBus_Tx</a></div><div class="ttdoc">ModBus发送器</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00058">bsp_ModBus.h:58</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___tx_html_a02ea1680f5c361f2cf4ebcb48b565281"><div class="ttname"><a href="classbsp___mod_bus___tx.html#a02ea1680f5c361f2cf4ebcb48b565281">bsp_ModBus_Tx::WriteOneReg</a></div><div class="ttdeci">void WriteOneReg(u16 address, u16 var)</div><div class="ttdoc">发送写一个寄存器的指令</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8cpp_source.html#l00090">bsp_ModBus.cpp:90</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___tx_html_a268c136782f8146662f33878522c270c"><div class="ttname"><a href="classbsp___mod_bus___tx.html#a268c136782f8146662f33878522c270c">bsp_ModBus_Tx::WriteRegs</a></div><div class="ttdeci">void WriteRegs(u16 address, u16 mem, u16 *var)</div><div class="ttdoc">发送写多个寄存器的指令</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8cpp_source.html#l00112">bsp_ModBus.cpp:112</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___tx_html_a280c5d7c99196a11b5fee7b34421a8ff"><div class="ttname"><a href="classbsp___mod_bus___tx.html#a280c5d7c99196a11b5fee7b34421a8ff">bsp_ModBus_Tx::WriteCoilsVar</a></div><div class="ttdeci">void WriteCoilsVar(u16 address, u16 mem,...)</div><div class="ttdoc">发送写多个线圈的指令</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8cpp_source.html#l00268">bsp_ModBus.cpp:268</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___tx_html_a4ee454ddd116e2b608d9b35b02eee0e4"><div class="ttname"><a href="classbsp___mod_bus___tx.html#a4ee454ddd116e2b608d9b35b02eee0e4">bsp_ModBus_Tx::ID</a></div><div class="ttdeci">u8 ID</div><div class="ttdoc">器件ID</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8h_source.html#l00076">bsp_ModBus.h:76</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___tx_html_a630ac7566fe9d1773baa813802202d0f"><div class="ttname"><a href="classbsp___mod_bus___tx.html#a630ac7566fe9d1773baa813802202d0f">bsp_ModBus_Tx::WriteCoils</a></div><div class="ttdeci">void WriteCoils(u16 address, u16 mem, u8 *var)</div><div class="ttdoc">发送写多个线圈的指令</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8cpp_source.html#l00240">bsp_ModBus.cpp:240</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___tx_html_a76e712e8d638ecc7b453e1c8afbbad98"><div class="ttname"><a href="classbsp___mod_bus___tx.html#a76e712e8d638ecc7b453e1c8afbbad98">bsp_ModBus_Tx::ReadInCoil</a></div><div class="ttdeci">void ReadInCoil(u16 address, u16 mem)</div><div class="ttdoc">发送读输入线圈的指令</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8cpp_source.html#l00195">bsp_ModBus.cpp:195</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___tx_html_aa8d37cc0cefaad8f41bc1d195a326d95"><div class="ttname"><a href="classbsp___mod_bus___tx.html#aa8d37cc0cefaad8f41bc1d195a326d95">bsp_ModBus_Tx::WriteOneCoil</a></div><div class="ttdeci">void WriteOneCoil(u16 address, u16 state)</div><div class="ttdoc">发送写入一个线圈的指令</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8cpp_source.html#l00217">bsp_ModBus.cpp:217</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___tx_html_abc721f5c61e236df505f3447818be921"><div class="ttname"><a href="classbsp___mod_bus___tx.html#abc721f5c61e236df505f3447818be921">bsp_ModBus_Tx::ReadOutCoil</a></div><div class="ttdeci">void ReadOutCoil(u16 address, u16 mem)</div><div class="ttdoc">发送读输出线圈的指令</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8cpp_source.html#l00175">bsp_ModBus.cpp:175</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___tx_html_ac017f6145ba6f87c69a16510f868dcc2"><div class="ttname"><a href="classbsp___mod_bus___tx.html#ac017f6145ba6f87c69a16510f868dcc2">bsp_ModBus_Tx::Transmit</a></div><div class="ttdeci">virtual void Transmit(u8 *dat, u16 len)=0</div></div>
+<div class="ttc" id="aclassbsp___mod_bus___tx_html_acc267977d61716e25fd3e3ec57bc2960"><div class="ttname"><a href="classbsp___mod_bus___tx.html#acc267977d61716e25fd3e3ec57bc2960">bsp_ModBus_Tx::WriteRegsVar</a></div><div class="ttdeci">void WriteRegsVar(u16 address, u16 mem,...)</div><div class="ttdoc">发送写多个寄存器的指令</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8cpp_source.html#l00142">bsp_ModBus.cpp:142</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___tx_html_ada605c0e9195aefd43968cfe5b347565"><div class="ttname"><a href="classbsp___mod_bus___tx.html#ada605c0e9195aefd43968cfe5b347565">bsp_ModBus_Tx::ReadKeepReg</a></div><div class="ttdeci">void ReadKeepReg(u16 address, u16 mem)</div><div class="ttdoc">发送读取保存寄存器的指令</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8cpp_source.html#l00050">bsp_ModBus.cpp:50</a></div></div>
+<div class="ttc" id="aclassbsp___mod_bus___tx_html_af055e2569107b8ece7abdce3301e9444"><div class="ttname"><a href="classbsp___mod_bus___tx.html#af055e2569107b8ece7abdce3301e9444">bsp_ModBus_Tx::ReadInReg</a></div><div class="ttdeci">void ReadInReg(u16 address, u16 mem)</div><div class="ttdoc">发送读取输入寄存器的指令</div><div class="ttdef"><b>Definition:</b> <a href="bsp___mod_bus_8cpp_source.html#l00070">bsp_ModBus.cpp:70</a></div></div>
+<div class="ttc" id="avarint_8h_html"><div class="ttname"><a href="varint_8h.html">varint.h</a></div></div>
+<div class="ttc" id="avarint_8h_html_a92c50087ca0e64fa93fc59402c55f8ca"><div class="ttname"><a href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a></div><div class="ttdeci">uint8_t u8</div><div class="ttdoc">8位无符号数类型</div><div class="ttdef"><b>Definition:</b> <a href="varint_8h_source.html#l00040">varint.h:40</a></div></div>
+<div class="ttc" id="avarint_8h_html_ace9d960e74685e2cd84b36132dbbf8aa"><div class="ttname"><a href="varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a></div><div class="ttdeci">uint16_t u16</div><div class="ttdoc">16位无符号数类型</div><div class="ttdef"><b>Definition:</b> <a href="varint_8h_source.html#l00041">varint.h:41</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

@@ -1,0 +1,309 @@
+\hypertarget{classbsp___position___p_i_d}{}\doxysection{bsp\+\_\+\+Position\+\_\+\+PID类 参考}
+\label{classbsp___position___p_i_d}\index{bsp\_Position\_PID@{bsp\_Position\_PID}}
+
+
+位置法为基础的\+PID算法  
+
+
+
+
+{\ttfamily \#include $<$bsp\+\_\+\+PID.\+h$>$}
+
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbsp___position___p_i_d_ac50b1ff29153eed1fcb252a3eee2aa69}{bsp\+\_\+\+Position\+\_\+\+PID}} (void)
+\item 
+\mbox{\hyperlink{classbsp___position___p_i_d_aa16c488294e5bfba71c8ef83ee76a250}{bsp\+\_\+\+Position\+\_\+\+PID}} (float \mbox{\hyperlink{classbsp___position___p_i_d_aa2ea863045a5bc0785693013154b6a52}{Kp}}, float \mbox{\hyperlink{classbsp___position___p_i_d_a58c60be7603ec356bbe428fb989d4e68}{Ki}}, float \mbox{\hyperlink{classbsp___position___p_i_d_a1678e1ea6b9e6ea56fde93df5aad4f75}{Kd}}, float \mbox{\hyperlink{classbsp___position___p_i_d_a04921569cfe25681f8763beaae01c1bc}{target}}, float \mbox{\hyperlink{classbsp___position___p_i_d_a08bba095208d3dcdb8c07e741dc3a77a}{result\+\_\+H}}, float \mbox{\hyperlink{classbsp___position___p_i_d_a42a8eb4e1c96871e1b4eacb0cf46e196}{result\+\_\+L}})
+\begin{DoxyCompactList}\small\item\em PID算法 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbsp___position___p_i_d_a9cd33ec75d5ca15939d132644d4ceea8}{$\sim$bsp\+\_\+\+Position\+\_\+\+PID}} (void)
+\item 
+float \mbox{\hyperlink{classbsp___position___p_i_d_ac658466d8bc1d12fcd403c4b6f9ca9f7}{PID}} (float temp)
+\begin{DoxyCompactList}\small\item\em PID算法 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___position___p_i_d_a7b60d7f8a80c632c501561e7e0765f14}{clean}} (void)
+\begin{DoxyCompactList}\small\item\em 清理历史数据 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___position___p_i_d_add37a6f47b3f9b6dd0d945def8ed2ef1}{set}} (float P, float I, float D)
+\begin{DoxyCompactList}\small\item\em PID参数设置 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classbsp___position___p_i_d_a04921569cfe25681f8763beaae01c1bc}{target}}
+\begin{DoxyCompactList}\small\item\em 设定值 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classbsp___position___p_i_d_aa2ea863045a5bc0785693013154b6a52}{Kp}}
+\begin{DoxyCompactList}\small\item\em 比例系数 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classbsp___position___p_i_d_a1678e1ea6b9e6ea56fde93df5aad4f75}{Kd}}
+\begin{DoxyCompactList}\small\item\em 积分系数 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classbsp___position___p_i_d_a58c60be7603ec356bbe428fb989d4e68}{Ki}}
+\begin{DoxyCompactList}\small\item\em 微分系数 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classbsp___position___p_i_d_a77ecc1d6378fb03cc63c9a3a263c90b2}{result}}
+\begin{DoxyCompactList}\small\item\em 输出值 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classbsp___position___p_i_d_a9e7c0b93c1936f3aca77800997f99c05}{integral}}
+\begin{DoxyCompactList}\small\item\em 积分值 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classbsp___position___p_i_d_a04a54e038d2229f330e1913ce8b8aada}{lasterror}}
+\begin{DoxyCompactList}\small\item\em 前一拍偏差 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classbsp___position___p_i_d_a08bba095208d3dcdb8c07e741dc3a77a}{result\+\_\+H}}
+\begin{DoxyCompactList}\small\item\em 输出最高值 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classbsp___position___p_i_d_a42a8eb4e1c96871e1b4eacb0cf46e196}{result\+\_\+L}}
+\begin{DoxyCompactList}\small\item\em 输出最低值 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+位置法为基础的\+PID算法 
+
+在文件 \mbox{\hyperlink{bsp___p_i_d_8h_source}{bsp\+\_\+\+PID.\+h}} 第 \mbox{\hyperlink{bsp___p_i_d_8h_source_l00043}{43}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classbsp___position___p_i_d_ac50b1ff29153eed1fcb252a3eee2aa69}\label{classbsp___position___p_i_d_ac50b1ff29153eed1fcb252a3eee2aa69}} 
+\index{bsp\_Position\_PID@{bsp\_Position\_PID}!bsp\_Position\_PID@{bsp\_Position\_PID}}
+\index{bsp\_Position\_PID@{bsp\_Position\_PID}!bsp\_Position\_PID@{bsp\_Position\_PID}}
+\doxysubsubsection{\texorpdfstring{bsp\_Position\_PID()}{bsp\_Position\_PID()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bsp\+\_\+\+Position\+\_\+\+PID\+::bsp\+\_\+\+Position\+\_\+\+PID (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{bsp___p_i_d_8cpp_source}{bsp\+\_\+\+PID.\+cpp}} 第 \mbox{\hyperlink{bsp___p_i_d_8cpp_source_l00134}{134}} 行定义.
+
+\mbox{\Hypertarget{classbsp___position___p_i_d_aa16c488294e5bfba71c8ef83ee76a250}\label{classbsp___position___p_i_d_aa16c488294e5bfba71c8ef83ee76a250}} 
+\index{bsp\_Position\_PID@{bsp\_Position\_PID}!bsp\_Position\_PID@{bsp\_Position\_PID}}
+\index{bsp\_Position\_PID@{bsp\_Position\_PID}!bsp\_Position\_PID@{bsp\_Position\_PID}}
+\doxysubsubsection{\texorpdfstring{bsp\_Position\_PID()}{bsp\_Position\_PID()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bsp\+\_\+\+Position\+\_\+\+PID\+::bsp\+\_\+\+Position\+\_\+\+PID (\begin{DoxyParamCaption}\item[{float}]{Kp,  }\item[{float}]{Ki,  }\item[{float}]{Kd,  }\item[{float}]{target,  }\item[{float}]{result\+\_\+H,  }\item[{float}]{result\+\_\+L }\end{DoxyParamCaption})}
+
+
+
+PID算法 
+
+
+\begin{DoxyParams}{参数}
+{\em Kp} & P参数 \\
+\hline
+{\em Ki} & I参数 \\
+\hline
+{\em Kd} & D参数 \\
+\hline
+{\em target} & 目标值 \\
+\hline
+{\em result\+\_\+H} & 输出最大值 \\
+\hline
+{\em result\+\_\+L} & 输出最小值 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___p_i_d_8cpp_source}{bsp\+\_\+\+PID.\+cpp}} 第 \mbox{\hyperlink{bsp___p_i_d_8cpp_source_l00155}{155}} 行定义.
+
+\mbox{\Hypertarget{classbsp___position___p_i_d_a9cd33ec75d5ca15939d132644d4ceea8}\label{classbsp___position___p_i_d_a9cd33ec75d5ca15939d132644d4ceea8}} 
+\index{bsp\_Position\_PID@{bsp\_Position\_PID}!````~bsp\_Position\_PID@{$\sim$bsp\_Position\_PID}}
+\index{````~bsp\_Position\_PID@{$\sim$bsp\_Position\_PID}!bsp\_Position\_PID@{bsp\_Position\_PID}}
+\doxysubsubsection{\texorpdfstring{$\sim$bsp\_Position\_PID()}{~bsp\_Position\_PID()}}
+{\footnotesize\ttfamily bsp\+\_\+\+Position\+\_\+\+PID\+::$\sim$bsp\+\_\+\+Position\+\_\+\+PID (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{bsp___p_i_d_8cpp_source}{bsp\+\_\+\+PID.\+cpp}} 第 \mbox{\hyperlink{bsp___p_i_d_8cpp_source_l00169}{169}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classbsp___position___p_i_d_a7b60d7f8a80c632c501561e7e0765f14}\label{classbsp___position___p_i_d_a7b60d7f8a80c632c501561e7e0765f14}} 
+\index{bsp\_Position\_PID@{bsp\_Position\_PID}!clean@{clean}}
+\index{clean@{clean}!bsp\_Position\_PID@{bsp\_Position\_PID}}
+\doxysubsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+Position\+\_\+\+PID\+::clean (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+清理历史数据 
+
+\begin{DoxyReturn}{返回}
+清除\+PID运算数据 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___p_i_d_8cpp_source}{bsp\+\_\+\+PID.\+cpp}} 第 \mbox{\hyperlink{bsp___p_i_d_8cpp_source_l00096}{96}} 行定义.
+
+\mbox{\Hypertarget{classbsp___position___p_i_d_ac658466d8bc1d12fcd403c4b6f9ca9f7}\label{classbsp___position___p_i_d_ac658466d8bc1d12fcd403c4b6f9ca9f7}} 
+\index{bsp\_Position\_PID@{bsp\_Position\_PID}!PID@{PID}}
+\index{PID@{PID}!bsp\_Position\_PID@{bsp\_Position\_PID}}
+\doxysubsubsection{\texorpdfstring{PID()}{PID()}}
+{\footnotesize\ttfamily float bsp\+\_\+\+Position\+\_\+\+PID\+::\+PID (\begin{DoxyParamCaption}\item[{float}]{temp }\end{DoxyParamCaption})}
+
+
+
+PID算法 
+
+
+\begin{DoxyParams}{参数}
+{\em temp} & 目前变量 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+返回调整量 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___p_i_d_8cpp_source}{bsp\+\_\+\+PID.\+cpp}} 第 \mbox{\hyperlink{bsp___p_i_d_8cpp_source_l00048}{48}} 行定义.
+
+\mbox{\Hypertarget{classbsp___position___p_i_d_add37a6f47b3f9b6dd0d945def8ed2ef1}\label{classbsp___position___p_i_d_add37a6f47b3f9b6dd0d945def8ed2ef1}} 
+\index{bsp\_Position\_PID@{bsp\_Position\_PID}!set@{set}}
+\index{set@{set}!bsp\_Position\_PID@{bsp\_Position\_PID}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+Position\+\_\+\+PID\+::set (\begin{DoxyParamCaption}\item[{float}]{P,  }\item[{float}]{I,  }\item[{float}]{D }\end{DoxyParamCaption})}
+
+
+
+PID参数设置 
+
+
+\begin{DoxyParams}{参数}
+{\em P} & P参数 \\
+\hline
+{\em I} & I参数 \\
+\hline
+{\em D} & D参数 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___p_i_d_8cpp_source}{bsp\+\_\+\+PID.\+cpp}} 第 \mbox{\hyperlink{bsp___p_i_d_8cpp_source_l00119}{119}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{classbsp___position___p_i_d_a9e7c0b93c1936f3aca77800997f99c05}\label{classbsp___position___p_i_d_a9e7c0b93c1936f3aca77800997f99c05}} 
+\index{bsp\_Position\_PID@{bsp\_Position\_PID}!integral@{integral}}
+\index{integral@{integral}!bsp\_Position\_PID@{bsp\_Position\_PID}}
+\doxysubsubsection{\texorpdfstring{integral}{integral}}
+{\footnotesize\ttfamily float bsp\+\_\+\+Position\+\_\+\+PID\+::integral\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+积分值 
+
+
+
+在文件 \mbox{\hyperlink{bsp___p_i_d_8h_source}{bsp\+\_\+\+PID.\+h}} 第 \mbox{\hyperlink{bsp___p_i_d_8h_source_l00061}{61}} 行定义.
+
+\mbox{\Hypertarget{classbsp___position___p_i_d_a1678e1ea6b9e6ea56fde93df5aad4f75}\label{classbsp___position___p_i_d_a1678e1ea6b9e6ea56fde93df5aad4f75}} 
+\index{bsp\_Position\_PID@{bsp\_Position\_PID}!Kd@{Kd}}
+\index{Kd@{Kd}!bsp\_Position\_PID@{bsp\_Position\_PID}}
+\doxysubsubsection{\texorpdfstring{Kd}{Kd}}
+{\footnotesize\ttfamily float bsp\+\_\+\+Position\+\_\+\+PID\+::\+Kd}
+
+
+
+积分系数 
+
+
+
+在文件 \mbox{\hyperlink{bsp___p_i_d_8h_source}{bsp\+\_\+\+PID.\+h}} 第 \mbox{\hyperlink{bsp___p_i_d_8h_source_l00057}{57}} 行定义.
+
+\mbox{\Hypertarget{classbsp___position___p_i_d_a58c60be7603ec356bbe428fb989d4e68}\label{classbsp___position___p_i_d_a58c60be7603ec356bbe428fb989d4e68}} 
+\index{bsp\_Position\_PID@{bsp\_Position\_PID}!Ki@{Ki}}
+\index{Ki@{Ki}!bsp\_Position\_PID@{bsp\_Position\_PID}}
+\doxysubsubsection{\texorpdfstring{Ki}{Ki}}
+{\footnotesize\ttfamily float bsp\+\_\+\+Position\+\_\+\+PID\+::\+Ki}
+
+
+
+微分系数 
+
+
+
+在文件 \mbox{\hyperlink{bsp___p_i_d_8h_source}{bsp\+\_\+\+PID.\+h}} 第 \mbox{\hyperlink{bsp___p_i_d_8h_source_l00058}{58}} 行定义.
+
+\mbox{\Hypertarget{classbsp___position___p_i_d_aa2ea863045a5bc0785693013154b6a52}\label{classbsp___position___p_i_d_aa2ea863045a5bc0785693013154b6a52}} 
+\index{bsp\_Position\_PID@{bsp\_Position\_PID}!Kp@{Kp}}
+\index{Kp@{Kp}!bsp\_Position\_PID@{bsp\_Position\_PID}}
+\doxysubsubsection{\texorpdfstring{Kp}{Kp}}
+{\footnotesize\ttfamily float bsp\+\_\+\+Position\+\_\+\+PID\+::\+Kp}
+
+
+
+比例系数 
+
+
+
+在文件 \mbox{\hyperlink{bsp___p_i_d_8h_source}{bsp\+\_\+\+PID.\+h}} 第 \mbox{\hyperlink{bsp___p_i_d_8h_source_l00056}{56}} 行定义.
+
+\mbox{\Hypertarget{classbsp___position___p_i_d_a04a54e038d2229f330e1913ce8b8aada}\label{classbsp___position___p_i_d_a04a54e038d2229f330e1913ce8b8aada}} 
+\index{bsp\_Position\_PID@{bsp\_Position\_PID}!lasterror@{lasterror}}
+\index{lasterror@{lasterror}!bsp\_Position\_PID@{bsp\_Position\_PID}}
+\doxysubsubsection{\texorpdfstring{lasterror}{lasterror}}
+{\footnotesize\ttfamily float bsp\+\_\+\+Position\+\_\+\+PID\+::lasterror\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+前一拍偏差 
+
+
+
+在文件 \mbox{\hyperlink{bsp___p_i_d_8h_source}{bsp\+\_\+\+PID.\+h}} 第 \mbox{\hyperlink{bsp___p_i_d_8h_source_l00062}{62}} 行定义.
+
+\mbox{\Hypertarget{classbsp___position___p_i_d_a77ecc1d6378fb03cc63c9a3a263c90b2}\label{classbsp___position___p_i_d_a77ecc1d6378fb03cc63c9a3a263c90b2}} 
+\index{bsp\_Position\_PID@{bsp\_Position\_PID}!result@{result}}
+\index{result@{result}!bsp\_Position\_PID@{bsp\_Position\_PID}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily float bsp\+\_\+\+Position\+\_\+\+PID\+::result}
+
+
+
+输出值 
+
+
+
+在文件 \mbox{\hyperlink{bsp___p_i_d_8h_source}{bsp\+\_\+\+PID.\+h}} 第 \mbox{\hyperlink{bsp___p_i_d_8h_source_l00059}{59}} 行定义.
+
+\mbox{\Hypertarget{classbsp___position___p_i_d_a08bba095208d3dcdb8c07e741dc3a77a}\label{classbsp___position___p_i_d_a08bba095208d3dcdb8c07e741dc3a77a}} 
+\index{bsp\_Position\_PID@{bsp\_Position\_PID}!result\_H@{result\_H}}
+\index{result\_H@{result\_H}!bsp\_Position\_PID@{bsp\_Position\_PID}}
+\doxysubsubsection{\texorpdfstring{result\_H}{result\_H}}
+{\footnotesize\ttfamily float bsp\+\_\+\+Position\+\_\+\+PID\+::result\+\_\+H\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+输出最高值 
+
+
+
+在文件 \mbox{\hyperlink{bsp___p_i_d_8h_source}{bsp\+\_\+\+PID.\+h}} 第 \mbox{\hyperlink{bsp___p_i_d_8h_source_l00064}{64}} 行定义.
+
+\mbox{\Hypertarget{classbsp___position___p_i_d_a42a8eb4e1c96871e1b4eacb0cf46e196}\label{classbsp___position___p_i_d_a42a8eb4e1c96871e1b4eacb0cf46e196}} 
+\index{bsp\_Position\_PID@{bsp\_Position\_PID}!result\_L@{result\_L}}
+\index{result\_L@{result\_L}!bsp\_Position\_PID@{bsp\_Position\_PID}}
+\doxysubsubsection{\texorpdfstring{result\_L}{result\_L}}
+{\footnotesize\ttfamily float bsp\+\_\+\+Position\+\_\+\+PID\+::result\+\_\+L\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+输出最低值 
+
+
+
+在文件 \mbox{\hyperlink{bsp___p_i_d_8h_source}{bsp\+\_\+\+PID.\+h}} 第 \mbox{\hyperlink{bsp___p_i_d_8h_source_l00065}{65}} 行定义.
+
+\mbox{\Hypertarget{classbsp___position___p_i_d_a04921569cfe25681f8763beaae01c1bc}\label{classbsp___position___p_i_d_a04921569cfe25681f8763beaae01c1bc}} 
+\index{bsp\_Position\_PID@{bsp\_Position\_PID}!target@{target}}
+\index{target@{target}!bsp\_Position\_PID@{bsp\_Position\_PID}}
+\doxysubsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily float bsp\+\_\+\+Position\+\_\+\+PID\+::target}
+
+
+
+设定值 
+
+
+
+在文件 \mbox{\hyperlink{bsp___p_i_d_8h_source}{bsp\+\_\+\+PID.\+h}} 第 \mbox{\hyperlink{bsp___p_i_d_8h_source_l00055}{55}} 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/gitt/\+Microchip\+For32/bsp\+\_\+\+Device/\mbox{\hyperlink{bsp___p_i_d_8h}{bsp\+\_\+\+PID.\+h}}\item 
+D\+:/gitt/\+Microchip\+For32/bsp\+\_\+\+Device/\mbox{\hyperlink{bsp___p_i_d_8cpp}{bsp\+\_\+\+PID.\+cpp}}\end{DoxyCompactItemize}

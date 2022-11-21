@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MF32BSP_XerolySkinner: D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MF32BSP_XerolySkinner<span id="projectnumber">&#160;2.0.0</span>
+   </div>
+   <div id="projectbrief">C++版本的驱动库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_7d600478d4be1ed73c651a71d29ab217.html">bsp_Device</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">bsp_AT24C00.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="bsp___a_t24_c00_8cpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> #  Copyright (c) 2022 Yuankang Liang(XerolySkinner)</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> #  本软件按原样提供,无任何明示或暗示</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> #  在任何情况下,作者都不承担任何损害赔偿责任</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> #  使用的许可声明:</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> #  1.  不得歪曲本软件的来源,你不能声称你编写了原始软件.</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> #  2.  免费授予以任何目的,前提是版权声明出现在所有副本中.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> #      并且版权声明和许可声明同时出现.</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> #  3.  你有使用,复制,修改,分发,和销售本软件的许可.</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> #  4.  如果你在产品中使用,产品文档中的声明是赞赏的但不是必须的.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> #  5.  本通知不得从任何来源删除或更改.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> #  Yuankang Liang(XerolySkinner)</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> #      E-mail:zabbcccbbaz@163.com</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> #      QQ:2715099320</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> #      Mobile Phone:13005636215</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> #  All rights reserved.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">//----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">//  头文件</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &quot;<a class="code" href="varint_8h.html">varint.h</a>&quot;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &quot;main.h&quot;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &quot;<a class="code" href="bsp___a_t24_c00_8h.html">bsp_AT24C00.h</a>&quot;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">//----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">//  程序</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">//  </span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classbsp___s_t_m32___a_t24_c00.html#a7ba3cbef5e2eea37f514948f12f2119d">   47</a></span><span class="comment"></span><span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___s_t_m32___a_t24_c00.html#a7ba3cbef5e2eea37f514948f12f2119d">bsp_STM32_AT24C00::IIC_Delay</a>(<span class="keywordtype">void</span>){</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    HAL_Delay(5);}</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">//----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classbsp___s_t_m32___a_t24_c00.html#a43f5fb06621d92865d9289d996b3211a">   55</a></span><span class="comment"></span><span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___s_t_m32___a_t24_c00.html#a43f5fb06621d92865d9289d996b3211a">bsp_STM32_AT24C00::WriteOneByte</a>(<a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> addr,<a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> dat){</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_function" href="classbsp___i_i_c.html#a9f4cdf777e69f407b155ffdba5b9e7c8">IIC_WriteOneByte</a>(<a class="code hl_variable" href="classbsp___s_t_m32___a_t24_c00.html#a7b81cd0d8fea1bb0ce4e4b0143612bde">Address</a>,addr,dat);}</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">//----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classbsp___s_t_m32___a_t24_c00.html#a950e3a80ff49c538294bfedf8e893ff7">   63</a></span><span class="comment"></span><a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> <a class="code hl_function" href="classbsp___s_t_m32___a_t24_c00.html#a950e3a80ff49c538294bfedf8e893ff7">bsp_STM32_AT24C00::ReadOneByte</a>(<a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> addr){</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classbsp___i_i_c.html#a9effd40b26cbf6f321d0f0db3e2f09c3">IIC_ReadOneByte</a>(<a class="code hl_variable" href="classbsp___s_t_m32___a_t24_c00.html#a7b81cd0d8fea1bb0ce4e4b0143612bde">Address</a>,addr);}</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">//----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classbsp___s_t_m32___a_t24_c00.html#a2c0bcf4f2ffd4ef242c8d4423dca1ad0">   72</a></span><span class="comment"></span><span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___s_t_m32___a_t24_c00.html#a2c0bcf4f2ffd4ef242c8d4423dca1ad0">bsp_STM32_AT24C00::WriteByte</a>(<a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> addr,<a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *dat,<a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> len){</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> member=0;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <a class="code hl_function" href="classbsp___i_i_c.html#a97ad38a37ad0140987ba79d878f0d9e9">IIC_Start</a>();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_function" href="classbsp___i_i_c.html#ae2e78aae0c89a4d6063d8ba60752acd5">IIC_SendByte</a>(<a class="code hl_variable" href="classbsp___s_t_m32___a_t24_c00.html#a7b81cd0d8fea1bb0ce4e4b0143612bde">Address</a>&lt;&lt;1);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <a class="code hl_function" href="classbsp___i_i_c.html#a3f14f230b5876c529380d4f51a9c9c12">IIC_WaitAck</a>();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <a class="code hl_function" href="classbsp___i_i_c.html#ae2e78aae0c89a4d6063d8ba60752acd5">IIC_SendByte</a>(addr);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <a class="code hl_function" href="classbsp___i_i_c.html#a3f14f230b5876c529380d4f51a9c9c12">IIC_WaitAck</a>();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">do</span>{</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <a class="code hl_function" href="classbsp___i_i_c.html#ae2e78aae0c89a4d6063d8ba60752acd5">IIC_SendByte</a>(dat[member]);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <a class="code hl_function" href="classbsp___i_i_c.html#a3f14f230b5876c529380d4f51a9c9c12">IIC_WaitAck</a>();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        member++;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">if</span>(((member+addr)%<a class="code hl_variable" href="classbsp___s_t_m32___a_t24_c00.html#a5c1a52c22b16f15bf07358a4b181e2ff">Page</a>)==0){</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <a class="code hl_function" href="classbsp___i_i_c.html#ae513e1a05cbbae2a6f37e6cbb3bb63e2">IIC_Stop</a>();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <a class="code hl_function" href="classbsp___s_t_m32___a_t24_c00.html#a7ba3cbef5e2eea37f514948f12f2119d">IIC_Delay</a>();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <a class="code hl_function" href="classbsp___i_i_c.html#a97ad38a37ad0140987ba79d878f0d9e9">IIC_Start</a>();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <a class="code hl_function" href="classbsp___i_i_c.html#ae2e78aae0c89a4d6063d8ba60752acd5">IIC_SendByte</a>(<a class="code hl_variable" href="classbsp___s_t_m32___a_t24_c00.html#a7b81cd0d8fea1bb0ce4e4b0143612bde">Address</a>&lt;&lt;1);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <a class="code hl_function" href="classbsp___i_i_c.html#a3f14f230b5876c529380d4f51a9c9c12">IIC_WaitAck</a>();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <a class="code hl_function" href="classbsp___i_i_c.html#ae2e78aae0c89a4d6063d8ba60752acd5">IIC_SendByte</a>(addr+member);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <a class="code hl_function" href="classbsp___i_i_c.html#a3f14f230b5876c529380d4f51a9c9c12">IIC_WaitAck</a>();}</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        }<span class="keywordflow">while</span>(member!=len);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <a class="code hl_function" href="classbsp___i_i_c.html#ae513e1a05cbbae2a6f37e6cbb3bb63e2">IIC_Stop</a>();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <a class="code hl_function" href="classbsp___s_t_m32___a_t24_c00.html#a7ba3cbef5e2eea37f514948f12f2119d">IIC_Delay</a>();}</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">//----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classbsp___s_t_m32___a_t24_c00.html#ad5b68ee911f6e46ab877049eaadc5b1c">  101</a></span><span class="comment"></span><span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___s_t_m32___a_t24_c00.html#ad5b68ee911f6e46ab877049eaadc5b1c">bsp_STM32_AT24C00::AT_ReadByte</a>(<a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> addr,<a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *dat,<a class="code hl_typedef" href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> len){</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <a class="code hl_function" href="classbsp___i_i_c.html#aae8c08f59f3fce9dce27f9f04beda683">IIC_Read</a>(<a class="code hl_variable" href="classbsp___s_t_m32___a_t24_c00.html#a7b81cd0d8fea1bb0ce4e4b0143612bde">Address</a>,addr,dat,len);}</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="ttc" id="absp___a_t24_c00_8h_html"><div class="ttname"><a href="bsp___a_t24_c00_8h.html">bsp_AT24C00.h</a></div><div class="ttdoc">本类实现AT24C00的通讯</div></div>
+<div class="ttc" id="aclassbsp___i_i_c_html_a3f14f230b5876c529380d4f51a9c9c12"><div class="ttname"><a href="classbsp___i_i_c.html#a3f14f230b5876c529380d4f51a9c9c12">bsp_IIC::IIC_WaitAck</a></div><div class="ttdeci">u8 IIC_WaitAck(void)</div><div class="ttdoc">等待应答信号</div><div class="ttdef"><b>Definition:</b> <a href="bsp___i_i_c_8cpp_source.html#l00085">bsp_IIC.cpp:85</a></div></div>
+<div class="ttc" id="aclassbsp___i_i_c_html_a97ad38a37ad0140987ba79d878f0d9e9"><div class="ttname"><a href="classbsp___i_i_c.html#a97ad38a37ad0140987ba79d878f0d9e9">bsp_IIC::IIC_Start</a></div><div class="ttdeci">void IIC_Start(void)</div><div class="ttdoc">发送IIC开始信号</div><div class="ttdef"><b>Definition:</b> <a href="bsp___i_i_c_8cpp_source.html#l00047">bsp_IIC.cpp:47</a></div></div>
+<div class="ttc" id="aclassbsp___i_i_c_html_a9effd40b26cbf6f321d0f0db3e2f09c3"><div class="ttname"><a href="classbsp___i_i_c.html#a9effd40b26cbf6f321d0f0db3e2f09c3">bsp_IIC::IIC_ReadOneByte</a></div><div class="ttdeci">u8 IIC_ReadOneByte(u8 id, u8 addr)</div><div class="ttdoc">使用总线接收一个字节数据</div><div class="ttdef"><b>Definition:</b> <a href="bsp___i_i_c_8cpp_source.html#l00153">bsp_IIC.cpp:153</a></div></div>
+<div class="ttc" id="aclassbsp___i_i_c_html_a9f4cdf777e69f407b155ffdba5b9e7c8"><div class="ttname"><a href="classbsp___i_i_c.html#a9f4cdf777e69f407b155ffdba5b9e7c8">bsp_IIC::IIC_WriteOneByte</a></div><div class="ttdeci">void IIC_WriteOneByte(u8 id, u8 addr, u8 dat)</div><div class="ttdoc">使用总线发送一个字节数据</div><div class="ttdef"><b>Definition:</b> <a href="bsp___i_i_c_8cpp_source.html#l00136">bsp_IIC.cpp:136</a></div></div>
+<div class="ttc" id="aclassbsp___i_i_c_html_aae8c08f59f3fce9dce27f9f04beda683"><div class="ttname"><a href="classbsp___i_i_c.html#aae8c08f59f3fce9dce27f9f04beda683">bsp_IIC::IIC_Read</a></div><div class="ttdeci">void IIC_Read(u8 id, u8 addr, u8 *dat, u32 len)</div><div class="ttdoc">使用总线接收定长数据</div><div class="ttdef"><b>Definition:</b> <a href="bsp___i_i_c_8cpp_source.html#l00198">bsp_IIC.cpp:198</a></div></div>
+<div class="ttc" id="aclassbsp___i_i_c_html_ae2e78aae0c89a4d6063d8ba60752acd5"><div class="ttname"><a href="classbsp___i_i_c.html#ae2e78aae0c89a4d6063d8ba60752acd5">bsp_IIC::IIC_SendByte</a></div><div class="ttdeci">void IIC_SendByte(u8 byt)</div><div class="ttdoc">发送IIC一个字节信号</div><div class="ttdef"><b>Definition:</b> <a href="bsp___i_i_c_8cpp_source.html#l00098">bsp_IIC.cpp:98</a></div></div>
+<div class="ttc" id="aclassbsp___i_i_c_html_ae513e1a05cbbae2a6f37e6cbb3bb63e2"><div class="ttname"><a href="classbsp___i_i_c.html#ae513e1a05cbbae2a6f37e6cbb3bb63e2">bsp_IIC::IIC_Stop</a></div><div class="ttdeci">void IIC_Stop(void)</div><div class="ttdoc">发送IIC停止信号</div><div class="ttdef"><b>Definition:</b> <a href="bsp___i_i_c_8cpp_source.html#l00059">bsp_IIC.cpp:59</a></div></div>
+<div class="ttc" id="aclassbsp___s_t_m32___a_t24_c00_html_a2c0bcf4f2ffd4ef242c8d4423dca1ad0"><div class="ttname"><a href="classbsp___s_t_m32___a_t24_c00.html#a2c0bcf4f2ffd4ef242c8d4423dca1ad0">bsp_STM32_AT24C00::WriteByte</a></div><div class="ttdeci">void WriteByte(u8 addr, u8 *dat, u8 len)</div><div class="ttdoc">写入定长度的字节</div><div class="ttdef"><b>Definition:</b> <a href="bsp___a_t24_c00_8cpp_source.html#l00072">bsp_AT24C00.cpp:72</a></div></div>
+<div class="ttc" id="aclassbsp___s_t_m32___a_t24_c00_html_a43f5fb06621d92865d9289d996b3211a"><div class="ttname"><a href="classbsp___s_t_m32___a_t24_c00.html#a43f5fb06621d92865d9289d996b3211a">bsp_STM32_AT24C00::WriteOneByte</a></div><div class="ttdeci">void WriteOneByte(u8 addr, u8 dat)</div><div class="ttdoc">储存一个字节</div><div class="ttdef"><b>Definition:</b> <a href="bsp___a_t24_c00_8cpp_source.html#l00055">bsp_AT24C00.cpp:55</a></div></div>
+<div class="ttc" id="aclassbsp___s_t_m32___a_t24_c00_html_a5c1a52c22b16f15bf07358a4b181e2ff"><div class="ttname"><a href="classbsp___s_t_m32___a_t24_c00.html#a5c1a52c22b16f15bf07358a4b181e2ff">bsp_STM32_AT24C00::Page</a></div><div class="ttdeci">u8 Page</div><div class="ttdef"><b>Definition:</b> <a href="bsp___a_t24_c00_8h_source.html#l00065">bsp_AT24C00.h:65</a></div></div>
+<div class="ttc" id="aclassbsp___s_t_m32___a_t24_c00_html_a7b81cd0d8fea1bb0ce4e4b0143612bde"><div class="ttname"><a href="classbsp___s_t_m32___a_t24_c00.html#a7b81cd0d8fea1bb0ce4e4b0143612bde">bsp_STM32_AT24C00::Address</a></div><div class="ttdeci">u8 Address</div><div class="ttdef"><b>Definition:</b> <a href="bsp___a_t24_c00_8h_source.html#l00064">bsp_AT24C00.h:64</a></div></div>
+<div class="ttc" id="aclassbsp___s_t_m32___a_t24_c00_html_a7ba3cbef5e2eea37f514948f12f2119d"><div class="ttname"><a href="classbsp___s_t_m32___a_t24_c00.html#a7ba3cbef5e2eea37f514948f12f2119d">bsp_STM32_AT24C00::IIC_Delay</a></div><div class="ttdeci">void IIC_Delay(void)</div><div class="ttdoc">实现AT定制的IIC延时时间</div><div class="ttdef"><b>Definition:</b> <a href="bsp___a_t24_c00_8cpp_source.html#l00047">bsp_AT24C00.cpp:47</a></div></div>
+<div class="ttc" id="aclassbsp___s_t_m32___a_t24_c00_html_a950e3a80ff49c538294bfedf8e893ff7"><div class="ttname"><a href="classbsp___s_t_m32___a_t24_c00.html#a950e3a80ff49c538294bfedf8e893ff7">bsp_STM32_AT24C00::ReadOneByte</a></div><div class="ttdeci">u8 ReadOneByte(u8 addr)</div><div class="ttdoc">读取一个字节</div><div class="ttdef"><b>Definition:</b> <a href="bsp___a_t24_c00_8cpp_source.html#l00063">bsp_AT24C00.cpp:63</a></div></div>
+<div class="ttc" id="aclassbsp___s_t_m32___a_t24_c00_html_ad5b68ee911f6e46ab877049eaadc5b1c"><div class="ttname"><a href="classbsp___s_t_m32___a_t24_c00.html#ad5b68ee911f6e46ab877049eaadc5b1c">bsp_STM32_AT24C00::AT_ReadByte</a></div><div class="ttdeci">void AT_ReadByte(u8 addr, u8 *dat, u8 len)</div><div class="ttdoc">读取定长度的字节</div><div class="ttdef"><b>Definition:</b> <a href="bsp___a_t24_c00_8cpp_source.html#l00101">bsp_AT24C00.cpp:101</a></div></div>
+<div class="ttc" id="avarint_8h_html"><div class="ttname"><a href="varint_8h.html">varint.h</a></div></div>
+<div class="ttc" id="avarint_8h_html_a92c50087ca0e64fa93fc59402c55f8ca"><div class="ttname"><a href="varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a></div><div class="ttdeci">uint8_t u8</div><div class="ttdoc">8位无符号数类型</div><div class="ttdef"><b>Definition:</b> <a href="varint_8h_source.html#l00040">varint.h:40</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

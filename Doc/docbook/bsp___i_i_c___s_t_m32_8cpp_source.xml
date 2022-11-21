@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_bsp___i_i_c___s_t_m32_8cpp_source" xml:lang="zh">
+<title>bsp_IIC_STM32.cpp</title>
+<indexterm><primary>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.cpp</primary></indexterm>
+浏览该文件的文档.<programlisting linenumbering="unnumbered"><anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00001"/>00001 <emphasis role="comment">/*----------------------------------------------------------------------------------------------------</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00002"/>00002 <emphasis role="comment">&#32;#</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00003"/>00003 <emphasis role="comment">&#32;#&#32;&#32;Copyright&#32;(c)&#32;2022&#32;Yuankang&#32;Liang(XerolySkinner)</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00004"/>00004 <emphasis role="comment">&#32;#</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00005"/>00005 <emphasis role="comment">&#32;#&#32;&#32;本软件按原样提供,无任何明示或暗示</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00006"/>00006 <emphasis role="comment">&#32;#&#32;&#32;在任何情况下,作者都不承担任何损害赔偿责任</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00007"/>00007 <emphasis role="comment">&#32;#</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00008"/>00008 <emphasis role="comment">&#32;#&#32;&#32;使用的许可声明:</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00009"/>00009 <emphasis role="comment">&#32;#&#32;&#32;1.&#32;&#32;不得歪曲本软件的来源,你不能声称你编写了原始软件.</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00010"/>00010 <emphasis role="comment">&#32;#&#32;&#32;2.&#32;&#32;免费授予以任何目的,前提是版权声明出现在所有副本中.</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00011"/>00011 <emphasis role="comment">&#32;#&#32;&#32;&#32;&#32;&#32;&#32;并且版权声明和许可声明同时出现.</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00012"/>00012 <emphasis role="comment">&#32;#&#32;&#32;3.&#32;&#32;你有使用,复制,修改,分发,和销售本软件的许可.</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00013"/>00013 <emphasis role="comment">&#32;#&#32;&#32;4.&#32;&#32;如果你在产品中使用,产品文档中的声明是赞赏的但不是必须的.</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00014"/>00014 <emphasis role="comment">&#32;#&#32;&#32;5.&#32;&#32;本通知不得从任何来源删除或更改.</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00015"/>00015 <emphasis role="comment">&#32;#</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00016"/>00016 <emphasis role="comment">&#32;#&#32;&#32;Yuankang&#32;Liang(XerolySkinner)</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00017"/>00017 <emphasis role="comment">&#32;#&#32;&#32;&#32;&#32;&#32;&#32;E-mail:zabbcccbbaz@163.com</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00018"/>00018 <emphasis role="comment">&#32;#&#32;&#32;&#32;&#32;&#32;&#32;QQ:2715099320</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00019"/>00019 <emphasis role="comment">&#32;#&#32;&#32;&#32;&#32;&#32;&#32;Mobile&#32;Phone:13005636215</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00020"/>00020 <emphasis role="comment">&#32;#</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00021"/>00021 <emphasis role="comment">&#32;#&#32;&#32;All&#32;rights&#32;reserved.</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00022"/>00022 <emphasis role="comment">&#32;*/</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00023"/>00023 
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00035"/>00035 <emphasis role="comment">//----------------------------------------------------------------------------------------------------</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00036"/>00036 <emphasis role="comment">//&#32;&#32;头文件</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00037"/>00037 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_bsp___i_i_c___s_t_m32_8h">bsp_IIC_STM32.h</link>&quot;</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00038"/>00038 <emphasis role="preprocessor">#include&#32;&quot;gpio.h&quot;</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00040"/>00040 <emphasis role="comment">//----------------------------------------------------------------------------------------------------</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00041"/>00041 <emphasis role="comment">//&#32;&#32;构造函数</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00042"/>00042 <emphasis role="comment">//&#32;&#32;</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00051"/><link linkend="_classbsp___i_i_c___s_t_m32_1a22566656cd2c5e8e1ab6b4c6aa32b63b">00051</link> <emphasis role="comment"></emphasis><link linkend="_classbsp___i_i_c___s_t_m32_1a22566656cd2c5e8e1ab6b4c6aa32b63b">bsp_IIC_STM32::bsp_IIC_STM32</link>(GPIO_TypeDef&#32;*GPIOx_SCK,uint16_t&#32;GPIO_Pin_SCK,GPIO_TypeDef&#32;*GPIOx_SDA,uint16_t&#32;GPIO_Pin_SDA){
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00052"/>00052 &#32;&#32;&#32;&#32;<link linkend="_classbsp___i_i_c___s_t_m32_1a6258aaa53e12f5502333f4440cdba352">bsp_IIC_STM32::GPIOx_SCK</link>=<link linkend="_classbsp___i_i_c___s_t_m32_1a6258aaa53e12f5502333f4440cdba352">GPIOx_SCK</link>;
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00053"/>00053 &#32;&#32;&#32;&#32;<link linkend="_classbsp___i_i_c___s_t_m32_1a7a5b57552741573a65114014a146bd5e">bsp_IIC_STM32::GPIO_Pin_SCK</link>=<link linkend="_classbsp___i_i_c___s_t_m32_1a7a5b57552741573a65114014a146bd5e">GPIO_Pin_SCK</link>;
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00054"/>00054 &#32;&#32;&#32;&#32;<link linkend="_classbsp___i_i_c___s_t_m32_1aae22b18b9aa61649c4abd31f79fa7a82">bsp_IIC_STM32::GPIOx_SDA</link>=<link linkend="_classbsp___i_i_c___s_t_m32_1aae22b18b9aa61649c4abd31f79fa7a82">GPIOx_SDA</link>;
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00055"/>00055 &#32;&#32;&#32;&#32;<link linkend="_classbsp___i_i_c___s_t_m32_1a73c8aa1aef1ed9e4ff8d46e5c7755272">bsp_IIC_STM32::GPIO_Pin_SDA</link>=<link linkend="_classbsp___i_i_c___s_t_m32_1a73c8aa1aef1ed9e4ff8d46e5c7755272">GPIO_Pin_SDA</link>;}
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00057"/>00057 <emphasis role="comment">//----------------------------------------------------------------------------------------------------</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00058"/>00058 <emphasis role="comment">//&#32;&#32;适配程序</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00059"/>00059 <emphasis role="comment">//&#32;&#32;</emphasis>
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00064"/><link linkend="_classbsp___i_i_c___s_t_m32_1ab76c882803b30793f39b8a3fe4fdef2c">00064</link> <emphasis role="comment"></emphasis><emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classbsp___i_i_c___s_t_m32_1ab76c882803b30793f39b8a3fe4fdef2c">bsp_IIC_STM32::IIC_Delay</link>(<emphasis role="keywordtype">void</emphasis>)&#32;{
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00065"/>00065 &#32;&#32;&#32;&#32;<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link>&#32;i&#32;=&#32;0;
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00066"/>00066 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;(++i);}
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00073"/><link linkend="_classbsp___i_i_c___s_t_m32_1a14ca3a4cbeb0122d88391d9f37e1fe27">00073</link> <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link>&#32;<link linkend="_classbsp___i_i_c___s_t_m32_1a14ca3a4cbeb0122d88391d9f37e1fe27">bsp_IIC_STM32::IIC_SCK</link>(<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link>&#32;var)&#32;{
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00074"/>00074 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(var&#32;==&#32;<link linkend="_bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a048bbf954430bbc34fa11280165ed534">IIC_RESET</link>)&#32;{
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00075"/>00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;HAL_GPIO_WritePin(<link linkend="_classbsp___i_i_c___s_t_m32_1a6258aaa53e12f5502333f4440cdba352">GPIOx_SCK</link>,&#32;<link linkend="_classbsp___i_i_c___s_t_m32_1a7a5b57552741573a65114014a146bd5e">GPIO_Pin_SCK</link>,&#32;GPIO_PIN_RESET);
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00076"/>00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;2;}
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00077"/>00077 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(var&#32;==&#32;<link linkend="_bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a9e128b73c7beb33be6b4e953a7fddc66">IIC_SET</link>)&#32;{
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00078"/>00078 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;HAL_GPIO_WritePin(<link linkend="_classbsp___i_i_c___s_t_m32_1a6258aaa53e12f5502333f4440cdba352">GPIOx_SCK</link>,&#32;<link linkend="_classbsp___i_i_c___s_t_m32_1a7a5b57552741573a65114014a146bd5e">GPIO_Pin_SCK</link>,&#32;GPIO_PIN_SET);
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00079"/>00079 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;2;}
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00080"/>00080 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;{
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00081"/>00081 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;HAL_GPIO_ReadPin(<link linkend="_classbsp___i_i_c___s_t_m32_1a6258aaa53e12f5502333f4440cdba352">GPIOx_SCK</link>,&#32;<link linkend="_classbsp___i_i_c___s_t_m32_1a7a5b57552741573a65114014a146bd5e">GPIO_Pin_SCK</link>);
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00082"/>00082 &#32;&#32;&#32;&#32;}}
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00089"/><link linkend="_classbsp___i_i_c___s_t_m32_1a8e703fab0f20578492ff23cb185b1a8d">00089</link> <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link>&#32;<link linkend="_classbsp___i_i_c___s_t_m32_1a8e703fab0f20578492ff23cb185b1a8d">bsp_IIC_STM32::IIC_SDA</link>(<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link>&#32;var)&#32;{
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00090"/>00090 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(var&#32;==&#32;<link linkend="_bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a048bbf954430bbc34fa11280165ed534">IIC_RESET</link>)&#32;{
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00091"/>00091 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;HAL_GPIO_WritePin(<link linkend="_classbsp___i_i_c___s_t_m32_1aae22b18b9aa61649c4abd31f79fa7a82">GPIOx_SDA</link>,&#32;<link linkend="_classbsp___i_i_c___s_t_m32_1a73c8aa1aef1ed9e4ff8d46e5c7755272">GPIO_Pin_SDA</link>,&#32;GPIO_PIN_RESET);
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00092"/>00092 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;2;}
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00093"/>00093 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(var&#32;==&#32;<link linkend="_bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a9e128b73c7beb33be6b4e953a7fddc66">IIC_SET</link>)&#32;{
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00094"/>00094 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;HAL_GPIO_WritePin(<link linkend="_classbsp___i_i_c___s_t_m32_1aae22b18b9aa61649c4abd31f79fa7a82">GPIOx_SDA</link>,&#32;<link linkend="_classbsp___i_i_c___s_t_m32_1a73c8aa1aef1ed9e4ff8d46e5c7755272">GPIO_Pin_SDA</link>,&#32;GPIO_PIN_SET);
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00095"/>00095 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;2;}
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00096"/>00096 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;{
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00097"/>00097 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;HAL_GPIO_ReadPin(<link linkend="_classbsp___i_i_c___s_t_m32_1aae22b18b9aa61649c4abd31f79fa7a82">GPIOx_SDA</link>,&#32;<link linkend="_classbsp___i_i_c___s_t_m32_1a73c8aa1aef1ed9e4ff8d46e5c7755272">GPIO_Pin_SDA</link>);
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00098"/>00098 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}}
+<anchor xml:id="_bsp___i_i_c___s_t_m32_8cpp_source_1l00100"/>00100 
+</programlisting></section>

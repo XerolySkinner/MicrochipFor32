@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="structint__param__s" kind="struct" language="C++" prot="public">
+    <compoundname>int_param_s</compoundname>
+    <includes refid="inv__mpu_8h" local="no">inv_mpu.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1ga97093754f1f13b06492990e3da77965d" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* int_param_s::cb) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>cb</name>
+        <qualifiedname>int_param_s::cb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.h" line="39" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1ga5c682e1b664acf566f985b48dd7acbb7" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short int_param_s::pin</definition>
+        <argsstring></argsstring>
+        <name>pin</name>
+        <qualifiedname>int_param_s::pin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.h" line="40" column="20" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1ga46dfad5a278a8b40a68d71beca0d2be4" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char int_param_s::lp_exit</definition>
+        <argsstring></argsstring>
+        <name>lp_exit</name>
+        <qualifiedname>int_param_s::lp_exit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.h" line="41" column="19" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1ga9b859a3332d9bd9287d5766494f261fb" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char int_param_s::active_low</definition>
+        <argsstring></argsstring>
+        <name>active_low</name>
+        <qualifiedname>int_param_s::active_low</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.h" line="42" column="19" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.h" line="37" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.h" bodystart="37" bodyend="48"/>
+    <listofallmembers>
+      <member refid="group___d_r_i_v_e_r_s_1ga9b859a3332d9bd9287d5766494f261fb" prot="public" virt="non-virtual"><scope>int_param_s</scope><name>active_low</name></member>
+      <member refid="group___d_r_i_v_e_r_s_1ga97093754f1f13b06492990e3da77965d" prot="public" virt="non-virtual"><scope>int_param_s</scope><name>cb</name></member>
+      <member refid="group___d_r_i_v_e_r_s_1ga46dfad5a278a8b40a68d71beca0d2be4" prot="public" virt="non-virtual"><scope>int_param_s</scope><name>lp_exit</name></member>
+      <member refid="group___d_r_i_v_e_r_s_1ga5c682e1b664acf566f985b48dd7acbb7" prot="public" virt="non-virtual"><scope>int_param_s</scope><name>pin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

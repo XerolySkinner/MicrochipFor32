@@ -1,0 +1,561 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbsp___s_t_m32___o_l_e_d" xml:lang="zh">
+<title>bsp_STM32_OLED类 参考</title>
+<indexterm><primary>bsp_STM32_OLED</primary></indexterm>
+<para>
+
+<para>一个OLED设备,基于STM32使用IIC总线 </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;bsp_OLED_STM32.h&gt;</computeroutput>
+</para>
+类 bsp_STM32_OLED 继承关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___o_l_e_d__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+bsp_STM32_OLED 的协作图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___o_l_e_d__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbsp___s_t_m32___o_l_e_d_1a130ba2e9f83b4f6dd70154cb7561db35">bsp_STM32_OLED</link> (<link linkend="_classbsp___i_i_c___s_t_m32">bsp_IIC_STM32</link> &amp;IICS)</para>
+</listitem>
+            <listitem><para><link linkend="_classbsp___s_t_m32___o_l_e_d_1a72b5fb72becf87a1b1a0cd34f4e7a6d5">bsp_STM32_OLED</link> (GPIO_TypeDef *<link linkend="_classbsp___i_i_c___s_t_m32_1a6258aaa53e12f5502333f4440cdba352">GPIOx_SCK</link>, uint16_t <link linkend="_classbsp___i_i_c___s_t_m32_1a7a5b57552741573a65114014a146bd5e">GPIO_Pin_SCK</link>, GPIO_TypeDef *<link linkend="_classbsp___i_i_c___s_t_m32_1aae22b18b9aa61649c4abd31f79fa7a82">GPIOx_SDA</link>, uint16_t <link linkend="_classbsp___i_i_c___s_t_m32_1a73c8aa1aef1ed9e4ff8d46e5c7755272">GPIO_Pin_SDA</link>)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___s_t_m32___o_l_e_d_1a8d7c3a121efe0f93f01b4c0423843d7a">Init</link> (void)</para>
+
+<para>OLED初始化 初始化显示屏的设置 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___s_t_m32___o_l_e_d_1a8650b7dca00244d1c6a5b1530e08be20">Column_set</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> column)</para>
+
+<para>光标定位行中的位置 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___s_t_m32___o_l_e_d_1ace503e57e2f9abe155bd1bae7eb83bff">Page_set</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> page)</para>
+
+<para>光标定位于一页 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___s_t_m32___o_l_e_d_1a1d6d3de485739ab13cde6f4c51a97e72">Clear</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> dat)</para>
+
+<para>全页绘制 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___s_t_m32___o_l_e_d_1a60d512f9509a7809566159058caa8a01">Picture_display</link> (const <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> *ptr_pic)</para>
+
+<para>OLED绘图 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___s_t_m32___o_l_e_d_1acbb37e4600b98dd8e16b6a8750daae15">Picture_ReverseDisplay</link> (const <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> *ptr_pic)</para>
+
+<para>OLED反向绘图 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___s_t_m32___o_l_e_d_1a2fd3f6c887830072509f5aa916ad8751">Draw_ASCII</link> (<link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> H, <link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> V, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> word)</para>
+
+<para>OLED绘制ASCII字符 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___s_t_m32___o_l_e_d_1a7d11c69d54c2fac372a9e690319c111e">Send_dat</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> dat)</para>
+
+<para>发送一条数据给OLED </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___s_t_m32___o_l_e_d_1a4ce72ba6b9e7c027ecfaf9ad8fc30135">Send_cmd</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> cmd)</para>
+
+<para>发送一条指令给OLED </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___s_t_m32___o_l_e_d_1a333b835b09d4471f1be248b88c527d68">Send_len_dat</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> *dat, <link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> len)</para>
+
+<para>发送一串定长指令给OLED </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>额外继承的成员函数    </title>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>一个OLED设备,基于STM32使用IIC总线 </para>
+<para>
+在文件 <link linkend="_bsp___o_l_e_d___s_t_m32_8h_source">bsp_OLED_STM32.h</link> 第 <link linkend="_bsp___o_l_e_d___s_t_m32_8h_source_1l00081">81</link> 行定义.</para>
+</section>
+<section>
+<title>构造及析构函数说明</title>
+<anchor xml:id="_classbsp___s_t_m32___o_l_e_d_1a130ba2e9f83b4f6dd70154cb7561db35"/><section>
+    <title>bsp_STM32_OLED()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>bsp_STM32_OLED</primary><secondary>bsp_STM32_OLED</secondary></indexterm>
+<indexterm><primary>bsp_STM32_OLED</primary><secondary>bsp_STM32_OLED</secondary></indexterm>
+<para><computeroutput>bsp_STM32_OLED::bsp_STM32_OLED (<link linkend="_classbsp___i_i_c___s_t_m32">bsp_IIC_STM32</link> &amp; IICS)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_bsp___o_l_e_d___s_t_m32_8h_source">bsp_OLED_STM32.h</link> 第 <link linkend="_bsp___o_l_e_d___s_t_m32_8h_source_1l00084">84</link> 行定义.</para>
+</section>
+<anchor xml:id="_classbsp___s_t_m32___o_l_e_d_1a72b5fb72becf87a1b1a0cd34f4e7a6d5"/><section>
+    <title>bsp_STM32_OLED()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>bsp_STM32_OLED</primary><secondary>bsp_STM32_OLED</secondary></indexterm>
+<indexterm><primary>bsp_STM32_OLED</primary><secondary>bsp_STM32_OLED</secondary></indexterm>
+<para><computeroutput>bsp_STM32_OLED::bsp_STM32_OLED (GPIO_TypeDef * GPIOx_SCK, uint16_t GPIO_Pin_SCK, GPIO_TypeDef * GPIOx_SDA, uint16_t GPIO_Pin_SDA)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_bsp___o_l_e_d___s_t_m32_8h_source">bsp_OLED_STM32.h</link> 第 <link linkend="_bsp___o_l_e_d___s_t_m32_8h_source_1l00088">88</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_classbsp___s_t_m32___o_l_e_d_1a1d6d3de485739ab13cde6f4c51a97e72"/><section>
+    <title>Clear()</title>
+<indexterm><primary>Clear</primary><secondary>bsp_STM32_OLED</secondary></indexterm>
+<indexterm><primary>bsp_STM32_OLED</primary><secondary>Clear</secondary></indexterm>
+<para><computeroutput>void bsp_STM32_OLED::Clear (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> dat)</computeroutput></para><para>
+
+<para>全页绘制 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>dat</entry><entry>
+<para>全页绘制的数据,0x00为清空,0xFF为全涂 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp_source">bsp_OLED_STM32.cpp</link> 第 <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp_source_1l00084">84</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___o_l_e_d_a1d6d3de485739ab13cde6f4c51a97e72_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_t_m32___o_l_e_d_1a8650b7dca00244d1c6a5b1530e08be20"/><section>
+    <title>Column_set()</title>
+<indexterm><primary>Column_set</primary><secondary>bsp_STM32_OLED</secondary></indexterm>
+<indexterm><primary>bsp_STM32_OLED</primary><secondary>Column_set</secondary></indexterm>
+<para><computeroutput>void bsp_STM32_OLED::Column_set (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> column)</computeroutput></para><para>
+
+<para>光标定位行中的位置 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>column</entry><entry>
+<para>设定的该行位置 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp_source">bsp_OLED_STM32.cpp</link> 第 <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp_source_1l00068">68</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___o_l_e_d_a8650b7dca00244d1c6a5b1530e08be20_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___o_l_e_d_a8650b7dca00244d1c6a5b1530e08be20_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_t_m32___o_l_e_d_1a2fd3f6c887830072509f5aa916ad8751"/><section>
+    <title>Draw_ASCII()</title>
+<indexterm><primary>Draw_ASCII</primary><secondary>bsp_STM32_OLED</secondary></indexterm>
+<indexterm><primary>bsp_STM32_OLED</primary><secondary>Draw_ASCII</secondary></indexterm>
+<para><computeroutput>void bsp_STM32_OLED::Draw_ASCII (<link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> H, <link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> V, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> word)</computeroutput></para><para>
+
+<para>OLED绘制ASCII字符 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>H</entry><entry>
+<para>行数 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>V</entry><entry>
+<para>列数 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>word</entry><entry>
+<para>所要显示的字符 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp_source">bsp_OLED_STM32.cpp</link> 第 <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp_source_1l00145">145</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___o_l_e_d_a2fd3f6c887830072509f5aa916ad8751_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_t_m32___o_l_e_d_1a8d7c3a121efe0f93f01b4c0423843d7a"/><section>
+    <title>Init()</title>
+<indexterm><primary>Init</primary><secondary>bsp_STM32_OLED</secondary></indexterm>
+<indexterm><primary>bsp_STM32_OLED</primary><secondary>Init</secondary></indexterm>
+<para><computeroutput>void bsp_STM32_OLED::Init (void )</computeroutput></para><para>
+
+<para>OLED初始化 初始化显示屏的设置 </para>
+</para>
+<para>
+在文件 <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp_source">bsp_OLED_STM32.cpp</link> 第 <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp_source_1l00158">158</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___o_l_e_d_a8d7c3a121efe0f93f01b4c0423843d7a_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_t_m32___o_l_e_d_1ace503e57e2f9abe155bd1bae7eb83bff"/><section>
+    <title>Page_set()</title>
+<indexterm><primary>Page_set</primary><secondary>bsp_STM32_OLED</secondary></indexterm>
+<indexterm><primary>bsp_STM32_OLED</primary><secondary>Page_set</secondary></indexterm>
+<para><computeroutput>void bsp_STM32_OLED::Page_set (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> page)</computeroutput></para><para>
+
+<para>光标定位于一页 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>page</entry><entry>
+<para>设定所处的页位置 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp_source">bsp_OLED_STM32.cpp</link> 第 <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp_source_1l00077">77</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___o_l_e_d_ace503e57e2f9abe155bd1bae7eb83bff_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___o_l_e_d_ace503e57e2f9abe155bd1bae7eb83bff_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_t_m32___o_l_e_d_1a60d512f9509a7809566159058caa8a01"/><section>
+    <title>Picture_display()</title>
+<indexterm><primary>Picture_display</primary><secondary>bsp_STM32_OLED</secondary></indexterm>
+<indexterm><primary>bsp_STM32_OLED</primary><secondary>Picture_display</secondary></indexterm>
+<para><computeroutput>void bsp_STM32_OLED::Picture_display (const <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> * ptr_pic)</computeroutput></para><para>
+
+<para>OLED绘图 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>*ptr_pic</entry><entry>
+<para>图片数据的头 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp_source">bsp_OLED_STM32.cpp</link> 第 <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp_source_1l00103">103</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___o_l_e_d_a60d512f9509a7809566159058caa8a01_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_t_m32___o_l_e_d_1acbb37e4600b98dd8e16b6a8750daae15"/><section>
+    <title>Picture_ReverseDisplay()</title>
+<indexterm><primary>Picture_ReverseDisplay</primary><secondary>bsp_STM32_OLED</secondary></indexterm>
+<indexterm><primary>bsp_STM32_OLED</primary><secondary>Picture_ReverseDisplay</secondary></indexterm>
+<para><computeroutput>void bsp_STM32_OLED::Picture_ReverseDisplay (const <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> * ptr_pic)</computeroutput></para><para>
+
+<para>OLED反向绘图 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>*ptr_pic</entry><entry>
+<para>图片数据的头 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp_source">bsp_OLED_STM32.cpp</link> 第 <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp_source_1l00123">123</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___o_l_e_d_acbb37e4600b98dd8e16b6a8750daae15_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_t_m32___o_l_e_d_1a4ce72ba6b9e7c027ecfaf9ad8fc30135"/><section>
+    <title>Send_cmd()</title>
+<indexterm><primary>Send_cmd</primary><secondary>bsp_STM32_OLED</secondary></indexterm>
+<indexterm><primary>bsp_STM32_OLED</primary><secondary>Send_cmd</secondary></indexterm>
+<para><computeroutput>void bsp_STM32_OLED::Send_cmd (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> cmd)</computeroutput></para><para>
+
+<para>发送一条指令给OLED </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>cmd</entry><entry>
+<para>要发送的指令 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp_source">bsp_OLED_STM32.cpp</link> 第 <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp_source_1l00046">46</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___o_l_e_d_a4ce72ba6b9e7c027ecfaf9ad8fc30135_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___o_l_e_d_a4ce72ba6b9e7c027ecfaf9ad8fc30135_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_t_m32___o_l_e_d_1a7d11c69d54c2fac372a9e690319c111e"/><section>
+    <title>Send_dat()</title>
+<indexterm><primary>Send_dat</primary><secondary>bsp_STM32_OLED</secondary></indexterm>
+<indexterm><primary>bsp_STM32_OLED</primary><secondary>Send_dat</secondary></indexterm>
+<para><computeroutput>void bsp_STM32_OLED::Send_dat (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> dat)</computeroutput></para><para>
+
+<para>发送一条数据给OLED </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>dat</entry><entry>
+<para>要发送的数据 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp_source">bsp_OLED_STM32.cpp</link> 第 <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp_source_1l00053">53</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___o_l_e_d_a7d11c69d54c2fac372a9e690319c111e_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_t_m32___o_l_e_d_1a333b835b09d4471f1be248b88c527d68"/><section>
+    <title>Send_len_dat()</title>
+<indexterm><primary>Send_len_dat</primary><secondary>bsp_STM32_OLED</secondary></indexterm>
+<indexterm><primary>bsp_STM32_OLED</primary><secondary>Send_len_dat</secondary></indexterm>
+<para><computeroutput>void bsp_STM32_OLED::Send_len_dat (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> * dat, <link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> len)</computeroutput></para><para>
+
+<para>发送一串定长指令给OLED </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>*dat</entry><entry>
+<para>要发送的指令头 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>len</entry><entry>
+<para>指令长度 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp_source">bsp_OLED_STM32.cpp</link> 第 <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp_source_1l00061">61</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___o_l_e_d_a333b835b09d4471f1be248b88c527d68_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___o_l_e_d_a333b835b09d4471f1be248b88c527d68_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+该类的文档由以下文件生成:</para>
+D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp___o_l_e_d___s_t_m32_8h">bsp_OLED_STM32.h</link>D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp___o_l_e_d___s_t_m32_8cpp">bsp_OLED_STM32.cpp</link></section>
+</section>

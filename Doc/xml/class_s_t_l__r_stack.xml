@@ -1,0 +1,428 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="class_s_t_l__r_stack" kind="class" language="C++" prot="public">
+    <compoundname>STL_rStack</compoundname>
+    <includes refid="_s_t_l___stack_8h" local="no">STL_Stack.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_s_t_l__r_stack_1a4d702aae14e43421c0818dba3b8c99a1" prot="public" static="no" mutable="no">
+        <type>void(*)(void)</type>
+        <definition>void(*)(void) STL_rStack::poptopfun(void)</definition>
+        <argsstring>(void)</argsstring>
+        <name>poptopfun</name>
+        <qualifiedname>STL_rStack::poptopfun</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" line="78" column="1" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_t_l__r_stack_1a857415d9ae151b6acd395760b2e9cedf" prot="private" static="no" mutable="no">
+        <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref></type>
+        <definition>u32 STL_rStack::room</definition>
+        <argsstring></argsstring>
+        <name>room</name>
+        <qualifiedname>STL_rStack::room</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" line="80" column="4" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" bodystart="80" bodyend="-1"/>
+        <referencedby refid="class_s_t_l__r_stack_1a843cc47e7a2c281dd82392c8ed257dc1" compoundref="_s_t_l___stack_8cpp" startline="125" endline="145">clean</referencedby>
+        <referencedby refid="class_s_t_l__r_stack_1a153de2f05c0e0164ad68fb09130bf475" compoundref="_s_t_l___stack_8cpp" startline="56" endline="77">push</referencedby>
+        <referencedby refid="class_s_t_l__r_stack_1a55a54a57fe2f6625ef6b995f2d95e026" compoundref="_s_t_l___stack_8cpp" startline="41" endline="44">STL_rStack</referencedby>
+        <referencedby refid="class_s_t_l__r_stack_1a22c1e309f6476f31f1e5c313b01afd13" compoundref="_s_t_l___stack_8cpp" startline="118" endline="119">The_room</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_t_l__r_stack_1adf95fc53b74c9955a648f3500ae1e746" prot="private" static="no" mutable="no">
+        <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref></type>
+        <definition>u32 STL_rStack::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>STL_rStack::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" line="81" column="4" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" bodystart="81" bodyend="-1"/>
+        <referencedby refid="class_s_t_l__r_stack_1a843cc47e7a2c281dd82392c8ed257dc1" compoundref="_s_t_l___stack_8cpp" startline="125" endline="145">clean</referencedby>
+        <referencedby refid="class_s_t_l__r_stack_1a5c7016a370c7665d554dda4b8f7dee22" compoundref="_s_t_l___stack_8cpp" startline="83" endline="94">pop</referencedby>
+        <referencedby refid="class_s_t_l__r_stack_1a153de2f05c0e0164ad68fb09130bf475" compoundref="_s_t_l___stack_8cpp" startline="56" endline="77">push</referencedby>
+        <referencedby refid="class_s_t_l__r_stack_1a55a54a57fe2f6625ef6b995f2d95e026" compoundref="_s_t_l___stack_8cpp" startline="41" endline="44">STL_rStack</referencedby>
+        <referencedby refid="class_s_t_l__r_stack_1ac63cd564c04e4481925ead650dfb2edf" compoundref="_s_t_l___stack_8cpp" startline="111" endline="112">The_size</referencedby>
+        <referencedby refid="class_s_t_l__r_stack_1a49d2ca43dafd695e4e0d92018736f732" compoundref="_s_t_l___stack_8cpp" startline="101" endline="105">top</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_t_l__r_stack_1a2ff878cef1cc42db3c31812e654c8674" prot="private" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref> *</type>
+        <definition>u8* STL_rStack::dat</definition>
+        <argsstring></argsstring>
+        <name>dat</name>
+        <qualifiedname>STL_rStack::dat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" line="82" column="3" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" bodystart="82" bodyend="-1"/>
+        <referencedby refid="class_s_t_l__r_stack_1a843cc47e7a2c281dd82392c8ed257dc1" compoundref="_s_t_l___stack_8cpp" startline="125" endline="145">clean</referencedby>
+        <referencedby refid="class_s_t_l__r_stack_1ad64450c2168e2551ed8fad637a8b9c99" compoundref="_s_t_l___stack_8cpp" startline="174" endline="180">poptop32</referencedby>
+        <referencedby refid="class_s_t_l__r_stack_1a153de2f05c0e0164ad68fb09130bf475" compoundref="_s_t_l___stack_8cpp" startline="56" endline="77">push</referencedby>
+        <referencedby refid="class_s_t_l__r_stack_1a55a54a57fe2f6625ef6b995f2d95e026" compoundref="_s_t_l___stack_8cpp" startline="41" endline="44">STL_rStack</referencedby>
+        <referencedby refid="class_s_t_l__r_stack_1a49d2ca43dafd695e4e0d92018736f732" compoundref="_s_t_l___stack_8cpp" startline="101" endline="105">top</referencedby>
+        <referencedby refid="class_s_t_l__r_stack_1aed992153d5efc1cd3007863c8c08797c" compoundref="_s_t_l___stack_8cpp" startline="46" endline="47">~STL_rStack</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_t_l__r_stack_1a55a54a57fe2f6625ef6b995f2d95e026" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>STL_rStack::STL_rStack</definition>
+        <argsstring>(void)</argsstring>
+        <name>STL_rStack</name>
+        <qualifiedname>STL_rStack::STL_rStack</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" line="62" column="1" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.cpp" bodystart="41" bodyend="44"/>
+        <references refid="class_s_t_l__r_stack_1a2ff878cef1cc42db3c31812e654c8674" compoundref="_s_t_l___stack_8h" startline="82">dat</references>
+        <references refid="class_s_t_l__r_stack_1a857415d9ae151b6acd395760b2e9cedf" compoundref="_s_t_l___stack_8h" startline="80">room</references>
+        <references refid="class_s_t_l__r_stack_1adf95fc53b74c9955a648f3500ae1e746" compoundref="_s_t_l___stack_8h" startline="81">size</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_t_l__r_stack_1aed992153d5efc1cd3007863c8c08797c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>STL_rStack::~STL_rStack</definition>
+        <argsstring>(void)</argsstring>
+        <name>~STL_rStack</name>
+        <qualifiedname>STL_rStack::~STL_rStack</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" line="63" column="1" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.cpp" bodystart="46" bodyend="47"/>
+        <references refid="class_s_t_l__r_stack_1a2ff878cef1cc42db3c31812e654c8674" compoundref="_s_t_l___stack_8h" startline="82">dat</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_t_l__r_stack_1a153de2f05c0e0164ad68fb09130bf475" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 STL_rStack::push</definition>
+        <argsstring>(u8 var)</argsstring>
+        <name>push</name>
+        <qualifiedname>STL_rStack::push</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>压入一个成员 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>需要压入的数值 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>错误号 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" line="65" column="3" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.cpp" bodystart="56" bodyend="77"/>
+        <references refid="class_s_t_l__r_stack_1a2ff878cef1cc42db3c31812e654c8674" compoundref="_s_t_l___stack_8h" startline="82">dat</references>
+        <references refid="class_s_t_l__r_stack_1a857415d9ae151b6acd395760b2e9cedf" compoundref="_s_t_l___stack_8h" startline="80">room</references>
+        <references refid="class_s_t_l__r_stack_1adf95fc53b74c9955a648f3500ae1e746" compoundref="_s_t_l___stack_8h" startline="81">size</references>
+        <references refid="_s_t_l___stack_8h_1ad01fec74b6b0b6c599780dd41cf55ec0a3e9b3bff72ae3f8f3c62c4f4bc24ca16" compoundref="_s_t_l___stack_8h" startline="46">STACKS_OK</references>
+        <references refid="_s_t_l___stack_8h_1ad01fec74b6b0b6c599780dd41cf55ec0a9f2b3bdf4ae6c347dbf6bb0797672de7" compoundref="_s_t_l___stack_8h" startline="48">STACKS_REAL_ERROR</references>
+        <referencedby refid="class_s_t_l__r_stack_1a8a72b28e3a7faa2aae9272d90032d5a5" compoundref="_s_t_l___stack_8cpp" startline="152" endline="157">push32</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_t_l__r_stack_1a5c7016a370c7665d554dda4b8f7dee22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 STL_rStack::pop</definition>
+        <argsstring>(void)</argsstring>
+        <name>pop</name>
+        <qualifiedname>STL_rStack::pop</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>弹出一个成员 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>错误号 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" line="66" column="3" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.cpp" bodystart="83" bodyend="94"/>
+        <references refid="class_s_t_l__r_stack_1adf95fc53b74c9955a648f3500ae1e746" compoundref="_s_t_l___stack_8h" startline="81">size</references>
+        <references refid="_s_t_l___stack_8h_1ad01fec74b6b0b6c599780dd41cf55ec0aeb269e15565d4aaef1a9b5023a160eba" compoundref="_s_t_l___stack_8h" startline="47">STACKS_EMPTY</references>
+        <references refid="_s_t_l___stack_8h_1ad01fec74b6b0b6c599780dd41cf55ec0a3e9b3bff72ae3f8f3c62c4f4bc24ca16" compoundref="_s_t_l___stack_8h" startline="46">STACKS_OK</references>
+        <referencedby refid="class_s_t_l__r_stack_1a31fd424472fcf069ec2cbcb50ab34ed1" compoundref="_s_t_l___stack_8cpp" startline="164" endline="167">poptop</referencedby>
+        <referencedby refid="class_s_t_l__r_stack_1ad64450c2168e2551ed8fad637a8b9c99" compoundref="_s_t_l___stack_8cpp" startline="174" endline="180">poptop32</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_t_l__r_stack_1a49d2ca43dafd695e4e0d92018736f732" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 STL_rStack::top</definition>
+        <argsstring>(u8 &amp;var)</argsstring>
+        <name>top</name>
+        <qualifiedname>STL_rStack::top</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>显示最后压入的数值 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&amp;var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>最后压入数值的储存变量 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>错误号 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" line="67" column="3" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.cpp" bodystart="101" bodyend="105"/>
+        <references refid="class_s_t_l__r_stack_1a2ff878cef1cc42db3c31812e654c8674" compoundref="_s_t_l___stack_8h" startline="82">dat</references>
+        <references refid="class_s_t_l__r_stack_1adf95fc53b74c9955a648f3500ae1e746" compoundref="_s_t_l___stack_8h" startline="81">size</references>
+        <references refid="_s_t_l___stack_8h_1ad01fec74b6b0b6c599780dd41cf55ec0aeb269e15565d4aaef1a9b5023a160eba" compoundref="_s_t_l___stack_8h" startline="47">STACKS_EMPTY</references>
+        <references refid="_s_t_l___stack_8h_1ad01fec74b6b0b6c599780dd41cf55ec0a3e9b3bff72ae3f8f3c62c4f4bc24ca16" compoundref="_s_t_l___stack_8h" startline="46">STACKS_OK</references>
+        <referencedby refid="class_s_t_l__r_stack_1a31fd424472fcf069ec2cbcb50ab34ed1" compoundref="_s_t_l___stack_8cpp" startline="164" endline="167">poptop</referencedby>
+        <referencedby refid="class_s_t_l__r_stack_1ad64450c2168e2551ed8fad637a8b9c99" compoundref="_s_t_l___stack_8cpp" startline="174" endline="180">poptop32</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_t_l__r_stack_1ac63cd564c04e4481925ead650dfb2edf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref></type>
+        <definition>u32 STL_rStack::The_size</definition>
+        <argsstring>(void)</argsstring>
+        <name>The_size</name>
+        <qualifiedname>STL_rStack::The_size</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>返回成员数量 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>成员数量,为u8类型,如u32将占4个元素 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" line="68" column="4" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.cpp" bodystart="111" bodyend="112"/>
+        <references refid="class_s_t_l__r_stack_1adf95fc53b74c9955a648f3500ae1e746" compoundref="_s_t_l___stack_8h" startline="81">size</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_t_l__r_stack_1a22c1e309f6476f31f1e5c313b01afd13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref></type>
+        <definition>u32 STL_rStack::The_room</definition>
+        <argsstring>(void)</argsstring>
+        <name>The_room</name>
+        <qualifiedname>STL_rStack::The_room</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>返回占用的内存数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>内存数,u8类型 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" line="69" column="4" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.cpp" bodystart="118" bodyend="119"/>
+        <references refid="class_s_t_l__r_stack_1a857415d9ae151b6acd395760b2e9cedf" compoundref="_s_t_l___stack_8h" startline="80">room</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_t_l__r_stack_1a843cc47e7a2c281dd82392c8ed257dc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 STL_rStack::clean</definition>
+        <argsstring>(void)</argsstring>
+        <name>clean</name>
+        <qualifiedname>STL_rStack::clean</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>将申请的空间比对所需空间,腾出冗余空间 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>错误号 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" line="70" column="3" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.cpp" bodystart="125" bodyend="145"/>
+        <references refid="class_s_t_l__r_stack_1a2ff878cef1cc42db3c31812e654c8674" compoundref="_s_t_l___stack_8h" startline="82">dat</references>
+        <references refid="class_s_t_l__r_stack_1a857415d9ae151b6acd395760b2e9cedf" compoundref="_s_t_l___stack_8h" startline="80">room</references>
+        <references refid="class_s_t_l__r_stack_1adf95fc53b74c9955a648f3500ae1e746" compoundref="_s_t_l___stack_8h" startline="81">size</references>
+        <references refid="_s_t_l___stack_8h_1ad01fec74b6b0b6c599780dd41cf55ec0a3e9b3bff72ae3f8f3c62c4f4bc24ca16" compoundref="_s_t_l___stack_8h" startline="46">STACKS_OK</references>
+        <references refid="_s_t_l___stack_8h_1ad01fec74b6b0b6c599780dd41cf55ec0a9f2b3bdf4ae6c347dbf6bb0797672de7" compoundref="_s_t_l___stack_8h" startline="48">STACKS_REAL_ERROR</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_t_l__r_stack_1a31fd424472fcf069ec2cbcb50ab34ed1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 STL_rStack::poptop</definition>
+        <argsstring>(void)</argsstring>
+        <name>poptop</name>
+        <qualifiedname>STL_rStack::poptop</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>弹出并且返回一个成员 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>弹出的成员值 </para>
+</simplesect>
+<simplesect kind="note"><para>该函数不会检查成功与否 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" line="72" column="3" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.cpp" bodystart="164" bodyend="167"/>
+        <references refid="class_s_t_l__r_stack_1a5c7016a370c7665d554dda4b8f7dee22" compoundref="_s_t_l___stack_8cpp" startline="83" endline="94">pop</references>
+        <references refid="class_s_t_l__r_stack_1a49d2ca43dafd695e4e0d92018736f732" compoundref="_s_t_l___stack_8cpp" startline="101" endline="105">top</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_t_l__r_stack_1a8a72b28e3a7faa2aae9272d90032d5a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 STL_rStack::push32</definition>
+        <argsstring>(u32 var)</argsstring>
+        <name>push32</name>
+        <qualifiedname>STL_rStack::push32</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref></type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>压入一个32位成员 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>需要压入的数值 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>错误号 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" line="74" column="3" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.cpp" bodystart="152" bodyend="157"/>
+        <references refid="class_s_t_l__r_stack_1a153de2f05c0e0164ad68fb09130bf475" compoundref="_s_t_l___stack_8cpp" startline="56" endline="77">push</references>
+        <references refid="_s_t_l___stack_8h_1ad01fec74b6b0b6c599780dd41cf55ec0a3e9b3bff72ae3f8f3c62c4f4bc24ca16" compoundref="_s_t_l___stack_8h" startline="46">STACKS_OK</references>
+        <referencedby refid="class_s_t_l__r_stack_1a4287e70b3adaf5e2a3a941299a085b09" compoundref="_s_t_l___stack_8cpp" startline="194" endline="195">pushfun</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_t_l__r_stack_1ad64450c2168e2551ed8fad637a8b9c99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref></type>
+        <definition>u32 STL_rStack::poptop32</definition>
+        <argsstring>(void)</argsstring>
+        <name>poptop32</name>
+        <qualifiedname>STL_rStack::poptop32</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>弹出并且返回一个32位成员 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>弹出的成员值 </para>
+</simplesect>
+<simplesect kind="note"><para>该函数不会检查成功与否 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" line="75" column="4" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.cpp" bodystart="174" bodyend="180"/>
+        <references refid="class_s_t_l__r_stack_1a2ff878cef1cc42db3c31812e654c8674" compoundref="_s_t_l___stack_8h" startline="82">dat</references>
+        <references refid="class_s_t_l__r_stack_1a5c7016a370c7665d554dda4b8f7dee22" compoundref="_s_t_l___stack_8cpp" startline="83" endline="94">pop</references>
+        <references refid="class_s_t_l__r_stack_1a49d2ca43dafd695e4e0d92018736f732" compoundref="_s_t_l___stack_8cpp" startline="101" endline="105">top</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_t_l__r_stack_1a4287e70b3adaf5e2a3a941299a085b09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void STL_rStack::pushfun</definition>
+        <argsstring>(void(*fun)(void))</argsstring>
+        <name>pushfun</name>
+        <qualifiedname>STL_rStack::pushfun</qualifiedname>
+        <param>
+          <type>void(*)(void)</type>
+          <declname>fun</declname>
+        </param>
+        <briefdescription>
+<para>压入一个void(*)void函数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>该函数不会检查成功与否 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" line="77" column="5" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.cpp" bodystart="194" bodyend="195"/>
+        <references refid="class_s_t_l__r_stack_1a8a72b28e3a7faa2aae9272d90032d5a5" compoundref="_s_t_l___stack_8cpp" startline="152" endline="157">push32</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>一个栈的类 </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>使用realloc重新分配方式组织 栈的内存空间的连续的,适合小数据常规速度交换数据 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" line="59" column="1" bodyfile="D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" bodystart="60" bodyend="83"/>
+    <listofallmembers>
+      <member refid="class_s_t_l__r_stack_1a843cc47e7a2c281dd82392c8ed257dc1" prot="public" virt="non-virtual"><scope>STL_rStack</scope><name>clean</name></member>
+      <member refid="class_s_t_l__r_stack_1a2ff878cef1cc42db3c31812e654c8674" prot="private" virt="non-virtual"><scope>STL_rStack</scope><name>dat</name></member>
+      <member refid="class_s_t_l__r_stack_1a5c7016a370c7665d554dda4b8f7dee22" prot="public" virt="non-virtual"><scope>STL_rStack</scope><name>pop</name></member>
+      <member refid="class_s_t_l__r_stack_1a31fd424472fcf069ec2cbcb50ab34ed1" prot="public" virt="non-virtual"><scope>STL_rStack</scope><name>poptop</name></member>
+      <member refid="class_s_t_l__r_stack_1ad64450c2168e2551ed8fad637a8b9c99" prot="public" virt="non-virtual"><scope>STL_rStack</scope><name>poptop32</name></member>
+      <member refid="class_s_t_l__r_stack_1a4d702aae14e43421c0818dba3b8c99a1" prot="public" virt="non-virtual"><scope>STL_rStack</scope><name>poptopfun</name></member>
+      <member refid="class_s_t_l__r_stack_1a153de2f05c0e0164ad68fb09130bf475" prot="public" virt="non-virtual"><scope>STL_rStack</scope><name>push</name></member>
+      <member refid="class_s_t_l__r_stack_1a8a72b28e3a7faa2aae9272d90032d5a5" prot="public" virt="non-virtual"><scope>STL_rStack</scope><name>push32</name></member>
+      <member refid="class_s_t_l__r_stack_1a4287e70b3adaf5e2a3a941299a085b09" prot="public" virt="non-virtual"><scope>STL_rStack</scope><name>pushfun</name></member>
+      <member refid="class_s_t_l__r_stack_1a857415d9ae151b6acd395760b2e9cedf" prot="private" virt="non-virtual"><scope>STL_rStack</scope><name>room</name></member>
+      <member refid="class_s_t_l__r_stack_1adf95fc53b74c9955a648f3500ae1e746" prot="private" virt="non-virtual"><scope>STL_rStack</scope><name>size</name></member>
+      <member refid="class_s_t_l__r_stack_1a55a54a57fe2f6625ef6b995f2d95e026" prot="public" virt="non-virtual"><scope>STL_rStack</scope><name>STL_rStack</name></member>
+      <member refid="class_s_t_l__r_stack_1a22c1e309f6476f31f1e5c313b01afd13" prot="public" virt="non-virtual"><scope>STL_rStack</scope><name>The_room</name></member>
+      <member refid="class_s_t_l__r_stack_1ac63cd564c04e4481925ead650dfb2edf" prot="public" virt="non-virtual"><scope>STL_rStack</scope><name>The_size</name></member>
+      <member refid="class_s_t_l__r_stack_1a49d2ca43dafd695e4e0d92018736f732" prot="public" virt="non-virtual"><scope>STL_rStack</scope><name>top</name></member>
+      <member refid="class_s_t_l__r_stack_1aed992153d5efc1cd3007863c8c08797c" prot="public" virt="non-virtual"><scope>STL_rStack</scope><name>~STL_rStack</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

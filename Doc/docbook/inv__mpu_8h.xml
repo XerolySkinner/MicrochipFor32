@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_inv__mpu_8h" xml:lang="zh">
+<title>D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.h 文件参考</title>
+<indexterm><primary>D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.h</primary></indexterm>
+<para>
+
+<para>An I2C-based driver for Invensense gyroscopes. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;main.h&quot;<?linebreak?>#include &quot;varint.h&quot;<?linebreak?></programlisting>inv_mpu.h 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="inv__mpu_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+此图展示该文件直接或间接的被哪些文件引用了:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="inv__mpu_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>类    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structint__param__s">int_param_s</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>宏定义    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga292d717406e906831952ce46612fe4cd">DEFAULT_MPU_HZ</link>&#160;&#160;&#160;(100)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gabf02bf28541421d59f8be764f2b95407">INV_X_GYRO</link>&#160;&#160;&#160;(0x40)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gacdd8ff833a34dba08ca2aa145eb92b44">INV_Y_GYRO</link>&#160;&#160;&#160;(0x20)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga50205b5cc6089b33b2561c854eb8b0fd">INV_Z_GYRO</link>&#160;&#160;&#160;(0x10)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga3fdc30f9c0a26c2c4e2bb88921f91629">INV_XYZ_GYRO</link>&#160;&#160;&#160;(<link linkend="_group___d_r_i_v_e_r_s_1gabf02bf28541421d59f8be764f2b95407">INV_X_GYRO</link> | <link linkend="_group___d_r_i_v_e_r_s_1gacdd8ff833a34dba08ca2aa145eb92b44">INV_Y_GYRO</link> | <link linkend="_group___d_r_i_v_e_r_s_1ga50205b5cc6089b33b2561c854eb8b0fd">INV_Z_GYRO</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaa03f025a17ed491e70b88274e89c75c5">INV_XYZ_ACCEL</link>&#160;&#160;&#160;(0x08)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga7fc9c1dbdcb2ac8cc2a4128a5799482a">INV_XYZ_COMPASS</link>&#160;&#160;&#160;(0x01)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga0cddf0dffaf3bf65fd3ed92dda4f3193">MPU_INT_STATUS_DATA_READY</link>&#160;&#160;&#160;(0x0001)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga380dd1ef256931e99302c371ad7752f4">MPU_INT_STATUS_DMP</link>&#160;&#160;&#160;(0x0002)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaa38d7976e86186bf353cb89ca7561f29">MPU_INT_STATUS_PLL_READY</link>&#160;&#160;&#160;(0x0004)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga5755e84f3a2e7d331f7612dbfea18ecc">MPU_INT_STATUS_I2C_MST</link>&#160;&#160;&#160;(0x0008)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaf8e1684698ad837d0318a72b1ef73b13">MPU_INT_STATUS_FIFO_OVERFLOW</link>&#160;&#160;&#160;(0x0010)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gad5eee7ff393f842ca4ae969cc0019030">MPU_INT_STATUS_ZMOT</link>&#160;&#160;&#160;(0x0020)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaa1ab51fb5995e568edd425f8486cb2c8">MPU_INT_STATUS_MOT</link>&#160;&#160;&#160;(0x0040)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga000cfa5230cb895c6bad322856465552">MPU_INT_STATUS_FREE_FALL</link>&#160;&#160;&#160;(0x0080)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga2398e82f93220e3cfa1ef31bfb6d76bd">MPU_INT_STATUS_DMP_0</link>&#160;&#160;&#160;(0x0100)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga5ac2e94db5083456fa531fceee0997f5">MPU_INT_STATUS_DMP_1</link>&#160;&#160;&#160;(0x0200)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gab7543433b9679174597e00e5d7cb6279">MPU_INT_STATUS_DMP_2</link>&#160;&#160;&#160;(0x0400)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1gaea5cac4528bb19757de4eb4fa46a374f">MPU_INT_STATUS_DMP_3</link>&#160;&#160;&#160;(0x0800)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga4345dc987e1b65ef8ddc6160f592e144">MPU_INT_STATUS_DMP_4</link>&#160;&#160;&#160;(0x1000)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_r_i_v_e_r_s_1ga101643480b83c302a4a3089fe9149e8e">MPU_INT_STATUS_DMP_5</link>&#160;&#160;&#160;(0x2000)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>函数    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gac48a36b51e23bc4191ec13916bbb9d0b">mpu_init</link> (void)</para>
+
+<para>Initialize hardware. Initial configuration:<?linebreak?>Gyro FSR: +/- 2000DPS<?linebreak?>Accel FSR +/- 2G<?linebreak?>DLPF: 42Hz<?linebreak?>FIFO rate: 50Hz<?linebreak?>Clock source: Gyro PLL<?linebreak?>FIFO: Disabled.<?linebreak?>Data ready interrupt: Disabled, active low, unlatched. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga9093183fe619360b3b1bfb8aab030592">mpu_init_slave</link> (void)</para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga36f70f38371b48d81094d3b061233e15">mpu_set_bypass</link> (unsigned char bypass_on)</para>
+
+<para>Set device to bypass mode. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga3a4fea75686ab7d2e68634e81ccac04c">mpu_lp_accel_mode</link> (unsigned char rate)</para>
+
+<para>Enter low-power accel-only mode. In low-power accel mode, the chip goes to sleep and only wakes up to sample the accelerometer at one of the following frequencies: <?linebreak?> MPU6050: 1.25Hz, 5Hz, 20Hz, 40Hz <?linebreak?> MPU6500: 1.25Hz, 2.5Hz, 5Hz, 10Hz, 20Hz, 40Hz, 80Hz, 160Hz, 320Hz, 640Hz <?linebreak?> If the requested rate is not one listed above, the device will be set to the next highest rate. Requesting a rate above the maximum supported frequency will result in an error. <?linebreak?> To select a fractional wake-up frequency, round down the value passed to <emphasis>rate</emphasis>. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga7d0b3259346898ccd1ba6ef78bf7df97">mpu_lp_motion_interrupt</link> (unsigned short thresh, unsigned char time, unsigned char lpa_freq)</para>
+
+<para>Enters LP accel motion interrupt mode. The behavior of this feature is very different between the MPU6050 and the MPU6500. Each chip&apos;s version of this feature is explained below. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gacc92fb1489ef32a04bcb6b0ebde4d657">mpu_set_int_level</link> (unsigned char active_low)</para>
+
+<para>Set interrupt level. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga653cb855300bff9285ce4b8dca6a503b">mpu_set_int_latched</link> (unsigned char enable)</para>
+
+<para>Enable latched interrupts. Any MPU register will clear the interrupt. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga68ed20e6c9663cd7c50469329af8715f">mpu_set_dmp_state</link> (unsigned char enable)</para>
+
+<para>Enable/disable DMP support. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gafe0f60ed0d7f8fd2dcd55d45b95a2363">mpu_get_dmp_state</link> (unsigned char *enabled)</para>
+
+<para>Get DMP state. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gaa95c7e216dcb2d888e9796001ca555f8">mpu_get_lpf</link> (unsigned short *lpf)</para>
+
+<para>Get the current DLPF setting. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga5661a9dee25152166769910767a2a93d">mpu_set_lpf</link> (unsigned short lpf)</para>
+
+<para>Set digital low pass filter. The following LPF settings are supported: 188, 98, 42, 20, 10, 5. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gaf973c32c73ba912ff512aab948fc31ca">mpu_get_gyro_fsr</link> (unsigned short *fsr)</para>
+
+<para>Get the gyro full-scale range. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gad09e6031c8677adc0b8a39b6deea8e27">mpu_set_gyro_fsr</link> (unsigned short fsr)</para>
+
+<para>Set the gyro full-scale range. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gab6087a15ee23db23b6aec41590329a60">mpu_get_accel_fsr</link> (unsigned char *fsr)</para>
+
+<para>Get the accel full-scale range. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga2713a96af104cfb2ae8e0ed4c3718119">mpu_set_accel_fsr</link> (unsigned char fsr)</para>
+
+<para>Set the accel full-scale range. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gade8589573d09e0f14b84130428f286df">mpu_get_compass_fsr</link> (unsigned short *fsr)</para>
+
+<para>Get the compass full-scale range. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga023c0cc94aa8f162dc33b15048a49421">mpu_get_gyro_sens</link> (float *sens)</para>
+
+<para>Get gyro sensitivity scale factor. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga620408949052b96e856cad920f856583">mpu_get_accel_sens</link> (unsigned short *sens)</para>
+
+<para>Get accel sensitivity scale factor. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga2487dd551b701c1c7ed4d6335f02b2f1">mpu_get_sample_rate</link> (unsigned short *rate)</para>
+
+<para>Get sampling rate. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga0144d666a67a82888b8580002afe8b55">mpu_set_sample_rate</link> (unsigned short rate)</para>
+
+<para>Set sampling rate. Sampling rate must be between 4Hz and 1kHz. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gab5a45cd7783f6937788c0decb0b18b16">mpu_get_compass_sample_rate</link> (unsigned short *rate)</para>
+
+<para>Get compass sampling rate. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga78da3828de0ef9d080c4d03e7bc45e7b">mpu_set_compass_sample_rate</link> (unsigned short rate)</para>
+
+<para>Set compass sampling rate. The compass on the auxiliary I2C bus is read by the MPU hardware at a maximum of 100Hz. The actual rate can be set to a fraction of the gyro sampling rate. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga093f11eb10b2639a4b9fe344ea348c54">mpu_get_fifo_config</link> (unsigned char *sensors)</para>
+
+<para>Get current FIFO configuration. <emphasis>sensors</emphasis> can contain a combination of the following flags: <?linebreak?> INV_X_GYRO, INV_Y_GYRO, INV_Z_GYRO <?linebreak?> INV_XYZ_GYRO <?linebreak?> INV_XYZ_ACCEL </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gababbdda287e1f19323489f90a0889dd7">mpu_configure_fifo</link> (unsigned char sensors)</para>
+
+<para>Select which sensors are pushed to FIFO. <emphasis>sensors</emphasis> can contain a combination of the following flags: <?linebreak?> INV_X_GYRO, INV_Y_GYRO, INV_Z_GYRO <?linebreak?> INV_XYZ_GYRO <?linebreak?> INV_XYZ_ACCEL </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gaec8fa7a067988d174516bb735a4a0bc9">mpu_get_power_state</link> (unsigned char *power_on)</para>
+
+<para>Get current power state. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga6e77e7cc1cf6be5e8fdf617c5b4586d1">mpu_set_sensors</link> (unsigned char sensors)</para>
+
+<para>Turn specific sensors on/off. <emphasis>sensors</emphasis> can contain a combination of the following flags: <?linebreak?> INV_X_GYRO, INV_Y_GYRO, INV_Z_GYRO <?linebreak?> INV_XYZ_GYRO <?linebreak?> INV_XYZ_ACCEL <?linebreak?> INV_XYZ_COMPASS </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga4968cc2ec80f0da0d72436551c81f134">mpu_set_accel_bias</link> (const long *accel_bias)</para>
+
+<para>Push biases to the accel bias registers. This function expects biases relative to the current sensor output, and these biases will be added to the factory-supplied values. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga5555854590ad11495c0e30401294bae2">mpu_get_gyro_reg</link> (short *data, unsigned long *timestamp)</para>
+
+<para>Read raw gyro data directly from the registers. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gae4ae960e5df78049ece2647772a3d809">mpu_get_accel_reg</link> (short *data, unsigned long *timestamp)</para>
+
+<para>Read raw accel data directly from the registers. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga65e6b0ce980b8c0255d7be9b55c88c08">mpu_get_compass_reg</link> (short *data, unsigned long *timestamp)</para>
+
+<para>Read raw compass data. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gaa449b565a157b4b8ca0f491b7ed46018">mpu_get_temperature</link> (long *data, unsigned long *timestamp)</para>
+
+<para>Read temperature data directly from the registers. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga0afd02d8c76d3278b488ef7038c26e3e">mpu_get_int_status</link> (short *status)</para>
+
+<para>Read the MPU interrupt status registers. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga2da20453aafbbba4a0f6fb9fbdd25572">mpu_read_fifo</link> (short *gyro, short *accel, unsigned long *timestamp, unsigned char *sensors, unsigned char *more)</para>
+
+<para>Get one packet from the FIFO. If <emphasis>sensors</emphasis> does not contain a particular sensor, disregard the data returned to that pointer. <?linebreak?> <emphasis>sensors</emphasis> can contain a combination of the following flags: <?linebreak?> INV_X_GYRO, INV_Y_GYRO, INV_Z_GYRO <?linebreak?> INV_XYZ_GYRO <?linebreak?> INV_XYZ_ACCEL <?linebreak?> If the FIFO has no new data, <emphasis>sensors</emphasis> will be zero. <?linebreak?> If the FIFO is disabled, <emphasis>sensors</emphasis> will be zero and this function will return a non-zero error code. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga13593044949b460e9f571eb57e9a0788">mpu_read_fifo_stream</link> (unsigned short length, unsigned char *data, unsigned char *more)</para>
+
+<para>Get one unparsed packet from the FIFO. This function should be used if the packet is to be parsed elsewhere. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gaf23e9f57c0059be6ec57862f0584de10">mpu_reset_fifo</link> (void)</para>
+
+<para>Reset FIFO read/write pointers. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1gafea59910bc3dd30ba3356b1c75213a5f">mpu_write_mem</link> (unsigned short mem_addr, unsigned short length, unsigned char *data)</para>
+
+<para>Write to the DMP memory. This function prevents I2C writes past the bank boundaries. The DMP memory is only accessible when the chip is awake. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga3374bececb6743893c9eab27645c1182">mpu_read_mem</link> (unsigned short mem_addr, unsigned short length, unsigned char *data)</para>
+
+<para>Read from the DMP memory. This function prevents I2C reads past the bank boundaries. The DMP memory is only accessible when the chip is awake. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga8fbdfe1a50285d4ab438e29c2efc70f5">mpu_load_firmware</link> (unsigned short length, const unsigned char *firmware, unsigned short start_addr, unsigned short sample_rate)</para>
+
+<para>Load and verify DMP image. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga0e1201ecfd8453f1d89e4299528baaf6">mpu_reg_dump</link> (void)</para>
+
+<para>Register dump for testing. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga5c35a3363337014e11769a0ea7c0dfa9">mpu_read_reg</link> (unsigned char <link linkend="_group___d_r_i_v_e_r_s_1ga5448c351fc95ff052b110eee80e5f75c">reg</link>, unsigned char *data)</para>
+
+<para>Read from a single register. NOTE: The memory and FIFO read/write registers cannot be accessed. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga3773dc98eb1ba15da0091ae75abcf62f">mpu_run_self_test</link> (long *gyro, long *accel)</para>
+
+<para>Trigger gyro/accel/compass self-test. On success/error, the self-test returns a mask representing the sensor(s) that failed. For each bit, a one (1) represents a &quot;pass&quot; case; conversely, a zero (0) indicates a failure. </para>
+</listitem>
+            <listitem><para>int <link linkend="_group___d_r_i_v_e_r_s_1ga0d528114a4e355a10ffd354a4c89a17f">mpu_register_tap_cb</link> (void(*func)(unsigned char, unsigned char))</para>
+</listitem>
+            <listitem><para>void <link linkend="_group___d_r_i_v_e_r_s_1gafa3071c8321f6e8dd2036be8a1e57ad0">mget_ms</link> (unsigned long *time)</para>
+</listitem>
+            <listitem><para>unsigned short <link linkend="_group___d_r_i_v_e_r_s_1ga2b58dae1c0567f3f9f6dcbfb07476de7">inv_row_2_scale</link> (const signed char *row)</para>
+</listitem>
+            <listitem><para>unsigned short <link linkend="_group___d_r_i_v_e_r_s_1ga3ff6037a69f37bb6174355936ad67ef3">inv_orientation_matrix_to_scalar</link> (const signed char *mtx)</para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_group___d_r_i_v_e_r_s_1gaff893f93277595387023c71d46b03c42">run_self_test</link> (void)</para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_group___d_r_i_v_e_r_s_1gafac8fcbf24cfa1b69737e02238580f3a">mpu_dmp_init</link> (void)</para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_group___d_r_i_v_e_r_s_1gacb825f2fd99c3044d012a9b25608cc18">mpu_dmp_get_data</link> (float *pitch, float *roll, float *yaw)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>An I2C-based driver for Invensense gyroscopes. </para>
+
+<para>This driver currently works for the following devices: MPU6050 MPU6500 MPU9150 (or MPU6050 w/ AK8975 on the auxiliary bus) MPU9250 (or MPU6500 w/ AK8963 on the auxiliary bus) </para>
+<para>
+在文件 <link linkend="_inv__mpu_8h_source">inv_mpu.h</link> 中定义.</para>
+</section>
+</section>

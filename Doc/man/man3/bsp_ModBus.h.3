@@ -1,0 +1,78 @@
+.TH "D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" 3 "2022年 十一月 22日 星期二" "Version 2.0.0" "MF32BSP_XerolySkinner" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h \- ModBus通信函数  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'varint\&.h'\fP
+.br
+\fC#include 'usart\&.h'\fP
+.br
+\fC#include <stdarg\&.h>\fP
+.br
+
+.SS "类"
+
+.in +1c
+.ti -1c
+.RI "class \fBbsp_ModBus_Tx\fP"
+.br
+.RI "ModBus发送器 "
+.ti -1c
+.RI "class \fBbsp_ModBus_Rx\fP"
+.br
+.RI "ModBus协议分析器 "
+.in -1c
+.SS "枚举"
+
+.in +1c
+.ti -1c
+.RI "enum \fBFun_ModBus\fP { \fBFun_R_OutCoil\fP = 0x01, \fBFun_R_InCoil\fP = 0x02, \fBFun_R_KeepReg\fP = 0x03, \fBFun_R_InReg\fP = 0x04, \fBFun_W_OneCoil\fP = 0x05, \fBFun_W_OneReg\fP = 0x06, \fBFun_W_Coils\fP = 0x0F, \fBFun_W_Regs\fP = 0x10 }"
+.br
+.in -1c
+.SH "详细描述"
+.PP 
+ModBus通信函数 
+
+
+.PP
+在文件 \fBbsp_ModBus\&.h\fP 中定义\&.
+.SH "枚举类型说明"
+.PP 
+.SS "enum \fBFun_ModBus\fP"
+
+.PP
+\fB枚举值\fP
+.in +1c
+.TP
+\fB\fIFun_R_OutCoil \fP\fP
+读取输出线圈 
+.TP
+\fB\fIFun_R_InCoil \fP\fP
+读取输入线圈 
+.TP
+\fB\fIFun_R_KeepReg \fP\fP
+读取保持寄存 
+.TP
+\fB\fIFun_R_InReg \fP\fP
+读取输入寄存 
+.TP
+\fB\fIFun_W_OneCoil \fP\fP
+写入单线圈 
+.TP
+\fB\fIFun_W_OneReg \fP\fP
+写入单寄存 
+.TP
+\fB\fIFun_W_Coils \fP\fP
+写入多线圈 
+.TP
+\fB\fIFun_W_Regs \fP\fP
+写入多寄存 
+.PP
+在文件 \fBbsp_ModBus\&.h\fP 第 \fB41\fP 行定义\&.
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 MF32BSP_XerolySkinner 的 源代码自动生成\&.

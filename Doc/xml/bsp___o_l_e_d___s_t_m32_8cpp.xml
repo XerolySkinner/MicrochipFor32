@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="bsp___o_l_e_d___s_t_m32_8cpp" kind="file" language="C++">
+    <compoundname>bsp_OLED_STM32.cpp</compoundname>
+    <includes refid="bsp___i_i_c___s_t_m32_8h" local="yes">bsp_IIC_STM32.h</includes>
+    <includes refid="bsp___o_l_e_d___s_t_m32_8h" local="yes">bsp_OLED_STM32.h</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>bsp_IIC.h</label>
+        <link refid="bsp___i_i_c_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>bsp_IIC_STM32.h</label>
+        <link refid="bsp___i_i_c___s_t_m32_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp</label>
+        <link refid="bsp___o_l_e_d___s_t_m32_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>bsp_OLED_STM32.h</label>
+        <link refid="bsp___o_l_e_d___s_t_m32_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>varint.h</label>
+        <link refid="varint_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gpio.h</label>
+      </node>
+      <node id="5">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="bsp___o_l_e_d___s_t_m32_8cpp_1a1044366356ed639ee7754656558a44fb" prot="public" static="no" mutable="no">
+        <type>const <ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>const u8 OLED_WORD_ASCII[]</definition>
+        <argsstring>[]</argsstring>
+        <name>OLED_WORD_ASCII</name>
+        <briefdescription>
+<para>OLED的ASCII字符集 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp" line="37" column="17" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h" bodystart="110" bodyend="-1" declfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp" declline="37" declcolumn="17"/>
+        <referencedby refid="classbsp___s_t_m32___o_l_e_d_1a2fd3f6c887830072509f5aa916ad8751" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="145" endline="152">bsp_STM32_OLED::Draw_ASCII</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>在STM32下实现OLED通信 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*----------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>#<sp/><sp/>Copyright<sp/>(c)<sp/>2022<sp/>Yuankang<sp/>Liang(XerolySkinner)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>#<sp/><sp/>本软件按原样提供,无任何明示或暗示</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>#<sp/><sp/>在任何情况下,作者都不承担任何损害赔偿责任</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>#<sp/><sp/>使用的许可声明:</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>#<sp/><sp/>1.<sp/><sp/>不得歪曲本软件的来源,你不能声称你编写了原始软件.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>#<sp/><sp/>2.<sp/><sp/>免费授予以任何目的,前提是版权声明出现在所有副本中.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>并且版权声明和许可声明同时出现.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>#<sp/><sp/>3.<sp/><sp/>你有使用,复制,修改,分发,和销售本软件的许可.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>#<sp/><sp/>4.<sp/><sp/>如果你在产品中使用,产品文档中的声明是赞赏的但不是必须的.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>#<sp/><sp/>5.<sp/><sp/>本通知不得从任何来源删除或更改.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>#<sp/><sp/>Yuankang<sp/>Liang(XerolySkinner)</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>E-mail:zabbcccbbaz@163.com</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>QQ:2715099320</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>Mobile<sp/>Phone:13005636215</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>#<sp/><sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bsp___i_i_c___s_t_m32_8h" kindref="compound">bsp_IIC_STM32.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bsp___o_l_e_d___s_t_m32_8h" kindref="compound">bsp_OLED_STM32.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><ref refid="bsp___o_l_e_d___s_t_m32_8cpp_1a1044366356ed639ee7754656558a44fb" kindref="member">OLED_WORD_ASCII</ref>[];</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">//----------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>类函数</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="classbsp___s_t_m32___o_l_e_d_1a4ce72ba6b9e7c027ecfaf9ad8fc30135" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a4ce72ba6b9e7c027ecfaf9ad8fc30135" kindref="member">bsp_STM32_OLED::Send_cmd</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>cmd)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1a9f4cdf777e69f407b155ffdba5b9e7c8" kindref="member">IIC_WriteOneByte</ref>(0x3C,<sp/>0x00,<sp/>cmd);}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="53" refid="classbsp___s_t_m32___o_l_e_d_1a7d11c69d54c2fac372a9e690319c111e" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a7d11c69d54c2fac372a9e690319c111e" kindref="member">bsp_STM32_OLED::Send_dat</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>dat)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1a9f4cdf777e69f407b155ffdba5b9e7c8" kindref="member">IIC_WriteOneByte</ref>(0x3C,<sp/>0x40,<sp/>dat);}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="61" refid="classbsp___s_t_m32___o_l_e_d_1a333b835b09d4471f1be248b88c527d68" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a333b835b09d4471f1be248b88c527d68" kindref="member">bsp_STM32_OLED::Send_len_dat</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref>*<sp/>dat,<sp/><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref><sp/>len)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1a9d5d55340f9c43998763ecd0fb67b88c" kindref="member">IIC_Write</ref>(0x3C,<sp/>0x40,<sp/>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref>*)dat,<sp/>len);}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="68" refid="classbsp___s_t_m32___o_l_e_d_1a8650b7dca00244d1c6a5b1530e08be20" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a8650b7dca00244d1c6a5b1530e08be20" kindref="member">bsp_STM32_OLED::Column_set</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>column)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a4ce72ba6b9e7c027ecfaf9ad8fc30135" kindref="member">Send_cmd</ref>(0x10<sp/>|<sp/>(column<sp/>&gt;&gt;<sp/>4));<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//设置列地址高位</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a4ce72ba6b9e7c027ecfaf9ad8fc30135" kindref="member">Send_cmd</ref>(0x00<sp/>|<sp/>(column<sp/>&amp;<sp/>0x0f));<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//设置列地址低位</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="77" refid="classbsp___s_t_m32___o_l_e_d_1ace503e57e2f9abe155bd1bae7eb83bff" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1ace503e57e2f9abe155bd1bae7eb83bff" kindref="member">bsp_STM32_OLED::Page_set</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>page)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a4ce72ba6b9e7c027ecfaf9ad8fc30135" kindref="member">Send_cmd</ref>(0xb0<sp/>+<sp/>page);}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="84" refid="classbsp___s_t_m32___o_l_e_d_1a1d6d3de485739ab13cde6f4c51a97e72" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a1d6d3de485739ab13cde6f4c51a97e72" kindref="member">bsp_STM32_OLED::Clear</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>dat)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>page;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(page<sp/>=<sp/>0;<sp/>page<sp/>&lt;<sp/>8;<sp/>page++)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1ace503e57e2f9abe155bd1bae7eb83bff" kindref="member">Page_set</ref>(page);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a8650b7dca00244d1c6a5b1530e08be20" kindref="member">Column_set</ref>(0);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1a97ad38a37ad0140987ba79d878f0d9e9" kindref="member">IIC_Start</ref>();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" kindref="member">IIC_SendByte</ref>(0x3C<sp/>&lt;&lt;<sp/>1);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1a3f14f230b5876c529380d4f51a9c9c12" kindref="member">IIC_WaitAck</ref>();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" kindref="member">IIC_SendByte</ref>(0x40);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1a3f14f230b5876c529380d4f51a9c9c12" kindref="member">IIC_WaitAck</ref>();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>128;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" kindref="member">IIC_SendByte</ref>(dat);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1a3f14f230b5876c529380d4f51a9c9c12" kindref="member">IIC_WaitAck</ref>();}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1ae513e1a05cbbae2a6f37e6cbb3bb63e2" kindref="member">IIC_Stop</ref>();}}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="103" refid="classbsp___s_t_m32___o_l_e_d_1a60d512f9509a7809566159058caa8a01" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a60d512f9509a7809566159058caa8a01" kindref="member">bsp_STM32_OLED::Picture_display</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref>*<sp/>ptr_pic)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>page;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(page<sp/>=<sp/>0;<sp/>page<sp/>&lt;<sp/>(64<sp/>/<sp/>8);<sp/>page++)<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1ace503e57e2f9abe155bd1bae7eb83bff" kindref="member">Page_set</ref>(page);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a8650b7dca00244d1c6a5b1530e08be20" kindref="member">Column_set</ref>(0);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1a97ad38a37ad0140987ba79d878f0d9e9" kindref="member">IIC_Start</ref>();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" kindref="member">IIC_SendByte</ref>(0x3C<sp/>&lt;&lt;<sp/>1);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1a3f14f230b5876c529380d4f51a9c9c12" kindref="member">IIC_WaitAck</ref>();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" kindref="member">IIC_SendByte</ref>(0x40);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1a3f14f230b5876c529380d4f51a9c9c12" kindref="member">IIC_WaitAck</ref>();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>128;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" kindref="member">IIC_SendByte</ref>(ptr_pic[i]);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1a3f14f230b5876c529380d4f51a9c9c12" kindref="member">IIC_WaitAck</ref>();}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1ae513e1a05cbbae2a6f37e6cbb3bb63e2" kindref="member">IIC_Stop</ref>();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ptr_pic<sp/>+=<sp/>128;}}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="123" refid="classbsp___s_t_m32___o_l_e_d_1acbb37e4600b98dd8e16b6a8750daae15" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1acbb37e4600b98dd8e16b6a8750daae15" kindref="member">bsp_STM32_OLED::Picture_ReverseDisplay</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref>*<sp/>ptr_pic)<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>page;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(page<sp/>=<sp/>0;<sp/>page<sp/>&lt;<sp/>(64<sp/>/<sp/>8);<sp/>page++)<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1ace503e57e2f9abe155bd1bae7eb83bff" kindref="member">Page_set</ref>(page);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a8650b7dca00244d1c6a5b1530e08be20" kindref="member">Column_set</ref>(0);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1a97ad38a37ad0140987ba79d878f0d9e9" kindref="member">IIC_Start</ref>();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" kindref="member">IIC_SendByte</ref>(0x3C<sp/>&lt;&lt;<sp/>1);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1a3f14f230b5876c529380d4f51a9c9c12" kindref="member">IIC_WaitAck</ref>();</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" kindref="member">IIC_SendByte</ref>(0x40);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1a3f14f230b5876c529380d4f51a9c9c12" kindref="member">IIC_WaitAck</ref>();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>128;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" kindref="member">IIC_SendByte</ref>(~(ptr_pic[i]));</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1a3f14f230b5876c529380d4f51a9c9c12" kindref="member">IIC_WaitAck</ref>();}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1ae513e1a05cbbae2a6f37e6cbb3bb63e2" kindref="member">IIC_Stop</ref>();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ptr_pic<sp/>+=<sp/>128;}}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="145" refid="classbsp___s_t_m32___o_l_e_d_1a2fd3f6c887830072509f5aa916ad8751" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a2fd3f6c887830072509f5aa916ad8751" kindref="member">bsp_STM32_OLED::Draw_ASCII</ref>(<ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref><sp/>H,<sp/><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref><sp/>V,<sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>word)<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>word<sp/>-=<sp/>33;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1ace503e57e2f9abe155bd1bae7eb83bff" kindref="member">Page_set</ref>(V<sp/>*<sp/>2);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a8650b7dca00244d1c6a5b1530e08be20" kindref="member">Column_set</ref>(H<sp/>*<sp/>8);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a333b835b09d4471f1be248b88c527d68" kindref="member">Send_len_dat</ref>((<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref>*)(<ref refid="bsp___o_l_e_d___s_t_m32_8h_1a1830381a075ec676792bda830bdee09e" kindref="member">OLED_WORD_ASCII</ref><sp/>+<sp/>(word<sp/>*<sp/>16)),<sp/>8);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1ace503e57e2f9abe155bd1bae7eb83bff" kindref="member">Page_set</ref>(V<sp/>*<sp/>2<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a8650b7dca00244d1c6a5b1530e08be20" kindref="member">Column_set</ref>(H<sp/>*<sp/>8);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a333b835b09d4471f1be248b88c527d68" kindref="member">Send_len_dat</ref>((<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref>*)(<ref refid="bsp___o_l_e_d___s_t_m32_8h_1a1830381a075ec676792bda830bdee09e" kindref="member">OLED_WORD_ASCII</ref><sp/>+<sp/>(word<sp/>*<sp/>16)<sp/>+<sp/>8),<sp/>8);}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="158" refid="classbsp___s_t_m32___o_l_e_d_1a8d7c3a121efe0f93f01b4c0423843d7a" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a8d7c3a121efe0f93f01b4c0423843d7a" kindref="member">bsp_STM32_OLED::Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>25;<sp/>i++)</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a4ce72ba6b9e7c027ecfaf9ad8fc30135" kindref="member">Send_cmd</ref>(<ref refid="bsp___o_l_e_d___s_t_m32_8h_1a302eedcb477b4d3c89cf5629e45c41e5" kindref="member">OLED_init_cmd</ref>[i]);}</highlight></codeline>
+<codeline lineno="162"><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp"/>
+  </compounddef>
+</doxygen>

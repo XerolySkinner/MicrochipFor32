@@ -1,0 +1,625 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="classbsp___i_i_c" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>bsp_IIC</compoundname>
+    <derivedcompoundref refid="classbsp___i_i_c___s_t_m32" prot="public" virt="non-virtual">bsp_IIC_STM32</derivedcompoundref>
+    <includes refid="bsp___i_i_c_8h" local="no">bsp_IIC.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbsp___i_i_c_1a9f4cdf777e69f407b155ffdba5b9e7c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsp_IIC::IIC_WriteOneByte</definition>
+        <argsstring>(u8 id, u8 addr, u8 dat)</argsstring>
+        <name>IIC_WriteOneByte</name>
+        <qualifiedname>bsp_IIC::IIC_WriteOneByte</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>使用总线发送一个字节数据 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>发送的器件地址,如0x68(MPU6050) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>需要改写的寄存器地址 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>改写的数据 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>无返回值 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="58" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp" bodystart="136" bodyend="144"/>
+        <references refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" compoundref="bsp___i_i_c_8cpp" startline="98" endline="108">IIC_SendByte</references>
+        <references refid="classbsp___i_i_c_1a97ad38a37ad0140987ba79d878f0d9e9" compoundref="bsp___i_i_c_8cpp" startline="47" endline="54">IIC_Start</references>
+        <references refid="classbsp___i_i_c_1ae513e1a05cbbae2a6f37e6cbb3bb63e2" compoundref="bsp___i_i_c_8cpp" startline="59" endline="64">IIC_Stop</references>
+        <references refid="classbsp___i_i_c_1a3f14f230b5876c529380d4f51a9c9c12" compoundref="bsp___i_i_c_8cpp" startline="85" endline="92">IIC_WaitAck</references>
+        <referencedby refid="classbsp___s_t_m32___o_l_e_d_1a4ce72ba6b9e7c027ecfaf9ad8fc30135" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="46" endline="47">bsp_STM32_OLED::Send_cmd</referencedby>
+        <referencedby refid="classbsp___s_t_m32___o_l_e_d_1a7d11c69d54c2fac372a9e690319c111e" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="53" endline="54">bsp_STM32_OLED::Send_dat</referencedby>
+        <referencedby refid="classbsp___s_t_m32___a_t24_c00_1a43f5fb06621d92865d9289d996b3211a" compoundref="bsp___a_t24_c00_8cpp" startline="55" endline="56">bsp_STM32_AT24C00::WriteOneByte</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___i_i_c_1a9effd40b26cbf6f321d0f0db3e2f09c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 bsp_IIC::IIC_ReadOneByte</definition>
+        <argsstring>(u8 id, u8 addr)</argsstring>
+        <name>IIC_ReadOneByte</name>
+        <qualifiedname>bsp_IIC::IIC_ReadOneByte</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+<para>使用总线接收一个字节数据 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>接收的器件地址,如0x68(MPU6050) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>需要获取数据的寄存器地址 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回该寄存器内的数据 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="59" column="3" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp" bodystart="153" bodyend="166"/>
+        <references refid="classbsp___i_i_c_1a15201c6a6bd1affde8da0fc642f62272" compoundref="bsp___i_i_c_8cpp" startline="114" endline="123">IIC_RecByte</references>
+        <references refid="classbsp___i_i_c_1a684793afa5c26e6d123ff6ad083342c8" compoundref="bsp___i_i_c_8cpp" startline="71" endline="79">IIC_SendAck</references>
+        <references refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" compoundref="bsp___i_i_c_8cpp" startline="98" endline="108">IIC_SendByte</references>
+        <references refid="classbsp___i_i_c_1a97ad38a37ad0140987ba79d878f0d9e9" compoundref="bsp___i_i_c_8cpp" startline="47" endline="54">IIC_Start</references>
+        <references refid="classbsp___i_i_c_1ae513e1a05cbbae2a6f37e6cbb3bb63e2" compoundref="bsp___i_i_c_8cpp" startline="59" endline="64">IIC_Stop</references>
+        <references refid="classbsp___i_i_c_1a3f14f230b5876c529380d4f51a9c9c12" compoundref="bsp___i_i_c_8cpp" startline="85" endline="92">IIC_WaitAck</references>
+        <referencedby refid="classbsp___s_t_m32___a_t24_c00_1a950e3a80ff49c538294bfedf8e893ff7" compoundref="bsp___a_t24_c00_8cpp" startline="63" endline="64">bsp_STM32_AT24C00::ReadOneByte</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___i_i_c_1a9d5d55340f9c43998763ecd0fb67b88c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsp_IIC::IIC_Write</definition>
+        <argsstring>(u8 id, u8 addr, u8 *dat, u32 len)</argsstring>
+        <name>IIC_Write</name>
+        <qualifiedname>bsp_IIC::IIC_Write</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref> *</type>
+          <declname>dat</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref></type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>使用总线发送定长数据 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>发送的器件地址,如0x68(MPU6050) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>需要改写的寄存器地址起始 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>改写的数据指针 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>数据数目 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>无返回值 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="60" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp" bodystart="177" bodyend="187"/>
+        <references refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" compoundref="bsp___i_i_c_8cpp" startline="98" endline="108">IIC_SendByte</references>
+        <references refid="classbsp___i_i_c_1a97ad38a37ad0140987ba79d878f0d9e9" compoundref="bsp___i_i_c_8cpp" startline="47" endline="54">IIC_Start</references>
+        <references refid="classbsp___i_i_c_1ae513e1a05cbbae2a6f37e6cbb3bb63e2" compoundref="bsp___i_i_c_8cpp" startline="59" endline="64">IIC_Stop</references>
+        <references refid="classbsp___i_i_c_1a3f14f230b5876c529380d4f51a9c9c12" compoundref="bsp___i_i_c_8cpp" startline="85" endline="92">IIC_WaitAck</references>
+        <referencedby refid="classbsp___s_t_m32___o_l_e_d_1a333b835b09d4471f1be248b88c527d68" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="61" endline="62">bsp_STM32_OLED::Send_len_dat</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___i_i_c_1aae8c08f59f3fce9dce27f9f04beda683" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsp_IIC::IIC_Read</definition>
+        <argsstring>(u8 id, u8 addr, u8 *dat, u32 len)</argsstring>
+        <name>IIC_Read</name>
+        <qualifiedname>bsp_IIC::IIC_Read</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref> *</type>
+          <declname>dat</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref></type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>使用总线接收定长数据 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>接收的器件地址,如0x68(MPU6050) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>需要接收的寄存器地址起始 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>改写的数据指针 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>数据数目 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>无返回值 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="61" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp" bodystart="198" bodyend="211"/>
+        <references refid="classbsp___i_i_c_1a15201c6a6bd1affde8da0fc642f62272" compoundref="bsp___i_i_c_8cpp" startline="114" endline="123">IIC_RecByte</references>
+        <references refid="classbsp___i_i_c_1a684793afa5c26e6d123ff6ad083342c8" compoundref="bsp___i_i_c_8cpp" startline="71" endline="79">IIC_SendAck</references>
+        <references refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" compoundref="bsp___i_i_c_8cpp" startline="98" endline="108">IIC_SendByte</references>
+        <references refid="classbsp___i_i_c_1a97ad38a37ad0140987ba79d878f0d9e9" compoundref="bsp___i_i_c_8cpp" startline="47" endline="54">IIC_Start</references>
+        <references refid="classbsp___i_i_c_1ae513e1a05cbbae2a6f37e6cbb3bb63e2" compoundref="bsp___i_i_c_8cpp" startline="59" endline="64">IIC_Stop</references>
+        <references refid="classbsp___i_i_c_1a3f14f230b5876c529380d4f51a9c9c12" compoundref="bsp___i_i_c_8cpp" startline="85" endline="92">IIC_WaitAck</references>
+        <referencedby refid="classbsp___s_t_m32___a_t24_c00_1ad5b68ee911f6e46ab877049eaadc5b1c" compoundref="bsp___a_t24_c00_8cpp" startline="101" endline="102">bsp_STM32_AT24C00::AT_ReadByte</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___i_i_c_1a97ad38a37ad0140987ba79d878f0d9e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsp_IIC::IIC_Start</definition>
+        <argsstring>(void)</argsstring>
+        <name>IIC_Start</name>
+        <qualifiedname>bsp_IIC::IIC_Start</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>发送IIC开始信号 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="63" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp" bodystart="47" bodyend="54"/>
+        <references refid="classbsp___i_i_c_1ad3d17035a8d19842ccabbf743a4405f4">IIC_Delay</references>
+        <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a048bbf954430bbc34fa11280165ed534" compoundref="bsp___i_i_c_8h" startline="45">IIC_RESET</references>
+        <references refid="classbsp___i_i_c_1a9c71db14d666983ab15621f119bdc171">IIC_SCK</references>
+        <references refid="classbsp___i_i_c_1adf1ba1196ef163ab1958747744dd8a14">IIC_SDA</references>
+        <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a9e128b73c7beb33be6b4e953a7fddc66" compoundref="bsp___i_i_c_8h" startline="46">IIC_SET</references>
+        <referencedby refid="classbsp___s_t_m32___o_l_e_d_1a1d6d3de485739ab13cde6f4c51a97e72" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="84" endline="97">bsp_STM32_OLED::Clear</referencedby>
+        <referencedby refid="classbsp___i_i_c_1aae8c08f59f3fce9dce27f9f04beda683" compoundref="bsp___i_i_c_8cpp" startline="198" endline="211">IIC_Read</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a9effd40b26cbf6f321d0f0db3e2f09c3" compoundref="bsp___i_i_c_8cpp" startline="153" endline="166">IIC_ReadOneByte</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a9d5d55340f9c43998763ecd0fb67b88c" compoundref="bsp___i_i_c_8cpp" startline="177" endline="187">IIC_Write</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a9f4cdf777e69f407b155ffdba5b9e7c8" compoundref="bsp___i_i_c_8cpp" startline="136" endline="144">IIC_WriteOneByte</referencedby>
+        <referencedby refid="classbsp___s_t_m32___o_l_e_d_1a60d512f9509a7809566159058caa8a01" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="103" endline="117">bsp_STM32_OLED::Picture_display</referencedby>
+        <referencedby refid="classbsp___s_t_m32___o_l_e_d_1acbb37e4600b98dd8e16b6a8750daae15" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="123" endline="137">bsp_STM32_OLED::Picture_ReverseDisplay</referencedby>
+        <referencedby refid="classbsp___s_t_m32___a_t24_c00_1a2c0bcf4f2ffd4ef242c8d4423dca1ad0" compoundref="bsp___a_t24_c00_8cpp" startline="72" endline="93">bsp_STM32_AT24C00::WriteByte</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___i_i_c_1ae513e1a05cbbae2a6f37e6cbb3bb63e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsp_IIC::IIC_Stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>IIC_Stop</name>
+        <qualifiedname>bsp_IIC::IIC_Stop</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>发送IIC停止信号 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="64" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp" bodystart="59" bodyend="64"/>
+        <references refid="classbsp___i_i_c_1ad3d17035a8d19842ccabbf743a4405f4">IIC_Delay</references>
+        <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a048bbf954430bbc34fa11280165ed534" compoundref="bsp___i_i_c_8h" startline="45">IIC_RESET</references>
+        <references refid="classbsp___i_i_c_1a9c71db14d666983ab15621f119bdc171">IIC_SCK</references>
+        <references refid="classbsp___i_i_c_1adf1ba1196ef163ab1958747744dd8a14">IIC_SDA</references>
+        <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a9e128b73c7beb33be6b4e953a7fddc66" compoundref="bsp___i_i_c_8h" startline="46">IIC_SET</references>
+        <referencedby refid="classbsp___s_t_m32___o_l_e_d_1a1d6d3de485739ab13cde6f4c51a97e72" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="84" endline="97">bsp_STM32_OLED::Clear</referencedby>
+        <referencedby refid="classbsp___i_i_c_1aae8c08f59f3fce9dce27f9f04beda683" compoundref="bsp___i_i_c_8cpp" startline="198" endline="211">IIC_Read</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a9effd40b26cbf6f321d0f0db3e2f09c3" compoundref="bsp___i_i_c_8cpp" startline="153" endline="166">IIC_ReadOneByte</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a9d5d55340f9c43998763ecd0fb67b88c" compoundref="bsp___i_i_c_8cpp" startline="177" endline="187">IIC_Write</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a9f4cdf777e69f407b155ffdba5b9e7c8" compoundref="bsp___i_i_c_8cpp" startline="136" endline="144">IIC_WriteOneByte</referencedby>
+        <referencedby refid="classbsp___s_t_m32___o_l_e_d_1a60d512f9509a7809566159058caa8a01" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="103" endline="117">bsp_STM32_OLED::Picture_display</referencedby>
+        <referencedby refid="classbsp___s_t_m32___o_l_e_d_1acbb37e4600b98dd8e16b6a8750daae15" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="123" endline="137">bsp_STM32_OLED::Picture_ReverseDisplay</referencedby>
+        <referencedby refid="classbsp___s_t_m32___a_t24_c00_1a2c0bcf4f2ffd4ef242c8d4423dca1ad0" compoundref="bsp___a_t24_c00_8cpp" startline="72" endline="93">bsp_STM32_AT24C00::WriteByte</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___i_i_c_1a684793afa5c26e6d123ff6ad083342c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsp_IIC::IIC_SendAck</definition>
+        <argsstring>(u8 ackbit)</argsstring>
+        <name>IIC_SendAck</name>
+        <qualifiedname>bsp_IIC::IIC_SendAck</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+          <declname>ackbit</declname>
+        </param>
+        <briefdescription>
+<para>发送IIC应答信号 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ackbit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0为应答,1位非应答 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="65" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp" bodystart="71" bodyend="79"/>
+        <references refid="classbsp___i_i_c_1ad3d17035a8d19842ccabbf743a4405f4">IIC_Delay</references>
+        <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a048bbf954430bbc34fa11280165ed534" compoundref="bsp___i_i_c_8h" startline="45">IIC_RESET</references>
+        <references refid="classbsp___i_i_c_1a9c71db14d666983ab15621f119bdc171">IIC_SCK</references>
+        <references refid="classbsp___i_i_c_1adf1ba1196ef163ab1958747744dd8a14">IIC_SDA</references>
+        <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a9e128b73c7beb33be6b4e953a7fddc66" compoundref="bsp___i_i_c_8h" startline="46">IIC_SET</references>
+        <referencedby refid="classbsp___i_i_c_1aae8c08f59f3fce9dce27f9f04beda683" compoundref="bsp___i_i_c_8cpp" startline="198" endline="211">IIC_Read</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a9effd40b26cbf6f321d0f0db3e2f09c3" compoundref="bsp___i_i_c_8cpp" startline="153" endline="166">IIC_ReadOneByte</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___i_i_c_1a3f14f230b5876c529380d4f51a9c9c12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 bsp_IIC::IIC_WaitAck</definition>
+        <argsstring>(void)</argsstring>
+        <name>IIC_WaitAck</name>
+        <qualifiedname>bsp_IIC::IIC_WaitAck</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>等待应答信号 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>返回是否有回应 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="66" column="3" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp" bodystart="85" bodyend="92"/>
+        <references refid="classbsp___i_i_c_1ad3d17035a8d19842ccabbf743a4405f4">IIC_Delay</references>
+        <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7ae4ead84d2c3bbc3f2403d9a5157a3f94" compoundref="bsp___i_i_c_8h" startline="47">IIC_READ</references>
+        <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a048bbf954430bbc34fa11280165ed534" compoundref="bsp___i_i_c_8h" startline="45">IIC_RESET</references>
+        <references refid="classbsp___i_i_c_1a9c71db14d666983ab15621f119bdc171">IIC_SCK</references>
+        <references refid="classbsp___i_i_c_1adf1ba1196ef163ab1958747744dd8a14">IIC_SDA</references>
+        <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a9e128b73c7beb33be6b4e953a7fddc66" compoundref="bsp___i_i_c_8h" startline="46">IIC_SET</references>
+        <referencedby refid="classbsp___s_t_m32___o_l_e_d_1a1d6d3de485739ab13cde6f4c51a97e72" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="84" endline="97">bsp_STM32_OLED::Clear</referencedby>
+        <referencedby refid="classbsp___i_i_c_1aae8c08f59f3fce9dce27f9f04beda683" compoundref="bsp___i_i_c_8cpp" startline="198" endline="211">IIC_Read</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a9effd40b26cbf6f321d0f0db3e2f09c3" compoundref="bsp___i_i_c_8cpp" startline="153" endline="166">IIC_ReadOneByte</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a9d5d55340f9c43998763ecd0fb67b88c" compoundref="bsp___i_i_c_8cpp" startline="177" endline="187">IIC_Write</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a9f4cdf777e69f407b155ffdba5b9e7c8" compoundref="bsp___i_i_c_8cpp" startline="136" endline="144">IIC_WriteOneByte</referencedby>
+        <referencedby refid="classbsp___s_t_m32___o_l_e_d_1a60d512f9509a7809566159058caa8a01" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="103" endline="117">bsp_STM32_OLED::Picture_display</referencedby>
+        <referencedby refid="classbsp___s_t_m32___o_l_e_d_1acbb37e4600b98dd8e16b6a8750daae15" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="123" endline="137">bsp_STM32_OLED::Picture_ReverseDisplay</referencedby>
+        <referencedby refid="classbsp___s_t_m32___a_t24_c00_1a2c0bcf4f2ffd4ef242c8d4423dca1ad0" compoundref="bsp___a_t24_c00_8cpp" startline="72" endline="93">bsp_STM32_AT24C00::WriteByte</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsp_IIC::IIC_SendByte</definition>
+        <argsstring>(u8 byt)</argsstring>
+        <name>IIC_SendByte</name>
+        <qualifiedname>bsp_IIC::IIC_SendByte</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+          <declname>byt</declname>
+        </param>
+        <briefdescription>
+<para>发送IIC一个字节信号 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>byt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>发送的字节 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="67" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp" bodystart="98" bodyend="108"/>
+        <references refid="classbsp___i_i_c_1ad3d17035a8d19842ccabbf743a4405f4">IIC_Delay</references>
+        <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a048bbf954430bbc34fa11280165ed534" compoundref="bsp___i_i_c_8h" startline="45">IIC_RESET</references>
+        <references refid="classbsp___i_i_c_1a9c71db14d666983ab15621f119bdc171">IIC_SCK</references>
+        <references refid="classbsp___i_i_c_1adf1ba1196ef163ab1958747744dd8a14">IIC_SDA</references>
+        <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a9e128b73c7beb33be6b4e953a7fddc66" compoundref="bsp___i_i_c_8h" startline="46">IIC_SET</references>
+        <referencedby refid="classbsp___s_t_m32___o_l_e_d_1a1d6d3de485739ab13cde6f4c51a97e72" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="84" endline="97">bsp_STM32_OLED::Clear</referencedby>
+        <referencedby refid="classbsp___i_i_c_1aae8c08f59f3fce9dce27f9f04beda683" compoundref="bsp___i_i_c_8cpp" startline="198" endline="211">IIC_Read</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a9effd40b26cbf6f321d0f0db3e2f09c3" compoundref="bsp___i_i_c_8cpp" startline="153" endline="166">IIC_ReadOneByte</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a9d5d55340f9c43998763ecd0fb67b88c" compoundref="bsp___i_i_c_8cpp" startline="177" endline="187">IIC_Write</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a9f4cdf777e69f407b155ffdba5b9e7c8" compoundref="bsp___i_i_c_8cpp" startline="136" endline="144">IIC_WriteOneByte</referencedby>
+        <referencedby refid="classbsp___s_t_m32___o_l_e_d_1a60d512f9509a7809566159058caa8a01" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="103" endline="117">bsp_STM32_OLED::Picture_display</referencedby>
+        <referencedby refid="classbsp___s_t_m32___o_l_e_d_1acbb37e4600b98dd8e16b6a8750daae15" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="123" endline="137">bsp_STM32_OLED::Picture_ReverseDisplay</referencedby>
+        <referencedby refid="classbsp___s_t_m32___a_t24_c00_1a2c0bcf4f2ffd4ef242c8d4423dca1ad0" compoundref="bsp___a_t24_c00_8cpp" startline="72" endline="93">bsp_STM32_AT24C00::WriteByte</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___i_i_c_1a15201c6a6bd1affde8da0fc642f62272" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 bsp_IIC::IIC_RecByte</definition>
+        <argsstring>(void)</argsstring>
+        <name>IIC_RecByte</name>
+        <qualifiedname>bsp_IIC::IIC_RecByte</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>接收IIC一个字节信号 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>接收到的一个字节信号 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="68" column="3" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp" bodystart="114" bodyend="123"/>
+        <references refid="classbsp___i_i_c_1ad3d17035a8d19842ccabbf743a4405f4">IIC_Delay</references>
+        <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7ae4ead84d2c3bbc3f2403d9a5157a3f94" compoundref="bsp___i_i_c_8h" startline="47">IIC_READ</references>
+        <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a048bbf954430bbc34fa11280165ed534" compoundref="bsp___i_i_c_8h" startline="45">IIC_RESET</references>
+        <references refid="classbsp___i_i_c_1a9c71db14d666983ab15621f119bdc171">IIC_SCK</references>
+        <references refid="classbsp___i_i_c_1adf1ba1196ef163ab1958747744dd8a14">IIC_SDA</references>
+        <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a9e128b73c7beb33be6b4e953a7fddc66" compoundref="bsp___i_i_c_8h" startline="46">IIC_SET</references>
+        <referencedby refid="classbsp___i_i_c_1aae8c08f59f3fce9dce27f9f04beda683" compoundref="bsp___i_i_c_8cpp" startline="198" endline="211">IIC_Read</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a9effd40b26cbf6f321d0f0db3e2f09c3" compoundref="bsp___i_i_c_8cpp" startline="153" endline="166">IIC_ReadOneByte</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classbsp___i_i_c_1a9c71db14d666983ab15621f119bdc171" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>virtual u8 bsp_IIC::IIC_SCK</definition>
+        <argsstring>(u8 var)=0</argsstring>
+        <name>IIC_SCK</name>
+        <qualifiedname>bsp_IIC::IIC_SCK</qualifiedname>
+        <reimplementedby refid="classbsp___i_i_c___s_t_m32_1a14ca3a4cbeb0122d88391d9f37e1fe27">IIC_SCK</reimplementedby>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>控制SCK管脚口 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>此处有三个状态,IIC_SET置位管脚,IIC_RESET复位管脚 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>当var为IIC_READ时返回管脚状态 </para>
+</simplesect>
+<xrefsect id="todo_1_todo000001"><xreftitle>待办事项</xreftitle><xrefdescription><para>需要为其实现才可使用软件IIC </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="77" column="12"/>
+        <referencedby refid="classbsp___i_i_c_1a15201c6a6bd1affde8da0fc642f62272" compoundref="bsp___i_i_c_8cpp" startline="114" endline="123">IIC_RecByte</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a684793afa5c26e6d123ff6ad083342c8" compoundref="bsp___i_i_c_8cpp" startline="71" endline="79">IIC_SendAck</referencedby>
+        <referencedby refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" compoundref="bsp___i_i_c_8cpp" startline="98" endline="108">IIC_SendByte</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a97ad38a37ad0140987ba79d878f0d9e9" compoundref="bsp___i_i_c_8cpp" startline="47" endline="54">IIC_Start</referencedby>
+        <referencedby refid="classbsp___i_i_c_1ae513e1a05cbbae2a6f37e6cbb3bb63e2" compoundref="bsp___i_i_c_8cpp" startline="59" endline="64">IIC_Stop</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a3f14f230b5876c529380d4f51a9c9c12" compoundref="bsp___i_i_c_8cpp" startline="85" endline="92">IIC_WaitAck</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___i_i_c_1adf1ba1196ef163ab1958747744dd8a14" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>virtual u8 bsp_IIC::IIC_SDA</definition>
+        <argsstring>(u8 var)=0</argsstring>
+        <name>IIC_SDA</name>
+        <qualifiedname>bsp_IIC::IIC_SDA</qualifiedname>
+        <reimplementedby refid="classbsp___i_i_c___s_t_m32_1a8e703fab0f20578492ff23cb185b1a8d">IIC_SDA</reimplementedby>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>控制SDA管脚口 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>此处有三个状态,IIC_SET置位管脚,IIC_RESET复位管脚 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>当var为IIC_READ时返回管脚状态 </para>
+</simplesect>
+<xrefsect id="todo_1_todo000002"><xreftitle>待办事项</xreftitle><xrefdescription><para>需要为其实现才可使用软件IIC </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="85" column="12"/>
+        <referencedby refid="classbsp___i_i_c_1a15201c6a6bd1affde8da0fc642f62272" compoundref="bsp___i_i_c_8cpp" startline="114" endline="123">IIC_RecByte</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a684793afa5c26e6d123ff6ad083342c8" compoundref="bsp___i_i_c_8cpp" startline="71" endline="79">IIC_SendAck</referencedby>
+        <referencedby refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" compoundref="bsp___i_i_c_8cpp" startline="98" endline="108">IIC_SendByte</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a97ad38a37ad0140987ba79d878f0d9e9" compoundref="bsp___i_i_c_8cpp" startline="47" endline="54">IIC_Start</referencedby>
+        <referencedby refid="classbsp___i_i_c_1ae513e1a05cbbae2a6f37e6cbb3bb63e2" compoundref="bsp___i_i_c_8cpp" startline="59" endline="64">IIC_Stop</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a3f14f230b5876c529380d4f51a9c9c12" compoundref="bsp___i_i_c_8cpp" startline="85" endline="92">IIC_WaitAck</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___i_i_c_1ad3d17035a8d19842ccabbf743a4405f4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void bsp_IIC::IIC_Delay</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>IIC_Delay</name>
+        <qualifiedname>bsp_IIC::IIC_Delay</qualifiedname>
+        <reimplementedby refid="classbsp___s_t_m32___a_t24_c00_1a7ba3cbef5e2eea37f514948f12f2119d">IIC_Delay</reimplementedby>
+        <reimplementedby refid="classbsp___i_i_c___s_t_m32_1ab76c882803b30793f39b8a3fe4fdef2c">IIC_Delay</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>时序中的延时 在此处短暂延时 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="todo_1_todo000003"><xreftitle>待办事项</xreftitle><xrefdescription><para>需要为其实现才可使用软件IIC </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="91" column="14"/>
+        <referencedby refid="classbsp___i_i_c_1a15201c6a6bd1affde8da0fc642f62272" compoundref="bsp___i_i_c_8cpp" startline="114" endline="123">IIC_RecByte</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a684793afa5c26e6d123ff6ad083342c8" compoundref="bsp___i_i_c_8cpp" startline="71" endline="79">IIC_SendAck</referencedby>
+        <referencedby refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" compoundref="bsp___i_i_c_8cpp" startline="98" endline="108">IIC_SendByte</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a97ad38a37ad0140987ba79d878f0d9e9" compoundref="bsp___i_i_c_8cpp" startline="47" endline="54">IIC_Start</referencedby>
+        <referencedby refid="classbsp___i_i_c_1ae513e1a05cbbae2a6f37e6cbb3bb63e2" compoundref="bsp___i_i_c_8cpp" startline="59" endline="64">IIC_Stop</referencedby>
+        <referencedby refid="classbsp___i_i_c_1a3f14f230b5876c529380d4f51a9c9c12" compoundref="bsp___i_i_c_8cpp" startline="85" endline="92">IIC_WaitAck</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>IIC的基础实现方法 留下三个保护性接口需要实现,分别是控制时钟,控制数据,延时函数 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>bsp_IIC</label>
+        <link refid="classbsp___i_i_c"/>
+      </node>
+      <node id="2">
+        <label>bsp_IIC_STM32</label>
+        <link refid="classbsp___i_i_c___s_t_m32"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>bsp_STM32_AT24C00</label>
+        <link refid="classbsp___s_t_m32___a_t24_c00"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>bsp_STM32_OLED</label>
+        <link refid="classbsp___s_t_m32___o_l_e_d"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="56" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" bodystart="56" bodyend="92"/>
+    <listofallmembers>
+      <member refid="classbsp___i_i_c_1ad3d17035a8d19842ccabbf743a4405f4" prot="protected" virt="pure-virtual"><scope>bsp_IIC</scope><name>IIC_Delay</name></member>
+      <member refid="classbsp___i_i_c_1aae8c08f59f3fce9dce27f9f04beda683" prot="public" virt="non-virtual"><scope>bsp_IIC</scope><name>IIC_Read</name></member>
+      <member refid="classbsp___i_i_c_1a9effd40b26cbf6f321d0f0db3e2f09c3" prot="public" virt="non-virtual"><scope>bsp_IIC</scope><name>IIC_ReadOneByte</name></member>
+      <member refid="classbsp___i_i_c_1a15201c6a6bd1affde8da0fc642f62272" prot="public" virt="non-virtual"><scope>bsp_IIC</scope><name>IIC_RecByte</name></member>
+      <member refid="classbsp___i_i_c_1a9c71db14d666983ab15621f119bdc171" prot="protected" virt="pure-virtual"><scope>bsp_IIC</scope><name>IIC_SCK</name></member>
+      <member refid="classbsp___i_i_c_1adf1ba1196ef163ab1958747744dd8a14" prot="protected" virt="pure-virtual"><scope>bsp_IIC</scope><name>IIC_SDA</name></member>
+      <member refid="classbsp___i_i_c_1a684793afa5c26e6d123ff6ad083342c8" prot="public" virt="non-virtual"><scope>bsp_IIC</scope><name>IIC_SendAck</name></member>
+      <member refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" prot="public" virt="non-virtual"><scope>bsp_IIC</scope><name>IIC_SendByte</name></member>
+      <member refid="classbsp___i_i_c_1a97ad38a37ad0140987ba79d878f0d9e9" prot="public" virt="non-virtual"><scope>bsp_IIC</scope><name>IIC_Start</name></member>
+      <member refid="classbsp___i_i_c_1ae513e1a05cbbae2a6f37e6cbb3bb63e2" prot="public" virt="non-virtual"><scope>bsp_IIC</scope><name>IIC_Stop</name></member>
+      <member refid="classbsp___i_i_c_1a3f14f230b5876c529380d4f51a9c9c12" prot="public" virt="non-virtual"><scope>bsp_IIC</scope><name>IIC_WaitAck</name></member>
+      <member refid="classbsp___i_i_c_1a9d5d55340f9c43998763ecd0fb67b88c" prot="public" virt="non-virtual"><scope>bsp_IIC</scope><name>IIC_Write</name></member>
+      <member refid="classbsp___i_i_c_1a9f4cdf777e69f407b155ffdba5b9e7c8" prot="public" virt="non-virtual"><scope>bsp_IIC</scope><name>IIC_WriteOneByte</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

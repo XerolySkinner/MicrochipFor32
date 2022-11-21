@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="classbsp___i_i_c___s_t_m32" kind="class" language="C++" prot="public">
+    <compoundname>bsp_IIC_STM32</compoundname>
+    <basecompoundref refid="classbsp___i_i_c" prot="public" virt="non-virtual">bsp_IIC</basecompoundref>
+    <derivedcompoundref refid="classbsp___s_t_m32___a_t24_c00" prot="public" virt="non-virtual">bsp_STM32_AT24C00</derivedcompoundref>
+    <derivedcompoundref refid="classbsp___s_t_m32___o_l_e_d" prot="protected" virt="non-virtual">bsp_STM32_OLED</derivedcompoundref>
+    <includes refid="bsp___i_i_c___s_t_m32_8h" local="no">bsp_IIC_STM32.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classbsp___i_i_c___s_t_m32_1a6258aaa53e12f5502333f4440cdba352" prot="public" static="no" mutable="no">
+        <type>GPIO_TypeDef *</type>
+        <definition>GPIO_TypeDef* bsp_IIC_STM32::GPIOx_SCK</definition>
+        <argsstring></argsstring>
+        <name>GPIOx_SCK</name>
+        <qualifiedname>bsp_IIC_STM32::GPIOx_SCK</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h" line="63" column="13" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="classbsp___i_i_c___s_t_m32_1a22566656cd2c5e8e1ab6b4c6aa32b63b" compoundref="bsp___i_i_c___s_t_m32_8cpp" startline="51" endline="55">bsp_IIC_STM32</referencedby>
+        <referencedby refid="classbsp___i_i_c___s_t_m32_1a14ca3a4cbeb0122d88391d9f37e1fe27" compoundref="bsp___i_i_c___s_t_m32_8cpp" startline="73" endline="82">IIC_SCK</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsp___i_i_c___s_t_m32_1a7a5b57552741573a65114014a146bd5e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t bsp_IIC_STM32::GPIO_Pin_SCK</definition>
+        <argsstring></argsstring>
+        <name>GPIO_Pin_SCK</name>
+        <qualifiedname>bsp_IIC_STM32::GPIO_Pin_SCK</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h" line="64" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h" bodystart="64" bodyend="-1"/>
+        <referencedby refid="classbsp___i_i_c___s_t_m32_1a22566656cd2c5e8e1ab6b4c6aa32b63b" compoundref="bsp___i_i_c___s_t_m32_8cpp" startline="51" endline="55">bsp_IIC_STM32</referencedby>
+        <referencedby refid="classbsp___i_i_c___s_t_m32_1a14ca3a4cbeb0122d88391d9f37e1fe27" compoundref="bsp___i_i_c___s_t_m32_8cpp" startline="73" endline="82">IIC_SCK</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsp___i_i_c___s_t_m32_1aae22b18b9aa61649c4abd31f79fa7a82" prot="public" static="no" mutable="no">
+        <type>GPIO_TypeDef *</type>
+        <definition>GPIO_TypeDef* bsp_IIC_STM32::GPIOx_SDA</definition>
+        <argsstring></argsstring>
+        <name>GPIOx_SDA</name>
+        <qualifiedname>bsp_IIC_STM32::GPIOx_SDA</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h" line="65" column="13" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="classbsp___i_i_c___s_t_m32_1a22566656cd2c5e8e1ab6b4c6aa32b63b" compoundref="bsp___i_i_c___s_t_m32_8cpp" startline="51" endline="55">bsp_IIC_STM32</referencedby>
+        <referencedby refid="classbsp___i_i_c___s_t_m32_1a8e703fab0f20578492ff23cb185b1a8d" compoundref="bsp___i_i_c___s_t_m32_8cpp" startline="89" endline="98">IIC_SDA</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbsp___i_i_c___s_t_m32_1a73c8aa1aef1ed9e4ff8d46e5c7755272" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t bsp_IIC_STM32::GPIO_Pin_SDA</definition>
+        <argsstring></argsstring>
+        <name>GPIO_Pin_SDA</name>
+        <qualifiedname>bsp_IIC_STM32::GPIO_Pin_SDA</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h" line="66" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h" bodystart="66" bodyend="-1"/>
+        <referencedby refid="classbsp___i_i_c___s_t_m32_1a22566656cd2c5e8e1ab6b4c6aa32b63b" compoundref="bsp___i_i_c___s_t_m32_8cpp" startline="51" endline="55">bsp_IIC_STM32</referencedby>
+        <referencedby refid="classbsp___i_i_c___s_t_m32_1a8e703fab0f20578492ff23cb185b1a8d" compoundref="bsp___i_i_c___s_t_m32_8cpp" startline="89" endline="98">IIC_SDA</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbsp___i_i_c___s_t_m32_1a22566656cd2c5e8e1ab6b4c6aa32b63b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsp_IIC_STM32::bsp_IIC_STM32</definition>
+        <argsstring>(GPIO_TypeDef *GPIOx_SCK, uint16_t GPIO_Pin_SCK, GPIO_TypeDef *GPIOx_SDA, uint16_t GPIO_Pin_SDA)</argsstring>
+        <name>bsp_IIC_STM32</name>
+        <qualifiedname>bsp_IIC_STM32::bsp_IIC_STM32</qualifiedname>
+        <param>
+          <type>GPIO_TypeDef *</type>
+          <declname>GPIOx_SCK</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>GPIO_Pin_SCK</declname>
+        </param>
+        <param>
+          <type>GPIO_TypeDef *</type>
+          <declname>GPIOx_SDA</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>GPIO_Pin_SDA</declname>
+        </param>
+        <briefdescription>
+<para>构造STM32的IIC软件发生器 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>*GPIOx_SCK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SCK的端口 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GPIO_Pin_SCK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SCK的管口号 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>*GPIOx_SDA</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SDA的端口 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GPIO_Pin_SDA</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SDA的管口号 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h" line="57" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.cpp" bodystart="51" bodyend="55"/>
+        <references refid="classbsp___i_i_c___s_t_m32_1a7a5b57552741573a65114014a146bd5e" compoundref="bsp___i_i_c___s_t_m32_8h" startline="64">GPIO_Pin_SCK</references>
+        <references refid="classbsp___i_i_c___s_t_m32_1a73c8aa1aef1ed9e4ff8d46e5c7755272" compoundref="bsp___i_i_c___s_t_m32_8h" startline="66">GPIO_Pin_SDA</references>
+        <references refid="classbsp___i_i_c___s_t_m32_1a6258aaa53e12f5502333f4440cdba352" compoundref="bsp___i_i_c___s_t_m32_8h" startline="63">GPIOx_SCK</references>
+        <references refid="classbsp___i_i_c___s_t_m32_1aae22b18b9aa61649c4abd31f79fa7a82" compoundref="bsp___i_i_c___s_t_m32_8h" startline="65">GPIOx_SDA</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classbsp___i_i_c___s_t_m32_1a14ca3a4cbeb0122d88391d9f37e1fe27" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 bsp_IIC_STM32::IIC_SCK</definition>
+        <argsstring>(u8 var)</argsstring>
+        <name>IIC_SCK</name>
+        <qualifiedname>bsp_IIC_STM32::IIC_SCK</qualifiedname>
+        <reimplements refid="classbsp___i_i_c_1a9c71db14d666983ab15621f119bdc171">IIC_SCK</reimplements>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>控制SCK管脚口 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>此处有三个状态,IIC_SET置位管脚,IIC_RESET复位管脚 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>当var为IIC_READ时返回管脚状态 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h" line="59" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.cpp" bodystart="73" bodyend="82"/>
+        <references refid="classbsp___i_i_c___s_t_m32_1a7a5b57552741573a65114014a146bd5e" compoundref="bsp___i_i_c___s_t_m32_8h" startline="64">GPIO_Pin_SCK</references>
+        <references refid="classbsp___i_i_c___s_t_m32_1a6258aaa53e12f5502333f4440cdba352" compoundref="bsp___i_i_c___s_t_m32_8h" startline="63">GPIOx_SCK</references>
+        <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a048bbf954430bbc34fa11280165ed534" compoundref="bsp___i_i_c_8h" startline="45">IIC_RESET</references>
+        <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a9e128b73c7beb33be6b4e953a7fddc66" compoundref="bsp___i_i_c_8h" startline="46">IIC_SET</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___i_i_c___s_t_m32_1a8e703fab0f20578492ff23cb185b1a8d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 bsp_IIC_STM32::IIC_SDA</definition>
+        <argsstring>(u8 var)</argsstring>
+        <name>IIC_SDA</name>
+        <qualifiedname>bsp_IIC_STM32::IIC_SDA</qualifiedname>
+        <reimplements refid="classbsp___i_i_c_1adf1ba1196ef163ab1958747744dd8a14">IIC_SDA</reimplements>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>控制SDA管脚口 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>此处有三个状态,IIC_SET置位管脚,IIC_RESET复位管脚 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>当var为IIC_READ时返回管脚状态 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h" line="60" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.cpp" bodystart="89" bodyend="98"/>
+        <references refid="classbsp___i_i_c___s_t_m32_1a73c8aa1aef1ed9e4ff8d46e5c7755272" compoundref="bsp___i_i_c___s_t_m32_8h" startline="66">GPIO_Pin_SDA</references>
+        <references refid="classbsp___i_i_c___s_t_m32_1aae22b18b9aa61649c4abd31f79fa7a82" compoundref="bsp___i_i_c___s_t_m32_8h" startline="65">GPIOx_SDA</references>
+        <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a048bbf954430bbc34fa11280165ed534" compoundref="bsp___i_i_c_8h" startline="45">IIC_RESET</references>
+        <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a9e128b73c7beb33be6b4e953a7fddc66" compoundref="bsp___i_i_c_8h" startline="46">IIC_SET</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___i_i_c___s_t_m32_1ab76c882803b30793f39b8a3fe4fdef2c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void bsp_IIC_STM32::IIC_Delay</definition>
+        <argsstring>(void)</argsstring>
+        <name>IIC_Delay</name>
+        <qualifiedname>bsp_IIC_STM32::IIC_Delay</qualifiedname>
+        <reimplements refid="classbsp___i_i_c_1ad3d17035a8d19842ccabbf743a4405f4">IIC_Delay</reimplements>
+        <reimplementedby refid="classbsp___s_t_m32___a_t24_c00_1a7ba3cbef5e2eea37f514948f12f2119d">IIC_Delay</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>时序中的延时 在此处短暂延时 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h" line="61" column="14" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.cpp" bodystart="64" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>STM32版本的软件IIC 需要使用构造函数初始化 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>bsp_IIC</label>
+        <link refid="classbsp___i_i_c"/>
+      </node>
+      <node id="1">
+        <label>bsp_IIC_STM32</label>
+        <link refid="classbsp___i_i_c___s_t_m32"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>bsp_STM32_AT24C00</label>
+        <link refid="classbsp___s_t_m32___a_t24_c00"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>bsp_STM32_OLED</label>
+        <link refid="classbsp___s_t_m32___o_l_e_d"/>
+        <childnode refid="1" relation="protected-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>bsp_IIC</label>
+        <link refid="classbsp___i_i_c"/>
+      </node>
+      <node id="1">
+        <label>bsp_IIC_STM32</label>
+        <link refid="classbsp___i_i_c___s_t_m32"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h" line="55" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h" bodystart="55" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classbsp___i_i_c___s_t_m32_1a22566656cd2c5e8e1ab6b4c6aa32b63b" prot="public" virt="non-virtual"><scope>bsp_IIC_STM32</scope><name>bsp_IIC_STM32</name></member>
+      <member refid="classbsp___i_i_c___s_t_m32_1a7a5b57552741573a65114014a146bd5e" prot="public" virt="non-virtual"><scope>bsp_IIC_STM32</scope><name>GPIO_Pin_SCK</name></member>
+      <member refid="classbsp___i_i_c___s_t_m32_1a73c8aa1aef1ed9e4ff8d46e5c7755272" prot="public" virt="non-virtual"><scope>bsp_IIC_STM32</scope><name>GPIO_Pin_SDA</name></member>
+      <member refid="classbsp___i_i_c___s_t_m32_1a6258aaa53e12f5502333f4440cdba352" prot="public" virt="non-virtual"><scope>bsp_IIC_STM32</scope><name>GPIOx_SCK</name></member>
+      <member refid="classbsp___i_i_c___s_t_m32_1aae22b18b9aa61649c4abd31f79fa7a82" prot="public" virt="non-virtual"><scope>bsp_IIC_STM32</scope><name>GPIOx_SDA</name></member>
+      <member refid="classbsp___i_i_c___s_t_m32_1ab76c882803b30793f39b8a3fe4fdef2c" prot="protected" virt="virtual"><scope>bsp_IIC_STM32</scope><name>IIC_Delay</name></member>
+      <member refid="classbsp___i_i_c_1aae8c08f59f3fce9dce27f9f04beda683" prot="public" virt="non-virtual"><scope>bsp_IIC_STM32</scope><name>IIC_Read</name></member>
+      <member refid="classbsp___i_i_c_1a9effd40b26cbf6f321d0f0db3e2f09c3" prot="public" virt="non-virtual"><scope>bsp_IIC_STM32</scope><name>IIC_ReadOneByte</name></member>
+      <member refid="classbsp___i_i_c_1a15201c6a6bd1affde8da0fc642f62272" prot="public" virt="non-virtual"><scope>bsp_IIC_STM32</scope><name>IIC_RecByte</name></member>
+      <member refid="classbsp___i_i_c___s_t_m32_1a14ca3a4cbeb0122d88391d9f37e1fe27" prot="protected" virt="virtual"><scope>bsp_IIC_STM32</scope><name>IIC_SCK</name></member>
+      <member refid="classbsp___i_i_c___s_t_m32_1a8e703fab0f20578492ff23cb185b1a8d" prot="protected" virt="virtual"><scope>bsp_IIC_STM32</scope><name>IIC_SDA</name></member>
+      <member refid="classbsp___i_i_c_1a684793afa5c26e6d123ff6ad083342c8" prot="public" virt="non-virtual"><scope>bsp_IIC_STM32</scope><name>IIC_SendAck</name></member>
+      <member refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" prot="public" virt="non-virtual"><scope>bsp_IIC_STM32</scope><name>IIC_SendByte</name></member>
+      <member refid="classbsp___i_i_c_1a97ad38a37ad0140987ba79d878f0d9e9" prot="public" virt="non-virtual"><scope>bsp_IIC_STM32</scope><name>IIC_Start</name></member>
+      <member refid="classbsp___i_i_c_1ae513e1a05cbbae2a6f37e6cbb3bb63e2" prot="public" virt="non-virtual"><scope>bsp_IIC_STM32</scope><name>IIC_Stop</name></member>
+      <member refid="classbsp___i_i_c_1a3f14f230b5876c529380d4f51a9c9c12" prot="public" virt="non-virtual"><scope>bsp_IIC_STM32</scope><name>IIC_WaitAck</name></member>
+      <member refid="classbsp___i_i_c_1a9d5d55340f9c43998763ecd0fb67b88c" prot="public" virt="non-virtual"><scope>bsp_IIC_STM32</scope><name>IIC_Write</name></member>
+      <member refid="classbsp___i_i_c_1a9f4cdf777e69f407b155ffdba5b9e7c8" prot="public" virt="non-virtual"><scope>bsp_IIC_STM32</scope><name>IIC_WriteOneByte</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

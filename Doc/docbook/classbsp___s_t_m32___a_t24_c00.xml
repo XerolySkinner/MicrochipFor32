@@ -1,0 +1,351 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbsp___s_t_m32___a_t24_c00" xml:lang="zh">
+<title>bsp_STM32_AT24C00类 参考</title>
+<indexterm><primary>bsp_STM32_AT24C00</primary></indexterm>
+<para>
+
+<para>一个AT24设备,基于STM32的IIC总线 </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;bsp_AT24C00.h&gt;</computeroutput>
+</para>
+类 bsp_STM32_AT24C00 继承关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___a_t24_c00__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+bsp_STM32_AT24C00 的协作图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___a_t24_c00__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbsp___s_t_m32___a_t24_c00_1a5509d16dc81dcc75acb287f802e5740a">bsp_STM32_AT24C00</link> (<link linkend="_classbsp___i_i_c___s_t_m32">bsp_IIC_STM32</link> &amp;_bsp_IIC_STM32)</para>
+</listitem>
+            <listitem><para><link linkend="_classbsp___s_t_m32___a_t24_c00_1a6501d9fa92d1ae5f9c43a125f0e106a0">bsp_STM32_AT24C00</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_classbsp___s_t_m32___a_t24_c00_1a7b81cd0d8fea1bb0ce4e4b0143612bde">Address</link>, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_classbsp___s_t_m32___a_t24_c00_1a5c1a52c22b16f15bf07358a4b181e2ff">Page</link>, <link linkend="_classbsp___i_i_c___s_t_m32">bsp_IIC_STM32</link> &amp;_bsp_IIC_STM32)</para>
+</listitem>
+            <listitem><para><link linkend="_classbsp___s_t_m32___a_t24_c00_1add0323d62cef144dbd1e1b7b548a09f9">bsp_STM32_AT24C00</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_classbsp___s_t_m32___a_t24_c00_1a7b81cd0d8fea1bb0ce4e4b0143612bde">Address</link>, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_classbsp___s_t_m32___a_t24_c00_1a5c1a52c22b16f15bf07358a4b181e2ff">Page</link>, GPIO_TypeDef *<link linkend="_classbsp___i_i_c___s_t_m32_1a6258aaa53e12f5502333f4440cdba352">GPIOx_SCK</link>, uint16_t <link linkend="_classbsp___i_i_c___s_t_m32_1a7a5b57552741573a65114014a146bd5e">GPIO_Pin_SCK</link>, GPIO_TypeDef *<link linkend="_classbsp___i_i_c___s_t_m32_1aae22b18b9aa61649c4abd31f79fa7a82">GPIOx_SDA</link>, uint16_t <link linkend="_classbsp___i_i_c___s_t_m32_1a73c8aa1aef1ed9e4ff8d46e5c7755272">GPIO_Pin_SDA</link>)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___s_t_m32___a_t24_c00_1a43f5fb06621d92865d9289d996b3211a">WriteOneByte</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> addr, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> dat)</para>
+
+<para>储存一个字节 </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_classbsp___s_t_m32___a_t24_c00_1a950e3a80ff49c538294bfedf8e893ff7">ReadOneByte</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> addr)</para>
+
+<para>读取一个字节 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___s_t_m32___a_t24_c00_1a2c0bcf4f2ffd4ef242c8d4423dca1ad0">WriteByte</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> addr, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> *dat, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> len)</para>
+
+<para>写入定长度的字节 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___s_t_m32___a_t24_c00_1ad5b68ee911f6e46ab877049eaadc5b1c">AT_ReadByte</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> addr, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> *dat, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> len)</para>
+
+<para>读取定长度的字节 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 成员函数    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_classbsp___s_t_m32___a_t24_c00_1a7ba3cbef5e2eea37f514948f12f2119d">IIC_Delay</link> (void)</para>
+
+<para>实现AT定制的IIC延时时间 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 属性    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_classbsp___s_t_m32___a_t24_c00_1a7b81cd0d8fea1bb0ce4e4b0143612bde">Address</link> = 0x50</para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_classbsp___s_t_m32___a_t24_c00_1a5c1a52c22b16f15bf07358a4b181e2ff">Page</link> = 8</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>额外继承的成员函数    </title>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>一个AT24设备,基于STM32的IIC总线 </para>
+<para>
+在文件 <link linkend="_bsp___a_t24_c00_8h_source">bsp_AT24C00.h</link> 第 <link linkend="_bsp___a_t24_c00_8h_source_1l00044">44</link> 行定义.</para>
+</section>
+<section>
+<title>构造及析构函数说明</title>
+<anchor xml:id="_classbsp___s_t_m32___a_t24_c00_1a5509d16dc81dcc75acb287f802e5740a"/><section>
+    <title>bsp_STM32_AT24C00()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>bsp_STM32_AT24C00</primary><secondary>bsp_STM32_AT24C00</secondary></indexterm>
+<indexterm><primary>bsp_STM32_AT24C00</primary><secondary>bsp_STM32_AT24C00</secondary></indexterm>
+<para><computeroutput>bsp_STM32_AT24C00::bsp_STM32_AT24C00 (<link linkend="_classbsp___i_i_c___s_t_m32">bsp_IIC_STM32</link> &amp; _bsp_IIC_STM32)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_bsp___a_t24_c00_8h_source">bsp_AT24C00.h</link> 第 <link linkend="_bsp___a_t24_c00_8h_source_1l00046">46</link> 行定义.</para>
+</section>
+<anchor xml:id="_classbsp___s_t_m32___a_t24_c00_1a6501d9fa92d1ae5f9c43a125f0e106a0"/><section>
+    <title>bsp_STM32_AT24C00()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>bsp_STM32_AT24C00</primary><secondary>bsp_STM32_AT24C00</secondary></indexterm>
+<indexterm><primary>bsp_STM32_AT24C00</primary><secondary>bsp_STM32_AT24C00</secondary></indexterm>
+<para><computeroutput>bsp_STM32_AT24C00::bsp_STM32_AT24C00 (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> Address, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> Page, <link linkend="_classbsp___i_i_c___s_t_m32">bsp_IIC_STM32</link> &amp; _bsp_IIC_STM32)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_bsp___a_t24_c00_8h_source">bsp_AT24C00.h</link> 第 <link linkend="_bsp___a_t24_c00_8h_source_1l00050">50</link> 行定义.</para>
+</section>
+<anchor xml:id="_classbsp___s_t_m32___a_t24_c00_1add0323d62cef144dbd1e1b7b548a09f9"/><section>
+    <title>bsp_STM32_AT24C00()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>bsp_STM32_AT24C00</primary><secondary>bsp_STM32_AT24C00</secondary></indexterm>
+<indexterm><primary>bsp_STM32_AT24C00</primary><secondary>bsp_STM32_AT24C00</secondary></indexterm>
+<para><computeroutput>bsp_STM32_AT24C00::bsp_STM32_AT24C00 (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> Address, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> Page, GPIO_TypeDef * GPIOx_SCK, uint16_t GPIO_Pin_SCK, GPIO_TypeDef * GPIOx_SDA, uint16_t GPIO_Pin_SDA)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_bsp___a_t24_c00_8h_source">bsp_AT24C00.h</link> 第 <link linkend="_bsp___a_t24_c00_8h_source_1l00054">54</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_classbsp___s_t_m32___a_t24_c00_1ad5b68ee911f6e46ab877049eaadc5b1c"/><section>
+    <title>AT_ReadByte()</title>
+<indexterm><primary>AT_ReadByte</primary><secondary>bsp_STM32_AT24C00</secondary></indexterm>
+<indexterm><primary>bsp_STM32_AT24C00</primary><secondary>AT_ReadByte</secondary></indexterm>
+<para><computeroutput>void bsp_STM32_AT24C00::AT_ReadByte (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> addr, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> * dat, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> len)</computeroutput></para><para>
+
+<para>读取定长度的字节 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>addr</entry><entry>
+<para>读取的位置 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>*dat</entry><entry>
+<para>读取到的数据头 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>len</entry><entry>
+<para>读取的数据长度 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___a_t24_c00_8cpp_source">bsp_AT24C00.cpp</link> 第 <link linkend="_bsp___a_t24_c00_8cpp_source_1l00101">101</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___a_t24_c00_ad5b68ee911f6e46ab877049eaadc5b1c_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_t_m32___a_t24_c00_1a7ba3cbef5e2eea37f514948f12f2119d"/><section>
+    <title>IIC_Delay()</title>
+<indexterm><primary>IIC_Delay</primary><secondary>bsp_STM32_AT24C00</secondary></indexterm>
+<indexterm><primary>bsp_STM32_AT24C00</primary><secondary>IIC_Delay</secondary></indexterm>
+<para><computeroutput>void bsp_STM32_AT24C00::IIC_Delay (void )<computeroutput>[private]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>实现AT定制的IIC延时时间 </para>
+</para>
+<para>
+重载 <link linkend="_classbsp___i_i_c___s_t_m32_1ab76c882803b30793f39b8a3fe4fdef2c">bsp_IIC_STM32</link> .</para>
+<para>
+在文件 <link linkend="_bsp___a_t24_c00_8cpp_source">bsp_AT24C00.cpp</link> 第 <link linkend="_bsp___a_t24_c00_8cpp_source_1l00047">47</link> 行定义.</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___a_t24_c00_a7ba3cbef5e2eea37f514948f12f2119d_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_t_m32___a_t24_c00_1a950e3a80ff49c538294bfedf8e893ff7"/><section>
+    <title>ReadOneByte()</title>
+<indexterm><primary>ReadOneByte</primary><secondary>bsp_STM32_AT24C00</secondary></indexterm>
+<indexterm><primary>bsp_STM32_AT24C00</primary><secondary>ReadOneByte</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> bsp_STM32_AT24C00::ReadOneByte (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> addr)</computeroutput></para><para>
+
+<para>读取一个字节 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>addr</entry><entry>
+<para>读取的位置 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>返回读取的字节 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___a_t24_c00_8cpp_source">bsp_AT24C00.cpp</link> 第 <link linkend="_bsp___a_t24_c00_8cpp_source_1l00063">63</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___a_t24_c00_a950e3a80ff49c538294bfedf8e893ff7_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_t_m32___a_t24_c00_1a2c0bcf4f2ffd4ef242c8d4423dca1ad0"/><section>
+    <title>WriteByte()</title>
+<indexterm><primary>WriteByte</primary><secondary>bsp_STM32_AT24C00</secondary></indexterm>
+<indexterm><primary>bsp_STM32_AT24C00</primary><secondary>WriteByte</secondary></indexterm>
+<para><computeroutput>void bsp_STM32_AT24C00::WriteByte (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> addr, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> * dat, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> len)</computeroutput></para><para>
+
+<para>写入定长度的字节 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>addr</entry><entry>
+<para>写入的位置 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>*dat</entry><entry>
+<para>写入的数据头 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>len</entry><entry>
+<para>写入的数据长度 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___a_t24_c00_8cpp_source">bsp_AT24C00.cpp</link> 第 <link linkend="_bsp___a_t24_c00_8cpp_source_1l00072">72</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___a_t24_c00_a2c0bcf4f2ffd4ef242c8d4423dca1ad0_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_t_m32___a_t24_c00_1a43f5fb06621d92865d9289d996b3211a"/><section>
+    <title>WriteOneByte()</title>
+<indexterm><primary>WriteOneByte</primary><secondary>bsp_STM32_AT24C00</secondary></indexterm>
+<indexterm><primary>bsp_STM32_AT24C00</primary><secondary>WriteOneByte</secondary></indexterm>
+<para><computeroutput>void bsp_STM32_AT24C00::WriteOneByte (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> addr, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> dat)</computeroutput></para><para>
+
+<para>储存一个字节 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>addr</entry><entry>
+<para>储存的位置 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>dat</entry><entry>
+<para>储存的字节 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___a_t24_c00_8cpp_source">bsp_AT24C00.cpp</link> 第 <link linkend="_bsp___a_t24_c00_8cpp_source_1l00055">55</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_t_m32___a_t24_c00_a43f5fb06621d92865d9289d996b3211a_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_classbsp___s_t_m32___a_t24_c00_1a7b81cd0d8fea1bb0ce4e4b0143612bde"/><section>
+    <title>Address</title>
+<indexterm><primary>Address</primary><secondary>bsp_STM32_AT24C00</secondary></indexterm>
+<indexterm><primary>bsp_STM32_AT24C00</primary><secondary>Address</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> bsp_STM32_AT24C00::Address = 0x50<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_bsp___a_t24_c00_8h_source">bsp_AT24C00.h</link> 第 <link linkend="_bsp___a_t24_c00_8h_source_1l00064">64</link> 行定义.</para>
+</section>
+<anchor xml:id="_classbsp___s_t_m32___a_t24_c00_1a5c1a52c22b16f15bf07358a4b181e2ff"/><section>
+    <title>Page</title>
+<indexterm><primary>Page</primary><secondary>bsp_STM32_AT24C00</secondary></indexterm>
+<indexterm><primary>bsp_STM32_AT24C00</primary><secondary>Page</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> bsp_STM32_AT24C00::Page = 8<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_bsp___a_t24_c00_8h_source">bsp_AT24C00.h</link> 第 <link linkend="_bsp___a_t24_c00_8h_source_1l00065">65</link> 行定义.</para>
+</section>
+<para>
+该类的文档由以下文件生成:</para>
+D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp___a_t24_c00_8h">bsp_AT24C00.h</link>D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp___a_t24_c00_8cpp">bsp_AT24C00.cpp</link></section>
+</section>

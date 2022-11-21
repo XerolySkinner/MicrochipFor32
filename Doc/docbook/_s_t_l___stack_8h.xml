@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__s_t_l___stack_8h" xml:lang="zh">
+<title>D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h 文件参考</title>
+<indexterm><primary>D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h</primary></indexterm>
+<para>
+
+<para>实现了STL库中的Stack </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;varint.h&quot;<?linebreak?>#include &lt;stdlib.h&gt;<?linebreak?></programlisting>STL_Stack.h 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_s_t_l___stack_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+此图展示该文件直接或间接的被哪些文件引用了:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_s_t_l___stack_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>类    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_s_t_l__r_stack">STL_rStack</link></para>
+
+<para>一个栈的类 </para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct__l_stack">_lStack</link></para>
+
+<para>链表方式栈的节点 </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_s_t_l__l_stack">STL_lStack</link></para>
+
+<para>一个栈的类 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>类型定义    </title>
+        <itemizedlist>
+            <listitem><para>typedef struct <link linkend="__s_t_l___stack_8h_1a93c02da3227db123d738697d4e451b2a">_lStacks</link> <link linkend="__s_t_l___stack_8h_1a93c02da3227db123d738697d4e451b2a">_lStacks</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>枚举    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="__s_t_l___stack_8h_1ad01fec74b6b0b6c599780dd41cf55ec0">STACKS_RES</link> { <link linkend="__s_t_l___stack_8h_1ad01fec74b6b0b6c599780dd41cf55ec0a3e9b3bff72ae3f8f3c62c4f4bc24ca16">STACKS_OK</link>
+, <link linkend="__s_t_l___stack_8h_1ad01fec74b6b0b6c599780dd41cf55ec0aeb269e15565d4aaef1a9b5023a160eba">STACKS_EMPTY</link>
+, <link linkend="__s_t_l___stack_8h_1ad01fec74b6b0b6c599780dd41cf55ec0a9f2b3bdf4ae6c347dbf6bb0797672de7">STACKS_REAL_ERROR</link>
+, <link linkend="__s_t_l___stack_8h_1ad01fec74b6b0b6c599780dd41cf55ec0a805af9c12fa10d0d7c4846e02dd8b1d4">STACKS_MALL_ERROR</link>
+ }</para>
+
+<para>栈的返回值 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>实现了STL库中的Stack </para>
+<para>
+在文件 <link linkend="__s_t_l___stack_8h_source">STL_Stack.h</link> 中定义.</para>
+</section>
+<section>
+<title>类型定义说明</title>
+<anchor xml:id="__s_t_l___stack_8h_1a93c02da3227db123d738697d4e451b2a"/><section>
+    <title>_lStacks</title>
+<indexterm><primary>_lStacks</primary><secondary>STL_Stack.h</secondary></indexterm>
+<indexterm><primary>STL_Stack.h</primary><secondary>_lStacks</secondary></indexterm>
+<para><computeroutput>typedef struct <link linkend="__s_t_l___stack_8h_1a93c02da3227db123d738697d4e451b2a">_lStacks</link> <link linkend="__s_t_l___stack_8h_1a93c02da3227db123d738697d4e451b2a">_lStacks</link></computeroutput></para><para>
+在文件 <link linkend="__s_t_l___stack_8h_source">STL_Stack.h</link> 第 <link linkend="__s_t_l___stack_8h_source_1l00093">93</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>枚举类型说明</title>
+<anchor xml:id="__s_t_l___stack_8h_1ad01fec74b6b0b6c599780dd41cf55ec0"/><section>
+    <title>STACKS_RES</title>
+<indexterm><primary>STACKS_RES</primary><secondary>STL_Stack.h</secondary></indexterm>
+<indexterm><primary>STL_Stack.h</primary><secondary>STACKS_RES</secondary></indexterm>
+<para><computeroutput>enum <link linkend="__s_t_l___stack_8h_1ad01fec74b6b0b6c599780dd41cf55ec0">STACKS_RES</link></computeroutput></para><para>
+
+<para>栈的返回值 </para>
+</para>
+<informaltable frame="all">
+<title>枚举值</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>STACKS_OK</primary><secondary>STL_Stack.h</secondary></indexterm>
+<indexterm><primary>STL_Stack.h</primary><secondary>STACKS_OK</secondary></indexterm>
+<anchor xml:id="__s_t_l___stack_8h_1ad01fec74b6b0b6c599780dd41cf55ec0a3e9b3bff72ae3f8f3c62c4f4bc24ca16"/>STACKS_OK</entry><entry>
+<para>成功 </para>
+</entry></row><row><entry><indexterm><primary>STACKS_EMPTY</primary><secondary>STL_Stack.h</secondary></indexterm>
+<indexterm><primary>STL_Stack.h</primary><secondary>STACKS_EMPTY</secondary></indexterm>
+<anchor xml:id="__s_t_l___stack_8h_1ad01fec74b6b0b6c599780dd41cf55ec0aeb269e15565d4aaef1a9b5023a160eba"/>STACKS_EMPTY</entry><entry>
+<para>栈是空的 </para>
+</entry></row><row><entry><indexterm><primary>STACKS_REAL_ERROR</primary><secondary>STL_Stack.h</secondary></indexterm>
+<indexterm><primary>STL_Stack.h</primary><secondary>STACKS_REAL_ERROR</secondary></indexterm>
+<anchor xml:id="__s_t_l___stack_8h_1ad01fec74b6b0b6c599780dd41cf55ec0a9f2b3bdf4ae6c347dbf6bb0797672de7"/>STACKS_REAL_ERROR</entry><entry>
+<para>重分配出错realloc </para>
+</entry></row><row><entry><indexterm><primary>STACKS_MALL_ERROR</primary><secondary>STL_Stack.h</secondary></indexterm>
+<indexterm><primary>STL_Stack.h</primary><secondary>STACKS_MALL_ERROR</secondary></indexterm>
+<anchor xml:id="__s_t_l___stack_8h_1ad01fec74b6b0b6c599780dd41cf55ec0a805af9c12fa10d0d7c4846e02dd8b1d4"/>STACKS_MALL_ERROR</entry><entry>
+<para>重分配出错malloc </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+在文件 <link linkend="__s_t_l___stack_8h_source">STL_Stack.h</link> 第 <link linkend="__s_t_l___stack_8h_source_1l00045">45</link> 行定义.</para>
+</section>
+</section>
+</section>

@@ -1,0 +1,408 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="bsp___o_l_e_d___s_t_m32_8h" kind="file" language="C++">
+    <compoundname>bsp_OLED_STM32.h</compoundname>
+    <includes refid="varint_8h" local="yes">varint.h</includes>
+    <includes refid="bsp___i_i_c___s_t_m32_8h" local="yes">bsp_IIC_STM32.h</includes>
+    <includedby refid="bsp___o_l_e_d___s_t_m32_8cpp" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>bsp_IIC.h</label>
+        <link refid="bsp___i_i_c_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>bsp_IIC_STM32.h</label>
+        <link refid="bsp___i_i_c___s_t_m32_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h</label>
+        <link refid="bsp___o_l_e_d___s_t_m32_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>varint.h</label>
+        <link refid="varint_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>gpio.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp</label>
+        <link refid="bsp___o_l_e_d___s_t_m32_8cpp"/>
+      </node>
+      <node id="1">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h</label>
+        <link refid="bsp___o_l_e_d___s_t_m32_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classbsp___s_t_m32___o_l_e_d" prot="public">bsp_STM32_OLED</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="bsp___o_l_e_d___s_t_m32_8h_1a302eedcb477b4d3c89cf5629e45c41e5" prot="public" static="no" mutable="no">
+        <type>const <ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>const u8 OLED_init_cmd[25]</definition>
+        <argsstring>[25]</argsstring>
+        <name>OLED_init_cmd</name>
+        <initializer>= {
+		0xAE,	
+		0xD5,	
+		0x80,	
+
+		0xA8,	
+		0X3F,	
+		0xD3,	
+		0X00,	
+		0x40,	
+		0x8D,	
+		0x14,	
+		0x20,	
+		0x02,	
+		0xA1,	
+		0xC8,	
+		0xDA,	
+		0x12,	
+		0x81,	
+		0xEF,	
+		0xD9,	
+		0xf1,	
+		0xDB,	
+		0x30,	
+		0xA4,	
+		0xA6,	
+		0xAF,	
+}</initializer>
+        <briefdescription>
+<para>OLED指令集 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h" line="49" column="11" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classbsp___s_t_m32___o_l_e_d_1a8d7c3a121efe0f93f01b4c0423843d7a" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="158" endline="160">bsp_STM32_OLED::Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="bsp___o_l_e_d___s_t_m32_8h_1a1830381a075ec676792bda830bdee09e" prot="public" static="no" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char OLED_WORD_ASCII[]</definition>
+        <argsstring>[]</argsstring>
+        <name>OLED_WORD_ASCII</name>
+        <briefdescription>
+<para>OLED的ASCII字符集 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h" line="110" column="21" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h" bodystart="110" bodyend="-1"/>
+        <referencedby refid="classbsp___s_t_m32___o_l_e_d_1a2fd3f6c887830072509f5aa916ad8751" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="145" endline="152">bsp_STM32_OLED::Draw_ASCII</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>在STM32下实现OLED通信 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*----------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>#<sp/><sp/>Copyright<sp/>(c)<sp/>2022<sp/>Yuankang<sp/>Liang(XerolySkinner)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>#<sp/><sp/>本软件按原样提供,无任何明示或暗示</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>#<sp/><sp/>在任何情况下,作者都不承担任何损害赔偿责任</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>#<sp/><sp/>使用的许可声明:</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>#<sp/><sp/>1.<sp/><sp/>不得歪曲本软件的来源,你不能声称你编写了原始软件.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>#<sp/><sp/>2.<sp/><sp/>免费授予以任何目的,前提是版权声明出现在所有副本中.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>并且版权声明和许可声明同时出现.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>#<sp/><sp/>3.<sp/><sp/>你有使用,复制,修改,分发,和销售本软件的许可.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>#<sp/><sp/>4.<sp/><sp/>如果你在产品中使用,产品文档中的声明是赞赏的但不是必须的.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>#<sp/><sp/>5.<sp/><sp/>本通知不得从任何来源删除或更改.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>#<sp/><sp/>Yuankang<sp/>Liang(XerolySkinner)</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>E-mail:zabbcccbbaz@163.com</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>QQ:2715099320</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>Mobile<sp/>Phone:13005636215</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>#<sp/><sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">//----------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>头文件</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="varint_8h" kindref="compound">varint.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bsp___i_i_c___s_t_m32_8h" kindref="compound">bsp_IIC_STM32.h</ref>&quot;</highlight></codeline>
+<codeline lineno="43"><highlight class="comment">//----------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>数据声明</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="bsp___o_l_e_d___s_t_m32_8h_1a302eedcb477b4d3c89cf5629e45c41e5" refkind="member"><highlight class="comment"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><ref refid="bsp___o_l_e_d___s_t_m32_8h_1a302eedcb477b4d3c89cf5629e45c41e5" kindref="member">OLED_init_cmd</ref>[25]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xAE,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>关闭显示</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xD5,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>设置时钟分频因子,震荡频率</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x80,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[3:0],分频因子;[7:4],震荡频率</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xA8,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>设置驱动路数</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X3F,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>默认0X3F(1/64)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xD3,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>设置显示偏移</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X00,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>默认为0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x40,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>设置显示开始行<sp/>[5:0],行数.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x8D,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>电荷泵设置</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x14,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>bit2，开启/关闭</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x20,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>设置内存地址模式</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[1:0],00，列地址模式;01，行地址模式;10,页地址模式;默认10;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xA1,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>段重定义设置,bit0:0,0-&gt;0;1,0-&gt;127;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xC8,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>设置COM扫描方向;bit3:0,普通模式;1,重定义模式<sp/>COM[N-1]-&gt;COM0;N:驱动路数</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xDA,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>设置COM硬件引脚配置</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x12,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[5:4]配置</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x81,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>对比度设置</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xEF,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1~255;默认0X7F<sp/>(亮度设置,越大越亮)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xD9,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>设置预充电周期</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xf1,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[3:0],PHASE<sp/>1;[7:4],PHASE<sp/>2;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xDB,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>设置VCOMH<sp/>电压倍率</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x30,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[6:4]<sp/>000,0.65*vcc;001,0.77*vcc;011,0.83*vcc;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xA4,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>全局显示开启;bit0:1,开启;0,关闭;(白屏/黑屏)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xA6,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>设置显示方式;bit0:1,反相显示;0,正常显示</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xAF,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>开启显示</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classbsp___s_t_m32___o_l_e_d" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbsp___s_t_m32___o_l_e_d" kindref="compound">bsp_STM32_OLED</ref><sp/>:</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/><ref refid="classbsp___i_i_c___s_t_m32" kindref="compound">bsp_IIC_STM32</ref>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="84" refid="classbsp___s_t_m32___o_l_e_d_1a130ba2e9f83b4f6dd70154cb7561db35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a130ba2e9f83b4f6dd70154cb7561db35" kindref="member">bsp_STM32_OLED</ref>(<ref refid="classbsp___i_i_c___s_t_m32" kindref="compound">bsp_IIC_STM32</ref><sp/>&amp;IICS):<ref refid="classbsp___i_i_c___s_t_m32" kindref="compound">bsp_IIC_STM32</ref>(</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IICS.<ref refid="classbsp___i_i_c___s_t_m32_1a6258aaa53e12f5502333f4440cdba352" kindref="member">GPIOx_SCK</ref>,IICS.<ref refid="classbsp___i_i_c___s_t_m32_1a7a5b57552741573a65114014a146bd5e" kindref="member">GPIO_Pin_SCK</ref>,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IICS.<ref refid="classbsp___i_i_c___s_t_m32_1aae22b18b9aa61649c4abd31f79fa7a82" kindref="member">GPIOx_SDA</ref>,IICS.<ref refid="classbsp___i_i_c___s_t_m32_1a73c8aa1aef1ed9e4ff8d46e5c7755272" kindref="member">GPIO_Pin_SDA</ref></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>){;};</highlight></codeline>
+<codeline lineno="88" refid="classbsp___s_t_m32___o_l_e_d_1a72b5fb72becf87a1b1a0cd34f4e7a6d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a72b5fb72becf87a1b1a0cd34f4e7a6d5" kindref="member">bsp_STM32_OLED</ref>(GPIO_TypeDef<sp/>*<ref refid="classbsp___i_i_c___s_t_m32_1a6258aaa53e12f5502333f4440cdba352" kindref="member">GPIOx_SCK</ref>,uint16_t<sp/><ref refid="classbsp___i_i_c___s_t_m32_1a7a5b57552741573a65114014a146bd5e" kindref="member">GPIO_Pin_SCK</ref>,GPIO_TypeDef<sp/>*<ref refid="classbsp___i_i_c___s_t_m32_1aae22b18b9aa61649c4abd31f79fa7a82" kindref="member">GPIOx_SDA</ref>,uint16_t<sp/><ref refid="classbsp___i_i_c___s_t_m32_1a73c8aa1aef1ed9e4ff8d46e5c7755272" kindref="member">GPIO_Pin_SDA</ref>):<ref refid="classbsp___i_i_c___s_t_m32" kindref="compound">bsp_IIC_STM32</ref>(</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c___s_t_m32_1a6258aaa53e12f5502333f4440cdba352" kindref="member">GPIOx_SCK</ref>,<ref refid="classbsp___i_i_c___s_t_m32_1a7a5b57552741573a65114014a146bd5e" kindref="member">GPIO_Pin_SCK</ref>,<ref refid="classbsp___i_i_c___s_t_m32_1aae22b18b9aa61649c4abd31f79fa7a82" kindref="member">GPIOx_SDA</ref>,<ref refid="classbsp___i_i_c___s_t_m32_1a73c8aa1aef1ed9e4ff8d46e5c7755272" kindref="member">GPIO_Pin_SDA</ref></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>){;};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a8d7c3a121efe0f93f01b4c0423843d7a" kindref="member">Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a8650b7dca00244d1c6a5b1530e08be20" kindref="member">Column_set</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>column);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1ace503e57e2f9abe155bd1bae7eb83bff" kindref="member">Page_set</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>page);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a1d6d3de485739ab13cde6f4c51a97e72" kindref="member">Clear</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>dat);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a60d512f9509a7809566159058caa8a01" kindref="member">Picture_display</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref>*<sp/>ptr_pic);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1acbb37e4600b98dd8e16b6a8750daae15" kindref="member">Picture_ReverseDisplay</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref>*<sp/>ptr_pic);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a2fd3f6c887830072509f5aa916ad8751" kindref="member">Draw_ASCII</ref>(<ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref><sp/>H,<sp/><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref><sp/>V,<sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>word);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a7d11c69d54c2fac372a9e690319c111e" kindref="member">Send_dat</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>dat);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a4ce72ba6b9e7c027ecfaf9ad8fc30135" kindref="member">Send_cmd</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>cmd);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a333b835b09d4471f1be248b88c527d68" kindref="member">Send_len_dat</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref>*<sp/>dat,<sp/><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref><sp/>len);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="106"><highlight class="comment">//----------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="110" refid="bsp___o_l_e_d___s_t_m32_8cpp_1a1044366356ed639ee7754656558a44fb" refkind="member"><highlight class="comment"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="bsp___o_l_e_d___s_t_m32_8h_1a1830381a075ec676792bda830bdee09e" kindref="member">OLED_WORD_ASCII</ref>[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0xF8,0x00,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x33,0x00,0x00,0x00,0x00,</highlight><highlight class="comment">/*&quot;!&quot;,0*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x10,0x0C,0x02,0x10,0x0C,0x02,0x00,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,</highlight><highlight class="comment">/*&quot;&quot;&quot;,1*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x40,0xC0,0x78,0x40,0xC0,0x78,0x00,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x04,0x3F,0x04,0x04,0x3F,0x04,0x00,</highlight><highlight class="comment">/*&quot;#&quot;,2*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x70,0x88,0x88,0xFC,0x08,0x30,0x00,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x18,0x20,0x20,0xFF,0x21,0x1E,0x00,</highlight><highlight class="comment">/*&quot;$&quot;,3*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>0xF0,0x08,0xF0,0x80,0x60,0x18,0x00,0x00,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x31,0x0C,0x03,0x1E,0x21,0x1E,0x00,</highlight><highlight class="comment">/*&quot;%&quot;,4*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0xF0,0x08,0x88,0x70,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>0x1E,0x21,0x23,0x2C,0x19,0x27,0x21,0x10,</highlight><highlight class="comment">/*&quot;&amp;&quot;,5*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x12,0x0E,0x00,0x00,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,</highlight><highlight class="comment">/*&quot;&apos;&quot;,6*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0xE0,0x18,0x04,0x02,0x00,</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x07,0x18,0x20,0x40,0x00,</highlight><highlight class="comment">/*&quot;(&quot;,7*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x02,0x04,0x18,0xE0,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x40,0x20,0x18,0x07,0x00,0x00,0x00,</highlight><highlight class="comment">/*&quot;)&quot;,8*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>0x40,0x40,0x80,0xF0,0x80,0x40,0x40,0x00,</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>0x02,0x02,0x01,0x0F,0x01,0x02,0x02,0x00,</highlight><highlight class="comment">/*&quot;*&quot;,9*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x00,0xE0,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x01,0x01,0x01,0x0F,0x01,0x01,0x01,</highlight><highlight class="comment">/*&quot;+&quot;,10*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x90,0x70,0x00,0x00,0x00,0x00,0x00,</highlight><highlight class="comment">/*&quot;,&quot;,11*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x01,0x01,0x01,0x01,0x01,0x01,0x00,</highlight><highlight class="comment">/*&quot;-&quot;,12*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x30,0x30,0x00,0x00,0x00,0x00,0x00,</highlight><highlight class="comment">/*&quot;.&quot;,13*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x00,0xC0,0x38,0x04,0x00,</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x60,0x18,0x07,0x00,0x00,0x00,0x00,</highlight><highlight class="comment">/*&quot;/&quot;,14*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0xE0,0x10,0x08,0x08,0x10,0xE0,0x00,</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x0F,0x10,0x20,0x20,0x10,0x0F,0x00,</highlight><highlight class="comment">/*&quot;0&quot;,15*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x10,0x10,0xF8,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x20,0x20,0x3F,0x20,0x20,0x00,</highlight><highlight class="comment">/*&quot;1&quot;,16*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x70,0x08,0x08,0x08,0x08,0xF0,0x00,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x30,0x28,0x24,0x22,0x21,0x30,0x00,</highlight><highlight class="comment">/*&quot;2&quot;,17*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x30,0x08,0x08,0x08,0x88,0x70,0x00,</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x18,0x20,0x21,0x21,0x22,0x1C,0x00,</highlight><highlight class="comment">/*&quot;3&quot;,18*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x80,0x40,0x30,0xF8,0x00,0x00,</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x06,0x05,0x24,0x24,0x3F,0x24,0x24,</highlight><highlight class="comment">/*&quot;4&quot;,19*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0xF8,0x88,0x88,0x88,0x08,0x08,0x00,</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x19,0x20,0x20,0x20,0x11,0x0E,0x00,</highlight><highlight class="comment">/*&quot;5&quot;,20*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0xE0,0x10,0x88,0x88,0x90,0x00,0x00,</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x0F,0x11,0x20,0x20,0x20,0x1F,0x00,</highlight><highlight class="comment">/*&quot;6&quot;,21*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x18,0x08,0x08,0x88,0x68,0x18,0x00,</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x3E,0x01,0x00,0x00,0x00,</highlight><highlight class="comment">/*&quot;7&quot;,22*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x70,0x88,0x08,0x08,0x88,0x70,0x00,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x1C,0x22,0x21,0x21,0x22,0x1C,0x00,</highlight><highlight class="comment">/*&quot;8&quot;,23*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0xF0,0x08,0x08,0x08,0x10,0xE0,0x00,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x01,0x12,0x22,0x22,0x11,0x0F,0x00,</highlight><highlight class="comment">/*&quot;9&quot;,24*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0xC0,0xC0,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x30,0x30,0x00,0x00,0x00,</highlight><highlight class="comment">/*&quot;:&quot;,25*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x80,0x00,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0xE0,0x00,0x00,0x00,0x00,</highlight><highlight class="comment">/*&quot;;&quot;,26*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x80,0x40,0x20,0x10,0x08,0x00,</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x01,0x02,0x04,0x08,0x10,0x20,0x00,</highlight><highlight class="comment">/*&quot;&lt;&quot;,27*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x40,0x40,0x40,0x40,0x40,0x40,0x00,</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x02,0x02,0x02,0x02,0x02,0x02,0x00,</highlight><highlight class="comment">/*&quot;=&quot;,28*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x08,0x10,0x20,0x40,0x80,0x00,0x00,</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x20,0x10,0x08,0x04,0x02,0x01,0x00,</highlight><highlight class="comment">/*&quot;&gt;&quot;,29*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x70,0x48,0x08,0x08,0x88,0x70,0x00,</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x30,0x37,0x00,0x00,0x00,</highlight><highlight class="comment">/*&quot;?&quot;,30*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>0xC0,0x30,0xC8,0x28,0xE8,0x10,0xE0,0x00,</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>0x07,0x18,0x27,0x28,0x2F,0x28,0x17,0x00,</highlight><highlight class="comment">/*&quot;@&quot;,31*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0xC0,0x38,0xE0,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>0x20,0x3C,0x23,0x02,0x02,0x27,0x38,0x20,</highlight><highlight class="comment">/*&quot;A&quot;,32*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>0x08,0xF8,0x88,0x88,0x88,0x70,0x00,0x00,</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>0x20,0x3F,0x20,0x20,0x20,0x11,0x0E,0x00,</highlight><highlight class="comment">/*&quot;B&quot;,33*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>0xC0,0x30,0x08,0x08,0x08,0x08,0x38,0x00,</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>0x07,0x18,0x20,0x20,0x20,0x10,0x08,0x00,</highlight><highlight class="comment">/*&quot;C&quot;,34*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>0x08,0xF8,0x08,0x08,0x08,0x10,0xE0,0x00,</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>0x20,0x3F,0x20,0x20,0x20,0x10,0x0F,0x00,</highlight><highlight class="comment">/*&quot;D&quot;,35*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>0x08,0xF8,0x88,0x88,0xE8,0x08,0x10,0x00,</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>0x20,0x3F,0x20,0x20,0x23,0x20,0x18,0x00,</highlight><highlight class="comment">/*&quot;E&quot;,36*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>0x08,0xF8,0x88,0x88,0xE8,0x08,0x10,0x00,</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>0x20,0x3F,0x20,0x00,0x03,0x00,0x00,0x00,</highlight><highlight class="comment">/*&quot;F&quot;,37*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>0xC0,0x30,0x08,0x08,0x08,0x38,0x00,0x00,</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>0x07,0x18,0x20,0x20,0x22,0x1E,0x02,0x00,</highlight><highlight class="comment">/*&quot;G&quot;,38*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>0x08,0xF8,0x08,0x00,0x00,0x08,0xF8,0x08,</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>0x20,0x3F,0x21,0x01,0x01,0x21,0x3F,0x20,</highlight><highlight class="comment">/*&quot;H&quot;,39*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x08,0x08,0xF8,0x08,0x08,0x00,0x00,</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x20,0x20,0x3F,0x20,0x20,0x00,0x00,</highlight><highlight class="comment">/*&quot;I&quot;,40*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x08,0x08,0xF8,0x08,0x08,0x00,</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>0xC0,0x80,0x80,0x80,0x7F,0x00,0x00,0x00,</highlight><highlight class="comment">/*&quot;J&quot;,41*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>0x08,0xF8,0x88,0xC0,0x28,0x18,0x08,0x00,</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>0x20,0x3F,0x20,0x01,0x26,0x38,0x20,0x00,</highlight><highlight class="comment">/*&quot;K&quot;,42*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>0x08,0xF8,0x08,0x00,0x00,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>0x20,0x3F,0x20,0x20,0x20,0x20,0x30,0x00,</highlight><highlight class="comment">/*&quot;L&quot;,43*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>0x08,0xF8,0xF8,0x00,0xF8,0xF8,0x08,0x00,</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>0x20,0x3F,0x01,0x3E,0x01,0x3F,0x20,0x00,</highlight><highlight class="comment">/*&quot;M&quot;,44*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>0x08,0xF8,0x30,0xC0,0x00,0x08,0xF8,0x08,</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>0x20,0x3F,0x20,0x00,0x07,0x18,0x3F,0x00,</highlight><highlight class="comment">/*&quot;N&quot;,45*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>0xE0,0x10,0x08,0x08,0x08,0x10,0xE0,0x00,</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>0x0F,0x10,0x20,0x20,0x20,0x10,0x0F,0x00,</highlight><highlight class="comment">/*&quot;O&quot;,46*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>0x08,0xF8,0x08,0x08,0x08,0x08,0xF0,0x00,</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>0x20,0x3F,0x21,0x01,0x01,0x01,0x00,0x00,</highlight><highlight class="comment">/*&quot;P&quot;,47*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>0xE0,0x10,0x08,0x08,0x08,0x10,0xE0,0x00,</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>0x0F,0x10,0x28,0x28,0x30,0x50,0x4F,0x00,</highlight><highlight class="comment">/*&quot;Q&quot;,48*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>0x08,0xF8,0x88,0x88,0x88,0x88,0x70,0x00,</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>0x20,0x3F,0x20,0x00,0x03,0x0C,0x30,0x20,</highlight><highlight class="comment">/*&quot;R&quot;,49*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x70,0x88,0x08,0x08,0x08,0x38,0x00,</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x38,0x20,0x21,0x21,0x22,0x1C,0x00,</highlight><highlight class="comment">/*&quot;S&quot;,50*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>0x18,0x08,0x08,0xF8,0x08,0x08,0x18,0x00,</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x20,0x3F,0x20,0x00,0x00,0x00,</highlight><highlight class="comment">/*&quot;T&quot;,51*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>0x08,0xF8,0x08,0x00,0x00,0x08,0xF8,0x08,</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x1F,0x20,0x20,0x20,0x20,0x1F,0x00,</highlight><highlight class="comment">/*&quot;U&quot;,52*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>0x08,0x78,0x88,0x00,0x00,0xC8,0x38,0x08,</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x07,0x38,0x0E,0x01,0x00,0x00,</highlight><highlight class="comment">/*&quot;V&quot;,53*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>0x08,0xF8,0x00,0xF8,0x00,0xF8,0x08,0x00,</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x03,0x3E,0x01,0x3E,0x03,0x00,0x00,</highlight><highlight class="comment">/*&quot;W&quot;,54*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>0x08,0x18,0x68,0x80,0x80,0x68,0x18,0x08,</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>0x20,0x30,0x2C,0x03,0x03,0x2C,0x30,0x20,</highlight><highlight class="comment">/*&quot;X&quot;,55*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>0x08,0x38,0xC8,0x00,0xC8,0x38,0x08,0x00,</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x20,0x3F,0x20,0x00,0x00,0x00,</highlight><highlight class="comment">/*&quot;Y&quot;,56*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>0x10,0x08,0x08,0x08,0xC8,0x38,0x08,0x00,</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>0x20,0x38,0x26,0x21,0x20,0x20,0x18,0x00,</highlight><highlight class="comment">/*&quot;Z&quot;,57*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0xFE,0x02,0x02,0x02,0x00,</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x7F,0x40,0x40,0x40,0x00,</highlight><highlight class="comment">/*&quot;[&quot;,58*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x04,0x38,0xC0,0x00,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x01,0x06,0x38,0xC0,0x00,</highlight><highlight class="comment">/*&quot;\&quot;,59*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x02,0x02,0x02,0xFE,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x40,0x40,0x40,0x7F,0x00,0x00,0x00,</highlight><highlight class="comment">/*&quot;]&quot;,60*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x04,0x02,0x02,0x04,0x00,0x00,</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,</highlight><highlight class="comment">/*&quot;^&quot;,61*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>0x80,0x80,0x80,0x80,0x80,0x80,0x80,0x80,</highlight><highlight class="comment">/*&quot;_&quot;,62*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x02,0x02,0x04,0x00,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,</highlight><highlight class="comment">/*&quot;`&quot;,63*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x80,0x80,0x80,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x19,0x24,0x24,0x12,0x3F,0x20,0x00,</highlight><highlight class="comment">/*&quot;a&quot;,64*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>0x10,0xF0,0x00,0x80,0x80,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x3F,0x11,0x20,0x20,0x11,0x0E,0x00,</highlight><highlight class="comment">/*&quot;b&quot;,65*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x80,0x80,0x80,0x00,0x00,</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x0E,0x11,0x20,0x20,0x20,0x11,0x00,</highlight><highlight class="comment">/*&quot;c&quot;,66*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x80,0x80,0x80,0x90,0xF0,0x00,</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x1F,0x20,0x20,0x20,0x10,0x3F,0x20,</highlight><highlight class="comment">/*&quot;d&quot;,67*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x80,0x80,0x80,0x80,0x00,0x00,</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x1F,0x24,0x24,0x24,0x24,0x17,0x00,</highlight><highlight class="comment">/*&quot;e&quot;,68*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x80,0x80,0xE0,0x90,0x90,0x20,0x00,</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x20,0x20,0x3F,0x20,0x20,0x00,0x00,</highlight><highlight class="comment">/*&quot;f&quot;,69*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x80,0x80,0x80,0x80,0x80,0x00,</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x6B,0x94,0x94,0x94,0x93,0x60,0x00,</highlight><highlight class="comment">/*&quot;g&quot;,70*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>0x10,0xF0,0x00,0x80,0x80,0x80,0x00,0x00,</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>0x20,0x3F,0x21,0x00,0x00,0x20,0x3F,0x20,</highlight><highlight class="comment">/*&quot;h&quot;,71*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x80,0x98,0x98,0x00,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x20,0x20,0x3F,0x20,0x20,0x00,0x00,</highlight><highlight class="comment">/*&quot;i&quot;,72*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x80,0x98,0x98,0x00,0x00,</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0xC0,0x80,0x80,0x80,0x7F,0x00,0x00,</highlight><highlight class="comment">/*&quot;j&quot;,73*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>0x10,0xF0,0x00,0x00,0x80,0x80,0x80,0x00,</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>0x20,0x3F,0x24,0x06,0x29,0x30,0x20,0x00,</highlight><highlight class="comment">/*&quot;k&quot;,74*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x10,0x10,0xF8,0x00,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x20,0x20,0x3F,0x20,0x20,0x00,0x00,</highlight><highlight class="comment">/*&quot;l&quot;,75*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>0x80,0x80,0x80,0x80,0x80,0x80,0x80,0x00,</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>0x20,0x3F,0x20,0x00,0x3F,0x20,0x00,0x3F,</highlight><highlight class="comment">/*&quot;m&quot;,76*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>0x80,0x80,0x00,0x80,0x80,0x80,0x00,0x00,</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>0x20,0x3F,0x21,0x00,0x00,0x20,0x3F,0x20,</highlight><highlight class="comment">/*&quot;n&quot;,77*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x80,0x80,0x80,0x80,0x00,0x00,</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x1F,0x20,0x20,0x20,0x20,0x1F,0x00,</highlight><highlight class="comment">/*&quot;o&quot;,78*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>0x80,0x80,0x00,0x80,0x80,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>0x80,0xFF,0x91,0x20,0x20,0x11,0x0E,0x00,</highlight><highlight class="comment">/*&quot;p&quot;,79*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x80,0x80,0x00,0x80,0x00,</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x0E,0x11,0x20,0x20,0x91,0xFF,0x80,</highlight><highlight class="comment">/*&quot;q&quot;,80*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>0x80,0x80,0x80,0x00,0x80,0x80,0x80,0x00,</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>0x20,0x20,0x3F,0x21,0x20,0x00,0x01,0x00,</highlight><highlight class="comment">/*&quot;r&quot;,81*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x80,0x80,0x80,0x80,0x80,0x00,</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x33,0x24,0x24,0x24,0x24,0x19,0x00,</highlight><highlight class="comment">/*&quot;s&quot;,82*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x80,0x80,0xE0,0x80,0x80,0x00,0x00,</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x1F,0x20,0x20,0x10,0x00,</highlight><highlight class="comment">/*&quot;t&quot;,83*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>0x80,0x80,0x00,0x00,0x00,0x80,0x80,0x00,</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x1F,0x20,0x20,0x20,0x10,0x3F,0x20,</highlight><highlight class="comment">/*&quot;u&quot;,84*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>0x80,0x80,0x80,0x00,0x80,0x80,0x80,0x00,</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x03,0x0C,0x30,0x0C,0x03,0x00,0x00,</highlight><highlight class="comment">/*&quot;v&quot;,85*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>0x80,0x80,0x00,0x80,0x80,0x00,0x80,0x80,</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>0x01,0x0E,0x30,0x0C,0x07,0x38,0x06,0x01,</highlight><highlight class="comment">/*&quot;w&quot;,86*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x80,0x80,0x80,0x00,0x80,0x80,0x00,</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x20,0x31,0x0E,0x2E,0x31,0x20,0x00,</highlight><highlight class="comment">/*&quot;x&quot;,87*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>0x80,0x80,0x80,0x00,0x00,0x80,0x80,0x80,</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x81,0x86,0x78,0x18,0x06,0x01,0x00,</highlight><highlight class="comment">/*&quot;y&quot;,88*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x80,0x80,0x80,0x80,0x80,0x80,0x00,</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x21,0x30,0x2C,0x22,0x21,0x30,0x00,</highlight><highlight class="comment">/*&quot;z&quot;,89*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x00,0x00,0xFC,0x02,0x02,</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x00,0x01,0x3E,0x40,0x40,</highlight><highlight class="comment">/*&quot;{&quot;,90*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x00,0xFF,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x00,0xFF,0x00,0x00,0x00,</highlight><highlight class="comment">/*&quot;|&quot;,91*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>0x02,0x02,0xFC,0x00,0x00,0x00,0x00,0x00,</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>0x40,0x40,0x3E,0x01,0x00,0x00,0x00,0x00,</highlight><highlight class="comment">/*&quot;}&quot;,92*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x02,0x01,0x02,0x02,0x04,0x02,0x00,</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,</highlight><highlight class="comment">/*&quot;~&quot;,93*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h"/>
+  </compounddef>
+</doxygen>

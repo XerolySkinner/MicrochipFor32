@@ -1,0 +1,15 @@
+<map id="mpu6050IIC" name="mpu6050IIC">
+<area shape="rect" id="node1" title=" " alt="" coords="709,179,800,204"/>
+<area shape="rect" id="node2" href="$mpu6050_8cpp.html#a17c11d19a2bb21d61610f08cb2cbe2f7" title="IIC读一个字节" alt="" coords="139,53,261,79"/>
+<area shape="rect" id="node4" href="$mpu6050_8cpp.html#a63161fa966899e4e7c5791e40ebf2b0a" title="IIC连续读" alt="" coords="542,104,658,129"/>
+<area shape="rect" id="node8" href="$mpu6050_8cpp.html#a0be9b422bb8613f8444db4af5234e1a1" title="IIC写一个字节" alt="" coords="539,229,661,255"/>
+<area shape="rect" id="node13" href="$mpu6050_8cpp.html#a59b1c26b234be88e97435a1b3c061330" title="IIC连续写" alt="" coords="541,279,659,304"/>
+<area shape="rect" id="node3" href="$mpu6050_8cpp.html#ab1f8c6111d59b60a2edb4ee3e8aa3113" title="初始化MPU6050" alt="" coords="5,229,80,255"/>
+<area shape="rect" id="node5" href="$mpu6050_8cpp.html#a2a0a02f6d7c597828a0cc282c76e99e3" title="得到加速度值(原始值)" alt="" coords="320,29,491,55"/>
+<area shape="rect" id="node6" href="$mpu6050_8cpp.html#a8f28105f9dcccc709b78d7d0ce497633" title="得到陀螺仪值(原始值)" alt="" coords="331,79,480,104"/>
+<area shape="rect" id="node7" href="$mpu6050_8cpp.html#a41eaf87c26b1281d9d5fc6a06abcf2a8" title="得到温度值" alt="" coords="326,128,485,153"/>
+<area shape="rect" id="node9" href="$mpu6050_8cpp.html#a6c391137bc5880c3b5e15e84c5a3380f" title="设置MPU6050加速度传感器满量程范围" alt="" coords="128,229,272,255"/>
+<area shape="rect" id="node10" href="$mpu6050_8cpp.html#aa27cc30326ce4980b289a0e1c3f76b5e" title="设置MPU6050陀螺仪传感器满量程范围" alt="" coords="131,280,269,305"/>
+<area shape="rect" id="node11" href="$mpu6050_8cpp.html#a2fb9973c9f5ea5327649d0eef5e96217" title="设置MPU6050的数字低通滤波器" alt="" coords="351,331,460,356"/>
+<area shape="rect" id="node12" href="$mpu6050_8cpp.html#a04e58232ce838e94d54aa2b53287cb41" title="设置MPU6050的采样率(假定Fs=1KHz)" alt="" coords="144,331,256,356"/>
+</map>

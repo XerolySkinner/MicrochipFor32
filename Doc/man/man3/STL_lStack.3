@@ -1,0 +1,301 @@
+.TH "STL_lStack" 3 "2022年 十一月 22日 星期二" "Version 2.0.0" "MF32BSP_XerolySkinner" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+STL_lStack \- 一个栈的类  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <STL_Stack\&.h>\fP
+.SS "Public 成员函数"
+
+.in +1c
+.ti -1c
+.RI "\fBSTL_lStack\fP (void)"
+.br
+.ti -1c
+.RI "\fB~STL_lStack\fP (void)"
+.br
+.ti -1c
+.RI "\fBu8\fP \fBpush\fP (void *&var, \fBu32\fP size)"
+.br
+.RI "压入一个成员 "
+.ti -1c
+.RI "\fBu8\fP \fBpop\fP (void)"
+.br
+.RI "弹出一个成员 "
+.ti -1c
+.RI "\fBu8\fP \fBtop\fP (void *&var, \fBu32\fP &size)"
+.br
+.RI "显示栈顶部成员 "
+.ti -1c
+.RI "\fBu8\fP \fBpush8\fP (\fBu8\fP var)"
+.br
+.RI "压入一个8位成员 "
+.ti -1c
+.RI "\fBu8\fP \fBtop8\fP (\fBu8\fP &var)"
+.br
+.RI "显示栈顶成员 "
+.ti -1c
+.RI "\fBu8\fP \fBpoptop8\fP (void)"
+.br
+.RI "显示并且弹出一个栈顶成员 "
+.ti -1c
+.RI "\fBu8\fP \fBpush32\fP (\fBu32\fP var)"
+.br
+.RI "压入一个32位成员 "
+.ti -1c
+.RI "\fBu8\fP \fBtop32\fP (\fBu32\fP &var)"
+.br
+.RI "显示栈顶成员 "
+.ti -1c
+.RI "\fBu32\fP \fBpoptop32\fP (void)"
+.br
+.RI "显示并且弹出一个栈顶成员 "
+.ti -1c
+.RI "\fBu8\fP \fBpushfun\fP (void(*fun)(void))"
+.br
+.RI "压入一个void(*)(void)函数指针 "
+.in -1c
+.SS "Public 属性"
+
+.in +1c
+.ti -1c
+.RI "void(*)(void) \fBpoptopfun\fP (void)"
+.br
+.in -1c
+.SS "Private 属性"
+
+.in +1c
+.ti -1c
+.RI "\fBu32\fP \fBmem\fP"
+.br
+.ti -1c
+.RI "\fB_lStack\fP * \fBdat\fP"
+.br
+.in -1c
+.SH "详细描述"
+.PP 
+一个栈的类 
+
+
+.PP
+\fB注解\fP
+.RS 4
+使用链表重新分配方式组织 栈的内存空间是非连续的,适合快速交换数据 
+.RE
+.PP
+
+.PP
+在文件 \fBSTL_Stack\&.h\fP 第 \fB99\fP 行定义\&.
+.SH "构造及析构函数说明"
+.PP 
+.SS "STL_lStack::STL_lStack (void)"
+
+.PP
+在文件 \fBSTL_Stack\&.cpp\fP 第 \fB199\fP 行定义\&.
+.SS "STL_lStack::~STL_lStack (void)"
+
+.PP
+在文件 \fBSTL_Stack\&.cpp\fP 第 \fB203\fP 行定义\&.
+.SH "成员函数说明"
+.PP 
+.SS "\fBu8\fP STL_lStack::pop (void)"
+
+.PP
+弹出一个成员 
+.PP
+\fB返回\fP
+.RS 4
+错误号 
+.RE
+.PP
+\fB注解\fP
+.RS 4
+无论push进去的是32位还是8位数,都用这个弹出 
+.RE
+.PP
+
+.PP
+在文件 \fBSTL_Stack\&.cpp\fP 第 \fB229\fP 行定义\&.
+.SS "\fBu32\fP STL_lStack::poptop32 (void)"
+
+.PP
+显示并且弹出一个栈顶成员 
+.PP
+\fB返回\fP
+.RS 4
+返回弹出的数值 
+.RE
+.PP
+
+.PP
+在文件 \fBSTL_Stack\&.cpp\fP 第 \fB316\fP 行定义\&.
+.SS "\fBu8\fP STL_lStack::poptop8 (void)"
+
+.PP
+显示并且弹出一个栈顶成员 
+.PP
+\fB返回\fP
+.RS 4
+返回弹出的数值 
+.RE
+.PP
+
+.PP
+在文件 \fBSTL_Stack\&.cpp\fP 第 \fB280\fP 行定义\&.
+.SS "\fBu8\fP STL_lStack::push (void *& var, \fBu32\fP size)"
+
+.PP
+压入一个成员 
+.PP
+\fB参数\fP
+.RS 4
+\fI*&var\fP 需要压入的数值的地址 
+.br
+\fIsize\fP 需要压入的数值的长度 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+错误号 
+.RE
+.PP
+
+.PP
+在文件 \fBSTL_Stack\&.cpp\fP 第 \fB214\fP 行定义\&.
+.SS "\fBu8\fP STL_lStack::push32 (\fBu32\fP var)"
+
+.PP
+压入一个32位成员 
+.PP
+\fB参数\fP
+.RS 4
+\fIvar\fP 需要压入的32位数据 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+错误号 
+.RE
+.PP
+
+.PP
+在文件 \fBSTL_Stack\&.cpp\fP 第 \fB292\fP 行定义\&.
+.SS "\fBu8\fP STL_lStack::push8 (\fBu8\fP var)"
+
+.PP
+压入一个8位成员 
+.PP
+\fB参数\fP
+.RS 4
+\fIvar\fP 需要压入的8位数据 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+错误号 
+.RE
+.PP
+
+.PP
+在文件 \fBSTL_Stack\&.cpp\fP 第 \fB256\fP 行定义\&.
+.SS "\fBu8\fP STL_lStack::pushfun (void(*)(void) fun)"
+
+.PP
+压入一个void(*)(void)函数指针 
+.PP
+\fB参数\fP
+.RS 4
+\fI*fun\fP 需要压入的函数 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+错误号 
+.RE
+.PP
+\fB注解\fP
+.RS 4
+如果有个函数是 void fun(void); 可以通过pushfun(fun);将其压入 
+.RE
+.PP
+
+.PP
+在文件 \fBSTL_Stack\&.cpp\fP 第 \fB331\fP 行定义\&.
+.SS "\fBu8\fP STL_lStack::top (void *& var, \fBu32\fP & size)"
+
+.PP
+显示栈顶部成员 
+.PP
+\fB参数\fP
+.RS 4
+\fI*&var\fP 需要赋予的数值的地址 
+.br
+\fI&size\fP 需要赋予的数值的长度 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+错误号 
+.RE
+.PP
+
+.PP
+在文件 \fBSTL_Stack\&.cpp\fP 第 \fB244\fP 行定义\&.
+.SS "\fBu8\fP STL_lStack::top32 (\fBu32\fP & var)"
+
+.PP
+显示栈顶成员 
+.PP
+\fB参数\fP
+.RS 4
+\fI&var\fP 结果赋予给该变量 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+错误号 
+.RE
+.PP
+
+.PP
+在文件 \fBSTL_Stack\&.cpp\fP 第 \fB304\fP 行定义\&.
+.SS "\fBu8\fP STL_lStack::top8 (\fBu8\fP & var)"
+
+.PP
+显示栈顶成员 
+.PP
+\fB参数\fP
+.RS 4
+\fI&var\fP 结果赋予给该变量 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+错误号 
+.RE
+.PP
+
+.PP
+在文件 \fBSTL_Stack\&.cpp\fP 第 \fB268\fP 行定义\&.
+.SH "类成员变量说明"
+.PP 
+.SS "\fB_lStack\fP* STL_lStack::dat\fC [private]\fP"
+
+.PP
+在文件 \fBSTL_Stack\&.h\fP 第 \fB120\fP 行定义\&.
+.SS "\fBu32\fP STL_lStack::mem\fC [private]\fP"
+
+.PP
+在文件 \fBSTL_Stack\&.h\fP 第 \fB119\fP 行定义\&.
+.SS "void(*)(void) STL_lStack::poptopfun(void)"
+
+.PP
+在文件 \fBSTL_Stack\&.h\fP 第 \fB117\fP 行定义\&.
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 MF32BSP_XerolySkinner 的 源代码自动生成\&.

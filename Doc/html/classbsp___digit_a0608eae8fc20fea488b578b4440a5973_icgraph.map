@@ -1,0 +1,7 @@
+<map id="bsp_Digit::dat" name="bsp_Digit::dat">
+<area shape="rect" id="node1" title=" " alt="" coords="520,53,623,79"/>
+<area shape="rect" id="node2" href="$classbsp___digit.html#a9f91f206f32eef69e91c5975ad12db6b" title="在某位显示一个数字" alt="" coords="341,28,472,53"/>
+<area shape="rect" id="node5" href="$classbsp___digit.html#a1b609eee1a20e598fdb7090b8a0b0524" title="显示一个小数点" alt="" coords="186,79,291,104"/>
+<area shape="rect" id="node3" href="$classbsp___digit.html#a37e6984660f0b60322d420c766107b40" title="显示一个四位数据" alt="" coords="184,29,293,55"/>
+<area shape="rect" id="node4" href="$classbsp___digit.html#a7bde5d953a88e04dae985b3ce82a386e" title="显示数据与一个像素点" alt="" coords="5,55,136,80"/>
+</map>

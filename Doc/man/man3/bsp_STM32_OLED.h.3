@@ -1,0 +1,81 @@
+.TH "D:/gitt/MicrochipFor32/bsp_Device/bsp_STM32_OLED.h" 3 "2022年 十一月 22日 星期二" "Version 2.0.0" "MF32BSP_XerolySkinner" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+D:/gitt/MicrochipFor32/bsp_Device/bsp_STM32_OLED.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'varint\&.h'\fP
+.br
+\fC#include 'bsp_IIC_STM32\&.h'\fP
+.br
+
+.SS "类"
+
+.in +1c
+.ti -1c
+.RI "class \fBbsp_STM32_OLED\fP"
+.br
+.RI "一个OLED设备,基于STM32使用IIC总线 "
+.in -1c
+.SS "变量"
+
+.in +1c
+.ti -1c
+.RI "const \fBu8\fP \fBOLED_init_cmd\fP [25]"
+.br
+.RI "OLED指令集 "
+.ti -1c
+.RI "const unsigned char \fBOLED_WORD_ASCII\fP []"
+.br
+.RI "OLED的ASCII字符集 "
+.in -1c
+.SH "变量说明"
+.PP 
+.SS "const \fBu8\fP OLED_init_cmd[25]"
+\fB初始值:\fP
+.PP
+.nf
+= {
+        0xAE,   
+        0xD5,   
+        0x80,   
+
+        0xA8,   
+        0X3F,   
+        0xD3,   
+        0X00,   
+        0x40,   
+        0x8D,   
+        0x14,   
+        0x20,   
+        0x02,   
+        0xA1,   
+        0xC8,   
+        0xDA,   
+        0x12,   
+        0x81,   
+        0xEF,   
+        0xD9,   
+        0xf1,   
+        0xDB,   
+        0x30,   
+        0xA4,   
+        0xA6,   
+        0xAF,   
+}
+.fi
+.PP
+OLED指令集 
+.PP
+在文件 \fBbsp_STM32_OLED\&.h\fP 第 \fB49\fP 行定义\&.
+.SS "const unsigned char OLED_WORD_ASCII[]"
+
+.PP
+OLED的ASCII字符集 
+.PP
+在文件 \fBbsp_STM32_OLED\&.h\fP 第 \fB110\fP 行定义\&.
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 MF32BSP_XerolySkinner 的 源代码自动生成\&.

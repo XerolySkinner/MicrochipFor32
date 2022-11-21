@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structint__param__s" xml:lang="zh">
+<title>int_param_s结构体 参考</title>
+<indexterm><primary>int_param_s</primary></indexterm>
+<para>
+<computeroutput>#include &lt;inv_mpu.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public 属性    </title>
+        <itemizedlist>
+            <listitem><para>void(* <link linkend="_group___d_r_i_v_e_r_s_1ga97093754f1f13b06492990e3da77965d">cb</link> )(void)</para>
+</listitem>
+            <listitem><para>unsigned short <link linkend="_group___d_r_i_v_e_r_s_1ga5c682e1b664acf566f985b48dd7acbb7">pin</link></para>
+</listitem>
+            <listitem><para>unsigned char <link linkend="_group___d_r_i_v_e_r_s_1ga46dfad5a278a8b40a68d71beca0d2be4">lp_exit</link></para>
+</listitem>
+            <listitem><para>unsigned char <link linkend="_group___d_r_i_v_e_r_s_1ga9b859a3332d9bd9287d5766494f261fb">active_low</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+<para>
+在文件 <link linkend="_inv__mpu_8h_source">inv_mpu.h</link> 第 <link linkend="_inv__mpu_8h_source_1l00037">37</link> 行定义.</para>
+<para>
+该结构体的文档由以下文件生成:</para>
+D:/gitt/MicrochipFor32/bsp_MPU6050/<link linkend="_inv__mpu_8h">inv_mpu.h</link></section>
+</section>

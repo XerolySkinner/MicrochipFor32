@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="structtest__s" kind="struct" language="C++" prot="public">
+    <compoundname>test_s</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1ga330290a347407b0d92b1d77aa274993c" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long test_s::gyro_sens</definition>
+        <argsstring></argsstring>
+        <name>gyro_sens</name>
+        <qualifiedname>test_s::gyro_sens</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="282" column="19" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="282" bodyend="-1"/>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga8d087842b07e9710be2267adea4b497a" compoundref="inv__mpu_8c" startline="2029" endline="2147">get_st_biases</referencedby>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga267d6f443d5be8b2a7a06aa007116f7a" compoundref="inv__mpu_8c" startline="1945" endline="1972">gyro_self_test</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1ga5f602885d6a544a9039b13a0cc7ac085" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long test_s::accel_sens</definition>
+        <argsstring></argsstring>
+        <name>accel_sens</name>
+        <qualifiedname>test_s::accel_sens</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="283" column="19" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="283" bodyend="-1"/>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga8d087842b07e9710be2267adea4b497a" compoundref="inv__mpu_8c" startline="2029" endline="2147">get_st_biases</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1ga3bef0c9f009cea4cbe01d0ee91126d83" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char test_s::reg_rate_div</definition>
+        <argsstring></argsstring>
+        <name>reg_rate_div</name>
+        <qualifiedname>test_s::reg_rate_div</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="284" column="19" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="284" bodyend="-1"/>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga8d087842b07e9710be2267adea4b497a" compoundref="inv__mpu_8c" startline="2029" endline="2147">get_st_biases</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1ga09f5a9ab86d36f3b83e7f4abdea73e39" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char test_s::reg_lpf</definition>
+        <argsstring></argsstring>
+        <name>reg_lpf</name>
+        <qualifiedname>test_s::reg_lpf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="285" column="19" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="285" bodyend="-1"/>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga8d087842b07e9710be2267adea4b497a" compoundref="inv__mpu_8c" startline="2029" endline="2147">get_st_biases</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1gaa0dfe8b2c29358e9e045aaa8beff244d" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char test_s::reg_gyro_fsr</definition>
+        <argsstring></argsstring>
+        <name>reg_gyro_fsr</name>
+        <qualifiedname>test_s::reg_gyro_fsr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="286" column="19" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="286" bodyend="-1"/>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga8d087842b07e9710be2267adea4b497a" compoundref="inv__mpu_8c" startline="2029" endline="2147">get_st_biases</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1ga3b54f67ea7f1dd47fd8aa48dda051032" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char test_s::reg_accel_fsr</definition>
+        <argsstring></argsstring>
+        <name>reg_accel_fsr</name>
+        <qualifiedname>test_s::reg_accel_fsr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="287" column="19" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="287" bodyend="-1"/>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga8d087842b07e9710be2267adea4b497a" compoundref="inv__mpu_8c" startline="2029" endline="2147">get_st_biases</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1gaf5d495939c8ca761ac2bbe7791dcd727" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short test_s::wait_ms</definition>
+        <argsstring></argsstring>
+        <name>wait_ms</name>
+        <qualifiedname>test_s::wait_ms</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="288" column="20" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="288" bodyend="-1"/>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga8d087842b07e9710be2267adea4b497a" compoundref="inv__mpu_8c" startline="2029" endline="2147">get_st_biases</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1ga8af20793fdb7764bfa90f80bd74b87e7" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char test_s::packet_thresh</definition>
+        <argsstring></argsstring>
+        <name>packet_thresh</name>
+        <qualifiedname>test_s::packet_thresh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="289" column="19" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1gafacfcf92f07cd846fb0aaf889a30c582" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float test_s::min_dps</definition>
+        <argsstring></argsstring>
+        <name>min_dps</name>
+        <qualifiedname>test_s::min_dps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="290" column="11" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="290" bodyend="-1"/>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga267d6f443d5be8b2a7a06aa007116f7a" compoundref="inv__mpu_8c" startline="1945" endline="1972">gyro_self_test</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1gae588d6c0105bcd8f9144f42eee6c4835" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float test_s::max_dps</definition>
+        <argsstring></argsstring>
+        <name>max_dps</name>
+        <qualifiedname>test_s::max_dps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="291" column="11" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="291" bodyend="-1"/>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga267d6f443d5be8b2a7a06aa007116f7a" compoundref="inv__mpu_8c" startline="1945" endline="1972">gyro_self_test</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1ga3b47b72fbf8c152cb4389e3cd866ded9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float test_s::max_gyro_var</definition>
+        <argsstring></argsstring>
+        <name>max_gyro_var</name>
+        <qualifiedname>test_s::max_gyro_var</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="292" column="11" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="292" bodyend="-1"/>
+        <referencedby refid="group___d_r_i_v_e_r_s_1ga267d6f443d5be8b2a7a06aa007116f7a" compoundref="inv__mpu_8c" startline="1945" endline="1972">gyro_self_test</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1gae86aec181d0f1e4a29e9f9ae0735e8e1" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float test_s::min_g</definition>
+        <argsstring></argsstring>
+        <name>min_g</name>
+        <qualifiedname>test_s::min_g</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="293" column="11" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="293" bodyend="-1"/>
+        <referencedby refid="group___d_r_i_v_e_r_s_1gaab48ddb3bd05cea3f0fc85a68db9934d" compoundref="inv__mpu_8c" startline="1925" endline="1943">accel_self_test</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1ga9ebd3195ac2f460f82873b9e6c36eb2c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float test_s::max_g</definition>
+        <argsstring></argsstring>
+        <name>max_g</name>
+        <qualifiedname>test_s::max_g</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="294" column="11" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="294" bodyend="-1"/>
+        <referencedby refid="group___d_r_i_v_e_r_s_1gaab48ddb3bd05cea3f0fc85a68db9934d" compoundref="inv__mpu_8c" startline="1925" endline="1943">accel_self_test</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___d_r_i_v_e_r_s_1ga7f6071fb91426f467d9223c712560ee6" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float test_s::max_accel_var</definition>
+        <argsstring></argsstring>
+        <name>max_accel_var</name>
+        <qualifiedname>test_s::max_accel_var</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="295" column="11" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="295" bodyend="-1"/>
+        <referencedby refid="group___d_r_i_v_e_r_s_1gaab48ddb3bd05cea3f0fc85a68db9934d" compoundref="inv__mpu_8c" startline="1925" endline="1943">accel_self_test</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" line="281" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_MPU6050/inv_mpu.c" bodystart="281" bodyend="296"/>
+    <listofallmembers>
+      <member refid="group___d_r_i_v_e_r_s_1ga5f602885d6a544a9039b13a0cc7ac085" prot="public" virt="non-virtual"><scope>test_s</scope><name>accel_sens</name></member>
+      <member refid="group___d_r_i_v_e_r_s_1ga330290a347407b0d92b1d77aa274993c" prot="public" virt="non-virtual"><scope>test_s</scope><name>gyro_sens</name></member>
+      <member refid="group___d_r_i_v_e_r_s_1ga7f6071fb91426f467d9223c712560ee6" prot="public" virt="non-virtual"><scope>test_s</scope><name>max_accel_var</name></member>
+      <member refid="group___d_r_i_v_e_r_s_1gae588d6c0105bcd8f9144f42eee6c4835" prot="public" virt="non-virtual"><scope>test_s</scope><name>max_dps</name></member>
+      <member refid="group___d_r_i_v_e_r_s_1ga9ebd3195ac2f460f82873b9e6c36eb2c" prot="public" virt="non-virtual"><scope>test_s</scope><name>max_g</name></member>
+      <member refid="group___d_r_i_v_e_r_s_1ga3b47b72fbf8c152cb4389e3cd866ded9" prot="public" virt="non-virtual"><scope>test_s</scope><name>max_gyro_var</name></member>
+      <member refid="group___d_r_i_v_e_r_s_1gafacfcf92f07cd846fb0aaf889a30c582" prot="public" virt="non-virtual"><scope>test_s</scope><name>min_dps</name></member>
+      <member refid="group___d_r_i_v_e_r_s_1gae86aec181d0f1e4a29e9f9ae0735e8e1" prot="public" virt="non-virtual"><scope>test_s</scope><name>min_g</name></member>
+      <member refid="group___d_r_i_v_e_r_s_1ga8af20793fdb7764bfa90f80bd74b87e7" prot="public" virt="non-virtual"><scope>test_s</scope><name>packet_thresh</name></member>
+      <member refid="group___d_r_i_v_e_r_s_1ga3b54f67ea7f1dd47fd8aa48dda051032" prot="public" virt="non-virtual"><scope>test_s</scope><name>reg_accel_fsr</name></member>
+      <member refid="group___d_r_i_v_e_r_s_1gaa0dfe8b2c29358e9e045aaa8beff244d" prot="public" virt="non-virtual"><scope>test_s</scope><name>reg_gyro_fsr</name></member>
+      <member refid="group___d_r_i_v_e_r_s_1ga09f5a9ab86d36f3b83e7f4abdea73e39" prot="public" virt="non-virtual"><scope>test_s</scope><name>reg_lpf</name></member>
+      <member refid="group___d_r_i_v_e_r_s_1ga3bef0c9f009cea4cbe01d0ee91126d83" prot="public" virt="non-virtual"><scope>test_s</scope><name>reg_rate_div</name></member>
+      <member refid="group___d_r_i_v_e_r_s_1gaf5d495939c8ca761ac2bbe7791dcd727" prot="public" virt="non-virtual"><scope>test_s</scope><name>wait_ms</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

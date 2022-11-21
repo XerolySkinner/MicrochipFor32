@@ -1,6 +1,0 @@
-<map id="bscpp_IIC::IIC_ReadOneByte" name="bscpp_IIC::IIC_ReadOneByte">
-<area shape="rect" id="node1" title="使用总线接收一个字节数据" alt="" coords="341,35,532,60"/>
-<area shape="rect" id="node2" href="$mpu6050_8cpp.html#a17c11d19a2bb21d61610f08cb2cbe2f7" title="IIC读一个字节" alt="" coords="149,5,272,31"/>
-<area shape="rect" id="node4" href="$classbscpp___s_t_m32___a_t24_c00.html#adabf67f8a13769cd59c9f33286561c58" title="读取一个字节" alt="" coords="128,55,293,95"/>
-<area shape="rect" id="node3" href="$mpu6050_8cpp.html#ab1f8c6111d59b60a2edb4ee3e8aa3113" title="初始化MPU6050" alt="" coords="5,5,80,31"/>
-</map>

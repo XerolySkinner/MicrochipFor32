@@ -1,0 +1,71 @@
+.TH "bsp_ModBus_STM32" 3 "2022年 十一月 22日 星期二" "Version 2.0.0" "MF32BSP_XerolySkinner" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bsp_ModBus_STM32 \- STM32用串口的ModBus发送器  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <bsp_ModBus_STM32\&.h>\fP
+.PP
+继承自 \fBbsp_ModBus_Tx\fP \&.
+.SS "Public 成员函数"
+
+.in +1c
+.ti -1c
+.RI "\fBbsp_ModBus_STM32\fP (UART_HandleTypeDef *\fBhuart\fP, \fBu8\fP \fBID\fP, uint32_t \fBTimeout\fP)"
+.br
+.in -1c
+.SS "Protected 成员函数"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBTransmit\fP (\fBu8\fP *dat, \fBu16\fP len)"
+.br
+.in -1c
+.SS "Private 属性"
+
+.in +1c
+.ti -1c
+.RI "UART_HandleTypeDef * \fBhuart\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBTimeout\fP"
+.br
+.in -1c
+.SS "额外继承的成员函数"
+.SH "详细描述"
+.PP 
+STM32用串口的ModBus发送器 
+.PP
+在文件 \fBbsp_ModBus_STM32\&.h\fP 第 \fB45\fP 行定义\&.
+.SH "构造及析构函数说明"
+.PP 
+.SS "bsp_ModBus_STM32::bsp_ModBus_STM32 (UART_HandleTypeDef * huart, \fBu8\fP ID, uint32_t Timeout)\fC [inline]\fP"
+
+.PP
+在文件 \fBbsp_ModBus_STM32\&.h\fP 第 \fB47\fP 行定义\&.
+.SH "成员函数说明"
+.PP 
+.SS "virtual void bsp_ModBus_STM32::Transmit (\fBu8\fP * dat, \fBu16\fP len)\fC [inline]\fP, \fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+实现了 \fBbsp_ModBus_Tx\fP\&.
+.PP
+在文件 \fBbsp_ModBus_STM32\&.h\fP 第 \fB51\fP 行定义\&.
+.SH "类成员变量说明"
+.PP 
+.SS "UART_HandleTypeDef* bsp_ModBus_STM32::huart\fC [private]\fP"
+
+.PP
+在文件 \fBbsp_ModBus_STM32\&.h\fP 第 \fB54\fP 行定义\&.
+.SS "uint32_t bsp_ModBus_STM32::Timeout\fC [private]\fP"
+
+.PP
+在文件 \fBbsp_ModBus_STM32\&.h\fP 第 \fB55\fP 行定义\&.
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 MF32BSP_XerolySkinner 的 源代码自动生成\&.

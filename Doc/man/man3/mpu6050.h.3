@@ -1,0 +1,736 @@
+.TH "D:/gitt/MicrochipFor32/bsp_MPU6050/mpu6050.h" 3 "2022年 十一月 22日 星期二" "Version 2.0.0" "MF32BSP_XerolySkinner" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+D:/gitt/MicrochipFor32/bsp_MPU6050/mpu6050.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'main\&.h'\fP
+.br
+\fC#include 'varint\&.h'\fP
+.br
+
+.SS "宏定义"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMPU_SELF_TESTX_REG\fP   0X0D"
+.br
+.ti -1c
+.RI "#define \fBMPU_SELF_TESTY_REG\fP   0X0E"
+.br
+.ti -1c
+.RI "#define \fBMPU_SELF_TESTZ_REG\fP   0X0F"
+.br
+.ti -1c
+.RI "#define \fBMPU_SELF_TESTA_REG\fP   0X10"
+.br
+.ti -1c
+.RI "#define \fBMPU_SAMPLE_RATE_REG\fP   0X19"
+.br
+.ti -1c
+.RI "#define \fBMPU_CFG_REG\fP   0X1A"
+.br
+.ti -1c
+.RI "#define \fBMPU_GYRO_CFG_REG\fP   0X1B"
+.br
+.ti -1c
+.RI "#define \fBMPU_ACCEL_CFG_REG\fP   0X1C"
+.br
+.ti -1c
+.RI "#define \fBMPU_MOTION_DET_REG\fP   0X1F"
+.br
+.ti -1c
+.RI "#define \fBMPU_FIFO_EN_REG\fP   0X23"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CMST_CTRL_REG\fP   0X24"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CSLV0_ADDR_REG\fP   0X25"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CSLV0_REG\fP   0X26"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CSLV0_CTRL_REG\fP   0X27"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CSLV1_ADDR_REG\fP   0X28"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CSLV1_REG\fP   0X29"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CSLV1_CTRL_REG\fP   0X2A"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CSLV2_ADDR_REG\fP   0X2B"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CSLV2_REG\fP   0X2C"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CSLV2_CTRL_REG\fP   0X2D"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CSLV3_ADDR_REG\fP   0X2E"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CSLV3_REG\fP   0X2F"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CSLV3_CTRL_REG\fP   0X30"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CSLV4_ADDR_REG\fP   0X31"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CSLV4_REG\fP   0X32"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CSLV4_DO_REG\fP   0X33"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CSLV4_CTRL_REG\fP   0X34"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CSLV4_DI_REG\fP   0X35"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CMST_STA_REG\fP   0X36"
+.br
+.ti -1c
+.RI "#define \fBMPU_INTBP_CFG_REG\fP   0X37"
+.br
+.ti -1c
+.RI "#define \fBMPU_INT_EN_REG\fP   0X38"
+.br
+.ti -1c
+.RI "#define \fBMPU_INT_STA_REG\fP   0X3A"
+.br
+.ti -1c
+.RI "#define \fBMPU_ACCEL_XOUTH_REG\fP   0X3B"
+.br
+.ti -1c
+.RI "#define \fBMPU_ACCEL_XOUTL_REG\fP   0X3C"
+.br
+.ti -1c
+.RI "#define \fBMPU_ACCEL_YOUTH_REG\fP   0X3D"
+.br
+.ti -1c
+.RI "#define \fBMPU_ACCEL_YOUTL_REG\fP   0X3E"
+.br
+.ti -1c
+.RI "#define \fBMPU_ACCEL_ZOUTH_REG\fP   0X3F"
+.br
+.ti -1c
+.RI "#define \fBMPU_ACCEL_ZOUTL_REG\fP   0X40"
+.br
+.ti -1c
+.RI "#define \fBMPU_TEMP_OUTH_REG\fP   0X41"
+.br
+.ti -1c
+.RI "#define \fBMPU_TEMP_OUTL_REG\fP   0X42"
+.br
+.ti -1c
+.RI "#define \fBMPU_GYRO_XOUTH_REG\fP   0X43"
+.br
+.ti -1c
+.RI "#define \fBMPU_GYRO_XOUTL_REG\fP   0X44"
+.br
+.ti -1c
+.RI "#define \fBMPU_GYRO_YOUTH_REG\fP   0X45"
+.br
+.ti -1c
+.RI "#define \fBMPU_GYRO_YOUTL_REG\fP   0X46"
+.br
+.ti -1c
+.RI "#define \fBMPU_GYRO_ZOUTH_REG\fP   0X47"
+.br
+.ti -1c
+.RI "#define \fBMPU_GYRO_ZOUTL_REG\fP   0X48"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CSLV0_DO_REG\fP   0X63"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CSLV1_DO_REG\fP   0X64"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CSLV2_DO_REG\fP   0X65"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CSLV3_DO_REG\fP   0X66"
+.br
+.ti -1c
+.RI "#define \fBMPU_I2CMST_DELAY_REG\fP   0X67"
+.br
+.ti -1c
+.RI "#define \fBMPU_SIGPATH_RST_REG\fP   0X68"
+.br
+.ti -1c
+.RI "#define \fBMPU_MDETECT_CTRL_REG\fP   0X69"
+.br
+.ti -1c
+.RI "#define \fBMPU_USER_CTRL_REG\fP   0X6A"
+.br
+.ti -1c
+.RI "#define \fBMPU_PWR_MGMT1_REG\fP   0X6B"
+.br
+.ti -1c
+.RI "#define \fBMPU_PWR_MGMT2_REG\fP   0X6C"
+.br
+.ti -1c
+.RI "#define \fBMPU_FIFO_CNTH_REG\fP   0X72"
+.br
+.ti -1c
+.RI "#define \fBMPU_FIFO_CNTL_REG\fP   0X73"
+.br
+.ti -1c
+.RI "#define \fBMPU_FIFO_RW_REG\fP   0X74"
+.br
+.ti -1c
+.RI "#define \fBMPU_DEVICE_ID_REG\fP   0X75"
+.br
+.ti -1c
+.RI "#define \fBMPU_ADDR\fP   0X68"
+.br
+.in -1c
+.SS "函数"
+
+.in +1c
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Init\fP (void)"
+.br
+.RI "初始化MPU6050 "
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Write_Len\fP (\fBu8\fP addr, \fBu8\fP reg, \fBu8\fP len, \fBu8\fP *buf)"
+.br
+.RI "IIC连续写 "
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Read_Len\fP (\fBu8\fP addr, \fBu8\fP reg, \fBu8\fP len, \fBu8\fP *buf)"
+.br
+.RI "IIC连续读 "
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Write_Byte\fP (\fBu8\fP reg, \fBu8\fP data)"
+.br
+.RI "IIC写一个字节 "
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Read_Byte\fP (\fBu8\fP reg)"
+.br
+.RI "IIC读一个字节 "
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Set_Gyro_Fsr\fP (\fBu8\fP fsr)"
+.br
+.RI "设置MPU6050陀螺仪传感器满量程范围 "
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Set_Accel_Fsr\fP (\fBu8\fP fsr)"
+.br
+.RI "设置MPU6050加速度传感器满量程范围 "
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Set_LPF\fP (\fBu16\fP lpf)"
+.br
+.RI "设置MPU6050的数字低通滤波器 "
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Set_Rate\fP (\fBu16\fP rate)"
+.br
+.RI "设置MPU6050的采样率(假定Fs=1KHz) "
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Set_Fifo\fP (\fBu8\fP sens)"
+.br
+.ti -1c
+.RI "short \fBMPU_Get_Temperature\fP (void)"
+.br
+.RI "得到温度值 "
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Get_Gyroscope\fP (short *gx, short *gy, short *gz)"
+.br
+.RI "得到陀螺仪值(原始值) "
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Get_Accelerometer\fP (short *ax, short *ay, short *az)"
+.br
+.RI "得到加速度值(原始值) "
+.in -1c
+.SH "宏定义说明"
+.PP 
+.SS "#define MPU_ACCEL_CFG_REG   0X1C"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB27\fP 行定义\&.
+.SS "#define MPU_ACCEL_XOUTH_REG   0X3B"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB54\fP 行定义\&.
+.SS "#define MPU_ACCEL_XOUTL_REG   0X3C"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB55\fP 行定义\&.
+.SS "#define MPU_ACCEL_YOUTH_REG   0X3D"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB56\fP 行定义\&.
+.SS "#define MPU_ACCEL_YOUTL_REG   0X3E"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB57\fP 行定义\&.
+.SS "#define MPU_ACCEL_ZOUTH_REG   0X3F"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB58\fP 行定义\&.
+.SS "#define MPU_ACCEL_ZOUTL_REG   0X40"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB59\fP 行定义\&.
+.SS "#define MPU_ADDR   0X68"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB89\fP 行定义\&.
+.SS "#define MPU_CFG_REG   0X1A"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB25\fP 行定义\&.
+.SS "#define MPU_DEVICE_ID_REG   0X75"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB85\fP 行定义\&.
+.SS "#define MPU_FIFO_CNTH_REG   0X72"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB82\fP 行定义\&.
+.SS "#define MPU_FIFO_CNTL_REG   0X73"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB83\fP 行定义\&.
+.SS "#define MPU_FIFO_EN_REG   0X23"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB29\fP 行定义\&.
+.SS "#define MPU_FIFO_RW_REG   0X74"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB84\fP 行定义\&.
+.SS "#define MPU_GYRO_CFG_REG   0X1B"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB26\fP 行定义\&.
+.SS "#define MPU_GYRO_XOUTH_REG   0X43"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB64\fP 行定义\&.
+.SS "#define MPU_GYRO_XOUTL_REG   0X44"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB65\fP 行定义\&.
+.SS "#define MPU_GYRO_YOUTH_REG   0X45"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB66\fP 行定义\&.
+.SS "#define MPU_GYRO_YOUTL_REG   0X46"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB67\fP 行定义\&.
+.SS "#define MPU_GYRO_ZOUTH_REG   0X47"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB68\fP 行定义\&.
+.SS "#define MPU_GYRO_ZOUTL_REG   0X48"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB69\fP 行定义\&.
+.SS "#define MPU_I2CMST_CTRL_REG   0X24"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB30\fP 行定义\&.
+.SS "#define MPU_I2CMST_DELAY_REG   0X67"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB76\fP 行定义\&.
+.SS "#define MPU_I2CMST_STA_REG   0X36"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB49\fP 行定义\&.
+.SS "#define MPU_I2CSLV0_ADDR_REG   0X25"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB31\fP 行定义\&.
+.SS "#define MPU_I2CSLV0_CTRL_REG   0X27"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB33\fP 行定义\&.
+.SS "#define MPU_I2CSLV0_DO_REG   0X63"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB71\fP 行定义\&.
+.SS "#define MPU_I2CSLV0_REG   0X26"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB32\fP 行定义\&.
+.SS "#define MPU_I2CSLV1_ADDR_REG   0X28"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB34\fP 行定义\&.
+.SS "#define MPU_I2CSLV1_CTRL_REG   0X2A"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB36\fP 行定义\&.
+.SS "#define MPU_I2CSLV1_DO_REG   0X64"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB72\fP 行定义\&.
+.SS "#define MPU_I2CSLV1_REG   0X29"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB35\fP 行定义\&.
+.SS "#define MPU_I2CSLV2_ADDR_REG   0X2B"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB37\fP 行定义\&.
+.SS "#define MPU_I2CSLV2_CTRL_REG   0X2D"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB39\fP 行定义\&.
+.SS "#define MPU_I2CSLV2_DO_REG   0X65"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB73\fP 行定义\&.
+.SS "#define MPU_I2CSLV2_REG   0X2C"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB38\fP 行定义\&.
+.SS "#define MPU_I2CSLV3_ADDR_REG   0X2E"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB40\fP 行定义\&.
+.SS "#define MPU_I2CSLV3_CTRL_REG   0X30"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB42\fP 行定义\&.
+.SS "#define MPU_I2CSLV3_DO_REG   0X66"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB74\fP 行定义\&.
+.SS "#define MPU_I2CSLV3_REG   0X2F"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB41\fP 行定义\&.
+.SS "#define MPU_I2CSLV4_ADDR_REG   0X31"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB43\fP 行定义\&.
+.SS "#define MPU_I2CSLV4_CTRL_REG   0X34"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB46\fP 行定义\&.
+.SS "#define MPU_I2CSLV4_DI_REG   0X35"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB47\fP 行定义\&.
+.SS "#define MPU_I2CSLV4_DO_REG   0X33"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB45\fP 行定义\&.
+.SS "#define MPU_I2CSLV4_REG   0X32"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB44\fP 行定义\&.
+.SS "#define MPU_INT_EN_REG   0X38"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB51\fP 行定义\&.
+.SS "#define MPU_INT_STA_REG   0X3A"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB52\fP 行定义\&.
+.SS "#define MPU_INTBP_CFG_REG   0X37"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB50\fP 行定义\&.
+.SS "#define MPU_MDETECT_CTRL_REG   0X69"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB78\fP 行定义\&.
+.SS "#define MPU_MOTION_DET_REG   0X1F"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB28\fP 行定义\&.
+.SS "#define MPU_PWR_MGMT1_REG   0X6B"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB80\fP 行定义\&.
+.SS "#define MPU_PWR_MGMT2_REG   0X6C"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB81\fP 行定义\&.
+.SS "#define MPU_SAMPLE_RATE_REG   0X19"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB24\fP 行定义\&.
+.SS "#define MPU_SELF_TESTA_REG   0X10"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB23\fP 行定义\&.
+.SS "#define MPU_SELF_TESTX_REG   0X0D"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB20\fP 行定义\&.
+.SS "#define MPU_SELF_TESTY_REG   0X0E"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB21\fP 行定义\&.
+.SS "#define MPU_SELF_TESTZ_REG   0X0F"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB22\fP 行定义\&.
+.SS "#define MPU_SIGPATH_RST_REG   0X68"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB77\fP 行定义\&.
+.SS "#define MPU_TEMP_OUTH_REG   0X41"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB61\fP 行定义\&.
+.SS "#define MPU_TEMP_OUTL_REG   0X42"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB62\fP 行定义\&.
+.SS "#define MPU_USER_CTRL_REG   0X6A"
+
+.PP
+在文件 \fBmpu6050\&.h\fP 第 \fB79\fP 行定义\&.
+.SH "函数说明"
+.PP 
+.SS "\fBu8\fP MPU_Get_Accelerometer (short * ax, short * ay, short * az)"
+
+.PP
+得到加速度值(原始值) 
+.PP
+\fB参数\fP
+.RS 4
+\fIax\fP 陀螺仪a轴的原始读数(带符号) 
+.br
+\fIay\fP 陀螺仪a轴的原始读数(带符号) 
+.br
+\fIax\fP 陀螺仪a轴的原始读数(带符号) 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+0,设置成功 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB137\fP 行定义\&.
+.SS "\fBu8\fP MPU_Get_Gyroscope (short * gx, short * gy, short * gz)"
+
+.PP
+得到陀螺仪值(原始值) 
+.PP
+\fB参数\fP
+.RS 4
+\fIgx\fP 陀螺仪x轴的原始读数(带符号) 
+.br
+\fIgy\fP 陀螺仪y轴的原始读数(带符号) 
+.br
+\fIgx\fP 陀螺仪z轴的原始读数(带符号) 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+0,设置成功 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB121\fP 行定义\&.
+.SS "short MPU_Get_Temperature (void)"
+
+.PP
+得到温度值 
+.PP
+\fB返回\fP
+.RS 4
+温度值(扩大了100倍) 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB105\fP 行定义\&.
+.SS "\fBu8\fP MPU_Init (void)"
+
+.PP
+初始化MPU6050 
+.PP
+\fB返回\fP
+.RS 4
+0,成功 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB25\fP 行定义\&.
+.SS "\fBu8\fP MPU_Read_Byte (\fBu8\fP reg)"
+
+.PP
+IIC读一个字节 
+.PP
+\fB参数\fP
+.RS 4
+\fIreg\fP 寄存器地址 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+0,设置成功 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB187\fP 行定义\&.
+.SS "\fBu8\fP MPU_Read_Len (\fBu8\fP addr, \fBu8\fP reg, \fBu8\fP len, \fBu8\fP * buf)"
+
+.PP
+IIC连续读 
+.PP
+\fB参数\fP
+.RS 4
+\fIaddr\fP 器件地址 
+.br
+\fIreg\fP 寄存器地址 
+.br
+\fIlen\fP 读取长度 
+.br
+\fI*buf\fP 读取数据区 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+0,设置成功 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB168\fP 行定义\&.
+.SS "\fBu8\fP MPU_Set_Accel_Fsr (\fBu8\fP fsr)"
+
+.PP
+设置MPU6050加速度传感器满量程范围 
+.PP
+\fB参数\fP
+.RS 4
+\fIfsr\fP 0,±2g 1,±4g 2,±8g 3,±16g 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+0,设置成功 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB67\fP 行定义\&.
+.SS "\fBu8\fP MPU_Set_Fifo (\fBu8\fP sens)"
+
+.SS "\fBu8\fP MPU_Set_Gyro_Fsr (\fBu8\fP fsr)"
+
+.PP
+设置MPU6050陀螺仪传感器满量程范围 
+.PP
+\fB参数\fP
+.RS 4
+\fIfsr\fP 0,±250dps 1,±500dps 2,±1000dps 3,±2000dps 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+0,设置成功 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB55\fP 行定义\&.
+.SS "\fBu8\fP MPU_Set_LPF (\fBu16\fP lpf)"
+
+.PP
+设置MPU6050的数字低通滤波器 
+.PP
+\fB参数\fP
+.RS 4
+\fIlpf\fP 数字低通滤波频率(Hz) 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+0,设置成功 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB76\fP 行定义\&.
+.SS "\fBu8\fP MPU_Set_Rate (\fBu16\fP rate)"
+
+.PP
+设置MPU6050的采样率(假定Fs=1KHz) 
+.PP
+\fB参数\fP
+.RS 4
+\fIrate\fP 4~1000(Hz) 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+0,设置成功 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB92\fP 行定义\&.
+.SS "\fBu8\fP MPU_Write_Byte (\fBu8\fP reg, \fBu8\fP data)"
+
+.PP
+IIC写一个字节 
+.PP
+\fB参数\fP
+.RS 4
+\fIreg\fP 寄存器地址 
+.br
+\fIdata\fP 数据 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+0,设置成功 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB178\fP 行定义\&.
+.SS "\fBu8\fP MPU_Write_Len (\fBu8\fP addr, \fBu8\fP reg, \fBu8\fP len, \fBu8\fP * buf)"
+
+.PP
+IIC连续写 
+.PP
+\fB参数\fP
+.RS 4
+\fIaddr\fP 器件地址 
+.br
+\fIreg\fP 寄存器地址 
+.br
+\fIlen\fP 写入长度 
+.br
+\fI*buf\fP 数据区 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+0,设置成功 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB156\fP 行定义\&.
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 MF32BSP_XerolySkinner 的 源代码自动生成\&.

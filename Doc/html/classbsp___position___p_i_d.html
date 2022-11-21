@@ -1,0 +1,555 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MF32BSP_XerolySkinner: bsp_Position_PID类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MF32BSP_XerolySkinner<span id="projectnumber">&#160;2.0.0</span>
+   </div>
+   <div id="projectbrief">C++版本的驱动库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classbsp___position___p_i_d-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">bsp_Position_PID类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>位置法为基础的PID算法  
+ <a href="classbsp___position___p_i_d.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="bsp___p_i_d_8h_source.html">bsp_PID.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ac50b1ff29153eed1fcb252a3eee2aa69"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___position___p_i_d.html#ac50b1ff29153eed1fcb252a3eee2aa69">bsp_Position_PID</a> (void)</td></tr>
+<tr class="separator:ac50b1ff29153eed1fcb252a3eee2aa69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa16c488294e5bfba71c8ef83ee76a250"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___position___p_i_d.html#aa16c488294e5bfba71c8ef83ee76a250">bsp_Position_PID</a> (float <a class="el" href="classbsp___position___p_i_d.html#aa2ea863045a5bc0785693013154b6a52">Kp</a>, float <a class="el" href="classbsp___position___p_i_d.html#a58c60be7603ec356bbe428fb989d4e68">Ki</a>, float <a class="el" href="classbsp___position___p_i_d.html#a1678e1ea6b9e6ea56fde93df5aad4f75">Kd</a>, float <a class="el" href="classbsp___position___p_i_d.html#a04921569cfe25681f8763beaae01c1bc">target</a>, float <a class="el" href="classbsp___position___p_i_d.html#a08bba095208d3dcdb8c07e741dc3a77a">result_H</a>, float <a class="el" href="classbsp___position___p_i_d.html#a42a8eb4e1c96871e1b4eacb0cf46e196">result_L</a>)</td></tr>
+<tr class="memdesc:aa16c488294e5bfba71c8ef83ee76a250"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID算法  <a href="classbsp___position___p_i_d.html#aa16c488294e5bfba71c8ef83ee76a250">更多...</a><br /></td></tr>
+<tr class="separator:aa16c488294e5bfba71c8ef83ee76a250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cd33ec75d5ca15939d132644d4ceea8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___position___p_i_d.html#a9cd33ec75d5ca15939d132644d4ceea8">~bsp_Position_PID</a> (void)</td></tr>
+<tr class="separator:a9cd33ec75d5ca15939d132644d4ceea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac658466d8bc1d12fcd403c4b6f9ca9f7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___position___p_i_d.html#ac658466d8bc1d12fcd403c4b6f9ca9f7">PID</a> (float temp)</td></tr>
+<tr class="memdesc:ac658466d8bc1d12fcd403c4b6f9ca9f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID算法  <a href="classbsp___position___p_i_d.html#ac658466d8bc1d12fcd403c4b6f9ca9f7">更多...</a><br /></td></tr>
+<tr class="separator:ac658466d8bc1d12fcd403c4b6f9ca9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b60d7f8a80c632c501561e7e0765f14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___position___p_i_d.html#a7b60d7f8a80c632c501561e7e0765f14">clean</a> (void)</td></tr>
+<tr class="memdesc:a7b60d7f8a80c632c501561e7e0765f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">清理历史数据  <a href="classbsp___position___p_i_d.html#a7b60d7f8a80c632c501561e7e0765f14">更多...</a><br /></td></tr>
+<tr class="separator:a7b60d7f8a80c632c501561e7e0765f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add37a6f47b3f9b6dd0d945def8ed2ef1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___position___p_i_d.html#add37a6f47b3f9b6dd0d945def8ed2ef1">set</a> (float P, float I, float D)</td></tr>
+<tr class="memdesc:add37a6f47b3f9b6dd0d945def8ed2ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID参数设置  <a href="classbsp___position___p_i_d.html#add37a6f47b3f9b6dd0d945def8ed2ef1">更多...</a><br /></td></tr>
+<tr class="separator:add37a6f47b3f9b6dd0d945def8ed2ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a04921569cfe25681f8763beaae01c1bc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___position___p_i_d.html#a04921569cfe25681f8763beaae01c1bc">target</a></td></tr>
+<tr class="memdesc:a04921569cfe25681f8763beaae01c1bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">设定值  <a href="classbsp___position___p_i_d.html#a04921569cfe25681f8763beaae01c1bc">更多...</a><br /></td></tr>
+<tr class="separator:a04921569cfe25681f8763beaae01c1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2ea863045a5bc0785693013154b6a52"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___position___p_i_d.html#aa2ea863045a5bc0785693013154b6a52">Kp</a></td></tr>
+<tr class="memdesc:aa2ea863045a5bc0785693013154b6a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">比例系数  <a href="classbsp___position___p_i_d.html#aa2ea863045a5bc0785693013154b6a52">更多...</a><br /></td></tr>
+<tr class="separator:aa2ea863045a5bc0785693013154b6a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1678e1ea6b9e6ea56fde93df5aad4f75"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___position___p_i_d.html#a1678e1ea6b9e6ea56fde93df5aad4f75">Kd</a></td></tr>
+<tr class="memdesc:a1678e1ea6b9e6ea56fde93df5aad4f75"><td class="mdescLeft">&#160;</td><td class="mdescRight">积分系数  <a href="classbsp___position___p_i_d.html#a1678e1ea6b9e6ea56fde93df5aad4f75">更多...</a><br /></td></tr>
+<tr class="separator:a1678e1ea6b9e6ea56fde93df5aad4f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58c60be7603ec356bbe428fb989d4e68"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___position___p_i_d.html#a58c60be7603ec356bbe428fb989d4e68">Ki</a></td></tr>
+<tr class="memdesc:a58c60be7603ec356bbe428fb989d4e68"><td class="mdescLeft">&#160;</td><td class="mdescRight">微分系数  <a href="classbsp___position___p_i_d.html#a58c60be7603ec356bbe428fb989d4e68">更多...</a><br /></td></tr>
+<tr class="separator:a58c60be7603ec356bbe428fb989d4e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77ecc1d6378fb03cc63c9a3a263c90b2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___position___p_i_d.html#a77ecc1d6378fb03cc63c9a3a263c90b2">result</a></td></tr>
+<tr class="memdesc:a77ecc1d6378fb03cc63c9a3a263c90b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出值  <a href="classbsp___position___p_i_d.html#a77ecc1d6378fb03cc63c9a3a263c90b2">更多...</a><br /></td></tr>
+<tr class="separator:a77ecc1d6378fb03cc63c9a3a263c90b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a9e7c0b93c1936f3aca77800997f99c05"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___position___p_i_d.html#a9e7c0b93c1936f3aca77800997f99c05">integral</a></td></tr>
+<tr class="memdesc:a9e7c0b93c1936f3aca77800997f99c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">积分值  <a href="classbsp___position___p_i_d.html#a9e7c0b93c1936f3aca77800997f99c05">更多...</a><br /></td></tr>
+<tr class="separator:a9e7c0b93c1936f3aca77800997f99c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04a54e038d2229f330e1913ce8b8aada"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___position___p_i_d.html#a04a54e038d2229f330e1913ce8b8aada">lasterror</a></td></tr>
+<tr class="memdesc:a04a54e038d2229f330e1913ce8b8aada"><td class="mdescLeft">&#160;</td><td class="mdescRight">前一拍偏差  <a href="classbsp___position___p_i_d.html#a04a54e038d2229f330e1913ce8b8aada">更多...</a><br /></td></tr>
+<tr class="separator:a04a54e038d2229f330e1913ce8b8aada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08bba095208d3dcdb8c07e741dc3a77a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___position___p_i_d.html#a08bba095208d3dcdb8c07e741dc3a77a">result_H</a></td></tr>
+<tr class="memdesc:a08bba095208d3dcdb8c07e741dc3a77a"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出最高值  <a href="classbsp___position___p_i_d.html#a08bba095208d3dcdb8c07e741dc3a77a">更多...</a><br /></td></tr>
+<tr class="separator:a08bba095208d3dcdb8c07e741dc3a77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42a8eb4e1c96871e1b4eacb0cf46e196"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbsp___position___p_i_d.html#a42a8eb4e1c96871e1b4eacb0cf46e196">result_L</a></td></tr>
+<tr class="memdesc:a42a8eb4e1c96871e1b4eacb0cf46e196"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出最低值  <a href="classbsp___position___p_i_d.html#a42a8eb4e1c96871e1b4eacb0cf46e196">更多...</a><br /></td></tr>
+<tr class="separator:a42a8eb4e1c96871e1b4eacb0cf46e196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >位置法为基础的PID算法 </p>
+
+<p class="definition">在文件 <a class="el" href="bsp___p_i_d_8h_source.html">bsp_PID.h</a> 第 <a class="el" href="bsp___p_i_d_8h_source.html#l00043">43</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ac50b1ff29153eed1fcb252a3eee2aa69" name="ac50b1ff29153eed1fcb252a3eee2aa69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac50b1ff29153eed1fcb252a3eee2aa69">&#9670;&#160;</a></span>bsp_Position_PID() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bsp_Position_PID::bsp_Position_PID </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp___p_i_d_8cpp_source.html">bsp_PID.cpp</a> 第 <a class="el" href="bsp___p_i_d_8cpp_source.html#l00134">134</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa16c488294e5bfba71c8ef83ee76a250" name="aa16c488294e5bfba71c8ef83ee76a250"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa16c488294e5bfba71c8ef83ee76a250">&#9670;&#160;</a></span>bsp_Position_PID() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bsp_Position_PID::bsp_Position_PID </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Kp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Ki</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Kd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>result_H</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>result_L</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PID算法 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Kp</td><td>P参数 </td></tr>
+    <tr><td class="paramname">Ki</td><td>I参数 </td></tr>
+    <tr><td class="paramname">Kd</td><td>D参数 </td></tr>
+    <tr><td class="paramname">target</td><td>目标值 </td></tr>
+    <tr><td class="paramname">result_H</td><td>输出最大值 </td></tr>
+    <tr><td class="paramname">result_L</td><td>输出最小值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="bsp___p_i_d_8cpp_source.html">bsp_PID.cpp</a> 第 <a class="el" href="bsp___p_i_d_8cpp_source.html#l00155">155</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9cd33ec75d5ca15939d132644d4ceea8" name="a9cd33ec75d5ca15939d132644d4ceea8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cd33ec75d5ca15939d132644d4ceea8">&#9670;&#160;</a></span>~bsp_Position_PID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bsp_Position_PID::~bsp_Position_PID </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp___p_i_d_8cpp_source.html">bsp_PID.cpp</a> 第 <a class="el" href="bsp___p_i_d_8cpp_source.html#l00169">169</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a7b60d7f8a80c632c501561e7e0765f14" name="a7b60d7f8a80c632c501561e7e0765f14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b60d7f8a80c632c501561e7e0765f14">&#9670;&#160;</a></span>clean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bsp_Position_PID::clean </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>清理历史数据 </p>
+<dl class="section return"><dt>返回</dt><dd>清除PID运算数据 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="bsp___p_i_d_8cpp_source.html">bsp_PID.cpp</a> 第 <a class="el" href="bsp___p_i_d_8cpp_source.html#l00096">96</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac658466d8bc1d12fcd403c4b6f9ca9f7" name="ac658466d8bc1d12fcd403c4b6f9ca9f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac658466d8bc1d12fcd403c4b6f9ca9f7">&#9670;&#160;</a></span>PID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float bsp_Position_PID::PID </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>temp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PID算法 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">temp</td><td>目前变量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回调整量 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="bsp___p_i_d_8cpp_source.html">bsp_PID.cpp</a> 第 <a class="el" href="bsp___p_i_d_8cpp_source.html#l00048">48</a> 行定义.</p>
+
+</div>
+</div>
+<a id="add37a6f47b3f9b6dd0d945def8ed2ef1" name="add37a6f47b3f9b6dd0d945def8ed2ef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add37a6f47b3f9b6dd0d945def8ed2ef1">&#9670;&#160;</a></span>set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bsp_Position_PID::set </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>P</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>I</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>D</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PID参数设置 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">P</td><td>P参数 </td></tr>
+    <tr><td class="paramname">I</td><td>I参数 </td></tr>
+    <tr><td class="paramname">D</td><td>D参数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="bsp___p_i_d_8cpp_source.html">bsp_PID.cpp</a> 第 <a class="el" href="bsp___p_i_d_8cpp_source.html#l00119">119</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a9e7c0b93c1936f3aca77800997f99c05" name="a9e7c0b93c1936f3aca77800997f99c05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e7c0b93c1936f3aca77800997f99c05">&#9670;&#160;</a></span>integral</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float bsp_Position_PID::integral</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>积分值 </p>
+
+<p class="definition">在文件 <a class="el" href="bsp___p_i_d_8h_source.html">bsp_PID.h</a> 第 <a class="el" href="bsp___p_i_d_8h_source.html#l00061">61</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1678e1ea6b9e6ea56fde93df5aad4f75" name="a1678e1ea6b9e6ea56fde93df5aad4f75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1678e1ea6b9e6ea56fde93df5aad4f75">&#9670;&#160;</a></span>Kd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float bsp_Position_PID::Kd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>积分系数 </p>
+
+<p class="definition">在文件 <a class="el" href="bsp___p_i_d_8h_source.html">bsp_PID.h</a> 第 <a class="el" href="bsp___p_i_d_8h_source.html#l00057">57</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a58c60be7603ec356bbe428fb989d4e68" name="a58c60be7603ec356bbe428fb989d4e68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58c60be7603ec356bbe428fb989d4e68">&#9670;&#160;</a></span>Ki</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float bsp_Position_PID::Ki</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>微分系数 </p>
+
+<p class="definition">在文件 <a class="el" href="bsp___p_i_d_8h_source.html">bsp_PID.h</a> 第 <a class="el" href="bsp___p_i_d_8h_source.html#l00058">58</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa2ea863045a5bc0785693013154b6a52" name="aa2ea863045a5bc0785693013154b6a52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ea863045a5bc0785693013154b6a52">&#9670;&#160;</a></span>Kp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float bsp_Position_PID::Kp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>比例系数 </p>
+
+<p class="definition">在文件 <a class="el" href="bsp___p_i_d_8h_source.html">bsp_PID.h</a> 第 <a class="el" href="bsp___p_i_d_8h_source.html#l00056">56</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a04a54e038d2229f330e1913ce8b8aada" name="a04a54e038d2229f330e1913ce8b8aada"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04a54e038d2229f330e1913ce8b8aada">&#9670;&#160;</a></span>lasterror</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float bsp_Position_PID::lasterror</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>前一拍偏差 </p>
+
+<p class="definition">在文件 <a class="el" href="bsp___p_i_d_8h_source.html">bsp_PID.h</a> 第 <a class="el" href="bsp___p_i_d_8h_source.html#l00062">62</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a77ecc1d6378fb03cc63c9a3a263c90b2" name="a77ecc1d6378fb03cc63c9a3a263c90b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77ecc1d6378fb03cc63c9a3a263c90b2">&#9670;&#160;</a></span>result</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float bsp_Position_PID::result</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>输出值 </p>
+
+<p class="definition">在文件 <a class="el" href="bsp___p_i_d_8h_source.html">bsp_PID.h</a> 第 <a class="el" href="bsp___p_i_d_8h_source.html#l00059">59</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a08bba095208d3dcdb8c07e741dc3a77a" name="a08bba095208d3dcdb8c07e741dc3a77a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08bba095208d3dcdb8c07e741dc3a77a">&#9670;&#160;</a></span>result_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float bsp_Position_PID::result_H</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>输出最高值 </p>
+
+<p class="definition">在文件 <a class="el" href="bsp___p_i_d_8h_source.html">bsp_PID.h</a> 第 <a class="el" href="bsp___p_i_d_8h_source.html#l00064">64</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a42a8eb4e1c96871e1b4eacb0cf46e196" name="a42a8eb4e1c96871e1b4eacb0cf46e196"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42a8eb4e1c96871e1b4eacb0cf46e196">&#9670;&#160;</a></span>result_L</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float bsp_Position_PID::result_L</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>输出最低值 </p>
+
+<p class="definition">在文件 <a class="el" href="bsp___p_i_d_8h_source.html">bsp_PID.h</a> 第 <a class="el" href="bsp___p_i_d_8h_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a04921569cfe25681f8763beaae01c1bc" name="a04921569cfe25681f8763beaae01c1bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04921569cfe25681f8763beaae01c1bc">&#9670;&#160;</a></span>target</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float bsp_Position_PID::target</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设定值 </p>
+
+<p class="definition">在文件 <a class="el" href="bsp___p_i_d_8h_source.html">bsp_PID.h</a> 第 <a class="el" href="bsp___p_i_d_8h_source.html#l00055">55</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>D:/gitt/MicrochipFor32/bsp_Device/<a class="el" href="bsp___p_i_d_8h_source.html">bsp_PID.h</a></li>
+<li>D:/gitt/MicrochipFor32/bsp_Device/<a class="el" href="bsp___p_i_d_8cpp_source.html">bsp_PID.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

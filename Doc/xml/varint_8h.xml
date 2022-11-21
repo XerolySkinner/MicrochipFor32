@@ -1,0 +1,514 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="varint_8h" kind="file" language="C++">
+    <compoundname>varint.h</compoundname>
+    <includes local="yes">stdint.h</includes>
+    <includedby refid="_s_t_l___queue_8h" local="yes">D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h</includedby>
+    <includedby refid="_s_t_l___stack_8h" local="yes">D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h</includedby>
+    <includedby refid="bsp___a_t24_c00_8cpp" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.cpp</includedby>
+    <includedby refid="bsp___a_t24_c00_8h" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h</includedby>
+    <includedby refid="bsp___c_r_c_8h" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_CRC.h</includedby>
+    <includedby refid="bsp___digit_8h" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_Digit.h</includedby>
+    <includedby refid="bsp___i_i_c_8h" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h</includedby>
+    <includedby refid="bsp___i_i_c___s_t_m32_8h" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h</includedby>
+    <includedby refid="bsp___m_a_x6675_8h" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_MAX6675.h</includedby>
+    <includedby refid="bsp___mod_bus_8h" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h</includedby>
+    <includedby refid="bsp___mod_bus___s_t_m32_8h" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus_STM32.h</includedby>
+    <includedby refid="bsp___o_l_e_d___s_t_m32_8h" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h</includedby>
+    <includedby refid="bsp___p_i_d_8h" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h</includedby>
+    <includedby refid="mpu6050_8h" local="yes">D:/gitt/MicrochipFor32/bsp_MPU6050/mpu6050.h</includedby>
+    <includedby refid="vartable_8h" local="yes">D:/gitt/MicrochipFor32/bsp_System/vartable.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/varint.h</label>
+        <link refid="varint_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>D:/gitt/MicrochipFor32/STL_Device/STL_Queue.cpp</label>
+        <link refid="_s_t_l___queue_8cpp"/>
+      </node>
+      <node id="2">
+        <label>D:/gitt/MicrochipFor32/STL_Device/STL_Queue.h</label>
+        <link refid="_s_t_l___queue_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>D:/gitt/MicrochipFor32/STL_Device/STL_Stack.cpp</label>
+        <link refid="_s_t_l___stack_8cpp"/>
+      </node>
+      <node id="4">
+        <label>D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h</label>
+        <link refid="_s_t_l___stack_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.cpp</label>
+        <link refid="bsp___a_t24_c00_8cpp"/>
+      </node>
+      <node id="7">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h</label>
+        <link refid="bsp___a_t24_c00_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_CRC.cpp</label>
+        <link refid="bsp___c_r_c_8cpp"/>
+      </node>
+      <node id="8">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_CRC.h</label>
+        <link refid="bsp___c_r_c_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_Digit.cpp</label>
+        <link refid="bsp___digit_8cpp"/>
+      </node>
+      <node id="11">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_Digit.h</label>
+        <link refid="bsp___digit_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp</label>
+        <link refid="bsp___i_i_c_8cpp"/>
+      </node>
+      <node id="13">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h</label>
+        <link refid="bsp___i_i_c_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.cpp</label>
+        <link refid="bsp___i_i_c___s_t_m32_8cpp"/>
+      </node>
+      <node id="15">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h</label>
+        <link refid="bsp___i_i_c___s_t_m32_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_MAX6675.cpp</label>
+        <link refid="bsp___m_a_x6675_8cpp"/>
+      </node>
+      <node id="19">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_MAX6675.h</label>
+        <link refid="bsp___m_a_x6675_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp</label>
+        <link refid="bsp___mod_bus_8cpp"/>
+      </node>
+      <node id="21">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h</label>
+        <link refid="bsp___mod_bus_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus_STM32.cpp</label>
+        <link refid="bsp___mod_bus___s_t_m32_8cpp"/>
+      </node>
+      <node id="22">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus_STM32.h</label>
+        <link refid="bsp___mod_bus___s_t_m32_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp</label>
+        <link refid="bsp___o_l_e_d___s_t_m32_8cpp"/>
+      </node>
+      <node id="18">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h</label>
+        <link refid="bsp___o_l_e_d___s_t_m32_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.cpp</label>
+        <link refid="bsp___p_i_d_8cpp"/>
+      </node>
+      <node id="24">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h</label>
+        <link refid="bsp___p_i_d_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/varint.h</label>
+        <link refid="varint_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>D:/gitt/MicrochipFor32/bsp_MPU6050/mpu6050.cpp</label>
+        <link refid="mpu6050_8cpp"/>
+      </node>
+      <node id="26">
+        <label>D:/gitt/MicrochipFor32/bsp_MPU6050/mpu6050.h</label>
+        <link refid="mpu6050_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>D:/gitt/MicrochipFor32/bsp_System/Callback.cpp</label>
+        <link refid="_callback_8cpp"/>
+      </node>
+      <node id="30">
+        <label>D:/gitt/MicrochipFor32/bsp_System/MainSystem.cpp</label>
+        <link refid="_main_system_8cpp"/>
+      </node>
+      <node id="31">
+        <label>D:/gitt/MicrochipFor32/bsp_System/vartable.cpp</label>
+        <link refid="vartable_8cpp"/>
+      </node>
+      <node id="28">
+        <label>D:/gitt/MicrochipFor32/bsp_System/vartable.h</label>
+        <link refid="vartable_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t u8</definition>
+        <argsstring></argsstring>
+        <name>u8</name>
+        <briefdescription>
+<para>8位无符号数类型 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="40" column="16" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" prot="public" static="no">
+        <type>uint16_t</type>
+        <definition>typedef uint16_t u16</definition>
+        <argsstring></argsstring>
+        <name>u16</name>
+        <briefdescription>
+<para>16位无符号数类型 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="41" column="17" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t u32</definition>
+        <argsstring></argsstring>
+        <name>u32</name>
+        <briefdescription>
+<para>32位无符号数类型 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="42" column="17" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="varint_8h_1a3f7e2bcbb0b4c338f3c4f6c937cd4234" prot="public" static="no">
+        <type>uint64_t</type>
+        <definition>typedef uint64_t u64</definition>
+        <argsstring></argsstring>
+        <name>u64</name>
+        <briefdescription>
+<para>64位无符号数类型 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="43" column="17" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="varint_8h_1ae3702327b5f47e83b431e22b33da7b58" prot="public" static="no">
+        <type>int8_t</type>
+        <definition>typedef int8_t i8</definition>
+        <argsstring></argsstring>
+        <name>i8</name>
+        <briefdescription>
+<para>8位有符号数类型 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="45" column="15" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="varint_8h_1ad309dbcaeea13aa602d686964156ea0b" prot="public" static="no">
+        <type>int16_t</type>
+        <definition>typedef int16_t i16</definition>
+        <argsstring></argsstring>
+        <name>i16</name>
+        <briefdescription>
+<para>16位有符号数类型 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="46" column="16" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="varint_8h_1a48d6cd8e4135fb2ff7e7f2dac84089ec" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>typedef int32_t i32</definition>
+        <argsstring></argsstring>
+        <name>i32</name>
+        <briefdescription>
+<para>32位有符号数类型 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="47" column="16" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="varint_8h_1a85cb35fbe5bf2961d7ad5f26814a91a2" prot="public" static="no">
+        <type>int64_t</type>
+        <definition>typedef int64_t i64</definition>
+        <argsstring></argsstring>
+        <name>i64</name>
+        <briefdescription>
+<para>64位有符号数类型 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="48" column="16" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="varint_8h_1a1a2a3100a902c32a55d8b08915bce044" prot="public" static="no">
+        <type>volatile <ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>typedef volatile u8 vu8</definition>
+        <argsstring></argsstring>
+        <name>vu8</name>
+        <briefdescription>
+<para>8位无符号易变类型 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="50" column="20" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="varint_8h_1a677aa1edce4bbb53741b1cc24eb4c035" prot="public" static="no">
+        <type>volatile <ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+        <definition>typedef volatile u16 vu16</definition>
+        <argsstring></argsstring>
+        <name>vu16</name>
+        <briefdescription>
+<para>16位无符号易变类型 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="51" column="22" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="varint_8h_1abcdd5d61f51cb4c472ac6637916cf72a" prot="public" static="no">
+        <type>volatile <ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref></type>
+        <definition>typedef volatile u32 vu32</definition>
+        <argsstring></argsstring>
+        <name>vu32</name>
+        <briefdescription>
+<para>32位无符号易变类型 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="52" column="22" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="varint_8h_1ace392b4d1c3911331b2fe5ddc99fdcba" prot="public" static="no">
+        <type>volatile <ref refid="varint_8h_1a3f7e2bcbb0b4c338f3c4f6c937cd4234" kindref="member">u64</ref></type>
+        <definition>typedef volatile u64 vu64</definition>
+        <argsstring></argsstring>
+        <name>vu64</name>
+        <briefdescription>
+<para>64位无符号易变类型 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="53" column="22" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="varint_8h_1ad9f0c7145e15b7b470a138dae48c178d" prot="public" static="no">
+        <type>volatile <ref refid="varint_8h_1ae3702327b5f47e83b431e22b33da7b58" kindref="member">i8</ref></type>
+        <definition>typedef volatile i8 vi8</definition>
+        <argsstring></argsstring>
+        <name>vi8</name>
+        <briefdescription>
+<para>8位有符号易变类型 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="55" column="20" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="varint_8h_1ab1725f18a2ec2964f4bc0499527e4c5d" prot="public" static="no">
+        <type>volatile <ref refid="varint_8h_1ad309dbcaeea13aa602d686964156ea0b" kindref="member">i16</ref></type>
+        <definition>typedef volatile i16 vi16</definition>
+        <argsstring></argsstring>
+        <name>vi16</name>
+        <briefdescription>
+<para>16位有符号易变类型 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="56" column="22" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="varint_8h_1a8b81ac6660e74bec836c0a4e0a0b6450" prot="public" static="no">
+        <type>volatile <ref refid="varint_8h_1a48d6cd8e4135fb2ff7e7f2dac84089ec" kindref="member">i32</ref></type>
+        <definition>typedef volatile i32 vi32</definition>
+        <argsstring></argsstring>
+        <name>vi32</name>
+        <briefdescription>
+<para>32位有符号易变类型 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="57" column="22" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="varint_8h_1aeffd8dafd889cdd80398ffcbb37cd7ef" prot="public" static="no">
+        <type>volatile <ref refid="varint_8h_1a85cb35fbe5bf2961d7ad5f26814a91a2" kindref="member">i64</ref></type>
+        <definition>typedef volatile i64 vi64</definition>
+        <argsstring></argsstring>
+        <name>vi64</name>
+        <briefdescription>
+<para>64位有符号易变类型 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="58" column="22" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*----------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>#<sp/><sp/>Copyright<sp/>(c)<sp/>2022<sp/>Yuankang<sp/>Liang(XerolySkinner)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>#<sp/><sp/>本软件按原样提供,无任何明示或暗示</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>#<sp/><sp/>在任何情况下,作者都不承担任何损害赔偿责任</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>#<sp/><sp/>使用的许可声明:</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>#<sp/><sp/>1.<sp/><sp/>不得歪曲本软件的来源,你不能声称你编写了原始软件.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>#<sp/><sp/>2.<sp/><sp/>免费授予以任何目的,前提是版权声明出现在所有副本中.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>并且版权声明和许可声明同时出现.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>#<sp/><sp/>3.<sp/><sp/>你有使用,复制,修改,分发,和销售本软件的许可.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>#<sp/><sp/>4.<sp/><sp/>如果你在产品中使用,产品文档中的声明是赞赏的但不是必须的.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>#<sp/><sp/>5.<sp/><sp/>本通知不得从任何来源删除或更改.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>#<sp/><sp/>Yuankang<sp/>Liang(XerolySkinner)</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>E-mail:zabbcccbbaz@163.com</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>QQ:2715099320</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>#<sp/><sp/><sp/><sp/><sp/><sp/>Mobile<sp/>Phone:13005636215</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>#</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>#<sp/><sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stdint.h&quot;</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">//----------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>程序</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41" refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42" refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43" refid="varint_8h_1a3f7e2bcbb0b4c338f3c4f6c937cd4234" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint64_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a3f7e2bcbb0b4c338f3c4f6c937cd4234" kindref="member">u64</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="varint_8h_1ae3702327b5f47e83b431e22b33da7b58" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1ae3702327b5f47e83b431e22b33da7b58" kindref="member">i8</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="varint_8h_1ad309dbcaeea13aa602d686964156ea0b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1ad309dbcaeea13aa602d686964156ea0b" kindref="member">i16</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="varint_8h_1a48d6cd8e4135fb2ff7e7f2dac84089ec" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a48d6cd8e4135fb2ff7e7f2dac84089ec" kindref="member">i32</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="varint_8h_1a85cb35fbe5bf2961d7ad5f26814a91a2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int64_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a85cb35fbe5bf2961d7ad5f26814a91a2" kindref="member">i64</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="varint_8h_1a1a2a3100a902c32a55d8b08915bce044" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a1a2a3100a902c32a55d8b08915bce044" kindref="member">vu8</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="varint_8h_1a677aa1edce4bbb53741b1cc24eb4c035" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a677aa1edce4bbb53741b1cc24eb4c035" kindref="member">vu16</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52" refid="varint_8h_1abcdd5d61f51cb4c472ac6637916cf72a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref><sp/><sp/><sp/><sp/><ref refid="varint_8h_1abcdd5d61f51cb4c472ac6637916cf72a" kindref="member">vu32</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53" refid="varint_8h_1ace392b4d1c3911331b2fe5ddc99fdcba" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="varint_8h_1a3f7e2bcbb0b4c338f3c4f6c937cd4234" kindref="member">u64</ref><sp/><sp/><sp/><sp/><ref refid="varint_8h_1ace392b4d1c3911331b2fe5ddc99fdcba" kindref="member">vu64</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="varint_8h_1ad9f0c7145e15b7b470a138dae48c178d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="varint_8h_1ae3702327b5f47e83b431e22b33da7b58" kindref="member">i8</ref><sp/><sp/><sp/><sp/><sp/><ref refid="varint_8h_1ad9f0c7145e15b7b470a138dae48c178d" kindref="member">vi8</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56" refid="varint_8h_1ab1725f18a2ec2964f4bc0499527e4c5d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="varint_8h_1ad309dbcaeea13aa602d686964156ea0b" kindref="member">i16</ref><sp/><sp/><sp/><sp/><ref refid="varint_8h_1ab1725f18a2ec2964f4bc0499527e4c5d" kindref="member">vi16</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57" refid="varint_8h_1a8b81ac6660e74bec836c0a4e0a0b6450" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="varint_8h_1a48d6cd8e4135fb2ff7e7f2dac84089ec" kindref="member">i32</ref><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a8b81ac6660e74bec836c0a4e0a0b6450" kindref="member">vi32</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58" refid="varint_8h_1aeffd8dafd889cdd80398ffcbb37cd7ef" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="varint_8h_1a85cb35fbe5bf2961d7ad5f26814a91a2" kindref="member">i64</ref><sp/><sp/><sp/><sp/><ref refid="varint_8h_1aeffd8dafd889cdd80398ffcbb37cd7ef" kindref="member">vi64</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_88b6596e025f66b63ada730bce564633" xml:lang="zh">
+<title>D:/gitt/MicrochipFor32/STL_Device 目录参考</title>
+<indexterm><primary>D:/gitt/MicrochipFor32/STL_Device 目录参考</primary></indexterm>
+STL_Device 的目录依赖关系图<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_88b6596e025f66b63ada730bce564633_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>文件    </title>
+        <itemizedlist>
+            <listitem><para>文件 <link linkend="__s_t_l___queue_8cpp">STL_Queue.cpp</link></para>
+
+<para>实现了STL库中的Queue </para>
+</listitem>
+            <listitem><para>文件 <link linkend="__s_t_l___queue_8h">STL_Queue.h</link></para>
+
+<para>实现了STL库中的Queue </para>
+</listitem>
+            <listitem><para>文件 <link linkend="__s_t_l___stack_8cpp">STL_Stack.cpp</link></para>
+
+<para>实现了STL库中的Stack </para>
+</listitem>
+            <listitem><para>文件 <link linkend="__s_t_l___stack_8h">STL_Stack.h</link></para>
+
+<para>实现了STL库中的Stack </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

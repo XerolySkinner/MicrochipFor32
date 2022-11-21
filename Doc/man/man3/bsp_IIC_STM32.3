@@ -1,0 +1,155 @@
+.TH "bsp_IIC_STM32" 3 "2022年 十一月 22日 星期二" "Version 2.0.0" "MF32BSP_XerolySkinner" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bsp_IIC_STM32 \- STM32版本的软件IIC 需要使用构造函数初始化  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <bsp_IIC_STM32\&.h>\fP
+.PP
+继承自 \fBbsp_IIC\fP \&.
+.PP
+被 \fBbsp_STM32_AT24C00\fP , 以及 \fBbsp_STM32_OLED\fP\fC [protected]\fP 继承\&.
+.SS "Public 成员函数"
+
+.in +1c
+.ti -1c
+.RI "\fBbsp_IIC_STM32\fP (GPIO_TypeDef *\fBGPIOx_SCK\fP, uint16_t \fBGPIO_Pin_SCK\fP, GPIO_TypeDef *\fBGPIOx_SDA\fP, uint16_t \fBGPIO_Pin_SDA\fP)"
+.br
+.RI "构造STM32的IIC软件发生器 "
+.in -1c
+.SS "Public 属性"
+
+.in +1c
+.ti -1c
+.RI "GPIO_TypeDef * \fBGPIOx_SCK\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBGPIO_Pin_SCK\fP"
+.br
+.ti -1c
+.RI "GPIO_TypeDef * \fBGPIOx_SDA\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBGPIO_Pin_SDA\fP"
+.br
+.in -1c
+.SS "Protected 成员函数"
+
+.in +1c
+.ti -1c
+.RI "\fBu8\fP \fBIIC_SCK\fP (\fBu8\fP var)"
+.br
+.RI "控制SCK管脚口 "
+.ti -1c
+.RI "\fBu8\fP \fBIIC_SDA\fP (\fBu8\fP var)"
+.br
+.RI "控制SDA管脚口 "
+.ti -1c
+.RI "virtual void \fBIIC_Delay\fP (void)"
+.br
+.RI "时序中的延时 在此处短暂延时 "
+.in -1c
+.SH "详细描述"
+.PP 
+STM32版本的软件IIC 需要使用构造函数初始化 
+.PP
+在文件 \fBbsp_IIC_STM32\&.h\fP 第 \fB55\fP 行定义\&.
+.SH "构造及析构函数说明"
+.PP 
+.SS "bsp_IIC_STM32::bsp_IIC_STM32 (GPIO_TypeDef * GPIOx_SCK, uint16_t GPIO_Pin_SCK, GPIO_TypeDef * GPIOx_SDA, uint16_t GPIO_Pin_SDA)"
+
+.PP
+构造STM32的IIC软件发生器 
+.PP
+\fB参数\fP
+.RS 4
+\fI*GPIOx_SCK\fP SCK的端口 
+.br
+\fIGPIO_Pin_SCK\fP SCK的管口号 
+.br
+\fI*GPIOx_SDA\fP SDA的端口 
+.br
+\fIGPIO_Pin_SDA\fP SDA的管口号 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_IIC_STM32\&.cpp\fP 第 \fB51\fP 行定义\&.
+.SH "成员函数说明"
+.PP 
+.SS "void bsp_IIC_STM32::IIC_Delay (void)\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+时序中的延时 在此处短暂延时 
+.PP
+实现了 \fBbsp_IIC\fP\&.
+.PP
+被 \fBbsp_STM32_AT24C00\fP 重载\&.
+.PP
+在文件 \fBbsp_IIC_STM32\&.cpp\fP 第 \fB64\fP 行定义\&.
+.SS "\fBu8\fP bsp_IIC_STM32::IIC_SCK (\fBu8\fP var)\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+控制SCK管脚口 
+.PP
+\fB参数\fP
+.RS 4
+\fIvar\fP 此处有三个状态,IIC_SET置位管脚,IIC_RESET复位管脚 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+当var为IIC_READ时返回管脚状态 
+.RE
+.PP
+
+.PP
+实现了 \fBbsp_IIC\fP\&.
+.PP
+在文件 \fBbsp_IIC_STM32\&.cpp\fP 第 \fB73\fP 行定义\&.
+.SS "\fBu8\fP bsp_IIC_STM32::IIC_SDA (\fBu8\fP var)\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+控制SDA管脚口 
+.PP
+\fB参数\fP
+.RS 4
+\fIvar\fP 此处有三个状态,IIC_SET置位管脚,IIC_RESET复位管脚 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+当var为IIC_READ时返回管脚状态 
+.RE
+.PP
+
+.PP
+实现了 \fBbsp_IIC\fP\&.
+.PP
+在文件 \fBbsp_IIC_STM32\&.cpp\fP 第 \fB89\fP 行定义\&.
+.SH "类成员变量说明"
+.PP 
+.SS "uint16_t bsp_IIC_STM32::GPIO_Pin_SCK"
+
+.PP
+在文件 \fBbsp_IIC_STM32\&.h\fP 第 \fB64\fP 行定义\&.
+.SS "uint16_t bsp_IIC_STM32::GPIO_Pin_SDA"
+
+.PP
+在文件 \fBbsp_IIC_STM32\&.h\fP 第 \fB66\fP 行定义\&.
+.SS "GPIO_TypeDef* bsp_IIC_STM32::GPIOx_SCK"
+
+.PP
+在文件 \fBbsp_IIC_STM32\&.h\fP 第 \fB63\fP 行定义\&.
+.SS "GPIO_TypeDef* bsp_IIC_STM32::GPIOx_SDA"
+
+.PP
+在文件 \fBbsp_IIC_STM32\&.h\fP 第 \fB65\fP 行定义\&.
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 MF32BSP_XerolySkinner 的 源代码自动生成\&.

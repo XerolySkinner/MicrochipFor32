@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="dir_88b6596e025f66b63ada730bce564633" kind="dir">
+    <compoundname>D:/gitt/MicrochipFor32/STL_Device</compoundname>
+    <innerfile refid="_s_t_l___queue_8cpp">STL_Queue.cpp</innerfile>
+    <innerfile refid="_s_t_l___queue_8h">STL_Queue.h</innerfile>
+    <innerfile refid="_s_t_l___stack_8cpp">STL_Stack.cpp</innerfile>
+    <innerfile refid="_s_t_l___stack_8h">STL_Stack.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/gitt/MicrochipFor32/STL_Device/"/>
+  </compounddef>
+</doxygen>

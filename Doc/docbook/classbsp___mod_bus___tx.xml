@@ -1,0 +1,675 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbsp___mod_bus___tx" xml:lang="zh">
+<title>bsp_ModBus_Tx类 参考</title>
+<indexterm><primary>bsp_ModBus_Tx</primary></indexterm>
+<para>
+
+<para>ModBus发送器 </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;bsp_ModBus.h&gt;</computeroutput>
+</para>
+类 bsp_ModBus_Tx 继承关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___mod_bus___tx__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbsp___mod_bus___tx_1ac277122ddb733aa37a0000086d5ae239">bsp_ModBus_Tx</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4">ID</link>)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___mod_bus___tx_1ada605c0e9195aefd43968cfe5b347565">ReadKeepReg</link> (<link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> address, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> mem)</para>
+
+<para>发送读取保存寄存器的指令 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___mod_bus___tx_1af055e2569107b8ece7abdce3301e9444">ReadInReg</link> (<link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> address, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> mem)</para>
+
+<para>发送读取输入寄存器的指令 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___mod_bus___tx_1a02ea1680f5c361f2cf4ebcb48b565281">WriteOneReg</link> (<link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> address, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> var)</para>
+
+<para>发送写一个寄存器的指令 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___mod_bus___tx_1a268c136782f8146662f33878522c270c">WriteRegs</link> (<link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> address, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> mem, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> *var)</para>
+
+<para>发送写多个寄存器的指令 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___mod_bus___tx_1acc267977d61716e25fd3e3ec57bc2960">WriteRegsVar</link> (<link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> address, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> mem,...)</para>
+
+<para>发送写多个寄存器的指令 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___mod_bus___tx_1abc721f5c61e236df505f3447818be921">ReadOutCoil</link> (<link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> address, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> mem)</para>
+
+<para>发送读输出线圈的指令 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___mod_bus___tx_1a76e712e8d638ecc7b453e1c8afbbad98">ReadInCoil</link> (<link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> address, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> mem)</para>
+
+<para>发送读输入线圈的指令 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___mod_bus___tx_1aa8d37cc0cefaad8f41bc1d195a326d95">WriteOneCoil</link> (<link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> address, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> state)</para>
+
+<para>发送写入一个线圈的指令 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___mod_bus___tx_1a630ac7566fe9d1773baa813802202d0f">WriteCoils</link> (<link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> address, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> mem, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> *var)</para>
+
+<para>发送写多个线圈的指令 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___mod_bus___tx_1a280c5d7c99196a11b5fee7b34421a8ff">WriteCoilsVar</link> (<link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> address, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> mem,...)</para>
+
+<para>发送写多个线圈的指令 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected 成员函数    </title>
+        <itemizedlist>
+            <listitem><para>virtual void <link linkend="_classbsp___mod_bus___tx_1ac017f6145ba6f87c69a16510f868dcc2">Transmit</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> *dat, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> len)=0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected 属性    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4">ID</link></para>
+
+<para>器件ID </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>ModBus发送器 </para>
+<para>
+在文件 <link linkend="_bsp___mod_bus_8h_source">bsp_ModBus.h</link> 第 <link linkend="_bsp___mod_bus_8h_source_1l00058">58</link> 行定义.</para>
+</section>
+<section>
+<title>构造及析构函数说明</title>
+<anchor xml:id="_classbsp___mod_bus___tx_1ac277122ddb733aa37a0000086d5ae239"/><section>
+    <title>bsp_ModBus_Tx()</title>
+<indexterm><primary>bsp_ModBus_Tx</primary><secondary>bsp_ModBus_Tx</secondary></indexterm>
+<indexterm><primary>bsp_ModBus_Tx</primary><secondary>bsp_ModBus_Tx</secondary></indexterm>
+<para><computeroutput>bsp_ModBus_Tx::bsp_ModBus_Tx (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> ID)</computeroutput></para><para>
+在文件 <link linkend="_bsp___mod_bus_8cpp_source">bsp_ModBus.cpp</link> 第 <link linkend="_bsp___mod_bus_8cpp_source_1l00362">362</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_classbsp___mod_bus___tx_1a76e712e8d638ecc7b453e1c8afbbad98"/><section>
+    <title>ReadInCoil()</title>
+<indexterm><primary>ReadInCoil</primary><secondary>bsp_ModBus_Tx</secondary></indexterm>
+<indexterm><primary>bsp_ModBus_Tx</primary><secondary>ReadInCoil</secondary></indexterm>
+<para><computeroutput>void bsp_ModBus_Tx::ReadInCoil (<link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> address, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> mem)</computeroutput></para><para>
+
+<para>发送读输入线圈的指令 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>address</entry><entry>
+<para>读取的地址 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>mem</entry><entry>
+<para>读取的个数 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>无返回值 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___mod_bus_8cpp_source">bsp_ModBus.cpp</link> 第 <link linkend="_bsp___mod_bus_8cpp_source_1l00195">195</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___mod_bus___tx_a76e712e8d638ecc7b453e1c8afbbad98_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___mod_bus___tx_1af055e2569107b8ece7abdce3301e9444"/><section>
+    <title>ReadInReg()</title>
+<indexterm><primary>ReadInReg</primary><secondary>bsp_ModBus_Tx</secondary></indexterm>
+<indexterm><primary>bsp_ModBus_Tx</primary><secondary>ReadInReg</secondary></indexterm>
+<para><computeroutput>void bsp_ModBus_Tx::ReadInReg (<link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> address, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> mem)</computeroutput></para><para>
+
+<para>发送读取输入寄存器的指令 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>address</entry><entry>
+<para>读取的地址 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>mem</entry><entry>
+<para>读取的个数 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>无返回值 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___mod_bus_8cpp_source">bsp_ModBus.cpp</link> 第 <link linkend="_bsp___mod_bus_8cpp_source_1l00070">70</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___mod_bus___tx_af055e2569107b8ece7abdce3301e9444_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___mod_bus___tx_1ada605c0e9195aefd43968cfe5b347565"/><section>
+    <title>ReadKeepReg()</title>
+<indexterm><primary>ReadKeepReg</primary><secondary>bsp_ModBus_Tx</secondary></indexterm>
+<indexterm><primary>bsp_ModBus_Tx</primary><secondary>ReadKeepReg</secondary></indexterm>
+<para><computeroutput>void bsp_ModBus_Tx::ReadKeepReg (<link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> address, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> mem)</computeroutput></para><para>
+
+<para>发送读取保存寄存器的指令 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>address</entry><entry>
+<para>读取的地址 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>mem</entry><entry>
+<para>读取的个数 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>无返回值 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___mod_bus_8cpp_source">bsp_ModBus.cpp</link> 第 <link linkend="_bsp___mod_bus_8cpp_source_1l00050">50</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___mod_bus___tx_ada605c0e9195aefd43968cfe5b347565_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___mod_bus___tx_1abc721f5c61e236df505f3447818be921"/><section>
+    <title>ReadOutCoil()</title>
+<indexterm><primary>ReadOutCoil</primary><secondary>bsp_ModBus_Tx</secondary></indexterm>
+<indexterm><primary>bsp_ModBus_Tx</primary><secondary>ReadOutCoil</secondary></indexterm>
+<para><computeroutput>void bsp_ModBus_Tx::ReadOutCoil (<link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> address, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> mem)</computeroutput></para><para>
+
+<para>发送读输出线圈的指令 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>address</entry><entry>
+<para>读取的地址 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>mem</entry><entry>
+<para>读取的个数 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>无返回值 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___mod_bus_8cpp_source">bsp_ModBus.cpp</link> 第 <link linkend="_bsp___mod_bus_8cpp_source_1l00175">175</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___mod_bus___tx_abc721f5c61e236df505f3447818be921_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___mod_bus___tx_1ac017f6145ba6f87c69a16510f868dcc2"/><section>
+    <title>Transmit()</title>
+<indexterm><primary>Transmit</primary><secondary>bsp_ModBus_Tx</secondary></indexterm>
+<indexterm><primary>bsp_ModBus_Tx</primary><secondary>Transmit</secondary></indexterm>
+<para><computeroutput>virtual void bsp_ModBus_Tx::Transmit (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> * dat, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> len)<computeroutput>[protected]</computeroutput>, <computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+在 <link linkend="_classbsp___mod_bus___s_t_m32_1a3dda1f4a2a120c6a4482ff6d9d82f4e8">bsp_ModBus_STM32</link> 内被实现.</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___mod_bus___tx_ac017f6145ba6f87c69a16510f868dcc2_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___mod_bus___tx_1a630ac7566fe9d1773baa813802202d0f"/><section>
+    <title>WriteCoils()</title>
+<indexterm><primary>WriteCoils</primary><secondary>bsp_ModBus_Tx</secondary></indexterm>
+<indexterm><primary>bsp_ModBus_Tx</primary><secondary>WriteCoils</secondary></indexterm>
+<para><computeroutput>void bsp_ModBus_Tx::WriteCoils (<link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> address, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> mem, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> * var)</computeroutput></para><para>
+
+<para>发送写多个线圈的指令 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>address</entry><entry>
+<para>写入的地址 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>mem</entry><entry>
+<para>写入的个数 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>*var</entry><entry>
+<para>待写入数据的缓冲区 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>无返回值 </para>
+</formalpara>
+<note><title>注解</title>
+
+<para>简单通信建议使用WriteCoilsVar </para>
+</note>
+</para>
+<para>
+在文件 <link linkend="_bsp___mod_bus_8cpp_source">bsp_ModBus.cpp</link> 第 <link linkend="_bsp___mod_bus_8cpp_source_1l00240">240</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___mod_bus___tx_a630ac7566fe9d1773baa813802202d0f_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___mod_bus___tx_1a280c5d7c99196a11b5fee7b34421a8ff"/><section>
+    <title>WriteCoilsVar()</title>
+<indexterm><primary>WriteCoilsVar</primary><secondary>bsp_ModBus_Tx</secondary></indexterm>
+<indexterm><primary>bsp_ModBus_Tx</primary><secondary>WriteCoilsVar</secondary></indexterm>
+<para><computeroutput>void bsp_ModBus_Tx::WriteCoilsVar (<link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> address, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> mem,  ...)</computeroutput></para><para>
+
+<para>发送写多个线圈的指令 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>address</entry><entry>
+<para>写入的地址 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>mem</entry><entry>
+<para>写入的个数 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>var</entry><entry>
+<para>写入的数据 根据mem的数量决定此处数量 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>无返回值 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___mod_bus_8cpp_source">bsp_ModBus.cpp</link> 第 <link linkend="_bsp___mod_bus_8cpp_source_1l00268">268</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___mod_bus___tx_a280c5d7c99196a11b5fee7b34421a8ff_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___mod_bus___tx_1aa8d37cc0cefaad8f41bc1d195a326d95"/><section>
+    <title>WriteOneCoil()</title>
+<indexterm><primary>WriteOneCoil</primary><secondary>bsp_ModBus_Tx</secondary></indexterm>
+<indexterm><primary>bsp_ModBus_Tx</primary><secondary>WriteOneCoil</secondary></indexterm>
+<para><computeroutput>void bsp_ModBus_Tx::WriteOneCoil (<link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> address, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> state)</computeroutput></para><para>
+
+<para>发送写入一个线圈的指令 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>address</entry><entry>
+<para>写入的地址 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>state</entry><entry>
+<para>写入的状态 0:复位 其他:置位 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>无返回值 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___mod_bus_8cpp_source">bsp_ModBus.cpp</link> 第 <link linkend="_bsp___mod_bus_8cpp_source_1l00217">217</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___mod_bus___tx_aa8d37cc0cefaad8f41bc1d195a326d95_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___mod_bus___tx_1a02ea1680f5c361f2cf4ebcb48b565281"/><section>
+    <title>WriteOneReg()</title>
+<indexterm><primary>WriteOneReg</primary><secondary>bsp_ModBus_Tx</secondary></indexterm>
+<indexterm><primary>bsp_ModBus_Tx</primary><secondary>WriteOneReg</secondary></indexterm>
+<para><computeroutput>void bsp_ModBus_Tx::WriteOneReg (<link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> address, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> var)</computeroutput></para><para>
+
+<para>发送写一个寄存器的指令 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>address</entry><entry>
+<para>写入的地址 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>var</entry><entry>
+<para>写入的值 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>无返回值 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___mod_bus_8cpp_source">bsp_ModBus.cpp</link> 第 <link linkend="_bsp___mod_bus_8cpp_source_1l00090">90</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___mod_bus___tx_a02ea1680f5c361f2cf4ebcb48b565281_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___mod_bus___tx_1a268c136782f8146662f33878522c270c"/><section>
+    <title>WriteRegs()</title>
+<indexterm><primary>WriteRegs</primary><secondary>bsp_ModBus_Tx</secondary></indexterm>
+<indexterm><primary>bsp_ModBus_Tx</primary><secondary>WriteRegs</secondary></indexterm>
+<para><computeroutput>void bsp_ModBus_Tx::WriteRegs (<link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> address, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> mem, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> * var)</computeroutput></para><para>
+
+<para>发送写多个寄存器的指令 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>address</entry><entry>
+<para>写入的地址 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>mem</entry><entry>
+<para>写入的个数 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>*var</entry><entry>
+<para>待写入数据的缓冲区 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>无返回值 </para>
+</formalpara>
+<note><title>注解</title>
+
+<para>简单通信建议使用WriteRegsVar </para>
+</note>
+</para>
+<para>
+在文件 <link linkend="_bsp___mod_bus_8cpp_source">bsp_ModBus.cpp</link> 第 <link linkend="_bsp___mod_bus_8cpp_source_1l00112">112</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___mod_bus___tx_a268c136782f8146662f33878522c270c_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___mod_bus___tx_1acc267977d61716e25fd3e3ec57bc2960"/><section>
+    <title>WriteRegsVar()</title>
+<indexterm><primary>WriteRegsVar</primary><secondary>bsp_ModBus_Tx</secondary></indexterm>
+<indexterm><primary>bsp_ModBus_Tx</primary><secondary>WriteRegsVar</secondary></indexterm>
+<para><computeroutput>void bsp_ModBus_Tx::WriteRegsVar (<link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> address, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> mem,  ...)</computeroutput></para><para>
+
+<para>发送写多个寄存器的指令 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>address</entry><entry>
+<para>写入的地址 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>mem</entry><entry>
+<para>写入的个数 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>var</entry><entry>
+<para>写入的数据 根据mem的数量决定此处数量 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>无返回值 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___mod_bus_8cpp_source">bsp_ModBus.cpp</link> 第 <link linkend="_bsp___mod_bus_8cpp_source_1l00142">142</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___mod_bus___tx_acc267977d61716e25fd3e3ec57bc2960_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4"/><section>
+    <title>ID</title>
+<indexterm><primary>ID</primary><secondary>bsp_ModBus_Tx</secondary></indexterm>
+<indexterm><primary>bsp_ModBus_Tx</primary><secondary>ID</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> bsp_ModBus_Tx::ID<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+
+<para>器件ID </para>
+</para>
+<para>
+在文件 <link linkend="_bsp___mod_bus_8h_source">bsp_ModBus.h</link> 第 <link linkend="_bsp___mod_bus_8h_source_1l00076">76</link> 行定义.</para>
+</section>
+<para>
+该类的文档由以下文件生成:</para>
+D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp___mod_bus_8h">bsp_ModBus.h</link>D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp___mod_bus_8cpp">bsp_ModBus.cpp</link></section>
+</section>

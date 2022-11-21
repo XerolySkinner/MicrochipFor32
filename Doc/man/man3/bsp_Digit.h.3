@@ -1,0 +1,81 @@
+.TH "D:/gitt/MicrochipFor32/bsp_Device/bsp_Digit.h" 3 "2022年 十一月 22日 星期二" "Version 2.0.0" "MF32BSP_XerolySkinner" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+D:/gitt/MicrochipFor32/bsp_Device/bsp_Digit.h \- 数码管显示类  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'varint\&.h'\fP
+.br
+\fC#include 'gpio\&.h'\fP
+.br
+
+.SS "类"
+
+.in +1c
+.ti -1c
+.RI "class \fBbsp_Digit\fP"
+.br
+.RI "一个面向数码管的类,使用级联的HC595 "
+.in -1c
+.SS "枚举"
+
+.in +1c
+.ti -1c
+.RI "enum { \fBanode\fP, \fBcathode\fP }"
+.br
+.RI "数码管的共阳极或共阴极选择 "
+.in -1c
+.SS "变量"
+
+.in +1c
+.ti -1c
+.RI "static const \fBu8\fP \fBdigit_ca\fP []"
+.br
+.RI "共阳极数码管的段码表,共阴极由此反相得到 "
+.in -1c
+.SH "详细描述"
+.PP 
+数码管显示类 
+
+
+.PP
+在文件 \fBbsp_Digit\&.h\fP 中定义\&.
+.SH "枚举类型说明"
+.PP 
+.SS "anonymous enum"
+
+.PP
+数码管的共阳极或共阴极选择 
+.PP
+\fB枚举值\fP
+.in +1c
+.TP
+\fB\fIanode \fP\fP
+共阳极 
+.TP
+\fB\fIcathode \fP\fP
+共阴极 
+.PP
+在文件 \fBbsp_Digit\&.h\fP 第 \fB46\fP 行定义\&.
+.SH "变量说明"
+.PP 
+.SS "const \fBu8\fP digit_ca[]\fC [static]\fP"
+\fB初始值:\fP
+.PP
+.nf
+= {      
+    0xc0,0xf9,0xa4,0xb0,
+    0x99,0x92,0x82,0xf8,
+    0x80,0x90,0x88,0x83,
+    0xc6,0xa1,0x86,0x8e}
+.fi
+.PP
+共阳极数码管的段码表,共阴极由此反相得到 
+.PP
+在文件 \fBbsp_Digit\&.h\fP 第 \fB56\fP 行定义\&.
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 MF32BSP_XerolySkinner 的 源代码自动生成\&.

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structchip__cfg__s" xml:lang="zh">
+<title>chip_cfg_s结构体 参考</title>
+<indexterm><primary>chip_cfg_s</primary></indexterm>
+chip_cfg_s 的协作图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="structchip__cfg__s__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public 属性    </title>
+        <itemizedlist>
+            <listitem><para>unsigned char <link linkend="_group___d_r_i_v_e_r_s_1gab45a727aeee17380828a3e20ccb375c2">gyro_fsr</link></para>
+</listitem>
+            <listitem><para>unsigned char <link linkend="_group___d_r_i_v_e_r_s_1gaf66873be1446ed552812e32d40eced61">accel_fsr</link></para>
+</listitem>
+            <listitem><para>unsigned char <link linkend="_group___d_r_i_v_e_r_s_1gaa996fc14aa630e53823462baf460c13f">sensors</link></para>
+</listitem>
+            <listitem><para>unsigned char <link linkend="_group___d_r_i_v_e_r_s_1ga16ec8ca8298f62ac01419775377270fb">lpf</link></para>
+</listitem>
+            <listitem><para>unsigned char <link linkend="_group___d_r_i_v_e_r_s_1gab7bd5165d6e62cb0d814cf3401958445">clk_src</link></para>
+</listitem>
+            <listitem><para>unsigned short <link linkend="_group___d_r_i_v_e_r_s_1ga2660470fcf7b53e2e832a397cbe6c354">sample_rate</link></para>
+</listitem>
+            <listitem><para>unsigned char <link linkend="_group___d_r_i_v_e_r_s_1ga88143c31b894bcd819c0e49b0ff267aa">fifo_enable</link></para>
+</listitem>
+            <listitem><para>unsigned char <link linkend="_group___d_r_i_v_e_r_s_1gaa366c36057f31e6e0d4cf2ca4a1ef52f">int_enable</link></para>
+</listitem>
+            <listitem><para>unsigned char <link linkend="_group___d_r_i_v_e_r_s_1ga6d3a962d6435644c7ea68e7d65934636">bypass_mode</link></para>
+</listitem>
+            <listitem><para>unsigned char <link linkend="_group___d_r_i_v_e_r_s_1gab72e3cead391dee41f28e041282d743f">accel_half</link></para>
+</listitem>
+            <listitem><para>unsigned char <link linkend="_group___d_r_i_v_e_r_s_1ga33e138d8a49744eb9b4ea0e9086cef1c">lp_accel_mode</link></para>
+</listitem>
+            <listitem><para>unsigned char <link linkend="_group___d_r_i_v_e_r_s_1ga279cd5d5d78890357f2d42905d7471df">int_motion_only</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmotion__int__cache__s">motion_int_cache_s</link> <link linkend="_group___d_r_i_v_e_r_s_1gadf3b491a068e0225a080821516353bac">cache</link></para>
+</listitem>
+            <listitem><para>unsigned char <link linkend="_group___d_r_i_v_e_r_s_1ga6f12e54ae8c7f2dd77954f3ab619bbb9">active_low_int</link></para>
+</listitem>
+            <listitem><para>unsigned char <link linkend="_group___d_r_i_v_e_r_s_1ga55ce40fc460a62829ec149edaccffe7c">latched_int</link></para>
+</listitem>
+            <listitem><para>unsigned char <link linkend="_group___d_r_i_v_e_r_s_1ga4783ed8aa79a3b5de798963819997c38">dmp_on</link></para>
+</listitem>
+            <listitem><para>unsigned char <link linkend="_group___d_r_i_v_e_r_s_1ga1d2ff55e17aae1459dfad61d76054b1b">dmp_loaded</link></para>
+</listitem>
+            <listitem><para>unsigned short <link linkend="_group___d_r_i_v_e_r_s_1ga5f42b7e1e740f2fb64427417e9e2dab7">dmp_sample_rate</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+<para>
+在文件 <link linkend="_inv__mpu_8c_source">inv_mpu.c</link> 第 <link linkend="_inv__mpu_8c_source_1l00234">234</link> 行定义.</para>
+<para>
+该结构体的文档由以下文件生成:</para>
+D:/gitt/MicrochipFor32/bsp_MPU6050/<link linkend="_inv__mpu_8c">inv_mpu.c</link></section>
+</section>

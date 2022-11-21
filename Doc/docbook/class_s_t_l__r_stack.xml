@@ -1,0 +1,458 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_s_t_l__r_stack" xml:lang="zh">
+<title>STL_rStack类 参考</title>
+<indexterm><primary>STL_rStack</primary></indexterm>
+<para>
+
+<para>一个栈的类 </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;STL_Stack.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_s_t_l__r_stack_1a55a54a57fe2f6625ef6b995f2d95e026">STL_rStack</link> (void)</para>
+</listitem>
+            <listitem><para><link linkend="_class_s_t_l__r_stack_1aed992153d5efc1cd3007863c8c08797c">~STL_rStack</link> (void)</para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_class_s_t_l__r_stack_1a153de2f05c0e0164ad68fb09130bf475">push</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> var)</para>
+
+<para>压入一个成员 </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_class_s_t_l__r_stack_1a5c7016a370c7665d554dda4b8f7dee22">pop</link> (void)</para>
+
+<para>弹出一个成员 </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_class_s_t_l__r_stack_1a49d2ca43dafd695e4e0d92018736f732">top</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> &amp;var)</para>
+
+<para>显示最后压入的数值 </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> <link linkend="_class_s_t_l__r_stack_1ac63cd564c04e4481925ead650dfb2edf">The_size</link> (void)</para>
+
+<para>返回成员数量 </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> <link linkend="_class_s_t_l__r_stack_1a22c1e309f6476f31f1e5c313b01afd13">The_room</link> (void)</para>
+
+<para>返回占用的内存数 </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_class_s_t_l__r_stack_1a843cc47e7a2c281dd82392c8ed257dc1">clean</link> (void)</para>
+
+<para>将申请的空间比对所需空间,腾出冗余空间 </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_class_s_t_l__r_stack_1a31fd424472fcf069ec2cbcb50ab34ed1">poptop</link> (void)</para>
+
+<para>弹出并且返回一个成员 </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_class_s_t_l__r_stack_1a8a72b28e3a7faa2aae9272d90032d5a5">push32</link> (<link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> var)</para>
+
+<para>压入一个32位成员 </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> <link linkend="_class_s_t_l__r_stack_1ad64450c2168e2551ed8fad637a8b9c99">poptop32</link> (void)</para>
+
+<para>弹出并且返回一个32位成员 </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_s_t_l__r_stack_1a4287e70b3adaf5e2a3a941299a085b09">pushfun</link> (void(*fun)(void))</para>
+
+<para>压入一个void(*)void函数 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public 属性    </title>
+        <itemizedlist>
+            <listitem><para>void(*)(void) <link linkend="_class_s_t_l__r_stack_1a4d702aae14e43421c0818dba3b8c99a1">poptopfun</link> (void)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 属性    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> <link linkend="_class_s_t_l__r_stack_1a857415d9ae151b6acd395760b2e9cedf">room</link></para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> <link linkend="_class_s_t_l__r_stack_1adf95fc53b74c9955a648f3500ae1e746">size</link></para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> * <link linkend="_class_s_t_l__r_stack_1a2ff878cef1cc42db3c31812e654c8674">dat</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>一个栈的类 </para>
+
+
+
+<para><note><title>注解</title>
+
+<para>使用realloc重新分配方式组织 栈的内存空间的连续的,适合小数据常规速度交换数据 </para>
+</note>
+</para>
+<para>
+在文件 <link linkend="__s_t_l___stack_8h_source">STL_Stack.h</link> 第 <link linkend="__s_t_l___stack_8h_source_1l00059">59</link> 行定义.</para>
+</section>
+<section>
+<title>构造及析构函数说明</title>
+<anchor xml:id="_class_s_t_l__r_stack_1a55a54a57fe2f6625ef6b995f2d95e026"/><section>
+    <title>STL_rStack()</title>
+<indexterm><primary>STL_rStack</primary><secondary>STL_rStack</secondary></indexterm>
+<indexterm><primary>STL_rStack</primary><secondary>STL_rStack</secondary></indexterm>
+<para><computeroutput>STL_rStack::STL_rStack (void )</computeroutput></para><para>
+在文件 <link linkend="__s_t_l___stack_8cpp_source">STL_Stack.cpp</link> 第 <link linkend="__s_t_l___stack_8cpp_source_1l00041">41</link> 行定义.</para>
+</section>
+<anchor xml:id="_class_s_t_l__r_stack_1aed992153d5efc1cd3007863c8c08797c"/><section>
+    <title>~STL_rStack()</title>
+<indexterm><primary>~STL_rStack</primary><secondary>STL_rStack</secondary></indexterm>
+<indexterm><primary>STL_rStack</primary><secondary>~STL_rStack</secondary></indexterm>
+<para><computeroutput>STL_rStack::~STL_rStack (void )</computeroutput></para><para>
+在文件 <link linkend="__s_t_l___stack_8cpp_source">STL_Stack.cpp</link> 第 <link linkend="__s_t_l___stack_8cpp_source_1l00046">46</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_class_s_t_l__r_stack_1a843cc47e7a2c281dd82392c8ed257dc1"/><section>
+    <title>clean()</title>
+<indexterm><primary>clean</primary><secondary>STL_rStack</secondary></indexterm>
+<indexterm><primary>STL_rStack</primary><secondary>clean</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> STL_rStack::clean (void )</computeroutput></para><para>
+
+<para>将申请的空间比对所需空间,腾出冗余空间 </para>
+</para>
+
+<para><formalpara><title>返回</title>
+
+<para>错误号 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="__s_t_l___stack_8cpp_source">STL_Stack.cpp</link> 第 <link linkend="__s_t_l___stack_8cpp_source_1l00125">125</link> 行定义.</para>
+</section>
+<anchor xml:id="_class_s_t_l__r_stack_1a5c7016a370c7665d554dda4b8f7dee22"/><section>
+    <title>pop()</title>
+<indexterm><primary>pop</primary><secondary>STL_rStack</secondary></indexterm>
+<indexterm><primary>STL_rStack</primary><secondary>pop</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> STL_rStack::pop (void )</computeroutput></para><para>
+
+<para>弹出一个成员 </para>
+</para>
+
+<para><formalpara><title>返回</title>
+
+<para>错误号 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="__s_t_l___stack_8cpp_source">STL_Stack.cpp</link> 第 <link linkend="__s_t_l___stack_8cpp_source_1l00083">83</link> 行定义.</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_s_t_l__r_stack_a5c7016a370c7665d554dda4b8f7dee22_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_s_t_l__r_stack_1a31fd424472fcf069ec2cbcb50ab34ed1"/><section>
+    <title>poptop()</title>
+<indexterm><primary>poptop</primary><secondary>STL_rStack</secondary></indexterm>
+<indexterm><primary>STL_rStack</primary><secondary>poptop</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> STL_rStack::poptop (void )</computeroutput></para><para>
+
+<para>弹出并且返回一个成员 </para>
+</para>
+
+<para><formalpara><title>返回</title>
+
+<para>弹出的成员值 </para>
+</formalpara>
+<note><title>注解</title>
+
+<para>该函数不会检查成功与否 </para>
+</note>
+</para>
+<para>
+在文件 <link linkend="__s_t_l___stack_8cpp_source">STL_Stack.cpp</link> 第 <link linkend="__s_t_l___stack_8cpp_source_1l00164">164</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_s_t_l__r_stack_a31fd424472fcf069ec2cbcb50ab34ed1_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_s_t_l__r_stack_1ad64450c2168e2551ed8fad637a8b9c99"/><section>
+    <title>poptop32()</title>
+<indexterm><primary>poptop32</primary><secondary>STL_rStack</secondary></indexterm>
+<indexterm><primary>STL_rStack</primary><secondary>poptop32</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> STL_rStack::poptop32 (void )</computeroutput></para><para>
+
+<para>弹出并且返回一个32位成员 </para>
+</para>
+
+<para><formalpara><title>返回</title>
+
+<para>弹出的成员值 </para>
+</formalpara>
+<note><title>注解</title>
+
+<para>该函数不会检查成功与否 </para>
+</note>
+</para>
+<para>
+在文件 <link linkend="__s_t_l___stack_8cpp_source">STL_Stack.cpp</link> 第 <link linkend="__s_t_l___stack_8cpp_source_1l00174">174</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_s_t_l__r_stack_ad64450c2168e2551ed8fad637a8b9c99_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_s_t_l__r_stack_1a153de2f05c0e0164ad68fb09130bf475"/><section>
+    <title>push()</title>
+<indexterm><primary>push</primary><secondary>STL_rStack</secondary></indexterm>
+<indexterm><primary>STL_rStack</primary><secondary>push</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> STL_rStack::push (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> var)</computeroutput></para><para>
+
+<para>压入一个成员 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>var</entry><entry>
+<para>需要压入的数值 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>错误号 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="__s_t_l___stack_8cpp_source">STL_Stack.cpp</link> 第 <link linkend="__s_t_l___stack_8cpp_source_1l00056">56</link> 行定义.</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_s_t_l__r_stack_a153de2f05c0e0164ad68fb09130bf475_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_s_t_l__r_stack_1a8a72b28e3a7faa2aae9272d90032d5a5"/><section>
+    <title>push32()</title>
+<indexterm><primary>push32</primary><secondary>STL_rStack</secondary></indexterm>
+<indexterm><primary>STL_rStack</primary><secondary>push32</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> STL_rStack::push32 (<link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> var)</computeroutput></para><para>
+
+<para>压入一个32位成员 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>var</entry><entry>
+<para>需要压入的数值 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>错误号 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="__s_t_l___stack_8cpp_source">STL_Stack.cpp</link> 第 <link linkend="__s_t_l___stack_8cpp_source_1l00152">152</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_s_t_l__r_stack_a8a72b28e3a7faa2aae9272d90032d5a5_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_s_t_l__r_stack_a8a72b28e3a7faa2aae9272d90032d5a5_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_s_t_l__r_stack_1a4287e70b3adaf5e2a3a941299a085b09"/><section>
+    <title>pushfun()</title>
+<indexterm><primary>pushfun</primary><secondary>STL_rStack</secondary></indexterm>
+<indexterm><primary>STL_rStack</primary><secondary>pushfun</secondary></indexterm>
+<para><computeroutput>void STL_rStack::pushfun (void(*)(void) fun)</computeroutput></para><para>
+
+<para>压入一个void(*)void函数 </para>
+</para>
+
+<para><note><title>注解</title>
+
+<para>该函数不会检查成功与否 </para>
+</note>
+</para>
+<para>
+在文件 <link linkend="__s_t_l___stack_8cpp_source">STL_Stack.cpp</link> 第 <link linkend="__s_t_l___stack_8cpp_source_1l00194">194</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_s_t_l__r_stack_a4287e70b3adaf5e2a3a941299a085b09_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_s_t_l__r_stack_1a22c1e309f6476f31f1e5c313b01afd13"/><section>
+    <title>The_room()</title>
+<indexterm><primary>The_room</primary><secondary>STL_rStack</secondary></indexterm>
+<indexterm><primary>STL_rStack</primary><secondary>The_room</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> STL_rStack::The_room (void )</computeroutput></para><para>
+
+<para>返回占用的内存数 </para>
+</para>
+
+<para><formalpara><title>返回</title>
+
+<para>内存数,u8类型 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="__s_t_l___stack_8cpp_source">STL_Stack.cpp</link> 第 <link linkend="__s_t_l___stack_8cpp_source_1l00118">118</link> 行定义.</para>
+</section>
+<anchor xml:id="_class_s_t_l__r_stack_1ac63cd564c04e4481925ead650dfb2edf"/><section>
+    <title>The_size()</title>
+<indexterm><primary>The_size</primary><secondary>STL_rStack</secondary></indexterm>
+<indexterm><primary>STL_rStack</primary><secondary>The_size</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> STL_rStack::The_size (void )</computeroutput></para><para>
+
+<para>返回成员数量 </para>
+</para>
+
+<para><formalpara><title>返回</title>
+
+<para>成员数量,为u8类型,如u32将占4个元素 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="__s_t_l___stack_8cpp_source">STL_Stack.cpp</link> 第 <link linkend="__s_t_l___stack_8cpp_source_1l00111">111</link> 行定义.</para>
+</section>
+<anchor xml:id="_class_s_t_l__r_stack_1a49d2ca43dafd695e4e0d92018736f732"/><section>
+    <title>top()</title>
+<indexterm><primary>top</primary><secondary>STL_rStack</secondary></indexterm>
+<indexterm><primary>STL_rStack</primary><secondary>top</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> STL_rStack::top (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> &amp; var)</computeroutput></para><para>
+
+<para>显示最后压入的数值 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>&amp;var</entry><entry>
+<para>最后压入数值的储存变量 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>错误号 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="__s_t_l___stack_8cpp_source">STL_Stack.cpp</link> 第 <link linkend="__s_t_l___stack_8cpp_source_1l00101">101</link> 行定义.</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_s_t_l__r_stack_a49d2ca43dafd695e4e0d92018736f732_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_class_s_t_l__r_stack_1a2ff878cef1cc42db3c31812e654c8674"/><section>
+    <title>dat</title>
+<indexterm><primary>dat</primary><secondary>STL_rStack</secondary></indexterm>
+<indexterm><primary>STL_rStack</primary><secondary>dat</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link>* STL_rStack::dat<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="__s_t_l___stack_8h_source">STL_Stack.h</link> 第 <link linkend="__s_t_l___stack_8h_source_1l00082">82</link> 行定义.</para>
+</section>
+<anchor xml:id="_class_s_t_l__r_stack_1a4d702aae14e43421c0818dba3b8c99a1"/><section>
+    <title>poptopfun</title>
+<indexterm><primary>poptopfun</primary><secondary>STL_rStack</secondary></indexterm>
+<indexterm><primary>STL_rStack</primary><secondary>poptopfun</secondary></indexterm>
+<para><computeroutput>void(*)(void) STL_rStack::poptopfun(void)</computeroutput></para><para>
+在文件 <link linkend="__s_t_l___stack_8h_source">STL_Stack.h</link> 第 <link linkend="__s_t_l___stack_8h_source_1l00078">78</link> 行定义.</para>
+</section>
+<anchor xml:id="_class_s_t_l__r_stack_1a857415d9ae151b6acd395760b2e9cedf"/><section>
+    <title>room</title>
+<indexterm><primary>room</primary><secondary>STL_rStack</secondary></indexterm>
+<indexterm><primary>STL_rStack</primary><secondary>room</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> STL_rStack::room<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="__s_t_l___stack_8h_source">STL_Stack.h</link> 第 <link linkend="__s_t_l___stack_8h_source_1l00080">80</link> 行定义.</para>
+</section>
+<anchor xml:id="_class_s_t_l__r_stack_1adf95fc53b74c9955a648f3500ae1e746"/><section>
+    <title>size</title>
+<indexterm><primary>size</primary><secondary>STL_rStack</secondary></indexterm>
+<indexterm><primary>STL_rStack</primary><secondary>size</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> STL_rStack::size<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="__s_t_l___stack_8h_source">STL_Stack.h</link> 第 <link linkend="__s_t_l___stack_8h_source_1l00081">81</link> 行定义.</para>
+</section>
+<para>
+该类的文档由以下文件生成:</para>
+D:/gitt/MicrochipFor32/STL_Device/<link linkend="__s_t_l___stack_8h">STL_Stack.h</link>D:/gitt/MicrochipFor32/STL_Device/<link linkend="__s_t_l___stack_8cpp">STL_Stack.cpp</link></section>
+</section>

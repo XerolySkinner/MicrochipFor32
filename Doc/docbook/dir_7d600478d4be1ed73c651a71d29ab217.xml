@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_7d600478d4be1ed73c651a71d29ab217" xml:lang="zh">
+<title>D:/gitt/MicrochipFor32/bsp_Device 目录参考</title>
+<indexterm><primary>D:/gitt/MicrochipFor32/bsp_Device 目录参考</primary></indexterm>
+<simplesect>
+    <title>文件    </title>
+        <itemizedlist>
+            <listitem><para>文件 <link linkend="_bsp___a_t24_c00_8cpp">bsp_AT24C00.cpp</link></para>
+
+<para>本类实现AT24C00的通讯 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___a_t24_c00_8h">bsp_AT24C00.h</link></para>
+
+<para>本类实现AT24C00的通讯 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___c_r_c_8cpp">bsp_CRC.cpp</link></para>
+
+<para>CRC16校验 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___c_r_c_8h">bsp_CRC.h</link></para>
+
+<para>CRC16校验 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___digit_8cpp">bsp_Digit.cpp</link></para>
+
+<para>数码管显示类 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___digit_8h">bsp_Digit.h</link></para>
+
+<para>数码管显示类 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___i_i_c_8cpp">bsp_IIC.cpp</link></para>
+
+<para>本类实现软件IIC功能 依此类派生出其他软件IIC功能 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___i_i_c_8h">bsp_IIC.h</link></para>
+
+<para>本类实现软件IIC功能 依此类派生出其他软件IIC功能 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___i_i_c___s_t_m32_8cpp">bsp_IIC_STM32.cpp</link></para>
+
+<para>实现针对STM32的软件IIC类 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___i_i_c___s_t_m32_8h">bsp_IIC_STM32.h</link></para>
+
+<para>实现针对STM32的软件IIC类 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___m_a_x6675_8cpp">bsp_MAX6675.cpp</link></para>
+
+<para>实现了MAX6675的驱动 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___m_a_x6675_8h">bsp_MAX6675.h</link></para>
+
+<para>实现了MAX6675的驱动 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___mod_bus_8cpp">bsp_ModBus.cpp</link></para>
+
+<para>ModBus通信函数 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___mod_bus_8h">bsp_ModBus.h</link></para>
+
+<para>ModBus通信函数 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___mod_bus___s_t_m32_8cpp">bsp_ModBus_STM32.cpp</link></para>
+
+<para>ModBus通信基于STM32 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___mod_bus___s_t_m32_8h">bsp_ModBus_STM32.h</link></para>
+
+<para>ModBus通信基于STM32 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___o_l_e_d___s_t_m32_8cpp">bsp_OLED_STM32.cpp</link></para>
+
+<para>在STM32下实现OLED通信 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___o_l_e_d___s_t_m32_8h">bsp_OLED_STM32.h</link></para>
+
+<para>在STM32下实现OLED通信 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___p_i_d_8cpp">bsp_PID.cpp</link></para>
+
+<para>实现了PID算法 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___p_i_d_8h">bsp_PID.h</link></para>
+
+<para>实现了PID算法 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_varint_8h">varint.h</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

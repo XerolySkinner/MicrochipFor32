@@ -1,0 +1,84 @@
+.TH "D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h" 3 "2022年 十一月 22日 星期二" "Version 2.0.0" "MF32BSP_XerolySkinner" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h \- 实现了STL库中的Stack  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'varint\&.h'\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+
+.SS "类"
+
+.in +1c
+.ti -1c
+.RI "class \fBSTL_rStack\fP"
+.br
+.RI "一个栈的类 "
+.ti -1c
+.RI "struct \fB_lStack\fP"
+.br
+.RI "链表方式栈的节点 "
+.ti -1c
+.RI "class \fBSTL_lStack\fP"
+.br
+.RI "一个栈的类 "
+.in -1c
+.SS "类型定义"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fB_lStacks\fP \fB_lStacks\fP"
+.br
+.in -1c
+.SS "枚举"
+
+.in +1c
+.ti -1c
+.RI "enum \fBSTACKS_RES\fP { \fBSTACKS_OK\fP, \fBSTACKS_EMPTY\fP, \fBSTACKS_REAL_ERROR\fP, \fBSTACKS_MALL_ERROR\fP }"
+.br
+.RI "栈的返回值 "
+.in -1c
+.SH "详细描述"
+.PP 
+实现了STL库中的Stack 
+
+
+.PP
+在文件 \fBSTL_Stack\&.h\fP 中定义\&.
+.SH "类型定义说明"
+.PP 
+.SS "typedef struct \fB_lStacks\fP \fB_lStacks\fP"
+
+.PP
+在文件 \fBSTL_Stack\&.h\fP 第 \fB93\fP 行定义\&.
+.SH "枚举类型说明"
+.PP 
+.SS "enum \fBSTACKS_RES\fP"
+
+.PP
+栈的返回值 
+.PP
+\fB枚举值\fP
+.in +1c
+.TP
+\fB\fISTACKS_OK \fP\fP
+成功 
+.TP
+\fB\fISTACKS_EMPTY \fP\fP
+栈是空的 
+.TP
+\fB\fISTACKS_REAL_ERROR \fP\fP
+重分配出错realloc 
+.TP
+\fB\fISTACKS_MALL_ERROR \fP\fP
+重分配出错malloc 
+.PP
+在文件 \fBSTL_Stack\&.h\fP 第 \fB45\fP 行定义\&.
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 MF32BSP_XerolySkinner 的 源代码自动生成\&.

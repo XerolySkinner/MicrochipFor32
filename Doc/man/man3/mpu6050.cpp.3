@@ -1,0 +1,316 @@
+.TH "D:/gitt/MicrochipFor32/bsp_MPU6050/mpu6050.cpp" 3 "2022年 十一月 22日 星期二" "Version 2.0.0" "MF32BSP_XerolySkinner" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+D:/gitt/MicrochipFor32/bsp_MPU6050/mpu6050.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'bscpp_IIC_STM32\&.h'\fP
+.br
+\fC#include 'mpu6050\&.h'\fP
+.br
+
+.SS "宏定义"
+
+.in +1c
+.ti -1c
+.RI "#define \fBdelay_ms\fP(var)   HAL_Delay(var)"
+.br
+.in -1c
+.SS "函数"
+
+.in +1c
+.ti -1c
+.RI "bscpp_IIC_STM32 \fBmpu6050IIC\fP (IIC_SCK_GPIO_Port, IIC_SCK_Pin, IIC_SDA_GPIO_Port, IIC_SDA_Pin)"
+.br
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Init\fP (void)"
+.br
+.RI "初始化MPU6050 "
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Set_Gyro_Fsr\fP (\fBu8\fP fsr)"
+.br
+.RI "设置MPU6050陀螺仪传感器满量程范围 "
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Set_Accel_Fsr\fP (\fBu8\fP fsr)"
+.br
+.RI "设置MPU6050加速度传感器满量程范围 "
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Set_LPF\fP (\fBu16\fP lpf)"
+.br
+.RI "设置MPU6050的数字低通滤波器 "
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Set_Rate\fP (\fBu16\fP rate)"
+.br
+.RI "设置MPU6050的采样率(假定Fs=1KHz) "
+.ti -1c
+.RI "short \fBMPU_Get_Temperature\fP (void)"
+.br
+.RI "得到温度值 "
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Get_Gyroscope\fP (short *gx, short *gy, short *gz)"
+.br
+.RI "得到陀螺仪值(原始值) "
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Get_Accelerometer\fP (short *ax, short *ay, short *az)"
+.br
+.RI "得到加速度值(原始值) "
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Write_Len\fP (\fBu8\fP addr, \fBu8\fP reg, \fBu8\fP len, \fBu8\fP *buf)"
+.br
+.RI "IIC连续写 "
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Read_Len\fP (\fBu8\fP addr, \fBu8\fP reg, \fBu8\fP len, \fBu8\fP *buf)"
+.br
+.RI "IIC连续读 "
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Write_Byte\fP (\fBu8\fP reg, \fBu8\fP data)"
+.br
+.RI "IIC写一个字节 "
+.ti -1c
+.RI "\fBu8\fP \fBMPU_Read_Byte\fP (\fBu8\fP reg)"
+.br
+.RI "IIC读一个字节 "
+.in -1c
+.SH "宏定义说明"
+.PP 
+.SS "#define delay_ms(var)   HAL_Delay(var)"
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB16\fP 行定义\&.
+.SH "函数说明"
+.PP 
+.SS "bscpp_IIC_STM32 mpu6050IIC (IIC_SCK_GPIO_Port, IIC_SCK_Pin, IIC_SDA_GPIO_Port, IIC_SDA_Pin)"
+
+.SS "\fBu8\fP MPU_Get_Accelerometer (short * ax, short * ay, short * az)"
+
+.PP
+得到加速度值(原始值) 
+.PP
+\fB参数\fP
+.RS 4
+\fIax\fP 陀螺仪a轴的原始读数(带符号) 
+.br
+\fIay\fP 陀螺仪a轴的原始读数(带符号) 
+.br
+\fIax\fP 陀螺仪a轴的原始读数(带符号) 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+0,设置成功 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB137\fP 行定义\&.
+.SS "\fBu8\fP MPU_Get_Gyroscope (short * gx, short * gy, short * gz)"
+
+.PP
+得到陀螺仪值(原始值) 
+.PP
+\fB参数\fP
+.RS 4
+\fIgx\fP 陀螺仪x轴的原始读数(带符号) 
+.br
+\fIgy\fP 陀螺仪y轴的原始读数(带符号) 
+.br
+\fIgx\fP 陀螺仪z轴的原始读数(带符号) 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+0,设置成功 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB121\fP 行定义\&.
+.SS "short MPU_Get_Temperature (void)"
+
+.PP
+得到温度值 
+.PP
+\fB返回\fP
+.RS 4
+温度值(扩大了100倍) 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB105\fP 行定义\&.
+.SS "\fBu8\fP MPU_Init (void)"
+
+.PP
+初始化MPU6050 
+.PP
+\fB返回\fP
+.RS 4
+0,成功 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB25\fP 行定义\&.
+.SS "\fBu8\fP MPU_Read_Byte (\fBu8\fP reg)"
+
+.PP
+IIC读一个字节 
+.PP
+\fB参数\fP
+.RS 4
+\fIreg\fP 寄存器地址 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+0,设置成功 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB187\fP 行定义\&.
+.SS "\fBu8\fP MPU_Read_Len (\fBu8\fP addr, \fBu8\fP reg, \fBu8\fP len, \fBu8\fP * buf)"
+
+.PP
+IIC连续读 
+.PP
+\fB参数\fP
+.RS 4
+\fIaddr\fP 器件地址 
+.br
+\fIreg\fP 寄存器地址 
+.br
+\fIlen\fP 读取长度 
+.br
+\fI*buf\fP 读取数据区 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+0,设置成功 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB168\fP 行定义\&.
+.SS "\fBu8\fP MPU_Set_Accel_Fsr (\fBu8\fP fsr)"
+
+.PP
+设置MPU6050加速度传感器满量程范围 
+.PP
+\fB参数\fP
+.RS 4
+\fIfsr\fP 0,±2g 1,±4g 2,±8g 3,±16g 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+0,设置成功 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB67\fP 行定义\&.
+.SS "\fBu8\fP MPU_Set_Gyro_Fsr (\fBu8\fP fsr)"
+
+.PP
+设置MPU6050陀螺仪传感器满量程范围 
+.PP
+\fB参数\fP
+.RS 4
+\fIfsr\fP 0,±250dps 1,±500dps 2,±1000dps 3,±2000dps 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+0,设置成功 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB55\fP 行定义\&.
+.SS "\fBu8\fP MPU_Set_LPF (\fBu16\fP lpf)"
+
+.PP
+设置MPU6050的数字低通滤波器 
+.PP
+\fB参数\fP
+.RS 4
+\fIlpf\fP 数字低通滤波频率(Hz) 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+0,设置成功 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB76\fP 行定义\&.
+.SS "\fBu8\fP MPU_Set_Rate (\fBu16\fP rate)"
+
+.PP
+设置MPU6050的采样率(假定Fs=1KHz) 
+.PP
+\fB参数\fP
+.RS 4
+\fIrate\fP 4~1000(Hz) 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+0,设置成功 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB92\fP 行定义\&.
+.SS "\fBu8\fP MPU_Write_Byte (\fBu8\fP reg, \fBu8\fP data)"
+
+.PP
+IIC写一个字节 
+.PP
+\fB参数\fP
+.RS 4
+\fIreg\fP 寄存器地址 
+.br
+\fIdata\fP 数据 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+0,设置成功 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB178\fP 行定义\&.
+.SS "\fBu8\fP MPU_Write_Len (\fBu8\fP addr, \fBu8\fP reg, \fBu8\fP len, \fBu8\fP * buf)"
+
+.PP
+IIC连续写 
+.PP
+\fB参数\fP
+.RS 4
+\fIaddr\fP 器件地址 
+.br
+\fIreg\fP 寄存器地址 
+.br
+\fIlen\fP 写入长度 
+.br
+\fI*buf\fP 数据区 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+0,设置成功 
+.RE
+.PP
+
+.PP
+在文件 \fBmpu6050\&.cpp\fP 第 \fB156\fP 行定义\&.
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 MF32BSP_XerolySkinner 的 源代码自动生成\&.

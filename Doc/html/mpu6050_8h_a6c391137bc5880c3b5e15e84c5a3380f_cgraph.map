@@ -1,0 +1,5 @@
+<map id="MPU_Set_Accel_Fsr" name="MPU_Set_Accel_Fsr">
+<area shape="rect" id="node1" title="设置MPU6050加速度传感器满量程范围" alt="" coords="5,5,149,31"/>
+<area shape="rect" id="node2" href="$mpu6050_8cpp.html#a0be9b422bb8613f8444db4af5234e1a1" title="IIC写一个字节" alt="" coords="197,5,320,31"/>
+<area shape="rect" id="node3" href="$mpu6050_8cpp.html#a0e5583807e7dcaae30835311a2195583" title=" " alt="" coords="368,5,459,31"/>
+</map>

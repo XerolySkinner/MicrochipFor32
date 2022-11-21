@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmotion__int__cache__s" xml:lang="zh">
+<title>motion_int_cache_s结构体 参考</title>
+<indexterm><primary>motion_int_cache_s</primary></indexterm>
+<simplesect>
+    <title>Public 属性    </title>
+        <itemizedlist>
+            <listitem><para>unsigned short <link linkend="_group___d_r_i_v_e_r_s_1gae9614e4c92be9fc08f2aec7f34853fbc">gyro_fsr</link></para>
+</listitem>
+            <listitem><para>unsigned char <link linkend="_group___d_r_i_v_e_r_s_1gacfb901facda5ef8a02d47726db98e58e">accel_fsr</link></para>
+</listitem>
+            <listitem><para>unsigned short <link linkend="_group___d_r_i_v_e_r_s_1gac1a1eb41631eb71481d6d247d9c67d4a">lpf</link></para>
+</listitem>
+            <listitem><para>unsigned short <link linkend="_group___d_r_i_v_e_r_s_1ga1cf6b7edfe37a51209897ccc448ec0e6">sample_rate</link></para>
+</listitem>
+            <listitem><para>unsigned char <link linkend="_group___d_r_i_v_e_r_s_1gae5416a4097b0cf39460df70094bc474d">sensors_on</link></para>
+</listitem>
+            <listitem><para>unsigned char <link linkend="_group___d_r_i_v_e_r_s_1ga41501694a84bdf70e9c660852b653273">fifo_sensors</link></para>
+</listitem>
+            <listitem><para>unsigned char <link linkend="_group___d_r_i_v_e_r_s_1ga6461e400e336d2ccbc8c7d95ace9461d">dmp_on</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+<para>
+在文件 <link linkend="_inv__mpu_8c_source">inv_mpu.c</link> 第 <link linkend="_inv__mpu_8c_source_1l00221">221</link> 行定义.</para>
+<para>
+该结构体的文档由以下文件生成:</para>
+D:/gitt/MicrochipFor32/bsp_MPU6050/<link linkend="_inv__mpu_8c">inv_mpu.c</link></section>
+</section>
