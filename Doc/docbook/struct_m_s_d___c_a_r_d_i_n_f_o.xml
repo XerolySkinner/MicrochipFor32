@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_m_s_d___c_a_r_d_i_n_f_o" xml:lang="zh">
+<title>MSD_CARDINFO结构体 参考</title>
+<indexterm><primary>MSD_CARDINFO</primary></indexterm>
+<para>
+<computeroutput>#include &lt;bsp_SD.h&gt;</computeroutput>
+</para>
+MSD_CARDINFO 的协作图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="struct_m_s_d___c_a_r_d_i_n_f_o__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public 属性    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_m_s_d___c_s_d">MSD_CSD</link> <link linkend="_struct_m_s_d___c_a_r_d_i_n_f_o_1a9893f18007a0897aa45869e703f4cc2a">CSD</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_m_s_d___c_i_d">MSD_CID</link> <link linkend="_struct_m_s_d___c_a_r_d_i_n_f_o_1ab267c45d70fa28f9ff17829fa8753509">CID</link></para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> <link linkend="_struct_m_s_d___c_a_r_d_i_n_f_o_1a4e5da8ba91229ac3ccb2d3f11f1ab4bf">Capacity</link></para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> <link linkend="_struct_m_s_d___c_a_r_d_i_n_f_o_1aadaf986217b3c403be1cc4a2fd2fd148">BlockSize</link></para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> <link linkend="_struct_m_s_d___c_a_r_d_i_n_f_o_1aee98628e11a144ac136f22aefcab744a">RCA</link></para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_struct_m_s_d___c_a_r_d_i_n_f_o_1a8f29efd96df6abb8cd6353787eebca04">CardType</link></para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> <link linkend="_struct_m_s_d___c_a_r_d_i_n_f_o_1a1c923e804e2658280f90cdbfaefe1568">SpaceTotal</link></para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> <link linkend="_struct_m_s_d___c_a_r_d_i_n_f_o_1a6d9423ab31cd74088dc7b8aadaa20e24">SpaceFree</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+<para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00149">149</link> 行定义.</para>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_struct_m_s_d___c_a_r_d_i_n_f_o_1aadaf986217b3c403be1cc4a2fd2fd148"/><section>
+    <title>BlockSize</title>
+<indexterm><primary>BlockSize</primary><secondary>MSD_CARDINFO</secondary></indexterm>
+<indexterm><primary>MSD_CARDINFO</primary><secondary>BlockSize</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> MSD_CARDINFO::BlockSize</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00153">153</link> 行定义.</para>
+</section>
+<anchor xml:id="_struct_m_s_d___c_a_r_d_i_n_f_o_1a4e5da8ba91229ac3ccb2d3f11f1ab4bf"/><section>
+    <title>Capacity</title>
+<indexterm><primary>Capacity</primary><secondary>MSD_CARDINFO</secondary></indexterm>
+<indexterm><primary>MSD_CARDINFO</primary><secondary>Capacity</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> MSD_CARDINFO::Capacity</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00152">152</link> 行定义.</para>
+</section>
+<anchor xml:id="_struct_m_s_d___c_a_r_d_i_n_f_o_1a8f29efd96df6abb8cd6353787eebca04"/><section>
+    <title>CardType</title>
+<indexterm><primary>CardType</primary><secondary>MSD_CARDINFO</secondary></indexterm>
+<indexterm><primary>MSD_CARDINFO</primary><secondary>CardType</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> MSD_CARDINFO::CardType</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00155">155</link> 行定义.</para>
+</section>
+<anchor xml:id="_struct_m_s_d___c_a_r_d_i_n_f_o_1ab267c45d70fa28f9ff17829fa8753509"/><section>
+    <title>CID</title>
+<indexterm><primary>CID</primary><secondary>MSD_CARDINFO</secondary></indexterm>
+<indexterm><primary>MSD_CARDINFO</primary><secondary>CID</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_m_s_d___c_i_d">MSD_CID</link> MSD_CARDINFO::CID</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00151">151</link> 行定义.</para>
+</section>
+<anchor xml:id="_struct_m_s_d___c_a_r_d_i_n_f_o_1a9893f18007a0897aa45869e703f4cc2a"/><section>
+    <title>CSD</title>
+<indexterm><primary>CSD</primary><secondary>MSD_CARDINFO</secondary></indexterm>
+<indexterm><primary>MSD_CARDINFO</primary><secondary>CSD</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_m_s_d___c_s_d">MSD_CSD</link> MSD_CARDINFO::CSD</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00150">150</link> 行定义.</para>
+</section>
+<anchor xml:id="_struct_m_s_d___c_a_r_d_i_n_f_o_1aee98628e11a144ac136f22aefcab744a"/><section>
+    <title>RCA</title>
+<indexterm><primary>RCA</primary><secondary>MSD_CARDINFO</secondary></indexterm>
+<indexterm><primary>MSD_CARDINFO</primary><secondary>RCA</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> MSD_CARDINFO::RCA</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00154">154</link> 行定义.</para>
+</section>
+<anchor xml:id="_struct_m_s_d___c_a_r_d_i_n_f_o_1a6d9423ab31cd74088dc7b8aadaa20e24"/><section>
+    <title>SpaceFree</title>
+<indexterm><primary>SpaceFree</primary><secondary>MSD_CARDINFO</secondary></indexterm>
+<indexterm><primary>MSD_CARDINFO</primary><secondary>SpaceFree</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> MSD_CARDINFO::SpaceFree</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00157">157</link> 行定义.</para>
+</section>
+<anchor xml:id="_struct_m_s_d___c_a_r_d_i_n_f_o_1a1c923e804e2658280f90cdbfaefe1568"/><section>
+    <title>SpaceTotal</title>
+<indexterm><primary>SpaceTotal</primary><secondary>MSD_CARDINFO</secondary></indexterm>
+<indexterm><primary>MSD_CARDINFO</primary><secondary>SpaceTotal</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> MSD_CARDINFO::SpaceTotal</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00156">156</link> 行定义.</para>
+</section>
+<para>
+该结构体的文档由以下文件生成:</para>
+D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp___s_d_8h">bsp_SD.h</link></section>
+</section>

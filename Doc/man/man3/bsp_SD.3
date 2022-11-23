@@ -1,0 +1,390 @@
+.TH "bsp_SD" 3 "2022年 十一月 22日 星期二" "Version 2.0.0" "MF32BSP_XerolySkinner" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bsp_SD \- 一个操作SD卡的类  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <bsp_SD\&.h>\fP
+.SS "Public 成员函数"
+
+.in +1c
+.ti -1c
+.RI "\fBbsp_SD\fP (SPI_HandleTypeDef *\fBhspi\fP, GPIO_TypeDef *\fBGPIOx_CS\fP, uint16_t \fBGPIO_Pin_CS\fP)"
+.br
+.ti -1c
+.RI "\fBu8\fP \fBSD_init\fP (void)"
+.br
+.RI "初始化SD卡 "
+.ti -1c
+.RI "\fBu8\fP \fBSD_ReadDisk\fP (\fBu8\fP *buf, \fBu32\fP sector, \fBu8\fP cnt)"
+.br
+.RI "读SD卡 "
+.ti -1c
+.RI "\fBu8\fP \fBSD_WriteDisk\fP (\fBu8\fP *buf, \fBu32\fP sector, \fBu8\fP cnt)"
+.br
+.RI "写SD卡 "
+.ti -1c
+.RI "\fBu32\fP \fBSD_GetSectorCount\fP (void)"
+.br
+.RI "获取SD卡的总扇区数 "
+.ti -1c
+.RI "\fBu8\fP \fBoffsetWrite\fP (\fBu64\fP offset, \fBu8\fP *dat, \fBu64\fP datlen)"
+.br
+.RI "写入连贯的数据 "
+.ti -1c
+.RI "\fBu8\fP \fBoffsetRead\fP (\fBu64\fP offset, \fBu8\fP *dat, \fBu64\fP datlen)"
+.br
+.RI "读取连贯的数据 "
+.in -1c
+.SS "Private 成员函数"
+
+.in +1c
+.ti -1c
+.RI "void \fBSD_CS\fP (\fBu8\fP p)"
+.br
+.RI "片选信号 "
+.ti -1c
+.RI "\fBu8\fP \fBSD_GETCID\fP (\fBu8\fP *cid_data)"
+.br
+.RI "获取CID信息 "
+.ti -1c
+.RI "\fBu8\fP \fBSD_GETCSD\fP (\fBu8\fP *csd_data)"
+.br
+.RI "获取CSD信息 "
+.ti -1c
+.RI "int \fBMSD0_GetCardInfo\fP (\fBPMSD_CARDINFO\fP \fBSD0_CardInfo\fP)"
+.br
+.ti -1c
+.RI "\fBu8\fP \fBSD_ReceiveData\fP (\fBu8\fP *data, \fBu16\fP len)"
+.br
+.RI "读取SD卡指定长度信息 "
+.ti -1c
+.RI "\fBu8\fP \fBSD_SendBlock\fP (\fBu8\fP *buf, \fBu8\fP cmd)"
+.br
+.RI "向SD卡写入一个扇区 "
+.ti -1c
+.RI "\fBu32\fP \fBSD_sendcmd\fP (\fBu8\fP cmd, \fBu32\fP arg, \fBu8\fP crc)"
+.br
+.RI "写SD卡 "
+.ti -1c
+.RI "void \fBSPI_setspeed\fP (\fBu8\fP speed)"
+.br
+.RI "设置SPI的速率 "
+.ti -1c
+.RI "\fBu8\fP \fBspi_readwrite\fP (\fBu8\fP Txdata)"
+.br
+.in -1c
+.SS "Private 属性"
+
+.in +1c
+.ti -1c
+.RI "SPI_HandleTypeDef * \fBhspi\fP"
+.br
+.ti -1c
+.RI "GPIO_TypeDef * \fBGPIOx_CS\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBGPIO_Pin_CS\fP"
+.br
+.ti -1c
+.RI "\fBu8\fP \fBDFF\fP"
+.br
+.ti -1c
+.RI "\fBu8\fP \fBSD_TYPE\fP"
+.br
+.ti -1c
+.RI "\fBMSD_CARDINFO\fP \fBSD0_CardInfo\fP"
+.br
+.in -1c
+.SH "详细描述"
+.PP 
+一个操作SD卡的类 
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB169\fP 行定义\&.
+.SH "构造及析构函数说明"
+.PP 
+.SS "bsp_SD::bsp_SD (SPI_HandleTypeDef * hspi, GPIO_TypeDef * GPIOx_CS, uint16_t GPIO_Pin_CS)"
+
+.PP
+在文件 \fBbsp_SD\&.cpp\fP 第 \fB447\fP 行定义\&.
+.SH "成员函数说明"
+.PP 
+.SS "int bsp_SD::MSD0_GetCardInfo (\fBPMSD_CARDINFO\fP SD0_CardInfo)\fC [private]\fP"
+
+.PP
+在文件 \fBbsp_SD\&.cpp\fP 第 \fB207\fP 行定义\&.
+.SS "\fBu8\fP bsp_SD::offsetRead (\fBu64\fP offset, \fBu8\fP * dat, \fBu64\fP datlen)"
+
+.PP
+读取连贯的数据 
+.PP
+\fB参数\fP
+.RS 4
+\fIoffset\fP 读取位置 
+.br
+\fI*dat\fP 数据缓冲区 
+.br
+\fIdatlen\fP 读取长度 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+返回值:0,ok;其他,失败\&. 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_SD\&.cpp\fP 第 \fB423\fP 行定义\&.
+.SS "\fBu8\fP bsp_SD::offsetWrite (\fBu64\fP offset, \fBu8\fP * dat, \fBu64\fP datlen)"
+
+.PP
+写入连贯的数据 
+.PP
+\fB参数\fP
+.RS 4
+\fIoffset\fP 写入位置 
+.br
+\fI*dat\fP 数据缓冲区 
+.br
+\fIdatlen\fP 写入长度 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+返回值:0,ok;其他,失败\&. 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_SD\&.cpp\fP 第 \fB393\fP 行定义\&.
+.SS "void bsp_SD::SD_CS (\fBu8\fP p)\fC [private]\fP"
+
+.PP
+片选信号 
+.PP
+\fB返回\fP
+.RS 4
+无 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_SD\&.cpp\fP 第 \fB43\fP 行定义\&.
+.SS "\fBu8\fP bsp_SD::SD_GETCID (\fBu8\fP * cid_data)\fC [private]\fP"
+
+.PP
+获取CID信息 
+.PP
+\fB返回\fP
+.RS 4
+CID信息 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_SD\&.cpp\fP 第 \fB164\fP 行定义\&.
+.SS "\fBu8\fP bsp_SD::SD_GETCSD (\fBu8\fP * csd_data)\fC [private]\fP"
+
+.PP
+获取CSD信息 
+.PP
+\fB返回\fP
+.RS 4
+CSD信息 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_SD\&.cpp\fP 第 \fB176\fP 行定义\&.
+.SS "\fBu32\fP bsp_SD::SD_GetSectorCount (void)"
+
+.PP
+获取SD卡的总扇区数 
+.PP
+\fB返回\fP
+.RS 4
+总扇区数 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_SD\&.cpp\fP 第 \fB188\fP 行定义\&.
+.SS "\fBu8\fP bsp_SD::SD_init (void)"
+
+.PP
+初始化SD卡 
+.PP
+\fB返回\fP
+.RS 4
+返回值:0,ok;其他,失败\&. 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_SD\&.cpp\fP 第 \fB74\fP 行定义\&.
+.SS "\fBu8\fP bsp_SD::SD_ReadDisk (\fBu8\fP * buf, \fBu32\fP sector, \fBu8\fP cnt)"
+
+.PP
+读SD卡 
+.PP
+\fB参数\fP
+.RS 4
+\fI*buf\fP 数据缓存区 
+.br
+\fIsector\fP 起始扇区 
+.br
+\fIcnt\fP 扇区数 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+返回值:0,ok;其他,失败\&. 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_SD\&.cpp\fP 第 \fB356\fP 行定义\&.
+.SS "\fBu8\fP bsp_SD::SD_ReceiveData (\fBu8\fP * data, \fBu16\fP len)\fC [private]\fP"
+
+.PP
+读取SD卡指定长度信息 
+.PP
+\fB参数\fP
+.RS 4
+\fI*data\fP 数据缓存区 
+.br
+\fIlen\fP 长度 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+返回值:0,ok;其他,失败\&. 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_SD\&.cpp\fP 第 \fB127\fP 行定义\&.
+.SS "\fBu8\fP bsp_SD::SD_SendBlock (\fBu8\fP * buf, \fBu8\fP cmd)\fC [private]\fP"
+
+.PP
+向SD卡写入一个扇区 
+.PP
+\fB参数\fP
+.RS 4
+\fI*buf\fP 数据缓存区 
+.br
+\fIcmd\fP 操作指令 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+返回值:0,ok;其他,失败\&. 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_SD\&.cpp\fP 第 \fB147\fP 行定义\&.
+.SS "\fBu32\fP bsp_SD::SD_sendcmd (\fBu8\fP cmd, \fBu32\fP arg, \fBu8\fP crc)\fC [private]\fP"
+
+.PP
+写SD卡 
+.PP
+\fB参数\fP
+.RS 4
+\fIcmd\fP 命令 
+.br
+\fIarg\fP 
+.br
+ 
+.br
+\fIcrc\fP 校验码 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+
+.br
+ 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_SD\&.cpp\fP 第 \fB53\fP 行定义\&.
+.SS "\fBu8\fP bsp_SD::SD_WriteDisk (\fBu8\fP * buf, \fBu32\fP sector, \fBu8\fP cnt)"
+
+.PP
+写SD卡 
+.PP
+\fB参数\fP
+.RS 4
+\fI*buf\fP 数据缓存区 
+.br
+\fIsector\fP 起始扇区 
+.br
+\fIcnt\fP 扇区数 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+返回值:0,ok;其他,失败\&. 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_SD\&.cpp\fP 第 \fB329\fP 行定义\&.
+.SS "\fBu8\fP bsp_SD::spi_readwrite (\fBu8\fP Txdata)\fC [private]\fP"
+
+.PP
+在文件 \fBbsp_SD\&.cpp\fP 第 \fB373\fP 行定义\&.
+.SS "void bsp_SD::SPI_setspeed (\fBu8\fP speed)\fC [private]\fP"
+
+.PP
+设置SPI的速率 
+.PP
+\fB参数\fP
+.RS 4
+\fIspeed\fP 速率 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+无 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_SD\&.cpp\fP 第 \fB383\fP 行定义\&.
+.SH "类成员变量说明"
+.PP 
+.SS "\fBu8\fP bsp_SD::DFF\fC [private]\fP"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB184\fP 行定义\&.
+.SS "uint16_t bsp_SD::GPIO_Pin_CS\fC [private]\fP"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB182\fP 行定义\&.
+.SS "GPIO_TypeDef* bsp_SD::GPIOx_CS\fC [private]\fP"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB181\fP 行定义\&.
+.SS "SPI_HandleTypeDef* bsp_SD::hspi\fC [private]\fP"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB180\fP 行定义\&.
+.SS "\fBMSD_CARDINFO\fP bsp_SD::SD0_CardInfo\fC [private]\fP"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB186\fP 行定义\&.
+.SS "\fBu8\fP bsp_SD::SD_TYPE\fC [private]\fP"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB185\fP 行定义\&.
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 MF32BSP_XerolySkinner 的 源代码自动生成\&.

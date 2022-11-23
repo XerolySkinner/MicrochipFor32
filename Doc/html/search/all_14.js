@@ -1,14 +1,8 @@
 var searchData=
 [
-  ['varint_2eh_0',['varint.h',['../varint_8h.html',1,'']]],
-  ['vartable_2ecpp_1',['vartable.cpp',['../vartable_8cpp.html',1,'']]],
-  ['vartable_2eh_2',['vartable.h',['../vartable_8h.html',1,'']]],
-  ['vi16_3',['vi16',['../varint_8h.html#ab1725f18a2ec2964f4bc0499527e4c5d',1,'varint.h']]],
-  ['vi32_4',['vi32',['../varint_8h.html#a8b81ac6660e74bec836c0a4e0a0b6450',1,'varint.h']]],
-  ['vi64_5',['vi64',['../varint_8h.html#aeffd8dafd889cdd80398ffcbb37cd7ef',1,'varint.h']]],
-  ['vi8_6',['vi8',['../varint_8h.html#ad9f0c7145e15b7b470a138dae48c178d',1,'varint.h']]],
-  ['vu16_7',['vu16',['../varint_8h.html#a677aa1edce4bbb53741b1cc24eb4c035',1,'varint.h']]],
-  ['vu32_8',['vu32',['../varint_8h.html#abcdd5d61f51cb4c472ac6637916cf72a',1,'varint.h']]],
-  ['vu64_9',['vu64',['../varint_8h.html#ace392b4d1c3911331b2fe5ddc99fdcba',1,'varint.h']]],
-  ['vu8_10',['vu8',['../varint_8h.html#a1a2a3100a902c32a55d8b08915bce044',1,'varint.h']]]
+  ['u16_0',['u16',['../varint_8h.html#ace9d960e74685e2cd84b36132dbbf8aa',1,'varint.h']]],
+  ['u32_1',['u32',['../varint_8h.html#afaa62991928fb9fb18ff0db62a040aba',1,'varint.h']]],
+  ['u64_2',['u64',['../varint_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234',1,'varint.h']]],
+  ['u8_3',['u8',['../varint_8h.html#a92c50087ca0e64fa93fc59402c55f8ca',1,'varint.h']]],
+  ['user_2eh_4',['User.h',['../_user_8h.html',1,'']]]
 ];

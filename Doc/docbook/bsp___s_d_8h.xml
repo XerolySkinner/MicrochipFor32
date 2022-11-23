@@ -1,0 +1,432 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_bsp___s_d_8h" xml:lang="zh">
+<title>D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h 文件参考</title>
+<indexterm><primary>D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;spi.h&quot;<?linebreak?>#include &quot;varint.h&quot;<?linebreak?></programlisting>bsp_SD.h 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="bsp___s_d_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+此图展示该文件直接或间接的被哪些文件引用了:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="bsp___s_d_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>类    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_struct_m_s_d___c_s_d">MSD_CSD</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_m_s_d___c_i_d">MSD_CID</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_m_s_d___c_a_r_d_i_n_f_o">MSD_CARDINFO</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbsp___s_d">bsp_SD</link></para>
+
+<para>一个操作SD卡的类 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>宏定义    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1a735563036dced0b7d6cc98f97ea4978b">ERR</link>&#160;&#160;&#160;0x00</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1ab5a7d5477e55758bde614bda3250a93c">MMC</link>&#160;&#160;&#160;0x01</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1ae21a9518b4dd62d2baeab430c89a657a">V1</link>&#160;&#160;&#160;0x02</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1a9173468f90b474471bfff59f8487cbc1">V2</link>&#160;&#160;&#160;0x04</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1ae52e14c1b95e5162f4fe492d9b1b0fec">V2HC</link>&#160;&#160;&#160;0x06</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1adc81a065700d3af56b6fb631585e3641">DUMMY_BYTE</link>&#160;&#160;&#160;0xFF</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1a5bda0c70032a9b8625ae5a3c55d21c38">MSD_BLOCKSIZE</link>&#160;&#160;&#160;512</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1a938c1466755f12fb04ac0d1b775584d1">CMD0</link>&#160;&#160;&#160;0</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1aca9979f299fa78c1128d778084478673">CMD1</link>&#160;&#160;&#160;1</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1ac75b3e0ad1fb013ea946fb49bbe65668">CMD8</link>&#160;&#160;&#160;8</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1a1fac6a251d7e7dc204d21639bf521459">CMD9</link>&#160;&#160;&#160;9</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1ae7b800ed8e7bd52e6f570a5ce72b8104">CMD10</link>&#160;&#160;&#160;10</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1a8d6283c9b060afbaa0e6d1ff7e5ea7b8">CMD12</link>&#160;&#160;&#160;12</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1aaeab261b94f2031ba41a1d4d857c3541">CMD16</link>&#160;&#160;&#160;16</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1a6bbfe7dc16a19b7f40efcf554b5666ad">CMD17</link>&#160;&#160;&#160;17</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1a3d32c27a6be061b865ba539127278f14">CMD18</link>&#160;&#160;&#160;18</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1a14506e981f38b6177bc36f72c2ca18b1">CMD23</link>&#160;&#160;&#160;23</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1a252300302c6f7960df547a7f5c25be85">CMD24</link>&#160;&#160;&#160;24</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1aee2c673fba987178f4642531fdeefe9e">CMD25</link>&#160;&#160;&#160;25</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1a3ca1450d0ac55d2705aab03537bf2865">CMD41</link>&#160;&#160;&#160;41</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1a78289a7a85ffcfddd626694105dc0780">CMD55</link>&#160;&#160;&#160;55</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1aa7a26b2cf17e1ff5967820a1fa41a7aa">CMD58</link>&#160;&#160;&#160;58</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1aa8ea570644ddff6d18b63e4abbf39e0d">CMD59</link>&#160;&#160;&#160;59</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1ab953703883503eb3ce420f096b1621d0">MSD_DATA_OK</link>&#160;&#160;&#160;0x05</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1a7ba9783b76cf956a82211e058071f984">MSD_DATA_CRC_ERROR</link>&#160;&#160;&#160;0x0B</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1a6a6a48e9e40eda37b834b23d5320dfdf">MSD_DATA_WRITE_ERROR</link>&#160;&#160;&#160;0x0D</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1ad68bbaecb6931999de71e8a6b703574f">MSD_DATA_OTHER_ERROR</link>&#160;&#160;&#160;0xFF</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1afa5629413ae6bf82d3f1182df4cea0cf">MSD_RESPONSE_NO_ERROR</link>&#160;&#160;&#160;0x00</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1a70bdd15776b2a749ae184132d2a5da28">MSD_IN_IDLE_STATE</link>&#160;&#160;&#160;0x01</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1ad0ce329dc56b89327987e754ab0e93b8">MSD_ERASE_RESET</link>&#160;&#160;&#160;0x02</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1a80ede800869bbe11125170faf44ad94f">MSD_ILLEGAL_COMMAND</link>&#160;&#160;&#160;0x04</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1a8c6cecbb8cb9921c38776a83ed4ad343">MSD_COM_CRC_ERROR</link>&#160;&#160;&#160;0x08</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1a8c7923c819c9ba27f65a380f7360f429">MSD_ERASE_SEQUENCE_ERROR</link>&#160;&#160;&#160;0x10</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1a211793a480ef462b7a1c55d6d36a8c25">MSD_ADDRESS_ERROR</link>&#160;&#160;&#160;0x20</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1ae3555061fbbb3bd2becaa0d1bdf6c825">MSD_PARAMETER_ERROR</link>&#160;&#160;&#160;0x40</para>
+</listitem>
+            <listitem><para>#define <link linkend="_bsp___s_d_8h_1ab5e7857b07a45a8828a235c55d3873ff">MSD_RESPONSE_FAILURE</link>&#160;&#160;&#160;0xFF</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>类型定义    </title>
+        <itemizedlist>
+            <listitem><para>typedef struct <link linkend="_struct_m_s_d___c_a_r_d_i_n_f_o">MSD_CARDINFO</link> * <link linkend="_bsp___s_d_8h_1a64c818be5c771b5bcfd5cbd998c0f9c6">PMSD_CARDINFO</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>枚举    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_bsp___s_d_8h_1a81ab6678d52bfaa2c2dc9048f5215cf9">_CD_HOLD</link> { <link linkend="_bsp___s_d_8h_1a81ab6678d52bfaa2c2dc9048f5215cf9a9cfa27b414cab750fb14ec07cdf5cf6a">HOLD</link> = 0
+, <link linkend="_bsp___s_d_8h_1a81ab6678d52bfaa2c2dc9048f5215cf9ad590443978dc58d64aed5001f56efcdf">RELEASE</link> = 1
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>变量    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_m_s_d___c_a_r_d_i_n_f_o">MSD_CARDINFO</link> <link linkend="_bsp___s_d_8h_1a2c85a6a257358283b46ba829ae0c2dba">SD0_CardInfo</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>宏定义说明</title>
+<anchor xml:id="_bsp___s_d_8h_1a938c1466755f12fb04ac0d1b775584d1"/><section>
+    <title>CMD0</title>
+<indexterm><primary>CMD0</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>CMD0</secondary></indexterm>
+<para><computeroutput>#define CMD0&#160;&#160;&#160;0</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00057">57</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1aca9979f299fa78c1128d778084478673"/><section>
+    <title>CMD1</title>
+<indexterm><primary>CMD1</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>CMD1</secondary></indexterm>
+<para><computeroutput>#define CMD1&#160;&#160;&#160;1</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00058">58</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1ae7b800ed8e7bd52e6f570a5ce72b8104"/><section>
+    <title>CMD10</title>
+<indexterm><primary>CMD10</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>CMD10</secondary></indexterm>
+<para><computeroutput>#define CMD10&#160;&#160;&#160;10</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00061">61</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1a8d6283c9b060afbaa0e6d1ff7e5ea7b8"/><section>
+    <title>CMD12</title>
+<indexterm><primary>CMD12</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>CMD12</secondary></indexterm>
+<para><computeroutput>#define CMD12&#160;&#160;&#160;12</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00062">62</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1aaeab261b94f2031ba41a1d4d857c3541"/><section>
+    <title>CMD16</title>
+<indexterm><primary>CMD16</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>CMD16</secondary></indexterm>
+<para><computeroutput>#define CMD16&#160;&#160;&#160;16</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00063">63</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1a6bbfe7dc16a19b7f40efcf554b5666ad"/><section>
+    <title>CMD17</title>
+<indexterm><primary>CMD17</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>CMD17</secondary></indexterm>
+<para><computeroutput>#define CMD17&#160;&#160;&#160;17</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00064">64</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1a3d32c27a6be061b865ba539127278f14"/><section>
+    <title>CMD18</title>
+<indexterm><primary>CMD18</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>CMD18</secondary></indexterm>
+<para><computeroutput>#define CMD18&#160;&#160;&#160;18</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00065">65</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1a14506e981f38b6177bc36f72c2ca18b1"/><section>
+    <title>CMD23</title>
+<indexterm><primary>CMD23</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>CMD23</secondary></indexterm>
+<para><computeroutput>#define CMD23&#160;&#160;&#160;23</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00066">66</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1a252300302c6f7960df547a7f5c25be85"/><section>
+    <title>CMD24</title>
+<indexterm><primary>CMD24</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>CMD24</secondary></indexterm>
+<para><computeroutput>#define CMD24&#160;&#160;&#160;24</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00067">67</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1aee2c673fba987178f4642531fdeefe9e"/><section>
+    <title>CMD25</title>
+<indexterm><primary>CMD25</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>CMD25</secondary></indexterm>
+<para><computeroutput>#define CMD25&#160;&#160;&#160;25</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00068">68</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1a3ca1450d0ac55d2705aab03537bf2865"/><section>
+    <title>CMD41</title>
+<indexterm><primary>CMD41</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>CMD41</secondary></indexterm>
+<para><computeroutput>#define CMD41&#160;&#160;&#160;41</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00069">69</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1a78289a7a85ffcfddd626694105dc0780"/><section>
+    <title>CMD55</title>
+<indexterm><primary>CMD55</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>CMD55</secondary></indexterm>
+<para><computeroutput>#define CMD55&#160;&#160;&#160;55</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00070">70</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1aa7a26b2cf17e1ff5967820a1fa41a7aa"/><section>
+    <title>CMD58</title>
+<indexterm><primary>CMD58</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>CMD58</secondary></indexterm>
+<para><computeroutput>#define CMD58&#160;&#160;&#160;58</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00071">71</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1aa8ea570644ddff6d18b63e4abbf39e0d"/><section>
+    <title>CMD59</title>
+<indexterm><primary>CMD59</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>CMD59</secondary></indexterm>
+<para><computeroutput>#define CMD59&#160;&#160;&#160;59</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00072">72</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1ac75b3e0ad1fb013ea946fb49bbe65668"/><section>
+    <title>CMD8</title>
+<indexterm><primary>CMD8</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>CMD8</secondary></indexterm>
+<para><computeroutput>#define CMD8&#160;&#160;&#160;8</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00059">59</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1a1fac6a251d7e7dc204d21639bf521459"/><section>
+    <title>CMD9</title>
+<indexterm><primary>CMD9</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>CMD9</secondary></indexterm>
+<para><computeroutput>#define CMD9&#160;&#160;&#160;9</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00060">60</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1adc81a065700d3af56b6fb631585e3641"/><section>
+    <title>DUMMY_BYTE</title>
+<indexterm><primary>DUMMY_BYTE</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>DUMMY_BYTE</secondary></indexterm>
+<para><computeroutput>#define DUMMY_BYTE&#160;&#160;&#160;0xFF</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00053">53</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1a735563036dced0b7d6cc98f97ea4978b"/><section>
+    <title>ERR</title>
+<indexterm><primary>ERR</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>ERR</secondary></indexterm>
+<para><computeroutput>#define ERR&#160;&#160;&#160;0x00</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00048">48</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1ab5a7d5477e55758bde614bda3250a93c"/><section>
+    <title>MMC</title>
+<indexterm><primary>MMC</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>MMC</secondary></indexterm>
+<para><computeroutput>#define MMC&#160;&#160;&#160;0x01</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00049">49</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1a211793a480ef462b7a1c55d6d36a8c25"/><section>
+    <title>MSD_ADDRESS_ERROR</title>
+<indexterm><primary>MSD_ADDRESS_ERROR</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>MSD_ADDRESS_ERROR</secondary></indexterm>
+<para><computeroutput>#define MSD_ADDRESS_ERROR&#160;&#160;&#160;0x20</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00086">86</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1a5bda0c70032a9b8625ae5a3c55d21c38"/><section>
+    <title>MSD_BLOCKSIZE</title>
+<indexterm><primary>MSD_BLOCKSIZE</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>MSD_BLOCKSIZE</secondary></indexterm>
+<para><computeroutput>#define MSD_BLOCKSIZE&#160;&#160;&#160;512</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00054">54</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1a8c6cecbb8cb9921c38776a83ed4ad343"/><section>
+    <title>MSD_COM_CRC_ERROR</title>
+<indexterm><primary>MSD_COM_CRC_ERROR</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>MSD_COM_CRC_ERROR</secondary></indexterm>
+<para><computeroutput>#define MSD_COM_CRC_ERROR&#160;&#160;&#160;0x08</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00084">84</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1a7ba9783b76cf956a82211e058071f984"/><section>
+    <title>MSD_DATA_CRC_ERROR</title>
+<indexterm><primary>MSD_DATA_CRC_ERROR</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>MSD_DATA_CRC_ERROR</secondary></indexterm>
+<para><computeroutput>#define MSD_DATA_CRC_ERROR&#160;&#160;&#160;0x0B</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00076">76</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1ab953703883503eb3ce420f096b1621d0"/><section>
+    <title>MSD_DATA_OK</title>
+<indexterm><primary>MSD_DATA_OK</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>MSD_DATA_OK</secondary></indexterm>
+<para><computeroutput>#define MSD_DATA_OK&#160;&#160;&#160;0x05</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00075">75</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1ad68bbaecb6931999de71e8a6b703574f"/><section>
+    <title>MSD_DATA_OTHER_ERROR</title>
+<indexterm><primary>MSD_DATA_OTHER_ERROR</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>MSD_DATA_OTHER_ERROR</secondary></indexterm>
+<para><computeroutput>#define MSD_DATA_OTHER_ERROR&#160;&#160;&#160;0xFF</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00078">78</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1a6a6a48e9e40eda37b834b23d5320dfdf"/><section>
+    <title>MSD_DATA_WRITE_ERROR</title>
+<indexterm><primary>MSD_DATA_WRITE_ERROR</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>MSD_DATA_WRITE_ERROR</secondary></indexterm>
+<para><computeroutput>#define MSD_DATA_WRITE_ERROR&#160;&#160;&#160;0x0D</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00077">77</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1ad0ce329dc56b89327987e754ab0e93b8"/><section>
+    <title>MSD_ERASE_RESET</title>
+<indexterm><primary>MSD_ERASE_RESET</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>MSD_ERASE_RESET</secondary></indexterm>
+<para><computeroutput>#define MSD_ERASE_RESET&#160;&#160;&#160;0x02</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00082">82</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1a8c7923c819c9ba27f65a380f7360f429"/><section>
+    <title>MSD_ERASE_SEQUENCE_ERROR</title>
+<indexterm><primary>MSD_ERASE_SEQUENCE_ERROR</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>MSD_ERASE_SEQUENCE_ERROR</secondary></indexterm>
+<para><computeroutput>#define MSD_ERASE_SEQUENCE_ERROR&#160;&#160;&#160;0x10</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00085">85</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1a80ede800869bbe11125170faf44ad94f"/><section>
+    <title>MSD_ILLEGAL_COMMAND</title>
+<indexterm><primary>MSD_ILLEGAL_COMMAND</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>MSD_ILLEGAL_COMMAND</secondary></indexterm>
+<para><computeroutput>#define MSD_ILLEGAL_COMMAND&#160;&#160;&#160;0x04</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00083">83</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1a70bdd15776b2a749ae184132d2a5da28"/><section>
+    <title>MSD_IN_IDLE_STATE</title>
+<indexterm><primary>MSD_IN_IDLE_STATE</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>MSD_IN_IDLE_STATE</secondary></indexterm>
+<para><computeroutput>#define MSD_IN_IDLE_STATE&#160;&#160;&#160;0x01</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00081">81</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1ae3555061fbbb3bd2becaa0d1bdf6c825"/><section>
+    <title>MSD_PARAMETER_ERROR</title>
+<indexterm><primary>MSD_PARAMETER_ERROR</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>MSD_PARAMETER_ERROR</secondary></indexterm>
+<para><computeroutput>#define MSD_PARAMETER_ERROR&#160;&#160;&#160;0x40</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00087">87</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1ab5e7857b07a45a8828a235c55d3873ff"/><section>
+    <title>MSD_RESPONSE_FAILURE</title>
+<indexterm><primary>MSD_RESPONSE_FAILURE</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>MSD_RESPONSE_FAILURE</secondary></indexterm>
+<para><computeroutput>#define MSD_RESPONSE_FAILURE&#160;&#160;&#160;0xFF</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00088">88</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1afa5629413ae6bf82d3f1182df4cea0cf"/><section>
+    <title>MSD_RESPONSE_NO_ERROR</title>
+<indexterm><primary>MSD_RESPONSE_NO_ERROR</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>MSD_RESPONSE_NO_ERROR</secondary></indexterm>
+<para><computeroutput>#define MSD_RESPONSE_NO_ERROR&#160;&#160;&#160;0x00</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00080">80</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1ae21a9518b4dd62d2baeab430c89a657a"/><section>
+    <title>V1</title>
+<indexterm><primary>V1</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>V1</secondary></indexterm>
+<para><computeroutput>#define V1&#160;&#160;&#160;0x02</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00050">50</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1a9173468f90b474471bfff59f8487cbc1"/><section>
+    <title>V2</title>
+<indexterm><primary>V2</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>V2</secondary></indexterm>
+<para><computeroutput>#define V2&#160;&#160;&#160;0x04</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00051">51</link> 行定义.</para>
+</section>
+<anchor xml:id="_bsp___s_d_8h_1ae52e14c1b95e5162f4fe492d9b1b0fec"/><section>
+    <title>V2HC</title>
+<indexterm><primary>V2HC</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>V2HC</secondary></indexterm>
+<para><computeroutput>#define V2HC&#160;&#160;&#160;0x06</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00052">52</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>类型定义说明</title>
+<anchor xml:id="_bsp___s_d_8h_1a64c818be5c771b5bcfd5cbd998c0f9c6"/><section>
+    <title>PMSD_CARDINFO</title>
+<indexterm><primary>PMSD_CARDINFO</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>PMSD_CARDINFO</secondary></indexterm>
+<para><computeroutput>typedef  struct <link linkend="_struct_m_s_d___c_a_r_d_i_n_f_o">MSD_CARDINFO</link> * <link linkend="_bsp___s_d_8h_1a64c818be5c771b5bcfd5cbd998c0f9c6">PMSD_CARDINFO</link></computeroutput></para></section>
+</section>
+<section>
+<title>枚举类型说明</title>
+<anchor xml:id="_bsp___s_d_8h_1a81ab6678d52bfaa2c2dc9048f5215cf9"/><section>
+    <title>_CD_HOLD</title>
+<indexterm><primary>_CD_HOLD</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>_CD_HOLD</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_bsp___s_d_8h_1a81ab6678d52bfaa2c2dc9048f5215cf9">_CD_HOLD</link></computeroutput></para><informaltable frame="all">
+<title>枚举值</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>HOLD</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>HOLD</secondary></indexterm>
+<anchor xml:id="_bsp___s_d_8h_1a81ab6678d52bfaa2c2dc9048f5215cf9a9cfa27b414cab750fb14ec07cdf5cf6a"/>HOLD</entry><entry></entry></row><row><entry><indexterm><primary>RELEASE</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>RELEASE</secondary></indexterm>
+<anchor xml:id="_bsp___s_d_8h_1a81ab6678d52bfaa2c2dc9048f5215cf9ad590443978dc58d64aed5001f56efcdf"/>RELEASE</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00090">90</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>变量说明</title>
+<anchor xml:id="_bsp___s_d_8h_1a2c85a6a257358283b46ba829ae0c2dba"/><section>
+    <title>SD0_CardInfo</title>
+<indexterm><primary>SD0_CardInfo</primary><secondary>bsp_SD.h</secondary></indexterm>
+<indexterm><primary>bsp_SD.h</primary><secondary>SD0_CardInfo</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_m_s_d___c_a_r_d_i_n_f_o">MSD_CARDINFO</link> SD0_CardInfo<computeroutput>[extern]</computeroutput></computeroutput></para></section>
+</section>
+</section>

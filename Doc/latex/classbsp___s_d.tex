@@ -1,0 +1,641 @@
+\hypertarget{classbsp___s_d}{}\doxysection{bsp\+\_\+\+SD类 参考}
+\label{classbsp___s_d}\index{bsp\_SD@{bsp\_SD}}
+
+
+一个操作\+SD卡的类  
+
+
+
+
+{\ttfamily \#include $<$bsp\+\_\+\+SD.\+h$>$}
+
+
+
+bsp\+\_\+\+SD 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classbsp___s_d__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbsp___s_d_a9f5ace0a335acc31271c9d131cd6d306}{bsp\+\_\+\+SD}} (SPI\+\_\+\+Handle\+Type\+Def $\ast$\mbox{\hyperlink{classbsp___s_d_a227c7eb7a28e89d6adfda085a4217992}{hspi}}, GPIO\+\_\+\+Type\+Def $\ast$\mbox{\hyperlink{classbsp___s_d_ad7788d2e62152a2fb1a6b307fa902180}{GPIOx\+\_\+\+CS}}, uint16\+\_\+t \mbox{\hyperlink{classbsp___s_d_a4525b5c0f62e39af1c9adb9a9c22239f}{GPIO\+\_\+\+Pin\+\_\+\+CS}})
+\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{classbsp___s_d_a1e0a3f09367627bcafc8efaaeb90b066}{SD\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em 初始化\+SD卡 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{classbsp___s_d_a96f32b50ec777acc0dd819150cd28937}{SD\+\_\+\+Read\+Disk}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$buf, \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} sector, \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} cnt)
+\begin{DoxyCompactList}\small\item\em 读\+SD卡 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{classbsp___s_d_af203b65e00206d38ef14640f7b7242b6}{SD\+\_\+\+Write\+Disk}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$buf, \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} sector, \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} cnt)
+\begin{DoxyCompactList}\small\item\em 写\+SD卡 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} \mbox{\hyperlink{classbsp___s_d_a600cc886dc5da6d34f75d0bf226c1b92}{SD\+\_\+\+Get\+Sector\+Count}} (void)
+\begin{DoxyCompactList}\small\item\em 获取\+SD卡的总扇区数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{classbsp___s_d_a164f0bb03133464f2da485f362a52718}{offset\+Write}} (\mbox{\hyperlink{varint_8h_a3f7e2bcbb0b4c338f3c4f6c937cd4234}{u64}} offset, \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$dat, \mbox{\hyperlink{varint_8h_a3f7e2bcbb0b4c338f3c4f6c937cd4234}{u64}} datlen)
+\begin{DoxyCompactList}\small\item\em 写入连贯的数据 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{classbsp___s_d_a1c78e6f5a72f3bdec600a52331dd4d20}{offset\+Read}} (\mbox{\hyperlink{varint_8h_a3f7e2bcbb0b4c338f3c4f6c937cd4234}{u64}} offset, \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$dat, \mbox{\hyperlink{varint_8h_a3f7e2bcbb0b4c338f3c4f6c937cd4234}{u64}} datlen)
+\begin{DoxyCompactList}\small\item\em 读取连贯的数据 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classbsp___s_d_a3250f411819ed57543b0326d13faddc6}{SD\+\_\+\+CS}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} p)
+\begin{DoxyCompactList}\small\item\em 片选信号 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{classbsp___s_d_a25bc03ff69d0c3c9a73153c71c84a8b0}{SD\+\_\+\+GETCID}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$cid\+\_\+data)
+\begin{DoxyCompactList}\small\item\em 获取\+CID信息 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{classbsp___s_d_ad0426f6a4b550e60a926c95724d81665}{SD\+\_\+\+GETCSD}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$csd\+\_\+data)
+\begin{DoxyCompactList}\small\item\em 获取\+CSD信息 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classbsp___s_d_aaf2d27cc9275f3ffa71556124f143d12}{MSD0\+\_\+\+Get\+Card\+Info}} (\mbox{\hyperlink{bsp___s_d_8h_a64c818be5c771b5bcfd5cbd998c0f9c6}{PMSD\+\_\+\+CARDINFO}} \mbox{\hyperlink{classbsp___s_d_aab1487286ac43dc9110e65b52c850de4}{SD0\+\_\+\+Card\+Info}})
+\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{classbsp___s_d_a242ec4ccd88203b6691cf4ae1e77fdfe}{SD\+\_\+\+Receive\+Data}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$data, \mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} len)
+\begin{DoxyCompactList}\small\item\em 读取\+SD卡指定长度信息 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{classbsp___s_d_a2df843979bb4c764422a37b255c184ea}{SD\+\_\+\+Send\+Block}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$buf, \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} cmd)
+\begin{DoxyCompactList}\small\item\em 向\+SD卡写入一个扇区 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} \mbox{\hyperlink{classbsp___s_d_ab799d7d8ebaf4c304bf62722ba10ba37}{SD\+\_\+sendcmd}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} cmd, \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} arg, \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} crc)
+\begin{DoxyCompactList}\small\item\em 写\+SD卡 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___s_d_a5ed95b95b141ee21d83ca70c1b06a31a}{SPI\+\_\+setspeed}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} speed)
+\begin{DoxyCompactList}\small\item\em 设置\+SPI的速率 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{classbsp___s_d_a36d1110bcbe2404ddd5796dc078ce1f5}{spi\+\_\+readwrite}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} Txdata)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+SPI\+\_\+\+Handle\+Type\+Def $\ast$ \mbox{\hyperlink{classbsp___s_d_a227c7eb7a28e89d6adfda085a4217992}{hspi}}
+\item 
+GPIO\+\_\+\+Type\+Def $\ast$ \mbox{\hyperlink{classbsp___s_d_ad7788d2e62152a2fb1a6b307fa902180}{GPIOx\+\_\+\+CS}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classbsp___s_d_a4525b5c0f62e39af1c9adb9a9c22239f}{GPIO\+\_\+\+Pin\+\_\+\+CS}}
+\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{classbsp___s_d_a6c68fa82294f18968a92719931cff5fa}{DFF}}
+\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} \mbox{\hyperlink{classbsp___s_d_a2350601b90ad75bd434094a9c31475c4}{SD\+\_\+\+TYPE}}
+\item 
+\mbox{\hyperlink{struct_m_s_d___c_a_r_d_i_n_f_o}{MSD\+\_\+\+CARDINFO}} \mbox{\hyperlink{classbsp___s_d_aab1487286ac43dc9110e65b52c850de4}{SD0\+\_\+\+Card\+Info}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+一个操作\+SD卡的类 
+
+在文件 \mbox{\hyperlink{bsp___s_d_8h_source}{bsp\+\_\+\+SD.\+h}} 第 \mbox{\hyperlink{bsp___s_d_8h_source_l00169}{169}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classbsp___s_d_a9f5ace0a335acc31271c9d131cd6d306}\label{classbsp___s_d_a9f5ace0a335acc31271c9d131cd6d306}} 
+\index{bsp\_SD@{bsp\_SD}!bsp\_SD@{bsp\_SD}}
+\index{bsp\_SD@{bsp\_SD}!bsp\_SD@{bsp\_SD}}
+\doxysubsubsection{\texorpdfstring{bsp\_SD()}{bsp\_SD()}}
+{\footnotesize\ttfamily bsp\+\_\+\+SD\+::bsp\+\_\+\+SD (\begin{DoxyParamCaption}\item[{SPI\+\_\+\+Handle\+Type\+Def $\ast$}]{hspi,  }\item[{GPIO\+\_\+\+Type\+Def $\ast$}]{GPIOx\+\_\+\+CS,  }\item[{uint16\+\_\+t}]{GPIO\+\_\+\+Pin\+\_\+\+CS }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{bsp___s_d_8cpp_source}{bsp\+\_\+\+SD.\+cpp}} 第 \mbox{\hyperlink{bsp___s_d_8cpp_source_l00447}{447}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classbsp___s_d_aaf2d27cc9275f3ffa71556124f143d12}\label{classbsp___s_d_aaf2d27cc9275f3ffa71556124f143d12}} 
+\index{bsp\_SD@{bsp\_SD}!MSD0\_GetCardInfo@{MSD0\_GetCardInfo}}
+\index{MSD0\_GetCardInfo@{MSD0\_GetCardInfo}!bsp\_SD@{bsp\_SD}}
+\doxysubsubsection{\texorpdfstring{MSD0\_GetCardInfo()}{MSD0\_GetCardInfo()}}
+{\footnotesize\ttfamily int bsp\+\_\+\+SD\+::\+MSD0\+\_\+\+Get\+Card\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{bsp___s_d_8h_a64c818be5c771b5bcfd5cbd998c0f9c6}{PMSD\+\_\+\+CARDINFO}}}]{SD0\+\_\+\+Card\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{bsp___s_d_8cpp_source}{bsp\+\_\+\+SD.\+cpp}} 第 \mbox{\hyperlink{bsp___s_d_8cpp_source_l00207}{207}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_d_aaf2d27cc9275f3ffa71556124f143d12_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_d_a1c78e6f5a72f3bdec600a52331dd4d20}\label{classbsp___s_d_a1c78e6f5a72f3bdec600a52331dd4d20}} 
+\index{bsp\_SD@{bsp\_SD}!offsetRead@{offsetRead}}
+\index{offsetRead@{offsetRead}!bsp\_SD@{bsp\_SD}}
+\doxysubsubsection{\texorpdfstring{offsetRead()}{offsetRead()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} bsp\+\_\+\+SD\+::offset\+Read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a3f7e2bcbb0b4c338f3c4f6c937cd4234}{u64}}}]{offset,  }\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$}]{dat,  }\item[{\mbox{\hyperlink{varint_8h_a3f7e2bcbb0b4c338f3c4f6c937cd4234}{u64}}}]{datlen }\end{DoxyParamCaption})}
+
+
+
+读取连贯的数据 
+
+
+\begin{DoxyParams}{参数}
+{\em offset} & 读取位置 \\
+\hline
+{\em $\ast$dat} & 数据缓冲区 \\
+\hline
+{\em datlen} & 读取长度 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+返回值\+:0,ok;其他,失败. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___s_d_8cpp_source}{bsp\+\_\+\+SD.\+cpp}} 第 \mbox{\hyperlink{bsp___s_d_8cpp_source_l00423}{423}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_d_a1c78e6f5a72f3bdec600a52331dd4d20_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_d_a164f0bb03133464f2da485f362a52718}\label{classbsp___s_d_a164f0bb03133464f2da485f362a52718}} 
+\index{bsp\_SD@{bsp\_SD}!offsetWrite@{offsetWrite}}
+\index{offsetWrite@{offsetWrite}!bsp\_SD@{bsp\_SD}}
+\doxysubsubsection{\texorpdfstring{offsetWrite()}{offsetWrite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} bsp\+\_\+\+SD\+::offset\+Write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a3f7e2bcbb0b4c338f3c4f6c937cd4234}{u64}}}]{offset,  }\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$}]{dat,  }\item[{\mbox{\hyperlink{varint_8h_a3f7e2bcbb0b4c338f3c4f6c937cd4234}{u64}}}]{datlen }\end{DoxyParamCaption})}
+
+
+
+写入连贯的数据 
+
+
+\begin{DoxyParams}{参数}
+{\em offset} & 写入位置 \\
+\hline
+{\em $\ast$dat} & 数据缓冲区 \\
+\hline
+{\em datlen} & 写入长度 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+返回值\+:0,ok;其他,失败. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___s_d_8cpp_source}{bsp\+\_\+\+SD.\+cpp}} 第 \mbox{\hyperlink{bsp___s_d_8cpp_source_l00393}{393}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_d_a164f0bb03133464f2da485f362a52718_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_d_a3250f411819ed57543b0326d13faddc6}\label{classbsp___s_d_a3250f411819ed57543b0326d13faddc6}} 
+\index{bsp\_SD@{bsp\_SD}!SD\_CS@{SD\_CS}}
+\index{SD\_CS@{SD\_CS}!bsp\_SD@{bsp\_SD}}
+\doxysubsubsection{\texorpdfstring{SD\_CS()}{SD\_CS()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+SD\+::\+SD\+\_\+\+CS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+片选信号 
+
+\begin{DoxyReturn}{返回}
+无 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___s_d_8cpp_source}{bsp\+\_\+\+SD.\+cpp}} 第 \mbox{\hyperlink{bsp___s_d_8cpp_source_l00043}{43}} 行定义.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_d_a3250f411819ed57543b0326d13faddc6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_d_a25bc03ff69d0c3c9a73153c71c84a8b0}\label{classbsp___s_d_a25bc03ff69d0c3c9a73153c71c84a8b0}} 
+\index{bsp\_SD@{bsp\_SD}!SD\_GETCID@{SD\_GETCID}}
+\index{SD\_GETCID@{SD\_GETCID}!bsp\_SD@{bsp\_SD}}
+\doxysubsubsection{\texorpdfstring{SD\_GETCID()}{SD\_GETCID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} bsp\+\_\+\+SD\+::\+SD\+\_\+\+GETCID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$}]{cid\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+获取\+CID信息 
+
+\begin{DoxyReturn}{返回}
+CID信息 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___s_d_8cpp_source}{bsp\+\_\+\+SD.\+cpp}} 第 \mbox{\hyperlink{bsp___s_d_8cpp_source_l00164}{164}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_d_a25bc03ff69d0c3c9a73153c71c84a8b0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_d_ad0426f6a4b550e60a926c95724d81665}\label{classbsp___s_d_ad0426f6a4b550e60a926c95724d81665}} 
+\index{bsp\_SD@{bsp\_SD}!SD\_GETCSD@{SD\_GETCSD}}
+\index{SD\_GETCSD@{SD\_GETCSD}!bsp\_SD@{bsp\_SD}}
+\doxysubsubsection{\texorpdfstring{SD\_GETCSD()}{SD\_GETCSD()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} bsp\+\_\+\+SD\+::\+SD\+\_\+\+GETCSD (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$}]{csd\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+获取\+CSD信息 
+
+\begin{DoxyReturn}{返回}
+CSD信息 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___s_d_8cpp_source}{bsp\+\_\+\+SD.\+cpp}} 第 \mbox{\hyperlink{bsp___s_d_8cpp_source_l00176}{176}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_d_ad0426f6a4b550e60a926c95724d81665_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_d_ad0426f6a4b550e60a926c95724d81665_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_d_a600cc886dc5da6d34f75d0bf226c1b92}\label{classbsp___s_d_a600cc886dc5da6d34f75d0bf226c1b92}} 
+\index{bsp\_SD@{bsp\_SD}!SD\_GetSectorCount@{SD\_GetSectorCount}}
+\index{SD\_GetSectorCount@{SD\_GetSectorCount}!bsp\_SD@{bsp\_SD}}
+\doxysubsubsection{\texorpdfstring{SD\_GetSectorCount()}{SD\_GetSectorCount()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} bsp\+\_\+\+SD\+::\+SD\+\_\+\+Get\+Sector\+Count (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+获取\+SD卡的总扇区数 
+
+\begin{DoxyReturn}{返回}
+总扇区数 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___s_d_8cpp_source}{bsp\+\_\+\+SD.\+cpp}} 第 \mbox{\hyperlink{bsp___s_d_8cpp_source_l00188}{188}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_d_a600cc886dc5da6d34f75d0bf226c1b92_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_d_a1e0a3f09367627bcafc8efaaeb90b066}\label{classbsp___s_d_a1e0a3f09367627bcafc8efaaeb90b066}} 
+\index{bsp\_SD@{bsp\_SD}!SD\_init@{SD\_init}}
+\index{SD\_init@{SD\_init}!bsp\_SD@{bsp\_SD}}
+\doxysubsubsection{\texorpdfstring{SD\_init()}{SD\_init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} bsp\+\_\+\+SD\+::\+SD\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+初始化\+SD卡 
+
+\begin{DoxyReturn}{返回}
+返回值\+:0,ok;其他,失败. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___s_d_8cpp_source}{bsp\+\_\+\+SD.\+cpp}} 第 \mbox{\hyperlink{bsp___s_d_8cpp_source_l00074}{74}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_d_a1e0a3f09367627bcafc8efaaeb90b066_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_d_a96f32b50ec777acc0dd819150cd28937}\label{classbsp___s_d_a96f32b50ec777acc0dd819150cd28937}} 
+\index{bsp\_SD@{bsp\_SD}!SD\_ReadDisk@{SD\_ReadDisk}}
+\index{SD\_ReadDisk@{SD\_ReadDisk}!bsp\_SD@{bsp\_SD}}
+\doxysubsubsection{\texorpdfstring{SD\_ReadDisk()}{SD\_ReadDisk()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} bsp\+\_\+\+SD\+::\+SD\+\_\+\+Read\+Disk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$}]{buf,  }\item[{\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}}]{sector,  }\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{cnt }\end{DoxyParamCaption})}
+
+
+
+读\+SD卡 
+
+
+\begin{DoxyParams}{参数}
+{\em $\ast$buf} & 数据缓存区 \\
+\hline
+{\em sector} & 起始扇区 \\
+\hline
+{\em cnt} & 扇区数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+返回值\+:0,ok;其他,失败. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___s_d_8cpp_source}{bsp\+\_\+\+SD.\+cpp}} 第 \mbox{\hyperlink{bsp___s_d_8cpp_source_l00356}{356}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_d_a96f32b50ec777acc0dd819150cd28937_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classbsp___s_d_a96f32b50ec777acc0dd819150cd28937_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_d_a242ec4ccd88203b6691cf4ae1e77fdfe}\label{classbsp___s_d_a242ec4ccd88203b6691cf4ae1e77fdfe}} 
+\index{bsp\_SD@{bsp\_SD}!SD\_ReceiveData@{SD\_ReceiveData}}
+\index{SD\_ReceiveData@{SD\_ReceiveData}!bsp\_SD@{bsp\_SD}}
+\doxysubsubsection{\texorpdfstring{SD\_ReceiveData()}{SD\_ReceiveData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} bsp\+\_\+\+SD\+::\+SD\+\_\+\+Receive\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$}]{data,  }\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+读取\+SD卡指定长度信息 
+
+
+\begin{DoxyParams}{参数}
+{\em $\ast$data} & 数据缓存区 \\
+\hline
+{\em len} & 长度 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+返回值\+:0,ok;其他,失败. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___s_d_8cpp_source}{bsp\+\_\+\+SD.\+cpp}} 第 \mbox{\hyperlink{bsp___s_d_8cpp_source_l00127}{127}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_d_a242ec4ccd88203b6691cf4ae1e77fdfe_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_d_a242ec4ccd88203b6691cf4ae1e77fdfe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_d_a2df843979bb4c764422a37b255c184ea}\label{classbsp___s_d_a2df843979bb4c764422a37b255c184ea}} 
+\index{bsp\_SD@{bsp\_SD}!SD\_SendBlock@{SD\_SendBlock}}
+\index{SD\_SendBlock@{SD\_SendBlock}!bsp\_SD@{bsp\_SD}}
+\doxysubsubsection{\texorpdfstring{SD\_SendBlock()}{SD\_SendBlock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} bsp\+\_\+\+SD\+::\+SD\+\_\+\+Send\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$}]{buf,  }\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{cmd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+向\+SD卡写入一个扇区 
+
+
+\begin{DoxyParams}{参数}
+{\em $\ast$buf} & 数据缓存区 \\
+\hline
+{\em cmd} & 操作指令 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+返回值\+:0,ok;其他,失败. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___s_d_8cpp_source}{bsp\+\_\+\+SD.\+cpp}} 第 \mbox{\hyperlink{bsp___s_d_8cpp_source_l00147}{147}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_d_a2df843979bb4c764422a37b255c184ea_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_d_a2df843979bb4c764422a37b255c184ea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_d_ab799d7d8ebaf4c304bf62722ba10ba37}\label{classbsp___s_d_ab799d7d8ebaf4c304bf62722ba10ba37}} 
+\index{bsp\_SD@{bsp\_SD}!SD\_sendcmd@{SD\_sendcmd}}
+\index{SD\_sendcmd@{SD\_sendcmd}!bsp\_SD@{bsp\_SD}}
+\doxysubsubsection{\texorpdfstring{SD\_sendcmd()}{SD\_sendcmd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} bsp\+\_\+\+SD\+::\+SD\+\_\+sendcmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{cmd,  }\item[{\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}}]{arg,  }\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{crc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+写\+SD卡 
+
+
+\begin{DoxyParams}{参数}
+{\em cmd} & 命令 \\
+\hline
+{\em arg} & ~\newline
+ \\
+\hline
+{\em crc} & 校验码 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+~\newline
+ 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___s_d_8cpp_source}{bsp\+\_\+\+SD.\+cpp}} 第 \mbox{\hyperlink{bsp___s_d_8cpp_source_l00053}{53}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classbsp___s_d_ab799d7d8ebaf4c304bf62722ba10ba37_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_d_ab799d7d8ebaf4c304bf62722ba10ba37_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_d_af203b65e00206d38ef14640f7b7242b6}\label{classbsp___s_d_af203b65e00206d38ef14640f7b7242b6}} 
+\index{bsp\_SD@{bsp\_SD}!SD\_WriteDisk@{SD\_WriteDisk}}
+\index{SD\_WriteDisk@{SD\_WriteDisk}!bsp\_SD@{bsp\_SD}}
+\doxysubsubsection{\texorpdfstring{SD\_WriteDisk()}{SD\_WriteDisk()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} bsp\+\_\+\+SD\+::\+SD\+\_\+\+Write\+Disk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$}]{buf,  }\item[{\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}}]{sector,  }\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{cnt }\end{DoxyParamCaption})}
+
+
+
+写\+SD卡 
+
+
+\begin{DoxyParams}{参数}
+{\em $\ast$buf} & 数据缓存区 \\
+\hline
+{\em sector} & 起始扇区 \\
+\hline
+{\em cnt} & 扇区数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+返回值\+:0,ok;其他,失败. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___s_d_8cpp_source}{bsp\+\_\+\+SD.\+cpp}} 第 \mbox{\hyperlink{bsp___s_d_8cpp_source_l00329}{329}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_d_af203b65e00206d38ef14640f7b7242b6_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classbsp___s_d_af203b65e00206d38ef14640f7b7242b6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_d_a36d1110bcbe2404ddd5796dc078ce1f5}\label{classbsp___s_d_a36d1110bcbe2404ddd5796dc078ce1f5}} 
+\index{bsp\_SD@{bsp\_SD}!spi\_readwrite@{spi\_readwrite}}
+\index{spi\_readwrite@{spi\_readwrite}!bsp\_SD@{bsp\_SD}}
+\doxysubsubsection{\texorpdfstring{spi\_readwrite()}{spi\_readwrite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} bsp\+\_\+\+SD\+::spi\+\_\+readwrite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{Txdata }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{bsp___s_d_8cpp_source}{bsp\+\_\+\+SD.\+cpp}} 第 \mbox{\hyperlink{bsp___s_d_8cpp_source_l00373}{373}} 行定义.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___s_d_a36d1110bcbe2404ddd5796dc078ce1f5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___s_d_a5ed95b95b141ee21d83ca70c1b06a31a}\label{classbsp___s_d_a5ed95b95b141ee21d83ca70c1b06a31a}} 
+\index{bsp\_SD@{bsp\_SD}!SPI\_setspeed@{SPI\_setspeed}}
+\index{SPI\_setspeed@{SPI\_setspeed}!bsp\_SD@{bsp\_SD}}
+\doxysubsubsection{\texorpdfstring{SPI\_setspeed()}{SPI\_setspeed()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+SD\+::\+SPI\+\_\+setspeed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+设置\+SPI的速率 
+
+
+\begin{DoxyParams}{参数}
+{\em speed} & 速率 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+无 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___s_d_8cpp_source}{bsp\+\_\+\+SD.\+cpp}} 第 \mbox{\hyperlink{bsp___s_d_8cpp_source_l00383}{383}} 行定义.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classbsp___s_d_a5ed95b95b141ee21d83ca70c1b06a31a_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{classbsp___s_d_a6c68fa82294f18968a92719931cff5fa}\label{classbsp___s_d_a6c68fa82294f18968a92719931cff5fa}} 
+\index{bsp\_SD@{bsp\_SD}!DFF@{DFF}}
+\index{DFF@{DFF}!bsp\_SD@{bsp\_SD}}
+\doxysubsubsection{\texorpdfstring{DFF}{DFF}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} bsp\+\_\+\+SD\+::\+DFF\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{bsp___s_d_8h_source}{bsp\+\_\+\+SD.\+h}} 第 \mbox{\hyperlink{bsp___s_d_8h_source_l00184}{184}} 行定义.
+
+\mbox{\Hypertarget{classbsp___s_d_a4525b5c0f62e39af1c9adb9a9c22239f}\label{classbsp___s_d_a4525b5c0f62e39af1c9adb9a9c22239f}} 
+\index{bsp\_SD@{bsp\_SD}!GPIO\_Pin\_CS@{GPIO\_Pin\_CS}}
+\index{GPIO\_Pin\_CS@{GPIO\_Pin\_CS}!bsp\_SD@{bsp\_SD}}
+\doxysubsubsection{\texorpdfstring{GPIO\_Pin\_CS}{GPIO\_Pin\_CS}}
+{\footnotesize\ttfamily uint16\+\_\+t bsp\+\_\+\+SD\+::\+GPIO\+\_\+\+Pin\+\_\+\+CS\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{bsp___s_d_8h_source}{bsp\+\_\+\+SD.\+h}} 第 \mbox{\hyperlink{bsp___s_d_8h_source_l00182}{182}} 行定义.
+
+\mbox{\Hypertarget{classbsp___s_d_ad7788d2e62152a2fb1a6b307fa902180}\label{classbsp___s_d_ad7788d2e62152a2fb1a6b307fa902180}} 
+\index{bsp\_SD@{bsp\_SD}!GPIOx\_CS@{GPIOx\_CS}}
+\index{GPIOx\_CS@{GPIOx\_CS}!bsp\_SD@{bsp\_SD}}
+\doxysubsubsection{\texorpdfstring{GPIOx\_CS}{GPIOx\_CS}}
+{\footnotesize\ttfamily GPIO\+\_\+\+Type\+Def$\ast$ bsp\+\_\+\+SD\+::\+GPIOx\+\_\+\+CS\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{bsp___s_d_8h_source}{bsp\+\_\+\+SD.\+h}} 第 \mbox{\hyperlink{bsp___s_d_8h_source_l00181}{181}} 行定义.
+
+\mbox{\Hypertarget{classbsp___s_d_a227c7eb7a28e89d6adfda085a4217992}\label{classbsp___s_d_a227c7eb7a28e89d6adfda085a4217992}} 
+\index{bsp\_SD@{bsp\_SD}!hspi@{hspi}}
+\index{hspi@{hspi}!bsp\_SD@{bsp\_SD}}
+\doxysubsubsection{\texorpdfstring{hspi}{hspi}}
+{\footnotesize\ttfamily SPI\+\_\+\+Handle\+Type\+Def$\ast$ bsp\+\_\+\+SD\+::hspi\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{bsp___s_d_8h_source}{bsp\+\_\+\+SD.\+h}} 第 \mbox{\hyperlink{bsp___s_d_8h_source_l00180}{180}} 行定义.
+
+\mbox{\Hypertarget{classbsp___s_d_aab1487286ac43dc9110e65b52c850de4}\label{classbsp___s_d_aab1487286ac43dc9110e65b52c850de4}} 
+\index{bsp\_SD@{bsp\_SD}!SD0\_CardInfo@{SD0\_CardInfo}}
+\index{SD0\_CardInfo@{SD0\_CardInfo}!bsp\_SD@{bsp\_SD}}
+\doxysubsubsection{\texorpdfstring{SD0\_CardInfo}{SD0\_CardInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_m_s_d___c_a_r_d_i_n_f_o}{MSD\+\_\+\+CARDINFO}} bsp\+\_\+\+SD\+::\+SD0\+\_\+\+Card\+Info\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{bsp___s_d_8h_source}{bsp\+\_\+\+SD.\+h}} 第 \mbox{\hyperlink{bsp___s_d_8h_source_l00186}{186}} 行定义.
+
+\mbox{\Hypertarget{classbsp___s_d_a2350601b90ad75bd434094a9c31475c4}\label{classbsp___s_d_a2350601b90ad75bd434094a9c31475c4}} 
+\index{bsp\_SD@{bsp\_SD}!SD\_TYPE@{SD\_TYPE}}
+\index{SD\_TYPE@{SD\_TYPE}!bsp\_SD@{bsp\_SD}}
+\doxysubsubsection{\texorpdfstring{SD\_TYPE}{SD\_TYPE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} bsp\+\_\+\+SD\+::\+SD\+\_\+\+TYPE\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{bsp___s_d_8h_source}{bsp\+\_\+\+SD.\+h}} 第 \mbox{\hyperlink{bsp___s_d_8h_source_l00185}{185}} 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/gitt/\+Microchip\+For32/bsp\+\_\+\+Device/\mbox{\hyperlink{bsp___s_d_8h}{bsp\+\_\+\+SD.\+h}}\item 
+D\+:/gitt/\+Microchip\+For32/bsp\+\_\+\+Device/\mbox{\hyperlink{bsp___s_d_8cpp}{bsp\+\_\+\+SD.\+cpp}}\end{DoxyCompactItemize}

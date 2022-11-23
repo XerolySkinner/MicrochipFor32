@@ -22,6 +22,8 @@
     <innerfile refid="bsp___o_l_e_d___s_t_m32_8h">bsp_OLED_STM32.h</innerfile>
     <innerfile refid="bsp___p_i_d_8cpp">bsp_PID.cpp</innerfile>
     <innerfile refid="bsp___p_i_d_8h">bsp_PID.h</innerfile>
+    <innerfile refid="bsp___s_d_8cpp">bsp_SD.cpp</innerfile>
+    <innerfile refid="bsp___s_d_8h">bsp_SD.h</innerfile>
     <innerfile refid="varint_8h">varint.h</innerfile>
     <briefdescription>
     </briefdescription>

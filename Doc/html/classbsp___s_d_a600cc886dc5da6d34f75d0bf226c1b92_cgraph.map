@@ -1,0 +1,8 @@
+<map id="bsp_SD::SD_GetSectorCount" name="bsp_SD::SD_GetSectorCount">
+<area shape="rect" id="node1" title="获取SD卡的总扇区数" alt="" coords="5,24,200,49"/>
+<area shape="rect" id="node2" href="$classbsp___s_d.html#ad0426f6a4b550e60a926c95724d81665" title="获取CSD信息" alt="" coords="248,24,403,49"/>
+<area shape="rect" id="node3" href="$classbsp___s_d.html#a3250f411819ed57543b0326d13faddc6" title="片选信号" alt="" coords="689,24,807,49"/>
+<area shape="rect" id="node4" href="$classbsp___s_d.html#a242ec4ccd88203b6691cf4ae1e77fdfe" title="读取SD卡指定长度信息" alt="" coords="451,73,624,99"/>
+<area shape="rect" id="node6" href="$classbsp___s_d.html#ab799d7d8ebaf4c304bf62722ba10ba37" title="写SD卡" alt="" coords="460,24,615,49"/>
+<area shape="rect" id="node5" href="$classbsp___s_d.html#a36d1110bcbe2404ddd5796dc078ce1f5" title=" " alt="" coords="672,73,824,99"/>
+</map>

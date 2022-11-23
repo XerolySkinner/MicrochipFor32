@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="struct_m_s_d___c_i_d" kind="struct" language="C++" prot="public">
+    <compoundname>MSD_CID</compoundname>
+    <includes refid="bsp___s_d_8h" local="no">bsp_SD.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_s_d___c_i_d_1a5ae9ad5d65182a34e20b87fa2752010e" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CID::ManufacturerID</definition>
+        <argsstring></argsstring>
+        <name>ManufacturerID</name>
+        <qualifiedname>MSD_CID::ManufacturerID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="137" column="3" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="137" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_i_d_1acd04644e46f7ceca82bbe9bdc80f1d53" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+        <definition>u16 MSD_CID::OEM_AppliID</definition>
+        <argsstring></argsstring>
+        <name>OEM_AppliID</name>
+        <qualifiedname>MSD_CID::OEM_AppliID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="138" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="138" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_i_d_1ab7e359a09fecf1fa2d1b18e708dcc292" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref></type>
+        <definition>u32 MSD_CID::ProdName1</definition>
+        <argsstring></argsstring>
+        <name>ProdName1</name>
+        <qualifiedname>MSD_CID::ProdName1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="139" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="139" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_i_d_1ad0d7606f38a0140075647fb3f66614ea" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CID::ProdName2</definition>
+        <argsstring></argsstring>
+        <name>ProdName2</name>
+        <qualifiedname>MSD_CID::ProdName2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="140" column="3" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="140" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_i_d_1acd9fbacd30fdff0eef7d885ad4ec438b" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CID::ProdRev</definition>
+        <argsstring></argsstring>
+        <name>ProdRev</name>
+        <qualifiedname>MSD_CID::ProdRev</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="141" column="3" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="141" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_i_d_1a0c5c88d258f73f17a496f3b92d9cfd5c" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref></type>
+        <definition>u32 MSD_CID::ProdSN</definition>
+        <argsstring></argsstring>
+        <name>ProdSN</name>
+        <qualifiedname>MSD_CID::ProdSN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="142" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="142" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_i_d_1a1be2e4d82c95f2d158ce5f5157a7fd5b" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CID::Reserved1</definition>
+        <argsstring></argsstring>
+        <name>Reserved1</name>
+        <qualifiedname>MSD_CID::Reserved1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="143" column="3" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="143" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_i_d_1a55015d75002e50ff4f23cd19c9b5c90a" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+        <definition>u16 MSD_CID::ManufactDate</definition>
+        <argsstring></argsstring>
+        <name>ManufactDate</name>
+        <qualifiedname>MSD_CID::ManufactDate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="144" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="144" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_i_d_1a61fe89c386eb7bf7b8e2ba44545168de" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CID::CID_CRC</definition>
+        <argsstring></argsstring>
+        <name>CID_CRC</name>
+        <qualifiedname>MSD_CID::CID_CRC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="145" column="3" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="145" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_i_d_1aac8e73e305ea1ff29ae195a6c0a63e05" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CID::Reserved2</definition>
+        <argsstring></argsstring>
+        <name>Reserved2</name>
+        <qualifiedname>MSD_CID::Reserved2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="146" column="3" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="146" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="136" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="136" bodyend="147"/>
+    <listofallmembers>
+      <member refid="struct_m_s_d___c_i_d_1a61fe89c386eb7bf7b8e2ba44545168de" prot="public" virt="non-virtual"><scope>MSD_CID</scope><name>CID_CRC</name></member>
+      <member refid="struct_m_s_d___c_i_d_1a55015d75002e50ff4f23cd19c9b5c90a" prot="public" virt="non-virtual"><scope>MSD_CID</scope><name>ManufactDate</name></member>
+      <member refid="struct_m_s_d___c_i_d_1a5ae9ad5d65182a34e20b87fa2752010e" prot="public" virt="non-virtual"><scope>MSD_CID</scope><name>ManufacturerID</name></member>
+      <member refid="struct_m_s_d___c_i_d_1acd04644e46f7ceca82bbe9bdc80f1d53" prot="public" virt="non-virtual"><scope>MSD_CID</scope><name>OEM_AppliID</name></member>
+      <member refid="struct_m_s_d___c_i_d_1ab7e359a09fecf1fa2d1b18e708dcc292" prot="public" virt="non-virtual"><scope>MSD_CID</scope><name>ProdName1</name></member>
+      <member refid="struct_m_s_d___c_i_d_1ad0d7606f38a0140075647fb3f66614ea" prot="public" virt="non-virtual"><scope>MSD_CID</scope><name>ProdName2</name></member>
+      <member refid="struct_m_s_d___c_i_d_1acd9fbacd30fdff0eef7d885ad4ec438b" prot="public" virt="non-virtual"><scope>MSD_CID</scope><name>ProdRev</name></member>
+      <member refid="struct_m_s_d___c_i_d_1a0c5c88d258f73f17a496f3b92d9cfd5c" prot="public" virt="non-virtual"><scope>MSD_CID</scope><name>ProdSN</name></member>
+      <member refid="struct_m_s_d___c_i_d_1a1be2e4d82c95f2d158ce5f5157a7fd5b" prot="public" virt="non-virtual"><scope>MSD_CID</scope><name>Reserved1</name></member>
+      <member refid="struct_m_s_d___c_i_d_1aac8e73e305ea1ff29ae195a6c0a63e05" prot="public" virt="non-virtual"><scope>MSD_CID</scope><name>Reserved2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

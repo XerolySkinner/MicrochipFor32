@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gyro_5ffsr_5fe_0',['gyro_fsr_e',['../group___d_r_i_v_e_r_s.html#ga83acdc0eb37e8bfe0c2ae2348ded0a90',1,'inv_mpu.c']]]
+  ['stacks_5fres_0',['STACKS_RES',['../_s_t_l___stack_8h.html#ad01fec74b6b0b6c599780dd41cf55ec0',1,'STL_Stack.h']]]
 ];

@@ -1,0 +1,333 @@
+.TH "D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" 3 "2022年 十一月 22日 星期二" "Version 2.0.0" "MF32BSP_XerolySkinner" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'spi\&.h'\fP
+.br
+\fC#include 'varint\&.h'\fP
+.br
+
+.SS "类"
+
+.in +1c
+.ti -1c
+.RI "struct \fBMSD_CSD\fP"
+.br
+.ti -1c
+.RI "struct \fBMSD_CID\fP"
+.br
+.ti -1c
+.RI "struct \fBMSD_CARDINFO\fP"
+.br
+.ti -1c
+.RI "class \fBbsp_SD\fP"
+.br
+.RI "一个操作SD卡的类 "
+.in -1c
+.SS "宏定义"
+
+.in +1c
+.ti -1c
+.RI "#define \fBERR\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBMMC\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBV1\fP   0x02"
+.br
+.ti -1c
+.RI "#define \fBV2\fP   0x04"
+.br
+.ti -1c
+.RI "#define \fBV2HC\fP   0x06"
+.br
+.ti -1c
+.RI "#define \fBDUMMY_BYTE\fP   0xFF"
+.br
+.ti -1c
+.RI "#define \fBMSD_BLOCKSIZE\fP   512"
+.br
+.ti -1c
+.RI "#define \fBCMD0\fP   0"
+.br
+.ti -1c
+.RI "#define \fBCMD1\fP   1"
+.br
+.ti -1c
+.RI "#define \fBCMD8\fP   8"
+.br
+.ti -1c
+.RI "#define \fBCMD9\fP   9"
+.br
+.ti -1c
+.RI "#define \fBCMD10\fP   10"
+.br
+.ti -1c
+.RI "#define \fBCMD12\fP   12"
+.br
+.ti -1c
+.RI "#define \fBCMD16\fP   16"
+.br
+.ti -1c
+.RI "#define \fBCMD17\fP   17"
+.br
+.ti -1c
+.RI "#define \fBCMD18\fP   18"
+.br
+.ti -1c
+.RI "#define \fBCMD23\fP   23"
+.br
+.ti -1c
+.RI "#define \fBCMD24\fP   24"
+.br
+.ti -1c
+.RI "#define \fBCMD25\fP   25"
+.br
+.ti -1c
+.RI "#define \fBCMD41\fP   41"
+.br
+.ti -1c
+.RI "#define \fBCMD55\fP   55"
+.br
+.ti -1c
+.RI "#define \fBCMD58\fP   58"
+.br
+.ti -1c
+.RI "#define \fBCMD59\fP   59"
+.br
+.ti -1c
+.RI "#define \fBMSD_DATA_OK\fP   0x05"
+.br
+.ti -1c
+.RI "#define \fBMSD_DATA_CRC_ERROR\fP   0x0B"
+.br
+.ti -1c
+.RI "#define \fBMSD_DATA_WRITE_ERROR\fP   0x0D"
+.br
+.ti -1c
+.RI "#define \fBMSD_DATA_OTHER_ERROR\fP   0xFF"
+.br
+.ti -1c
+.RI "#define \fBMSD_RESPONSE_NO_ERROR\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBMSD_IN_IDLE_STATE\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBMSD_ERASE_RESET\fP   0x02"
+.br
+.ti -1c
+.RI "#define \fBMSD_ILLEGAL_COMMAND\fP   0x04"
+.br
+.ti -1c
+.RI "#define \fBMSD_COM_CRC_ERROR\fP   0x08"
+.br
+.ti -1c
+.RI "#define \fBMSD_ERASE_SEQUENCE_ERROR\fP   0x10"
+.br
+.ti -1c
+.RI "#define \fBMSD_ADDRESS_ERROR\fP   0x20"
+.br
+.ti -1c
+.RI "#define \fBMSD_PARAMETER_ERROR\fP   0x40"
+.br
+.ti -1c
+.RI "#define \fBMSD_RESPONSE_FAILURE\fP   0xFF"
+.br
+.in -1c
+.SS "类型定义"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fBMSD_CARDINFO\fP * \fBPMSD_CARDINFO\fP"
+.br
+.in -1c
+.SS "枚举"
+
+.in +1c
+.ti -1c
+.RI "enum \fB_CD_HOLD\fP { \fBHOLD\fP = 0, \fBRELEASE\fP = 1 }"
+.br
+.in -1c
+.SS "变量"
+
+.in +1c
+.ti -1c
+.RI "\fBMSD_CARDINFO\fP \fBSD0_CardInfo\fP"
+.br
+.in -1c
+.SH "宏定义说明"
+.PP 
+.SS "#define CMD0   0"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB57\fP 行定义\&.
+.SS "#define CMD1   1"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB58\fP 行定义\&.
+.SS "#define CMD10   10"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB61\fP 行定义\&.
+.SS "#define CMD12   12"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB62\fP 行定义\&.
+.SS "#define CMD16   16"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB63\fP 行定义\&.
+.SS "#define CMD17   17"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB64\fP 行定义\&.
+.SS "#define CMD18   18"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB65\fP 行定义\&.
+.SS "#define CMD23   23"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB66\fP 行定义\&.
+.SS "#define CMD24   24"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB67\fP 行定义\&.
+.SS "#define CMD25   25"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB68\fP 行定义\&.
+.SS "#define CMD41   41"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB69\fP 行定义\&.
+.SS "#define CMD55   55"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB70\fP 行定义\&.
+.SS "#define CMD58   58"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB71\fP 行定义\&.
+.SS "#define CMD59   59"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB72\fP 行定义\&.
+.SS "#define CMD8   8"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB59\fP 行定义\&.
+.SS "#define CMD9   9"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB60\fP 行定义\&.
+.SS "#define DUMMY_BYTE   0xFF"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB53\fP 行定义\&.
+.SS "#define ERR   0x00"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB48\fP 行定义\&.
+.SS "#define MMC   0x01"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB49\fP 行定义\&.
+.SS "#define MSD_ADDRESS_ERROR   0x20"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB86\fP 行定义\&.
+.SS "#define MSD_BLOCKSIZE   512"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB54\fP 行定义\&.
+.SS "#define MSD_COM_CRC_ERROR   0x08"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB84\fP 行定义\&.
+.SS "#define MSD_DATA_CRC_ERROR   0x0B"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB76\fP 行定义\&.
+.SS "#define MSD_DATA_OK   0x05"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB75\fP 行定义\&.
+.SS "#define MSD_DATA_OTHER_ERROR   0xFF"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB78\fP 行定义\&.
+.SS "#define MSD_DATA_WRITE_ERROR   0x0D"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB77\fP 行定义\&.
+.SS "#define MSD_ERASE_RESET   0x02"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB82\fP 行定义\&.
+.SS "#define MSD_ERASE_SEQUENCE_ERROR   0x10"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB85\fP 行定义\&.
+.SS "#define MSD_ILLEGAL_COMMAND   0x04"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB83\fP 行定义\&.
+.SS "#define MSD_IN_IDLE_STATE   0x01"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB81\fP 行定义\&.
+.SS "#define MSD_PARAMETER_ERROR   0x40"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB87\fP 行定义\&.
+.SS "#define MSD_RESPONSE_FAILURE   0xFF"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB88\fP 行定义\&.
+.SS "#define MSD_RESPONSE_NO_ERROR   0x00"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB80\fP 行定义\&.
+.SS "#define V1   0x02"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB50\fP 行定义\&.
+.SS "#define V2   0x04"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB51\fP 行定义\&.
+.SS "#define V2HC   0x06"
+
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB52\fP 行定义\&.
+.SH "类型定义说明"
+.PP 
+.SS "typedef  struct \fBMSD_CARDINFO\fP * \fBPMSD_CARDINFO\fP"
+
+.SH "枚举类型说明"
+.PP 
+.SS "enum \fB_CD_HOLD\fP"
+
+.PP
+\fB枚举值\fP
+.in +1c
+.TP
+\fB\fIHOLD \fP\fP
+.TP
+\fB\fIRELEASE \fP\fP
+.PP
+在文件 \fBbsp_SD\&.h\fP 第 \fB90\fP 行定义\&.
+.SH "变量说明"
+.PP 
+.SS "\fBMSD_CARDINFO\fP SD0_CardInfo\fC [extern]\fP"
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 MF32BSP_XerolySkinner 的 源代码自动生成\&.

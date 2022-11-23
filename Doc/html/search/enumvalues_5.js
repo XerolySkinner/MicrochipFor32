@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['stacks_5fempty_0',['STACKS_EMPTY',['../_s_t_l___stack_8h.html#ad01fec74b6b0b6c599780dd41cf55ec0aeb269e15565d4aaef1a9b5023a160eba',1,'STL_Stack.h']]],
-  ['stacks_5fmall_5ferror_1',['STACKS_MALL_ERROR',['../_s_t_l___stack_8h.html#ad01fec74b6b0b6c599780dd41cf55ec0a805af9c12fa10d0d7c4846e02dd8b1d4',1,'STL_Stack.h']]],
-  ['stacks_5fok_2',['STACKS_OK',['../_s_t_l___stack_8h.html#ad01fec74b6b0b6c599780dd41cf55ec0a3e9b3bff72ae3f8f3c62c4f4bc24ca16',1,'STL_Stack.h']]],
-  ['stacks_5freal_5ferror_3',['STACKS_REAL_ERROR',['../_s_t_l___stack_8h.html#ad01fec74b6b0b6c599780dd41cf55ec0a9f2b3bdf4ae6c347dbf6bb0797672de7',1,'STL_Stack.h']]]
+  ['queues_5fempty_0',['QUEUES_EMPTY',['../_s_t_l___queue_8h.html#aa246d039fae29502aba4ffde61bebaa5ad39f1a970bf2ee35cee3b69168e7d4d1',1,'STL_Queue.h']]],
+  ['queues_5fmall_5ferror_1',['QUEUES_MALL_ERROR',['../_s_t_l___queue_8h.html#aa246d039fae29502aba4ffde61bebaa5a0ecfdce5da7daaea657afe0c2060d8e6',1,'STL_Queue.h']]],
+  ['queues_5fok_2',['QUEUES_OK',['../_s_t_l___queue_8h.html#aa246d039fae29502aba4ffde61bebaa5a277fc31bdbe46a70ffc98da7a7468162',1,'STL_Queue.h']]],
+  ['queues_5freal_5ferror_3',['QUEUES_REAL_ERROR',['../_s_t_l___queue_8h.html#aa246d039fae29502aba4ffde61bebaa5a3df7082063e14f0ae068a2feb3e4a03d',1,'STL_Queue.h']]]
 ];

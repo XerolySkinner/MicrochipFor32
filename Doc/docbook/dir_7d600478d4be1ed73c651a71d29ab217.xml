@@ -85,6 +85,12 @@
 
 <para>实现了PID算法 </para>
 </listitem>
+            <listitem><para>文件 <link linkend="_bsp___s_d_8cpp">bsp_SD.cpp</link></para>
+
+<para>操作SD卡的库 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___s_d_8h">bsp_SD.h</link></para>
+</listitem>
             <listitem><para>文件 <link linkend="_varint_8h">varint.h</link></para>
 </listitem>
         </itemizedlist>

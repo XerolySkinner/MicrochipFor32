@@ -1,0 +1,608 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="struct_m_s_d___c_s_d" kind="struct" language="C++" prot="public">
+    <compoundname>MSD_CSD</compoundname>
+    <includes refid="bsp___s_d_8h" local="no">bsp_SD.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a53c6d82426462a5f31a0e07bc2014d97" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::CSDStruct</definition>
+        <argsstring></argsstring>
+        <name>CSDStruct</name>
+        <qualifiedname>MSD_CSD::CSDStruct</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="96" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="96" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a8709246fbcaa2984e8752e5d028a25e1" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::SysSpecVersion</definition>
+        <argsstring></argsstring>
+        <name>SysSpecVersion</name>
+        <qualifiedname>MSD_CSD::SysSpecVersion</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="97" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="97" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a43d9f48b7a10b9b16700cc4df7f944c0" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::Reserved1</definition>
+        <argsstring></argsstring>
+        <name>Reserved1</name>
+        <qualifiedname>MSD_CSD::Reserved1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="98" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="98" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1ac80ef2c5f8eedf6e361b9d48da66d98d" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::TAAC</definition>
+        <argsstring></argsstring>
+        <name>TAAC</name>
+        <qualifiedname>MSD_CSD::TAAC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="99" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="99" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1ae9fdc21394cb38fc96de03821b5b1f5b" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::NSAC</definition>
+        <argsstring></argsstring>
+        <name>NSAC</name>
+        <qualifiedname>MSD_CSD::NSAC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="100" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="100" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1ae4fe7f59ec2c0fec2d5c5edc912de487" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::MaxBusClkFrec</definition>
+        <argsstring></argsstring>
+        <name>MaxBusClkFrec</name>
+        <qualifiedname>MSD_CSD::MaxBusClkFrec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="101" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="101" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a235ebfcf7116a28eb8f7e2348b46c279" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+        <definition>u16 MSD_CSD::CardComdClasses</definition>
+        <argsstring></argsstring>
+        <name>CardComdClasses</name>
+        <qualifiedname>MSD_CSD::CardComdClasses</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="102" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a0d503ea30e3553e3dbf1d259c1835bca" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::RdBlockLen</definition>
+        <argsstring></argsstring>
+        <name>RdBlockLen</name>
+        <qualifiedname>MSD_CSD::RdBlockLen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="103" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="103" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a7e302d0f797f25a53205bf683fcb9315" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::PartBlockRead</definition>
+        <argsstring></argsstring>
+        <name>PartBlockRead</name>
+        <qualifiedname>MSD_CSD::PartBlockRead</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="104" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="104" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1aaf61be1914d24eeef107b78d57f96f66" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::WrBlockMisalign</definition>
+        <argsstring></argsstring>
+        <name>WrBlockMisalign</name>
+        <qualifiedname>MSD_CSD::WrBlockMisalign</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="105" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="105" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1ad4c2ce16da22ad02424466d1b42d04b0" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::RdBlockMisalign</definition>
+        <argsstring></argsstring>
+        <name>RdBlockMisalign</name>
+        <qualifiedname>MSD_CSD::RdBlockMisalign</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="106" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="106" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a6010a523c29470b3fca2a179608bb165" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::DSRImpl</definition>
+        <argsstring></argsstring>
+        <name>DSRImpl</name>
+        <qualifiedname>MSD_CSD::DSRImpl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="107" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="107" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1af46b7c72145239d75dcf08e97a8015cb" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::Reserved2</definition>
+        <argsstring></argsstring>
+        <name>Reserved2</name>
+        <qualifiedname>MSD_CSD::Reserved2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="108" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="108" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1ab2341b019f101f621817ab7f13f85321" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref></type>
+        <definition>u32 MSD_CSD::DeviceSize</definition>
+        <argsstring></argsstring>
+        <name>DeviceSize</name>
+        <qualifiedname>MSD_CSD::DeviceSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="109" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="109" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a5f028ae76ae390e7efc7581863f86fa4" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::MaxRdCurrentVDDMin</definition>
+        <argsstring></argsstring>
+        <name>MaxRdCurrentVDDMin</name>
+        <qualifiedname>MSD_CSD::MaxRdCurrentVDDMin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="110" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="110" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a81dee06837a4a641a428af5271ce7881" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::MaxRdCurrentVDDMax</definition>
+        <argsstring></argsstring>
+        <name>MaxRdCurrentVDDMax</name>
+        <qualifiedname>MSD_CSD::MaxRdCurrentVDDMax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="111" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="111" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a4312d08d19360f8cda0fdcefea8c58a8" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::MaxWrCurrentVDDMin</definition>
+        <argsstring></argsstring>
+        <name>MaxWrCurrentVDDMin</name>
+        <qualifiedname>MSD_CSD::MaxWrCurrentVDDMin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="112" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="112" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a5a4157c022770f5f2a22da59f1287ec1" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::MaxWrCurrentVDDMax</definition>
+        <argsstring></argsstring>
+        <name>MaxWrCurrentVDDMax</name>
+        <qualifiedname>MSD_CSD::MaxWrCurrentVDDMax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="113" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="113" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a021add43b09781e1c4feb5a911bab718" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::DeviceSizeMul</definition>
+        <argsstring></argsstring>
+        <name>DeviceSizeMul</name>
+        <qualifiedname>MSD_CSD::DeviceSizeMul</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="114" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="114" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a3217bd2b49b77943bcb3e5a6f5f0e419" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::EraseGrSize</definition>
+        <argsstring></argsstring>
+        <name>EraseGrSize</name>
+        <qualifiedname>MSD_CSD::EraseGrSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="115" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="115" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a6d4b83a1a42edb0e08f674fa6e611d28" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::EraseGrMul</definition>
+        <argsstring></argsstring>
+        <name>EraseGrMul</name>
+        <qualifiedname>MSD_CSD::EraseGrMul</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="116" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="116" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1aa21f77c612167167e40003b6d3784689" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::WrProtectGrSize</definition>
+        <argsstring></argsstring>
+        <name>WrProtectGrSize</name>
+        <qualifiedname>MSD_CSD::WrProtectGrSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="117" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="117" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a0d11fc6f8c1e51d1b63887603eee8915" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::WrProtectGrEnable</definition>
+        <argsstring></argsstring>
+        <name>WrProtectGrEnable</name>
+        <qualifiedname>MSD_CSD::WrProtectGrEnable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="118" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="118" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a1ee9e5144b15487f92f6d9ce59835428" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::ManDeflECC</definition>
+        <argsstring></argsstring>
+        <name>ManDeflECC</name>
+        <qualifiedname>MSD_CSD::ManDeflECC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="119" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="119" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a3ededd192a17234569a584cbd72b12ae" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::WrSpeedFact</definition>
+        <argsstring></argsstring>
+        <name>WrSpeedFact</name>
+        <qualifiedname>MSD_CSD::WrSpeedFact</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="120" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="120" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a0dcba500cb60f6ce8d95864ae2eaa307" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::MaxWrBlockLen</definition>
+        <argsstring></argsstring>
+        <name>MaxWrBlockLen</name>
+        <qualifiedname>MSD_CSD::MaxWrBlockLen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="121" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="121" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a3c32bff0de0b6cba1f9bd3205159e6e4" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::WriteBlockPaPartial</definition>
+        <argsstring></argsstring>
+        <name>WriteBlockPaPartial</name>
+        <qualifiedname>MSD_CSD::WriteBlockPaPartial</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="122" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="122" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a83b44a54e8cefcfffdfb5a744d0bf3d5" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::Reserved3</definition>
+        <argsstring></argsstring>
+        <name>Reserved3</name>
+        <qualifiedname>MSD_CSD::Reserved3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="123" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="123" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1aaadb152d2dce1323e589580ef0099fec" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::ContentProtectAppli</definition>
+        <argsstring></argsstring>
+        <name>ContentProtectAppli</name>
+        <qualifiedname>MSD_CSD::ContentProtectAppli</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="124" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="124" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a08f8247c46de7ef2b0677886470d7792" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::FileFormatGrouop</definition>
+        <argsstring></argsstring>
+        <name>FileFormatGrouop</name>
+        <qualifiedname>MSD_CSD::FileFormatGrouop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="125" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="125" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a17f58dd1f98e6e6376efe142f352cb59" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::CopyFlag</definition>
+        <argsstring></argsstring>
+        <name>CopyFlag</name>
+        <qualifiedname>MSD_CSD::CopyFlag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="126" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="126" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a150bf25ff42008d58320a6b7e531c9ab" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::PermWrProtect</definition>
+        <argsstring></argsstring>
+        <name>PermWrProtect</name>
+        <qualifiedname>MSD_CSD::PermWrProtect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="127" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="127" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a3f2c48bb307e7779173e3563bbd5038f" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::TempWrProtect</definition>
+        <argsstring></argsstring>
+        <name>TempWrProtect</name>
+        <qualifiedname>MSD_CSD::TempWrProtect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="128" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="128" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1ac3510e157155d4b9d9f67591b1cb0c8e" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::FileFormat</definition>
+        <argsstring></argsstring>
+        <name>FileFormat</name>
+        <qualifiedname>MSD_CSD::FileFormat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="129" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="129" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a1e153d660ffe4bbafa596d4b0b8c2906" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::ECC</definition>
+        <argsstring></argsstring>
+        <name>ECC</name>
+        <qualifiedname>MSD_CSD::ECC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="130" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="130" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a81e9f99cdd87dd2e0305b3b191aa5226" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::CSD_CRC</definition>
+        <argsstring></argsstring>
+        <name>CSD_CRC</name>
+        <qualifiedname>MSD_CSD::CSD_CRC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="131" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="131" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_d___c_s_d_1a36b124f6ffc0716dc0dc93c407b975d1" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 MSD_CSD::Reserved4</definition>
+        <argsstring></argsstring>
+        <name>Reserved4</name>
+        <qualifiedname>MSD_CSD::Reserved4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="132" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="132" bodyend="-1"/>
+        <referencedby refid="classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12" compoundref="bsp___s_d_8cpp" startline="207" endline="320">bsp_SD::MSD0_GetCardInfo</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="95" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="95" bodyend="133"/>
+    <listofallmembers>
+      <member refid="struct_m_s_d___c_s_d_1a235ebfcf7116a28eb8f7e2348b46c279" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>CardComdClasses</name></member>
+      <member refid="struct_m_s_d___c_s_d_1aaadb152d2dce1323e589580ef0099fec" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>ContentProtectAppli</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a17f58dd1f98e6e6376efe142f352cb59" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>CopyFlag</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a81e9f99cdd87dd2e0305b3b191aa5226" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>CSD_CRC</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a53c6d82426462a5f31a0e07bc2014d97" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>CSDStruct</name></member>
+      <member refid="struct_m_s_d___c_s_d_1ab2341b019f101f621817ab7f13f85321" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>DeviceSize</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a021add43b09781e1c4feb5a911bab718" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>DeviceSizeMul</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a6010a523c29470b3fca2a179608bb165" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>DSRImpl</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a1e153d660ffe4bbafa596d4b0b8c2906" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>ECC</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a6d4b83a1a42edb0e08f674fa6e611d28" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>EraseGrMul</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a3217bd2b49b77943bcb3e5a6f5f0e419" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>EraseGrSize</name></member>
+      <member refid="struct_m_s_d___c_s_d_1ac3510e157155d4b9d9f67591b1cb0c8e" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>FileFormat</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a08f8247c46de7ef2b0677886470d7792" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>FileFormatGrouop</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a1ee9e5144b15487f92f6d9ce59835428" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>ManDeflECC</name></member>
+      <member refid="struct_m_s_d___c_s_d_1ae4fe7f59ec2c0fec2d5c5edc912de487" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>MaxBusClkFrec</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a81dee06837a4a641a428af5271ce7881" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>MaxRdCurrentVDDMax</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a5f028ae76ae390e7efc7581863f86fa4" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>MaxRdCurrentVDDMin</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a0dcba500cb60f6ce8d95864ae2eaa307" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>MaxWrBlockLen</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a5a4157c022770f5f2a22da59f1287ec1" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>MaxWrCurrentVDDMax</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a4312d08d19360f8cda0fdcefea8c58a8" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>MaxWrCurrentVDDMin</name></member>
+      <member refid="struct_m_s_d___c_s_d_1ae9fdc21394cb38fc96de03821b5b1f5b" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>NSAC</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a7e302d0f797f25a53205bf683fcb9315" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>PartBlockRead</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a150bf25ff42008d58320a6b7e531c9ab" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>PermWrProtect</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a0d503ea30e3553e3dbf1d259c1835bca" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>RdBlockLen</name></member>
+      <member refid="struct_m_s_d___c_s_d_1ad4c2ce16da22ad02424466d1b42d04b0" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>RdBlockMisalign</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a43d9f48b7a10b9b16700cc4df7f944c0" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>Reserved1</name></member>
+      <member refid="struct_m_s_d___c_s_d_1af46b7c72145239d75dcf08e97a8015cb" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>Reserved2</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a83b44a54e8cefcfffdfb5a744d0bf3d5" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>Reserved3</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a36b124f6ffc0716dc0dc93c407b975d1" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>Reserved4</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a8709246fbcaa2984e8752e5d028a25e1" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>SysSpecVersion</name></member>
+      <member refid="struct_m_s_d___c_s_d_1ac80ef2c5f8eedf6e361b9d48da66d98d" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>TAAC</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a3f2c48bb307e7779173e3563bbd5038f" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>TempWrProtect</name></member>
+      <member refid="struct_m_s_d___c_s_d_1aaf61be1914d24eeef107b78d57f96f66" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>WrBlockMisalign</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a3c32bff0de0b6cba1f9bd3205159e6e4" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>WriteBlockPaPartial</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a0d11fc6f8c1e51d1b63887603eee8915" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>WrProtectGrEnable</name></member>
+      <member refid="struct_m_s_d___c_s_d_1aa21f77c612167167e40003b6d3784689" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>WrProtectGrSize</name></member>
+      <member refid="struct_m_s_d___c_s_d_1a3ededd192a17234569a584cbd72b12ae" prot="public" virt="non-virtual"><scope>MSD_CSD</scope><name>WrSpeedFact</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

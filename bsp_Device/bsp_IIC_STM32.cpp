@@ -82,7 +82,6 @@ u8 bsp_IIC_STM32::IIC_SCK(u8 var) {
 	}}
 /**
  * @brief			控制SDA管脚口
- * 
  * @param	var 	此处有三个状态,IIC_SET置位管脚,IIC_RESET复位管脚
  * @return			当var为IIC_READ时返回管脚状态
  */ 

@@ -1,0 +1,818 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbsp___s_d" xml:lang="zh">
+<title>bsp_SD类 参考</title>
+<indexterm><primary>bsp_SD</primary></indexterm>
+<para>
+
+<para>一个操作SD卡的类 </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;bsp_SD.h&gt;</computeroutput>
+</para>
+bsp_SD 的协作图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_d__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbsp___s_d_1a9f5ace0a335acc31271c9d131cd6d306">bsp_SD</link> (SPI_HandleTypeDef *<link linkend="_classbsp___s_d_1a227c7eb7a28e89d6adfda085a4217992">hspi</link>, GPIO_TypeDef *<link linkend="_classbsp___s_d_1ad7788d2e62152a2fb1a6b307fa902180">GPIOx_CS</link>, uint16_t <link linkend="_classbsp___s_d_1a4525b5c0f62e39af1c9adb9a9c22239f">GPIO_Pin_CS</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_classbsp___s_d_1a1e0a3f09367627bcafc8efaaeb90b066">SD_init</link> (void)</para>
+
+<para>初始化SD卡 </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_classbsp___s_d_1a96f32b50ec777acc0dd819150cd28937">SD_ReadDisk</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> *buf, <link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> sector, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> cnt)</para>
+
+<para>读SD卡 </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_classbsp___s_d_1af203b65e00206d38ef14640f7b7242b6">SD_WriteDisk</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> *buf, <link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> sector, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> cnt)</para>
+
+<para>写SD卡 </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> <link linkend="_classbsp___s_d_1a600cc886dc5da6d34f75d0bf226c1b92">SD_GetSectorCount</link> (void)</para>
+
+<para>获取SD卡的总扇区数 </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_classbsp___s_d_1a164f0bb03133464f2da485f362a52718">offsetWrite</link> (<link linkend="_varint_8h_1a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</link> offset, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> *dat, <link linkend="_varint_8h_1a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</link> datlen)</para>
+
+<para>写入连贯的数据 </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_classbsp___s_d_1a1c78e6f5a72f3bdec600a52331dd4d20">offsetRead</link> (<link linkend="_varint_8h_1a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</link> offset, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> *dat, <link linkend="_varint_8h_1a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</link> datlen)</para>
+
+<para>读取连贯的数据 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 成员函数    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_classbsp___s_d_1a3250f411819ed57543b0326d13faddc6">SD_CS</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> p)</para>
+
+<para>片选信号 </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_classbsp___s_d_1a25bc03ff69d0c3c9a73153c71c84a8b0">SD_GETCID</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> *cid_data)</para>
+
+<para>获取CID信息 </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_classbsp___s_d_1ad0426f6a4b550e60a926c95724d81665">SD_GETCSD</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> *csd_data)</para>
+
+<para>获取CSD信息 </para>
+</listitem>
+            <listitem><para>int <link linkend="_classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12">MSD0_GetCardInfo</link> (<link linkend="_bsp___s_d_8h_1a64c818be5c771b5bcfd5cbd998c0f9c6">PMSD_CARDINFO</link> <link linkend="_classbsp___s_d_1aab1487286ac43dc9110e65b52c850de4">SD0_CardInfo</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_classbsp___s_d_1a242ec4ccd88203b6691cf4ae1e77fdfe">SD_ReceiveData</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> *data, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> len)</para>
+
+<para>读取SD卡指定长度信息 </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_classbsp___s_d_1a2df843979bb4c764422a37b255c184ea">SD_SendBlock</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> *buf, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> cmd)</para>
+
+<para>向SD卡写入一个扇区 </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> <link linkend="_classbsp___s_d_1ab799d7d8ebaf4c304bf62722ba10ba37">SD_sendcmd</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> cmd, <link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> arg, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> crc)</para>
+
+<para>写SD卡 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___s_d_1a5ed95b95b141ee21d83ca70c1b06a31a">SPI_setspeed</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> speed)</para>
+
+<para>设置SPI的速率 </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_classbsp___s_d_1a36d1110bcbe2404ddd5796dc078ce1f5">spi_readwrite</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> Txdata)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 属性    </title>
+        <itemizedlist>
+            <listitem><para>SPI_HandleTypeDef * <link linkend="_classbsp___s_d_1a227c7eb7a28e89d6adfda085a4217992">hspi</link></para>
+</listitem>
+            <listitem><para>GPIO_TypeDef * <link linkend="_classbsp___s_d_1ad7788d2e62152a2fb1a6b307fa902180">GPIOx_CS</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_classbsp___s_d_1a4525b5c0f62e39af1c9adb9a9c22239f">GPIO_Pin_CS</link></para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_classbsp___s_d_1a6c68fa82294f18968a92719931cff5fa">DFF</link></para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> <link linkend="_classbsp___s_d_1a2350601b90ad75bd434094a9c31475c4">SD_TYPE</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_m_s_d___c_a_r_d_i_n_f_o">MSD_CARDINFO</link> <link linkend="_classbsp___s_d_1aab1487286ac43dc9110e65b52c850de4">SD0_CardInfo</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>一个操作SD卡的类 </para>
+<para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00169">169</link> 行定义.</para>
+</section>
+<section>
+<title>构造及析构函数说明</title>
+<anchor xml:id="_classbsp___s_d_1a9f5ace0a335acc31271c9d131cd6d306"/><section>
+    <title>bsp_SD()</title>
+<indexterm><primary>bsp_SD</primary><secondary>bsp_SD</secondary></indexterm>
+<indexterm><primary>bsp_SD</primary><secondary>bsp_SD</secondary></indexterm>
+<para><computeroutput>bsp_SD::bsp_SD (SPI_HandleTypeDef * hspi, GPIO_TypeDef * GPIOx_CS, uint16_t GPIO_Pin_CS)</computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8cpp_source">bsp_SD.cpp</link> 第 <link linkend="_bsp___s_d_8cpp_source_1l00447">447</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_classbsp___s_d_1aaf2d27cc9275f3ffa71556124f143d12"/><section>
+    <title>MSD0_GetCardInfo()</title>
+<indexterm><primary>MSD0_GetCardInfo</primary><secondary>bsp_SD</secondary></indexterm>
+<indexterm><primary>bsp_SD</primary><secondary>MSD0_GetCardInfo</secondary></indexterm>
+<para><computeroutput>int bsp_SD::MSD0_GetCardInfo (<link linkend="_bsp___s_d_8h_1a64c818be5c771b5bcfd5cbd998c0f9c6">PMSD_CARDINFO</link> SD0_CardInfo)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8cpp_source">bsp_SD.cpp</link> 第 <link linkend="_bsp___s_d_8cpp_source_1l00207">207</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_d_aaf2d27cc9275f3ffa71556124f143d12_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_d_1a1c78e6f5a72f3bdec600a52331dd4d20"/><section>
+    <title>offsetRead()</title>
+<indexterm><primary>offsetRead</primary><secondary>bsp_SD</secondary></indexterm>
+<indexterm><primary>bsp_SD</primary><secondary>offsetRead</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> bsp_SD::offsetRead (<link linkend="_varint_8h_1a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</link> offset, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> * dat, <link linkend="_varint_8h_1a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</link> datlen)</computeroutput></para><para>
+
+<para>读取连贯的数据 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>offset</entry><entry>
+<para>读取位置 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>*dat</entry><entry>
+<para>数据缓冲区 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>datlen</entry><entry>
+<para>读取长度 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>返回值:0,ok;其他,失败. </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___s_d_8cpp_source">bsp_SD.cpp</link> 第 <link linkend="_bsp___s_d_8cpp_source_1l00423">423</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_d_a1c78e6f5a72f3bdec600a52331dd4d20_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_d_1a164f0bb03133464f2da485f362a52718"/><section>
+    <title>offsetWrite()</title>
+<indexterm><primary>offsetWrite</primary><secondary>bsp_SD</secondary></indexterm>
+<indexterm><primary>bsp_SD</primary><secondary>offsetWrite</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> bsp_SD::offsetWrite (<link linkend="_varint_8h_1a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</link> offset, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> * dat, <link linkend="_varint_8h_1a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</link> datlen)</computeroutput></para><para>
+
+<para>写入连贯的数据 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>offset</entry><entry>
+<para>写入位置 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>*dat</entry><entry>
+<para>数据缓冲区 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>datlen</entry><entry>
+<para>写入长度 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>返回值:0,ok;其他,失败. </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___s_d_8cpp_source">bsp_SD.cpp</link> 第 <link linkend="_bsp___s_d_8cpp_source_1l00393">393</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_d_a164f0bb03133464f2da485f362a52718_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_d_1a3250f411819ed57543b0326d13faddc6"/><section>
+    <title>SD_CS()</title>
+<indexterm><primary>SD_CS</primary><secondary>bsp_SD</secondary></indexterm>
+<indexterm><primary>bsp_SD</primary><secondary>SD_CS</secondary></indexterm>
+<para><computeroutput>void bsp_SD::SD_CS (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> p)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>片选信号 </para>
+</para>
+
+<para><formalpara><title>返回</title>
+
+<para>无 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___s_d_8cpp_source">bsp_SD.cpp</link> 第 <link linkend="_bsp___s_d_8cpp_source_1l00043">43</link> 行定义.</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_d_a3250f411819ed57543b0326d13faddc6_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_d_1a25bc03ff69d0c3c9a73153c71c84a8b0"/><section>
+    <title>SD_GETCID()</title>
+<indexterm><primary>SD_GETCID</primary><secondary>bsp_SD</secondary></indexterm>
+<indexterm><primary>bsp_SD</primary><secondary>SD_GETCID</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> bsp_SD::SD_GETCID (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> * cid_data)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>获取CID信息 </para>
+</para>
+
+<para><formalpara><title>返回</title>
+
+<para>CID信息 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___s_d_8cpp_source">bsp_SD.cpp</link> 第 <link linkend="_bsp___s_d_8cpp_source_1l00164">164</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_d_a25bc03ff69d0c3c9a73153c71c84a8b0_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_d_1ad0426f6a4b550e60a926c95724d81665"/><section>
+    <title>SD_GETCSD()</title>
+<indexterm><primary>SD_GETCSD</primary><secondary>bsp_SD</secondary></indexterm>
+<indexterm><primary>bsp_SD</primary><secondary>SD_GETCSD</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> bsp_SD::SD_GETCSD (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> * csd_data)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>获取CSD信息 </para>
+</para>
+
+<para><formalpara><title>返回</title>
+
+<para>CSD信息 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___s_d_8cpp_source">bsp_SD.cpp</link> 第 <link linkend="_bsp___s_d_8cpp_source_1l00176">176</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_d_ad0426f6a4b550e60a926c95724d81665_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_d_ad0426f6a4b550e60a926c95724d81665_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_d_1a600cc886dc5da6d34f75d0bf226c1b92"/><section>
+    <title>SD_GetSectorCount()</title>
+<indexterm><primary>SD_GetSectorCount</primary><secondary>bsp_SD</secondary></indexterm>
+<indexterm><primary>bsp_SD</primary><secondary>SD_GetSectorCount</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> bsp_SD::SD_GetSectorCount (void )</computeroutput></para><para>
+
+<para>获取SD卡的总扇区数 </para>
+</para>
+
+<para><formalpara><title>返回</title>
+
+<para>总扇区数 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___s_d_8cpp_source">bsp_SD.cpp</link> 第 <link linkend="_bsp___s_d_8cpp_source_1l00188">188</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_d_a600cc886dc5da6d34f75d0bf226c1b92_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_d_1a1e0a3f09367627bcafc8efaaeb90b066"/><section>
+    <title>SD_init()</title>
+<indexterm><primary>SD_init</primary><secondary>bsp_SD</secondary></indexterm>
+<indexterm><primary>bsp_SD</primary><secondary>SD_init</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> bsp_SD::SD_init (void )</computeroutput></para><para>
+
+<para>初始化SD卡 </para>
+</para>
+
+<para><formalpara><title>返回</title>
+
+<para>返回值:0,ok;其他,失败. </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___s_d_8cpp_source">bsp_SD.cpp</link> 第 <link linkend="_bsp___s_d_8cpp_source_1l00074">74</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_d_a1e0a3f09367627bcafc8efaaeb90b066_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_d_1a96f32b50ec777acc0dd819150cd28937"/><section>
+    <title>SD_ReadDisk()</title>
+<indexterm><primary>SD_ReadDisk</primary><secondary>bsp_SD</secondary></indexterm>
+<indexterm><primary>bsp_SD</primary><secondary>SD_ReadDisk</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> bsp_SD::SD_ReadDisk (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> * buf, <link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> sector, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> cnt)</computeroutput></para><para>
+
+<para>读SD卡 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>*buf</entry><entry>
+<para>数据缓存区 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>sector</entry><entry>
+<para>起始扇区 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>cnt</entry><entry>
+<para>扇区数 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>返回值:0,ok;其他,失败. </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___s_d_8cpp_source">bsp_SD.cpp</link> 第 <link linkend="_bsp___s_d_8cpp_source_1l00356">356</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_d_a96f32b50ec777acc0dd819150cd28937_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_d_a96f32b50ec777acc0dd819150cd28937_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_d_1a242ec4ccd88203b6691cf4ae1e77fdfe"/><section>
+    <title>SD_ReceiveData()</title>
+<indexterm><primary>SD_ReceiveData</primary><secondary>bsp_SD</secondary></indexterm>
+<indexterm><primary>bsp_SD</primary><secondary>SD_ReceiveData</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> bsp_SD::SD_ReceiveData (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> * data, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> len)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>读取SD卡指定长度信息 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>*data</entry><entry>
+<para>数据缓存区 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>len</entry><entry>
+<para>长度 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>返回值:0,ok;其他,失败. </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___s_d_8cpp_source">bsp_SD.cpp</link> 第 <link linkend="_bsp___s_d_8cpp_source_1l00127">127</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_d_a242ec4ccd88203b6691cf4ae1e77fdfe_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_d_a242ec4ccd88203b6691cf4ae1e77fdfe_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_d_1a2df843979bb4c764422a37b255c184ea"/><section>
+    <title>SD_SendBlock()</title>
+<indexterm><primary>SD_SendBlock</primary><secondary>bsp_SD</secondary></indexterm>
+<indexterm><primary>bsp_SD</primary><secondary>SD_SendBlock</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> bsp_SD::SD_SendBlock (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> * buf, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> cmd)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>向SD卡写入一个扇区 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>*buf</entry><entry>
+<para>数据缓存区 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>cmd</entry><entry>
+<para>操作指令 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>返回值:0,ok;其他,失败. </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___s_d_8cpp_source">bsp_SD.cpp</link> 第 <link linkend="_bsp___s_d_8cpp_source_1l00147">147</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_d_a2df843979bb4c764422a37b255c184ea_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_d_a2df843979bb4c764422a37b255c184ea_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_d_1ab799d7d8ebaf4c304bf62722ba10ba37"/><section>
+    <title>SD_sendcmd()</title>
+<indexterm><primary>SD_sendcmd</primary><secondary>bsp_SD</secondary></indexterm>
+<indexterm><primary>bsp_SD</primary><secondary>SD_sendcmd</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> bsp_SD::SD_sendcmd (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> cmd, <link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> arg, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> crc)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>写SD卡 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>cmd</entry><entry>
+<para>命令 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>arg</entry><entry>
+<para><?linebreak?> </para>
+</entry>
+                            </row>
+                            <row>
+<entry>crc</entry><entry>
+<para>校验码 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para><?linebreak?> </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___s_d_8cpp_source">bsp_SD.cpp</link> 第 <link linkend="_bsp___s_d_8cpp_source_1l00053">53</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_d_ab799d7d8ebaf4c304bf62722ba10ba37_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_d_ab799d7d8ebaf4c304bf62722ba10ba37_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_d_1af203b65e00206d38ef14640f7b7242b6"/><section>
+    <title>SD_WriteDisk()</title>
+<indexterm><primary>SD_WriteDisk</primary><secondary>bsp_SD</secondary></indexterm>
+<indexterm><primary>bsp_SD</primary><secondary>SD_WriteDisk</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> bsp_SD::SD_WriteDisk (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> * buf, <link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> sector, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> cnt)</computeroutput></para><para>
+
+<para>写SD卡 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>*buf</entry><entry>
+<para>数据缓存区 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>sector</entry><entry>
+<para>起始扇区 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>cnt</entry><entry>
+<para>扇区数 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>返回值:0,ok;其他,失败. </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___s_d_8cpp_source">bsp_SD.cpp</link> 第 <link linkend="_bsp___s_d_8cpp_source_1l00329">329</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_d_af203b65e00206d38ef14640f7b7242b6_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_d_af203b65e00206d38ef14640f7b7242b6_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_d_1a36d1110bcbe2404ddd5796dc078ce1f5"/><section>
+    <title>spi_readwrite()</title>
+<indexterm><primary>spi_readwrite</primary><secondary>bsp_SD</secondary></indexterm>
+<indexterm><primary>bsp_SD</primary><secondary>spi_readwrite</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> bsp_SD::spi_readwrite (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> Txdata)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8cpp_source">bsp_SD.cpp</link> 第 <link linkend="_bsp___s_d_8cpp_source_1l00373">373</link> 行定义.</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_d_a36d1110bcbe2404ddd5796dc078ce1f5_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___s_d_1a5ed95b95b141ee21d83ca70c1b06a31a"/><section>
+    <title>SPI_setspeed()</title>
+<indexterm><primary>SPI_setspeed</primary><secondary>bsp_SD</secondary></indexterm>
+<indexterm><primary>bsp_SD</primary><secondary>SPI_setspeed</secondary></indexterm>
+<para><computeroutput>void bsp_SD::SPI_setspeed (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> speed)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>设置SPI的速率 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>speed</entry><entry>
+<para>速率 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>无 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___s_d_8cpp_source">bsp_SD.cpp</link> 第 <link linkend="_bsp___s_d_8cpp_source_1l00383">383</link> 行定义.</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___s_d_a5ed95b95b141ee21d83ca70c1b06a31a_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_classbsp___s_d_1a6c68fa82294f18968a92719931cff5fa"/><section>
+    <title>DFF</title>
+<indexterm><primary>DFF</primary><secondary>bsp_SD</secondary></indexterm>
+<indexterm><primary>bsp_SD</primary><secondary>DFF</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> bsp_SD::DFF<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00184">184</link> 行定义.</para>
+</section>
+<anchor xml:id="_classbsp___s_d_1a4525b5c0f62e39af1c9adb9a9c22239f"/><section>
+    <title>GPIO_Pin_CS</title>
+<indexterm><primary>GPIO_Pin_CS</primary><secondary>bsp_SD</secondary></indexterm>
+<indexterm><primary>bsp_SD</primary><secondary>GPIO_Pin_CS</secondary></indexterm>
+<para><computeroutput>uint16_t bsp_SD::GPIO_Pin_CS<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00182">182</link> 行定义.</para>
+</section>
+<anchor xml:id="_classbsp___s_d_1ad7788d2e62152a2fb1a6b307fa902180"/><section>
+    <title>GPIOx_CS</title>
+<indexterm><primary>GPIOx_CS</primary><secondary>bsp_SD</secondary></indexterm>
+<indexterm><primary>bsp_SD</primary><secondary>GPIOx_CS</secondary></indexterm>
+<para><computeroutput>GPIO_TypeDef* bsp_SD::GPIOx_CS<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00181">181</link> 行定义.</para>
+</section>
+<anchor xml:id="_classbsp___s_d_1a227c7eb7a28e89d6adfda085a4217992"/><section>
+    <title>hspi</title>
+<indexterm><primary>hspi</primary><secondary>bsp_SD</secondary></indexterm>
+<indexterm><primary>bsp_SD</primary><secondary>hspi</secondary></indexterm>
+<para><computeroutput>SPI_HandleTypeDef* bsp_SD::hspi<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00180">180</link> 行定义.</para>
+</section>
+<anchor xml:id="_classbsp___s_d_1aab1487286ac43dc9110e65b52c850de4"/><section>
+    <title>SD0_CardInfo</title>
+<indexterm><primary>SD0_CardInfo</primary><secondary>bsp_SD</secondary></indexterm>
+<indexterm><primary>bsp_SD</primary><secondary>SD0_CardInfo</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_m_s_d___c_a_r_d_i_n_f_o">MSD_CARDINFO</link> bsp_SD::SD0_CardInfo<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00186">186</link> 行定义.</para>
+</section>
+<anchor xml:id="_classbsp___s_d_1a2350601b90ad75bd434094a9c31475c4"/><section>
+    <title>SD_TYPE</title>
+<indexterm><primary>SD_TYPE</primary><secondary>bsp_SD</secondary></indexterm>
+<indexterm><primary>bsp_SD</primary><secondary>SD_TYPE</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> bsp_SD::SD_TYPE<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 第 <link linkend="_bsp___s_d_8h_source_1l00185">185</link> 行定义.</para>
+</section>
+<para>
+该类的文档由以下文件生成:</para>
+D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp___s_d_8h">bsp_SD.h</link>D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp___s_d_8cpp">bsp_SD.cpp</link></section>
+</section>
