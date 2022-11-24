@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbsp___a_t" xml:lang="zh">
+<title>bsp_AT类 参考</title>
+<indexterm><primary>bsp_AT</primary></indexterm>
+<para>
+
+<para>AT协议的基类 </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;bsp_AT.h&gt;</computeroutput>
+</para>
+类 bsp_AT 继承关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___a_t__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_classbsp___a_t_1adee8a046130e8e138d0e37dc785234ae">com</link> (const char *dat)</para>
+
+<para>发送一条AT指令,已加AT+与\r<?linebreak?>尾 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected 成员函数    </title>
+        <itemizedlist>
+            <listitem><para>virtual void <link linkend="_classbsp___a_t_1afd25c65d270b9db28370d08c6424537e">Transmit</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> *dat, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> len)=0</para>
+
+<para>发送数据到端口 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>AT协议的基类 </para>
+<para>
+在文件 <link linkend="_bsp___a_t_8h_source">bsp_AT.h</link> 第 <link linkend="_bsp___a_t_8h_source_1l00043">43</link> 行定义.</para>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_classbsp___a_t_1adee8a046130e8e138d0e37dc785234ae"/><section>
+    <title>com()</title>
+<indexterm><primary>com</primary><secondary>bsp_AT</secondary></indexterm>
+<indexterm><primary>bsp_AT</primary><secondary>com</secondary></indexterm>
+<para><computeroutput>void bsp_AT::com (const char * dat)</computeroutput></para><para>
+
+<para>发送一条AT指令,已加AT+与\r<?linebreak?>尾 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>dat</entry><entry>
+<para>带发射数据 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___a_t_8cpp_source">bsp_AT.cpp</link> 第 <link linkend="_bsp___a_t_8cpp_source_1l00044">44</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___a_t_adee8a046130e8e138d0e37dc785234ae_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___a_t_adee8a046130e8e138d0e37dc785234ae_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___a_t_1afd25c65d270b9db28370d08c6424537e"/><section>
+    <title>Transmit()</title>
+<indexterm><primary>Transmit</primary><secondary>bsp_AT</secondary></indexterm>
+<indexterm><primary>bsp_AT</primary><secondary>Transmit</secondary></indexterm>
+<para><computeroutput>virtual void bsp_AT::Transmit (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> * dat, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> len)<computeroutput>[protected]</computeroutput>, <computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+
+<para>发送数据到端口 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>dat</entry><entry>
+<para>数据头 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>len</entry><entry>
+<para>数据长度 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在 <link linkend="_classbsp___a_t_k_e_s_p8266_1afc9873cda629f8bd2504d583bc7733fd">bsp_ATKESP8266</link> 内被实现.</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___a_t_afd25c65d270b9db28370d08c6424537e_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+该类的文档由以下文件生成:</para>
+D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp___a_t_8h">bsp_AT.h</link>D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp___a_t_8cpp">bsp_AT.cpp</link></section>
+</section>

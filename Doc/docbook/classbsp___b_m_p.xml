@@ -72,7 +72,7 @@ bsp_BMP 的协作图:<para>
 
 <para>构建一个BMP类 </para>
 <para>
-在文件 <link linkend="_bsp___b_m_p_8h_source">bsp_BMP.h</link> 第 <link linkend="_bsp___b_m_p_8h_source_1l00097">97</link> 行定义.</para>
+在文件 <link linkend="_bsp___b_m_p_8h_source">bsp_BMP.h</link> 第 <link linkend="_bsp___b_m_p_8h_source_1l00096">96</link> 行定义.</para>
 </section>
 <section>
 <title>构造及析构函数说明</title>
@@ -288,7 +288,7 @@ bsp_BMP 的协作图:<para>
 <para>文件头 </para>
 </para>
 <para>
-在文件 <link linkend="_bsp___b_m_p_8h_source">bsp_BMP.h</link> 第 <link linkend="_bsp___b_m_p_8h_source_1l00108">108</link> 行定义.</para>
+在文件 <link linkend="_bsp___b_m_p_8h_source">bsp_BMP.h</link> 第 <link linkend="_bsp___b_m_p_8h_source_1l00107">107</link> 行定义.</para>
 </section>
 <anchor xml:id="_classbsp___b_m_p_1a2023aceaef140268a12bc61b81d410ca"/><section>
     <title>dat</title>
@@ -299,7 +299,7 @@ bsp_BMP 的协作图:<para>
 <para>数据区 </para>
 </para>
 <para>
-在文件 <link linkend="_bsp___b_m_p_8h_source">bsp_BMP.h</link> 第 <link linkend="_bsp___b_m_p_8h_source_1l00110">110</link> 行定义.</para>
+在文件 <link linkend="_bsp___b_m_p_8h_source">bsp_BMP.h</link> 第 <link linkend="_bsp___b_m_p_8h_source_1l00109">109</link> 行定义.</para>
 </section>
 <anchor xml:id="_classbsp___b_m_p_1a8a1c31ee70ed4061ad8bea4254959b83"/><section>
     <title>Size</title>
@@ -310,7 +310,7 @@ bsp_BMP 的协作图:<para>
 <para>文件大小 </para>
 </para>
 <para>
-在文件 <link linkend="_bsp___b_m_p_8h_source">bsp_BMP.h</link> 第 <link linkend="_bsp___b_m_p_8h_source_1l00109">109</link> 行定义.</para>
+在文件 <link linkend="_bsp___b_m_p_8h_source">bsp_BMP.h</link> 第 <link linkend="_bsp___b_m_p_8h_source_1l00108">108</link> 行定义.</para>
 </section>
 <para>
 该类的文档由以下文件生成:</para>

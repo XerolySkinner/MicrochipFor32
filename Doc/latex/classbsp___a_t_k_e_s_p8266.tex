@@ -1,0 +1,483 @@
+\hypertarget{classbsp___a_t_k_e_s_p8266}{}\doxysection{bsp\+\_\+\+ATKESP8266类 参考}
+\label{classbsp___a_t_k_e_s_p8266}\index{bsp\_ATKESP8266@{bsp\_ATKESP8266}}
+
+
+实现驱动\+ATKESP8266的类  
+
+
+
+
+{\ttfamily \#include $<$bsp\+\_\+\+ATKESP8266.\+h$>$}
+
+
+
+类 bsp\+\_\+\+ATKESP8266 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classbsp___a_t_k_e_s_p8266__inherit__graph}
+\end{center}
+\end{figure}
+
+
+bsp\+\_\+\+ATKESP8266 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classbsp___a_t_k_e_s_p8266__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classbsp___a_t_k_e_s_p8266_ab3bf04ff10ffef1796f7fa746092821d}{TCP\+\_\+\+Service\+\_\+T}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} cha, \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} len)
+\begin{DoxyCompactList}\small\item\em 准备发送数据 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___a_t_k_e_s_p8266_aaf8ef02cd6815b16d06520de2a7ed64d}{TCP\+\_\+\+Client\+\_\+T}} (void)
+\begin{DoxyCompactList}\small\item\em 准备发送数据 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___a_t_k_e_s_p8266_a1e8a93bc37996d178f09c0bfc2ade30f}{UDP\+\_\+\+Service\+\_\+T}} (\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} len)
+\begin{DoxyCompactList}\small\item\em 准备发送数据 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___a_t_k_e_s_p8266_a4a4ee594ad3ebb2a57008669d4e4ec7f}{AP\+\_\+\+TCP\+\_\+\+Service}} (const char $\ast$SSID, const char $\ast$PIN, const char $\ast$port)
+\begin{DoxyCompactList}\small\item\em 设置为\+AP,TCP服务器模式 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___a_t_k_e_s_p8266_ad073fdbbb243281762d4aaedcee7e7f3}{AP\+\_\+\+TCP\+\_\+\+Client}} (const char $\ast$SSID, const char $\ast$PIN, const char $\ast$IP, const char $\ast$port)
+\begin{DoxyCompactList}\small\item\em 设置为\+AP,TCP客户端模式 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___a_t_k_e_s_p8266_aad6552a50363d608215e683e049ca97f}{AP\+\_\+\+UDP}} (const char $\ast$SSID, const char $\ast$PIN, const char $\ast$IP, const char $\ast$port)
+\begin{DoxyCompactList}\small\item\em 设置为\+AP,UDP模式 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___a_t_k_e_s_p8266_a92e553288684d2b53f00d40b3bac9c98}{STA\+\_\+\+TCP\+\_\+\+Service}} (const char $\ast$WIFISSID, const char $\ast$WIFIPIN, const char $\ast$port)
+\begin{DoxyCompactList}\small\item\em 设置为\+STA,TCP客户端模式 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___a_t_k_e_s_p8266_a69697daa74e6f5a0996a3cd1e47b7042}{STA\+\_\+\+TCP\+\_\+\+Client}} (const char $\ast$WIFISSID, const char $\ast$WIFIPIN, const char $\ast$IP, const char $\ast$port)
+\begin{DoxyCompactList}\small\item\em 设置为\+STA,TCP客户端模式 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___a_t_k_e_s_p8266_a214b838100782d3baae739da7d23d8b1}{STA\+\_\+\+UDP}} (const char $\ast$WIFISSID, const char $\ast$WIFIPIN, const char $\ast$IP, const char $\ast$port)
+\begin{DoxyCompactList}\small\item\em 设置为\+STA,UDP模式 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___a_t_k_e_s_p8266_ac199e8a9c4a2746156763b7fe5ed1f27}{APSTA\+\_\+\+TCP\+\_\+\+Service}} (const char $\ast$SSID, const char $\ast$PIN, const char $\ast$WIFISSID, const char $\ast$WIFIPIN, const char $\ast$port)
+\begin{DoxyCompactList}\small\item\em 设置为\+AP\&STA,TCP服务器模式 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___a_t_k_e_s_p8266_acfe6024626c4e5cb866dc36dd84941c1}{APSTA\+\_\+\+TCP\+\_\+\+Client}} (const char $\ast$SSID, const char $\ast$PIN, const char $\ast$WIFISSID, const char $\ast$WIFIPIN, const char $\ast$IP, const char $\ast$port)
+\begin{DoxyCompactList}\small\item\em 设置为\+AP\&STA,TCP客户端模式 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___a_t_k_e_s_p8266_aa44ea133ab133b25c10b7fc238d1fb66}{APSTA\+\_\+\+UDP}} (const char $\ast$SSID, const char $\ast$PIN, const char $\ast$WIFISSID, const char $\ast$WIFIPIN, const char $\ast$IP, const char $\ast$port)
+\begin{DoxyCompactList}\small\item\em 设置为\+AP\&STA,UDP模式 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classbsp___a_t_k_e_s_p8266_afc9873cda629f8bd2504d583bc7733fd}{Transmit}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$dat, \mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}} len)
+\begin{DoxyCompactList}\small\item\em 发送数据到端口 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{额外继承的成员函数}
+
+
+\doxysubsection{详细描述}
+实现驱动\+ATKESP8266的类 
+
+在文件 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8h_source}{bsp\+\_\+\+ATKESP8266.\+h}} 第 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8h_source_l00042}{42}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classbsp___a_t_k_e_s_p8266_ad073fdbbb243281762d4aaedcee7e7f3}\label{classbsp___a_t_k_e_s_p8266_ad073fdbbb243281762d4aaedcee7e7f3}} 
+\index{bsp\_ATKESP8266@{bsp\_ATKESP8266}!AP\_TCP\_Client@{AP\_TCP\_Client}}
+\index{AP\_TCP\_Client@{AP\_TCP\_Client}!bsp\_ATKESP8266@{bsp\_ATKESP8266}}
+\doxysubsubsection{\texorpdfstring{AP\_TCP\_Client()}{AP\_TCP\_Client()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+ATKESP8266\+::\+AP\+\_\+\+TCP\+\_\+\+Client (\begin{DoxyParamCaption}\item[{const char $\ast$}]{SSID,  }\item[{const char $\ast$}]{PIN,  }\item[{const char $\ast$}]{IP,  }\item[{const char $\ast$}]{port }\end{DoxyParamCaption})}
+
+
+
+设置为\+AP,TCP客户端模式 
+
+
+\begin{DoxyParams}{参数}
+{\em SSID} & 设置网络名称 \\
+\hline
+{\em PIN} & 设置网络密码 \\
+\hline
+{\em IP} & 设置连接的\+IP \\
+\hline
+{\em port} & 设置开放端口 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source}{bsp\+\_\+\+ATKESP8266.\+cpp}} 第 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source_l00065}{65}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___a_t_k_e_s_p8266_ad073fdbbb243281762d4aaedcee7e7f3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___a_t_k_e_s_p8266_a4a4ee594ad3ebb2a57008669d4e4ec7f}\label{classbsp___a_t_k_e_s_p8266_a4a4ee594ad3ebb2a57008669d4e4ec7f}} 
+\index{bsp\_ATKESP8266@{bsp\_ATKESP8266}!AP\_TCP\_Service@{AP\_TCP\_Service}}
+\index{AP\_TCP\_Service@{AP\_TCP\_Service}!bsp\_ATKESP8266@{bsp\_ATKESP8266}}
+\doxysubsubsection{\texorpdfstring{AP\_TCP\_Service()}{AP\_TCP\_Service()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+ATKESP8266\+::\+AP\+\_\+\+TCP\+\_\+\+Service (\begin{DoxyParamCaption}\item[{const char $\ast$}]{SSID,  }\item[{const char $\ast$}]{PIN,  }\item[{const char $\ast$}]{port }\end{DoxyParamCaption})}
+
+
+
+设置为\+AP,TCP服务器模式 
+
+
+\begin{DoxyParams}{参数}
+{\em SSID} & 设置网络名称 \\
+\hline
+{\em PIN} & 设置网络密码 \\
+\hline
+{\em port} & 设置开放端口 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source}{bsp\+\_\+\+ATKESP8266.\+cpp}} 第 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source_l00047}{47}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___a_t_k_e_s_p8266_a4a4ee594ad3ebb2a57008669d4e4ec7f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___a_t_k_e_s_p8266_aad6552a50363d608215e683e049ca97f}\label{classbsp___a_t_k_e_s_p8266_aad6552a50363d608215e683e049ca97f}} 
+\index{bsp\_ATKESP8266@{bsp\_ATKESP8266}!AP\_UDP@{AP\_UDP}}
+\index{AP\_UDP@{AP\_UDP}!bsp\_ATKESP8266@{bsp\_ATKESP8266}}
+\doxysubsubsection{\texorpdfstring{AP\_UDP()}{AP\_UDP()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+ATKESP8266\+::\+AP\+\_\+\+UDP (\begin{DoxyParamCaption}\item[{const char $\ast$}]{SSID,  }\item[{const char $\ast$}]{PIN,  }\item[{const char $\ast$}]{IP,  }\item[{const char $\ast$}]{port }\end{DoxyParamCaption})}
+
+
+
+设置为\+AP,UDP模式 
+
+
+\begin{DoxyParams}{参数}
+{\em SSID} & 设置网络名称 \\
+\hline
+{\em PIN} & 设置网络密码 \\
+\hline
+{\em IP} & 设置连接的\+IP \\
+\hline
+{\em port} & 设置开放端口 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source}{bsp\+\_\+\+ATKESP8266.\+cpp}} 第 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source_l00085}{85}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___a_t_k_e_s_p8266_aad6552a50363d608215e683e049ca97f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___a_t_k_e_s_p8266_acfe6024626c4e5cb866dc36dd84941c1}\label{classbsp___a_t_k_e_s_p8266_acfe6024626c4e5cb866dc36dd84941c1}} 
+\index{bsp\_ATKESP8266@{bsp\_ATKESP8266}!APSTA\_TCP\_Client@{APSTA\_TCP\_Client}}
+\index{APSTA\_TCP\_Client@{APSTA\_TCP\_Client}!bsp\_ATKESP8266@{bsp\_ATKESP8266}}
+\doxysubsubsection{\texorpdfstring{APSTA\_TCP\_Client()}{APSTA\_TCP\_Client()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+ATKESP8266\+::\+APSTA\+\_\+\+TCP\+\_\+\+Client (\begin{DoxyParamCaption}\item[{const char $\ast$}]{SSID,  }\item[{const char $\ast$}]{PIN,  }\item[{const char $\ast$}]{WIFISSID,  }\item[{const char $\ast$}]{WIFIPIN,  }\item[{const char $\ast$}]{IP,  }\item[{const char $\ast$}]{port }\end{DoxyParamCaption})}
+
+
+
+设置为\+AP\&STA,TCP客户端模式 
+
+
+\begin{DoxyParams}{参数}
+{\em SSID} & 设置网络名称 \\
+\hline
+{\em PIN} & 设置网络密码 \\
+\hline
+{\em WIFISSID} & 设置连接网络名称 \\
+\hline
+{\em WIFIPIN} & 设置连接网络密码 \\
+\hline
+{\em IP} & 设置连接\+IP \\
+\hline
+{\em port} & 设置连接端口 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source}{bsp\+\_\+\+ATKESP8266.\+cpp}} 第 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source_l00185}{185}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___a_t_k_e_s_p8266_acfe6024626c4e5cb866dc36dd84941c1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___a_t_k_e_s_p8266_ac199e8a9c4a2746156763b7fe5ed1f27}\label{classbsp___a_t_k_e_s_p8266_ac199e8a9c4a2746156763b7fe5ed1f27}} 
+\index{bsp\_ATKESP8266@{bsp\_ATKESP8266}!APSTA\_TCP\_Service@{APSTA\_TCP\_Service}}
+\index{APSTA\_TCP\_Service@{APSTA\_TCP\_Service}!bsp\_ATKESP8266@{bsp\_ATKESP8266}}
+\doxysubsubsection{\texorpdfstring{APSTA\_TCP\_Service()}{APSTA\_TCP\_Service()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+ATKESP8266\+::\+APSTA\+\_\+\+TCP\+\_\+\+Service (\begin{DoxyParamCaption}\item[{const char $\ast$}]{SSID,  }\item[{const char $\ast$}]{PIN,  }\item[{const char $\ast$}]{WIFISSID,  }\item[{const char $\ast$}]{WIFIPIN,  }\item[{const char $\ast$}]{port }\end{DoxyParamCaption})}
+
+
+
+设置为\+AP\&STA,TCP服务器模式 
+
+
+\begin{DoxyParams}{参数}
+{\em SSID} & 设置网络名称 \\
+\hline
+{\em PIN} & 设置网络密码 \\
+\hline
+{\em WIFISSID} & 设置连接网络名称 \\
+\hline
+{\em WIFIPIN} & 设置连接网络密码 \\
+\hline
+{\em port} & 设置开放端口 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source}{bsp\+\_\+\+ATKESP8266.\+cpp}} 第 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source_l00161}{161}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___a_t_k_e_s_p8266_ac199e8a9c4a2746156763b7fe5ed1f27_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___a_t_k_e_s_p8266_aa44ea133ab133b25c10b7fc238d1fb66}\label{classbsp___a_t_k_e_s_p8266_aa44ea133ab133b25c10b7fc238d1fb66}} 
+\index{bsp\_ATKESP8266@{bsp\_ATKESP8266}!APSTA\_UDP@{APSTA\_UDP}}
+\index{APSTA\_UDP@{APSTA\_UDP}!bsp\_ATKESP8266@{bsp\_ATKESP8266}}
+\doxysubsubsection{\texorpdfstring{APSTA\_UDP()}{APSTA\_UDP()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+ATKESP8266\+::\+APSTA\+\_\+\+UDP (\begin{DoxyParamCaption}\item[{const char $\ast$}]{SSID,  }\item[{const char $\ast$}]{PIN,  }\item[{const char $\ast$}]{WIFISSID,  }\item[{const char $\ast$}]{WIFIPIN,  }\item[{const char $\ast$}]{IP,  }\item[{const char $\ast$}]{port }\end{DoxyParamCaption})}
+
+
+
+设置为\+AP\&STA,UDP模式 
+
+
+\begin{DoxyParams}{参数}
+{\em SSID} & 设置网络名称 \\
+\hline
+{\em PIN} & 设置网络密码 \\
+\hline
+{\em WIFISSID} & 设置连接网络名称 \\
+\hline
+{\em WIFIPIN} & 设置连接网络密码 \\
+\hline
+{\em IP} & 设置连接\+IP \\
+\hline
+{\em port} & 设置连接端口 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source}{bsp\+\_\+\+ATKESP8266.\+cpp}} 第 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source_l00211}{211}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___a_t_k_e_s_p8266_aa44ea133ab133b25c10b7fc238d1fb66_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___a_t_k_e_s_p8266_a69697daa74e6f5a0996a3cd1e47b7042}\label{classbsp___a_t_k_e_s_p8266_a69697daa74e6f5a0996a3cd1e47b7042}} 
+\index{bsp\_ATKESP8266@{bsp\_ATKESP8266}!STA\_TCP\_Client@{STA\_TCP\_Client}}
+\index{STA\_TCP\_Client@{STA\_TCP\_Client}!bsp\_ATKESP8266@{bsp\_ATKESP8266}}
+\doxysubsubsection{\texorpdfstring{STA\_TCP\_Client()}{STA\_TCP\_Client()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+ATKESP8266\+::\+STA\+\_\+\+TCP\+\_\+\+Client (\begin{DoxyParamCaption}\item[{const char $\ast$}]{WIFISSID,  }\item[{const char $\ast$}]{WIFIPIN,  }\item[{const char $\ast$}]{IP,  }\item[{const char $\ast$}]{port }\end{DoxyParamCaption})}
+
+
+
+设置为\+STA,TCP客户端模式 
+
+
+\begin{DoxyParams}{参数}
+{\em WIFISSID} & 设置连接网络名称 \\
+\hline
+{\em WIFIPIN} & 设置连接网络密码 \\
+\hline
+{\em IP} & 设置连接\+IP \\
+\hline
+{\em port} & 设置连接端口 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source}{bsp\+\_\+\+ATKESP8266.\+cpp}} 第 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source_l00121}{121}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___a_t_k_e_s_p8266_a69697daa74e6f5a0996a3cd1e47b7042_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___a_t_k_e_s_p8266_a92e553288684d2b53f00d40b3bac9c98}\label{classbsp___a_t_k_e_s_p8266_a92e553288684d2b53f00d40b3bac9c98}} 
+\index{bsp\_ATKESP8266@{bsp\_ATKESP8266}!STA\_TCP\_Service@{STA\_TCP\_Service}}
+\index{STA\_TCP\_Service@{STA\_TCP\_Service}!bsp\_ATKESP8266@{bsp\_ATKESP8266}}
+\doxysubsubsection{\texorpdfstring{STA\_TCP\_Service()}{STA\_TCP\_Service()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+ATKESP8266\+::\+STA\+\_\+\+TCP\+\_\+\+Service (\begin{DoxyParamCaption}\item[{const char $\ast$}]{WIFISSID,  }\item[{const char $\ast$}]{WIFIPIN,  }\item[{const char $\ast$}]{port }\end{DoxyParamCaption})}
+
+
+
+设置为\+STA,TCP客户端模式 
+
+
+\begin{DoxyParams}{参数}
+{\em WIFISSID} & 设置连接网络名称 \\
+\hline
+{\em WIFIPIN} & 设置连接网络密码 \\
+\hline
+{\em port} & 设置连接端口 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source}{bsp\+\_\+\+ATKESP8266.\+cpp}} 第 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source_l00103}{103}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___a_t_k_e_s_p8266_a92e553288684d2b53f00d40b3bac9c98_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___a_t_k_e_s_p8266_a214b838100782d3baae739da7d23d8b1}\label{classbsp___a_t_k_e_s_p8266_a214b838100782d3baae739da7d23d8b1}} 
+\index{bsp\_ATKESP8266@{bsp\_ATKESP8266}!STA\_UDP@{STA\_UDP}}
+\index{STA\_UDP@{STA\_UDP}!bsp\_ATKESP8266@{bsp\_ATKESP8266}}
+\doxysubsubsection{\texorpdfstring{STA\_UDP()}{STA\_UDP()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+ATKESP8266\+::\+STA\+\_\+\+UDP (\begin{DoxyParamCaption}\item[{const char $\ast$}]{WIFISSID,  }\item[{const char $\ast$}]{WIFIPIN,  }\item[{const char $\ast$}]{IP,  }\item[{const char $\ast$}]{port }\end{DoxyParamCaption})}
+
+
+
+设置为\+STA,UDP模式 
+
+
+\begin{DoxyParams}{参数}
+{\em WIFISSID} & 设置连接网络名称 \\
+\hline
+{\em WIFIPIN} & 设置连接网络密码 \\
+\hline
+{\em IP} & 设置连接\+IP \\
+\hline
+{\em port} & 设置连接端口 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source}{bsp\+\_\+\+ATKESP8266.\+cpp}} 第 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source_l00141}{141}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___a_t_k_e_s_p8266_a214b838100782d3baae739da7d23d8b1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___a_t_k_e_s_p8266_aaf8ef02cd6815b16d06520de2a7ed64d}\label{classbsp___a_t_k_e_s_p8266_aaf8ef02cd6815b16d06520de2a7ed64d}} 
+\index{bsp\_ATKESP8266@{bsp\_ATKESP8266}!TCP\_Client\_T@{TCP\_Client\_T}}
+\index{TCP\_Client\_T@{TCP\_Client\_T}!bsp\_ATKESP8266@{bsp\_ATKESP8266}}
+\doxysubsubsection{\texorpdfstring{TCP\_Client\_T()}{TCP\_Client\_T()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+ATKESP8266\+::\+TCP\+\_\+\+Client\+\_\+T (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+准备发送数据 
+
+
+
+在文件 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source}{bsp\+\_\+\+ATKESP8266.\+cpp}} 第 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source_l00240}{240}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___a_t_k_e_s_p8266_aaf8ef02cd6815b16d06520de2a7ed64d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___a_t_k_e_s_p8266_ab3bf04ff10ffef1796f7fa746092821d}\label{classbsp___a_t_k_e_s_p8266_ab3bf04ff10ffef1796f7fa746092821d}} 
+\index{bsp\_ATKESP8266@{bsp\_ATKESP8266}!TCP\_Service\_T@{TCP\_Service\_T}}
+\index{TCP\_Service\_T@{TCP\_Service\_T}!bsp\_ATKESP8266@{bsp\_ATKESP8266}}
+\doxysubsubsection{\texorpdfstring{TCP\_Service\_T()}{TCP\_Service\_T()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+ATKESP8266\+::\+TCP\+\_\+\+Service\+\_\+T (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{cha,  }\item[{\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}}]{len }\end{DoxyParamCaption})}
+
+
+
+准备发送数据 
+
+
+\begin{DoxyParams}{参数}
+{\em cha} & 发送端口 \\
+\hline
+{\em len} & 数据长度 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source}{bsp\+\_\+\+ATKESP8266.\+cpp}} 第 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source_l00233}{233}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___a_t_k_e_s_p8266_ab3bf04ff10ffef1796f7fa746092821d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___a_t_k_e_s_p8266_afc9873cda629f8bd2504d583bc7733fd}\label{classbsp___a_t_k_e_s_p8266_afc9873cda629f8bd2504d583bc7733fd}} 
+\index{bsp\_ATKESP8266@{bsp\_ATKESP8266}!Transmit@{Transmit}}
+\index{Transmit@{Transmit}!bsp\_ATKESP8266@{bsp\_ATKESP8266}}
+\doxysubsubsection{\texorpdfstring{Transmit()}{Transmit()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+ATKESP8266\+::\+Transmit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$}]{dat,  }\item[{\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+发送数据到端口 
+
+
+\begin{DoxyParams}{参数}
+{\em dat} & 数据头 \\
+\hline
+{\em len} & 数据长度 \\
+\hline
+\end{DoxyParams}
+
+
+实现了 \mbox{\hyperlink{classbsp___a_t_afd25c65d270b9db28370d08c6424537e}{bsp\+\_\+\+AT}}.
+
+
+
+在文件 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source}{bsp\+\_\+\+ATKESP8266.\+cpp}} 第 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source_l00253}{253}} 行定义.
+
+\mbox{\Hypertarget{classbsp___a_t_k_e_s_p8266_a1e8a93bc37996d178f09c0bfc2ade30f}\label{classbsp___a_t_k_e_s_p8266_a1e8a93bc37996d178f09c0bfc2ade30f}} 
+\index{bsp\_ATKESP8266@{bsp\_ATKESP8266}!UDP\_Service\_T@{UDP\_Service\_T}}
+\index{UDP\_Service\_T@{UDP\_Service\_T}!bsp\_ATKESP8266@{bsp\_ATKESP8266}}
+\doxysubsubsection{\texorpdfstring{UDP\_Service\_T()}{UDP\_Service\_T()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+ATKESP8266\+::\+UDP\+\_\+\+Service\+\_\+T (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}}]{len }\end{DoxyParamCaption})}
+
+
+
+准备发送数据 
+
+
+\begin{DoxyParams}{参数}
+{\em len} & 数据长度 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source}{bsp\+\_\+\+ATKESP8266.\+cpp}} 第 \mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp_source_l00247}{247}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___a_t_k_e_s_p8266_a1e8a93bc37996d178f09c0bfc2ade30f_cgraph}
+\end{center}
+\end{figure}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/gitt/\+Microchip\+For32/bsp\+\_\+\+Device/\mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8h}{bsp\+\_\+\+ATKESP8266.\+h}}\item 
+D\+:/gitt/\+Microchip\+For32/bsp\+\_\+\+Device/\mbox{\hyperlink{bsp___a_t_k_e_s_p8266_8cpp}{bsp\+\_\+\+ATKESP8266.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,780 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbsp___a_t_k_e_s_p8266" xml:lang="zh">
+<title>bsp_ATKESP8266类 参考</title>
+<indexterm><primary>bsp_ATKESP8266</primary></indexterm>
+<para>
+
+<para>实现驱动ATKESP8266的类 </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;bsp_ATKESP8266.h&gt;</computeroutput>
+</para>
+类 bsp_ATKESP8266 继承关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___a_t_k_e_s_p8266__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+bsp_ATKESP8266 的协作图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___a_t_k_e_s_p8266__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_classbsp___a_t_k_e_s_p8266_1ab3bf04ff10ffef1796f7fa746092821d">TCP_Service_T</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> cha, <link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> len)</para>
+
+<para>准备发送数据 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___a_t_k_e_s_p8266_1aaf8ef02cd6815b16d06520de2a7ed64d">TCP_Client_T</link> (void)</para>
+
+<para>准备发送数据 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___a_t_k_e_s_p8266_1a1e8a93bc37996d178f09c0bfc2ade30f">UDP_Service_T</link> (<link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> len)</para>
+
+<para>准备发送数据 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___a_t_k_e_s_p8266_1a4a4ee594ad3ebb2a57008669d4e4ec7f">AP_TCP_Service</link> (const char *SSID, const char *PIN, const char *port)</para>
+
+<para>设置为AP,TCP服务器模式 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___a_t_k_e_s_p8266_1ad073fdbbb243281762d4aaedcee7e7f3">AP_TCP_Client</link> (const char *SSID, const char *PIN, const char *IP, const char *port)</para>
+
+<para>设置为AP,TCP客户端模式 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___a_t_k_e_s_p8266_1aad6552a50363d608215e683e049ca97f">AP_UDP</link> (const char *SSID, const char *PIN, const char *IP, const char *port)</para>
+
+<para>设置为AP,UDP模式 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___a_t_k_e_s_p8266_1a92e553288684d2b53f00d40b3bac9c98">STA_TCP_Service</link> (const char *WIFISSID, const char *WIFIPIN, const char *port)</para>
+
+<para>设置为STA,TCP客户端模式 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___a_t_k_e_s_p8266_1a69697daa74e6f5a0996a3cd1e47b7042">STA_TCP_Client</link> (const char *WIFISSID, const char *WIFIPIN, const char *IP, const char *port)</para>
+
+<para>设置为STA,TCP客户端模式 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___a_t_k_e_s_p8266_1a214b838100782d3baae739da7d23d8b1">STA_UDP</link> (const char *WIFISSID, const char *WIFIPIN, const char *IP, const char *port)</para>
+
+<para>设置为STA,UDP模式 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___a_t_k_e_s_p8266_1ac199e8a9c4a2746156763b7fe5ed1f27">APSTA_TCP_Service</link> (const char *SSID, const char *PIN, const char *WIFISSID, const char *WIFIPIN, const char *port)</para>
+
+<para>设置为AP&amp;STA,TCP服务器模式 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___a_t_k_e_s_p8266_1acfe6024626c4e5cb866dc36dd84941c1">APSTA_TCP_Client</link> (const char *SSID, const char *PIN, const char *WIFISSID, const char *WIFIPIN, const char *IP, const char *port)</para>
+
+<para>设置为AP&amp;STA,TCP客户端模式 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___a_t_k_e_s_p8266_1aa44ea133ab133b25c10b7fc238d1fb66">APSTA_UDP</link> (const char *SSID, const char *PIN, const char *WIFISSID, const char *WIFIPIN, const char *IP, const char *port)</para>
+
+<para>设置为AP&amp;STA,UDP模式 </para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_classbsp___a_t_k_e_s_p8266_1afc9873cda629f8bd2504d583bc7733fd">Transmit</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> *dat, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> len)</para>
+
+<para>发送数据到端口 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>额外继承的成员函数    </title>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>实现驱动ATKESP8266的类 </para>
+<para>
+在文件 <link linkend="_bsp___a_t_k_e_s_p8266_8h_source">bsp_ATKESP8266.h</link> 第 <link linkend="_bsp___a_t_k_e_s_p8266_8h_source_1l00042">42</link> 行定义.</para>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_classbsp___a_t_k_e_s_p8266_1ad073fdbbb243281762d4aaedcee7e7f3"/><section>
+    <title>AP_TCP_Client()</title>
+<indexterm><primary>AP_TCP_Client</primary><secondary>bsp_ATKESP8266</secondary></indexterm>
+<indexterm><primary>bsp_ATKESP8266</primary><secondary>AP_TCP_Client</secondary></indexterm>
+<para><computeroutput>void bsp_ATKESP8266::AP_TCP_Client (const char * SSID, const char * PIN, const char * IP, const char * port)</computeroutput></para><para>
+
+<para>设置为AP,TCP客户端模式 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>SSID</entry><entry>
+<para>设置网络名称 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>PIN</entry><entry>
+<para>设置网络密码 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>IP</entry><entry>
+<para>设置连接的IP </para>
+</entry>
+                            </row>
+                            <row>
+<entry>port</entry><entry>
+<para>设置开放端口 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source">bsp_ATKESP8266.cpp</link> 第 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source_1l00065">65</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___a_t_k_e_s_p8266_ad073fdbbb243281762d4aaedcee7e7f3_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___a_t_k_e_s_p8266_1a4a4ee594ad3ebb2a57008669d4e4ec7f"/><section>
+    <title>AP_TCP_Service()</title>
+<indexterm><primary>AP_TCP_Service</primary><secondary>bsp_ATKESP8266</secondary></indexterm>
+<indexterm><primary>bsp_ATKESP8266</primary><secondary>AP_TCP_Service</secondary></indexterm>
+<para><computeroutput>void bsp_ATKESP8266::AP_TCP_Service (const char * SSID, const char * PIN, const char * port)</computeroutput></para><para>
+
+<para>设置为AP,TCP服务器模式 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>SSID</entry><entry>
+<para>设置网络名称 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>PIN</entry><entry>
+<para>设置网络密码 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>port</entry><entry>
+<para>设置开放端口 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source">bsp_ATKESP8266.cpp</link> 第 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source_1l00047">47</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___a_t_k_e_s_p8266_a4a4ee594ad3ebb2a57008669d4e4ec7f_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___a_t_k_e_s_p8266_1aad6552a50363d608215e683e049ca97f"/><section>
+    <title>AP_UDP()</title>
+<indexterm><primary>AP_UDP</primary><secondary>bsp_ATKESP8266</secondary></indexterm>
+<indexterm><primary>bsp_ATKESP8266</primary><secondary>AP_UDP</secondary></indexterm>
+<para><computeroutput>void bsp_ATKESP8266::AP_UDP (const char * SSID, const char * PIN, const char * IP, const char * port)</computeroutput></para><para>
+
+<para>设置为AP,UDP模式 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>SSID</entry><entry>
+<para>设置网络名称 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>PIN</entry><entry>
+<para>设置网络密码 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>IP</entry><entry>
+<para>设置连接的IP </para>
+</entry>
+                            </row>
+                            <row>
+<entry>port</entry><entry>
+<para>设置开放端口 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source">bsp_ATKESP8266.cpp</link> 第 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source_1l00085">85</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___a_t_k_e_s_p8266_aad6552a50363d608215e683e049ca97f_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___a_t_k_e_s_p8266_1acfe6024626c4e5cb866dc36dd84941c1"/><section>
+    <title>APSTA_TCP_Client()</title>
+<indexterm><primary>APSTA_TCP_Client</primary><secondary>bsp_ATKESP8266</secondary></indexterm>
+<indexterm><primary>bsp_ATKESP8266</primary><secondary>APSTA_TCP_Client</secondary></indexterm>
+<para><computeroutput>void bsp_ATKESP8266::APSTA_TCP_Client (const char * SSID, const char * PIN, const char * WIFISSID, const char * WIFIPIN, const char * IP, const char * port)</computeroutput></para><para>
+
+<para>设置为AP&amp;STA,TCP客户端模式 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>SSID</entry><entry>
+<para>设置网络名称 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>PIN</entry><entry>
+<para>设置网络密码 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>WIFISSID</entry><entry>
+<para>设置连接网络名称 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>WIFIPIN</entry><entry>
+<para>设置连接网络密码 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>IP</entry><entry>
+<para>设置连接IP </para>
+</entry>
+                            </row>
+                            <row>
+<entry>port</entry><entry>
+<para>设置连接端口 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source">bsp_ATKESP8266.cpp</link> 第 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source_1l00185">185</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___a_t_k_e_s_p8266_acfe6024626c4e5cb866dc36dd84941c1_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___a_t_k_e_s_p8266_1ac199e8a9c4a2746156763b7fe5ed1f27"/><section>
+    <title>APSTA_TCP_Service()</title>
+<indexterm><primary>APSTA_TCP_Service</primary><secondary>bsp_ATKESP8266</secondary></indexterm>
+<indexterm><primary>bsp_ATKESP8266</primary><secondary>APSTA_TCP_Service</secondary></indexterm>
+<para><computeroutput>void bsp_ATKESP8266::APSTA_TCP_Service (const char * SSID, const char * PIN, const char * WIFISSID, const char * WIFIPIN, const char * port)</computeroutput></para><para>
+
+<para>设置为AP&amp;STA,TCP服务器模式 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>SSID</entry><entry>
+<para>设置网络名称 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>PIN</entry><entry>
+<para>设置网络密码 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>WIFISSID</entry><entry>
+<para>设置连接网络名称 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>WIFIPIN</entry><entry>
+<para>设置连接网络密码 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>port</entry><entry>
+<para>设置开放端口 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source">bsp_ATKESP8266.cpp</link> 第 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source_1l00161">161</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___a_t_k_e_s_p8266_ac199e8a9c4a2746156763b7fe5ed1f27_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___a_t_k_e_s_p8266_1aa44ea133ab133b25c10b7fc238d1fb66"/><section>
+    <title>APSTA_UDP()</title>
+<indexterm><primary>APSTA_UDP</primary><secondary>bsp_ATKESP8266</secondary></indexterm>
+<indexterm><primary>bsp_ATKESP8266</primary><secondary>APSTA_UDP</secondary></indexterm>
+<para><computeroutput>void bsp_ATKESP8266::APSTA_UDP (const char * SSID, const char * PIN, const char * WIFISSID, const char * WIFIPIN, const char * IP, const char * port)</computeroutput></para><para>
+
+<para>设置为AP&amp;STA,UDP模式 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>SSID</entry><entry>
+<para>设置网络名称 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>PIN</entry><entry>
+<para>设置网络密码 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>WIFISSID</entry><entry>
+<para>设置连接网络名称 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>WIFIPIN</entry><entry>
+<para>设置连接网络密码 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>IP</entry><entry>
+<para>设置连接IP </para>
+</entry>
+                            </row>
+                            <row>
+<entry>port</entry><entry>
+<para>设置连接端口 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source">bsp_ATKESP8266.cpp</link> 第 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source_1l00211">211</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___a_t_k_e_s_p8266_aa44ea133ab133b25c10b7fc238d1fb66_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___a_t_k_e_s_p8266_1a69697daa74e6f5a0996a3cd1e47b7042"/><section>
+    <title>STA_TCP_Client()</title>
+<indexterm><primary>STA_TCP_Client</primary><secondary>bsp_ATKESP8266</secondary></indexterm>
+<indexterm><primary>bsp_ATKESP8266</primary><secondary>STA_TCP_Client</secondary></indexterm>
+<para><computeroutput>void bsp_ATKESP8266::STA_TCP_Client (const char * WIFISSID, const char * WIFIPIN, const char * IP, const char * port)</computeroutput></para><para>
+
+<para>设置为STA,TCP客户端模式 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>WIFISSID</entry><entry>
+<para>设置连接网络名称 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>WIFIPIN</entry><entry>
+<para>设置连接网络密码 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>IP</entry><entry>
+<para>设置连接IP </para>
+</entry>
+                            </row>
+                            <row>
+<entry>port</entry><entry>
+<para>设置连接端口 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source">bsp_ATKESP8266.cpp</link> 第 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source_1l00121">121</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___a_t_k_e_s_p8266_a69697daa74e6f5a0996a3cd1e47b7042_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___a_t_k_e_s_p8266_1a92e553288684d2b53f00d40b3bac9c98"/><section>
+    <title>STA_TCP_Service()</title>
+<indexterm><primary>STA_TCP_Service</primary><secondary>bsp_ATKESP8266</secondary></indexterm>
+<indexterm><primary>bsp_ATKESP8266</primary><secondary>STA_TCP_Service</secondary></indexterm>
+<para><computeroutput>void bsp_ATKESP8266::STA_TCP_Service (const char * WIFISSID, const char * WIFIPIN, const char * port)</computeroutput></para><para>
+
+<para>设置为STA,TCP客户端模式 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>WIFISSID</entry><entry>
+<para>设置连接网络名称 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>WIFIPIN</entry><entry>
+<para>设置连接网络密码 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>port</entry><entry>
+<para>设置连接端口 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source">bsp_ATKESP8266.cpp</link> 第 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source_1l00103">103</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___a_t_k_e_s_p8266_a92e553288684d2b53f00d40b3bac9c98_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___a_t_k_e_s_p8266_1a214b838100782d3baae739da7d23d8b1"/><section>
+    <title>STA_UDP()</title>
+<indexterm><primary>STA_UDP</primary><secondary>bsp_ATKESP8266</secondary></indexterm>
+<indexterm><primary>bsp_ATKESP8266</primary><secondary>STA_UDP</secondary></indexterm>
+<para><computeroutput>void bsp_ATKESP8266::STA_UDP (const char * WIFISSID, const char * WIFIPIN, const char * IP, const char * port)</computeroutput></para><para>
+
+<para>设置为STA,UDP模式 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>WIFISSID</entry><entry>
+<para>设置连接网络名称 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>WIFIPIN</entry><entry>
+<para>设置连接网络密码 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>IP</entry><entry>
+<para>设置连接IP </para>
+</entry>
+                            </row>
+                            <row>
+<entry>port</entry><entry>
+<para>设置连接端口 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source">bsp_ATKESP8266.cpp</link> 第 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source_1l00141">141</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___a_t_k_e_s_p8266_a214b838100782d3baae739da7d23d8b1_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___a_t_k_e_s_p8266_1aaf8ef02cd6815b16d06520de2a7ed64d"/><section>
+    <title>TCP_Client_T()</title>
+<indexterm><primary>TCP_Client_T</primary><secondary>bsp_ATKESP8266</secondary></indexterm>
+<indexterm><primary>bsp_ATKESP8266</primary><secondary>TCP_Client_T</secondary></indexterm>
+<para><computeroutput>void bsp_ATKESP8266::TCP_Client_T (void )</computeroutput></para><para>
+
+<para>准备发送数据 </para>
+</para>
+<para>
+在文件 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source">bsp_ATKESP8266.cpp</link> 第 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source_1l00240">240</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___a_t_k_e_s_p8266_aaf8ef02cd6815b16d06520de2a7ed64d_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___a_t_k_e_s_p8266_1ab3bf04ff10ffef1796f7fa746092821d"/><section>
+    <title>TCP_Service_T()</title>
+<indexterm><primary>TCP_Service_T</primary><secondary>bsp_ATKESP8266</secondary></indexterm>
+<indexterm><primary>bsp_ATKESP8266</primary><secondary>TCP_Service_T</secondary></indexterm>
+<para><computeroutput>void bsp_ATKESP8266::TCP_Service_T (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> cha, <link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> len)</computeroutput></para><para>
+
+<para>准备发送数据 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>cha</entry><entry>
+<para>发送端口 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>len</entry><entry>
+<para>数据长度 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source">bsp_ATKESP8266.cpp</link> 第 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source_1l00233">233</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___a_t_k_e_s_p8266_ab3bf04ff10ffef1796f7fa746092821d_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbsp___a_t_k_e_s_p8266_1afc9873cda629f8bd2504d583bc7733fd"/><section>
+    <title>Transmit()</title>
+<indexterm><primary>Transmit</primary><secondary>bsp_ATKESP8266</secondary></indexterm>
+<indexterm><primary>bsp_ATKESP8266</primary><secondary>Transmit</secondary></indexterm>
+<para><computeroutput>void bsp_ATKESP8266::Transmit (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> * dat, <link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> len)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>发送数据到端口 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>dat</entry><entry>
+<para>数据头 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>len</entry><entry>
+<para>数据长度 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+实现了 <link linkend="_classbsp___a_t_1afd25c65d270b9db28370d08c6424537e">bsp_AT</link>.</para>
+<para>
+在文件 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source">bsp_ATKESP8266.cpp</link> 第 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source_1l00253">253</link> 行定义.</para>
+</section>
+<anchor xml:id="_classbsp___a_t_k_e_s_p8266_1a1e8a93bc37996d178f09c0bfc2ade30f"/><section>
+    <title>UDP_Service_T()</title>
+<indexterm><primary>UDP_Service_T</primary><secondary>bsp_ATKESP8266</secondary></indexterm>
+<indexterm><primary>bsp_ATKESP8266</primary><secondary>UDP_Service_T</secondary></indexterm>
+<para><computeroutput>void bsp_ATKESP8266::UDP_Service_T (<link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> len)</computeroutput></para><para>
+
+<para>准备发送数据 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>len</entry><entry>
+<para>数据长度 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source">bsp_ATKESP8266.cpp</link> 第 <link linkend="_bsp___a_t_k_e_s_p8266_8cpp_source_1l00247">247</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___a_t_k_e_s_p8266_a1e8a93bc37996d178f09c0bfc2ade30f_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+该类的文档由以下文件生成:</para>
+D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp___a_t_k_e_s_p8266_8h">bsp_ATKESP8266.h</link>D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp___a_t_k_e_s_p8266_8cpp">bsp_ATKESP8266.cpp</link></section>
+</section>

@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="classbsp___a_t" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>bsp_AT</compoundname>
+    <derivedcompoundref refid="classbsp___a_t_k_e_s_p8266" prot="public" virt="non-virtual">bsp_ATKESP8266</derivedcompoundref>
+    <includes refid="bsp___a_t_8h" local="no">bsp_AT.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbsp___a_t_1adee8a046130e8e138d0e37dc785234ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bsp_AT::com</definition>
+        <argsstring>(const char *dat)</argsstring>
+        <name>com</name>
+        <qualifiedname>bsp_AT::com</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>发送一条AT指令,已加AT+与\r<linebreak/>
+尾 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>带发射数据 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT.h" line="45" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT.cpp" bodystart="44" bodyend="47"/>
+        <references refid="classbsp___a_t_1afd25c65d270b9db28370d08c6424537e">Transmit</references>
+        <referencedby refid="classbsp___a_t_k_e_s_p8266_1ad073fdbbb243281762d4aaedcee7e7f3" compoundref="bsp___a_t_k_e_s_p8266_8cpp" startline="65" endline="76">bsp_ATKESP8266::AP_TCP_Client</referencedby>
+        <referencedby refid="classbsp___a_t_k_e_s_p8266_1a4a4ee594ad3ebb2a57008669d4e4ec7f" compoundref="bsp___a_t_k_e_s_p8266_8cpp" startline="47" endline="56">bsp_ATKESP8266::AP_TCP_Service</referencedby>
+        <referencedby refid="classbsp___a_t_k_e_s_p8266_1aad6552a50363d608215e683e049ca97f" compoundref="bsp___a_t_k_e_s_p8266_8cpp" startline="85" endline="95">bsp_ATKESP8266::AP_UDP</referencedby>
+        <referencedby refid="classbsp___a_t_k_e_s_p8266_1acfe6024626c4e5cb866dc36dd84941c1" compoundref="bsp___a_t_k_e_s_p8266_8cpp" startline="185" endline="200">bsp_ATKESP8266::APSTA_TCP_Client</referencedby>
+        <referencedby refid="classbsp___a_t_k_e_s_p8266_1ac199e8a9c4a2746156763b7fe5ed1f27" compoundref="bsp___a_t_k_e_s_p8266_8cpp" startline="161" endline="174">bsp_ATKESP8266::APSTA_TCP_Service</referencedby>
+        <referencedby refid="classbsp___a_t_k_e_s_p8266_1aa44ea133ab133b25c10b7fc238d1fb66" compoundref="bsp___a_t_k_e_s_p8266_8cpp" startline="211" endline="226">bsp_ATKESP8266::APSTA_UDP</referencedby>
+        <referencedby refid="classbsp___a_t_k_e_s_p8266_1a69697daa74e6f5a0996a3cd1e47b7042" compoundref="bsp___a_t_k_e_s_p8266_8cpp" startline="121" endline="132">bsp_ATKESP8266::STA_TCP_Client</referencedby>
+        <referencedby refid="classbsp___a_t_k_e_s_p8266_1a92e553288684d2b53f00d40b3bac9c98" compoundref="bsp___a_t_k_e_s_p8266_8cpp" startline="103" endline="112">bsp_ATKESP8266::STA_TCP_Service</referencedby>
+        <referencedby refid="classbsp___a_t_k_e_s_p8266_1a214b838100782d3baae739da7d23d8b1" compoundref="bsp___a_t_k_e_s_p8266_8cpp" startline="141" endline="151">bsp_ATKESP8266::STA_UDP</referencedby>
+        <referencedby refid="classbsp___a_t_k_e_s_p8266_1aaf8ef02cd6815b16d06520de2a7ed64d" compoundref="bsp___a_t_k_e_s_p8266_8cpp" startline="240" endline="241">bsp_ATKESP8266::TCP_Client_T</referencedby>
+        <referencedby refid="classbsp___a_t_k_e_s_p8266_1ab3bf04ff10ffef1796f7fa746092821d" compoundref="bsp___a_t_k_e_s_p8266_8cpp" startline="233" endline="235">bsp_ATKESP8266::TCP_Service_T</referencedby>
+        <referencedby refid="classbsp___a_t_k_e_s_p8266_1a1e8a93bc37996d178f09c0bfc2ade30f" compoundref="bsp___a_t_k_e_s_p8266_8cpp" startline="247" endline="249">bsp_ATKESP8266::UDP_Service_T</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classbsp___a_t_1afd25c65d270b9db28370d08c6424537e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void bsp_AT::Transmit</definition>
+        <argsstring>(u8 *dat, u16 len)=0</argsstring>
+        <name>Transmit</name>
+        <qualifiedname>bsp_AT::Transmit</qualifiedname>
+        <reimplementedby refid="classbsp___a_t_k_e_s_p8266_1afc9873cda629f8bd2504d583bc7733fd">Transmit</reimplementedby>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref> *</type>
+          <declname>dat</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>发送数据到端口 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>数据头 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>数据长度 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT.h" line="52" column="14"/>
+        <referencedby refid="classbsp___a_t_1adee8a046130e8e138d0e37dc785234ae" compoundref="bsp___a_t_8cpp" startline="44" endline="47">com</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>AT协议的基类 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>bsp_AT</label>
+        <link refid="classbsp___a_t"/>
+      </node>
+      <node id="2">
+        <label>bsp_ATKESP8266</label>
+        <link refid="classbsp___a_t_k_e_s_p8266"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT.h" line="43" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT.h" bodystart="43" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classbsp___a_t_1adee8a046130e8e138d0e37dc785234ae" prot="public" virt="non-virtual"><scope>bsp_AT</scope><name>com</name></member>
+      <member refid="classbsp___a_t_1afd25c65d270b9db28370d08c6424537e" prot="protected" virt="pure-virtual"><scope>bsp_AT</scope><name>Transmit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

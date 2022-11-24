@@ -1,0 +1,309 @@
+.TH "bsp_ATKESP8266" 3 "2022年 十一月 25日 星期五" "Version 2.0.0" "MF32BSP_XerolySkinner" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bsp_ATKESP8266 \- 实现驱动ATKESP8266的类  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <bsp_ATKESP8266\&.h>\fP
+.PP
+继承自 \fBbsp_AT\fP \&.
+.SS "Public 成员函数"
+
+.in +1c
+.ti -1c
+.RI "void \fBTCP_Service_T\fP (\fBu8\fP cha, \fBu32\fP len)"
+.br
+.RI "准备发送数据 "
+.ti -1c
+.RI "void \fBTCP_Client_T\fP (void)"
+.br
+.RI "准备发送数据 "
+.ti -1c
+.RI "void \fBUDP_Service_T\fP (\fBu32\fP len)"
+.br
+.RI "准备发送数据 "
+.ti -1c
+.RI "void \fBAP_TCP_Service\fP (const char *SSID, const char *PIN, const char *port)"
+.br
+.RI "设置为AP,TCP服务器模式 "
+.ti -1c
+.RI "void \fBAP_TCP_Client\fP (const char *SSID, const char *PIN, const char *IP, const char *port)"
+.br
+.RI "设置为AP,TCP客户端模式 "
+.ti -1c
+.RI "void \fBAP_UDP\fP (const char *SSID, const char *PIN, const char *IP, const char *port)"
+.br
+.RI "设置为AP,UDP模式 "
+.ti -1c
+.RI "void \fBSTA_TCP_Service\fP (const char *WIFISSID, const char *WIFIPIN, const char *port)"
+.br
+.RI "设置为STA,TCP客户端模式 "
+.ti -1c
+.RI "void \fBSTA_TCP_Client\fP (const char *WIFISSID, const char *WIFIPIN, const char *IP, const char *port)"
+.br
+.RI "设置为STA,TCP客户端模式 "
+.ti -1c
+.RI "void \fBSTA_UDP\fP (const char *WIFISSID, const char *WIFIPIN, const char *IP, const char *port)"
+.br
+.RI "设置为STA,UDP模式 "
+.ti -1c
+.RI "void \fBAPSTA_TCP_Service\fP (const char *SSID, const char *PIN, const char *WIFISSID, const char *WIFIPIN, const char *port)"
+.br
+.RI "设置为AP&STA,TCP服务器模式 "
+.ti -1c
+.RI "void \fBAPSTA_TCP_Client\fP (const char *SSID, const char *PIN, const char *WIFISSID, const char *WIFIPIN, const char *IP, const char *port)"
+.br
+.RI "设置为AP&STA,TCP客户端模式 "
+.ti -1c
+.RI "void \fBAPSTA_UDP\fP (const char *SSID, const char *PIN, const char *WIFISSID, const char *WIFIPIN, const char *IP, const char *port)"
+.br
+.RI "设置为AP&STA,UDP模式 "
+.ti -1c
+.RI "virtual void \fBTransmit\fP (\fBu8\fP *dat, \fBu16\fP len)"
+.br
+.RI "发送数据到端口 "
+.in -1c
+.SS "额外继承的成员函数"
+.SH "详细描述"
+.PP 
+实现驱动ATKESP8266的类 
+.PP
+在文件 \fBbsp_ATKESP8266\&.h\fP 第 \fB42\fP 行定义\&.
+.SH "成员函数说明"
+.PP 
+.SS "void bsp_ATKESP8266::AP_TCP_Client (const char * SSID, const char * PIN, const char * IP, const char * port)"
+
+.PP
+设置为AP,TCP客户端模式 
+.PP
+\fB参数\fP
+.RS 4
+\fISSID\fP 设置网络名称 
+.br
+\fIPIN\fP 设置网络密码 
+.br
+\fIIP\fP 设置连接的IP 
+.br
+\fIport\fP 设置开放端口 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_ATKESP8266\&.cpp\fP 第 \fB65\fP 行定义\&.
+.SS "void bsp_ATKESP8266::AP_TCP_Service (const char * SSID, const char * PIN, const char * port)"
+
+.PP
+设置为AP,TCP服务器模式 
+.PP
+\fB参数\fP
+.RS 4
+\fISSID\fP 设置网络名称 
+.br
+\fIPIN\fP 设置网络密码 
+.br
+\fIport\fP 设置开放端口 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_ATKESP8266\&.cpp\fP 第 \fB47\fP 行定义\&.
+.SS "void bsp_ATKESP8266::AP_UDP (const char * SSID, const char * PIN, const char * IP, const char * port)"
+
+.PP
+设置为AP,UDP模式 
+.PP
+\fB参数\fP
+.RS 4
+\fISSID\fP 设置网络名称 
+.br
+\fIPIN\fP 设置网络密码 
+.br
+\fIIP\fP 设置连接的IP 
+.br
+\fIport\fP 设置开放端口 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_ATKESP8266\&.cpp\fP 第 \fB85\fP 行定义\&.
+.SS "void bsp_ATKESP8266::APSTA_TCP_Client (const char * SSID, const char * PIN, const char * WIFISSID, const char * WIFIPIN, const char * IP, const char * port)"
+
+.PP
+设置为AP&STA,TCP客户端模式 
+.PP
+\fB参数\fP
+.RS 4
+\fISSID\fP 设置网络名称 
+.br
+\fIPIN\fP 设置网络密码 
+.br
+\fIWIFISSID\fP 设置连接网络名称 
+.br
+\fIWIFIPIN\fP 设置连接网络密码 
+.br
+\fIIP\fP 设置连接IP 
+.br
+\fIport\fP 设置连接端口 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_ATKESP8266\&.cpp\fP 第 \fB185\fP 行定义\&.
+.SS "void bsp_ATKESP8266::APSTA_TCP_Service (const char * SSID, const char * PIN, const char * WIFISSID, const char * WIFIPIN, const char * port)"
+
+.PP
+设置为AP&STA,TCP服务器模式 
+.PP
+\fB参数\fP
+.RS 4
+\fISSID\fP 设置网络名称 
+.br
+\fIPIN\fP 设置网络密码 
+.br
+\fIWIFISSID\fP 设置连接网络名称 
+.br
+\fIWIFIPIN\fP 设置连接网络密码 
+.br
+\fIport\fP 设置开放端口 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_ATKESP8266\&.cpp\fP 第 \fB161\fP 行定义\&.
+.SS "void bsp_ATKESP8266::APSTA_UDP (const char * SSID, const char * PIN, const char * WIFISSID, const char * WIFIPIN, const char * IP, const char * port)"
+
+.PP
+设置为AP&STA,UDP模式 
+.PP
+\fB参数\fP
+.RS 4
+\fISSID\fP 设置网络名称 
+.br
+\fIPIN\fP 设置网络密码 
+.br
+\fIWIFISSID\fP 设置连接网络名称 
+.br
+\fIWIFIPIN\fP 设置连接网络密码 
+.br
+\fIIP\fP 设置连接IP 
+.br
+\fIport\fP 设置连接端口 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_ATKESP8266\&.cpp\fP 第 \fB211\fP 行定义\&.
+.SS "void bsp_ATKESP8266::STA_TCP_Client (const char * WIFISSID, const char * WIFIPIN, const char * IP, const char * port)"
+
+.PP
+设置为STA,TCP客户端模式 
+.PP
+\fB参数\fP
+.RS 4
+\fIWIFISSID\fP 设置连接网络名称 
+.br
+\fIWIFIPIN\fP 设置连接网络密码 
+.br
+\fIIP\fP 设置连接IP 
+.br
+\fIport\fP 设置连接端口 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_ATKESP8266\&.cpp\fP 第 \fB121\fP 行定义\&.
+.SS "void bsp_ATKESP8266::STA_TCP_Service (const char * WIFISSID, const char * WIFIPIN, const char * port)"
+
+.PP
+设置为STA,TCP客户端模式 
+.PP
+\fB参数\fP
+.RS 4
+\fIWIFISSID\fP 设置连接网络名称 
+.br
+\fIWIFIPIN\fP 设置连接网络密码 
+.br
+\fIport\fP 设置连接端口 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_ATKESP8266\&.cpp\fP 第 \fB103\fP 行定义\&.
+.SS "void bsp_ATKESP8266::STA_UDP (const char * WIFISSID, const char * WIFIPIN, const char * IP, const char * port)"
+
+.PP
+设置为STA,UDP模式 
+.PP
+\fB参数\fP
+.RS 4
+\fIWIFISSID\fP 设置连接网络名称 
+.br
+\fIWIFIPIN\fP 设置连接网络密码 
+.br
+\fIIP\fP 设置连接IP 
+.br
+\fIport\fP 设置连接端口 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_ATKESP8266\&.cpp\fP 第 \fB141\fP 行定义\&.
+.SS "void bsp_ATKESP8266::TCP_Client_T (void)"
+
+.PP
+准备发送数据 
+.PP
+在文件 \fBbsp_ATKESP8266\&.cpp\fP 第 \fB240\fP 行定义\&.
+.SS "void bsp_ATKESP8266::TCP_Service_T (\fBu8\fP cha, \fBu32\fP len)"
+
+.PP
+准备发送数据 
+.PP
+\fB参数\fP
+.RS 4
+\fIcha\fP 发送端口 
+.br
+\fIlen\fP 数据长度 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_ATKESP8266\&.cpp\fP 第 \fB233\fP 行定义\&.
+.SS "void bsp_ATKESP8266::Transmit (\fBu8\fP * dat, \fBu16\fP len)\fC [virtual]\fP"
+
+.PP
+发送数据到端口 
+.PP
+\fB参数\fP
+.RS 4
+\fIdat\fP 数据头 
+.br
+\fIlen\fP 数据长度 
+.RE
+.PP
+
+.PP
+实现了 \fBbsp_AT\fP\&.
+.PP
+在文件 \fBbsp_ATKESP8266\&.cpp\fP 第 \fB253\fP 行定义\&.
+.SS "void bsp_ATKESP8266::UDP_Service_T (\fBu32\fP len)"
+
+.PP
+准备发送数据 
+.PP
+\fB参数\fP
+.RS 4
+\fIlen\fP 数据长度 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_ATKESP8266\&.cpp\fP 第 \fB247\fP 行定义\&.
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 MF32BSP_XerolySkinner 的 源代码自动生成\&.

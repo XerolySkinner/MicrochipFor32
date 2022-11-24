@@ -2,8 +2,12 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
   <compounddef id="dir_7d600478d4be1ed73c651a71d29ab217" kind="dir">
     <compoundname>D:/gitt/MicrochipFor32/bsp_Device</compoundname>
+    <innerfile refid="bsp___a_t_8cpp">bsp_AT.cpp</innerfile>
+    <innerfile refid="bsp___a_t_8h">bsp_AT.h</innerfile>
     <innerfile refid="bsp___a_t24_c00_8cpp">bsp_AT24C00.cpp</innerfile>
     <innerfile refid="bsp___a_t24_c00_8h">bsp_AT24C00.h</innerfile>
+    <innerfile refid="bsp___a_t_k_e_s_p8266_8cpp">bsp_ATKESP8266.cpp</innerfile>
+    <innerfile refid="bsp___a_t_k_e_s_p8266_8h">bsp_ATKESP8266.h</innerfile>
     <innerfile refid="bsp___b_m_p_8cpp">bsp_BMP.cpp</innerfile>
     <innerfile refid="bsp___b_m_p_8h">bsp_BMP.h</innerfile>
     <innerfile refid="bsp___calculus_8cpp">bsp_Calculus.cpp</innerfile>
