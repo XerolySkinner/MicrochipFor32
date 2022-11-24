@@ -49,6 +49,30 @@
 \DoxyCodeLine{\Hypertarget{varint_8h_source_l00056}\mbox{\hyperlink{varint_8h_ab1725f18a2ec2964f4bc0499527e4c5d}{00056}} \textcolor{keyword}{typedef} \textcolor{keyword}{volatile} \mbox{\hyperlink{varint_8h_ad309dbcaeea13aa602d686964156ea0b}{i16}}     \mbox{\hyperlink{varint_8h_ab1725f18a2ec2964f4bc0499527e4c5d}{vi16}};   }
 \DoxyCodeLine{\Hypertarget{varint_8h_source_l00057}\mbox{\hyperlink{varint_8h_a8b81ac6660e74bec836c0a4e0a0b6450}{00057}} \textcolor{keyword}{typedef} \textcolor{keyword}{volatile} \mbox{\hyperlink{varint_8h_a48d6cd8e4135fb2ff7e7f2dac84089ec}{i32}}     \mbox{\hyperlink{varint_8h_a8b81ac6660e74bec836c0a4e0a0b6450}{vi32}};   }
 \DoxyCodeLine{\Hypertarget{varint_8h_source_l00058}\mbox{\hyperlink{varint_8h_aeffd8dafd889cdd80398ffcbb37cd7ef}{00058}} \textcolor{keyword}{typedef} \textcolor{keyword}{volatile} \mbox{\hyperlink{varint_8h_a85cb35fbe5bf2961d7ad5f26814a91a2}{i64}}     \mbox{\hyperlink{varint_8h_aeffd8dafd889cdd80398ffcbb37cd7ef}{vi64}};   }
-\DoxyCodeLine{\Hypertarget{varint_8h_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00060}00060 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00061}00061 \textcolor{comment}{//  位宏}}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00062}\mbox{\hyperlink{varint_8h_ad35af1fbc60fcc217f7e3c6bae2ba656}{00062}} \textcolor{preprocessor}{\#define P8(x)       ((u8*)(\&(x)))               }}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00063}\mbox{\hyperlink{varint_8h_a71e9586b24447c7ca7bc353aa86da852}{00063}} \textcolor{preprocessor}{\#define Pn8(x,y)    (((u8*)(\&(x)))[y])          }}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00064}\mbox{\hyperlink{varint_8h_a90e13f6172ebc6d6b8df6ed9a443491f}{00064}} \textcolor{preprocessor}{\#define P16(x)      ((u16*)(\&(x)))              }}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00065}\mbox{\hyperlink{varint_8h_aff980abb3664242448c35e7c94df9457}{00065}} \textcolor{preprocessor}{\#define Pn16(x,y)   (((u16*)(\&(x)))[y])         }}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00066}\mbox{\hyperlink{varint_8h_a495d48b6b1b59a2ad797b10d9da431ff}{00066}} \textcolor{preprocessor}{\#define P32(x)      ((u32*)(\&(x)))              }}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00067}\mbox{\hyperlink{varint_8h_adc92d7430c7b945896332c2e2540a52a}{00067}} \textcolor{preprocessor}{\#define Pn32(x,y)   (((u32*)(\&(x)))[y])         }}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00069}\mbox{\hyperlink{varint_8h_ada574ddd6b3c52cf691b29e6efc7a817}{00069}} \textcolor{preprocessor}{\#define DelLb(x)    (x \& (x -\/ 1))               }}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00070}\mbox{\hyperlink{varint_8h_a4130fb740c8bd3c4986b2fe496c74d78}{00070}} \textcolor{preprocessor}{\#define qDelLb(x)   (x=(x \& (x -\/ 1)))           }}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00072}\mbox{\hyperlink{varint_8h_a338f1c6d28b8ee314ea8b33df5c6052e}{00072}} \textcolor{preprocessor}{\#define toBool(x)   (x!=0)                      }}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00073}\mbox{\hyperlink{varint_8h_af88c9f4171df59e6e0aa2db71bf9f250}{00073}} \textcolor{preprocessor}{\#define uBit(x,y)   (x\&(1<<y))                  }}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00074}\mbox{\hyperlink{varint_8h_ac123183daf1150b8b675c96cfeae4314}{00074}} \textcolor{preprocessor}{\#define tBit(x,y)   (toBool(uBit(x,y)))         }}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00076}\mbox{\hyperlink{varint_8h_aa1b4c6a5140aae5adbc14792ed9cbaf5}{00076}} \textcolor{preprocessor}{\#define sBit(x,y)   (x|(1<<y))                  }}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00077}\mbox{\hyperlink{varint_8h_a6c0c97a8768383af5f921a0496bb7e6c}{00077}} \textcolor{preprocessor}{\#define rBit(x,y)   (x\&(\string~(1<<y)))               }}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00078}\mbox{\hyperlink{varint_8h_a5cce0b9aa61d54efc42512f4c7796455}{00078}} \textcolor{preprocessor}{\#define mBit(x,y,z) ((z)?sBit(x,y):rBit(x,y))   }}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00080}\mbox{\hyperlink{varint_8h_a7ae6889c9eb9c27afb4395ef1d06eec7}{00080}} \textcolor{preprocessor}{\#define LpAdd(x,y)  ((x+1)<y?x+1:0)             }}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00081}\mbox{\hyperlink{varint_8h_af8c84f28a4c47bc30bbecb56d1469fd2}{00081}} \textcolor{preprocessor}{\#define LpDec(x,y)  (x>0?x-\/1:y-\/1)               }}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00082}\mbox{\hyperlink{varint_8h_ac5268cd1ab382ef2574c21c40590d6bc}{00082}} \textcolor{preprocessor}{\#define qLpAdd(x,y) (x=(x+1)<y?x+1:0)           }}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00083}00083 \textcolor{preprocessor}{\#define qLpDec(x,y) (x=x>0?x-\/1:y-\/1)             }}
+\DoxyCodeLine{\Hypertarget{varint_8h_source_l00085}00085 }
 
 \end{DoxyCode}

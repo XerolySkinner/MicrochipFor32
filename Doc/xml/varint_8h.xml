@@ -7,7 +7,9 @@
     <includedby refid="_s_t_l___stack_8h" local="yes">D:/gitt/MicrochipFor32/STL_Device/STL_Stack.h</includedby>
     <includedby refid="bsp___a_t24_c00_8cpp" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.cpp</includedby>
     <includedby refid="bsp___a_t24_c00_8h" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h</includedby>
+    <includedby refid="bsp___b_m_p_8h" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_BMP.h</includedby>
     <includedby refid="bsp___c_r_c_8h" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_CRC.h</includedby>
+    <includedby refid="bsp___calculus_8h" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_Calculus.h</includedby>
     <includedby refid="bsp___digit_8h" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_Digit.h</includedby>
     <includedby refid="bsp___i_i_c_8h" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h</includedby>
     <includedby refid="bsp___i_i_c___s_t_m32_8h" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h</includedby>
@@ -62,115 +64,135 @@
         </childnode>
       </node>
       <node id="9">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_BMP.cpp</label>
+        <link refid="bsp___b_m_p_8cpp"/>
+      </node>
+      <node id="8">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_BMP.h</label>
+        <link refid="bsp___b_m_p_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
         <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_CRC.cpp</label>
         <link refid="bsp___c_r_c_8cpp"/>
       </node>
-      <node id="8">
+      <node id="10">
         <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_CRC.h</label>
         <link refid="bsp___c_r_c_8h"/>
-        <childnode refid="9" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-      </node>
-      <node id="12">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_Digit.cpp</label>
-        <link refid="bsp___digit_8cpp"/>
-      </node>
-      <node id="11">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_Digit.h</label>
-        <link refid="bsp___digit_8h"/>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
       <node id="14">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp</label>
-        <link refid="bsp___i_i_c_8cpp"/>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_Calculus.cpp</label>
+        <link refid="bsp___calculus_8cpp"/>
       </node>
       <node id="13">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h</label>
-        <link refid="bsp___i_i_c_8h"/>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_Calculus.h</label>
+        <link refid="bsp___calculus_8h"/>
         <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
         </childnode>
       </node>
       <node id="16">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_Digit.cpp</label>
+        <link refid="bsp___digit_8cpp"/>
+      </node>
+      <node id="15">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_Digit.h</label>
+        <link refid="bsp___digit_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp</label>
+        <link refid="bsp___i_i_c_8cpp"/>
+      </node>
+      <node id="17">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h</label>
+        <link refid="bsp___i_i_c_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
         <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.cpp</label>
         <link refid="bsp___i_i_c___s_t_m32_8cpp"/>
       </node>
-      <node id="15">
+      <node id="19">
         <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h</label>
         <link refid="bsp___i_i_c___s_t_m32_8h"/>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-      </node>
-      <node id="20">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_MAX6675.cpp</label>
-        <link refid="bsp___m_a_x6675_8cpp"/>
-      </node>
-      <node id="19">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_MAX6675.h</label>
-        <link refid="bsp___m_a_x6675_8h"/>
         <childnode refid="20" relation="include">
         </childnode>
-      </node>
-      <node id="10">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp</label>
-        <link refid="bsp___mod_bus_8cpp"/>
-      </node>
-      <node id="21">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h</label>
-        <link refid="bsp___mod_bus_8h"/>
-        <childnode refid="10" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="22" relation="include">
         </childnode>
       </node>
+      <node id="24">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_MAX6675.cpp</label>
+        <link refid="bsp___m_a_x6675_8cpp"/>
+      </node>
       <node id="23">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus_STM32.cpp</label>
-        <link refid="bsp___mod_bus___s_t_m32_8cpp"/>
-      </node>
-      <node id="22">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus_STM32.h</label>
-        <link refid="bsp___mod_bus___s_t_m32_8h"/>
-        <childnode refid="23" relation="include">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_MAX6675.h</label>
+        <link refid="bsp___m_a_x6675_8h"/>
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
-      <node id="17">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp</label>
-        <link refid="bsp___o_l_e_d___s_t_m32_8cpp"/>
-      </node>
-      <node id="18">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h</label>
-        <link refid="bsp___o_l_e_d___s_t_m32_8h"/>
-        <childnode refid="17" relation="include">
-        </childnode>
+      <node id="12">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp</label>
+        <link refid="bsp___mod_bus_8cpp"/>
       </node>
       <node id="25">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.cpp</label>
-        <link refid="bsp___p_i_d_8cpp"/>
-      </node>
-      <node id="24">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h</label>
-        <link refid="bsp___p_i_d_8h"/>
-        <childnode refid="25" relation="include">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h</label>
+        <link refid="bsp___mod_bus_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
         </childnode>
       </node>
       <node id="27">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus_STM32.cpp</label>
+        <link refid="bsp___mod_bus___s_t_m32_8cpp"/>
+      </node>
+      <node id="26">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus_STM32.h</label>
+        <link refid="bsp___mod_bus___s_t_m32_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp</label>
+        <link refid="bsp___o_l_e_d___s_t_m32_8cpp"/>
+      </node>
+      <node id="22">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h</label>
+        <link refid="bsp___o_l_e_d___s_t_m32_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.cpp</label>
+        <link refid="bsp___p_i_d_8cpp"/>
+      </node>
+      <node id="28">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h</label>
+        <link refid="bsp___p_i_d_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
         <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.cpp</label>
         <link refid="bsp___s_d_8cpp"/>
       </node>
-      <node id="26">
+      <node id="30">
         <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h</label>
         <link refid="bsp___s_d_8h"/>
-        <childnode refid="27" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -186,62 +208,315 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
         <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
         <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
         <childnode refid="30" relation="include">
         </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
       </node>
-      <node id="29">
+      <node id="33">
         <label>D:/gitt/MicrochipFor32/bsp_MPU6050/mpu6050.cpp</label>
         <link refid="mpu6050_8cpp"/>
       </node>
-      <node id="28">
+      <node id="32">
         <label>D:/gitt/MicrochipFor32/bsp_MPU6050/mpu6050.h</label>
         <link refid="mpu6050_8h"/>
-        <childnode refid="29" relation="include">
-        </childnode>
-      </node>
-      <node id="31">
-        <label>D:/gitt/MicrochipFor32/bsp_System/Callback.cpp</label>
-        <link refid="_callback_8cpp"/>
-      </node>
-      <node id="32">
-        <label>D:/gitt/MicrochipFor32/bsp_System/MainSystem.cpp</label>
-        <link refid="_main_system_8cpp"/>
-      </node>
-      <node id="33">
-        <label>D:/gitt/MicrochipFor32/bsp_System/vartable.cpp</label>
-        <link refid="vartable_8cpp"/>
-      </node>
-      <node id="30">
-        <label>D:/gitt/MicrochipFor32/bsp_System/vartable.h</label>
-        <link refid="vartable_8h"/>
-        <childnode refid="31" relation="include">
-        </childnode>
-        <childnode refid="32" relation="include">
-        </childnode>
         <childnode refid="33" relation="include">
         </childnode>
       </node>
+      <node id="35">
+        <label>D:/gitt/MicrochipFor32/bsp_System/Callback.cpp</label>
+        <link refid="_callback_8cpp"/>
+      </node>
+      <node id="36">
+        <label>D:/gitt/MicrochipFor32/bsp_System/MainSystem.cpp</label>
+        <link refid="_main_system_8cpp"/>
+      </node>
+      <node id="37">
+        <label>D:/gitt/MicrochipFor32/bsp_System/vartable.cpp</label>
+        <link refid="vartable_8cpp"/>
+      </node>
+      <node id="34">
+        <label>D:/gitt/MicrochipFor32/bsp_System/vartable.h</label>
+        <link refid="vartable_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
     </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="varint_8h_1ad35af1fbc60fcc217f7e3c6bae2ba656" prot="public" static="no">
+        <name>P8</name>
+        <param><defname>x</defname></param>
+        <initializer>((<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref>*)(&amp;(x)))</initializer>
+        <briefdescription>
+<para>强制转换变成u8的指针 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="62" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="varint_8h_1a71e9586b24447c7ca7bc353aa86da852" prot="public" static="no">
+        <name>Pn8</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <initializer>(((<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref>*)(&amp;(x)))[y])</initializer>
+        <briefdescription>
+<para>强制转换变成u8的数组 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="63" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="varint_8h_1a90e13f6172ebc6d6b8df6ed9a443491f" prot="public" static="no">
+        <name>P16</name>
+        <param><defname>x</defname></param>
+        <initializer>((<ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref>*)(&amp;(x)))</initializer>
+        <briefdescription>
+<para>强制转换变成u16的指针 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="64" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="varint_8h_1aff980abb3664242448c35e7c94df9457" prot="public" static="no">
+        <name>Pn16</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <initializer>(((<ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref>*)(&amp;(x)))[y])</initializer>
+        <briefdescription>
+<para>强制转换变成u16的数组 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="65" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="varint_8h_1a495d48b6b1b59a2ad797b10d9da431ff" prot="public" static="no">
+        <name>P32</name>
+        <param><defname>x</defname></param>
+        <initializer>((<ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref>*)(&amp;(x)))</initializer>
+        <briefdescription>
+<para>强制转换变成u32的指针 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="66" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="varint_8h_1adc92d7430c7b945896332c2e2540a52a" prot="public" static="no">
+        <name>Pn32</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <initializer>(((<ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref>*)(&amp;(x)))[y])</initializer>
+        <briefdescription>
+<para>强制转换变成u32的数组 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="67" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="varint_8h_1ada574ddd6b3c52cf691b29e6efc7a817" prot="public" static="no">
+        <name>DelLb</name>
+        <param><defname>x</defname></param>
+        <initializer>(x &amp; (x - 1))</initializer>
+        <briefdescription>
+<para>移除最低位的1 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="69" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="varint_8h_1a4130fb740c8bd3c4986b2fe496c74d78" prot="public" static="no">
+        <name>qDelLb</name>
+        <param><defname>x</defname></param>
+        <initializer>(x=(x &amp; (x - 1)))</initializer>
+        <briefdescription>
+<para>移除并保存最低位的1 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="70" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="varint_8h_1a338f1c6d28b8ee314ea8b33df5c6052e" prot="public" static="no">
+        <name>toBool</name>
+        <param><defname>x</defname></param>
+        <initializer>(x!=0)</initializer>
+        <briefdescription>
+<para>数布尔化 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="72" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="varint_8h_1af88c9f4171df59e6e0aa2db71bf9f250" prot="public" static="no">
+        <name>uBit</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <initializer>(x&amp;(1&lt;&lt;y))</initializer>
+        <briefdescription>
+<para>挑选某一位 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="73" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="varint_8h_1ac123183daf1150b8b675c96cfeae4314" prot="public" static="no">
+        <name>tBit</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <initializer>(<ref refid="varint_8h_1a338f1c6d28b8ee314ea8b33df5c6052e" kindref="member">toBool</ref>(<ref refid="varint_8h_1af88c9f4171df59e6e0aa2db71bf9f250" kindref="member">uBit</ref>(x,y)))</initializer>
+        <briefdescription>
+<para>挑选某一位并且布尔化 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="74" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="varint_8h_1aa1b4c6a5140aae5adbc14792ed9cbaf5" prot="public" static="no">
+        <name>sBit</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <initializer>(x|(1&lt;&lt;y))</initializer>
+        <briefdescription>
+<para>置高某一位 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="76" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="varint_8h_1a6c0c97a8768383af5f921a0496bb7e6c" prot="public" static="no">
+        <name>rBit</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <initializer>(x&amp;(~(1&lt;&lt;y)))</initializer>
+        <briefdescription>
+<para>拉低某一位 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="77" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="varint_8h_1a5cce0b9aa61d54efc42512f4c7796455" prot="public" static="no">
+        <name>mBit</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>z</defname></param>
+        <initializer>((z)?<ref refid="varint_8h_1aa1b4c6a5140aae5adbc14792ed9cbaf5" kindref="member">sBit</ref>(x,y):<ref refid="varint_8h_1a6c0c97a8768383af5f921a0496bb7e6c" kindref="member">rBit</ref>(x,y))</initializer>
+        <briefdescription>
+<para>选择性拉高拉低某一位 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="78" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="varint_8h_1a7ae6889c9eb9c27afb4395ef1d06eec7" prot="public" static="no">
+        <name>LpAdd</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <initializer>((x+1)&lt;y?x+1:0)</initializer>
+        <briefdescription>
+<para>带最高限制的加法 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="80" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="varint_8h_1af8c84f28a4c47bc30bbecb56d1469fd2" prot="public" static="no">
+        <name>LpDec</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <initializer>(x&gt;0?x-1:y-1)</initializer>
+        <briefdescription>
+<para>带最低限制的减法 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="81" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="varint_8h_1ac5268cd1ab382ef2574c21c40590d6bc" prot="public" static="no">
+        <name>qLpAdd</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <initializer>(x=(x+1)&lt;y?x+1:0)</initializer>
+        <briefdescription>
+<para>带最高限制的自增 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="82" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="varint_8h_1a6d3d574f28028e4705bcd10ecfdadeaa" prot="public" static="no">
+        <name>qLpDec</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <initializer>(x=x&gt;0?x-1:y-1)</initializer>
+        <briefdescription>
+<para>带最低限制的自减 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h" line="83" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/varint.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="typedef">
       <memberdef kind="typedef" id="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" prot="public" static="no">
         <type>uint8_t</type>
@@ -469,6 +744,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>全局共用的标准类型表 </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -520,7 +796,31 @@
 <codeline lineno="56" refid="varint_8h_1ab1725f18a2ec2964f4bc0499527e4c5d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="varint_8h_1ad309dbcaeea13aa602d686964156ea0b" kindref="member">i16</ref><sp/><sp/><sp/><sp/><ref refid="varint_8h_1ab1725f18a2ec2964f4bc0499527e4c5d" kindref="member">vi16</ref>;<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="57" refid="varint_8h_1a8b81ac6660e74bec836c0a4e0a0b6450" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="varint_8h_1a48d6cd8e4135fb2ff7e7f2dac84089ec" kindref="member">i32</ref><sp/><sp/><sp/><sp/><ref refid="varint_8h_1a8b81ac6660e74bec836c0a4e0a0b6450" kindref="member">vi32</ref>;<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="58" refid="varint_8h_1aeffd8dafd889cdd80398ffcbb37cd7ef" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="varint_8h_1a85cb35fbe5bf2961d7ad5f26814a91a2" kindref="member">i64</ref><sp/><sp/><sp/><sp/><ref refid="varint_8h_1aeffd8dafd889cdd80398ffcbb37cd7ef" kindref="member">vi64</ref>;<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="comment">//----------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>位宏</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="varint_8h_1ad35af1fbc60fcc217f7e3c6bae2ba656" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>P8(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>((u8*)(&amp;(x)))<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="varint_8h_1a71e9586b24447c7ca7bc353aa86da852" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Pn8(x,y)<sp/><sp/><sp/><sp/>(((u8*)(&amp;(x)))[y])<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="varint_8h_1a90e13f6172ebc6d6b8df6ed9a443491f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>P16(x)<sp/><sp/><sp/><sp/><sp/><sp/>((u16*)(&amp;(x)))<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="varint_8h_1aff980abb3664242448c35e7c94df9457" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Pn16(x,y)<sp/><sp/><sp/>(((u16*)(&amp;(x)))[y])<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="varint_8h_1a495d48b6b1b59a2ad797b10d9da431ff" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>P32(x)<sp/><sp/><sp/><sp/><sp/><sp/>((u32*)(&amp;(x)))<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="varint_8h_1adc92d7430c7b945896332c2e2540a52a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Pn32(x,y)<sp/><sp/><sp/>(((u32*)(&amp;(x)))[y])<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="varint_8h_1ada574ddd6b3c52cf691b29e6efc7a817" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DelLb(x)<sp/><sp/><sp/><sp/>(x<sp/>&amp;<sp/>(x<sp/>-<sp/>1))<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="varint_8h_1a4130fb740c8bd3c4986b2fe496c74d78" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>qDelLb(x)<sp/><sp/><sp/>(x=(x<sp/>&amp;<sp/>(x<sp/>-<sp/>1)))<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="varint_8h_1a338f1c6d28b8ee314ea8b33df5c6052e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>toBool(x)<sp/><sp/><sp/>(x!=0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="varint_8h_1af88c9f4171df59e6e0aa2db71bf9f250" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>uBit(x,y)<sp/><sp/><sp/>(x&amp;(1&lt;&lt;y))<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="varint_8h_1ac123183daf1150b8b675c96cfeae4314" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>tBit(x,y)<sp/><sp/><sp/>(toBool(uBit(x,y)))<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="varint_8h_1aa1b4c6a5140aae5adbc14792ed9cbaf5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>sBit(x,y)<sp/><sp/><sp/>(x|(1&lt;&lt;y))<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="varint_8h_1a6c0c97a8768383af5f921a0496bb7e6c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>rBit(x,y)<sp/><sp/><sp/>(x&amp;(~(1&lt;&lt;y)))<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="varint_8h_1a5cce0b9aa61d54efc42512f4c7796455" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>mBit(x,y,z)<sp/>((z)?sBit(x,y):rBit(x,y))<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="varint_8h_1a7ae6889c9eb9c27afb4395ef1d06eec7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LpAdd(x,y)<sp/><sp/>((x+1)&lt;y?x+1:0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="varint_8h_1af8c84f28a4c47bc30bbecb56d1469fd2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LpDec(x,y)<sp/><sp/>(x&gt;0?x-1:y-1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="varint_8h_1ac5268cd1ab382ef2574c21c40590d6bc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>qLpAdd(x,y)<sp/>(x=(x+1)&lt;y?x+1:0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>qLpDec(x,y)<sp/>(x=x&gt;0?x-1:y-1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="D:/gitt/MicrochipFor32/bsp_Device/varint.h"/>
   </compounddef>

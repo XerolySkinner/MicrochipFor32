@@ -1,0 +1,69 @@
+\hypertarget{bsp___calculus_8h_source}{}\doxysection{bsp\+\_\+\+Calculus.\+h}
+\label{bsp___calculus_8h_source}\index{D:/gitt/MicrochipFor32/bsp\_Device/bsp\_Calculus.h@{D:/gitt/MicrochipFor32/bsp\_Device/bsp\_Calculus.h}}
+\mbox{\hyperlink{bsp___calculus_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00001}00001 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00002}00002 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00003}00003 \textcolor{comment}{ \#  Copyright (c) 2022 Yuankang Liang(XerolySkinner)}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00004}00004 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00005}00005 \textcolor{comment}{ \#  本软件按原样提供,无任何明示或暗示}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00006}00006 \textcolor{comment}{ \#  在任何情况下,作者都不承担任何损害赔偿责任}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00007}00007 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00008}00008 \textcolor{comment}{ \#  使用的许可声明:}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00009}00009 \textcolor{comment}{ \#  1.  不得歪曲本软件的来源,你不能声称你编写了原始软件.}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00010}00010 \textcolor{comment}{ \#  2.  免费授予以任何目的,前提是版权声明出现在所有副本中.}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00011}00011 \textcolor{comment}{ \#      并且版权声明和许可声明同时出现.}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00012}00012 \textcolor{comment}{ \#  3.  你有使用,复制,修改,分发,和销售本软件的许可.}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00013}00013 \textcolor{comment}{ \#  4.  如果你在产品中使用,产品文档中的声明是赞赏的但不是必须的.}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00014}00014 \textcolor{comment}{ \#  5.  本通知不得从任何来源删除或更改.}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00015}00015 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00016}00016 \textcolor{comment}{ \#  Yuankang Liang(XerolySkinner)}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00017}00017 \textcolor{comment}{ \#      E-\/mail:zabbcccbbaz@163.com}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00018}00018 \textcolor{comment}{ \#      QQ:2715099320}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00019}00019 \textcolor{comment}{ \#      Mobile Phone:13005636215}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00020}00020 \textcolor{comment}{ \#}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00021}00021 \textcolor{comment}{ \#  All rights reserved.}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00022}00022 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00033}00033 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00034}00034 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00035}00035 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00036}00036 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{varint_8h}{varint.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00038}00038 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00039}00039 \textcolor{comment}{//  类目}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00043}\mbox{\hyperlink{classbsp___differential}{00043}} \textcolor{comment}{}\textcolor{keyword}{class }\mbox{\hyperlink{classbsp___differential}{bsp\_Differential}}\{}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00044}00044     \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00045}\mbox{\hyperlink{classbsp___differential_a16a19c803e2f1a3bbba98a2ef529206b}{00045}}         \mbox{\hyperlink{classbsp___differential_a16a19c803e2f1a3bbba98a2ef529206b}{bsp\_Differential}}(\textcolor{keywordtype}{float} \mbox{\hyperlink{classbsp___differential_ab25588868059974b8356e975c6e96992}{dt}}) \{}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00046}00046             \mbox{\hyperlink{classbsp___differential_ab25588868059974b8356e975c6e96992}{bsp\_Differential::dt}} = \mbox{\hyperlink{classbsp___differential_ab25588868059974b8356e975c6e96992}{dt}};\}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00047}00047     \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00048}00048         \textcolor{keywordtype}{float} \mbox{\hyperlink{classbsp___differential_a46536b15be29d856b09dd7d261a12ab1}{Differential}}(\textcolor{keywordtype}{float} var);}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00049}00049     \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00050}\mbox{\hyperlink{classbsp___differential_ab25588868059974b8356e975c6e96992}{00050}}         \textcolor{keywordtype}{float} \mbox{\hyperlink{classbsp___differential_ab25588868059974b8356e975c6e96992}{dt}};         }
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00051}00051     \};}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00052}00052 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00059}\mbox{\hyperlink{classbsp___integral}{00059}} \textcolor{comment}{}\textcolor{keyword}{class }\mbox{\hyperlink{classbsp___integral}{bsp\_Integral}} \{}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00060}00060     \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00061}\mbox{\hyperlink{classbsp___integral_af274273b399f4da855646921f3ae31ba}{00061}}         \mbox{\hyperlink{classbsp___integral_af274273b399f4da855646921f3ae31ba}{bsp\_Integral}}(\textcolor{keywordtype}{float} \mbox{\hyperlink{classbsp___integral_a4494cf9fc2873d457ed3bf8618b68045}{dt}}) \{}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00062}00062             \mbox{\hyperlink{classbsp___integral_a656d90c5a713abf0665f1dcbf1a5101a}{bsp\_Integral::result\_list}} = NULL;}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00063}00063             \mbox{\hyperlink{classbsp___integral_a4494cf9fc2873d457ed3bf8618b68045}{bsp\_Integral::dt}} = \mbox{\hyperlink{classbsp___integral_a4494cf9fc2873d457ed3bf8618b68045}{dt}};}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00064}00064             \mbox{\hyperlink{classbsp___integral_a910f1f3faa2b4963e00718472b8389bc}{bsp\_Integral::results}} = 0;\}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00065}\mbox{\hyperlink{classbsp___integral_a3f190eb273b4d6492fb39e2573ec37a1}{00065}}         \mbox{\hyperlink{classbsp___integral_a3f190eb273b4d6492fb39e2573ec37a1}{\string~bsp\_Integral}}(\textcolor{keywordtype}{void}) \{}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00066}00066             free(\mbox{\hyperlink{classbsp___integral_a656d90c5a713abf0665f1dcbf1a5101a}{result\_list}});}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00067}00067             \mbox{\hyperlink{classbsp___integral_a656d90c5a713abf0665f1dcbf1a5101a}{result\_list}} = NULL;\}}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00068}00068     \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00069}00069         \textcolor{keywordtype}{float} \mbox{\hyperlink{classbsp___integral_ade46f89bfdc6dd778c045a51c76c1839}{Integral}}(\textcolor{keywordtype}{float} var);}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00070}00070         \textcolor{keywordtype}{void} \mbox{\hyperlink{classbsp___integral_aaf7474301ed76ca9ce2b1884ae870019}{Integral\_set}}(\textcolor{keywordtype}{float} \mbox{\hyperlink{classbsp___integral_a910f1f3faa2b4963e00718472b8389bc}{results}});}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00072}00072         \textcolor{keywordtype}{float} \mbox{\hyperlink{classbsp___integral_a80693e18b9b9509bdec0ebfd72f84072}{Integral\_list}}(\textcolor{keywordtype}{float} var);}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00073}00073         \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} \mbox{\hyperlink{classbsp___integral_a86d9e02d1146744fe80ebab69070abb4}{Integral\_makelist}}(\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} len);}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00074}00074         \textcolor{keywordtype}{void} \mbox{\hyperlink{classbsp___integral_a47307ddf418d2686245b118dcf61a199}{Integral\_dellist}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00075}00075         \textcolor{keywordtype}{void} \mbox{\hyperlink{classbsp___integral_aae2b6143ca39861a83b77befc131bf5e}{Integral\_clslist}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00076}00076     \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00077}\mbox{\hyperlink{classbsp___integral_a656d90c5a713abf0665f1dcbf1a5101a}{00077}}         \textcolor{keywordtype}{float}   *\mbox{\hyperlink{classbsp___integral_a656d90c5a713abf0665f1dcbf1a5101a}{result\_list}};    }
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00078}\mbox{\hyperlink{classbsp___integral_a662c735b9432a46e48a642ebb9c0e8fa}{00078}}         \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}      \mbox{\hyperlink{classbsp___integral_a662c735b9432a46e48a642ebb9c0e8fa}{result\_len}};       }
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00079}\mbox{\hyperlink{classbsp___integral_a910f1f3faa2b4963e00718472b8389bc}{00079}}         \textcolor{keywordtype}{float}   \mbox{\hyperlink{classbsp___integral_a910f1f3faa2b4963e00718472b8389bc}{results}};     }
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00080}\mbox{\hyperlink{classbsp___integral_a4494cf9fc2873d457ed3bf8618b68045}{00080}}         \textcolor{keywordtype}{float}   \mbox{\hyperlink{classbsp___integral_a4494cf9fc2873d457ed3bf8618b68045}{dt}};               }
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00081}00081     \};}
+\DoxyCodeLine{\Hypertarget{bsp___calculus_8h_source_l00083}00083 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

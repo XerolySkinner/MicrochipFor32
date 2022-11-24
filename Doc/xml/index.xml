@@ -1,5 +1,30 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.5" xml:lang="zh">
+  <compound refid="struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r" kind="struct"><name>_BITMAPFILEHEADER</name>
+    <member refid="struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1a6810e258839bc4345e2036af20e607db" kind="variable"><name>bfType</name></member>
+    <member refid="struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1a1bd9726a58f87d278efa58d6d7c70a81" kind="variable"><name>bfSize</name></member>
+    <member refid="struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1a71c78132cda5e8b032fb4f549ec9a14a" kind="variable"><name>bfReserved1</name></member>
+    <member refid="struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1a3f69e4551c8fee241e5a4cd224c64f50" kind="variable"><name>bfReserved2</name></member>
+    <member refid="struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1af53728df68db96b9decc5100bc1bf7e0" kind="variable"><name>bfOffBits</name></member>
+  </compound>
+  <compound refid="struct___b_i_t_m_a_p_i_n_f_o" kind="struct"><name>_BITMAPINFO</name>
+    <member refid="struct___b_i_t_m_a_p_i_n_f_o_1a3356c2aeed730cf31d05fd09244ecbce" kind="variable"><name>bmfHeader</name></member>
+    <member refid="struct___b_i_t_m_a_p_i_n_f_o_1a7d9eafe9a3374cd06dc22fda1af98b6d" kind="variable"><name>bmiHeader</name></member>
+    <member refid="struct___b_i_t_m_a_p_i_n_f_o_1ab5fe5744a8fe46833743bc6b5cf72a49" kind="variable"><name>bmiColors</name></member>
+  </compound>
+  <compound refid="struct___b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r" kind="struct"><name>_BITMAPINFOHEADER</name>
+    <member refid="struct___b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r_1a750a301fb5962c5fc2b7fac173d96bdf" kind="variable"><name>biSize</name></member>
+    <member refid="struct___b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r_1a28dd4e1f56936b64f6e01db9b2d171f2" kind="variable"><name>biWidth</name></member>
+    <member refid="struct___b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r_1a9f6c38749a3b5f8b261be7a6556cf97a" kind="variable"><name>biHeight</name></member>
+    <member refid="struct___b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r_1a42d10de030492301ff4a3d5cfb91c2dd" kind="variable"><name>biPlanes</name></member>
+    <member refid="struct___b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r_1a98f05ea6cc8388d3ca701a834b04a286" kind="variable"><name>biBitCount</name></member>
+    <member refid="struct___b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r_1aef77b295d3a4b6540873c9e0d2ef53d2" kind="variable"><name>biCompression</name></member>
+    <member refid="struct___b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r_1a0fa85188799eb931e2a03c887751a89e" kind="variable"><name>biSizeImage</name></member>
+    <member refid="struct___b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r_1a6a7eb9da9dfb7790486523dac6c4b6c2" kind="variable"><name>biXPelsPerMeter</name></member>
+    <member refid="struct___b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r_1a0c830c96c45441edc35a5397bc86ace0" kind="variable"><name>biYPelsPerMeter</name></member>
+    <member refid="struct___b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r_1a1bb27f668cbed1ce6523e7042962a0e7" kind="variable"><name>biClrUsed</name></member>
+    <member refid="struct___b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r_1a4ee52fd1ab5c173a6e54444d1ec61dab" kind="variable"><name>biClrImportant</name></member>
+  </compound>
   <compound refid="struct__l_queue" kind="struct"><name>_lQueue</name>
     <member refid="struct__l_queue_1a3be42777ab564c447ca2b0978e04ef68" kind="variable"><name>back</name></member>
     <member refid="struct__l_queue_1acc0ce814c36fdba1027d1639236c14cb" kind="variable"><name>dat</name></member>
@@ -9,6 +34,29 @@
     <member refid="struct__l_stack_1affc30df8369219ce967936b083106ee4" kind="variable"><name>front</name></member>
     <member refid="struct__l_stack_1a560ebf00b475d44dc7a96c9c15d91bc8" kind="variable"><name>dat</name></member>
     <member refid="struct__l_stack_1a6bdae5ac1294a8f08f4b5b8a809e4f32" kind="variable"><name>size</name></member>
+  </compound>
+  <compound refid="struct___r_g_b_q_u_a_d" kind="struct"><name>_RGBQUAD</name>
+    <member refid="struct___r_g_b_q_u_a_d_1ad26ba005b107e31a81b9e3e981ca9f1d" kind="variable"><name>rgbBlue</name></member>
+    <member refid="struct___r_g_b_q_u_a_d_1a2e445545aae97ebab36603942d3780d1" kind="variable"><name>rgbGreen</name></member>
+    <member refid="struct___r_g_b_q_u_a_d_1a9756faed264a45ead4f89567e807247f" kind="variable"><name>rgbRed</name></member>
+    <member refid="struct___r_g_b_q_u_a_d_1a742c7421feef58afb68308d3643bd924" kind="variable"><name>rgbReserved</name></member>
+  </compound>
+  <compound refid="classbsp___b_m_p" kind="class"><name>bsp_BMP</name>
+    <member refid="classbsp___b_m_p_1a64dcf31f5722327336d87794b873a335" kind="variable"><name>BITMAPINFO</name></member>
+    <member refid="classbsp___b_m_p_1a8a1c31ee70ed4061ad8bea4254959b83" kind="variable"><name>Size</name></member>
+    <member refid="classbsp___b_m_p_1a2023aceaef140268a12bc61b81d410ca" kind="variable"><name>dat</name></member>
+    <member refid="classbsp___b_m_p_1a27d05488822dc9548e0783d46808a1db" kind="function"><name>bsp_BMP</name></member>
+    <member refid="classbsp___b_m_p_1a604d7e5683da37be890672aa690c2ff2" kind="function"><name>~bsp_BMP</name></member>
+    <member refid="classbsp___b_m_p_1a4aaa5a2ea2f5b3c07c8e16009984766e" kind="function"><name>pels</name></member>
+    <member refid="classbsp___b_m_p_1ae0e2551a06b8ad966a86b2c8324da25c" kind="function"><name>giveData</name></member>
+    <member refid="classbsp___b_m_p_1abe5d545dea1090a228843f140650f573" kind="function"><name>delData</name></member>
+    <member refid="classbsp___b_m_p_1a17c0c014ef6ce7d09a5dd81c5d2c5d57" kind="function"><name>ColorsSet</name></member>
+    <member refid="classbsp___b_m_p_1a535cd9bfe5e49ba97ff9c4a1dd8ebb51" kind="function"><name>sizeSet</name></member>
+  </compound>
+  <compound refid="classbsp___differential" kind="class"><name>bsp_Differential</name>
+    <member refid="classbsp___differential_1ab25588868059974b8356e975c6e96992" kind="variable"><name>dt</name></member>
+    <member refid="classbsp___differential_1a16a19c803e2f1a3bbba98a2ef529206b" kind="function"><name>bsp_Differential</name></member>
+    <member refid="classbsp___differential_1a46536b15be29d856b09dd7d261a12ab1" kind="function"><name>Differential</name></member>
   </compound>
   <compound refid="classbsp___digit" kind="class"><name>bsp_Digit</name>
     <member refid="classbsp___digit_1a26571e190c198e068d6aa92af584352d" kind="variable"><name>division</name></member>
@@ -68,6 +116,20 @@
     <member refid="classbsp___increment___p_i_d_1a7f39310ecc4cd1f8029a6545bd37e0a9" kind="function"><name>PID</name></member>
     <member refid="classbsp___increment___p_i_d_1aa1cab8492ec6a289debfc215689d9b38" kind="function"><name>clean</name></member>
     <member refid="classbsp___increment___p_i_d_1aeddd6d60b615571d390653e9a958b2b4" kind="function"><name>set</name></member>
+  </compound>
+  <compound refid="classbsp___integral" kind="class"><name>bsp_Integral</name>
+    <member refid="classbsp___integral_1a656d90c5a713abf0665f1dcbf1a5101a" kind="variable"><name>result_list</name></member>
+    <member refid="classbsp___integral_1a662c735b9432a46e48a642ebb9c0e8fa" kind="variable"><name>result_len</name></member>
+    <member refid="classbsp___integral_1a910f1f3faa2b4963e00718472b8389bc" kind="variable"><name>results</name></member>
+    <member refid="classbsp___integral_1a4494cf9fc2873d457ed3bf8618b68045" kind="variable"><name>dt</name></member>
+    <member refid="classbsp___integral_1af274273b399f4da855646921f3ae31ba" kind="function"><name>bsp_Integral</name></member>
+    <member refid="classbsp___integral_1a3f190eb273b4d6492fb39e2573ec37a1" kind="function"><name>~bsp_Integral</name></member>
+    <member refid="classbsp___integral_1ade46f89bfdc6dd778c045a51c76c1839" kind="function"><name>Integral</name></member>
+    <member refid="classbsp___integral_1aaf7474301ed76ca9ce2b1884ae870019" kind="function"><name>Integral_set</name></member>
+    <member refid="classbsp___integral_1a80693e18b9b9509bdec0ebfd72f84072" kind="function"><name>Integral_list</name></member>
+    <member refid="classbsp___integral_1a86d9e02d1146744fe80ebab69070abb4" kind="function"><name>Integral_makelist</name></member>
+    <member refid="classbsp___integral_1a47307ddf418d2686245b118dcf61a199" kind="function"><name>Integral_dellist</name></member>
+    <member refid="classbsp___integral_1aae2b6143ca39861a83b77befc131bf5e" kind="function"><name>Integral_clslist</name></member>
   </compound>
   <compound refid="classbsp___m_a_x6675" kind="class"><name>bsp_MAX6675</name>
     <member refid="classbsp___m_a_x6675_1a6b4e52e8861a88b7201c1bb5e70aa40a" kind="variable"><name>hspi</name></member>
@@ -312,9 +374,22 @@
     <member refid="class_s_t_l__r_stack_1ad64450c2168e2551ed8fad637a8b9c99" kind="function"><name>poptop32</name></member>
     <member refid="class_s_t_l__r_stack_1a4287e70b3adaf5e2a3a941299a085b09" kind="function"><name>pushfun</name></member>
   </compound>
+  <compound refid="structstruct__bsp___flash___pack" kind="struct"><name>struct_bsp_Flash_Pack</name>
+    <member refid="structstruct__bsp___flash___pack_1aea6e531775263f158f23d2295f759dd7" kind="variable"><name>Var0</name></member>
+    <member refid="structstruct__bsp___flash___pack_1aff73ebf1f2eaf5930d7187aa5f502075" kind="variable"><name>Var1</name></member>
+    <member refid="structstruct__bsp___flash___pack_1adc2edcdadc2b2be3d18334cd196e049c" kind="variable"><name>Var2</name></member>
+  </compound>
   <compound refid="bsp___a_t24_c00_8cpp" kind="file"><name>bsp_AT24C00.cpp</name>
   </compound>
   <compound refid="bsp___a_t24_c00_8h" kind="file"><name>bsp_AT24C00.h</name>
+  </compound>
+  <compound refid="bsp___b_m_p_8cpp" kind="file"><name>bsp_BMP.cpp</name>
+  </compound>
+  <compound refid="bsp___b_m_p_8h" kind="file"><name>bsp_BMP.h</name>
+  </compound>
+  <compound refid="bsp___calculus_8cpp" kind="file"><name>bsp_Calculus.cpp</name>
+  </compound>
+  <compound refid="bsp___calculus_8h" kind="file"><name>bsp_Calculus.h</name>
   </compound>
   <compound refid="bsp___c_r_c_8cpp" kind="file"><name>bsp_CRC.cpp</name>
     <member refid="bsp___c_r_c_8cpp_1a7a737378eb1c2e4d7d493764c6e7647f" kind="variable"><name>aucCRCHi</name></member>
@@ -331,6 +406,20 @@
     <member refid="bsp___digit_8h_1a06fc87d81c62e9abb8790b6e5713c55ba4c86d712c35fc61b110859b9f8c622f5" kind="enumvalue"><name>anode</name></member>
     <member refid="bsp___digit_8h_1a06fc87d81c62e9abb8790b6e5713c55ba5802523c5519b4792ac2433404f6de26" kind="enumvalue"><name>cathode</name></member>
     <member refid="bsp___digit_8h_1a9c1f3d665aa750ca904e9e547a2c98f8" kind="variable"><name>digit_ca</name></member>
+  </compound>
+  <compound refid="bsp__flash_8c" kind="file"><name>bsp_flash.c</name>
+    <member refid="bsp__flash_8c_1a37cd1b57193a374f9a86b6cf1277cd0a" kind="variable"><name>FlashAddr</name></member>
+    <member refid="bsp__flash_8c_1a2c0639c4d50bba3762a4295a56a06af8" kind="variable"><name>bsp_Flash_Pack</name></member>
+    <member refid="bsp__flash_8c_1af1304997d797af3400074bdb68e5de1c" kind="function"><name>bsp_WriteFlashOnePage</name></member>
+    <member refid="bsp__flash_8c_1a734a679e19a8af2c7ddfa86f4310a13d" kind="function"><name>bsp_ReadFlash</name></member>
+    <member refid="bsp__flash_8c_1aa1a1ff74b284a19aa3872b6f3d6abd11" kind="function"><name>bsp_WriteFlash_Pack</name></member>
+    <member refid="bsp__flash_8c_1a45549058e1315d29263c0b26816bcffb" kind="function"><name>bsp_ReadFlash_Pack</name></member>
+  </compound>
+  <compound refid="bsp__flash_8h" kind="file"><name>bsp_flash.h</name>
+    <member refid="bsp__flash_8h_1af1304997d797af3400074bdb68e5de1c" kind="function"><name>bsp_WriteFlashOnePage</name></member>
+    <member refid="bsp__flash_8h_1a734a679e19a8af2c7ddfa86f4310a13d" kind="function"><name>bsp_ReadFlash</name></member>
+    <member refid="bsp__flash_8h_1aa1a1ff74b284a19aa3872b6f3d6abd11" kind="function"><name>bsp_WriteFlash_Pack</name></member>
+    <member refid="bsp__flash_8h_1a45549058e1315d29263c0b26816bcffb" kind="function"><name>bsp_ReadFlash_Pack</name></member>
   </compound>
   <compound refid="bsp___i_i_c_8cpp" kind="file"><name>bsp_IIC.cpp</name>
   </compound>
@@ -422,6 +511,24 @@
     <member refid="bsp___s_d_8h_1a2c85a6a257358283b46ba829ae0c2dba" kind="variable"><name>SD0_CardInfo</name></member>
   </compound>
   <compound refid="varint_8h" kind="file"><name>varint.h</name>
+    <member refid="varint_8h_1ad35af1fbc60fcc217f7e3c6bae2ba656" kind="define"><name>P8</name></member>
+    <member refid="varint_8h_1a71e9586b24447c7ca7bc353aa86da852" kind="define"><name>Pn8</name></member>
+    <member refid="varint_8h_1a90e13f6172ebc6d6b8df6ed9a443491f" kind="define"><name>P16</name></member>
+    <member refid="varint_8h_1aff980abb3664242448c35e7c94df9457" kind="define"><name>Pn16</name></member>
+    <member refid="varint_8h_1a495d48b6b1b59a2ad797b10d9da431ff" kind="define"><name>P32</name></member>
+    <member refid="varint_8h_1adc92d7430c7b945896332c2e2540a52a" kind="define"><name>Pn32</name></member>
+    <member refid="varint_8h_1ada574ddd6b3c52cf691b29e6efc7a817" kind="define"><name>DelLb</name></member>
+    <member refid="varint_8h_1a4130fb740c8bd3c4986b2fe496c74d78" kind="define"><name>qDelLb</name></member>
+    <member refid="varint_8h_1a338f1c6d28b8ee314ea8b33df5c6052e" kind="define"><name>toBool</name></member>
+    <member refid="varint_8h_1af88c9f4171df59e6e0aa2db71bf9f250" kind="define"><name>uBit</name></member>
+    <member refid="varint_8h_1ac123183daf1150b8b675c96cfeae4314" kind="define"><name>tBit</name></member>
+    <member refid="varint_8h_1aa1b4c6a5140aae5adbc14792ed9cbaf5" kind="define"><name>sBit</name></member>
+    <member refid="varint_8h_1a6c0c97a8768383af5f921a0496bb7e6c" kind="define"><name>rBit</name></member>
+    <member refid="varint_8h_1a5cce0b9aa61d54efc42512f4c7796455" kind="define"><name>mBit</name></member>
+    <member refid="varint_8h_1a7ae6889c9eb9c27afb4395ef1d06eec7" kind="define"><name>LpAdd</name></member>
+    <member refid="varint_8h_1af8c84f28a4c47bc30bbecb56d1469fd2" kind="define"><name>LpDec</name></member>
+    <member refid="varint_8h_1ac5268cd1ab382ef2574c21c40590d6bc" kind="define"><name>qLpAdd</name></member>
+    <member refid="varint_8h_1a6d3d574f28028e4705bcd10ecfdadeaa" kind="define"><name>qLpDec</name></member>
     <member refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kind="typedef"><name>u8</name></member>
     <member refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kind="typedef"><name>u16</name></member>
     <member refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kind="typedef"><name>u32</name></member>

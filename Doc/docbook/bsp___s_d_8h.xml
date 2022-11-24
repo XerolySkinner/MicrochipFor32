@@ -2,6 +2,11 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_bsp___s_d_8h" xml:lang="zh">
 <title>D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h 文件参考</title>
 <indexterm><primary>D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h</primary></indexterm>
+<para>
+
+<para>操作SD卡的库 </para>
+ 
+</para>
 <programlisting linenumbering="unnumbered">#include &quot;spi.h&quot;<?linebreak?>#include &quot;varint.h&quot;<?linebreak?></programlisting>bsp_SD.h 的引用(Include)关系图:<para>
     <informalfigure>
         <mediaobject>
@@ -135,6 +140,13 @@
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>详细描述</title>
+
+<para>操作SD卡的库 </para>
+<para>
+在文件 <link linkend="_bsp___s_d_8h_source">bsp_SD.h</link> 中定义.</para>
+</section>
 <section>
 <title>宏定义说明</title>
 <anchor xml:id="_bsp___s_d_8h_1a938c1466755f12fb04ac0d1b775584d1"/><section>

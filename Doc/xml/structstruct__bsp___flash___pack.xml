@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="structstruct__bsp___flash___pack" kind="struct" language="C++" prot="public">
+    <compoundname>struct_bsp_Flash_Pack</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structstruct__bsp___flash___pack_1aea6e531775263f158f23d2295f759dd7" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char struct_bsp_Flash_Pack::Var0</definition>
+        <argsstring></argsstring>
+        <name>Var0</name>
+        <qualifiedname>struct_bsp_Flash_Pack::Var0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_flash.c" line="44" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_flash.c" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstruct__bsp___flash___pack_1aff73ebf1f2eaf5930d7187aa5f502075" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short struct_bsp_Flash_Pack::Var1</definition>
+        <argsstring></argsstring>
+        <name>Var1</name>
+        <qualifiedname>struct_bsp_Flash_Pack::Var1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_flash.c" line="45" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_flash.c" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstruct__bsp___flash___pack_1adc2edcdadc2b2be3d18334cd196e049c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int struct_bsp_Flash_Pack::Var2</definition>
+        <argsstring></argsstring>
+        <name>Var2</name>
+        <qualifiedname>struct_bsp_Flash_Pack::Var2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_flash.c" line="46" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_flash.c" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>一包数据的内容 </para>
+    </briefdescription>
+    <detaileddescription>
+<para><xrefsect id="todo_1_todo000001"><xreftitle>待办事项</xreftitle><xrefdescription><para>随意更改内部内容方便读取 </para>
+</xrefdescription></xrefsect></para>
+    </detaileddescription>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_flash.c" line="43" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_flash.c" bodystart="43" bodyend="47"/>
+    <listofallmembers>
+      <member refid="structstruct__bsp___flash___pack_1aea6e531775263f158f23d2295f759dd7" prot="public" virt="non-virtual"><scope>struct_bsp_Flash_Pack</scope><name>Var0</name></member>
+      <member refid="structstruct__bsp___flash___pack_1aff73ebf1f2eaf5930d7187aa5f502075" prot="public" virt="non-virtual"><scope>struct_bsp_Flash_Pack</scope><name>Var1</name></member>
+      <member refid="structstruct__bsp___flash___pack_1adc2edcdadc2b2be3d18334cd196e049c" prot="public" virt="non-virtual"><scope>struct_bsp_Flash_Pack</scope><name>Var2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

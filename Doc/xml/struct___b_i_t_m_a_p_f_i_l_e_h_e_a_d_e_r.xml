@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r" kind="struct" language="C++" prot="public">
+    <compoundname>_BITMAPFILEHEADER</compoundname>
+    <includes refid="bsp___b_m_p_8h" local="no">bsp_BMP.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1a6810e258839bc4345e2036af20e607db" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+        <definition>u16 _BITMAPFILEHEADER::bfType</definition>
+        <argsstring></argsstring>
+        <name>bfType</name>
+        <qualifiedname>_BITMAPFILEHEADER::bfType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_BMP.h" line="46" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_BMP.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classbsp___b_m_p_1a27d05488822dc9548e0783d46808a1db" compoundref="bsp___b_m_p_8cpp" startline="97" endline="119">bsp_BMP::bsp_BMP</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1a1bd9726a58f87d278efa58d6d7c70a81" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref></type>
+        <definition>u32 _BITMAPFILEHEADER::bfSize</definition>
+        <argsstring></argsstring>
+        <name>bfSize</name>
+        <qualifiedname>_BITMAPFILEHEADER::bfSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_BMP.h" line="47" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_BMP.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classbsp___b_m_p_1a27d05488822dc9548e0783d46808a1db" compoundref="bsp___b_m_p_8cpp" startline="97" endline="119">bsp_BMP::bsp_BMP</referencedby>
+        <referencedby refid="classbsp___b_m_p_1a535cd9bfe5e49ba97ff9c4a1dd8ebb51" compoundref="bsp___b_m_p_8cpp" startline="78" endline="88">bsp_BMP::sizeSet</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1a71c78132cda5e8b032fb4f549ec9a14a" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+        <definition>u16 _BITMAPFILEHEADER::bfReserved1</definition>
+        <argsstring></argsstring>
+        <name>bfReserved1</name>
+        <qualifiedname>_BITMAPFILEHEADER::bfReserved1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_BMP.h" line="48" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_BMP.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classbsp___b_m_p_1a27d05488822dc9548e0783d46808a1db" compoundref="bsp___b_m_p_8cpp" startline="97" endline="119">bsp_BMP::bsp_BMP</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1a3f69e4551c8fee241e5a4cd224c64f50" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref></type>
+        <definition>u16 _BITMAPFILEHEADER::bfReserved2</definition>
+        <argsstring></argsstring>
+        <name>bfReserved2</name>
+        <qualifiedname>_BITMAPFILEHEADER::bfReserved2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_BMP.h" line="49" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_BMP.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classbsp___b_m_p_1a27d05488822dc9548e0783d46808a1db" compoundref="bsp___b_m_p_8cpp" startline="97" endline="119">bsp_BMP::bsp_BMP</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1af53728df68db96b9decc5100bc1bf7e0" prot="public" static="no" mutable="no">
+        <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref></type>
+        <definition>u32 _BITMAPFILEHEADER::bfOffBits</definition>
+        <argsstring></argsstring>
+        <name>bfOffBits</name>
+        <qualifiedname>_BITMAPFILEHEADER::bfOffBits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_BMP.h" line="50" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_BMP.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classbsp___b_m_p_1a27d05488822dc9548e0783d46808a1db" compoundref="bsp___b_m_p_8cpp" startline="97" endline="119">bsp_BMP::bsp_BMP</referencedby>
+        <referencedby refid="classbsp___b_m_p_1a535cd9bfe5e49ba97ff9c4a1dd8ebb51" compoundref="bsp___b_m_p_8cpp" startline="78" endline="88">bsp_BMP::sizeSet</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>位图文件头 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_BMP.h" line="44" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_BMP.h" bodystart="45" bodyend="51"/>
+    <listofallmembers>
+      <member refid="struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1af53728df68db96b9decc5100bc1bf7e0" prot="public" virt="non-virtual"><scope>_BITMAPFILEHEADER</scope><name>bfOffBits</name></member>
+      <member refid="struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1a71c78132cda5e8b032fb4f549ec9a14a" prot="public" virt="non-virtual"><scope>_BITMAPFILEHEADER</scope><name>bfReserved1</name></member>
+      <member refid="struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1a3f69e4551c8fee241e5a4cd224c64f50" prot="public" virt="non-virtual"><scope>_BITMAPFILEHEADER</scope><name>bfReserved2</name></member>
+      <member refid="struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1a1bd9726a58f87d278efa58d6d7c70a81" prot="public" virt="non-virtual"><scope>_BITMAPFILEHEADER</scope><name>bfSize</name></member>
+      <member refid="struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1a6810e258839bc4345e2036af20e607db" prot="public" virt="non-virtual"><scope>_BITMAPFILEHEADER</scope><name>bfType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

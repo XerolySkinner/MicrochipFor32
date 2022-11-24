@@ -22,7 +22,7 @@
  */
 
  /**
-  * @file		bsp_SD.cpp
+  * @file		bsp_SD.h
   * @brief		操作SD卡的库
   * @mainpage	主要信息
   * @author		Yuankang Liang(XerolySkinner)

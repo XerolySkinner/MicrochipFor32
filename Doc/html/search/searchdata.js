@@ -3,12 +3,12 @@ var indexSectionsWithContent =
   0: "_abcdefghiklmnopqrstuvw~主待",
   1: "_bms",
   2: "bcmsuv",
-  3: "abcdimnoprstw~",
-  4: "abcdefghiklmnoprstw",
+  3: "abcdgimnoprstw~",
+  4: "abcdefghiklmnoprstvw",
   5: "_ipuv",
   6: "_fqs",
   7: "acfhiqrs",
-  8: "_cdemv",
+  8: "_cdelmpqrstuv",
   9: "主待"
 };
 

@@ -4,10 +4,16 @@
     <compoundname>D:/gitt/MicrochipFor32/bsp_Device</compoundname>
     <innerfile refid="bsp___a_t24_c00_8cpp">bsp_AT24C00.cpp</innerfile>
     <innerfile refid="bsp___a_t24_c00_8h">bsp_AT24C00.h</innerfile>
+    <innerfile refid="bsp___b_m_p_8cpp">bsp_BMP.cpp</innerfile>
+    <innerfile refid="bsp___b_m_p_8h">bsp_BMP.h</innerfile>
+    <innerfile refid="bsp___calculus_8cpp">bsp_Calculus.cpp</innerfile>
+    <innerfile refid="bsp___calculus_8h">bsp_Calculus.h</innerfile>
     <innerfile refid="bsp___c_r_c_8cpp">bsp_CRC.cpp</innerfile>
     <innerfile refid="bsp___c_r_c_8h">bsp_CRC.h</innerfile>
     <innerfile refid="bsp___digit_8cpp">bsp_Digit.cpp</innerfile>
     <innerfile refid="bsp___digit_8h">bsp_Digit.h</innerfile>
+    <innerfile refid="bsp__flash_8c">bsp_flash.c</innerfile>
+    <innerfile refid="bsp__flash_8h">bsp_flash.h</innerfile>
     <innerfile refid="bsp___i_i_c_8cpp">bsp_IIC.cpp</innerfile>
     <innerfile refid="bsp___i_i_c_8h">bsp_IIC.h</innerfile>
     <innerfile refid="bsp___i_i_c___s_t_m32_8cpp">bsp_IIC_STM32.cpp</innerfile>

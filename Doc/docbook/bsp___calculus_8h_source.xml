@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_bsp___calculus_8h_source" xml:lang="zh">
+<title>bsp_Calculus.h</title>
+<indexterm><primary>D:/gitt/MicrochipFor32/bsp_Device/bsp_Calculus.h</primary></indexterm>
+浏览该文件的文档.<programlisting linenumbering="unnumbered"><anchor xml:id="_bsp___calculus_8h_source_1l00001"/>00001 <emphasis role="comment">/*----------------------------------------------------------------------------------------------------</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00002"/>00002 <emphasis role="comment">&#32;#</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00003"/>00003 <emphasis role="comment">&#32;#&#32;&#32;Copyright&#32;(c)&#32;2022&#32;Yuankang&#32;Liang(XerolySkinner)</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00004"/>00004 <emphasis role="comment">&#32;#</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00005"/>00005 <emphasis role="comment">&#32;#&#32;&#32;本软件按原样提供,无任何明示或暗示</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00006"/>00006 <emphasis role="comment">&#32;#&#32;&#32;在任何情况下,作者都不承担任何损害赔偿责任</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00007"/>00007 <emphasis role="comment">&#32;#</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00008"/>00008 <emphasis role="comment">&#32;#&#32;&#32;使用的许可声明:</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00009"/>00009 <emphasis role="comment">&#32;#&#32;&#32;1.&#32;&#32;不得歪曲本软件的来源,你不能声称你编写了原始软件.</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00010"/>00010 <emphasis role="comment">&#32;#&#32;&#32;2.&#32;&#32;免费授予以任何目的,前提是版权声明出现在所有副本中.</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00011"/>00011 <emphasis role="comment">&#32;#&#32;&#32;&#32;&#32;&#32;&#32;并且版权声明和许可声明同时出现.</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00012"/>00012 <emphasis role="comment">&#32;#&#32;&#32;3.&#32;&#32;你有使用,复制,修改,分发,和销售本软件的许可.</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00013"/>00013 <emphasis role="comment">&#32;#&#32;&#32;4.&#32;&#32;如果你在产品中使用,产品文档中的声明是赞赏的但不是必须的.</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00014"/>00014 <emphasis role="comment">&#32;#&#32;&#32;5.&#32;&#32;本通知不得从任何来源删除或更改.</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00015"/>00015 <emphasis role="comment">&#32;#</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00016"/>00016 <emphasis role="comment">&#32;#&#32;&#32;Yuankang&#32;Liang(XerolySkinner)</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00017"/>00017 <emphasis role="comment">&#32;#&#32;&#32;&#32;&#32;&#32;&#32;E-mail:zabbcccbbaz@163.com</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00018"/>00018 <emphasis role="comment">&#32;#&#32;&#32;&#32;&#32;&#32;&#32;QQ:2715099320</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00019"/>00019 <emphasis role="comment">&#32;#&#32;&#32;&#32;&#32;&#32;&#32;Mobile&#32;Phone:13005636215</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00020"/>00020 <emphasis role="comment">&#32;#</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00021"/>00021 <emphasis role="comment">&#32;#&#32;&#32;All&#32;rights&#32;reserved.</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00022"/>00022 <emphasis role="comment">&#32;*/</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00023"/>00023 
+<anchor xml:id="_bsp___calculus_8h_source_1l00033"/>00033 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00034"/>00034 <emphasis role="preprocessor">#ifdef&#32;__cplusplus</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00035"/>00035 <emphasis role="preprocessor">#include&#32;&lt;stdlib.h&gt;</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00036"/>00036 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_varint_8h">varint.h</link>&quot;</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00038"/>00038 <emphasis role="comment">//----------------------------------------------------------------------------------------------------</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00039"/>00039 <emphasis role="comment">//&#32;&#32;类目</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00043"/><link linkend="_classbsp___differential">00043</link> <emphasis role="comment"></emphasis><emphasis role="keyword">class&#32;</emphasis><link linkend="_classbsp___differential">bsp_Differential</link>{
+<anchor xml:id="_bsp___calculus_8h_source_1l00044"/>00044 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_bsp___calculus_8h_source_1l00045"/><link linkend="_classbsp___differential_1a16a19c803e2f1a3bbba98a2ef529206b">00045</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classbsp___differential_1a16a19c803e2f1a3bbba98a2ef529206b">bsp_Differential</link>(<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classbsp___differential_1ab25588868059974b8356e975c6e96992">dt</link>)&#32;{
+<anchor xml:id="_bsp___calculus_8h_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classbsp___differential_1ab25588868059974b8356e975c6e96992">bsp_Differential::dt</link>&#32;=&#32;<link linkend="_classbsp___differential_1ab25588868059974b8356e975c6e96992">dt</link>;}
+<anchor xml:id="_bsp___calculus_8h_source_1l00047"/>00047 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_bsp___calculus_8h_source_1l00048"/>00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classbsp___differential_1a46536b15be29d856b09dd7d261a12ab1">Differential</link>(<emphasis role="keywordtype">float</emphasis>&#32;var);
+<anchor xml:id="_bsp___calculus_8h_source_1l00049"/>00049 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_bsp___calculus_8h_source_1l00050"/><link linkend="_classbsp___differential_1ab25588868059974b8356e975c6e96992">00050</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classbsp___differential_1ab25588868059974b8356e975c6e96992">dt</link>;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="_bsp___calculus_8h_source_1l00051"/>00051 &#32;&#32;&#32;&#32;};
+<anchor xml:id="_bsp___calculus_8h_source_1l00052"/>00052 <emphasis role="comment">//----------------------------------------------------------------------------------------------------</emphasis>
+<anchor xml:id="_bsp___calculus_8h_source_1l00059"/><link linkend="_classbsp___integral">00059</link> <emphasis role="comment"></emphasis><emphasis role="keyword">class&#32;</emphasis><link linkend="_classbsp___integral">bsp_Integral</link>&#32;{
+<anchor xml:id="_bsp___calculus_8h_source_1l00060"/>00060 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_bsp___calculus_8h_source_1l00061"/><link linkend="_classbsp___integral_1af274273b399f4da855646921f3ae31ba">00061</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classbsp___integral_1af274273b399f4da855646921f3ae31ba">bsp_Integral</link>(<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classbsp___integral_1a4494cf9fc2873d457ed3bf8618b68045">dt</link>)&#32;{
+<anchor xml:id="_bsp___calculus_8h_source_1l00062"/>00062 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classbsp___integral_1a656d90c5a713abf0665f1dcbf1a5101a">bsp_Integral::result_list</link>&#32;=&#32;NULL;
+<anchor xml:id="_bsp___calculus_8h_source_1l00063"/>00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classbsp___integral_1a4494cf9fc2873d457ed3bf8618b68045">bsp_Integral::dt</link>&#32;=&#32;<link linkend="_classbsp___integral_1a4494cf9fc2873d457ed3bf8618b68045">dt</link>;
+<anchor xml:id="_bsp___calculus_8h_source_1l00064"/>00064 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classbsp___integral_1a910f1f3faa2b4963e00718472b8389bc">bsp_Integral::results</link>&#32;=&#32;0;}
+<anchor xml:id="_bsp___calculus_8h_source_1l00065"/><link linkend="_classbsp___integral_1a3f190eb273b4d6492fb39e2573ec37a1">00065</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classbsp___integral_1a3f190eb273b4d6492fb39e2573ec37a1">~bsp_Integral</link>(<emphasis role="keywordtype">void</emphasis>)&#32;{
+<anchor xml:id="_bsp___calculus_8h_source_1l00066"/>00066 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;free(<link linkend="_classbsp___integral_1a656d90c5a713abf0665f1dcbf1a5101a">result_list</link>);
+<anchor xml:id="_bsp___calculus_8h_source_1l00067"/>00067 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classbsp___integral_1a656d90c5a713abf0665f1dcbf1a5101a">result_list</link>&#32;=&#32;NULL;}
+<anchor xml:id="_bsp___calculus_8h_source_1l00068"/>00068 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_bsp___calculus_8h_source_1l00069"/>00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classbsp___integral_1ade46f89bfdc6dd778c045a51c76c1839">Integral</link>(<emphasis role="keywordtype">float</emphasis>&#32;var);
+<anchor xml:id="_bsp___calculus_8h_source_1l00070"/>00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classbsp___integral_1aaf7474301ed76ca9ce2b1884ae870019">Integral_set</link>(<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classbsp___integral_1a910f1f3faa2b4963e00718472b8389bc">results</link>);
+<anchor xml:id="_bsp___calculus_8h_source_1l00071"/>00071 
+<anchor xml:id="_bsp___calculus_8h_source_1l00072"/>00072 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classbsp___integral_1a80693e18b9b9509bdec0ebfd72f84072">Integral_list</link>(<emphasis role="keywordtype">float</emphasis>&#32;var);
+<anchor xml:id="_bsp___calculus_8h_source_1l00073"/>00073 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link>&#32;<link linkend="_classbsp___integral_1a86d9e02d1146744fe80ebab69070abb4">Integral_makelist</link>(<link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link>&#32;len);
+<anchor xml:id="_bsp___calculus_8h_source_1l00074"/>00074 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classbsp___integral_1a47307ddf418d2686245b118dcf61a199">Integral_dellist</link>(<emphasis role="keywordtype">void</emphasis>);
+<anchor xml:id="_bsp___calculus_8h_source_1l00075"/>00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classbsp___integral_1aae2b6143ca39861a83b77befc131bf5e">Integral_clslist</link>(<emphasis role="keywordtype">void</emphasis>);
+<anchor xml:id="_bsp___calculus_8h_source_1l00076"/>00076 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_bsp___calculus_8h_source_1l00077"/><link linkend="_classbsp___integral_1a656d90c5a713abf0665f1dcbf1a5101a">00077</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;&#32;&#32;*<link linkend="_classbsp___integral_1a656d90c5a713abf0665f1dcbf1a5101a">result_list</link>;&#32;&#32;&#32;
+<anchor xml:id="_bsp___calculus_8h_source_1l00078"/><link linkend="_classbsp___integral_1a662c735b9432a46e48a642ebb9c0e8fa">00078</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link>&#32;&#32;&#32;&#32;&#32;<link linkend="_classbsp___integral_1a662c735b9432a46e48a642ebb9c0e8fa">result_len</link>;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="_bsp___calculus_8h_source_1l00079"/><link linkend="_classbsp___integral_1a910f1f3faa2b4963e00718472b8389bc">00079</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;&#32;&#32;<link linkend="_classbsp___integral_1a910f1f3faa2b4963e00718472b8389bc">results</link>;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="_bsp___calculus_8h_source_1l00080"/><link linkend="_classbsp___integral_1a4494cf9fc2873d457ed3bf8618b68045">00080</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;&#32;&#32;<link linkend="_classbsp___integral_1a4494cf9fc2873d457ed3bf8618b68045">dt</link>;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="_bsp___calculus_8h_source_1l00081"/>00081 &#32;&#32;&#32;&#32;};
+<anchor xml:id="_bsp___calculus_8h_source_1l00083"/>00083 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

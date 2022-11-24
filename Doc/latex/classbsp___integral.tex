@@ -1,0 +1,275 @@
+\hypertarget{classbsp___integral}{}\doxysection{bsp\+\_\+\+Integral类 参考}
+\label{classbsp___integral}\index{bsp\_Integral@{bsp\_Integral}}
+
+
+一个积分对象  
+
+
+
+
+{\ttfamily \#include $<$bsp\+\_\+\+Calculus.\+h$>$}
+
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbsp___integral_af274273b399f4da855646921f3ae31ba}{bsp\+\_\+\+Integral}} (float \mbox{\hyperlink{classbsp___integral_a4494cf9fc2873d457ed3bf8618b68045}{dt}})
+\item 
+\mbox{\hyperlink{classbsp___integral_a3f190eb273b4d6492fb39e2573ec37a1}{$\sim$bsp\+\_\+\+Integral}} (void)
+\item 
+float \mbox{\hyperlink{classbsp___integral_ade46f89bfdc6dd778c045a51c76c1839}{Integral}} (float var)
+\begin{DoxyCompactList}\small\item\em 对数据积分 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___integral_aaf7474301ed76ca9ce2b1884ae870019}{Integral\+\_\+set}} (float \mbox{\hyperlink{classbsp___integral_a910f1f3faa2b4963e00718472b8389bc}{results}})
+\begin{DoxyCompactList}\small\item\em 重设当前积分值 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classbsp___integral_a80693e18b9b9509bdec0ebfd72f84072}{Integral\+\_\+list}} (float var)
+\begin{DoxyCompactList}\small\item\em 进行带有缓冲区的积分 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} \mbox{\hyperlink{classbsp___integral_a86d9e02d1146744fe80ebab69070abb4}{Integral\+\_\+makelist}} (\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} len)
+\begin{DoxyCompactList}\small\item\em 赋予历史缓存长度 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___integral_a47307ddf418d2686245b118dcf61a199}{Integral\+\_\+dellist}} (void)
+\begin{DoxyCompactList}\small\item\em 删除并释放历史缓冲区 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___integral_aae2b6143ca39861a83b77befc131bf5e}{Integral\+\_\+clslist}} (void)
+\begin{DoxyCompactList}\small\item\em 清空历史缓存区 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+float $\ast$ \mbox{\hyperlink{classbsp___integral_a656d90c5a713abf0665f1dcbf1a5101a}{result\+\_\+list}}
+\begin{DoxyCompactList}\small\item\em 数据历史 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} \mbox{\hyperlink{classbsp___integral_a662c735b9432a46e48a642ebb9c0e8fa}{result\+\_\+len}}
+\begin{DoxyCompactList}\small\item\em 历史缓冲区长度 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classbsp___integral_a910f1f3faa2b4963e00718472b8389bc}{results}}
+\begin{DoxyCompactList}\small\item\em 积分缓存 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classbsp___integral_a4494cf9fc2873d457ed3bf8618b68045}{dt}}
+\begin{DoxyCompactList}\small\item\em 时间参数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+一个积分对象 
+
+\begin{DoxyNote}{注解}
+不应当混用\+Integral和\+Integral\+\_\+list 
+
+选定一种方式(带缓冲区或者不带)后,就不应该更改使用方式 
+
+虽然带缓冲区方式对算法时间影响不大,但是为了避免浪费空间,不建议使用过大的缓冲区 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{bsp___calculus_8h_source}{bsp\+\_\+\+Calculus.\+h}} 第 \mbox{\hyperlink{bsp___calculus_8h_source_l00059}{59}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classbsp___integral_af274273b399f4da855646921f3ae31ba}\label{classbsp___integral_af274273b399f4da855646921f3ae31ba}} 
+\index{bsp\_Integral@{bsp\_Integral}!bsp\_Integral@{bsp\_Integral}}
+\index{bsp\_Integral@{bsp\_Integral}!bsp\_Integral@{bsp\_Integral}}
+\doxysubsubsection{\texorpdfstring{bsp\_Integral()}{bsp\_Integral()}}
+{\footnotesize\ttfamily bsp\+\_\+\+Integral\+::bsp\+\_\+\+Integral (\begin{DoxyParamCaption}\item[{float}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{bsp___calculus_8h_source}{bsp\+\_\+\+Calculus.\+h}} 第 \mbox{\hyperlink{bsp___calculus_8h_source_l00061}{61}} 行定义.
+
+\mbox{\Hypertarget{classbsp___integral_a3f190eb273b4d6492fb39e2573ec37a1}\label{classbsp___integral_a3f190eb273b4d6492fb39e2573ec37a1}} 
+\index{bsp\_Integral@{bsp\_Integral}!````~bsp\_Integral@{$\sim$bsp\_Integral}}
+\index{````~bsp\_Integral@{$\sim$bsp\_Integral}!bsp\_Integral@{bsp\_Integral}}
+\doxysubsubsection{\texorpdfstring{$\sim$bsp\_Integral()}{~bsp\_Integral()}}
+{\footnotesize\ttfamily bsp\+\_\+\+Integral\+::$\sim$bsp\+\_\+\+Integral (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{bsp___calculus_8h_source}{bsp\+\_\+\+Calculus.\+h}} 第 \mbox{\hyperlink{bsp___calculus_8h_source_l00065}{65}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classbsp___integral_ade46f89bfdc6dd778c045a51c76c1839}\label{classbsp___integral_ade46f89bfdc6dd778c045a51c76c1839}} 
+\index{bsp\_Integral@{bsp\_Integral}!Integral@{Integral}}
+\index{Integral@{Integral}!bsp\_Integral@{bsp\_Integral}}
+\doxysubsubsection{\texorpdfstring{Integral()}{Integral()}}
+{\footnotesize\ttfamily float bsp\+\_\+\+Integral\+::\+Integral (\begin{DoxyParamCaption}\item[{float}]{var }\end{DoxyParamCaption})}
+
+
+
+对数据积分 
+
+
+\begin{DoxyParams}{参数}
+{\em var} & 此处填入浮点数据 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+从开始到现在的总积分值 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___calculus_8cpp_source}{bsp\+\_\+\+Calculus.\+cpp}} 第 \mbox{\hyperlink{bsp___calculus_8cpp_source_l00059}{59}} 行定义.
+
+\mbox{\Hypertarget{classbsp___integral_aae2b6143ca39861a83b77befc131bf5e}\label{classbsp___integral_aae2b6143ca39861a83b77befc131bf5e}} 
+\index{bsp\_Integral@{bsp\_Integral}!Integral\_clslist@{Integral\_clslist}}
+\index{Integral\_clslist@{Integral\_clslist}!bsp\_Integral@{bsp\_Integral}}
+\doxysubsubsection{\texorpdfstring{Integral\_clslist()}{Integral\_clslist()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+Integral\+::\+Integral\+\_\+clslist (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+清空历史缓存区 
+
+
+
+在文件 \mbox{\hyperlink{bsp___calculus_8cpp_source}{bsp\+\_\+\+Calculus.\+cpp}} 第 \mbox{\hyperlink{bsp___calculus_8cpp_source_l00113}{113}} 行定义.
+
+这是这个函数的调用关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classbsp___integral_aae2b6143ca39861a83b77befc131bf5e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___integral_a47307ddf418d2686245b118dcf61a199}\label{classbsp___integral_a47307ddf418d2686245b118dcf61a199}} 
+\index{bsp\_Integral@{bsp\_Integral}!Integral\_dellist@{Integral\_dellist}}
+\index{Integral\_dellist@{Integral\_dellist}!bsp\_Integral@{bsp\_Integral}}
+\doxysubsubsection{\texorpdfstring{Integral\_dellist()}{Integral\_dellist()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+Integral\+::\+Integral\+\_\+dellist (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+删除并释放历史缓冲区 
+
+
+
+在文件 \mbox{\hyperlink{bsp___calculus_8cpp_source}{bsp\+\_\+\+Calculus.\+cpp}} 第 \mbox{\hyperlink{bsp___calculus_8cpp_source_l00105}{105}} 行定义.
+
+\mbox{\Hypertarget{classbsp___integral_a80693e18b9b9509bdec0ebfd72f84072}\label{classbsp___integral_a80693e18b9b9509bdec0ebfd72f84072}} 
+\index{bsp\_Integral@{bsp\_Integral}!Integral\_list@{Integral\_list}}
+\index{Integral\_list@{Integral\_list}!bsp\_Integral@{bsp\_Integral}}
+\doxysubsubsection{\texorpdfstring{Integral\_list()}{Integral\_list()}}
+{\footnotesize\ttfamily float bsp\+\_\+\+Integral\+::\+Integral\+\_\+list (\begin{DoxyParamCaption}\item[{float}]{var }\end{DoxyParamCaption})}
+
+
+
+进行带有缓冲区的积分 
+
+
+\begin{DoxyParams}{参数}
+{\em var} & 需要积分的数值 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+返回积分值 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___calculus_8cpp_source}{bsp\+\_\+\+Calculus.\+cpp}} 第 \mbox{\hyperlink{bsp___calculus_8cpp_source_l00086}{86}} 行定义.
+
+\mbox{\Hypertarget{classbsp___integral_a86d9e02d1146744fe80ebab69070abb4}\label{classbsp___integral_a86d9e02d1146744fe80ebab69070abb4}} 
+\index{bsp\_Integral@{bsp\_Integral}!Integral\_makelist@{Integral\_makelist}}
+\index{Integral\_makelist@{Integral\_makelist}!bsp\_Integral@{bsp\_Integral}}
+\doxysubsubsection{\texorpdfstring{Integral\_makelist()}{Integral\_makelist()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} bsp\+\_\+\+Integral\+::\+Integral\+\_\+makelist (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}}]{len }\end{DoxyParamCaption})}
+
+
+
+赋予历史缓存长度 
+
+
+\begin{DoxyParams}{参数}
+{\em var} & 分配的缓存长度 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+返回分配的内存位置,0为分配失败 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___calculus_8cpp_source}{bsp\+\_\+\+Calculus.\+cpp}} 第 \mbox{\hyperlink{bsp___calculus_8cpp_source_l00075}{75}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classbsp___integral_a86d9e02d1146744fe80ebab69070abb4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbsp___integral_aaf7474301ed76ca9ce2b1884ae870019}\label{classbsp___integral_aaf7474301ed76ca9ce2b1884ae870019}} 
+\index{bsp\_Integral@{bsp\_Integral}!Integral\_set@{Integral\_set}}
+\index{Integral\_set@{Integral\_set}!bsp\_Integral@{bsp\_Integral}}
+\doxysubsubsection{\texorpdfstring{Integral\_set()}{Integral\_set()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+Integral\+::\+Integral\+\_\+set (\begin{DoxyParamCaption}\item[{float}]{results }\end{DoxyParamCaption})}
+
+
+
+重设当前积分值 
+
+
+\begin{DoxyParams}{参数}
+{\em var} & 要设置的积分值 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___calculus_8cpp_source}{bsp\+\_\+\+Calculus.\+cpp}} 第 \mbox{\hyperlink{bsp___calculus_8cpp_source_l00067}{67}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{classbsp___integral_a4494cf9fc2873d457ed3bf8618b68045}\label{classbsp___integral_a4494cf9fc2873d457ed3bf8618b68045}} 
+\index{bsp\_Integral@{bsp\_Integral}!dt@{dt}}
+\index{dt@{dt}!bsp\_Integral@{bsp\_Integral}}
+\doxysubsubsection{\texorpdfstring{dt}{dt}}
+{\footnotesize\ttfamily float bsp\+\_\+\+Integral\+::dt}
+
+
+
+时间参数 
+
+
+
+在文件 \mbox{\hyperlink{bsp___calculus_8h_source}{bsp\+\_\+\+Calculus.\+h}} 第 \mbox{\hyperlink{bsp___calculus_8h_source_l00080}{80}} 行定义.
+
+\mbox{\Hypertarget{classbsp___integral_a662c735b9432a46e48a642ebb9c0e8fa}\label{classbsp___integral_a662c735b9432a46e48a642ebb9c0e8fa}} 
+\index{bsp\_Integral@{bsp\_Integral}!result\_len@{result\_len}}
+\index{result\_len@{result\_len}!bsp\_Integral@{bsp\_Integral}}
+\doxysubsubsection{\texorpdfstring{result\_len}{result\_len}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} bsp\+\_\+\+Integral\+::result\+\_\+len}
+
+
+
+历史缓冲区长度 
+
+
+
+在文件 \mbox{\hyperlink{bsp___calculus_8h_source}{bsp\+\_\+\+Calculus.\+h}} 第 \mbox{\hyperlink{bsp___calculus_8h_source_l00078}{78}} 行定义.
+
+\mbox{\Hypertarget{classbsp___integral_a656d90c5a713abf0665f1dcbf1a5101a}\label{classbsp___integral_a656d90c5a713abf0665f1dcbf1a5101a}} 
+\index{bsp\_Integral@{bsp\_Integral}!result\_list@{result\_list}}
+\index{result\_list@{result\_list}!bsp\_Integral@{bsp\_Integral}}
+\doxysubsubsection{\texorpdfstring{result\_list}{result\_list}}
+{\footnotesize\ttfamily float$\ast$ bsp\+\_\+\+Integral\+::result\+\_\+list}
+
+
+
+数据历史 
+
+
+
+在文件 \mbox{\hyperlink{bsp___calculus_8h_source}{bsp\+\_\+\+Calculus.\+h}} 第 \mbox{\hyperlink{bsp___calculus_8h_source_l00077}{77}} 行定义.
+
+\mbox{\Hypertarget{classbsp___integral_a910f1f3faa2b4963e00718472b8389bc}\label{classbsp___integral_a910f1f3faa2b4963e00718472b8389bc}} 
+\index{bsp\_Integral@{bsp\_Integral}!results@{results}}
+\index{results@{results}!bsp\_Integral@{bsp\_Integral}}
+\doxysubsubsection{\texorpdfstring{results}{results}}
+{\footnotesize\ttfamily float bsp\+\_\+\+Integral\+::results}
+
+
+
+积分缓存 
+
+
+
+在文件 \mbox{\hyperlink{bsp___calculus_8h_source}{bsp\+\_\+\+Calculus.\+h}} 第 \mbox{\hyperlink{bsp___calculus_8h_source_l00079}{79}} 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/gitt/\+Microchip\+For32/bsp\+\_\+\+Device/\mbox{\hyperlink{bsp___calculus_8h}{bsp\+\_\+\+Calculus.\+h}}\item 
+D\+:/gitt/\+Microchip\+For32/bsp\+\_\+\+Device/\mbox{\hyperlink{bsp___calculus_8cpp}{bsp\+\_\+\+Calculus.\+cpp}}\end{DoxyCompactItemize}

@@ -218,7 +218,7 @@ bsp_IIC_STM32 的协作图:<para>
 <para>
 实现了 <link linkend="_classbsp___i_i_c_1adf1ba1196ef163ab1958747744dd8a14">bsp_IIC</link>.</para>
 <para>
-在文件 <link linkend="_bsp___i_i_c___s_t_m32_8cpp_source">bsp_IIC_STM32.cpp</link> 第 <link linkend="_bsp___i_i_c___s_t_m32_8cpp_source_1l00089">89</link> 行定义.</para>
+在文件 <link linkend="_bsp___i_i_c___s_t_m32_8cpp_source">bsp_IIC_STM32.cpp</link> 第 <link linkend="_bsp___i_i_c___s_t_m32_8cpp_source_1l00088">88</link> 行定义.</para>
 </section>
 </section>
 <section>

@@ -1,0 +1,239 @@
+\hypertarget{classbsp___b_m_p}{}\doxysection{bsp\+\_\+\+BMP类 参考}
+\label{classbsp___b_m_p}\index{bsp\_BMP@{bsp\_BMP}}
+
+
+构建一个\+BMP类  
+
+
+
+
+{\ttfamily \#include $<$bsp\+\_\+\+BMP.\+h$>$}
+
+
+
+bsp\+\_\+\+BMP 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbsp___b_m_p__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbsp___b_m_p_a27d05488822dc9548e0783d46808a1db}{bsp\+\_\+\+BMP}} (\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} Width, \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} Height)
+\begin{DoxyCompactList}\small\item\em 构造\+BMP数据头 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbsp___b_m_p_a604d7e5683da37be890672aa690c2ff2}{$\sim$bsp\+\_\+\+BMP}} (void)
+\item 
+void \mbox{\hyperlink{classbsp___b_m_p_a4aaa5a2ea2f5b3c07c8e16009984766e}{pels}} (\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} x, \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} y)
+\begin{DoxyCompactList}\small\item\em 设置像素 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} \mbox{\hyperlink{classbsp___b_m_p_ae0e2551a06b8ad966a86b2c8324da25c}{give\+Data}} (void)
+\begin{DoxyCompactList}\small\item\em 给予数据空间 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___b_m_p_abe5d545dea1090a228843f140650f573}{del\+Data}} (void)
+\begin{DoxyCompactList}\small\item\em 释放数据空间 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___b_m_p_a17c0c014ef6ce7d09a5dd81c5d2c5d57}{Colors\+Set}} (\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} R, \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} G, \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} B, \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} i)
+\begin{DoxyCompactList}\small\item\em 设置调色板 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbsp___b_m_p_a535cd9bfe5e49ba97ff9c4a1dd8ebb51}{size\+Set}} (\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} x, \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} y)
+\begin{DoxyCompactList}\small\item\em 设置图片大小 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct___b_i_t_m_a_p_i_n_f_o}{\+\_\+\+BITMAPINFO}} \mbox{\hyperlink{classbsp___b_m_p_a64dcf31f5722327336d87794b873a335}{BITMAPINFO}}
+\begin{DoxyCompactList}\small\item\em 文件头 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} \mbox{\hyperlink{classbsp___b_m_p_a8a1c31ee70ed4061ad8bea4254959b83}{Size}}
+\begin{DoxyCompactList}\small\item\em 文件大小 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}} $\ast$ \mbox{\hyperlink{classbsp___b_m_p_a2023aceaef140268a12bc61b81d410ca}{dat}}
+\begin{DoxyCompactList}\small\item\em 数据区 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+构建一个\+BMP类 
+
+在文件 \mbox{\hyperlink{bsp___b_m_p_8h_source}{bsp\+\_\+\+BMP.\+h}} 第 \mbox{\hyperlink{bsp___b_m_p_8h_source_l00097}{97}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classbsp___b_m_p_a27d05488822dc9548e0783d46808a1db}\label{classbsp___b_m_p_a27d05488822dc9548e0783d46808a1db}} 
+\index{bsp\_BMP@{bsp\_BMP}!bsp\_BMP@{bsp\_BMP}}
+\index{bsp\_BMP@{bsp\_BMP}!bsp\_BMP@{bsp\_BMP}}
+\doxysubsubsection{\texorpdfstring{bsp\_BMP()}{bsp\_BMP()}}
+{\footnotesize\ttfamily bsp\+\_\+\+BMP\+::bsp\+\_\+\+BMP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}}]{Width,  }\item[{\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}}]{Height }\end{DoxyParamCaption})}
+
+
+
+构造\+BMP数据头 
+
+
+\begin{DoxyParams}{参数}
+{\em Width} & 图片宽度 \\
+\hline
+{\em Height} & 图片高度 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___b_m_p_8cpp_source}{bsp\+\_\+\+BMP.\+cpp}} 第 \mbox{\hyperlink{bsp___b_m_p_8cpp_source_l00097}{97}} 行定义.
+
+\mbox{\Hypertarget{classbsp___b_m_p_a604d7e5683da37be890672aa690c2ff2}\label{classbsp___b_m_p_a604d7e5683da37be890672aa690c2ff2}} 
+\index{bsp\_BMP@{bsp\_BMP}!````~bsp\_BMP@{$\sim$bsp\_BMP}}
+\index{````~bsp\_BMP@{$\sim$bsp\_BMP}!bsp\_BMP@{bsp\_BMP}}
+\doxysubsubsection{\texorpdfstring{$\sim$bsp\_BMP()}{~bsp\_BMP()}}
+{\footnotesize\ttfamily bsp\+\_\+\+BMP\+::$\sim$bsp\+\_\+\+BMP (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{bsp___b_m_p_8cpp_source}{bsp\+\_\+\+BMP.\+cpp}} 第 \mbox{\hyperlink{bsp___b_m_p_8cpp_source_l00121}{121}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classbsp___b_m_p_a17c0c014ef6ce7d09a5dd81c5d2c5d57}\label{classbsp___b_m_p_a17c0c014ef6ce7d09a5dd81c5d2c5d57}} 
+\index{bsp\_BMP@{bsp\_BMP}!ColorsSet@{ColorsSet}}
+\index{ColorsSet@{ColorsSet}!bsp\_BMP@{bsp\_BMP}}
+\doxysubsubsection{\texorpdfstring{ColorsSet()}{ColorsSet()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+BMP\+::\+Colors\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{R,  }\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{G,  }\item[{\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}}]{B,  }\item[{\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}}]{i }\end{DoxyParamCaption})}
+
+
+
+设置调色板 
+
+
+\begin{DoxyParams}{参数}
+{\em R} & 红色 \\
+\hline
+{\em G} & 绿色 \\
+\hline
+{\em B} & 蓝色 \\
+\hline
+{\em i} & 索引号 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___b_m_p_8cpp_source}{bsp\+\_\+\+BMP.\+cpp}} 第 \mbox{\hyperlink{bsp___b_m_p_8cpp_source_l00068}{68}} 行定义.
+
+\mbox{\Hypertarget{classbsp___b_m_p_abe5d545dea1090a228843f140650f573}\label{classbsp___b_m_p_abe5d545dea1090a228843f140650f573}} 
+\index{bsp\_BMP@{bsp\_BMP}!delData@{delData}}
+\index{delData@{delData}!bsp\_BMP@{bsp\_BMP}}
+\doxysubsubsection{\texorpdfstring{delData()}{delData()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+BMP\+::del\+Data (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+释放数据空间 
+
+
+
+在文件 \mbox{\hyperlink{bsp___b_m_p_8cpp_source}{bsp\+\_\+\+BMP.\+cpp}} 第 \mbox{\hyperlink{bsp___b_m_p_8cpp_source_l00059}{59}} 行定义.
+
+\mbox{\Hypertarget{classbsp___b_m_p_ae0e2551a06b8ad966a86b2c8324da25c}\label{classbsp___b_m_p_ae0e2551a06b8ad966a86b2c8324da25c}} 
+\index{bsp\_BMP@{bsp\_BMP}!giveData@{giveData}}
+\index{giveData@{giveData}!bsp\_BMP@{bsp\_BMP}}
+\doxysubsubsection{\texorpdfstring{giveData()}{giveData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} bsp\+\_\+\+BMP\+::give\+Data (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+给予数据空间 
+
+\begin{DoxyReturn}{返回}
+返回给与的数据头 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{bsp___b_m_p_8cpp_source}{bsp\+\_\+\+BMP.\+cpp}} 第 \mbox{\hyperlink{bsp___b_m_p_8cpp_source_l00052}{52}} 行定义.
+
+\mbox{\Hypertarget{classbsp___b_m_p_a4aaa5a2ea2f5b3c07c8e16009984766e}\label{classbsp___b_m_p_a4aaa5a2ea2f5b3c07c8e16009984766e}} 
+\index{bsp\_BMP@{bsp\_BMP}!pels@{pels}}
+\index{pels@{pels}!bsp\_BMP@{bsp\_BMP}}
+\doxysubsubsection{\texorpdfstring{pels()}{pels()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+BMP\+::pels (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}}]{x,  }\item[{\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}}]{y }\end{DoxyParamCaption})}
+
+
+
+设置像素 
+
+
+\begin{DoxyParams}{参数}
+{\em x} & x像素 \\
+\hline
+{\em y} & y像素 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___b_m_p_8cpp_source}{bsp\+\_\+\+BMP.\+cpp}} 第 \mbox{\hyperlink{bsp___b_m_p_8cpp_source_l00045}{45}} 行定义.
+
+\mbox{\Hypertarget{classbsp___b_m_p_a535cd9bfe5e49ba97ff9c4a1dd8ebb51}\label{classbsp___b_m_p_a535cd9bfe5e49ba97ff9c4a1dd8ebb51}} 
+\index{bsp\_BMP@{bsp\_BMP}!sizeSet@{sizeSet}}
+\index{sizeSet@{sizeSet}!bsp\_BMP@{bsp\_BMP}}
+\doxysubsubsection{\texorpdfstring{sizeSet()}{sizeSet()}}
+{\footnotesize\ttfamily void bsp\+\_\+\+BMP\+::size\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}}]{x,  }\item[{\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}}]{y }\end{DoxyParamCaption})}
+
+
+
+设置图片大小 
+
+
+\begin{DoxyParams}{参数}
+{\em Width} & 图片宽度 \\
+\hline
+{\em Height} & 图片高度 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{bsp___b_m_p_8cpp_source}{bsp\+\_\+\+BMP.\+cpp}} 第 \mbox{\hyperlink{bsp___b_m_p_8cpp_source_l00078}{78}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{classbsp___b_m_p_a64dcf31f5722327336d87794b873a335}\label{classbsp___b_m_p_a64dcf31f5722327336d87794b873a335}} 
+\index{bsp\_BMP@{bsp\_BMP}!BITMAPINFO@{BITMAPINFO}}
+\index{BITMAPINFO@{BITMAPINFO}!bsp\_BMP@{bsp\_BMP}}
+\doxysubsubsection{\texorpdfstring{BITMAPINFO}{BITMAPINFO}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct___b_i_t_m_a_p_i_n_f_o}{\+\_\+\+BITMAPINFO}} bsp\+\_\+\+BMP\+::\+BITMAPINFO}
+
+
+
+文件头 
+
+
+
+在文件 \mbox{\hyperlink{bsp___b_m_p_8h_source}{bsp\+\_\+\+BMP.\+h}} 第 \mbox{\hyperlink{bsp___b_m_p_8h_source_l00108}{108}} 行定义.
+
+\mbox{\Hypertarget{classbsp___b_m_p_a2023aceaef140268a12bc61b81d410ca}\label{classbsp___b_m_p_a2023aceaef140268a12bc61b81d410ca}} 
+\index{bsp\_BMP@{bsp\_BMP}!dat@{dat}}
+\index{dat@{dat}!bsp\_BMP@{bsp\_BMP}}
+\doxysubsubsection{\texorpdfstring{dat}{dat}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}$\ast$ bsp\+\_\+\+BMP\+::dat}
+
+
+
+数据区 
+
+
+
+在文件 \mbox{\hyperlink{bsp___b_m_p_8h_source}{bsp\+\_\+\+BMP.\+h}} 第 \mbox{\hyperlink{bsp___b_m_p_8h_source_l00110}{110}} 行定义.
+
+\mbox{\Hypertarget{classbsp___b_m_p_a8a1c31ee70ed4061ad8bea4254959b83}\label{classbsp___b_m_p_a8a1c31ee70ed4061ad8bea4254959b83}} 
+\index{bsp\_BMP@{bsp\_BMP}!Size@{Size}}
+\index{Size@{Size}!bsp\_BMP@{bsp\_BMP}}
+\doxysubsubsection{\texorpdfstring{Size}{Size}}
+{\footnotesize\ttfamily \mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}} bsp\+\_\+\+BMP\+::\+Size}
+
+
+
+文件大小 
+
+
+
+在文件 \mbox{\hyperlink{bsp___b_m_p_8h_source}{bsp\+\_\+\+BMP.\+h}} 第 \mbox{\hyperlink{bsp___b_m_p_8h_source_l00109}{109}} 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/gitt/\+Microchip\+For32/bsp\+\_\+\+Device/\mbox{\hyperlink{bsp___b_m_p_8h}{bsp\+\_\+\+BMP.\+h}}\item 
+D\+:/gitt/\+Microchip\+For32/bsp\+\_\+\+Device/\mbox{\hyperlink{bsp___b_m_p_8cpp}{bsp\+\_\+\+BMP.\+cpp}}\end{DoxyCompactItemize}

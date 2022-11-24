@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r" xml:lang="zh">
+<title>_BITMAPFILEHEADER结构体 参考</title>
+<indexterm><primary>_BITMAPFILEHEADER</primary></indexterm>
+<para>
+
+<para>位图文件头 </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;bsp_BMP.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public 属性    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> <link linkend="_struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1a6810e258839bc4345e2036af20e607db">bfType</link></para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> <link linkend="_struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1a1bd9726a58f87d278efa58d6d7c70a81">bfSize</link></para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> <link linkend="_struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1a71c78132cda5e8b032fb4f549ec9a14a">bfReserved1</link></para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> <link linkend="_struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1a3f69e4551c8fee241e5a4cd224c64f50">bfReserved2</link></para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> <link linkend="_struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1af53728df68db96b9decc5100bc1bf7e0">bfOffBits</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>位图文件头 </para>
+<para>
+在文件 <link linkend="_bsp___b_m_p_8h_source">bsp_BMP.h</link> 第 <link linkend="_bsp___b_m_p_8h_source_1l00044">44</link> 行定义.</para>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1af53728df68db96b9decc5100bc1bf7e0"/><section>
+    <title>bfOffBits</title>
+<indexterm><primary>bfOffBits</primary><secondary>_BITMAPFILEHEADER</secondary></indexterm>
+<indexterm><primary>_BITMAPFILEHEADER</primary><secondary>bfOffBits</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> _BITMAPFILEHEADER::bfOffBits</computeroutput></para><para>
+在文件 <link linkend="_bsp___b_m_p_8h_source">bsp_BMP.h</link> 第 <link linkend="_bsp___b_m_p_8h_source_1l00050">50</link> 行定义.</para>
+</section>
+<anchor xml:id="_struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1a71c78132cda5e8b032fb4f549ec9a14a"/><section>
+    <title>bfReserved1</title>
+<indexterm><primary>bfReserved1</primary><secondary>_BITMAPFILEHEADER</secondary></indexterm>
+<indexterm><primary>_BITMAPFILEHEADER</primary><secondary>bfReserved1</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> _BITMAPFILEHEADER::bfReserved1</computeroutput></para><para>
+在文件 <link linkend="_bsp___b_m_p_8h_source">bsp_BMP.h</link> 第 <link linkend="_bsp___b_m_p_8h_source_1l00048">48</link> 行定义.</para>
+</section>
+<anchor xml:id="_struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1a3f69e4551c8fee241e5a4cd224c64f50"/><section>
+    <title>bfReserved2</title>
+<indexterm><primary>bfReserved2</primary><secondary>_BITMAPFILEHEADER</secondary></indexterm>
+<indexterm><primary>_BITMAPFILEHEADER</primary><secondary>bfReserved2</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> _BITMAPFILEHEADER::bfReserved2</computeroutput></para><para>
+在文件 <link linkend="_bsp___b_m_p_8h_source">bsp_BMP.h</link> 第 <link linkend="_bsp___b_m_p_8h_source_1l00049">49</link> 行定义.</para>
+</section>
+<anchor xml:id="_struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1a1bd9726a58f87d278efa58d6d7c70a81"/><section>
+    <title>bfSize</title>
+<indexterm><primary>bfSize</primary><secondary>_BITMAPFILEHEADER</secondary></indexterm>
+<indexterm><primary>_BITMAPFILEHEADER</primary><secondary>bfSize</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> _BITMAPFILEHEADER::bfSize</computeroutput></para><para>
+在文件 <link linkend="_bsp___b_m_p_8h_source">bsp_BMP.h</link> 第 <link linkend="_bsp___b_m_p_8h_source_1l00047">47</link> 行定义.</para>
+</section>
+<anchor xml:id="_struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r_1a6810e258839bc4345e2036af20e607db"/><section>
+    <title>bfType</title>
+<indexterm><primary>bfType</primary><secondary>_BITMAPFILEHEADER</secondary></indexterm>
+<indexterm><primary>_BITMAPFILEHEADER</primary><secondary>bfType</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa">u16</link> _BITMAPFILEHEADER::bfType</computeroutput></para><para>
+在文件 <link linkend="_bsp___b_m_p_8h_source">bsp_BMP.h</link> 第 <link linkend="_bsp___b_m_p_8h_source_1l00046">46</link> 行定义.</para>
+</section>
+<para>
+该结构体的文档由以下文件生成:</para>
+D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp___b_m_p_8h">bsp_BMP.h</link></section>
+</section>

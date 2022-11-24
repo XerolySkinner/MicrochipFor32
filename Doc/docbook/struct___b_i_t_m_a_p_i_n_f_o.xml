@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct___b_i_t_m_a_p_i_n_f_o" xml:lang="zh">
+<title>_BITMAPINFO结构体 参考</title>
+<indexterm><primary>_BITMAPINFO</primary></indexterm>
+<para>
+
+<para>BMP文件头 </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;bsp_BMP.h&gt;</computeroutput>
+</para>
+_BITMAPINFO 的协作图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="struct___b_i_t_m_a_p_i_n_f_o__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public 属性    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r">_BITMAPFILEHEADER</link> <link linkend="_struct___b_i_t_m_a_p_i_n_f_o_1a3356c2aeed730cf31d05fd09244ecbce">bmfHeader</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct___b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r">_BITMAPINFOHEADER</link> <link linkend="_struct___b_i_t_m_a_p_i_n_f_o_1a7d9eafe9a3374cd06dc22fda1af98b6d">bmiHeader</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct___r_g_b_q_u_a_d">_RGBQUAD</link> <link linkend="_struct___b_i_t_m_a_p_i_n_f_o_1ab5fe5744a8fe46833743bc6b5cf72a49">bmiColors</link> [256]</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>BMP文件头 </para>
+<para>
+在文件 <link linkend="_bsp___b_m_p_8h_source">bsp_BMP.h</link> 第 <link linkend="_bsp___b_m_p_8h_source_1l00084">84</link> 行定义.</para>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_struct___b_i_t_m_a_p_i_n_f_o_1a3356c2aeed730cf31d05fd09244ecbce"/><section>
+    <title>bmfHeader</title>
+<indexterm><primary>bmfHeader</primary><secondary>_BITMAPINFO</secondary></indexterm>
+<indexterm><primary>_BITMAPINFO</primary><secondary>bmfHeader</secondary></indexterm>
+<para><computeroutput><link linkend="_struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r">_BITMAPFILEHEADER</link> _BITMAPINFO::bmfHeader</computeroutput></para><para>
+在文件 <link linkend="_bsp___b_m_p_8h_source">bsp_BMP.h</link> 第 <link linkend="_bsp___b_m_p_8h_source_1l00085">85</link> 行定义.</para>
+</section>
+<anchor xml:id="_struct___b_i_t_m_a_p_i_n_f_o_1ab5fe5744a8fe46833743bc6b5cf72a49"/><section>
+    <title>bmiColors</title>
+<indexterm><primary>bmiColors</primary><secondary>_BITMAPINFO</secondary></indexterm>
+<indexterm><primary>_BITMAPINFO</primary><secondary>bmiColors</secondary></indexterm>
+<para><computeroutput><link linkend="_struct___r_g_b_q_u_a_d">_RGBQUAD</link> _BITMAPINFO::bmiColors[256]</computeroutput></para><para>
+在文件 <link linkend="_bsp___b_m_p_8h_source">bsp_BMP.h</link> 第 <link linkend="_bsp___b_m_p_8h_source_1l00087">87</link> 行定义.</para>
+</section>
+<anchor xml:id="_struct___b_i_t_m_a_p_i_n_f_o_1a7d9eafe9a3374cd06dc22fda1af98b6d"/><section>
+    <title>bmiHeader</title>
+<indexterm><primary>bmiHeader</primary><secondary>_BITMAPINFO</secondary></indexterm>
+<indexterm><primary>_BITMAPINFO</primary><secondary>bmiHeader</secondary></indexterm>
+<para><computeroutput><link linkend="_struct___b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r">_BITMAPINFOHEADER</link> _BITMAPINFO::bmiHeader</computeroutput></para><para>
+在文件 <link linkend="_bsp___b_m_p_8h_source">bsp_BMP.h</link> 第 <link linkend="_bsp___b_m_p_8h_source_1l00086">86</link> 行定义.</para>
+</section>
+<para>
+该结构体的文档由以下文件生成:</para>
+D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp___b_m_p_8h">bsp_BMP.h</link></section>
+</section>

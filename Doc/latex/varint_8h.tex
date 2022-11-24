@@ -1,5 +1,10 @@
 \hypertarget{varint_8h}{}\doxysection{D\+:/gitt/\+Microchip\+For32/bsp\+\_\+\+Device/varint.h 文件参考}
 \label{varint_8h}\index{D:/gitt/MicrochipFor32/bsp\_Device/varint.h@{D:/gitt/MicrochipFor32/bsp\_Device/varint.h}}
+
+
+全局共用的标准类型表  
+
+
 {\ttfamily \#include \char`\"{}stdint.\+h\char`\"{}}\newline
 varint.\+h 的引用(Include)关系图\+:\nopagebreak
 \begin{figure}[H]
@@ -16,6 +21,45 @@ varint.\+h 的引用(Include)关系图\+:\nopagebreak
 \includegraphics[width=350pt]{varint_8h__dep__incl}
 \end{center}
 \end{figure}
+\doxysubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{varint_8h_ad35af1fbc60fcc217f7e3c6bae2ba656}{P8}}(x)~((\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}$\ast$)(\&(x)))
+\begin{DoxyCompactList}\small\item\em 强制转换变成u8的指针 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{varint_8h_a71e9586b24447c7ca7bc353aa86da852}{Pn8}}(x,  y)~(((\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}$\ast$)(\&(x)))\mbox{[}y\mbox{]})
+\begin{DoxyCompactList}\small\item\em 强制转换变成u8的数组 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{varint_8h_a90e13f6172ebc6d6b8df6ed9a443491f}{P16}}(x)~((\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}$\ast$)(\&(x)))
+\begin{DoxyCompactList}\small\item\em 强制转换变成u16的指针 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{varint_8h_aff980abb3664242448c35e7c94df9457}{Pn16}}(x,  y)~(((\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}$\ast$)(\&(x)))\mbox{[}y\mbox{]})
+\begin{DoxyCompactList}\small\item\em 强制转换变成u16的数组 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{varint_8h_a495d48b6b1b59a2ad797b10d9da431ff}{P32}}(x)~((\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}$\ast$)(\&(x)))
+\begin{DoxyCompactList}\small\item\em 强制转换变成u32的指针 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{varint_8h_adc92d7430c7b945896332c2e2540a52a}{Pn32}}(x,  y)~(((\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}$\ast$)(\&(x)))\mbox{[}y\mbox{]})
+\begin{DoxyCompactList}\small\item\em 强制转换变成u32的数组 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{varint_8h_ada574ddd6b3c52cf691b29e6efc7a817}{Del\+Lb}}(x)~(x \& (x -\/ 1))
+\begin{DoxyCompactList}\small\item\em 移除最低位的1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{varint_8h_a4130fb740c8bd3c4986b2fe496c74d78}{q\+Del\+Lb}}(x)~(x=(x \& (x -\/ 1)))
+\begin{DoxyCompactList}\small\item\em 移除并保存最低位的1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{varint_8h_a338f1c6d28b8ee314ea8b33df5c6052e}{to\+Bool}}(x)~(x!=0)
+\begin{DoxyCompactList}\small\item\em 数布尔化 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{varint_8h_af88c9f4171df59e6e0aa2db71bf9f250}{u\+Bit}}(x,  y)~(x\&(1$<$$<$y))
+\begin{DoxyCompactList}\small\item\em 挑选某一位 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{varint_8h_ac123183daf1150b8b675c96cfeae4314}{t\+Bit}}(x,  y)~(\mbox{\hyperlink{varint_8h_a338f1c6d28b8ee314ea8b33df5c6052e}{to\+Bool}}(\mbox{\hyperlink{varint_8h_af88c9f4171df59e6e0aa2db71bf9f250}{u\+Bit}}(x,y)))
+\begin{DoxyCompactList}\small\item\em 挑选某一位并且布尔化 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{varint_8h_aa1b4c6a5140aae5adbc14792ed9cbaf5}{s\+Bit}}(x,  y)~(x$\vert$(1$<$$<$y))
+\begin{DoxyCompactList}\small\item\em 置高某一位 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{varint_8h_a6c0c97a8768383af5f921a0496bb7e6c}{r\+Bit}}(x,  y)~(x\&($\sim$(1$<$$<$y)))
+\begin{DoxyCompactList}\small\item\em 拉低某一位 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{varint_8h_a5cce0b9aa61d54efc42512f4c7796455}{m\+Bit}}(x,  y,  z)~((z)?\mbox{\hyperlink{varint_8h_aa1b4c6a5140aae5adbc14792ed9cbaf5}{s\+Bit}}(x,y)\+:\mbox{\hyperlink{varint_8h_a6c0c97a8768383af5f921a0496bb7e6c}{r\+Bit}}(x,y))
+\begin{DoxyCompactList}\small\item\em 选择性拉高拉低某一位 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{varint_8h_a7ae6889c9eb9c27afb4395ef1d06eec7}{Lp\+Add}}(x,  y)~((x+1)$<$y?x+1\+:0)
+\begin{DoxyCompactList}\small\item\em 带最高限制的加法 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{varint_8h_af8c84f28a4c47bc30bbecb56d1469fd2}{Lp\+Dec}}(x,  y)~(x$>$0?x-\/1\+:y-\/1)
+\begin{DoxyCompactList}\small\item\em 带最低限制的减法 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{varint_8h_ac5268cd1ab382ef2574c21c40590d6bc}{q\+Lp\+Add}}(x,  y)~(x=(x+1)$<$y?x+1\+:0)
+\begin{DoxyCompactList}\small\item\em 带最高限制的自增 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{varint_8h_a6d3d574f28028e4705bcd10ecfdadeaa}{q\+Lp\+Dec}}(x,  y)~(x=x$>$0?x-\/1\+:y-\/1)
+\begin{DoxyCompactList}\small\item\em 带最低限制的自减 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{类型定义}
 \begin{DoxyCompactItemize}
 \item 
@@ -51,6 +95,270 @@ typedef volatile \mbox{\hyperlink{varint_8h_a48d6cd8e4135fb2ff7e7f2dac84089ec}{i
 \begin{DoxyCompactList}\small\item\em 32位有符号易变类型 \end{DoxyCompactList}\item 
 typedef volatile \mbox{\hyperlink{varint_8h_a85cb35fbe5bf2961d7ad5f26814a91a2}{i64}} \mbox{\hyperlink{varint_8h_aeffd8dafd889cdd80398ffcbb37cd7ef}{vi64}}
 \begin{DoxyCompactList}\small\item\em 64位有符号易变类型 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+全局共用的标准类型表 
+
+
+
+在文件 \mbox{\hyperlink{varint_8h_source}{varint.\+h}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\mbox{\Hypertarget{varint_8h_ada574ddd6b3c52cf691b29e6efc7a817}\label{varint_8h_ada574ddd6b3c52cf691b29e6efc7a817}} 
+\index{varint.h@{varint.h}!DelLb@{DelLb}}
+\index{DelLb@{DelLb}!varint.h@{varint.h}}
+\doxysubsubsection{\texorpdfstring{DelLb}{DelLb}}
+{\footnotesize\ttfamily \#define Del\+Lb(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(x \& (x -\/ 1))}
+
+
+
+移除最低位的1 
+
+
+
+在文件 \mbox{\hyperlink{varint_8h_source}{varint.\+h}} 第 \mbox{\hyperlink{varint_8h_source_l00069}{69}} 行定义.
+
+\mbox{\Hypertarget{varint_8h_a7ae6889c9eb9c27afb4395ef1d06eec7}\label{varint_8h_a7ae6889c9eb9c27afb4395ef1d06eec7}} 
+\index{varint.h@{varint.h}!LpAdd@{LpAdd}}
+\index{LpAdd@{LpAdd}!varint.h@{varint.h}}
+\doxysubsubsection{\texorpdfstring{LpAdd}{LpAdd}}
+{\footnotesize\ttfamily \#define Lp\+Add(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~((x+1)$<$y?x+1\+:0)}
+
+
+
+带最高限制的加法 
+
+
+
+在文件 \mbox{\hyperlink{varint_8h_source}{varint.\+h}} 第 \mbox{\hyperlink{varint_8h_source_l00080}{80}} 行定义.
+
+\mbox{\Hypertarget{varint_8h_af8c84f28a4c47bc30bbecb56d1469fd2}\label{varint_8h_af8c84f28a4c47bc30bbecb56d1469fd2}} 
+\index{varint.h@{varint.h}!LpDec@{LpDec}}
+\index{LpDec@{LpDec}!varint.h@{varint.h}}
+\doxysubsubsection{\texorpdfstring{LpDec}{LpDec}}
+{\footnotesize\ttfamily \#define Lp\+Dec(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~(x$>$0?x-\/1\+:y-\/1)}
+
+
+
+带最低限制的减法 
+
+
+
+在文件 \mbox{\hyperlink{varint_8h_source}{varint.\+h}} 第 \mbox{\hyperlink{varint_8h_source_l00081}{81}} 行定义.
+
+\mbox{\Hypertarget{varint_8h_a5cce0b9aa61d54efc42512f4c7796455}\label{varint_8h_a5cce0b9aa61d54efc42512f4c7796455}} 
+\index{varint.h@{varint.h}!mBit@{mBit}}
+\index{mBit@{mBit}!varint.h@{varint.h}}
+\doxysubsubsection{\texorpdfstring{mBit}{mBit}}
+{\footnotesize\ttfamily \#define m\+Bit(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y,  }\item[{}]{z }\end{DoxyParamCaption})~((z)?\mbox{\hyperlink{varint_8h_aa1b4c6a5140aae5adbc14792ed9cbaf5}{s\+Bit}}(x,y)\+:\mbox{\hyperlink{varint_8h_a6c0c97a8768383af5f921a0496bb7e6c}{r\+Bit}}(x,y))}
+
+
+
+选择性拉高拉低某一位 
+
+
+
+在文件 \mbox{\hyperlink{varint_8h_source}{varint.\+h}} 第 \mbox{\hyperlink{varint_8h_source_l00078}{78}} 行定义.
+
+\mbox{\Hypertarget{varint_8h_a90e13f6172ebc6d6b8df6ed9a443491f}\label{varint_8h_a90e13f6172ebc6d6b8df6ed9a443491f}} 
+\index{varint.h@{varint.h}!P16@{P16}}
+\index{P16@{P16}!varint.h@{varint.h}}
+\doxysubsubsection{\texorpdfstring{P16}{P16}}
+{\footnotesize\ttfamily \#define P16(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}$\ast$)(\&(x)))}
+
+
+
+强制转换变成u16的指针 
+
+
+
+在文件 \mbox{\hyperlink{varint_8h_source}{varint.\+h}} 第 \mbox{\hyperlink{varint_8h_source_l00064}{64}} 行定义.
+
+\mbox{\Hypertarget{varint_8h_a495d48b6b1b59a2ad797b10d9da431ff}\label{varint_8h_a495d48b6b1b59a2ad797b10d9da431ff}} 
+\index{varint.h@{varint.h}!P32@{P32}}
+\index{P32@{P32}!varint.h@{varint.h}}
+\doxysubsubsection{\texorpdfstring{P32}{P32}}
+{\footnotesize\ttfamily \#define P32(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}$\ast$)(\&(x)))}
+
+
+
+强制转换变成u32的指针 
+
+
+
+在文件 \mbox{\hyperlink{varint_8h_source}{varint.\+h}} 第 \mbox{\hyperlink{varint_8h_source_l00066}{66}} 行定义.
+
+\mbox{\Hypertarget{varint_8h_ad35af1fbc60fcc217f7e3c6bae2ba656}\label{varint_8h_ad35af1fbc60fcc217f7e3c6bae2ba656}} 
+\index{varint.h@{varint.h}!P8@{P8}}
+\index{P8@{P8}!varint.h@{varint.h}}
+\doxysubsubsection{\texorpdfstring{P8}{P8}}
+{\footnotesize\ttfamily \#define P8(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}$\ast$)(\&(x)))}
+
+
+
+强制转换变成u8的指针 
+
+
+
+在文件 \mbox{\hyperlink{varint_8h_source}{varint.\+h}} 第 \mbox{\hyperlink{varint_8h_source_l00062}{62}} 行定义.
+
+\mbox{\Hypertarget{varint_8h_aff980abb3664242448c35e7c94df9457}\label{varint_8h_aff980abb3664242448c35e7c94df9457}} 
+\index{varint.h@{varint.h}!Pn16@{Pn16}}
+\index{Pn16@{Pn16}!varint.h@{varint.h}}
+\doxysubsubsection{\texorpdfstring{Pn16}{Pn16}}
+{\footnotesize\ttfamily \#define Pn16(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~(((\mbox{\hyperlink{varint_8h_ace9d960e74685e2cd84b36132dbbf8aa}{u16}}$\ast$)(\&(x)))\mbox{[}y\mbox{]})}
+
+
+
+强制转换变成u16的数组 
+
+
+
+在文件 \mbox{\hyperlink{varint_8h_source}{varint.\+h}} 第 \mbox{\hyperlink{varint_8h_source_l00065}{65}} 行定义.
+
+\mbox{\Hypertarget{varint_8h_adc92d7430c7b945896332c2e2540a52a}\label{varint_8h_adc92d7430c7b945896332c2e2540a52a}} 
+\index{varint.h@{varint.h}!Pn32@{Pn32}}
+\index{Pn32@{Pn32}!varint.h@{varint.h}}
+\doxysubsubsection{\texorpdfstring{Pn32}{Pn32}}
+{\footnotesize\ttfamily \#define Pn32(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~(((\mbox{\hyperlink{varint_8h_afaa62991928fb9fb18ff0db62a040aba}{u32}}$\ast$)(\&(x)))\mbox{[}y\mbox{]})}
+
+
+
+强制转换变成u32的数组 
+
+
+
+在文件 \mbox{\hyperlink{varint_8h_source}{varint.\+h}} 第 \mbox{\hyperlink{varint_8h_source_l00067}{67}} 行定义.
+
+\mbox{\Hypertarget{varint_8h_a71e9586b24447c7ca7bc353aa86da852}\label{varint_8h_a71e9586b24447c7ca7bc353aa86da852}} 
+\index{varint.h@{varint.h}!Pn8@{Pn8}}
+\index{Pn8@{Pn8}!varint.h@{varint.h}}
+\doxysubsubsection{\texorpdfstring{Pn8}{Pn8}}
+{\footnotesize\ttfamily \#define Pn8(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~(((\mbox{\hyperlink{varint_8h_a92c50087ca0e64fa93fc59402c55f8ca}{u8}}$\ast$)(\&(x)))\mbox{[}y\mbox{]})}
+
+
+
+强制转换变成u8的数组 
+
+
+
+在文件 \mbox{\hyperlink{varint_8h_source}{varint.\+h}} 第 \mbox{\hyperlink{varint_8h_source_l00063}{63}} 行定义.
+
+\mbox{\Hypertarget{varint_8h_a4130fb740c8bd3c4986b2fe496c74d78}\label{varint_8h_a4130fb740c8bd3c4986b2fe496c74d78}} 
+\index{varint.h@{varint.h}!qDelLb@{qDelLb}}
+\index{qDelLb@{qDelLb}!varint.h@{varint.h}}
+\doxysubsubsection{\texorpdfstring{qDelLb}{qDelLb}}
+{\footnotesize\ttfamily \#define q\+Del\+Lb(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(x=(x \& (x -\/ 1)))}
+
+
+
+移除并保存最低位的1 
+
+
+
+在文件 \mbox{\hyperlink{varint_8h_source}{varint.\+h}} 第 \mbox{\hyperlink{varint_8h_source_l00070}{70}} 行定义.
+
+\mbox{\Hypertarget{varint_8h_ac5268cd1ab382ef2574c21c40590d6bc}\label{varint_8h_ac5268cd1ab382ef2574c21c40590d6bc}} 
+\index{varint.h@{varint.h}!qLpAdd@{qLpAdd}}
+\index{qLpAdd@{qLpAdd}!varint.h@{varint.h}}
+\doxysubsubsection{\texorpdfstring{qLpAdd}{qLpAdd}}
+{\footnotesize\ttfamily \#define q\+Lp\+Add(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~(x=(x+1)$<$y?x+1\+:0)}
+
+
+
+带最高限制的自增 
+
+
+
+在文件 \mbox{\hyperlink{varint_8h_source}{varint.\+h}} 第 \mbox{\hyperlink{varint_8h_source_l00082}{82}} 行定义.
+
+\mbox{\Hypertarget{varint_8h_a6d3d574f28028e4705bcd10ecfdadeaa}\label{varint_8h_a6d3d574f28028e4705bcd10ecfdadeaa}} 
+\index{varint.h@{varint.h}!qLpDec@{qLpDec}}
+\index{qLpDec@{qLpDec}!varint.h@{varint.h}}
+\doxysubsubsection{\texorpdfstring{qLpDec}{qLpDec}}
+{\footnotesize\ttfamily \#define q\+Lp\+Dec(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~(x=x$>$0?x-\/1\+:y-\/1)}
+
+
+
+带最低限制的自减 
+
+
+
+在文件 \mbox{\hyperlink{varint_8h_source}{varint.\+h}} 第 \mbox{\hyperlink{varint_8h_source_l00084}{84}} 行定义.
+
+\mbox{\Hypertarget{varint_8h_a6c0c97a8768383af5f921a0496bb7e6c}\label{varint_8h_a6c0c97a8768383af5f921a0496bb7e6c}} 
+\index{varint.h@{varint.h}!rBit@{rBit}}
+\index{rBit@{rBit}!varint.h@{varint.h}}
+\doxysubsubsection{\texorpdfstring{rBit}{rBit}}
+{\footnotesize\ttfamily \#define r\+Bit(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~(x\&($\sim$(1$<$$<$y)))}
+
+
+
+拉低某一位 
+
+
+
+在文件 \mbox{\hyperlink{varint_8h_source}{varint.\+h}} 第 \mbox{\hyperlink{varint_8h_source_l00077}{77}} 行定义.
+
+\mbox{\Hypertarget{varint_8h_aa1b4c6a5140aae5adbc14792ed9cbaf5}\label{varint_8h_aa1b4c6a5140aae5adbc14792ed9cbaf5}} 
+\index{varint.h@{varint.h}!sBit@{sBit}}
+\index{sBit@{sBit}!varint.h@{varint.h}}
+\doxysubsubsection{\texorpdfstring{sBit}{sBit}}
+{\footnotesize\ttfamily \#define s\+Bit(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~(x$\vert$(1$<$$<$y))}
+
+
+
+置高某一位 
+
+
+
+在文件 \mbox{\hyperlink{varint_8h_source}{varint.\+h}} 第 \mbox{\hyperlink{varint_8h_source_l00076}{76}} 行定义.
+
+\mbox{\Hypertarget{varint_8h_ac123183daf1150b8b675c96cfeae4314}\label{varint_8h_ac123183daf1150b8b675c96cfeae4314}} 
+\index{varint.h@{varint.h}!tBit@{tBit}}
+\index{tBit@{tBit}!varint.h@{varint.h}}
+\doxysubsubsection{\texorpdfstring{tBit}{tBit}}
+{\footnotesize\ttfamily \#define t\+Bit(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~(\mbox{\hyperlink{varint_8h_a338f1c6d28b8ee314ea8b33df5c6052e}{to\+Bool}}(\mbox{\hyperlink{varint_8h_af88c9f4171df59e6e0aa2db71bf9f250}{u\+Bit}}(x,y)))}
+
+
+
+挑选某一位并且布尔化 
+
+
+
+在文件 \mbox{\hyperlink{varint_8h_source}{varint.\+h}} 第 \mbox{\hyperlink{varint_8h_source_l00074}{74}} 行定义.
+
+\mbox{\Hypertarget{varint_8h_a338f1c6d28b8ee314ea8b33df5c6052e}\label{varint_8h_a338f1c6d28b8ee314ea8b33df5c6052e}} 
+\index{varint.h@{varint.h}!toBool@{toBool}}
+\index{toBool@{toBool}!varint.h@{varint.h}}
+\doxysubsubsection{\texorpdfstring{toBool}{toBool}}
+{\footnotesize\ttfamily \#define to\+Bool(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(x!=0)}
+
+
+
+数布尔化 
+
+
+
+在文件 \mbox{\hyperlink{varint_8h_source}{varint.\+h}} 第 \mbox{\hyperlink{varint_8h_source_l00072}{72}} 行定义.
+
+\mbox{\Hypertarget{varint_8h_af88c9f4171df59e6e0aa2db71bf9f250}\label{varint_8h_af88c9f4171df59e6e0aa2db71bf9f250}} 
+\index{varint.h@{varint.h}!uBit@{uBit}}
+\index{uBit@{uBit}!varint.h@{varint.h}}
+\doxysubsubsection{\texorpdfstring{uBit}{uBit}}
+{\footnotesize\ttfamily \#define u\+Bit(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~(x\&(1$<$$<$y))}
+
+
+
+挑选某一位 
+
+
+
+在文件 \mbox{\hyperlink{varint_8h_source}{varint.\+h}} 第 \mbox{\hyperlink{varint_8h_source_l00073}{73}} 行定义.
+
 
 
 \doxysubsection{类型定义说明}

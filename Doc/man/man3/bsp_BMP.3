@@ -1,0 +1,178 @@
+.TH "bsp_BMP" 3 "2022年 十一月 24日 星期四" "Version 2.0.0" "MF32BSP_XerolySkinner" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bsp_BMP \- 构建一个BMP类  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <bsp_BMP\&.h>\fP
+.SS "Public 成员函数"
+
+.in +1c
+.ti -1c
+.RI "\fBbsp_BMP\fP (\fBu32\fP Width, \fBu32\fP Height)"
+.br
+.RI "构造BMP数据头 "
+.ti -1c
+.RI "\fB~bsp_BMP\fP (void)"
+.br
+.ti -1c
+.RI "void \fBpels\fP (\fBu32\fP x, \fBu32\fP y)"
+.br
+.RI "设置像素 "
+.ti -1c
+.RI "\fBu32\fP \fBgiveData\fP (void)"
+.br
+.RI "给予数据空间 "
+.ti -1c
+.RI "void \fBdelData\fP (void)"
+.br
+.RI "释放数据空间 "
+.ti -1c
+.RI "void \fBColorsSet\fP (\fBu8\fP R, \fBu8\fP G, \fBu8\fP B, \fBu32\fP i)"
+.br
+.RI "设置调色板 "
+.ti -1c
+.RI "void \fBsizeSet\fP (\fBu32\fP x, \fBu32\fP y)"
+.br
+.RI "设置图片大小 "
+.in -1c
+.SS "Public 属性"
+
+.in +1c
+.ti -1c
+.RI "\fB_BITMAPINFO\fP \fBBITMAPINFO\fP"
+.br
+.RI "文件头 "
+.ti -1c
+.RI "\fBu32\fP \fBSize\fP"
+.br
+.RI "文件大小 "
+.ti -1c
+.RI "\fBu8\fP * \fBdat\fP"
+.br
+.RI "数据区 "
+.in -1c
+.SH "详细描述"
+.PP 
+构建一个BMP类 
+.PP
+在文件 \fBbsp_BMP\&.h\fP 第 \fB97\fP 行定义\&.
+.SH "构造及析构函数说明"
+.PP 
+.SS "bsp_BMP::bsp_BMP (\fBu32\fP Width, \fBu32\fP Height)"
+
+.PP
+构造BMP数据头 
+.PP
+\fB参数\fP
+.RS 4
+\fIWidth\fP 图片宽度 
+.br
+\fIHeight\fP 图片高度 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_BMP\&.cpp\fP 第 \fB97\fP 行定义\&.
+.SS "bsp_BMP::~bsp_BMP (void)"
+
+.PP
+在文件 \fBbsp_BMP\&.cpp\fP 第 \fB121\fP 行定义\&.
+.SH "成员函数说明"
+.PP 
+.SS "void bsp_BMP::ColorsSet (\fBu8\fP R, \fBu8\fP G, \fBu8\fP B, \fBu32\fP i)"
+
+.PP
+设置调色板 
+.PP
+\fB参数\fP
+.RS 4
+\fIR\fP 红色 
+.br
+\fIG\fP 绿色 
+.br
+\fIB\fP 蓝色 
+.br
+\fIi\fP 索引号 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_BMP\&.cpp\fP 第 \fB68\fP 行定义\&.
+.SS "void bsp_BMP::delData (void)"
+
+.PP
+释放数据空间 
+.PP
+在文件 \fBbsp_BMP\&.cpp\fP 第 \fB59\fP 行定义\&.
+.SS "\fBu32\fP bsp_BMP::giveData (void)"
+
+.PP
+给予数据空间 
+.PP
+\fB返回\fP
+.RS 4
+返回给与的数据头 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_BMP\&.cpp\fP 第 \fB52\fP 行定义\&.
+.SS "void bsp_BMP::pels (\fBu32\fP x, \fBu32\fP y)"
+
+.PP
+设置像素 
+.PP
+\fB参数\fP
+.RS 4
+\fIx\fP x像素 
+.br
+\fIy\fP y像素 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_BMP\&.cpp\fP 第 \fB45\fP 行定义\&.
+.SS "void bsp_BMP::sizeSet (\fBu32\fP x, \fBu32\fP y)"
+
+.PP
+设置图片大小 
+.PP
+\fB参数\fP
+.RS 4
+\fIWidth\fP 图片宽度 
+.br
+\fIHeight\fP 图片高度 
+.RE
+.PP
+
+.PP
+在文件 \fBbsp_BMP\&.cpp\fP 第 \fB78\fP 行定义\&.
+.SH "类成员变量说明"
+.PP 
+.SS "\fB_BITMAPINFO\fP bsp_BMP::BITMAPINFO"
+
+.PP
+文件头 
+.PP
+在文件 \fBbsp_BMP\&.h\fP 第 \fB108\fP 行定义\&.
+.SS "\fBu8\fP* bsp_BMP::dat"
+
+.PP
+数据区 
+.PP
+在文件 \fBbsp_BMP\&.h\fP 第 \fB110\fP 行定义\&.
+.SS "\fBu32\fP bsp_BMP::Size"
+
+.PP
+文件大小 
+.PP
+在文件 \fBbsp_BMP\&.h\fP 第 \fB109\fP 行定义\&.
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 MF32BSP_XerolySkinner 的 源代码自动生成\&.

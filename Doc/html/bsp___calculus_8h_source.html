@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MF32BSP_XerolySkinner: D:/gitt/MicrochipFor32/bsp_Device/bsp_Calculus.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MF32BSP_XerolySkinner<span id="projectnumber">&#160;2.0.0</span>
+   </div>
+   <div id="projectbrief">C++版本的驱动库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_7d600478d4be1ed73c651a71d29ab217.html">bsp_Device</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">bsp_Calculus.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="bsp___calculus_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> #  Copyright (c) 2022 Yuankang Liang(XerolySkinner)</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> #  本软件按原样提供,无任何明示或暗示</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> #  在任何情况下,作者都不承担任何损害赔偿责任</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> #  使用的许可声明:</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> #  1.  不得歪曲本软件的来源,你不能声称你编写了原始软件.</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> #  2.  免费授予以任何目的,前提是版权声明出现在所有副本中.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> #      并且版权声明和许可声明同时出现.</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> #  3.  你有使用,复制,修改,分发,和销售本软件的许可.</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> #  4.  如果你在产品中使用,产品文档中的声明是赞赏的但不是必须的.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> #  5.  本通知不得从任何来源删除或更改.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> #  Yuankang Liang(XerolySkinner)</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> #      E-mail:zabbcccbbaz@163.com</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> #      QQ:2715099320</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> #      Mobile Phone:13005636215</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> #</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> #  All rights reserved.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;<a class="code" href="varint_8h.html">varint.h</a>&quot;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">//----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">//  类目</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classbsp___differential.html">   43</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="classbsp___differential.html">bsp_Differential</a>{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classbsp___differential.html#a16a19c803e2f1a3bbba98a2ef529206b">   45</a></span>        <a class="code hl_function" href="classbsp___differential.html#a16a19c803e2f1a3bbba98a2ef529206b">bsp_Differential</a>(<span class="keywordtype">float</span> <a class="code hl_variable" href="classbsp___differential.html#ab25588868059974b8356e975c6e96992">dt</a>) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <a class="code hl_variable" href="classbsp___differential.html#ab25588868059974b8356e975c6e96992">bsp_Differential::dt</a> = <a class="code hl_variable" href="classbsp___differential.html#ab25588868059974b8356e975c6e96992">dt</a>;}</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordtype">float</span> <a class="code hl_function" href="classbsp___differential.html#a46536b15be29d856b09dd7d261a12ab1">Differential</a>(<span class="keywordtype">float</span> var);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classbsp___differential.html#ab25588868059974b8356e975c6e96992">   50</a></span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="classbsp___differential.html#ab25588868059974b8356e975c6e96992">dt</a>;           </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    };</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">//----------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classbsp___integral.html">   59</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="classbsp___integral.html">bsp_Integral</a> {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classbsp___integral.html#af274273b399f4da855646921f3ae31ba">   61</a></span>        <a class="code hl_function" href="classbsp___integral.html#af274273b399f4da855646921f3ae31ba">bsp_Integral</a>(<span class="keywordtype">float</span> <a class="code hl_variable" href="classbsp___integral.html#a4494cf9fc2873d457ed3bf8618b68045">dt</a>) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <a class="code hl_variable" href="classbsp___integral.html#a656d90c5a713abf0665f1dcbf1a5101a">bsp_Integral::result_list</a> = NULL;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <a class="code hl_variable" href="classbsp___integral.html#a4494cf9fc2873d457ed3bf8618b68045">bsp_Integral::dt</a> = <a class="code hl_variable" href="classbsp___integral.html#a4494cf9fc2873d457ed3bf8618b68045">dt</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <a class="code hl_variable" href="classbsp___integral.html#a910f1f3faa2b4963e00718472b8389bc">bsp_Integral::results</a> = 0;}</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classbsp___integral.html#a3f190eb273b4d6492fb39e2573ec37a1">   65</a></span>        <a class="code hl_function" href="classbsp___integral.html#a3f190eb273b4d6492fb39e2573ec37a1">~bsp_Integral</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            free(<a class="code hl_variable" href="classbsp___integral.html#a656d90c5a713abf0665f1dcbf1a5101a">result_list</a>);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <a class="code hl_variable" href="classbsp___integral.html#a656d90c5a713abf0665f1dcbf1a5101a">result_list</a> = NULL;}</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordtype">float</span> <a class="code hl_function" href="classbsp___integral.html#ade46f89bfdc6dd778c045a51c76c1839">Integral</a>(<span class="keywordtype">float</span> var);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___integral.html#aaf7474301ed76ca9ce2b1884ae870019">Integral_set</a>(<span class="keywordtype">float</span> <a class="code hl_variable" href="classbsp___integral.html#a910f1f3faa2b4963e00718472b8389bc">results</a>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordtype">float</span> <a class="code hl_function" href="classbsp___integral.html#a80693e18b9b9509bdec0ebfd72f84072">Integral_list</a>(<span class="keywordtype">float</span> var);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <a class="code hl_typedef" href="varint_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> <a class="code hl_function" href="classbsp___integral.html#a86d9e02d1146744fe80ebab69070abb4">Integral_makelist</a>(<a class="code hl_typedef" href="varint_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> len);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___integral.html#a47307ddf418d2686245b118dcf61a199">Integral_dellist</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classbsp___integral.html#aae2b6143ca39861a83b77befc131bf5e">Integral_clslist</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classbsp___integral.html#a656d90c5a713abf0665f1dcbf1a5101a">   77</a></span>        <span class="keywordtype">float</span>   *<a class="code hl_variable" href="classbsp___integral.html#a656d90c5a713abf0665f1dcbf1a5101a">result_list</a>;   </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classbsp___integral.html#a662c735b9432a46e48a642ebb9c0e8fa">   78</a></span>        <a class="code hl_typedef" href="varint_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>     <a class="code hl_variable" href="classbsp___integral.html#a662c735b9432a46e48a642ebb9c0e8fa">result_len</a>;     </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classbsp___integral.html#a910f1f3faa2b4963e00718472b8389bc">   79</a></span>        <span class="keywordtype">float</span>   <a class="code hl_variable" href="classbsp___integral.html#a910f1f3faa2b4963e00718472b8389bc">results</a>;        </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classbsp___integral.html#a4494cf9fc2873d457ed3bf8618b68045">   80</a></span>        <span class="keywordtype">float</span>   <a class="code hl_variable" href="classbsp___integral.html#a4494cf9fc2873d457ed3bf8618b68045">dt</a>;             </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    };</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassbsp___differential_html"><div class="ttname"><a href="classbsp___differential.html">bsp_Differential</a></div><div class="ttdoc">一个微分对象</div><div class="ttdef"><b>Definition:</b> <a href="bsp___calculus_8h_source.html#l00043">bsp_Calculus.h:43</a></div></div>
+<div class="ttc" id="aclassbsp___differential_html_a16a19c803e2f1a3bbba98a2ef529206b"><div class="ttname"><a href="classbsp___differential.html#a16a19c803e2f1a3bbba98a2ef529206b">bsp_Differential::bsp_Differential</a></div><div class="ttdeci">bsp_Differential(float dt)</div><div class="ttdef"><b>Definition:</b> <a href="bsp___calculus_8h_source.html#l00045">bsp_Calculus.h:45</a></div></div>
+<div class="ttc" id="aclassbsp___differential_html_a46536b15be29d856b09dd7d261a12ab1"><div class="ttname"><a href="classbsp___differential.html#a46536b15be29d856b09dd7d261a12ab1">bsp_Differential::Differential</a></div><div class="ttdeci">float Differential(float var)</div><div class="ttdoc">对数据微分</div><div class="ttdef"><b>Definition:</b> <a href="bsp___calculus_8cpp_source.html#l00046">bsp_Calculus.cpp:46</a></div></div>
+<div class="ttc" id="aclassbsp___differential_html_ab25588868059974b8356e975c6e96992"><div class="ttname"><a href="classbsp___differential.html#ab25588868059974b8356e975c6e96992">bsp_Differential::dt</a></div><div class="ttdeci">float dt</div><div class="ttdoc">时间参数</div><div class="ttdef"><b>Definition:</b> <a href="bsp___calculus_8h_source.html#l00050">bsp_Calculus.h:50</a></div></div>
+<div class="ttc" id="aclassbsp___integral_html"><div class="ttname"><a href="classbsp___integral.html">bsp_Integral</a></div><div class="ttdoc">一个积分对象</div><div class="ttdef"><b>Definition:</b> <a href="bsp___calculus_8h_source.html#l00059">bsp_Calculus.h:59</a></div></div>
+<div class="ttc" id="aclassbsp___integral_html_a3f190eb273b4d6492fb39e2573ec37a1"><div class="ttname"><a href="classbsp___integral.html#a3f190eb273b4d6492fb39e2573ec37a1">bsp_Integral::~bsp_Integral</a></div><div class="ttdeci">~bsp_Integral(void)</div><div class="ttdef"><b>Definition:</b> <a href="bsp___calculus_8h_source.html#l00065">bsp_Calculus.h:65</a></div></div>
+<div class="ttc" id="aclassbsp___integral_html_a4494cf9fc2873d457ed3bf8618b68045"><div class="ttname"><a href="classbsp___integral.html#a4494cf9fc2873d457ed3bf8618b68045">bsp_Integral::dt</a></div><div class="ttdeci">float dt</div><div class="ttdoc">时间参数</div><div class="ttdef"><b>Definition:</b> <a href="bsp___calculus_8h_source.html#l00080">bsp_Calculus.h:80</a></div></div>
+<div class="ttc" id="aclassbsp___integral_html_a47307ddf418d2686245b118dcf61a199"><div class="ttname"><a href="classbsp___integral.html#a47307ddf418d2686245b118dcf61a199">bsp_Integral::Integral_dellist</a></div><div class="ttdeci">void Integral_dellist(void)</div><div class="ttdoc">删除并释放历史缓冲区</div><div class="ttdef"><b>Definition:</b> <a href="bsp___calculus_8cpp_source.html#l00105">bsp_Calculus.cpp:105</a></div></div>
+<div class="ttc" id="aclassbsp___integral_html_a656d90c5a713abf0665f1dcbf1a5101a"><div class="ttname"><a href="classbsp___integral.html#a656d90c5a713abf0665f1dcbf1a5101a">bsp_Integral::result_list</a></div><div class="ttdeci">float * result_list</div><div class="ttdoc">数据历史</div><div class="ttdef"><b>Definition:</b> <a href="bsp___calculus_8h_source.html#l00077">bsp_Calculus.h:77</a></div></div>
+<div class="ttc" id="aclassbsp___integral_html_a662c735b9432a46e48a642ebb9c0e8fa"><div class="ttname"><a href="classbsp___integral.html#a662c735b9432a46e48a642ebb9c0e8fa">bsp_Integral::result_len</a></div><div class="ttdeci">u32 result_len</div><div class="ttdoc">历史缓冲区长度</div><div class="ttdef"><b>Definition:</b> <a href="bsp___calculus_8h_source.html#l00078">bsp_Calculus.h:78</a></div></div>
+<div class="ttc" id="aclassbsp___integral_html_a80693e18b9b9509bdec0ebfd72f84072"><div class="ttname"><a href="classbsp___integral.html#a80693e18b9b9509bdec0ebfd72f84072">bsp_Integral::Integral_list</a></div><div class="ttdeci">float Integral_list(float var)</div><div class="ttdoc">进行带有缓冲区的积分</div><div class="ttdef"><b>Definition:</b> <a href="bsp___calculus_8cpp_source.html#l00086">bsp_Calculus.cpp:86</a></div></div>
+<div class="ttc" id="aclassbsp___integral_html_a86d9e02d1146744fe80ebab69070abb4"><div class="ttname"><a href="classbsp___integral.html#a86d9e02d1146744fe80ebab69070abb4">bsp_Integral::Integral_makelist</a></div><div class="ttdeci">u32 Integral_makelist(u32 len)</div><div class="ttdoc">赋予历史缓存长度</div><div class="ttdef"><b>Definition:</b> <a href="bsp___calculus_8cpp_source.html#l00075">bsp_Calculus.cpp:75</a></div></div>
+<div class="ttc" id="aclassbsp___integral_html_a910f1f3faa2b4963e00718472b8389bc"><div class="ttname"><a href="classbsp___integral.html#a910f1f3faa2b4963e00718472b8389bc">bsp_Integral::results</a></div><div class="ttdeci">float results</div><div class="ttdoc">积分缓存</div><div class="ttdef"><b>Definition:</b> <a href="bsp___calculus_8h_source.html#l00079">bsp_Calculus.h:79</a></div></div>
+<div class="ttc" id="aclassbsp___integral_html_aae2b6143ca39861a83b77befc131bf5e"><div class="ttname"><a href="classbsp___integral.html#aae2b6143ca39861a83b77befc131bf5e">bsp_Integral::Integral_clslist</a></div><div class="ttdeci">void Integral_clslist(void)</div><div class="ttdoc">清空历史缓存区</div><div class="ttdef"><b>Definition:</b> <a href="bsp___calculus_8cpp_source.html#l00113">bsp_Calculus.cpp:113</a></div></div>
+<div class="ttc" id="aclassbsp___integral_html_aaf7474301ed76ca9ce2b1884ae870019"><div class="ttname"><a href="classbsp___integral.html#aaf7474301ed76ca9ce2b1884ae870019">bsp_Integral::Integral_set</a></div><div class="ttdeci">void Integral_set(float results)</div><div class="ttdoc">重设当前积分值</div><div class="ttdef"><b>Definition:</b> <a href="bsp___calculus_8cpp_source.html#l00067">bsp_Calculus.cpp:67</a></div></div>
+<div class="ttc" id="aclassbsp___integral_html_ade46f89bfdc6dd778c045a51c76c1839"><div class="ttname"><a href="classbsp___integral.html#ade46f89bfdc6dd778c045a51c76c1839">bsp_Integral::Integral</a></div><div class="ttdeci">float Integral(float var)</div><div class="ttdoc">对数据积分</div><div class="ttdef"><b>Definition:</b> <a href="bsp___calculus_8cpp_source.html#l00059">bsp_Calculus.cpp:59</a></div></div>
+<div class="ttc" id="aclassbsp___integral_html_af274273b399f4da855646921f3ae31ba"><div class="ttname"><a href="classbsp___integral.html#af274273b399f4da855646921f3ae31ba">bsp_Integral::bsp_Integral</a></div><div class="ttdeci">bsp_Integral(float dt)</div><div class="ttdef"><b>Definition:</b> <a href="bsp___calculus_8h_source.html#l00061">bsp_Calculus.h:61</a></div></div>
+<div class="ttc" id="avarint_8h_html"><div class="ttname"><a href="varint_8h.html">varint.h</a></div><div class="ttdoc">全局共用的标准类型表</div></div>
+<div class="ttc" id="avarint_8h_html_afaa62991928fb9fb18ff0db62a040aba"><div class="ttname"><a href="varint_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a></div><div class="ttdeci">uint32_t u32</div><div class="ttdoc">32位无符号数类型</div><div class="ttdef"><b>Definition:</b> <a href="varint_8h_source.html#l00042">varint.h:42</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

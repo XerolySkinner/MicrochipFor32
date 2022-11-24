@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structstruct__bsp___flash___pack" xml:lang="zh">
+<title>struct_bsp_Flash_Pack结构体 参考</title>
+<indexterm><primary>struct_bsp_Flash_Pack</primary></indexterm>
+<para>
+
+<para>一包数据的内容 </para>
+ 
+</para>
+<simplesect>
+    <title>Public 属性    </title>
+        <itemizedlist>
+            <listitem><para>char <link linkend="_structstruct__bsp___flash___pack_1aea6e531775263f158f23d2295f759dd7">Var0</link></para>
+</listitem>
+            <listitem><para>short <link linkend="_structstruct__bsp___flash___pack_1aff73ebf1f2eaf5930d7187aa5f502075">Var1</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_structstruct__bsp___flash___pack_1adc2edcdadc2b2be3d18334cd196e049c">Var2</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>一包数据的内容 </para>
+
+
+
+<para><para><link linkend="_todo_1_todo000001">待办事项</link> 
+<para>随意更改内部内容方便读取 </para>
+</para></para>
+<para>
+在文件 <link linkend="_bsp__flash_8c_source">bsp_flash.c</link> 第 <link linkend="_bsp__flash_8c_source_1l00043">43</link> 行定义.</para>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_structstruct__bsp___flash___pack_1aea6e531775263f158f23d2295f759dd7"/><section>
+    <title>Var0</title>
+<indexterm><primary>Var0</primary><secondary>struct_bsp_Flash_Pack</secondary></indexterm>
+<indexterm><primary>struct_bsp_Flash_Pack</primary><secondary>Var0</secondary></indexterm>
+<para><computeroutput>char struct_bsp_Flash_Pack::Var0</computeroutput></para><para>
+在文件 <link linkend="_bsp__flash_8c_source">bsp_flash.c</link> 第 <link linkend="_bsp__flash_8c_source_1l00044">44</link> 行定义.</para>
+</section>
+<anchor xml:id="_structstruct__bsp___flash___pack_1aff73ebf1f2eaf5930d7187aa5f502075"/><section>
+    <title>Var1</title>
+<indexterm><primary>Var1</primary><secondary>struct_bsp_Flash_Pack</secondary></indexterm>
+<indexterm><primary>struct_bsp_Flash_Pack</primary><secondary>Var1</secondary></indexterm>
+<para><computeroutput>short struct_bsp_Flash_Pack::Var1</computeroutput></para><para>
+在文件 <link linkend="_bsp__flash_8c_source">bsp_flash.c</link> 第 <link linkend="_bsp__flash_8c_source_1l00045">45</link> 行定义.</para>
+</section>
+<anchor xml:id="_structstruct__bsp___flash___pack_1adc2edcdadc2b2be3d18334cd196e049c"/><section>
+    <title>Var2</title>
+<indexterm><primary>Var2</primary><secondary>struct_bsp_Flash_Pack</secondary></indexterm>
+<indexterm><primary>struct_bsp_Flash_Pack</primary><secondary>Var2</secondary></indexterm>
+<para><computeroutput>int struct_bsp_Flash_Pack::Var2</computeroutput></para><para>
+在文件 <link linkend="_bsp__flash_8c_source">bsp_flash.c</link> 第 <link linkend="_bsp__flash_8c_source_1l00046">46</link> 行定义.</para>
+</section>
+<para>
+该结构体的文档由以下文件生成:</para>
+D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp__flash_8c">bsp_flash.c</link></section>
+</section>

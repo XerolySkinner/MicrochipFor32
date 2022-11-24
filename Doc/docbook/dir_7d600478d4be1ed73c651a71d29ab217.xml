@@ -13,6 +13,22 @@
 
 <para>本类实现AT24C00的通讯 </para>
 </listitem>
+            <listitem><para>文件 <link linkend="_bsp___b_m_p_8cpp">bsp_BMP.cpp</link></para>
+
+<para>用来构造BMP图片 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___b_m_p_8h">bsp_BMP.h</link></para>
+
+<para>用来构造BMP图片 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___calculus_8cpp">bsp_Calculus.cpp</link></para>
+
+<para>离散微积分 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___calculus_8h">bsp_Calculus.h</link></para>
+
+<para>离散微积分 </para>
+</listitem>
             <listitem><para>文件 <link linkend="_bsp___c_r_c_8cpp">bsp_CRC.cpp</link></para>
 
 <para>CRC16校验 </para>
@@ -28,6 +44,14 @@
             <listitem><para>文件 <link linkend="_bsp___digit_8h">bsp_Digit.h</link></para>
 
 <para>数码管显示类 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp__flash_8c">bsp_flash.c</link></para>
+
+<para>写STM32的Flash库 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp__flash_8h">bsp_flash.h</link></para>
+
+<para>写STM32的Flash库 </para>
 </listitem>
             <listitem><para>文件 <link linkend="_bsp___i_i_c_8cpp">bsp_IIC.cpp</link></para>
 
@@ -90,8 +114,12 @@
 <para>操作SD卡的库 </para>
 </listitem>
             <listitem><para>文件 <link linkend="_bsp___s_d_8h">bsp_SD.h</link></para>
+
+<para>操作SD卡的库 </para>
 </listitem>
             <listitem><para>文件 <link linkend="_varint_8h">varint.h</link></para>
+
+<para>全局共用的标准类型表 </para>
 </listitem>
         </itemizedlist>
 </simplesect>

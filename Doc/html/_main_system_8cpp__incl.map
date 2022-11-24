@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" title="实现了一个C++库针对单片机开发" alt="" coords="155,5,356,45"/>
 <area shape="rect" id="node2" href="$vartable_8h.html" title="全局向量在此生成" alt="" coords="217,93,294,119"/>
 <area shape="rect" id="node3" href="$_user_8h.html" title="用户设置信息" alt="" coords="5,167,65,192"/>
-<area shape="rect" id="node4" href="$varint_8h.html" title=" " alt="" coords="89,167,152,192"/>
+<area shape="rect" id="node4" href="$varint_8h.html" title="全局共用的标准类型表" alt="" coords="89,167,152,192"/>
 <area shape="rect" id="node6" title=" " alt="" coords="177,167,238,192"/>
 <area shape="rect" id="node7" href="$_callback_8h.html" title="全局中断在此实现" alt="" coords="262,167,347,192"/>
 <area shape="rect" id="node8" title=" " alt="" coords="371,167,433,192"/>

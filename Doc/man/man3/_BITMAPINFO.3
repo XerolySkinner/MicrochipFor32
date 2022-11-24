@@ -1,0 +1,47 @@
+.TH "_BITMAPINFO" 3 "2022年 十一月 24日 星期四" "Version 2.0.0" "MF32BSP_XerolySkinner" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+_BITMAPINFO \- BMP文件头  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <bsp_BMP\&.h>\fP
+.SS "Public 属性"
+
+.in +1c
+.ti -1c
+.RI "\fB_BITMAPFILEHEADER\fP \fBbmfHeader\fP"
+.br
+.ti -1c
+.RI "\fB_BITMAPINFOHEADER\fP \fBbmiHeader\fP"
+.br
+.ti -1c
+.RI "\fB_RGBQUAD\fP \fBbmiColors\fP [256]"
+.br
+.in -1c
+.SH "详细描述"
+.PP 
+BMP文件头 
+.PP
+在文件 \fBbsp_BMP\&.h\fP 第 \fB84\fP 行定义\&.
+.SH "类成员变量说明"
+.PP 
+.SS "\fB_BITMAPFILEHEADER\fP _BITMAPINFO::bmfHeader"
+
+.PP
+在文件 \fBbsp_BMP\&.h\fP 第 \fB85\fP 行定义\&.
+.SS "\fB_RGBQUAD\fP _BITMAPINFO::bmiColors[256]"
+
+.PP
+在文件 \fBbsp_BMP\&.h\fP 第 \fB87\fP 行定义\&.
+.SS "\fB_BITMAPINFOHEADER\fP _BITMAPINFO::bmiHeader"
+
+.PP
+在文件 \fBbsp_BMP\&.h\fP 第 \fB86\fP 行定义\&.
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 MF32BSP_XerolySkinner 的 源代码自动生成\&.

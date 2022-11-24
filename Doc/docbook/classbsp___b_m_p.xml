@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbsp___b_m_p" xml:lang="zh">
+<title>bsp_BMP类 参考</title>
+<indexterm><primary>bsp_BMP</primary></indexterm>
+<para>
+
+<para>构建一个BMP类 </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;bsp_BMP.h&gt;</computeroutput>
+</para>
+bsp_BMP 的协作图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbsp___b_m_p__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbsp___b_m_p_1a27d05488822dc9548e0783d46808a1db">bsp_BMP</link> (<link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> Width, <link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> Height)</para>
+
+<para>构造BMP数据头 </para>
+</listitem>
+            <listitem><para><link linkend="_classbsp___b_m_p_1a604d7e5683da37be890672aa690c2ff2">~bsp_BMP</link> (void)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___b_m_p_1a4aaa5a2ea2f5b3c07c8e16009984766e">pels</link> (<link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> x, <link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> y)</para>
+
+<para>设置像素 </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> <link linkend="_classbsp___b_m_p_1ae0e2551a06b8ad966a86b2c8324da25c">giveData</link> (void)</para>
+
+<para>给予数据空间 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___b_m_p_1abe5d545dea1090a228843f140650f573">delData</link> (void)</para>
+
+<para>释放数据空间 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___b_m_p_1a17c0c014ef6ce7d09a5dd81c5d2c5d57">ColorsSet</link> (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> R, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> G, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> B, <link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> i)</para>
+
+<para>设置调色板 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classbsp___b_m_p_1a535cd9bfe5e49ba97ff9c4a1dd8ebb51">sizeSet</link> (<link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> x, <link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> y)</para>
+
+<para>设置图片大小 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public 属性    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct___b_i_t_m_a_p_i_n_f_o">_BITMAPINFO</link> <link linkend="_classbsp___b_m_p_1a64dcf31f5722327336d87794b873a335">BITMAPINFO</link></para>
+
+<para>文件头 </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> <link linkend="_classbsp___b_m_p_1a8a1c31ee70ed4061ad8bea4254959b83">Size</link></para>
+
+<para>文件大小 </para>
+</listitem>
+            <listitem><para><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> * <link linkend="_classbsp___b_m_p_1a2023aceaef140268a12bc61b81d410ca">dat</link></para>
+
+<para>数据区 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>构建一个BMP类 </para>
+<para>
+在文件 <link linkend="_bsp___b_m_p_8h_source">bsp_BMP.h</link> 第 <link linkend="_bsp___b_m_p_8h_source_1l00097">97</link> 行定义.</para>
+</section>
+<section>
+<title>构造及析构函数说明</title>
+<anchor xml:id="_classbsp___b_m_p_1a27d05488822dc9548e0783d46808a1db"/><section>
+    <title>bsp_BMP()</title>
+<indexterm><primary>bsp_BMP</primary><secondary>bsp_BMP</secondary></indexterm>
+<indexterm><primary>bsp_BMP</primary><secondary>bsp_BMP</secondary></indexterm>
+<para><computeroutput>bsp_BMP::bsp_BMP (<link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> Width, <link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> Height)</computeroutput></para><para>
+
+<para>构造BMP数据头 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Width</entry><entry>
+<para>图片宽度 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>Height</entry><entry>
+<para>图片高度 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___b_m_p_8cpp_source">bsp_BMP.cpp</link> 第 <link linkend="_bsp___b_m_p_8cpp_source_1l00097">97</link> 行定义.</para>
+</section>
+<anchor xml:id="_classbsp___b_m_p_1a604d7e5683da37be890672aa690c2ff2"/><section>
+    <title>~bsp_BMP()</title>
+<indexterm><primary>~bsp_BMP</primary><secondary>bsp_BMP</secondary></indexterm>
+<indexterm><primary>bsp_BMP</primary><secondary>~bsp_BMP</secondary></indexterm>
+<para><computeroutput>bsp_BMP::~bsp_BMP (void )</computeroutput></para><para>
+在文件 <link linkend="_bsp___b_m_p_8cpp_source">bsp_BMP.cpp</link> 第 <link linkend="_bsp___b_m_p_8cpp_source_1l00121">121</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_classbsp___b_m_p_1a17c0c014ef6ce7d09a5dd81c5d2c5d57"/><section>
+    <title>ColorsSet()</title>
+<indexterm><primary>ColorsSet</primary><secondary>bsp_BMP</secondary></indexterm>
+<indexterm><primary>bsp_BMP</primary><secondary>ColorsSet</secondary></indexterm>
+<para><computeroutput>void bsp_BMP::ColorsSet (<link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> R, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> G, <link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link> B, <link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> i)</computeroutput></para><para>
+
+<para>设置调色板 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>R</entry><entry>
+<para>红色 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>G</entry><entry>
+<para>绿色 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>B</entry><entry>
+<para>蓝色 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>i</entry><entry>
+<para>索引号 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___b_m_p_8cpp_source">bsp_BMP.cpp</link> 第 <link linkend="_bsp___b_m_p_8cpp_source_1l00068">68</link> 行定义.</para>
+</section>
+<anchor xml:id="_classbsp___b_m_p_1abe5d545dea1090a228843f140650f573"/><section>
+    <title>delData()</title>
+<indexterm><primary>delData</primary><secondary>bsp_BMP</secondary></indexterm>
+<indexterm><primary>bsp_BMP</primary><secondary>delData</secondary></indexterm>
+<para><computeroutput>void bsp_BMP::delData (void )</computeroutput></para><para>
+
+<para>释放数据空间 </para>
+</para>
+<para>
+在文件 <link linkend="_bsp___b_m_p_8cpp_source">bsp_BMP.cpp</link> 第 <link linkend="_bsp___b_m_p_8cpp_source_1l00059">59</link> 行定义.</para>
+</section>
+<anchor xml:id="_classbsp___b_m_p_1ae0e2551a06b8ad966a86b2c8324da25c"/><section>
+    <title>giveData()</title>
+<indexterm><primary>giveData</primary><secondary>bsp_BMP</secondary></indexterm>
+<indexterm><primary>bsp_BMP</primary><secondary>giveData</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> bsp_BMP::giveData (void )</computeroutput></para><para>
+
+<para>给予数据空间 </para>
+</para>
+
+<para><formalpara><title>返回</title>
+
+<para>返回给与的数据头 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_bsp___b_m_p_8cpp_source">bsp_BMP.cpp</link> 第 <link linkend="_bsp___b_m_p_8cpp_source_1l00052">52</link> 行定义.</para>
+</section>
+<anchor xml:id="_classbsp___b_m_p_1a4aaa5a2ea2f5b3c07c8e16009984766e"/><section>
+    <title>pels()</title>
+<indexterm><primary>pels</primary><secondary>bsp_BMP</secondary></indexterm>
+<indexterm><primary>bsp_BMP</primary><secondary>pels</secondary></indexterm>
+<para><computeroutput>void bsp_BMP::pels (<link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> x, <link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> y)</computeroutput></para><para>
+
+<para>设置像素 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>x</entry><entry>
+<para>x像素 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>y</entry><entry>
+<para>y像素 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___b_m_p_8cpp_source">bsp_BMP.cpp</link> 第 <link linkend="_bsp___b_m_p_8cpp_source_1l00045">45</link> 行定义.</para>
+</section>
+<anchor xml:id="_classbsp___b_m_p_1a535cd9bfe5e49ba97ff9c4a1dd8ebb51"/><section>
+    <title>sizeSet()</title>
+<indexterm><primary>sizeSet</primary><secondary>bsp_BMP</secondary></indexterm>
+<indexterm><primary>bsp_BMP</primary><secondary>sizeSet</secondary></indexterm>
+<para><computeroutput>void bsp_BMP::sizeSet (<link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> x, <link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> y)</computeroutput></para><para>
+
+<para>设置图片大小 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Width</entry><entry>
+<para>图片宽度 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>Height</entry><entry>
+<para>图片高度 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_bsp___b_m_p_8cpp_source">bsp_BMP.cpp</link> 第 <link linkend="_bsp___b_m_p_8cpp_source_1l00078">78</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_classbsp___b_m_p_1a64dcf31f5722327336d87794b873a335"/><section>
+    <title>BITMAPINFO</title>
+<indexterm><primary>BITMAPINFO</primary><secondary>bsp_BMP</secondary></indexterm>
+<indexterm><primary>bsp_BMP</primary><secondary>BITMAPINFO</secondary></indexterm>
+<para><computeroutput><link linkend="_struct___b_i_t_m_a_p_i_n_f_o">_BITMAPINFO</link> bsp_BMP::BITMAPINFO</computeroutput></para><para>
+
+<para>文件头 </para>
+</para>
+<para>
+在文件 <link linkend="_bsp___b_m_p_8h_source">bsp_BMP.h</link> 第 <link linkend="_bsp___b_m_p_8h_source_1l00108">108</link> 行定义.</para>
+</section>
+<anchor xml:id="_classbsp___b_m_p_1a2023aceaef140268a12bc61b81d410ca"/><section>
+    <title>dat</title>
+<indexterm><primary>dat</primary><secondary>bsp_BMP</secondary></indexterm>
+<indexterm><primary>bsp_BMP</primary><secondary>dat</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca">u8</link>* bsp_BMP::dat</computeroutput></para><para>
+
+<para>数据区 </para>
+</para>
+<para>
+在文件 <link linkend="_bsp___b_m_p_8h_source">bsp_BMP.h</link> 第 <link linkend="_bsp___b_m_p_8h_source_1l00110">110</link> 行定义.</para>
+</section>
+<anchor xml:id="_classbsp___b_m_p_1a8a1c31ee70ed4061ad8bea4254959b83"/><section>
+    <title>Size</title>
+<indexterm><primary>Size</primary><secondary>bsp_BMP</secondary></indexterm>
+<indexterm><primary>bsp_BMP</primary><secondary>Size</secondary></indexterm>
+<para><computeroutput><link linkend="_varint_8h_1afaa62991928fb9fb18ff0db62a040aba">u32</link> bsp_BMP::Size</computeroutput></para><para>
+
+<para>文件大小 </para>
+</para>
+<para>
+在文件 <link linkend="_bsp___b_m_p_8h_source">bsp_BMP.h</link> 第 <link linkend="_bsp___b_m_p_8h_source_1l00109">109</link> 行定义.</para>
+</section>
+<para>
+该类的文档由以下文件生成:</para>
+D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp___b_m_p_8h">bsp_BMP.h</link>D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp___b_m_p_8cpp">bsp_BMP.cpp</link></section>
+</section>

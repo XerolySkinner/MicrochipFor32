@@ -13,12 +13,19 @@
 </chapter>
 <chapter>
     <title>类说明</title>
+    <xi:include href="struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="struct___b_i_t_m_a_p_i_n_f_o.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="struct___b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="struct__l_queue.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="struct__l_stack.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="struct___r_g_b_q_u_a_d.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbsp___b_m_p.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbsp___differential.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classbsp___digit.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classbsp___i_i_c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classbsp___i_i_c___s_t_m32.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classbsp___increment___p_i_d.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbsp___integral.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classbsp___m_a_x6675.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classbsp___mod_bus___rx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classbsp___mod_bus___s_t_m32.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -34,6 +41,7 @@
     <xi:include href="class_s_t_l__l_stack.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="class_s_t_l__r_queue.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="class_s_t_l__r_stack.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structstruct__bsp___flash___pack.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </chapter>
 <chapter>
     <title>文件说明</title>
@@ -41,6 +49,14 @@
     <xi:include href="bsp___a_t24_c00_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___a_t24_c00_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___a_t24_c00_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___b_m_p_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___b_m_p_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___b_m_p_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___b_m_p_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___calculus_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___calculus_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___calculus_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___calculus_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___c_r_c_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___c_r_c_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___c_r_c_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -49,6 +65,10 @@
     <xi:include href="bsp___digit_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___digit_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___digit_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp__flash_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp__flash_8c_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp__flash_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp__flash_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___i_i_c_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___i_i_c_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___i_i_c_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>

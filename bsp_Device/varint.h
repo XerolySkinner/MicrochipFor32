@@ -22,7 +22,7 @@
  */
 
 /**
- * @file		varint
+ * @file		varint.h
  * @brief		全局共用的标准类型表
  * @mainpage	主要信息
  * @author		Yuankang Liang(XerolySkinner)
@@ -56,5 +56,30 @@ typedef volatile i8		vi8;	///< 8位有符号易变类型
 typedef volatile i16 	vi16;	///< 16位有符号易变类型
 typedef volatile i32 	vi32;	///< 32位有符号易变类型
 typedef volatile i64 	vi64;	///< 64位有符号易变类型
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//----------------------------------------------------------------------------------------------------
+//	位宏
+#define P8(x)		((u8*)(&(x)))				///< 强制转换变成u8的指针
+#define Pn8(x,y)	(((u8*)(&(x)))[y])			///< 强制转换变成u8的数组
+#define P16(x)		((u16*)(&(x)))				///< 强制转换变成u16的指针
+#define Pn16(x,y)	(((u16*)(&(x)))[y])			///< 强制转换变成u16的数组
+#define P32(x)		((u32*)(&(x)))				///< 强制转换变成u32的指针
+#define Pn32(x,y)	(((u32*)(&(x)))[y])			///< 强制转换变成u32的数组
+
+#define DelLb(x)	(x & (x - 1))				///< 移除最低位的1
+#define qDelLb(x)	(x=(x & (x - 1)))			///< 移除并保存最低位的1
+
+#define toBool(x)	(x!=0)						///< 数布尔化
+#define uBit(x,y)	(x&(1<<y))					///< 挑选某一位
+#define tBit(x,y)	(toBool(uBit(x,y)))			///< 挑选某一位并且布尔化
+
+#define sBit(x,y)	(x|(1<<y))					///< 置高某一位
+#define rBit(x,y)	(x&(~(1<<y)))				///< 拉低某一位
+#define mBit(x,y,z)	((z)?sBit(x,y):rBit(x,y))	///< 选择性拉高拉低某一位
+
+#define LpAdd(x,y)	((x+1)<y?x+1:0)				///< 带最高限制的加法
+#define LpDec(x,y)	(x>0?x-1:y-1)				///< 带最低限制的减法
+#define qLpAdd(x,y)	(x=(x+1)<y?x+1:0)			///< 带最高限制的自增
+#define qLpDec(x,y)	(x=x>0?x-1:y-1)				///< 带最低限制的自减
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 

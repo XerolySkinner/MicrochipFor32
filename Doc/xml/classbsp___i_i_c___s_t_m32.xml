@@ -53,7 +53,7 @@
         </inbodydescription>
         <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h" line="65" column="13" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h" bodystart="65" bodyend="-1"/>
         <referencedby refid="classbsp___i_i_c___s_t_m32_1a22566656cd2c5e8e1ab6b4c6aa32b63b" compoundref="bsp___i_i_c___s_t_m32_8cpp" startline="51" endline="55">bsp_IIC_STM32</referencedby>
-        <referencedby refid="classbsp___i_i_c___s_t_m32_1a8e703fab0f20578492ff23cb185b1a8d" compoundref="bsp___i_i_c___s_t_m32_8cpp" startline="89" endline="98">IIC_SDA</referencedby>
+        <referencedby refid="classbsp___i_i_c___s_t_m32_1a8e703fab0f20578492ff23cb185b1a8d" compoundref="bsp___i_i_c___s_t_m32_8cpp" startline="88" endline="97">IIC_SDA</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classbsp___i_i_c___s_t_m32_1a73c8aa1aef1ed9e4ff8d46e5c7755272" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -69,7 +69,7 @@
         </inbodydescription>
         <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h" line="66" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h" bodystart="66" bodyend="-1"/>
         <referencedby refid="classbsp___i_i_c___s_t_m32_1a22566656cd2c5e8e1ab6b4c6aa32b63b" compoundref="bsp___i_i_c___s_t_m32_8cpp" startline="51" endline="55">bsp_IIC_STM32</referencedby>
-        <referencedby refid="classbsp___i_i_c___s_t_m32_1a8e703fab0f20578492ff23cb185b1a8d" compoundref="bsp___i_i_c___s_t_m32_8cpp" startline="89" endline="98">IIC_SDA</referencedby>
+        <referencedby refid="classbsp___i_i_c___s_t_m32_1a8e703fab0f20578492ff23cb185b1a8d" compoundref="bsp___i_i_c___s_t_m32_8cpp" startline="88" endline="97">IIC_SDA</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -210,7 +210,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h" line="60" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.cpp" bodystart="89" bodyend="98"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h" line="60" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.cpp" bodystart="88" bodyend="97"/>
         <references refid="classbsp___i_i_c___s_t_m32_1a73c8aa1aef1ed9e4ff8d46e5c7755272" compoundref="bsp___i_i_c___s_t_m32_8h" startline="66">GPIO_Pin_SDA</references>
         <references refid="classbsp___i_i_c___s_t_m32_1aae22b18b9aa61649c4abd31f79fa7a82" compoundref="bsp___i_i_c___s_t_m32_8h" startline="65">GPIOx_SDA</references>
         <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a048bbf954430bbc34fa11280165ed534" compoundref="bsp___i_i_c_8h" startline="45">IIC_RESET</references>

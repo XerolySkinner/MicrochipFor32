@@ -26,5 +26,11 @@ var searchData=
   ['init_23',['Init',['../classbsp___s_t_m32___o_l_e_d.html#a8d7c3a121efe0f93f01b4c0423843d7a',1,'bsp_STM32_OLED']]],
   ['inregdat_24',['InRegDat',['../classbsp___mod_bus___rx.html#ab275dbfa83dd90eff0cbf0411dfe8e4a',1,'bsp_ModBus_Rx']]],
   ['inregmem_25',['InRegMem',['../classbsp___mod_bus___rx.html#a37508047d184916eb7133a4ad8f10a6c',1,'bsp_ModBus_Rx']]],
-  ['integral_26',['integral',['../classbsp___position___p_i_d.html#a9e7c0b93c1936f3aca77800997f99c05',1,'bsp_Position_PID']]]
+  ['integral_26',['Integral',['../classbsp___integral.html#ade46f89bfdc6dd778c045a51c76c1839',1,'bsp_Integral']]],
+  ['integral_27',['integral',['../classbsp___position___p_i_d.html#a9e7c0b93c1936f3aca77800997f99c05',1,'bsp_Position_PID']]],
+  ['integral_5fclslist_28',['Integral_clslist',['../classbsp___integral.html#aae2b6143ca39861a83b77befc131bf5e',1,'bsp_Integral']]],
+  ['integral_5fdellist_29',['Integral_dellist',['../classbsp___integral.html#a47307ddf418d2686245b118dcf61a199',1,'bsp_Integral']]],
+  ['integral_5flist_30',['Integral_list',['../classbsp___integral.html#a80693e18b9b9509bdec0ebfd72f84072',1,'bsp_Integral']]],
+  ['integral_5fmakelist_31',['Integral_makelist',['../classbsp___integral.html#a86d9e02d1146744fe80ebab69070abb4',1,'bsp_Integral']]],
+  ['integral_5fset_32',['Integral_set',['../classbsp___integral.html#aaf7474301ed76ca9ce2b1884ae870019',1,'bsp_Integral']]]
 ];

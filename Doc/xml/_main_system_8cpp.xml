@@ -71,7 +71,7 @@
 </para>
         </detaileddescription>
         <inbodydescription>
-<para><xrefsect id="todo_1_todo000004"><xreftitle>待办事项</xreftitle><xrefdescription><para>在此处填写初始化程序 </para>
+<para><xrefsect id="todo_1_todo000005"><xreftitle>待办事项</xreftitle><xrefdescription><para>在此处填写初始化程序 </para>
 </xrefdescription></xrefsect></para>
         </inbodydescription>
         <location file="D:/gitt/MicrochipFor32/bsp_System/MainSystem.cpp" line="47" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_System/MainSystem.cpp" bodystart="47" bodyend="49"/>
@@ -93,7 +93,7 @@
 </para>
         </detaileddescription>
         <inbodydescription>
-<para><xrefsect id="todo_1_todo000005"><xreftitle>待办事项</xreftitle><xrefdescription><para>在此处填写主进程程序 </para>
+<para><xrefsect id="todo_1_todo000006"><xreftitle>待办事项</xreftitle><xrefdescription><para>在此处填写主进程程序 </para>
 </xrefdescription></xrefsect></para>
         </inbodydescription>
         <location file="D:/gitt/MicrochipFor32/bsp_System/MainSystem.cpp" line="56" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_System/MainSystem.cpp" bodystart="56" bodyend="60"/>

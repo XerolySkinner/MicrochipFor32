@@ -22,7 +22,7 @@
  */
 
  /**
-  * @file		bsp_flash.h
+  * @file		bsp_flash.c
   * @brief		写STM32的Flash库
   * @mainpage	主要信息
   * @author		Yuankang Liang(XerolySkinner)
