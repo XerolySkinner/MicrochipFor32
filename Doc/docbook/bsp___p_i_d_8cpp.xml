@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_bsp___p_i_d_8cpp" xml:lang="zh">
-<title>D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.cpp 文件参考</title>
-<indexterm><primary>D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.cpp</primary></indexterm>
+<title>D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.cpp 文件参考</title>
+<indexterm><primary>D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.cpp</primary></indexterm>
 <para>
 
 <para>实现了PID算法 </para>

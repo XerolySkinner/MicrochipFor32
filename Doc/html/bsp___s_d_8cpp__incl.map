@@ -1,7 +1,7 @@
-<map id="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.cpp" name="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.cpp">
-<area shape="rect" id="node1" title="操作SD卡的库" alt="" coords="5,5,172,45"/>
-<area shape="rect" id="node2" href="$bsp___s_d_8h.html" title="操作SD卡的库" alt="" coords="49,93,128,119"/>
-<area shape="rect" id="node3" title=" " alt="" coords="23,167,74,192"/>
-<area shape="rect" id="node4" href="$varint_8h.html" title="全局共用的标准类型表" alt="" coords="99,167,161,192"/>
-<area shape="rect" id="node5" title=" " alt="" coords="97,240,163,265"/>
+<map id="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.cpp" name="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.cpp">
+<area shape="rect" id="node1" title="操作SD卡的库" alt="" coords="5,5,176,60"/>
+<area shape="rect" id="node2" href="$bsp___s_d_8h.html" title="操作SD卡的库" alt="" coords="51,108,130,133"/>
+<area shape="rect" id="node3" title=" " alt="" coords="25,181,76,207"/>
+<area shape="rect" id="node4" href="$varint_8h.html" title="全局共用的标准类型表" alt="" coords="101,181,163,207"/>
+<area shape="rect" id="node5" title=" " alt="" coords="99,255,165,280"/>
 </map>

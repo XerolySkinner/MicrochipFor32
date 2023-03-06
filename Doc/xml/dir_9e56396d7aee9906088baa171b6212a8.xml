@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="dir_9e56396d7aee9906088baa171b6212a8" kind="dir">
+    <compoundname>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus</compoundname>
+    <innerfile refid="bsp___mod_bus_8cpp">bsp_ModBus.cpp</innerfile>
+    <innerfile refid="bsp___mod_bus_8h">bsp_ModBus.h</innerfile>
+    <innerfile refid="bsp___mod_bus___s_t_m32_8cpp">bsp_ModBus_STM32.cpp</innerfile>
+    <innerfile refid="bsp___mod_bus___s_t_m32_8h">bsp_ModBus_STM32.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_1173d1fc54217fd2f2a5aace008eb0a4" xml:lang="zh">
+<title>D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI 目录参考</title>
+<indexterm><primary>D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI 目录参考</primary></indexterm>
+bsp_SPI 的目录依赖关系图<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_1173d1fc54217fd2f2a5aace008eb0a4_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>文件    </title>
+        <itemizedlist>
+            <listitem><para>文件 <link linkend="_bsp___m_a_x6675_8cpp">bsp_MAX6675.cpp</link></para>
+
+<para>实现了MAX6675的驱动 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___m_a_x6675_8h">bsp_MAX6675.h</link></para>
+
+<para>实现了MAX6675的驱动 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___s_d_8cpp">bsp_SD.cpp</link></para>
+
+<para>操作SD卡的库 </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_bsp___s_d_8h">bsp_SD.h</link></para>
+
+<para>操作SD卡的库 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -253,5 +253,5 @@ bsp_IIC_STM32 的协作图:<para>
 </section>
 <para>
 该类的文档由以下文件生成:</para>
-D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp___i_i_c___s_t_m32_8h">bsp_IIC_STM32.h</link>D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp___i_i_c___s_t_m32_8cpp">bsp_IIC_STM32.cpp</link></section>
+D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/<link linkend="_bsp___i_i_c___s_t_m32_8h">bsp_IIC_STM32.h</link>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/<link linkend="_bsp___i_i_c___s_t_m32_8cpp">bsp_IIC_STM32.cpp</link></section>
 </section>

@@ -7,7 +7,7 @@
     <includes refid="bsp___a_t24_c00_8h" local="yes">bsp_AT24C00.h</includes>
     <incdepgraph>
       <node id="1">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.cpp</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.cpp</label>
         <link refid="bsp___a_t24_c00_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -129,6 +129,6 @@
 <codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbsp___i_i_c_1aae8c08f59f3fce9dce27f9f04beda683" kindref="member">IIC_Read</ref>(<ref refid="classbsp___s_t_m32___a_t24_c00_1a7b81cd0d8fea1bb0ce4e4b0143612bde" kindref="member">Address</ref>,addr,dat,len);}</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.cpp"/>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.cpp"/>
   </compounddef>
 </doxygen>

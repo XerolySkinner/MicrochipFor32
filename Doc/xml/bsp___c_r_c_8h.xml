@@ -3,11 +3,11 @@
   <compounddef id="bsp___c_r_c_8h" kind="file" language="C++">
     <compoundname>bsp_CRC.h</compoundname>
     <includes refid="varint_8h" local="yes">varint.h</includes>
-    <includedby refid="bsp___c_r_c_8cpp" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_CRC.cpp</includedby>
-    <includedby refid="bsp___mod_bus_8cpp" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp</includedby>
+    <includedby refid="bsp___mod_bus_8cpp" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.cpp</includedby>
+    <includedby refid="bsp___c_r_c_8cpp" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_CRC.cpp</includedby>
     <incdepgraph>
       <node id="1">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_CRC.h</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_CRC.h</label>
         <link refid="bsp___c_r_c_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -24,20 +24,20 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="2">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_CRC.cpp</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.cpp</label>
+        <link refid="bsp___mod_bus_8cpp"/>
+      </node>
+      <node id="3">
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_CRC.cpp</label>
         <link refid="bsp___c_r_c_8cpp"/>
       </node>
       <node id="1">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_CRC.h</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_CRC.h</label>
         <link refid="bsp___c_r_c_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-      </node>
-      <node id="3">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp</label>
-        <link refid="bsp___mod_bus_8cpp"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="func">
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_CRC.h" line="38" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_CRC.cpp" bodystart="91" bodyend="99" declfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_CRC.h" declline="38" declcolumn="5"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_CRC.h" line="38" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_CRC.cpp" bodystart="91" bodyend="99" declfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_CRC.h" declline="38" declcolumn="5"/>
         <references refid="bsp___c_r_c_8cpp_1a7a737378eb1c2e4d7d493764c6e7647f" compoundref="bsp___c_r_c_8cpp" startline="38">aucCRCHi</references>
         <references refid="bsp___c_r_c_8cpp_1a1ec224bcb81fbefe6d11364dcd71e5a0" compoundref="bsp___c_r_c_8cpp" startline="64">aucCRCLo</references>
         <referencedby refid="classbsp___mod_bus___rx_1a39330845d4ced51850b9edaaab052e0f" compoundref="bsp___mod_bus_8cpp" startline="304" endline="358">bsp_ModBus_Rx::analysis</referencedby>
@@ -111,6 +111,6 @@
 <codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>函数</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/><ref refid="bsp___c_r_c_8h_1abb1fda5ed561362d12fe987758986919" kindref="member">CRC16_MODBUS</ref>(<ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref><sp/>*pucFrame,<ref refid="varint_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref><sp/>usLen);</highlight></codeline>
     </programlisting>
-    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_CRC.h"/>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_CRC.h"/>
   </compounddef>
 </doxygen>

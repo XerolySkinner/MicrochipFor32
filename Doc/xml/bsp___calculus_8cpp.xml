@@ -5,7 +5,7 @@
     <includes refid="bsp___calculus_8h" local="yes">bsp_Calculus.h</includes>
     <incdepgraph>
       <node id="1">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_Calculus.cpp</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_Calculus.cpp</label>
         <link refid="bsp___calculus_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -111,6 +111,6 @@
 <codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classbsp___integral_1a662c735b9432a46e48a642ebb9c0e8fa" kindref="member">result_len</ref>;<sp/>i++)</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___integral_1a656d90c5a713abf0665f1dcbf1a5101a" kindref="member">result_list</ref>[i]<sp/>=<sp/>0;}</highlight></codeline>
     </programlisting>
-    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_Calculus.cpp"/>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_Calculus.cpp"/>
   </compounddef>
 </doxygen>

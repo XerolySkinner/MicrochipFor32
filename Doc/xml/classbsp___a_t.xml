@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT.h" line="45" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT.cpp" bodystart="44" bodyend="47"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT/bsp_AT.h" line="45" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT/bsp_AT.cpp" bodystart="44" bodyend="47"/>
         <references refid="classbsp___a_t_1afd25c65d270b9db28370d08c6424537e">Transmit</references>
         <referencedby refid="classbsp___a_t_k_e_s_p8266_1ad073fdbbb243281762d4aaedcee7e7f3" compoundref="bsp___a_t_k_e_s_p8266_8cpp" startline="65" endline="76">bsp_ATKESP8266::AP_TCP_Client</referencedby>
         <referencedby refid="classbsp___a_t_k_e_s_p8266_1a4a4ee594ad3ebb2a57008669d4e4ec7f" compoundref="bsp___a_t_k_e_s_p8266_8cpp" startline="47" endline="56">bsp_ATKESP8266::AP_TCP_Service</referencedby>
@@ -90,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT.h" line="52" column="14"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT/bsp_AT.h" line="52" column="14"/>
         <referencedby refid="classbsp___a_t_1adee8a046130e8e138d0e37dc785234ae" compoundref="bsp___a_t_8cpp" startline="44" endline="47">com</referencedby>
       </memberdef>
       </sectiondef>
@@ -111,7 +111,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT.h" line="43" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT.h" bodystart="43" bodyend="53"/>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT/bsp_AT.h" line="43" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT/bsp_AT.h" bodystart="43" bodyend="53"/>
     <listofallmembers>
       <member refid="classbsp___a_t_1adee8a046130e8e138d0e37dc785234ae" prot="public" virt="non-virtual"><scope>bsp_AT</scope><name>com</name></member>
       <member refid="classbsp___a_t_1afd25c65d270b9db28370d08c6424537e" prot="protected" virt="pure-virtual"><scope>bsp_AT</scope><name>Transmit</name></member>

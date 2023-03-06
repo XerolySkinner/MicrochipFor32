@@ -22,7 +22,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.cpp</label>
         <link refid="bsp___o_l_e_d___s_t_m32_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp" line="37" column="17" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h" bodystart="110" bodyend="-1" declfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp" declline="37" declcolumn="17"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.cpp" line="37" column="17" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.h" bodystart="110" bodyend="-1" declfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.cpp" declline="37" declcolumn="17"/>
         <referencedby refid="classbsp___s_t_m32___o_l_e_d_1a2fd3f6c887830072509f5aa916ad8751" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="145" endline="152">bsp_STM32_OLED::Draw_ASCII</referencedby>
       </memberdef>
       </sectiondef>
@@ -181,6 +181,6 @@
 <codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classbsp___s_t_m32___o_l_e_d_1a4ce72ba6b9e7c027ecfaf9ad8fc30135" kindref="member">Send_cmd</ref>(<ref refid="bsp___o_l_e_d___s_t_m32_8h_1a302eedcb477b4d3c89cf5629e45c41e5" kindref="member">OLED_init_cmd</ref>[i]);}</highlight></codeline>
 <codeline lineno="162"><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp"/>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.cpp"/>
   </compounddef>
 </doxygen>

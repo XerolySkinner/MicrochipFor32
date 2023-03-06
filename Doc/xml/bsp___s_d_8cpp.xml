@@ -5,7 +5,7 @@
     <includes refid="bsp___s_d_8h" local="yes">bsp_SD.h</includes>
     <incdepgraph>
       <node id="1">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.cpp</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.cpp</label>
         <link refid="bsp___s_d_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -409,6 +409,6 @@
 <codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbsp___s_d_1a6c68fa82294f18968a92719931cff5fa" kindref="member">bsp_SD::DFF</ref>=0xFF;</highlight></codeline>
 <codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbsp___s_d_1a2350601b90ad75bd434094a9c31475c4" kindref="member">bsp_SD::SD_TYPE</ref>=0x00;}</highlight></codeline>
     </programlisting>
-    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.cpp"/>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.cpp"/>
   </compounddef>
 </doxygen>

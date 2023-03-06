@@ -1,4 +1,4 @@
-<map id="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h" name="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h">
-<area shape="rect" id="node1" title="本类实现AT24C00的通讯" alt="" coords="13,5,201,45"/>
-<area shape="rect" id="node2" href="$bsp___a_t24_c00_8cpp.html" title="本类实现AT24C00的通讯" alt="" coords="5,93,208,133"/>
+<map id="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.h" name="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.h">
+<area shape="rect" id="node1" title="本类实现AT24C00的通讯" alt="" coords="5,5,169,60"/>
+<area shape="rect" id="node2" href="$bsp___a_t24_c00_8cpp.html" title="本类实现AT24C00的通讯" alt="" coords="5,108,169,163"/>
 </map>

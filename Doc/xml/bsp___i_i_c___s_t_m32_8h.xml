@@ -5,10 +5,10 @@
     <includes local="yes">gpio.h</includes>
     <includes refid="varint_8h" local="yes">varint.h</includes>
     <includes refid="bsp___i_i_c_8h" local="yes">bsp_IIC.h</includes>
-    <includedby refid="bsp___a_t24_c00_8h" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h</includedby>
-    <includedby refid="bsp___i_i_c___s_t_m32_8cpp" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.cpp</includedby>
-    <includedby refid="bsp___o_l_e_d___s_t_m32_8cpp" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp</includedby>
-    <includedby refid="bsp___o_l_e_d___s_t_m32_8h" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h</includedby>
+    <includedby refid="bsp___a_t24_c00_8h" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.h</includedby>
+    <includedby refid="bsp___i_i_c___s_t_m32_8cpp" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC_STM32.cpp</includedby>
+    <includedby refid="bsp___o_l_e_d___s_t_m32_8cpp" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.cpp</includedby>
+    <includedby refid="bsp___o_l_e_d___s_t_m32_8h" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.h</includedby>
     <incdepgraph>
       <node id="5">
         <label>bsp_IIC.h</label>
@@ -17,7 +17,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC_STM32.h</label>
         <link refid="bsp___i_i_c___s_t_m32_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -41,21 +41,21 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="3">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.cpp</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.cpp</label>
         <link refid="bsp___a_t24_c00_8cpp"/>
       </node>
       <node id="2">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.h</label>
         <link refid="bsp___a_t24_c00_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
       <node id="4">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.cpp</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC_STM32.cpp</label>
         <link refid="bsp___i_i_c___s_t_m32_8cpp"/>
       </node>
       <node id="1">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC_STM32.h</label>
         <link refid="bsp___i_i_c___s_t_m32_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -67,11 +67,11 @@
         </childnode>
       </node>
       <node id="5">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.cpp</label>
         <link refid="bsp___o_l_e_d___s_t_m32_8cpp"/>
       </node>
       <node id="6">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.h</label>
         <link refid="bsp___o_l_e_d___s_t_m32_8h"/>
         <childnode refid="5" relation="include">
         </childnode>
@@ -138,6 +138,6 @@
 <codeline lineno="69"><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
     </programlisting>
-    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.h"/>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC_STM32.h"/>
   </compounddef>
 </doxygen>

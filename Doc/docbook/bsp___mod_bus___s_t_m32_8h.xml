@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_bsp___mod_bus___s_t_m32_8h" xml:lang="zh">
-<title>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus_STM32.h 文件参考</title>
-<indexterm><primary>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus_STM32.h</primary></indexterm>
+<title>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus_STM32.h 文件参考</title>
+<indexterm><primary>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus_STM32.h</primary></indexterm>
 <para>
 
 <para>ModBus通信基于STM32 </para>

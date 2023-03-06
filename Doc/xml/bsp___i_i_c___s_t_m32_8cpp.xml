@@ -12,7 +12,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.cpp</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC_STM32.cpp</label>
         <link refid="bsp___i_i_c___s_t_m32_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -111,6 +111,6 @@
 <codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}}</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC_STM32.cpp"/>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC_STM32.cpp"/>
   </compounddef>
 </doxygen>

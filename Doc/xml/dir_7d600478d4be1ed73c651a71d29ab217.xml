@@ -2,38 +2,17 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
   <compounddef id="dir_7d600478d4be1ed73c651a71d29ab217" kind="dir">
     <compoundname>D:/gitt/MicrochipFor32/bsp_Device</compoundname>
-    <innerfile refid="bsp___a_t_8cpp">bsp_AT.cpp</innerfile>
-    <innerfile refid="bsp___a_t_8h">bsp_AT.h</innerfile>
-    <innerfile refid="bsp___a_t24_c00_8cpp">bsp_AT24C00.cpp</innerfile>
-    <innerfile refid="bsp___a_t24_c00_8h">bsp_AT24C00.h</innerfile>
-    <innerfile refid="bsp___a_t_k_e_s_p8266_8cpp">bsp_ATKESP8266.cpp</innerfile>
-    <innerfile refid="bsp___a_t_k_e_s_p8266_8h">bsp_ATKESP8266.h</innerfile>
-    <innerfile refid="bsp___b_m_p_8cpp">bsp_BMP.cpp</innerfile>
-    <innerfile refid="bsp___b_m_p_8h">bsp_BMP.h</innerfile>
-    <innerfile refid="bsp___calculus_8cpp">bsp_Calculus.cpp</innerfile>
-    <innerfile refid="bsp___calculus_8h">bsp_Calculus.h</innerfile>
-    <innerfile refid="bsp___c_r_c_8cpp">bsp_CRC.cpp</innerfile>
-    <innerfile refid="bsp___c_r_c_8h">bsp_CRC.h</innerfile>
+    <innerdir refid="dir_20a18538dd236a3a627b284c150b5db4">D:/gitt/MicrochipFor32/bsp_Device/bsp_AT</innerdir>
+    <innerdir refid="dir_bc0b3d4ca54c991a8e289500a34c8232">D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC</innerdir>
+    <innerdir refid="dir_0b00494da97109c0933a24e4249d2d8f">D:/gitt/MicrochipFor32/bsp_Device/bsp_math</innerdir>
+    <innerdir refid="dir_9e56396d7aee9906088baa171b6212a8">D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus</innerdir>
+    <innerdir refid="dir_1173d1fc54217fd2f2a5aace008eb0a4">D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI</innerdir>
     <innerfile refid="bsp___digit_8cpp">bsp_Digit.cpp</innerfile>
     <innerfile refid="bsp___digit_8h">bsp_Digit.h</innerfile>
     <innerfile refid="bsp__flash_8c">bsp_flash.c</innerfile>
     <innerfile refid="bsp__flash_8h">bsp_flash.h</innerfile>
-    <innerfile refid="bsp___i_i_c_8cpp">bsp_IIC.cpp</innerfile>
-    <innerfile refid="bsp___i_i_c_8h">bsp_IIC.h</innerfile>
-    <innerfile refid="bsp___i_i_c___s_t_m32_8cpp">bsp_IIC_STM32.cpp</innerfile>
-    <innerfile refid="bsp___i_i_c___s_t_m32_8h">bsp_IIC_STM32.h</innerfile>
-    <innerfile refid="bsp___m_a_x6675_8cpp">bsp_MAX6675.cpp</innerfile>
-    <innerfile refid="bsp___m_a_x6675_8h">bsp_MAX6675.h</innerfile>
-    <innerfile refid="bsp___mod_bus_8cpp">bsp_ModBus.cpp</innerfile>
-    <innerfile refid="bsp___mod_bus_8h">bsp_ModBus.h</innerfile>
-    <innerfile refid="bsp___mod_bus___s_t_m32_8cpp">bsp_ModBus_STM32.cpp</innerfile>
-    <innerfile refid="bsp___mod_bus___s_t_m32_8h">bsp_ModBus_STM32.h</innerfile>
-    <innerfile refid="bsp___o_l_e_d___s_t_m32_8cpp">bsp_OLED_STM32.cpp</innerfile>
-    <innerfile refid="bsp___o_l_e_d___s_t_m32_8h">bsp_OLED_STM32.h</innerfile>
-    <innerfile refid="bsp___p_i_d_8cpp">bsp_PID.cpp</innerfile>
-    <innerfile refid="bsp___p_i_d_8h">bsp_PID.h</innerfile>
-    <innerfile refid="bsp___s_d_8cpp">bsp_SD.cpp</innerfile>
-    <innerfile refid="bsp___s_d_8h">bsp_SD.h</innerfile>
+    <innerfile refid="bsp___print_art_8cpp">bsp_PrintArt.cpp</innerfile>
+    <innerfile refid="bsp___print_art_8h">bsp_PrintArt.h</innerfile>
     <innerfile refid="varint_8h">varint.h</innerfile>
     <briefdescription>
     </briefdescription>

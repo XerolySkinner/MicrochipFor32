@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="58" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp" bodystart="136" bodyend="144"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.h" line="58" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.cpp" bodystart="136" bodyend="144"/>
         <references refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" compoundref="bsp___i_i_c_8cpp" startline="98" endline="108">IIC_SendByte</references>
         <references refid="classbsp___i_i_c_1a97ad38a37ad0140987ba79d878f0d9e9" compoundref="bsp___i_i_c_8cpp" startline="47" endline="54">IIC_Start</references>
         <references refid="classbsp___i_i_c_1ae513e1a05cbbae2a6f37e6cbb3bb63e2" compoundref="bsp___i_i_c_8cpp" startline="59" endline="64">IIC_Stop</references>
@@ -108,7 +108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="59" column="3" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp" bodystart="153" bodyend="166"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.h" line="59" column="3" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.cpp" bodystart="153" bodyend="166"/>
         <references refid="classbsp___i_i_c_1a15201c6a6bd1affde8da0fc642f62272" compoundref="bsp___i_i_c_8cpp" startline="114" endline="123">IIC_RecByte</references>
         <references refid="classbsp___i_i_c_1a684793afa5c26e6d123ff6ad083342c8" compoundref="bsp___i_i_c_8cpp" startline="71" endline="79">IIC_SendAck</references>
         <references refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" compoundref="bsp___i_i_c_8cpp" startline="98" endline="108">IIC_SendByte</references>
@@ -182,7 +182,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="60" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp" bodystart="177" bodyend="187"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.h" line="60" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.cpp" bodystart="177" bodyend="187"/>
         <references refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" compoundref="bsp___i_i_c_8cpp" startline="98" endline="108">IIC_SendByte</references>
         <references refid="classbsp___i_i_c_1a97ad38a37ad0140987ba79d878f0d9e9" compoundref="bsp___i_i_c_8cpp" startline="47" endline="54">IIC_Start</references>
         <references refid="classbsp___i_i_c_1ae513e1a05cbbae2a6f37e6cbb3bb63e2" compoundref="bsp___i_i_c_8cpp" startline="59" endline="64">IIC_Stop</references>
@@ -254,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="61" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp" bodystart="198" bodyend="211"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.h" line="61" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.cpp" bodystart="198" bodyend="211"/>
         <references refid="classbsp___i_i_c_1a15201c6a6bd1affde8da0fc642f62272" compoundref="bsp___i_i_c_8cpp" startline="114" endline="123">IIC_RecByte</references>
         <references refid="classbsp___i_i_c_1a684793afa5c26e6d123ff6ad083342c8" compoundref="bsp___i_i_c_8cpp" startline="71" endline="79">IIC_SendAck</references>
         <references refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" compoundref="bsp___i_i_c_8cpp" startline="98" endline="108">IIC_SendByte</references>
@@ -279,7 +279,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="63" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp" bodystart="47" bodyend="54"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.h" line="63" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.cpp" bodystart="47" bodyend="54"/>
         <references refid="classbsp___i_i_c_1ad3d17035a8d19842ccabbf743a4405f4">IIC_Delay</references>
         <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a048bbf954430bbc34fa11280165ed534" compoundref="bsp___i_i_c_8h" startline="45">IIC_RESET</references>
         <references refid="classbsp___i_i_c_1a9c71db14d666983ab15621f119bdc171">IIC_SCK</references>
@@ -310,7 +310,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="64" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp" bodystart="59" bodyend="64"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.h" line="64" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.cpp" bodystart="59" bodyend="64"/>
         <references refid="classbsp___i_i_c_1ad3d17035a8d19842ccabbf743a4405f4">IIC_Delay</references>
         <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a048bbf954430bbc34fa11280165ed534" compoundref="bsp___i_i_c_8h" startline="45">IIC_RESET</references>
         <references refid="classbsp___i_i_c_1a9c71db14d666983ab15621f119bdc171">IIC_SCK</references>
@@ -352,7 +352,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="65" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp" bodystart="71" bodyend="79"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.h" line="65" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.cpp" bodystart="71" bodyend="79"/>
         <references refid="classbsp___i_i_c_1ad3d17035a8d19842ccabbf743a4405f4">IIC_Delay</references>
         <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a048bbf954430bbc34fa11280165ed534" compoundref="bsp___i_i_c_8h" startline="45">IIC_RESET</references>
         <references refid="classbsp___i_i_c_1a9c71db14d666983ab15621f119bdc171">IIC_SCK</references>
@@ -380,7 +380,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="66" column="3" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp" bodystart="85" bodyend="92"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.h" line="66" column="3" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.cpp" bodystart="85" bodyend="92"/>
         <references refid="classbsp___i_i_c_1ad3d17035a8d19842ccabbf743a4405f4">IIC_Delay</references>
         <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7ae4ead84d2c3bbc3f2403d9a5157a3f94" compoundref="bsp___i_i_c_8h" startline="47">IIC_READ</references>
         <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a048bbf954430bbc34fa11280165ed534" compoundref="bsp___i_i_c_8h" startline="45">IIC_RESET</references>
@@ -423,7 +423,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="67" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp" bodystart="98" bodyend="108"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.h" line="67" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.cpp" bodystart="98" bodyend="108"/>
         <references refid="classbsp___i_i_c_1ad3d17035a8d19842ccabbf743a4405f4">IIC_Delay</references>
         <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a048bbf954430bbc34fa11280165ed534" compoundref="bsp___i_i_c_8h" startline="45">IIC_RESET</references>
         <references refid="classbsp___i_i_c_1a9c71db14d666983ab15621f119bdc171">IIC_SCK</references>
@@ -457,7 +457,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="68" column="3" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp" bodystart="114" bodyend="123"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.h" line="68" column="3" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.cpp" bodystart="114" bodyend="123"/>
         <references refid="classbsp___i_i_c_1ad3d17035a8d19842ccabbf743a4405f4">IIC_Delay</references>
         <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7ae4ead84d2c3bbc3f2403d9a5157a3f94" compoundref="bsp___i_i_c_8h" startline="47">IIC_READ</references>
         <references refid="bsp___i_i_c_8h_1adf764cbdea00d65edcd07bb9953ad2b7a048bbf954430bbc34fa11280165ed534" compoundref="bsp___i_i_c_8h" startline="45">IIC_RESET</references>
@@ -500,7 +500,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="77" column="12"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.h" line="77" column="12"/>
         <referencedby refid="classbsp___i_i_c_1a15201c6a6bd1affde8da0fc642f62272" compoundref="bsp___i_i_c_8cpp" startline="114" endline="123">IIC_RecByte</referencedby>
         <referencedby refid="classbsp___i_i_c_1a684793afa5c26e6d123ff6ad083342c8" compoundref="bsp___i_i_c_8cpp" startline="71" endline="79">IIC_SendAck</referencedby>
         <referencedby refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" compoundref="bsp___i_i_c_8cpp" startline="98" endline="108">IIC_SendByte</referencedby>
@@ -539,7 +539,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="85" column="12"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.h" line="85" column="12"/>
         <referencedby refid="classbsp___i_i_c_1a15201c6a6bd1affde8da0fc642f62272" compoundref="bsp___i_i_c_8cpp" startline="114" endline="123">IIC_RecByte</referencedby>
         <referencedby refid="classbsp___i_i_c_1a684793afa5c26e6d123ff6ad083342c8" compoundref="bsp___i_i_c_8cpp" startline="71" endline="79">IIC_SendAck</referencedby>
         <referencedby refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" compoundref="bsp___i_i_c_8cpp" startline="98" endline="108">IIC_SendByte</referencedby>
@@ -567,7 +567,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="91" column="14"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.h" line="91" column="14"/>
         <referencedby refid="classbsp___i_i_c_1a15201c6a6bd1affde8da0fc642f62272" compoundref="bsp___i_i_c_8cpp" startline="114" endline="123">IIC_RecByte</referencedby>
         <referencedby refid="classbsp___i_i_c_1a684793afa5c26e6d123ff6ad083342c8" compoundref="bsp___i_i_c_8cpp" startline="71" endline="79">IIC_SendAck</referencedby>
         <referencedby refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" compoundref="bsp___i_i_c_8cpp" startline="98" endline="108">IIC_SendByte</referencedby>
@@ -605,7 +605,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" line="56" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.h" bodystart="56" bodyend="92"/>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.h" line="56" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.h" bodystart="56" bodyend="92"/>
     <listofallmembers>
       <member refid="classbsp___i_i_c_1ad3d17035a8d19842ccabbf743a4405f4" prot="protected" virt="pure-virtual"><scope>bsp_IIC</scope><name>IIC_Delay</name></member>
       <member refid="classbsp___i_i_c_1aae8c08f59f3fce9dce27f9f04beda683" prot="public" virt="non-virtual"><scope>bsp_IIC</scope><name>IIC_Read</name></member>

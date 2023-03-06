@@ -22,5 +22,6 @@ var searchData=
   ['bmfheader_19',['bmfHeader',['../struct___b_i_t_m_a_p_i_n_f_o.html#a3356c2aeed730cf31d05fd09244ecbce',1,'_BITMAPINFO']]],
   ['bmicolors_20',['bmiColors',['../struct___b_i_t_m_a_p_i_n_f_o.html#ab5fe5744a8fe46833743bc6b5cf72a49',1,'_BITMAPINFO']]],
   ['bmiheader_21',['bmiHeader',['../struct___b_i_t_m_a_p_i_n_f_o.html#a7d9eafe9a3374cd06dc22fda1af98b6d',1,'_BITMAPINFO']]],
-  ['bsp_5fflash_5fpack_22',['bsp_Flash_Pack',['../bsp__flash_8c.html#a2c0639c4d50bba3762a4295a56a06af8',1,'bsp_flash.c']]]
+  ['bsp_5fflash_5fpack_22',['bsp_Flash_Pack',['../bsp__flash_8c.html#a2c0639c4d50bba3762a4295a56a06af8',1,'bsp_flash.c']]],
+  ['bufflen_23',['Bufflen',['../classbsp___print_art.html#a7b7764b6a699a75f10a6caa85330cbe2',1,'bsp_PrintArt']]]
 ];

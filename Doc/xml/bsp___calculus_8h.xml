@@ -4,10 +4,10 @@
     <compoundname>bsp_Calculus.h</compoundname>
     <includes local="no">stdlib.h</includes>
     <includes refid="varint_8h" local="yes">varint.h</includes>
-    <includedby refid="bsp___calculus_8cpp" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_Calculus.cpp</includedby>
+    <includedby refid="bsp___calculus_8cpp" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_Calculus.cpp</includedby>
     <incdepgraph>
       <node id="1">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_Calculus.h</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_Calculus.h</label>
         <link refid="bsp___calculus_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -29,11 +29,11 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="2">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_Calculus.cpp</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_Calculus.cpp</label>
         <link refid="bsp___calculus_8cpp"/>
       </node>
       <node id="1">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_Calculus.h</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_Calculus.h</label>
         <link refid="bsp___calculus_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -111,6 +111,6 @@
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="83"><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_Calculus.h"/>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_Calculus.h"/>
   </compounddef>
 </doxygen>

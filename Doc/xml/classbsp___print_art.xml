@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="classbsp___print_art" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>bsp_PrintArt</compoundname>
+    <includes refid="bsp___print_art_8h" local="no">bsp_PrintArt.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classbsp___print_art_1a7b7764b6a699a75f10a6caa85330cbe2" prot="private" static="no" mutable="no">
+        <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref></type>
+        <definition>u32 bsp_PrintArt::Bufflen</definition>
+        <argsstring></argsstring>
+        <name>Bufflen</name>
+        <qualifiedname>bsp_PrintArt::Bufflen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_PrintArt.h" line="52" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_PrintArt.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classbsp___print_art_1a93c7cc212617232dcfd5e57a5d4f3521" compoundref="bsp___print_art_8cpp" startline="60" endline="61">bsp_PrintArt</referencedby>
+        <referencedby refid="classbsp___print_art_1a5b89d4eeaeca9f91f9b554ffeea0d272" compoundref="bsp___print_art_8cpp" startline="46" endline="56">print</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbsp___print_art_1a93c7cc212617232dcfd5e57a5d4f3521" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsp_PrintArt::bsp_PrintArt</definition>
+        <argsstring>(void)</argsstring>
+        <name>bsp_PrintArt</name>
+        <qualifiedname>bsp_PrintArt::bsp_PrintArt</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_PrintArt.h" line="48" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_PrintArt.cpp" bodystart="60" bodyend="61"/>
+        <references refid="classbsp___print_art_1a7b7764b6a699a75f10a6caa85330cbe2" compoundref="bsp___print_art_8h" startline="52">Bufflen</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___print_art_1a269df30feafe08cc3803aa9bf88b2a8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bsp_PrintArt::bsp_PrintArt</definition>
+        <argsstring>(u32 len)</argsstring>
+        <name>bsp_PrintArt</name>
+        <qualifiedname>bsp_PrintArt::bsp_PrintArt</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref></type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>重定向后的发射数据 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>缓冲区大小 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_PrintArt.h" line="49" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_PrintArt.cpp" bodystart="66" bodyend="67"/>
+        <references refid="classbsp___print_art_1a7b7764b6a699a75f10a6caa85330cbe2" compoundref="bsp___print_art_8h" startline="52">Bufflen</references>
+      </memberdef>
+      <memberdef kind="function" id="classbsp___print_art_1a5b89d4eeaeca9f91f9b554ffeea0d272" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bsp_PrintArt::print</definition>
+        <argsstring>(const char *format,...)</argsstring>
+        <name>print</name>
+        <qualifiedname>bsp_PrintArt::print</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>重定向后的发射数据 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>格式化的字符串 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>其参数 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>成功与否 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_PrintArt.h" line="50" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_PrintArt.cpp" bodystart="46" bodyend="56"/>
+        <references refid="classbsp___print_art_1a7b7764b6a699a75f10a6caa85330cbe2" compoundref="bsp___print_art_8h" startline="52">Bufflen</references>
+        <references refid="classbsp___print_art_1a548aa058fedb64e031d91c48480b527e">Transmit</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classbsp___print_art_1a548aa058fedb64e031d91c48480b527e" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void bsp_PrintArt::Transmit</definition>
+        <argsstring>(u8 *dat, u32 len)=0</argsstring>
+        <name>Transmit</name>
+        <qualifiedname>bsp_PrintArt::Transmit</qualifiedname>
+        <param>
+          <type><ref refid="varint_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref> *</type>
+          <declname>dat</declname>
+        </param>
+        <param>
+          <type><ref refid="varint_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref></type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_PrintArt.h" line="53" column="14"/>
+        <referencedby refid="classbsp___print_art_1a5b89d4eeaeca9f91f9b554ffeea0d272" compoundref="bsp___print_art_8cpp" startline="46" endline="56">print</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>创造一个print的重定向对象 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_PrintArt.h" line="46" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_PrintArt.h" bodystart="46" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classbsp___print_art_1a93c7cc212617232dcfd5e57a5d4f3521" prot="public" virt="non-virtual"><scope>bsp_PrintArt</scope><name>bsp_PrintArt</name></member>
+      <member refid="classbsp___print_art_1a269df30feafe08cc3803aa9bf88b2a8e" prot="public" virt="non-virtual"><scope>bsp_PrintArt</scope><name>bsp_PrintArt</name></member>
+      <member refid="classbsp___print_art_1a7b7764b6a699a75f10a6caa85330cbe2" prot="private" virt="non-virtual"><scope>bsp_PrintArt</scope><name>Bufflen</name></member>
+      <member refid="classbsp___print_art_1a5b89d4eeaeca9f91f9b554ffeea0d272" prot="public" virt="non-virtual"><scope>bsp_PrintArt</scope><name>print</name></member>
+      <member refid="classbsp___print_art_1a548aa058fedb64e031d91c48480b527e" prot="private" virt="pure-virtual"><scope>bsp_PrintArt</scope><name>Transmit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

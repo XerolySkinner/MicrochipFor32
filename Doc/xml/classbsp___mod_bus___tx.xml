@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="76" column="3" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" bodystart="76" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.h" line="76" column="3" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.h" bodystart="76" bodyend="-1"/>
         <referencedby refid="classbsp___mod_bus___tx_1ac277122ddb733aa37a0000086d5ae239" compoundref="bsp___mod_bus_8cpp" startline="362" endline="363">bsp_ModBus_Tx</referencedby>
         <referencedby refid="classbsp___mod_bus___tx_1a76e712e8d638ecc7b453e1c8afbbad98" compoundref="bsp___mod_bus_8cpp" startline="195" endline="207">ReadInCoil</referencedby>
         <referencedby refid="classbsp___mod_bus___tx_1af055e2569107b8ece7abdce3301e9444" compoundref="bsp___mod_bus_8cpp" startline="70" endline="82">ReadInReg</referencedby>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="60" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp" bodystart="362" bodyend="363"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.h" line="60" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.cpp" bodystart="362" bodyend="363"/>
         <references refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" compoundref="bsp___mod_bus_8h" startline="76">ID</references>
       </memberdef>
       <memberdef kind="function" id="classbsp___mod_bus___tx_1ada605c0e9195aefd43968cfe5b347565" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="62" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp" bodystart="50" bodyend="62"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.h" line="62" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.cpp" bodystart="50" bodyend="62"/>
         <references refid="bsp___c_r_c_8cpp_1abb1fda5ed561362d12fe987758986919" compoundref="bsp___c_r_c_8cpp" startline="91" endline="99">CRC16_MODBUS</references>
         <references refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a9ec5f1febebcade07d80148f67d51594" compoundref="bsp___mod_bus_8h" startline="44">Fun_R_KeepReg</references>
         <references refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" compoundref="bsp___mod_bus_8h" startline="76">ID</references>
@@ -140,7 +140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="63" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp" bodystart="70" bodyend="82"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.h" line="63" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.cpp" bodystart="70" bodyend="82"/>
         <references refid="bsp___c_r_c_8cpp_1abb1fda5ed561362d12fe987758986919" compoundref="bsp___c_r_c_8cpp" startline="91" endline="99">CRC16_MODBUS</references>
         <references refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643ab285b7d7c40fa9a85adba60a3a769fca" compoundref="bsp___mod_bus_8h" startline="45">Fun_R_InReg</references>
         <references refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" compoundref="bsp___mod_bus_8h" startline="76">ID</references>
@@ -187,7 +187,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="64" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp" bodystart="90" bodyend="102"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.h" line="64" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.cpp" bodystart="90" bodyend="102"/>
         <references refid="bsp___c_r_c_8cpp_1abb1fda5ed561362d12fe987758986919" compoundref="bsp___c_r_c_8cpp" startline="91" endline="99">CRC16_MODBUS</references>
         <references refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a2e8689560573f300af3a6c48fdd6ce86" compoundref="bsp___mod_bus_8h" startline="48">Fun_W_OneReg</references>
         <references refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" compoundref="bsp___mod_bus_8h" startline="76">ID</references>
@@ -248,7 +248,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="65" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp" bodystart="112" bodyend="132"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.h" line="65" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.cpp" bodystart="112" bodyend="132"/>
         <references refid="bsp___c_r_c_8cpp_1abb1fda5ed561362d12fe987758986919" compoundref="bsp___c_r_c_8cpp" startline="91" endline="99">CRC16_MODBUS</references>
         <references refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a54562faaab8c1c932c46c6c4cb2552f9" compoundref="bsp___mod_bus_8h" startline="50">Fun_W_Regs</references>
         <references refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" compoundref="bsp___mod_bus_8h" startline="76">ID</references>
@@ -306,7 +306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="66" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp" bodystart="142" bodyend="167"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.h" line="66" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.cpp" bodystart="142" bodyend="167"/>
         <references refid="bsp___c_r_c_8cpp_1abb1fda5ed561362d12fe987758986919" compoundref="bsp___c_r_c_8cpp" startline="91" endline="99">CRC16_MODBUS</references>
         <references refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a54562faaab8c1c932c46c6c4cb2552f9" compoundref="bsp___mod_bus_8h" startline="50">Fun_W_Regs</references>
         <references refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" compoundref="bsp___mod_bus_8h" startline="76">ID</references>
@@ -353,7 +353,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="68" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp" bodystart="175" bodyend="187"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.h" line="68" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.cpp" bodystart="175" bodyend="187"/>
         <references refid="bsp___c_r_c_8cpp_1abb1fda5ed561362d12fe987758986919" compoundref="bsp___c_r_c_8cpp" startline="91" endline="99">CRC16_MODBUS</references>
         <references refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643afa0834864982fdb57c9a954bdbd1599b" compoundref="bsp___mod_bus_8h" startline="42">Fun_R_OutCoil</references>
         <references refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" compoundref="bsp___mod_bus_8h" startline="76">ID</references>
@@ -400,7 +400,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="69" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp" bodystart="195" bodyend="207"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.h" line="69" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.cpp" bodystart="195" bodyend="207"/>
         <references refid="bsp___c_r_c_8cpp_1abb1fda5ed561362d12fe987758986919" compoundref="bsp___c_r_c_8cpp" startline="91" endline="99">CRC16_MODBUS</references>
         <references refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a8c70d4d5036c1a3f9c51a545d13fdd92" compoundref="bsp___mod_bus_8h" startline="43">Fun_R_InCoil</references>
         <references refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" compoundref="bsp___mod_bus_8h" startline="76">ID</references>
@@ -447,7 +447,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="70" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp" bodystart="217" bodyend="230"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.h" line="70" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.cpp" bodystart="217" bodyend="230"/>
         <references refid="bsp___c_r_c_8cpp_1abb1fda5ed561362d12fe987758986919" compoundref="bsp___c_r_c_8cpp" startline="91" endline="99">CRC16_MODBUS</references>
         <references refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a95bb48bd2de82de8a2f5684a6cccff0f" compoundref="bsp___mod_bus_8h" startline="47">Fun_W_OneCoil</references>
         <references refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" compoundref="bsp___mod_bus_8h" startline="76">ID</references>
@@ -508,7 +508,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="71" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp" bodystart="240" bodyend="258"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.h" line="71" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.cpp" bodystart="240" bodyend="258"/>
         <references refid="bsp___c_r_c_8cpp_1abb1fda5ed561362d12fe987758986919" compoundref="bsp___c_r_c_8cpp" startline="91" endline="99">CRC16_MODBUS</references>
         <references refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a0a40a9622af4e5cb7daecbdb303ee35e" compoundref="bsp___mod_bus_8h" startline="49">Fun_W_Coils</references>
         <references refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" compoundref="bsp___mod_bus_8h" startline="76">ID</references>
@@ -566,7 +566,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="72" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.cpp" bodystart="268" bodyend="295"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.h" line="72" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.cpp" bodystart="268" bodyend="295"/>
         <references refid="bsp___c_r_c_8cpp_1abb1fda5ed561362d12fe987758986919" compoundref="bsp___c_r_c_8cpp" startline="91" endline="99">CRC16_MODBUS</references>
         <references refid="bsp___mod_bus_8h_1ac6d9f6c262df700be9045045502e7643a0a40a9622af4e5cb7daecbdb303ee35e" compoundref="bsp___mod_bus_8h" startline="49">Fun_W_Coils</references>
         <references refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" compoundref="bsp___mod_bus_8h" startline="76">ID</references>
@@ -595,7 +595,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="74" column="14"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.h" line="74" column="14"/>
         <referencedby refid="classbsp___mod_bus___tx_1a76e712e8d638ecc7b453e1c8afbbad98" compoundref="bsp___mod_bus_8cpp" startline="195" endline="207">ReadInCoil</referencedby>
         <referencedby refid="classbsp___mod_bus___tx_1af055e2569107b8ece7abdce3301e9444" compoundref="bsp___mod_bus_8cpp" startline="70" endline="82">ReadInReg</referencedby>
         <referencedby refid="classbsp___mod_bus___tx_1ada605c0e9195aefd43968cfe5b347565" compoundref="bsp___mod_bus_8cpp" startline="50" endline="62">ReadKeepReg</referencedby>
@@ -625,7 +625,7 @@
         <link refid="classbsp___mod_bus___tx"/>
       </node>
     </inheritancegraph>
-    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" line="58" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus.h" bodystart="58" bodyend="77"/>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.h" line="58" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus.h" bodystart="58" bodyend="77"/>
     <listofallmembers>
       <member refid="classbsp___mod_bus___tx_1ac277122ddb733aa37a0000086d5ae239" prot="public" virt="non-virtual"><scope>bsp_ModBus_Tx</scope><name>bsp_ModBus_Tx</name></member>
       <member refid="classbsp___mod_bus___tx_1a4ee454ddd116e2b608d9b35b02eee0e4" prot="protected" virt="non-virtual"><scope>bsp_ModBus_Tx</scope><name>ID</name></member>

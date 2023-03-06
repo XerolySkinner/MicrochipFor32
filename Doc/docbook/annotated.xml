@@ -41,6 +41,8 @@
 <para>ModBus发送器 </para>
 <link linkend="_classbsp___position___p_i_d">bsp_Position_PID</link>
 <para>位置法为基础的PID算法 </para>
+<link linkend="_classbsp___print_art">bsp_PrintArt</link>
+<para>创造一个print的重定向对象 </para>
 <link linkend="_classbsp___s_d">bsp_SD</link>
 <para>一个操作SD卡的类 </para>
 <link linkend="_classbsp___s_t_m32___a_t24_c00">bsp_STM32_AT24C00</link>

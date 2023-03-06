@@ -5,7 +5,7 @@
     <includes refid="bsp___mod_bus_8h" local="yes">bsp_ModBus.h</includes>
     <includes local="yes">usart.h</includes>
     <includes refid="varint_8h" local="yes">varint.h</includes>
-    <includedby refid="bsp___mod_bus___s_t_m32_8cpp" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus_STM32.cpp</includedby>
+    <includedby refid="bsp___mod_bus___s_t_m32_8cpp" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus_STM32.cpp</includedby>
     <incdepgraph>
       <node id="2">
         <label>bsp_ModBus.h</label>
@@ -18,7 +18,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus_STM32.h</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus_STM32.h</label>
         <link refid="bsp___mod_bus___s_t_m32_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -45,11 +45,11 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="2">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus_STM32.cpp</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus_STM32.cpp</label>
         <link refid="bsp___mod_bus___s_t_m32_8cpp"/>
       </node>
       <node id="1">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus_STM32.h</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus_STM32.h</label>
         <link refid="bsp___mod_bus___s_t_m32_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -105,6 +105,6 @@
 <codeline lineno="55" refid="classbsp___mod_bus___s_t_m32_1a41fc083e184c2f3a6e5225b2a8212347" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="classbsp___mod_bus___s_t_m32_1a41fc083e184c2f3a6e5225b2a8212347" kindref="member">Timeout</ref>;};</highlight></codeline>
 <codeline lineno="57"><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus_STM32.h"/>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_ModBus/bsp_ModBus_STM32.h"/>
   </compounddef>
 </doxygen>

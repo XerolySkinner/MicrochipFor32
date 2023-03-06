@@ -4,10 +4,10 @@
     <compoundname>bsp_SD.h</compoundname>
     <includes local="yes">spi.h</includes>
     <includes refid="varint_8h" local="yes">varint.h</includes>
-    <includedby refid="bsp___s_d_8cpp" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.cpp</includedby>
+    <includedby refid="bsp___s_d_8cpp" local="yes">D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.cpp</includedby>
     <incdepgraph>
       <node id="1">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h</label>
         <link refid="bsp___s_d_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -29,11 +29,11 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="2">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.cpp</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.cpp</label>
         <link refid="bsp___s_d_8cpp"/>
       </node>
       <node id="1">
-        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h</label>
+        <label>D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h</label>
         <link refid="bsp___s_d_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="48" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="48" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="48" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1ab5a7d5477e55758bde614bda3250a93c" prot="public" static="no">
         <name>MMC</name>
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="49" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="49" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="49" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="49" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1ae21a9518b4dd62d2baeab430c89a657a" prot="public" static="no">
         <name>V1</name>
@@ -75,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="50" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="50" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="50" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="50" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1a9173468f90b474471bfff59f8487cbc1" prot="public" static="no">
         <name>V2</name>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="51" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="51" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="51" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1ae52e14c1b95e5162f4fe492d9b1b0fec" prot="public" static="no">
         <name>V2HC</name>
@@ -97,7 +97,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="52" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="52" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="52" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1adc81a065700d3af56b6fb631585e3641" prot="public" static="no">
         <name>DUMMY_BYTE</name>
@@ -108,7 +108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="53" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="53" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="53" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1a5bda0c70032a9b8625ae5a3c55d21c38" prot="public" static="no">
         <name>MSD_BLOCKSIZE</name>
@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="54" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="54" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="54" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1a938c1466755f12fb04ac0d1b775584d1" prot="public" static="no">
         <name>CMD0</name>
@@ -130,7 +130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="57" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="57" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="57" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="57" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1aca9979f299fa78c1128d778084478673" prot="public" static="no">
         <name>CMD1</name>
@@ -141,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="58" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="58" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="58" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1ac75b3e0ad1fb013ea946fb49bbe65668" prot="public" static="no">
         <name>CMD8</name>
@@ -152,7 +152,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="59" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="59" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="59" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="59" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1a1fac6a251d7e7dc204d21639bf521459" prot="public" static="no">
         <name>CMD9</name>
@@ -163,7 +163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="60" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="60" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="60" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1ae7b800ed8e7bd52e6f570a5ce72b8104" prot="public" static="no">
         <name>CMD10</name>
@@ -174,7 +174,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="61" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="61" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="61" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1a8d6283c9b060afbaa0e6d1ff7e5ea7b8" prot="public" static="no">
         <name>CMD12</name>
@@ -185,7 +185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="62" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="62" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="62" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="62" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1aaeab261b94f2031ba41a1d4d857c3541" prot="public" static="no">
         <name>CMD16</name>
@@ -196,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="63" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="63" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="63" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="63" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1a6bbfe7dc16a19b7f40efcf554b5666ad" prot="public" static="no">
         <name>CMD17</name>
@@ -207,7 +207,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="64" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="64" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="64" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="64" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1a3d32c27a6be061b865ba539127278f14" prot="public" static="no">
         <name>CMD18</name>
@@ -218,7 +218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="65" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="65" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="65" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1a14506e981f38b6177bc36f72c2ca18b1" prot="public" static="no">
         <name>CMD23</name>
@@ -229,7 +229,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="66" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="66" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="66" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1a252300302c6f7960df547a7f5c25be85" prot="public" static="no">
         <name>CMD24</name>
@@ -240,7 +240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="67" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="67" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="67" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="67" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1aee2c673fba987178f4642531fdeefe9e" prot="public" static="no">
         <name>CMD25</name>
@@ -251,7 +251,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="68" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="68" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="68" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1a3ca1450d0ac55d2705aab03537bf2865" prot="public" static="no">
         <name>CMD41</name>
@@ -262,7 +262,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="69" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="69" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="69" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1a78289a7a85ffcfddd626694105dc0780" prot="public" static="no">
         <name>CMD55</name>
@@ -273,7 +273,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="70" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="70" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="70" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="70" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1aa7a26b2cf17e1ff5967820a1fa41a7aa" prot="public" static="no">
         <name>CMD58</name>
@@ -284,7 +284,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="71" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="71" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="71" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="71" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1aa8ea570644ddff6d18b63e4abbf39e0d" prot="public" static="no">
         <name>CMD59</name>
@@ -295,7 +295,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="72" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="72" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="72" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1ab953703883503eb3ce420f096b1621d0" prot="public" static="no">
         <name>MSD_DATA_OK</name>
@@ -306,7 +306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="75" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="75" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="75" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="75" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1a7ba9783b76cf956a82211e058071f984" prot="public" static="no">
         <name>MSD_DATA_CRC_ERROR</name>
@@ -317,7 +317,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="76" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="76" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="76" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="76" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1a6a6a48e9e40eda37b834b23d5320dfdf" prot="public" static="no">
         <name>MSD_DATA_WRITE_ERROR</name>
@@ -328,7 +328,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="77" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="77" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="77" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="77" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1ad68bbaecb6931999de71e8a6b703574f" prot="public" static="no">
         <name>MSD_DATA_OTHER_ERROR</name>
@@ -339,7 +339,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="78" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="78" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="78" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="78" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1afa5629413ae6bf82d3f1182df4cea0cf" prot="public" static="no">
         <name>MSD_RESPONSE_NO_ERROR</name>
@@ -350,7 +350,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="80" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="80" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="80" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1a70bdd15776b2a749ae184132d2a5da28" prot="public" static="no">
         <name>MSD_IN_IDLE_STATE</name>
@@ -361,7 +361,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="81" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="81" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="81" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="81" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1ad0ce329dc56b89327987e754ab0e93b8" prot="public" static="no">
         <name>MSD_ERASE_RESET</name>
@@ -372,7 +372,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="82" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="82" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="82" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="82" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1a80ede800869bbe11125170faf44ad94f" prot="public" static="no">
         <name>MSD_ILLEGAL_COMMAND</name>
@@ -383,7 +383,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="83" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="83" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="83" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="83" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1a8c6cecbb8cb9921c38776a83ed4ad343" prot="public" static="no">
         <name>MSD_COM_CRC_ERROR</name>
@@ -394,7 +394,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="84" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="84" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="84" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="84" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1a8c7923c819c9ba27f65a380f7360f429" prot="public" static="no">
         <name>MSD_ERASE_SEQUENCE_ERROR</name>
@@ -405,7 +405,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="85" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="85" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="85" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="85" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1a211793a480ef462b7a1c55d6d36a8c25" prot="public" static="no">
         <name>MSD_ADDRESS_ERROR</name>
@@ -416,7 +416,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="86" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="86" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="86" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="86" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1ae3555061fbbb3bd2becaa0d1bdf6c825" prot="public" static="no">
         <name>MSD_PARAMETER_ERROR</name>
@@ -427,7 +427,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="87" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="87" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="87" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="87" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="bsp___s_d_8h_1ab5e7857b07a45a8828a235c55d3873ff" prot="public" static="no">
         <name>MSD_RESPONSE_FAILURE</name>
@@ -438,7 +438,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="88" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="88" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="88" column="9" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="88" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="enum">
@@ -467,7 +467,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="90" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" bodystart="90" bodyend="93"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="90" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" bodystart="90" bodyend="93"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -482,7 +482,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="160" column="16"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="160" column="16"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -497,7 +497,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" line="161" column="21" declfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h" declline="161" declcolumn="21"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" line="161" column="21" declfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h" declline="161" declcolumn="21"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -691,6 +691,6 @@
 <codeline lineno="200"><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="201"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SD.h"/>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/bsp_SD.h"/>
   </compounddef>
 </doxygen>

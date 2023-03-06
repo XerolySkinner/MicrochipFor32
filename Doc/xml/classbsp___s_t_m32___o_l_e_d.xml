@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h" line="84" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h" bodystart="84" bodyend="87"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.h" line="84" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.h" bodystart="84" bodyend="87"/>
       </memberdef>
       <memberdef kind="function" id="classbsp___s_t_m32___o_l_e_d_1a72b5fb72becf87a1b1a0cd34f4e7a6d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h" line="88" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h" bodystart="88" bodyend="90"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.h" line="88" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.h" bodystart="88" bodyend="90"/>
       </memberdef>
       <memberdef kind="function" id="classbsp___s_t_m32___o_l_e_d_1a8d7c3a121efe0f93f01b4c0423843d7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -69,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h" line="92" column="14" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp" bodystart="158" bodyend="160"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.h" line="92" column="14" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.cpp" bodystart="158" bodyend="160"/>
         <references refid="bsp___o_l_e_d___s_t_m32_8h_1a302eedcb477b4d3c89cf5629e45c41e5" compoundref="bsp___o_l_e_d___s_t_m32_8h" startline="49">OLED_init_cmd</references>
         <references refid="classbsp___s_t_m32___o_l_e_d_1a4ce72ba6b9e7c027ecfaf9ad8fc30135" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="46" endline="47">Send_cmd</references>
       </memberdef>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h" line="93" column="14" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp" bodystart="68" bodyend="71"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.h" line="93" column="14" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.cpp" bodystart="68" bodyend="71"/>
         <references refid="classbsp___s_t_m32___o_l_e_d_1a4ce72ba6b9e7c027ecfaf9ad8fc30135" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="46" endline="47">Send_cmd</references>
         <referencedby refid="classbsp___s_t_m32___o_l_e_d_1a1d6d3de485739ab13cde6f4c51a97e72" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="84" endline="97">Clear</referencedby>
         <referencedby refid="classbsp___s_t_m32___o_l_e_d_1a2fd3f6c887830072509f5aa916ad8751" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="145" endline="152">Draw_ASCII</referencedby>
@@ -134,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h" line="94" column="14" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp" bodystart="77" bodyend="78"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.h" line="94" column="14" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.cpp" bodystart="77" bodyend="78"/>
         <references refid="classbsp___s_t_m32___o_l_e_d_1a4ce72ba6b9e7c027ecfaf9ad8fc30135" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="46" endline="47">Send_cmd</references>
         <referencedby refid="classbsp___s_t_m32___o_l_e_d_1a1d6d3de485739ab13cde6f4c51a97e72" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="84" endline="97">Clear</referencedby>
         <referencedby refid="classbsp___s_t_m32___o_l_e_d_1a2fd3f6c887830072509f5aa916ad8751" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="145" endline="152">Draw_ASCII</referencedby>
@@ -168,7 +168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h" line="95" column="14" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp" bodystart="84" bodyend="97"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.h" line="95" column="14" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.cpp" bodystart="84" bodyend="97"/>
         <references refid="classbsp___s_t_m32___o_l_e_d_1a8650b7dca00244d1c6a5b1530e08be20" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="68" endline="71">Column_set</references>
         <references refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" compoundref="bsp___i_i_c_8cpp" startline="98" endline="108">bsp_IIC::IIC_SendByte</references>
         <references refid="classbsp___i_i_c_1a97ad38a37ad0140987ba79d878f0d9e9" compoundref="bsp___i_i_c_8cpp" startline="47" endline="54">bsp_IIC::IIC_Start</references>
@@ -203,7 +203,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h" line="96" column="14" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp" bodystart="103" bodyend="117"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.h" line="96" column="14" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.cpp" bodystart="103" bodyend="117"/>
         <references refid="classbsp___s_t_m32___o_l_e_d_1a8650b7dca00244d1c6a5b1530e08be20" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="68" endline="71">Column_set</references>
         <references refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" compoundref="bsp___i_i_c_8cpp" startline="98" endline="108">bsp_IIC::IIC_SendByte</references>
         <references refid="classbsp___i_i_c_1a97ad38a37ad0140987ba79d878f0d9e9" compoundref="bsp___i_i_c_8cpp" startline="47" endline="54">bsp_IIC::IIC_Start</references>
@@ -238,7 +238,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h" line="97" column="14" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp" bodystart="123" bodyend="137"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.h" line="97" column="14" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.cpp" bodystart="123" bodyend="137"/>
         <references refid="classbsp___s_t_m32___o_l_e_d_1a8650b7dca00244d1c6a5b1530e08be20" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="68" endline="71">Column_set</references>
         <references refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" compoundref="bsp___i_i_c_8cpp" startline="98" endline="108">bsp_IIC::IIC_SendByte</references>
         <references refid="classbsp___i_i_c_1a97ad38a37ad0140987ba79d878f0d9e9" compoundref="bsp___i_i_c_8cpp" startline="47" endline="54">bsp_IIC::IIC_Start</references>
@@ -297,7 +297,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h" line="98" column="14" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp" bodystart="145" bodyend="152"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.h" line="98" column="14" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.cpp" bodystart="145" bodyend="152"/>
         <references refid="classbsp___s_t_m32___o_l_e_d_1a8650b7dca00244d1c6a5b1530e08be20" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="68" endline="71">Column_set</references>
         <references refid="bsp___o_l_e_d___s_t_m32_8h_1a1830381a075ec676792bda830bdee09e" compoundref="bsp___o_l_e_d___s_t_m32_8h" startline="110">OLED_WORD_ASCII</references>
         <references refid="classbsp___s_t_m32___o_l_e_d_1ace503e57e2f9abe155bd1bae7eb83bff" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="77" endline="78">Page_set</references>
@@ -330,7 +330,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h" line="100" column="14" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp" bodystart="53" bodyend="54"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.h" line="100" column="14" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.cpp" bodystart="53" bodyend="54"/>
         <references refid="classbsp___i_i_c_1a9f4cdf777e69f407b155ffdba5b9e7c8" compoundref="bsp___i_i_c_8cpp" startline="136" endline="144">bsp_IIC::IIC_WriteOneByte</references>
       </memberdef>
       <memberdef kind="function" id="classbsp___s_t_m32___o_l_e_d_1a4ce72ba6b9e7c027ecfaf9ad8fc30135" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -360,7 +360,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h" line="101" column="14" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp" bodystart="46" bodyend="47"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.h" line="101" column="14" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.cpp" bodystart="46" bodyend="47"/>
         <references refid="classbsp___i_i_c_1a9f4cdf777e69f407b155ffdba5b9e7c8" compoundref="bsp___i_i_c_8cpp" startline="136" endline="144">bsp_IIC::IIC_WriteOneByte</references>
         <referencedby refid="classbsp___s_t_m32___o_l_e_d_1a8650b7dca00244d1c6a5b1530e08be20" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="68" endline="71">Column_set</referencedby>
         <referencedby refid="classbsp___s_t_m32___o_l_e_d_1a8d7c3a121efe0f93f01b4c0423843d7a" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="158" endline="160">Init</referencedby>
@@ -405,7 +405,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h" line="102" column="14" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.cpp" bodystart="61" bodyend="62"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.h" line="102" column="14" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.cpp" bodystart="61" bodyend="62"/>
         <references refid="classbsp___i_i_c_1a9d5d55340f9c43998763ecd0fb67b88c" compoundref="bsp___i_i_c_8cpp" startline="177" endline="187">bsp_IIC::IIC_Write</references>
         <referencedby refid="classbsp___s_t_m32___o_l_e_d_1a2fd3f6c887830072509f5aa916ad8751" compoundref="bsp___o_l_e_d___s_t_m32_8cpp" startline="145" endline="152">Draw_ASCII</referencedby>
       </memberdef>
@@ -451,7 +451,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h" line="81" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_OLED_STM32.h" bodystart="82" bodyend="104"/>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.h" line="81" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_OLED_STM32.h" bodystart="82" bodyend="104"/>
     <listofallmembers>
       <member refid="classbsp___i_i_c___s_t_m32_1a22566656cd2c5e8e1ab6b4c6aa32b63b" prot="protected" virt="non-virtual"><scope>bsp_STM32_OLED</scope><name>bsp_IIC_STM32</name></member>
       <member refid="classbsp___s_t_m32___o_l_e_d_1a130ba2e9f83b4f6dd70154cb7561db35" prot="public" virt="non-virtual"><scope>bsp_STM32_OLED</scope><name>bsp_STM32_OLED</name></member>

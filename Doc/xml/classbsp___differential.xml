@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_Calculus.h" line="50" column="7" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_Calculus.h" bodystart="50" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_Calculus.h" line="50" column="7" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_Calculus.h" bodystart="50" bodyend="-1"/>
         <referencedby refid="classbsp___differential_1a16a19c803e2f1a3bbba98a2ef529206b" compoundref="bsp___calculus_8h" startline="45" endline="46">bsp_Differential</referencedby>
         <referencedby refid="classbsp___differential_1a46536b15be29d856b09dd7d261a12ab1" compoundref="bsp___calculus_8cpp" startline="46" endline="50">Differential</referencedby>
       </memberdef>
@@ -39,7 +39,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_Calculus.h" line="45" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_Calculus.h" bodystart="45" bodyend="46"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_Calculus.h" line="45" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_Calculus.h" bodystart="45" bodyend="46"/>
         <references refid="classbsp___differential_1ab25588868059974b8356e975c6e96992" compoundref="bsp___calculus_8h" startline="50">dt</references>
       </memberdef>
       <memberdef kind="function" id="classbsp___differential_1a46536b15be29d856b09dd7d261a12ab1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -71,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_Calculus.h" line="48" column="7" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_Calculus.cpp" bodystart="46" bodyend="50"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_Calculus.h" line="48" column="7" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_Calculus.cpp" bodystart="46" bodyend="50"/>
         <references refid="classbsp___differential_1ab25588868059974b8356e975c6e96992" compoundref="bsp___calculus_8h" startline="50">dt</references>
       </memberdef>
       </sectiondef>
@@ -80,7 +80,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_Calculus.h" line="43" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_Calculus.h" bodystart="43" bodyend="51"/>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_Calculus.h" line="43" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_Calculus.h" bodystart="43" bodyend="51"/>
     <listofallmembers>
       <member refid="classbsp___differential_1a16a19c803e2f1a3bbba98a2ef529206b" prot="public" virt="non-virtual"><scope>bsp_Differential</scope><name>bsp_Differential</name></member>
       <member refid="classbsp___differential_1a46536b15be29d856b09dd7d261a12ab1" prot="public" virt="non-virtual"><scope>bsp_Differential</scope><name>Differential</name></member>

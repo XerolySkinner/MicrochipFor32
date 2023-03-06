@@ -14,6 +14,6 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT.cpp"/>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT/bsp_AT.cpp"/>
   </compounddef>
 </doxygen>

@@ -347,5 +347,5 @@ bsp_STM32_AT24C00 的协作图:<para>
 </section>
 <para>
 该类的文档由以下文件生成:</para>
-D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp___a_t24_c00_8h">bsp_AT24C00.h</link>D:/gitt/MicrochipFor32/bsp_Device/<link linkend="_bsp___a_t24_c00_8cpp">bsp_AT24C00.cpp</link></section>
+D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/<link linkend="_bsp___a_t24_c00_8h">bsp_AT24C00.h</link>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/<link linkend="_bsp___a_t24_c00_8cpp">bsp_AT24C00.cpp</link></section>
 </section>

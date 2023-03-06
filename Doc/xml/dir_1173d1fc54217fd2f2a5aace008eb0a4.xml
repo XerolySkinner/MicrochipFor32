@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="zh">
+  <compounddef id="dir_1173d1fc54217fd2f2a5aace008eb0a4" kind="dir">
+    <compoundname>D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI</compoundname>
+    <innerfile refid="bsp___m_a_x6675_8cpp">bsp_MAX6675.cpp</innerfile>
+    <innerfile refid="bsp___m_a_x6675_8h">bsp_MAX6675.h</innerfile>
+    <innerfile refid="bsp___s_d_8cpp">bsp_SD.cpp</innerfile>
+    <innerfile refid="bsp___s_d_8h">bsp_SD.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_SPI/"/>
+  </compounddef>
+</doxygen>

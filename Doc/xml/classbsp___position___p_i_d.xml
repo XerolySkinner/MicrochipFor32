@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" line="55" column="7" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" bodystart="55" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" line="55" column="7" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" bodystart="55" bodyend="-1"/>
         <referencedby refid="classbsp___position___p_i_d_1ac50b1ff29153eed1fcb252a3eee2aa69" compoundref="bsp___p_i_d_8cpp" startline="134" endline="144">bsp_Position_PID</referencedby>
         <referencedby refid="classbsp___position___p_i_d_1ac658466d8bc1d12fcd403c4b6f9ca9f7" compoundref="bsp___p_i_d_8cpp" startline="48" endline="62">PID</referencedby>
       </memberdef>
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" line="56" column="7" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" bodystart="56" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" line="56" column="7" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" bodystart="56" bodyend="-1"/>
         <referencedby refid="classbsp___position___p_i_d_1ac50b1ff29153eed1fcb252a3eee2aa69" compoundref="bsp___p_i_d_8cpp" startline="134" endline="144">bsp_Position_PID</referencedby>
         <referencedby refid="classbsp___position___p_i_d_1ac658466d8bc1d12fcd403c4b6f9ca9f7" compoundref="bsp___p_i_d_8cpp" startline="48" endline="62">PID</referencedby>
         <referencedby refid="classbsp___position___p_i_d_1add37a6f47b3f9b6dd0d945def8ed2ef1" compoundref="bsp___p_i_d_8cpp" startline="119" endline="120">set</referencedby>
@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" line="57" column="7" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" bodystart="57" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" line="57" column="7" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" bodystart="57" bodyend="-1"/>
         <referencedby refid="classbsp___position___p_i_d_1ac50b1ff29153eed1fcb252a3eee2aa69" compoundref="bsp___p_i_d_8cpp" startline="134" endline="144">bsp_Position_PID</referencedby>
         <referencedby refid="classbsp___position___p_i_d_1ac658466d8bc1d12fcd403c4b6f9ca9f7" compoundref="bsp___p_i_d_8cpp" startline="48" endline="62">PID</referencedby>
         <referencedby refid="classbsp___position___p_i_d_1add37a6f47b3f9b6dd0d945def8ed2ef1" compoundref="bsp___p_i_d_8cpp" startline="119" endline="120">set</referencedby>
@@ -70,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" line="58" column="7" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" bodystart="58" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" line="58" column="7" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" bodystart="58" bodyend="-1"/>
         <referencedby refid="classbsp___position___p_i_d_1ac50b1ff29153eed1fcb252a3eee2aa69" compoundref="bsp___p_i_d_8cpp" startline="134" endline="144">bsp_Position_PID</referencedby>
         <referencedby refid="classbsp___position___p_i_d_1ac658466d8bc1d12fcd403c4b6f9ca9f7" compoundref="bsp___p_i_d_8cpp" startline="48" endline="62">PID</referencedby>
         <referencedby refid="classbsp___position___p_i_d_1add37a6f47b3f9b6dd0d945def8ed2ef1" compoundref="bsp___p_i_d_8cpp" startline="119" endline="120">set</referencedby>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" line="59" column="7" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" bodystart="59" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" line="59" column="7" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" bodystart="59" bodyend="-1"/>
         <referencedby refid="classbsp___position___p_i_d_1ac50b1ff29153eed1fcb252a3eee2aa69" compoundref="bsp___p_i_d_8cpp" startline="134" endline="144">bsp_Position_PID</referencedby>
         <referencedby refid="classbsp___position___p_i_d_1a7b60d7f8a80c632c501561e7e0765f14" compoundref="bsp___p_i_d_8cpp" startline="96" endline="100">clean</referencedby>
         <referencedby refid="classbsp___position___p_i_d_1ac658466d8bc1d12fcd403c4b6f9ca9f7" compoundref="bsp___p_i_d_8cpp" startline="48" endline="62">PID</referencedby>
@@ -108,7 +108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" line="61" column="7" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" bodystart="61" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" line="61" column="7" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" bodystart="61" bodyend="-1"/>
         <referencedby refid="classbsp___position___p_i_d_1ac50b1ff29153eed1fcb252a3eee2aa69" compoundref="bsp___p_i_d_8cpp" startline="134" endline="144">bsp_Position_PID</referencedby>
         <referencedby refid="classbsp___position___p_i_d_1a7b60d7f8a80c632c501561e7e0765f14" compoundref="bsp___p_i_d_8cpp" startline="96" endline="100">clean</referencedby>
         <referencedby refid="classbsp___position___p_i_d_1ac658466d8bc1d12fcd403c4b6f9ca9f7" compoundref="bsp___p_i_d_8cpp" startline="48" endline="62">PID</referencedby>
@@ -126,7 +126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" line="62" column="7" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" bodystart="62" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" line="62" column="7" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" bodystart="62" bodyend="-1"/>
         <referencedby refid="classbsp___position___p_i_d_1ac50b1ff29153eed1fcb252a3eee2aa69" compoundref="bsp___p_i_d_8cpp" startline="134" endline="144">bsp_Position_PID</referencedby>
         <referencedby refid="classbsp___position___p_i_d_1a7b60d7f8a80c632c501561e7e0765f14" compoundref="bsp___p_i_d_8cpp" startline="96" endline="100">clean</referencedby>
         <referencedby refid="classbsp___position___p_i_d_1ac658466d8bc1d12fcd403c4b6f9ca9f7" compoundref="bsp___p_i_d_8cpp" startline="48" endline="62">PID</referencedby>
@@ -144,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" line="64" column="7" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" bodystart="64" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" line="64" column="7" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" bodystart="64" bodyend="-1"/>
         <referencedby refid="classbsp___position___p_i_d_1ac50b1ff29153eed1fcb252a3eee2aa69" compoundref="bsp___p_i_d_8cpp" startline="134" endline="144">bsp_Position_PID</referencedby>
         <referencedby refid="classbsp___position___p_i_d_1ac658466d8bc1d12fcd403c4b6f9ca9f7" compoundref="bsp___p_i_d_8cpp" startline="48" endline="62">PID</referencedby>
       </memberdef>
@@ -161,7 +161,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" line="65" column="7" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" bodystart="65" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" line="65" column="7" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" bodystart="65" bodyend="-1"/>
         <referencedby refid="classbsp___position___p_i_d_1ac50b1ff29153eed1fcb252a3eee2aa69" compoundref="bsp___p_i_d_8cpp" startline="134" endline="144">bsp_Position_PID</referencedby>
         <referencedby refid="classbsp___position___p_i_d_1ac658466d8bc1d12fcd403c4b6f9ca9f7" compoundref="bsp___p_i_d_8cpp" startline="48" endline="62">PID</referencedby>
       </memberdef>
@@ -182,7 +182,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" line="45" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.cpp" bodystart="134" bodyend="144"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" line="45" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.cpp" bodystart="134" bodyend="144"/>
         <references refid="classbsp___position___p_i_d_1a9e7c0b93c1936f3aca77800997f99c05" compoundref="bsp___p_i_d_8h" startline="61">integral</references>
         <references refid="classbsp___position___p_i_d_1a1678e1ea6b9e6ea56fde93df5aad4f75" compoundref="bsp___p_i_d_8h" startline="57">Kd</references>
         <references refid="classbsp___position___p_i_d_1a58c60be7603ec356bbe428fb989d4e68" compoundref="bsp___p_i_d_8h" startline="58">Ki</references>
@@ -280,7 +280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" line="46" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.cpp" bodystart="155" bodyend="167"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" line="46" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.cpp" bodystart="155" bodyend="167"/>
         <references refid="classbsp___position___p_i_d_1a9e7c0b93c1936f3aca77800997f99c05" compoundref="bsp___p_i_d_8h" startline="61">integral</references>
         <references refid="classbsp___position___p_i_d_1a1678e1ea6b9e6ea56fde93df5aad4f75" compoundref="bsp___p_i_d_8h" startline="57">Kd</references>
         <references refid="classbsp___position___p_i_d_1a58c60be7603ec356bbe428fb989d4e68" compoundref="bsp___p_i_d_8h" startline="58">Ki</references>
@@ -306,7 +306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" line="49" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.cpp" bodystart="169" bodyend="169"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" line="49" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.cpp" bodystart="169" bodyend="169"/>
       </memberdef>
       <memberdef kind="function" id="classbsp___position___p_i_d_1ac658466d8bc1d12fcd403c4b6f9ca9f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -337,7 +337,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" line="51" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.cpp" bodystart="48" bodyend="62"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" line="51" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.cpp" bodystart="48" bodyend="62"/>
         <references refid="classbsp___position___p_i_d_1a9e7c0b93c1936f3aca77800997f99c05" compoundref="bsp___p_i_d_8h" startline="61">integral</references>
         <references refid="classbsp___position___p_i_d_1a1678e1ea6b9e6ea56fde93df5aad4f75" compoundref="bsp___p_i_d_8h" startline="57">Kd</references>
         <references refid="classbsp___position___p_i_d_1a58c60be7603ec356bbe428fb989d4e68" compoundref="bsp___p_i_d_8h" startline="58">Ki</references>
@@ -367,7 +367,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" line="52" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.cpp" bodystart="96" bodyend="100"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" line="52" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.cpp" bodystart="96" bodyend="100"/>
         <references refid="classbsp___position___p_i_d_1a9e7c0b93c1936f3aca77800997f99c05" compoundref="bsp___p_i_d_8h" startline="61">integral</references>
         <references refid="classbsp___position___p_i_d_1a04a54e038d2229f330e1913ce8b8aada" compoundref="bsp___p_i_d_8h" startline="62">lasterror</references>
         <references refid="classbsp___position___p_i_d_1a77ecc1d6378fb03cc63c9a3a263c90b2" compoundref="bsp___p_i_d_8h" startline="59">result</references>
@@ -423,7 +423,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" line="53" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.cpp" bodystart="119" bodyend="120"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" line="53" column="5" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.cpp" bodystart="119" bodyend="120"/>
         <references refid="classbsp___position___p_i_d_1a1678e1ea6b9e6ea56fde93df5aad4f75" compoundref="bsp___p_i_d_8h" startline="57">Kd</references>
         <references refid="classbsp___position___p_i_d_1a58c60be7603ec356bbe428fb989d4e68" compoundref="bsp___p_i_d_8h" startline="58">Ki</references>
         <references refid="classbsp___position___p_i_d_1aa2ea863045a5bc0785693013154b6a52" compoundref="bsp___p_i_d_8h" startline="56">Kp</references>
@@ -434,7 +434,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" line="43" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_PID.h" bodystart="43" bodyend="66"/>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" line="43" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_PID.h" bodystart="43" bodyend="66"/>
     <listofallmembers>
       <member refid="classbsp___position___p_i_d_1ac50b1ff29153eed1fcb252a3eee2aa69" prot="public" virt="non-virtual"><scope>bsp_Position_PID</scope><name>bsp_Position_PID</name></member>
       <member refid="classbsp___position___p_i_d_1aa16c488294e5bfba71c8ef83ee76a250" prot="public" virt="non-virtual"><scope>bsp_Position_PID</scope><name>bsp_Position_PID</name></member>

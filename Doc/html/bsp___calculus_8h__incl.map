@@ -1,6 +1,6 @@
-<map id="D:/gitt/MicrochipFor32/bsp_Device/bsp_Calculus.h" name="D:/gitt/MicrochipFor32/bsp_Device/bsp_Calculus.h">
-<area shape="rect" id="node1" title="离散微积分" alt="" coords="5,5,191,45"/>
-<area shape="rect" id="node2" title=" " alt="" coords="22,93,86,119"/>
-<area shape="rect" id="node3" href="$varint_8h.html" title="全局共用的标准类型表" alt="" coords="111,93,173,119"/>
-<area shape="rect" id="node4" title=" " alt="" coords="109,167,175,192"/>
+<map id="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_Calculus.h" name="D:/gitt/MicrochipFor32/bsp_Device/bsp_math/bsp_Calculus.h">
+<area shape="rect" id="node1" title="离散微积分" alt="" coords="5,5,184,60"/>
+<area shape="rect" id="node2" title=" " alt="" coords="19,108,83,133"/>
+<area shape="rect" id="node3" href="$varint_8h.html" title="全局共用的标准类型表" alt="" coords="107,108,170,133"/>
+<area shape="rect" id="node4" title=" " alt="" coords="106,181,171,207"/>
 </map>

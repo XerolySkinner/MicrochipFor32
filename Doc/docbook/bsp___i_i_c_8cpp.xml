@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_bsp___i_i_c_8cpp" xml:lang="zh">
-<title>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp 文件参考</title>
-<indexterm><primary>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC.cpp</primary></indexterm>
+<title>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.cpp 文件参考</title>
+<indexterm><primary>D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_IIC.cpp</primary></indexterm>
 <para>
 
 <para>本类实现软件IIC功能 依此类派生出其他软件IIC功能 </para>

@@ -31,6 +31,7 @@
  * @date		2022-11-07 18:50
  */
 #pragma once
+#include "vartable.h"
 #ifdef __cplusplus
 extern "C"{
 #endif
@@ -38,7 +39,8 @@ extern "C"{
 //----------------------------------------------------------------------------------------------------
 //	»Øµ÷ÉùÃ÷
 //	
-
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim);
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart);
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 #ifdef __cplusplus
 }

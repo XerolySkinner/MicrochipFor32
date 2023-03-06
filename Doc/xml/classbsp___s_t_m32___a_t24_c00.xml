@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h" line="64" column="3" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h" bodystart="64" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.h" line="64" column="3" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.h" bodystart="64" bodyend="-1"/>
         <referencedby refid="classbsp___s_t_m32___a_t24_c00_1ad5b68ee911f6e46ab877049eaadc5b1c" compoundref="bsp___a_t24_c00_8cpp" startline="101" endline="102">AT_ReadByte</referencedby>
         <referencedby refid="classbsp___s_t_m32___a_t24_c00_1a5509d16dc81dcc75acb287f802e5740a" compoundref="bsp___a_t24_c00_8h" startline="46" endline="49">bsp_STM32_AT24C00</referencedby>
         <referencedby refid="classbsp___s_t_m32___a_t24_c00_1a950e3a80ff49c538294bfedf8e893ff7" compoundref="bsp___a_t24_c00_8cpp" startline="63" endline="64">ReadOneByte</referencedby>
@@ -38,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h" line="65" column="3" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h" bodystart="65" bodyend="-1"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.h" line="65" column="3" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.h" bodystart="65" bodyend="-1"/>
         <referencedby refid="classbsp___s_t_m32___a_t24_c00_1a5509d16dc81dcc75acb287f802e5740a" compoundref="bsp___a_t24_c00_8h" startline="46" endline="49">bsp_STM32_AT24C00</referencedby>
         <referencedby refid="classbsp___s_t_m32___a_t24_c00_1a2c0bcf4f2ffd4ef242c8d4423dca1ad0" compoundref="bsp___a_t24_c00_8cpp" startline="72" endline="93">WriteByte</referencedby>
       </memberdef>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h" line="46" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h" bodystart="46" bodyend="49"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.h" line="46" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.h" bodystart="46" bodyend="49"/>
         <references refid="classbsp___s_t_m32___a_t24_c00_1a7b81cd0d8fea1bb0ce4e4b0143612bde" compoundref="bsp___a_t24_c00_8h" startline="64">Address</references>
         <references refid="classbsp___s_t_m32___a_t24_c00_1a5c1a52c22b16f15bf07358a4b181e2ff" compoundref="bsp___a_t24_c00_8h" startline="65">Page</references>
       </memberdef>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h" line="50" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h" bodystart="50" bodyend="53"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.h" line="50" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.h" bodystart="50" bodyend="53"/>
         <references refid="classbsp___s_t_m32___a_t24_c00_1a7b81cd0d8fea1bb0ce4e4b0143612bde" compoundref="bsp___a_t24_c00_8h" startline="64">Address</references>
         <references refid="classbsp___s_t_m32___a_t24_c00_1a5c1a52c22b16f15bf07358a4b181e2ff" compoundref="bsp___a_t24_c00_8h" startline="65">Page</references>
       </memberdef>
@@ -128,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h" line="54" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h" bodystart="54" bodyend="57"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.h" line="54" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.h" bodystart="54" bodyend="57"/>
         <references refid="classbsp___s_t_m32___a_t24_c00_1a7b81cd0d8fea1bb0ce4e4b0143612bde" compoundref="bsp___a_t24_c00_8h" startline="64">Address</references>
         <references refid="classbsp___s_t_m32___a_t24_c00_1a5c1a52c22b16f15bf07358a4b181e2ff" compoundref="bsp___a_t24_c00_8h" startline="65">Page</references>
       </memberdef>
@@ -171,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h" line="59" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.cpp" bodystart="55" bodyend="56"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.h" line="59" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.cpp" bodystart="55" bodyend="56"/>
         <references refid="classbsp___s_t_m32___a_t24_c00_1a7b81cd0d8fea1bb0ce4e4b0143612bde" compoundref="bsp___a_t24_c00_8h" startline="64">Address</references>
         <references refid="classbsp___i_i_c_1a9f4cdf777e69f407b155ffdba5b9e7c8" compoundref="bsp___i_i_c_8cpp" startline="136" endline="144">bsp_IIC::IIC_WriteOneByte</references>
       </memberdef>
@@ -204,7 +204,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h" line="60" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.cpp" bodystart="63" bodyend="64"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.h" line="60" column="4" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.cpp" bodystart="63" bodyend="64"/>
         <references refid="classbsp___s_t_m32___a_t24_c00_1a7b81cd0d8fea1bb0ce4e4b0143612bde" compoundref="bsp___a_t24_c00_8h" startline="64">Address</references>
         <references refid="classbsp___i_i_c_1a9effd40b26cbf6f321d0f0db3e2f09c3" compoundref="bsp___i_i_c_8cpp" startline="153" endline="166">bsp_IIC::IIC_ReadOneByte</references>
       </memberdef>
@@ -259,7 +259,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h" line="61" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.cpp" bodystart="72" bodyend="93"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.h" line="61" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.cpp" bodystart="72" bodyend="93"/>
         <references refid="classbsp___s_t_m32___a_t24_c00_1a7b81cd0d8fea1bb0ce4e4b0143612bde" compoundref="bsp___a_t24_c00_8h" startline="64">Address</references>
         <references refid="classbsp___s_t_m32___a_t24_c00_1a7ba3cbef5e2eea37f514948f12f2119d" compoundref="bsp___a_t24_c00_8cpp" startline="47" endline="48">IIC_Delay</references>
         <references refid="classbsp___i_i_c_1ae2e78aae0c89a4d6063d8ba60752acd5" compoundref="bsp___i_i_c_8cpp" startline="98" endline="108">bsp_IIC::IIC_SendByte</references>
@@ -319,7 +319,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h" line="62" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.cpp" bodystart="101" bodyend="102"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.h" line="62" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.cpp" bodystart="101" bodyend="102"/>
         <references refid="classbsp___s_t_m32___a_t24_c00_1a7b81cd0d8fea1bb0ce4e4b0143612bde" compoundref="bsp___a_t24_c00_8h" startline="64">Address</references>
         <references refid="classbsp___i_i_c_1aae8c08f59f3fce9dce27f9f04beda683" compoundref="bsp___i_i_c_8cpp" startline="198" endline="211">bsp_IIC::IIC_Read</references>
       </memberdef>
@@ -342,7 +342,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h" line="66" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.cpp" bodystart="47" bodyend="48"/>
+        <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.h" line="66" column="6" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.cpp" bodystart="47" bodyend="48"/>
         <referencedby refid="classbsp___s_t_m32___a_t24_c00_1a2c0bcf4f2ffd4ef242c8d4423dca1ad0" compoundref="bsp___a_t24_c00_8cpp" startline="72" endline="93">WriteByte</referencedby>
       </memberdef>
       </sectiondef>
@@ -387,7 +387,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h" line="44" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_AT24C00.h" bodystart="44" bodyend="67"/>
+    <location file="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.h" line="44" column="1" bodyfile="D:/gitt/MicrochipFor32/bsp_Device/bsp_IIC/bsp_AT24C00.h" bodystart="44" bodyend="67"/>
     <listofallmembers>
       <member refid="classbsp___s_t_m32___a_t24_c00_1a7b81cd0d8fea1bb0ce4e4b0143612bde" prot="private" virt="non-virtual"><scope>bsp_STM32_AT24C00</scope><name>Address</name></member>
       <member refid="classbsp___s_t_m32___a_t24_c00_1ad5b68ee911f6e46ab877049eaadc5b1c" prot="public" virt="non-virtual"><scope>bsp_STM32_AT24C00</scope><name>AT_ReadByte</name></member>

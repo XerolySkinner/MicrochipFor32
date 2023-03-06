@@ -33,6 +33,7 @@
     <xi:include href="classbsp___mod_bus___s_t_m32.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classbsp___mod_bus___tx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classbsp___position___p_i_d.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbsp___print_art.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classbsp___s_d.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classbsp___s_t_m32___a_t24_c00.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classbsp___s_t_m32___o_l_e_d.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -51,14 +52,34 @@
     <xi:include href="bsp___a_t_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___a_t_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___a_t_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___a_t24_c00_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___a_t24_c00_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___a_t24_c00_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___a_t24_c00_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___a_t_k_e_s_p8266_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___a_t_k_e_s_p8266_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___a_t_k_e_s_p8266_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___a_t_k_e_s_p8266_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___digit_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___digit_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___digit_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___digit_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp__flash_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp__flash_8c_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp__flash_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp__flash_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___a_t24_c00_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___a_t24_c00_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___a_t24_c00_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___a_t24_c00_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___i_i_c_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___i_i_c_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___i_i_c_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___i_i_c_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___i_i_c___s_t_m32_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___i_i_c___s_t_m32_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___i_i_c___s_t_m32_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___i_i_c___s_t_m32_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___o_l_e_d___s_t_m32_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___o_l_e_d___s_t_m32_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___o_l_e_d___s_t_m32_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___o_l_e_d___s_t_m32_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___b_m_p_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___b_m_p_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___b_m_p_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -71,26 +92,10 @@
     <xi:include href="bsp___c_r_c_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___c_r_c_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___c_r_c_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___digit_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___digit_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___digit_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___digit_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp__flash_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp__flash_8c_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp__flash_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp__flash_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___i_i_c_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___i_i_c_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___i_i_c_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___i_i_c_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___i_i_c___s_t_m32_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___i_i_c___s_t_m32_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___i_i_c___s_t_m32_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___i_i_c___s_t_m32_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___m_a_x6675_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___m_a_x6675_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___m_a_x6675_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___m_a_x6675_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___p_i_d_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___p_i_d_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___p_i_d_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___p_i_d_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___mod_bus_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___mod_bus_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___mod_bus_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -99,14 +104,14 @@
     <xi:include href="bsp___mod_bus___s_t_m32_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___mod_bus___s_t_m32_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___mod_bus___s_t_m32_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___o_l_e_d___s_t_m32_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___o_l_e_d___s_t_m32_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___o_l_e_d___s_t_m32_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___o_l_e_d___s_t_m32_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___p_i_d_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___p_i_d_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___p_i_d_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="bsp___p_i_d_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___print_art_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___print_art_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___print_art_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___print_art_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___m_a_x6675_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___m_a_x6675_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___m_a_x6675_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bsp___m_a_x6675_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___s_d_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___s_d_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bsp___s_d_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
