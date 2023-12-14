@@ -1,5 +1,0 @@
-<map id="dmp_set_tap_thresh" name="dmp_set_tap_thresh">
-<area shape="rect" id="node1" title="Set tap threshold for a specific axis." alt="" coords="5,31,145,56"/>
-<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#gab6087a15ee23db23b6aec41590329a60" title="Get the accel full&#45;scale range." alt="" coords="193,5,324,31"/>
-<area shape="rect" id="node3" href="$group___d_r_i_v_e_r_s.html#gafea59910bc3dd30ba3356b1c75213a5f" title="Write to the DMP memory. This function prevents I2C writes past the bank boundaries...." alt="" coords="200,55,317,80"/>
-</map>

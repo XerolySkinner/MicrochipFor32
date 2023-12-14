@@ -1,4 +1,0 @@
-<map id="bsp_SD::SD_GETCSD" name="bsp_SD::SD_GETCSD">
-<area shape="rect" id="node1" title="获取CSD信息" alt="" coords="248,5,403,31"/>
-<area shape="rect" id="node2" href="$classbsp___s_d.html#a600cc886dc5da6d34f75d0bf226c1b92" title="获取SD卡的总扇区数" alt="" coords="5,5,200,31"/>
-</map>

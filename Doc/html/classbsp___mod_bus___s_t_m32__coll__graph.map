@@ -1,4 +1,0 @@
-<map id="bsp_ModBus_STM32" name="bsp_ModBus_STM32">
-<area shape="rect" id="node1" title="STM32用串口的ModBus发送器" alt="" coords="5,79,152,104"/>
-<area shape="rect" id="node2" href="$classbsp___mod_bus___tx.html" title="ModBus发送器" alt="" coords="19,5,138,31"/>
-</map>

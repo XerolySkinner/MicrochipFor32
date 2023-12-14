@@ -1,5 +1,0 @@
-<map id="MPU_Set_LPF" name="MPU_Set_LPF">
-<area shape="rect" id="node1" title="设置MPU6050的数字低通滤波器" alt="" coords="288,5,397,31"/>
-<area shape="rect" id="node2" href="$mpu6050_8cpp.html#a04e58232ce838e94d54aa2b53287cb41" title="设置MPU6050的采样率(假定Fs=1KHz)" alt="" coords="128,5,240,31"/>
-<area shape="rect" id="node3" href="$mpu6050_8cpp.html#ab1f8c6111d59b60a2edb4ee3e8aa3113" title="初始化MPU6050" alt="" coords="5,5,80,31"/>
-</map>

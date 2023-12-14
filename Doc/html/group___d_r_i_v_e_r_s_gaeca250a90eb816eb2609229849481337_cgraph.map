@@ -1,4 +1,0 @@
-<map id="dmp_set_tap_time_multi" name="dmp_set_tap_time_multi">
-<area shape="rect" id="node1" title="Set max time between taps to register as a multi&#45;tap." alt="" coords="5,5,169,31"/>
-<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#gafea59910bc3dd30ba3356b1c75213a5f" title="Write to the DMP memory. This function prevents I2C writes past the bank boundaries...." alt="" coords="217,5,335,31"/>
-</map>

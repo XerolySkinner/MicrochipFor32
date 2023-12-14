@@ -1,7 +1,0 @@
-<map id="bsp_BMP" name="bsp_BMP">
-<area shape="rect" id="node1" title="构建一个BMP类" alt="" coords="229,181,308,207"/>
-<area shape="rect" id="node2" href="$struct___b_i_t_m_a_p_i_n_f_o.html" title="BMP文件头" alt="" coords="215,93,322,119"/>
-<area shape="rect" id="node3" href="$struct___b_i_t_m_a_p_f_i_l_e_h_e_a_d_e_r.html" title="位图文件头" alt="" coords="5,5,164,31"/>
-<area shape="rect" id="node4" href="$struct___b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html" title="位图信息头" alt="" coords="188,5,349,31"/>
-<area shape="rect" id="node5" href="$struct___r_g_b_q_u_a_d.html" title="调色板" alt="" coords="373,5,468,31"/>
-</map>

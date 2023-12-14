@@ -1,5 +1,0 @@
-<map id="setup_compass" name="setup_compass">
-<area shape="rect" id="node1" title=" " alt="" coords="275,5,389,31"/>
-<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#gac48a36b51e23bc4191ec13916bbb9d0b" title="Initialize hardware. Initial configuration: Gyro FSR: +/&#45; 2000DPS Accel FSR +/&#45; 2G DLPF: 42Hz FIFO ra..." alt="" coords="156,5,227,31"/>
-<area shape="rect" id="node3" href="$group___d_r_i_v_e_r_s.html#gafac8fcbf24cfa1b69737e02238580f3a" title=" " alt="" coords="5,5,108,31"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="MPU_Get_Temperature" name="MPU_Get_Temperature">
-<area shape="rect" id="node1" title="得到温度值" alt="" coords="5,5,164,31"/>
-<area shape="rect" id="node2" href="$mpu6050_8cpp.html#a63161fa966899e4e7c5791e40ebf2b0a" title="IIC连续读" alt="" coords="212,5,328,31"/>
-<area shape="rect" id="node3" href="$mpu6050_8cpp.html#a0e5583807e7dcaae30835311a2195583" title=" " alt="" coords="376,5,467,31"/>
-</map>

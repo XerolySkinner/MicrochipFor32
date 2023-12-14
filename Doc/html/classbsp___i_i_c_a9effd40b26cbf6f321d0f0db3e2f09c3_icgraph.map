@@ -1,4 +1,0 @@
-<map id="bsp_IIC::IIC_ReadOneByte" name="bsp_IIC::IIC_ReadOneByte">
-<area shape="rect" id="node1" title="使用总线接收一个字节数据" alt="" coords="212,13,388,38"/>
-<area shape="rect" id="node2" href="$classbsp___s_t_m32___a_t24_c00.html#a950e3a80ff49c538294bfedf8e893ff7" title="读取一个字节" alt="" coords="5,5,164,45"/>
-</map>

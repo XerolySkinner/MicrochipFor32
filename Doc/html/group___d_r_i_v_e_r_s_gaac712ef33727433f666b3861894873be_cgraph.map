@@ -1,5 +1,0 @@
-<map id="dmp_enable_6x_lp_quat" name="dmp_enable_6x_lp_quat">
-<area shape="rect" id="node1" title="Generate 6&#45;axis quaternions from the DMP. In this driver, the 3&#45;axis and 6&#45;axis DMP quaternion featur..." alt="" coords="5,31,168,56"/>
-<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#gaf23e9f57c0059be6ec57862f0584de10" title="Reset FIFO read/write pointers." alt="" coords="221,5,328,31"/>
-<area shape="rect" id="node3" href="$group___d_r_i_v_e_r_s.html#gafea59910bc3dd30ba3356b1c75213a5f" title="Write to the DMP memory. This function prevents I2C writes past the bank boundaries...." alt="" coords="216,55,333,80"/>
-</map>

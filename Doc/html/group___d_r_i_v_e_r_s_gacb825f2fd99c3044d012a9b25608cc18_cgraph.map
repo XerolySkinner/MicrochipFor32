@@ -1,7 +1,0 @@
-<map id="mpu_dmp_get_data" name="mpu_dmp_get_data">
-<area shape="rect" id="node1" title=" " alt="" coords="5,55,141,80"/>
-<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#ga02db5f25359abe84be002c543cdc3803" title="Get one packet from the FIFO. If sensors does not contain a particular sensor, disregard the data ret..." alt="" coords="189,55,292,80"/>
-<area shape="rect" id="node3" href="$group___d_r_i_v_e_r_s.html#gaee85b322f461f83536e49840651a7576" title="Decode the four&#45;byte gesture data and execute any callbacks." alt="" coords="357,5,472,31"/>
-<area shape="rect" id="node4" href="$group___d_r_i_v_e_r_s.html#ga13593044949b460e9f571eb57e9a0788" title="Get one unparsed packet from the FIFO. This function should be used if the packet is to be parsed els..." alt="" coords="340,55,489,80"/>
-<area shape="rect" id="node5" href="$group___d_r_i_v_e_r_s.html#gaf23e9f57c0059be6ec57862f0584de10" title="Reset FIFO read/write pointers." alt="" coords="537,80,644,105"/>
-</map>

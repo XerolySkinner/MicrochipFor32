@@ -1,7 +1,0 @@
-<map id="STL_lQueue::top" name="STL_lQueue::top">
-<area shape="rect" id="node1" title="显示队列顶部成员" alt="" coords="389,31,508,56"/>
-<area shape="rect" id="node2" href="$class_s_t_l__l_queue.html#ade1f8e34538de4ae43f7ad2ca46ab493" title="显示队列顶成员" alt="" coords="208,5,341,31"/>
-<area shape="rect" id="node4" href="$class_s_t_l__l_queue.html#a7ff92acc4b520646801c93816faf2f07" title="显示队列顶成员" alt="" coords="211,55,338,80"/>
-<area shape="rect" id="node3" href="$class_s_t_l__l_queue.html#a4bf8d4647c741289056d30184e97531b" title="显示并且弹出一个队列顶成员" alt="" coords="5,5,160,31"/>
-<area shape="rect" id="node5" href="$class_s_t_l__l_queue.html#a4c67b2f6364aa9105e8754c51bb2ad6a" title="显示并且弹出一个队列顶成员" alt="" coords="9,55,156,80"/>
-</map>

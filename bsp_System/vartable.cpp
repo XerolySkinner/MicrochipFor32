@@ -40,5 +40,18 @@
 //----------------------------------------------------------------------------------------------------
 //	³ÌÐò
 //	
+void reboot(void){
+	__set_FAULTMASK(1);
+	HAL_NVIC_SystemReset();}
+MSH_CMD_EXPORT(reboot,reboot system);
+//----------------------------------------------------------------------------------------------------
+uint16_t u16Endian(uint16_t dat){uint16_t temp;
+	((char*)(&temp))[0]=((char*)(&dat))[1];
+	((char*)(&temp))[1]=((char*)(&dat))[0];
+	return temp;}
+uint32_t u32Endian(uint32_t dat){uint32_t temp;
+	((uint16_t*)(&temp))[1]=u16Endian(((uint16_t*)(&dat))[1]);
+	((uint16_t*)(&temp))[0]=u16Endian(((uint16_t*)(&dat))[0]);
+	return temp;}
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 

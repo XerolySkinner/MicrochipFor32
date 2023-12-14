@@ -1,5 +1,0 @@
-<map id="mpu_run_self_test" name="mpu_run_self_test">
-<area shape="rect" id="node1" title="Trigger gyro/accel/compass self&#45;test. On success/error, the self&#45;test returns a mask representing the..." alt="" coords="300,5,428,31"/>
-<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#gaff893f93277595387023c71d46b03c42" title=" " alt="" coords="156,5,252,31"/>
-<area shape="rect" id="node3" href="$group___d_r_i_v_e_r_s.html#gafac8fcbf24cfa1b69737e02238580f3a" title=" " alt="" coords="5,5,108,31"/>
-</map>

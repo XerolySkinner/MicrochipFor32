@@ -1,4 +1,0 @@
-<map id="dmp_get_pedometer_walk_time" name="dmp_get_pedometer_walk_time">
-<area shape="rect" id="node1" title="Get duration of walking time." alt="" coords="5,5,211,31"/>
-<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#ga3374bececb6743893c9eab27645c1182" title="Read from the DMP memory. This function prevents I2C reads past the bank boundaries...." alt="" coords="259,5,373,31"/>
-</map>

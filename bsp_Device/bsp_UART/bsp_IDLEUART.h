@@ -40,6 +40,10 @@
 #include "string.h"
 #include "usart.h"
 #include "tim.h"
+
+#include <rtthread.h>
+#define bsp_malloc(x) malloc(x)
+
 #define comcase(str,buff) if((strcmp(#str,(char*)(buff))==0))
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //----------------------------------------------------------------------------------------------------
@@ -61,6 +65,8 @@ class bsp_IDLEUART:public bsp_PrintArt_STM32{
 		u8* buff;
 		u8* buffhead;
 		u32 len;
+		u32 lenmax;
+	private:
 		u8 temp;
 	};
 //////////////////////////////////////////////////////////////////////////////////////////////////////

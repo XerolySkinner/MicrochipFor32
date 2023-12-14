@@ -1,6 +1,0 @@
-<map id="MPU_Set_Rate" name="MPU_Set_Rate">
-<area shape="rect" id="node1" title="设置MPU6050的采样率(假定Fs=1KHz)" alt="" coords="5,31,117,56"/>
-<area shape="rect" id="node2" href="$mpu6050_8cpp.html#a2fb9973c9f5ea5327649d0eef5e96217" title="设置MPU6050的数字低通滤波器" alt="" coords="165,5,275,31"/>
-<area shape="rect" id="node3" href="$mpu6050_8cpp.html#a0be9b422bb8613f8444db4af5234e1a1" title="IIC写一个字节" alt="" coords="323,31,445,56"/>
-<area shape="rect" id="node4" href="$mpu6050_8cpp.html#a0e5583807e7dcaae30835311a2195583" title=" " alt="" coords="493,31,584,56"/>
-</map>

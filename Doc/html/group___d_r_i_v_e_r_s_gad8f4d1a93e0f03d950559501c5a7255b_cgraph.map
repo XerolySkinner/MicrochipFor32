@@ -1,4 +1,0 @@
-<map id="dmp_get_pedometer_step_count" name="dmp_get_pedometer_step_count">
-<area shape="rect" id="node1" title="Get current step count." alt="" coords="5,5,177,45"/>
-<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#ga3374bececb6743893c9eab27645c1182" title="Read from the DMP memory. This function prevents I2C reads past the bank boundaries...." alt="" coords="225,13,340,38"/>
-</map>

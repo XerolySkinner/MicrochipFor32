@@ -1,9 +1,0 @@
-<map id="mpu_read_mem" name="mpu_read_mem">
-<area shape="rect" id="node1" title="Read from the DMP memory. This function prevents I2C reads past the bank boundaries...." alt="" coords="619,95,733,121"/>
-<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#gad8f4d1a93e0f03d950559501c5a7255b" title="Get current step count." alt="" coords="382,5,554,45"/>
-<area shape="rect" id="node3" href="$group___d_r_i_v_e_r_s.html#ga62c8e5e99986b0e60ca0dc9a9b9c3fcc" title="Get duration of walking time." alt="" coords="365,70,571,95"/>
-<area shape="rect" id="node4" href="$group___d_r_i_v_e_r_s.html#gac48a36b51e23bc4191ec13916bbb9d0b" title="Initialize hardware. Initial configuration: Gyro FSR: +/&#45; 2000DPS Accel FSR +/&#45; 2G DLPF: 42Hz FIFO ra..." alt="" coords="201,118,272,143"/>
-<area shape="rect" id="node6" href="$group___d_r_i_v_e_r_s.html#ga8fbdfe1a50285d4ab438e29c2efc70f5" title="Load and verify DMP image." alt="" coords="401,173,535,198"/>
-<area shape="rect" id="node5" href="$group___d_r_i_v_e_r_s.html#gafac8fcbf24cfa1b69737e02238580f3a" title=" " alt="" coords="5,147,108,173"/>
-<area shape="rect" id="node7" href="$group___d_r_i_v_e_r_s.html#ga66626a842452f444e9af29cb0d2c6150" title="Load the DMP with this image." alt="" coords="156,168,317,208"/>
-</map>

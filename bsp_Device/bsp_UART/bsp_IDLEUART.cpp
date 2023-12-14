@@ -62,14 +62,16 @@ void bsp_IDLEUART::callback_UART(void){
 	bsp_IDLEUART::bsp_IDLEUART(UART_HandleTypeDef *huart,TIM_HandleTypeDef *htim):bsp_PrintArt_STM32(huart){
 	bsp_IDLEUART::huart=huart;
 	bsp_IDLEUART::htim=htim;
-	len=0;
-	buff=(u8*)malloc(128);
+	bsp_IDLEUART::len=0;
+	buff=(u8*)bsp_malloc(128);
+	bsp_IDLEUART::lenmax=128;
 	buffhead=buff;}
 //----------------------------------------------------------------------------------------------------
 bsp_IDLEUART::bsp_IDLEUART(UART_HandleTypeDef *huart,TIM_HandleTypeDef *htim,u32 len):bsp_PrintArt_STM32(huart){
 	bsp_IDLEUART::huart=huart;
 	bsp_IDLEUART::htim=htim;
-	len=0;
-	buff=(u8*)malloc(len);
+	bsp_IDLEUART::len=0;
+	buff=(u8*)bsp_malloc(len);
+	bsp_IDLEUART::lenmax=len;
 	buffhead=buff;}
 //////////////////////////////////////////////////////////////////////////////////////////////////////

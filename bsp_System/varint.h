@@ -66,6 +66,13 @@ typedef volatile i64 	vi64;	///< 64位有符号易变类型
 #define P32(x)		((u32*)(&(x)))				///< 强制转换变成u32的指针
 #define Pn32(x,y)	(((u32*)(&(x)))[y])			///< 强制转换变成u32的数组
 
+#define L8(x)		((u8*)((x)))				///< 强制转换变成u8的指针
+#define Ln8(x,y)	(((u8*)((x)))[y])			///< 强制转换变成u8的数组
+#define L16(x)		((u16*)((x)))				///< 强制转换变成u16的指针
+#define Ln16(x,y)	(((u16*)((x)))[y])			///< 强制转换变成u16的数组
+#define L32(x)		((u32*)((x)))				///< 强制转换变成u32的指针
+#define Ln32(x,y)	(((u32*)((x)))[y])			///< 强制转换变成u32的数组
+
 #define DelLb(x)	(x & (x - 1))				///< 移除最低位的1
 #define qDelLb(x)	(x=(x & (x - 1)))			///< 移除并保存最低位的1
 
@@ -81,5 +88,10 @@ typedef volatile i64 	vi64;	///< 64位有符号易变类型
 #define qLoopAdd(var,min,step,max)	(var=var<max?var+step:min)
 #define LoopDec(var,min,step,max)	(var>min?var-step:max)
 #define qLoopDec(var,min,step,max)	(var=var>min?var-step:max)
+
+#define nabs(x) ((x)>0?(x):-(x))
+
+#define bsp_GET_BIT(ptr,offset) (((ptr)[(offset) / 8] >> ((offset) % 8)) & 1)
+#define bsp_SET_BIT(ptr,offset,val) (*(ptr + (offset) / 8) = (*(ptr + (offset) / 8) & ~(1 << ((offset) % 8))) | (!!((val)) << ((offset) % 8)))
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 

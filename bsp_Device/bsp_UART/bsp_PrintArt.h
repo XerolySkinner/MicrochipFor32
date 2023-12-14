@@ -38,6 +38,9 @@
 #include <string.h>
 #include <stdlib.h>
 #include "varint.h"
+
+#include <rtthread.h>
+#define bsp_malloc(x) malloc(x)
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //----------------------------------------------------------------------------------------------------
 //	ÀàÉùÃ÷
@@ -49,7 +52,7 @@ class bsp_PrintArt{
 		bsp_PrintArt(void);
 		bsp_PrintArt(u32 len);
 		int print(const char* format, ...);
-	private:
+	
 		u32 Bufflen;
 		virtual void Transmit(u8* dat, u32 len) = 0;};
 
@@ -67,7 +70,6 @@ class bsp_PrintArt_STM32:public bsp_PrintArt{
 	public:
 		bsp_PrintArt_STM32(UART_HandleTypeDef *huart,u32 Bufflen);
 		bsp_PrintArt_STM32(UART_HandleTypeDef *huart);
-	private:
 		UART_HandleTypeDef *huart;
 		virtual void Transmit(u8* dat, u32 len){
 			HAL_UART_Transmit(huart,dat,len,0xFF);

@@ -1,6 +1,0 @@
-<map id="bsp_Digit::num" name="bsp_Digit::num">
-<area shape="rect" id="node1" title="显示一个四位数据" alt="" coords="5,31,115,56"/>
-<area shape="rect" id="node2" href="$classbsp___digit.html#a9f91f206f32eef69e91c5975ad12db6b" title="在某位显示一个数字" alt="" coords="163,31,293,56"/>
-<area shape="rect" id="node3" href="$classbsp___digit.html#a8362aa8c9725ab2000e4b1f3c816de8b" title=" " alt="" coords="341,5,451,31"/>
-<area shape="rect" id="node4" href="$classbsp___digit.html#a0608eae8fc20fea488b578b4440a5973" title=" " alt="" coords="345,55,447,80"/>
-</map>

@@ -44,7 +44,7 @@
  * @return			成功与否
  */
 int bsp_PrintArt::print(const char* format, ...) {
-	u8* dat = (u8*)malloc(Bufflen);						//	分配内存
+	u8* dat = (u8*)malloc(Bufflen);					//	分配内存
 	if(dat==NULL)return 1;								//	判断分配成功与否
 	u32 res;											//	返回状态码
 	va_list args;										//	不定长变量

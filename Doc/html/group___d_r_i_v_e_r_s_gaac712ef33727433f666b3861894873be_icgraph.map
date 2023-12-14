@@ -1,5 +1,0 @@
-<map id="dmp_enable_6x_lp_quat" name="dmp_enable_6x_lp_quat">
-<area shape="rect" id="node1" title="Generate 6&#45;axis quaternions from the DMP. In this driver, the 3&#45;axis and 6&#45;axis DMP quaternion featur..." alt="" coords="343,5,505,31"/>
-<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#ga70c485bdfa30515e5b869b081192caa1" title="Enable DMP features. The following #define&#39;s are used in the input mask: &#160;&#160;DMP_FEATURE_TAP &#160;&#160;DMP_FEAT..." alt="" coords="156,5,295,31"/>
-<area shape="rect" id="node3" href="$group___d_r_i_v_e_r_s.html#gafac8fcbf24cfa1b69737e02238580f3a" title=" " alt="" coords="5,5,108,31"/>
-</map>

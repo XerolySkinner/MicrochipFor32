@@ -1,6 +1,0 @@
-<map id="STL_lQueue::poptop8" name="STL_lQueue::poptop8">
-<area shape="rect" id="node1" title="显示并且弹出一个队列顶成员" alt="" coords="5,31,152,56"/>
-<area shape="rect" id="node2" href="$class_s_t_l__l_queue.html#a9c9a5811f43677f8d70d19377e276510" title="弹出一个成员" alt="" coords="202,5,325,31"/>
-<area shape="rect" id="node3" href="$class_s_t_l__l_queue.html#a7ff92acc4b520646801c93816faf2f07" title="显示队列顶成员" alt="" coords="200,55,327,80"/>
-<area shape="rect" id="node4" href="$class_s_t_l__l_queue.html#a1abec6afbc25d3cc7b3e3cc94c265f9c" title="显示队列顶部成员" alt="" coords="375,55,493,80"/>
-</map>

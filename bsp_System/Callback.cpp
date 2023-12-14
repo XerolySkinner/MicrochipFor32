@@ -39,10 +39,7 @@
 //----------------------------------------------------------------------------------------------------
 //	³ÌÐò
 //	
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
-	return;}
-//----------------------------------------------------------------------------------------------------
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
-	return;}
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){return;}
 //////////////////////////////////////////////////////////////////////////////////////////////////////
-
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){return;}
+//////////////////////////////////////////////////////////////////////////////////////////////////////

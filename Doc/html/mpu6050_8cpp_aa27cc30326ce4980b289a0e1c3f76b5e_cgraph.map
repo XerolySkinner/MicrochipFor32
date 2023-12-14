@@ -1,5 +1,0 @@
-<map id="MPU_Set_Gyro_Fsr" name="MPU_Set_Gyro_Fsr">
-<area shape="rect" id="node1" title="设置MPU6050陀螺仪传感器满量程范围" alt="" coords="5,5,144,31"/>
-<area shape="rect" id="node2" href="$mpu6050_8cpp.html#a0be9b422bb8613f8444db4af5234e1a1" title="IIC写一个字节" alt="" coords="192,5,315,31"/>
-<area shape="rect" id="node3" href="$mpu6050_8cpp.html#a0e5583807e7dcaae30835311a2195583" title=" " alt="" coords="363,5,453,31"/>
-</map>

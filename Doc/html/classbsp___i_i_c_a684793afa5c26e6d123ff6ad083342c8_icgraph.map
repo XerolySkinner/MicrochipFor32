@@ -1,7 +1,0 @@
-<map id="bsp_IIC::IIC_SendAck" name="bsp_IIC::IIC_SendAck">
-<area shape="rect" id="node1" title="发送IIC应答信号" alt="" coords="436,46,584,71"/>
-<area shape="rect" id="node2" href="$classbsp___i_i_c.html#aae8c08f59f3fce9dce27f9f04beda683" title="使用总线接收定长数据" alt="" coords="237,17,363,42"/>
-<area shape="rect" id="node4" href="$classbsp___i_i_c.html#a9effd40b26cbf6f321d0f0db3e2f09c3" title="使用总线接收一个字节数据" alt="" coords="212,70,388,95"/>
-<area shape="rect" id="node3" href="$classbsp___s_t_m32___a_t24_c00.html#ad5b68ee911f6e46ab877049eaadc5b1c" title="读取定长度的字节" alt="" coords="5,5,164,45"/>
-<area shape="rect" id="node5" href="$classbsp___s_t_m32___a_t24_c00.html#a950e3a80ff49c538294bfedf8e893ff7" title="读取一个字节" alt="" coords="5,69,164,109"/>
-</map>

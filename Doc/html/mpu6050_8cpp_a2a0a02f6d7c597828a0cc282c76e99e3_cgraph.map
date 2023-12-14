@@ -1,5 +1,0 @@
-<map id="MPU_Get_Accelerometer" name="MPU_Get_Accelerometer">
-<area shape="rect" id="node1" title="得到加速度值(原始值)" alt="" coords="5,5,176,31"/>
-<area shape="rect" id="node2" href="$mpu6050_8cpp.html#a63161fa966899e4e7c5791e40ebf2b0a" title="IIC连续读" alt="" coords="224,5,340,31"/>
-<area shape="rect" id="node3" href="$mpu6050_8cpp.html#a0e5583807e7dcaae30835311a2195583" title=" " alt="" coords="388,5,479,31"/>
-</map>

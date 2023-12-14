@@ -1,4 +1,0 @@
-<map id="bsp_SD::SPI_setspeed" name="bsp_SD::SPI_setspeed">
-<area shape="rect" id="node1" title="设置SPI的速率" alt="" coords="172,5,329,31"/>
-<area shape="rect" id="node2" href="$classbsp___s_d.html#a1e0a3f09367627bcafc8efaaeb90b066" title="初始化SD卡" alt="" coords="5,5,124,31"/>
-</map>

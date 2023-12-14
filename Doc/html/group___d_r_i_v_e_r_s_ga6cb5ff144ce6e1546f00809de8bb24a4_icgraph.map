@@ -1,4 +1,0 @@
-<map id="dmp_set_orientation" name="dmp_set_orientation">
-<area shape="rect" id="node1" title="Push gyro and accel orientation to the DMP. The orientation is represented here as the output of inv_..." alt="" coords="156,5,295,31"/>
-<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#gafac8fcbf24cfa1b69737e02238580f3a" title=" " alt="" coords="5,5,108,31"/>
-</map>

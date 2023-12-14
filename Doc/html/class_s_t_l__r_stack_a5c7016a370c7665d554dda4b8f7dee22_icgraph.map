@@ -1,5 +1,0 @@
-<map id="STL_rStack::pop" name="STL_rStack::pop">
-<area shape="rect" id="node1" title="弹出一个成员" alt="" coords="204,31,323,56"/>
-<area shape="rect" id="node2" href="$class_s_t_l__r_stack.html#a31fd424472fcf069ec2cbcb50ab34ed1" title="弹出并且返回一个成员" alt="" coords="12,5,149,31"/>
-<area shape="rect" id="node3" href="$class_s_t_l__r_stack.html#ad64450c2168e2551ed8fad637a8b9c99" title="弹出并且返回一个32位成员" alt="" coords="5,55,156,80"/>
-</map>

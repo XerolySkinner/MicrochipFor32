@@ -32,6 +32,7 @@
  */
 #pragma once
 #include "vartable.h"
+#include "tim.h"
 #ifdef __cplusplus
 extern "C"{
 #endif

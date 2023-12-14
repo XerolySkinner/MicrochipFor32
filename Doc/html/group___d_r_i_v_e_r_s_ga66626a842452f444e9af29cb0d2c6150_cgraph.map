@@ -1,6 +1,0 @@
-<map id="dmp_load_motion_driver_firmware" name="dmp_load_motion_driver_firmware">
-<area shape="rect" id="node1" title="Load the DMP with this image." alt="" coords="5,23,167,63"/>
-<area shape="rect" id="node2" href="$group___d_r_i_v_e_r_s.html#ga8fbdfe1a50285d4ab438e29c2efc70f5" title="Load and verify DMP image." alt="" coords="215,31,348,56"/>
-<area shape="rect" id="node3" href="$group___d_r_i_v_e_r_s.html#ga3374bececb6743893c9eab27645c1182" title="Read from the DMP memory. This function prevents I2C reads past the bank boundaries...." alt="" coords="397,5,512,31"/>
-<area shape="rect" id="node4" href="$group___d_r_i_v_e_r_s.html#gafea59910bc3dd30ba3356b1c75213a5f" title="Write to the DMP memory. This function prevents I2C writes past the bank boundaries...." alt="" coords="396,55,513,80"/>
-</map>
