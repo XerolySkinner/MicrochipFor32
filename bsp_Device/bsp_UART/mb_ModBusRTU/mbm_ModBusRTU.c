@@ -72,7 +72,7 @@ _mb_master mb_Master_create(const char* str,...){
 		str += (strlen(field) + 1);
 	}
 	//	初始化值
-	result->VarBuff=(void*)malloc(128);
+	result->VarBuff=(void*)malloc(512);
 	result->VarNum=0;
 	
 	va_end(list);

@@ -395,4 +395,107 @@ u8 mb_Slave_Ack(_mb_slave obj){
 		}
 	return 0;
 	}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//----------------------------------------------------------------------------------------------------
+//	有人云
+u8 yr_Slave_WR_Out_COILS_Ask(_mb_slave obj,u8 ID,u16 Addr,u16 Mem,u8* Data){
+	u8 Byte=ceil_div(Mem,8);
+	u8* Buff=obj->TxBuff;
+	u16 crc;
+	//	填入顺序项
+	*Buff++=ID;
+	*Buff++=0x45;
+	*Buff++=Pn8(Addr,Dat_Endian);
+	*Buff++=Pn8(Addr,!Dat_Endian);
+	*Buff++=Pn8(Mem,Dat_Endian);
+	*Buff++=Pn8(Mem,!Dat_Endian);
+	*Buff++=Byte;
+	u8* ByteHead=Buff;
+	//	数据导入
+	for(u32 i=0;i<Mem;i++){
+		if(i%8==0)Buff++;
+		MODBUS_SET_BIT(ByteHead,i,Data[i]);}
+	//	计算CRC
+	crc=mb_crc(obj->TxBuff,Byte+7);
+	*Buff++=Pn8(crc,CRC_Endian);
+	*Buff++=Pn8(crc,!CRC_Endian);
+	//	发送值
+	obj->tramsmit(obj->TxBuff,Byte+9);
+	return 0;}
+//----------------------------------------------------------------------------------------------------
+u8 yr_Slave_WR_In_COILS_Ask(_mb_slave obj,u8 ID,u16 Addr,u16 Mem,u8* Data){
+	u8 Byte=ceil_div(Mem,8);
+	u8* Buff=obj->TxBuff;
+	u16 crc;
+	//	填入顺序项
+	*Buff++=ID;
+	*Buff++=0x42;
+	*Buff++=Pn8(Addr,Dat_Endian);
+	*Buff++=Pn8(Addr,!Dat_Endian);
+	*Buff++=Pn8(Mem,Dat_Endian);
+	*Buff++=Pn8(Mem,!Dat_Endian);
+	*Buff++=Byte;
+	u8* ByteHead=Buff;
+	//	数据导入
+	for(u32 i=0;i<Mem;i++){
+		if(i%8==0)Buff++;
+		MODBUS_SET_BIT(ByteHead,i,Data[i]);}
+	//	计算CRC
+	crc=mb_crc(obj->TxBuff,Byte+7);
+	*Buff++=Pn8(crc,CRC_Endian);
+	*Buff++=Pn8(crc,!CRC_Endian);
+	//	发送值
+	obj->tramsmit(obj->TxBuff,Byte+9);
+	return 0;}
+//----------------------------------------------------------------------------------------------------
+//	向外发送
+u8 yr_Slave_WR_Hold_REGS_Ask(_mb_slave obj,u8 ID,u16 Addr,u16 Mem,u16* Data){
+	u8 Byte=Mem*2;
+	u8* Buff=obj->TxBuff;
+	u16 crc;
+	//	填入顺序项
+	*Buff++=ID;
+	*Buff++=0x46;
+	*Buff++=Pn8(Addr,Dat_Endian);
+	*Buff++=Pn8(Addr,!Dat_Endian);
+	*Buff++=Pn8(Mem,Dat_Endian);
+	*Buff++=Pn8(Mem,!Dat_Endian);
+	*Buff++=Byte;
+	//	数据导入
+	for(u32 i=0;i<Mem;i++){
+		*Buff++=Pn8(Data[i],Dat_Endian);
+		*Buff++=Pn8(Data[i],!Dat_Endian);}
+	//	计算CRC
+	crc=mb_crc(obj->TxBuff,Byte+7);
+	*Buff++=Pn8(crc,CRC_Endian);
+	*Buff++=Pn8(crc,!CRC_Endian);
+	//	发送值
+	obj->tramsmit(obj->TxBuff,Byte+9);
+	return 0;}
+//----------------------------------------------------------------------------------------------------
+//	向外发送
+u8 yr_Slave_WR_In_REGS_Ask(_mb_slave obj,u8 ID,u16 Addr,u16 Mem,u16* Data){
+	u8 Byte=Mem*2;
+	u8* Buff=obj->TxBuff;
+	u16 crc;
+	//	填入顺序项
+	*Buff++=ID;
+	*Buff++=0x44;
+	*Buff++=Pn8(Addr,Dat_Endian);
+	*Buff++=Pn8(Addr,!Dat_Endian);
+	*Buff++=Pn8(Mem,Dat_Endian);
+	*Buff++=Pn8(Mem,!Dat_Endian);
+	*Buff++=Byte;
+	//	数据导入
+	for(u32 i=0;i<Mem;i++){
+		*Buff++=Pn8(Data[i],Dat_Endian);
+		*Buff++=Pn8(Data[i],!Dat_Endian);}
+	//	计算CRC
+	crc=mb_crc(obj->TxBuff,Byte+7);
+	*Buff++=Pn8(crc,CRC_Endian);
+	*Buff++=Pn8(crc,!CRC_Endian);
+	//	发送值
+	obj->tramsmit(obj->TxBuff,Byte+9);
+	return 0;}
 //////////////////////////////////////////////////////////////////////////////////////////////////////

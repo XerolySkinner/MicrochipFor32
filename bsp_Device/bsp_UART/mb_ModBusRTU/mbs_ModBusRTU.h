@@ -98,6 +98,11 @@ u8 mb_Slave_RD_IN_COIL_Ack(_mb_slave obj,u16 Mem,u8* Data);
 u8 mb_Slave_RD_HOLD_REG_Ack(_mb_slave obj,u8 Mem,u16* Data);
 u8 mb_Slave_RD_IN_REG_Ack(_mb_slave obj,u8 Mem,u16* Data);
 //----------------------------------------------------------------------------------------------------
+u8 yr_Slave_WR_In_REGS_Ask(_mb_slave obj,u8 ID,u16 Addr,u16 Mem,u16* Data);
+u8 yr_Slave_WR_Hold_REGS_Ask(_mb_slave obj,u8 ID,u16 Addr,u16 Mem,u16* Data);
+u8 yr_Slave_WR_In_COILS_Ask(_mb_slave obj,u8 ID,u16 Addr,u16 Mem,u8* Data);
+u8 yr_Slave_WR_Out_COILS_Ask(_mb_slave obj,u8 ID,u16 Addr,u16 Mem,u8* Data);
+//----------------------------------------------------------------------------------------------------
 #define mb_Slave_get(x,y) mb_Slave_Unpack(x,y,mb_Slave_Lencount(y))
 u8 mb_Slave_Unpack(_mb_slave obj,u8* Buff,u32 len);
 u8 mb_Slave_Ack(_mb_slave obj);
