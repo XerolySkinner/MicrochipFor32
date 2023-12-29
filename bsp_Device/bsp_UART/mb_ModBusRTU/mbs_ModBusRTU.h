@@ -102,6 +102,10 @@ u8 yr_Slave_WR_In_REGS_Ask(_mb_slave obj,u8 ID,u16 Addr,u16 Mem,u16* Data);
 u8 yr_Slave_WR_Hold_REGS_Ask(_mb_slave obj,u8 ID,u16 Addr,u16 Mem,u16* Data);
 u8 yr_Slave_WR_In_COILS_Ask(_mb_slave obj,u8 ID,u16 Addr,u16 Mem,u8* Data);
 u8 yr_Slave_WR_Out_COILS_Ask(_mb_slave obj,u8 ID,u16 Addr,u16 Mem,u8* Data);
+#define yr_Slave_WR_Hold_REGS_ADDR_Ask(obj,ID,Addr,Mem,Data) yr_Slave_WR_Hold_REGS_Ask(obj,ID,Addr,Mem,(Data)+(Addr))
+#define yr_Slave_WR_In_REGS_ADDR_Ask(obj,ID,Addr,Mem,Data) yr_Slave_WR_In_REGS_Ask(obj,ID,Addr,Mem,(Data)+(Addr))
+#define yr_Slave_WR_Out_COILS_ADDR_Ask(obj,ID,Addr,Mem,Data) yr_Slave_WR_Out_COILS_Ask(obj,ID,Addr,Mem,(Data)+(Addr))
+#define yr_Slave_WR_In_COILS_ADDR_Ask(obj,ID,Addr,Mem,Data) yr_Slave_WR_In_COILS_Ask(obj,ID,Addr,Mem,(Data)+(Addr))
 //----------------------------------------------------------------------------------------------------
 #define mb_Slave_get(x,y) mb_Slave_Unpack(x,y,mb_Slave_Lencount(y))
 u8 mb_Slave_Unpack(_mb_slave obj,u8* Buff,u32 len);
