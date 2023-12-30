@@ -53,18 +53,28 @@ extern "C"{
 /**
  * @brief			TODO
  */
+enum{
+	ESP_LINKING,
+	ESP_UNLINK,
+};
+
 typedef struct{
 	//	发送接口
 	u8 (*transmit)(u8*,u32);
 	u8* TX_buff;
 	rt_sem_t semaphore_OK;
+	u8 state;
+	
+	u8 *title;
+	u32 value;
+	u8 *msg;
 }_esp_struct;
 typedef _esp_struct* _esp;
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //----------------------------------------------------------------------------------------------------
 //	定义
 _esp esp_create(u8 (*transmit)(u8*,u32));
-void esp_Callback(_esp obj,const char* str,u32 limit);
+u8 esp_Callback(_esp obj,const char* str,u32 limit);
 void esp_CIPSEND_With_ID(_esp obj,u32 id,u8* buff,u32 len);
 void esp_CIPSEND_Without_ID(_esp obj,u8* buff,u32 len);
 //----------------------------------------------------------------------------------------------------
@@ -107,6 +117,27 @@ void esp_STA_UDP_Init(
 	const char* Cpswd,
 	const char* Cip,
 	const char* Cport);
+//----------------------------------------------------------------------------------------------------
+void esp_MQTT_Client_Init(
+	_esp obj,
+	const char* Sname,
+	const char* Spswd,
+	const char* Cip,
+	const char* Cport,
+	const char* mqtt_ID,
+	const char* mqtt_user,
+	const char* mqtt_psw);
+	
+void esp_MQTT_PUSH(
+	_esp obj,
+	const char* title,
+	const char* msg);
+	
+void esp_MQTT_SUB(
+	_esp obj,
+	const char* title);
+
+u32 parseMQTTMessage(_esp obj,const char *str);
 //----------------------------------------------------------------------------------------------------
 int esp_print(_esp obj,const char* format, ...);
 const char* findSubstring(const char* haystack, const char* needle, uint32_t limit);

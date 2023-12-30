@@ -43,16 +43,23 @@
 _esp esp_create(u8 (*transmit)(u8*,u32)){
 	_esp obj=(_esp)esp_malloc(sizeof(_esp_struct));
 	if(obj==NULL)return NULL;
+	
 	obj->TX_buff = (u8*)malloc(512);
 	if(obj->TX_buff==NULL)return NULL;
+	obj->title = (u8*)malloc(128);
+	if(obj->title==NULL)return NULL;
+	obj->msg = (u8*)malloc(128);
+	if(obj->msg==NULL)return NULL;
+	
 	obj->transmit=transmit;
 	obj->semaphore_OK = rt_sem_create("OK", 0, RT_IPC_FLAG_FIFO);
 	if(obj->semaphore_OK==NULL)return NULL;	
+	obj->state=ESP_UNLINK;
 	return obj;}
 //----------------------------------------------------------------------------------------------------
-void esp_Callback(_esp obj,const char* str,u32 limit){
+u8 esp_Callback(_esp obj,const char* str,u32 limit){
 	if(findSubstring(str,"OK\r\n",limit) != NULL)rt_sem_release(obj->semaphore_OK);
-	return;}
+	return obj->state;}
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //----------------------------------------------------------------------------------------------------
 void esp_AP_TCP_Server_Init(
@@ -89,7 +96,8 @@ void esp_AP_TCP_Server_Init(
 		if(rt_sem_take(obj->semaphore_OK,1000) == 0)break;}
 	
 	rt_kprintf("[Success]\r\n");
-	osDelay(1000);}
+	osDelay(1000);
+	obj->state=ESP_LINKING;}
 //----------------------------------------------------------------------------------------------------
 void esp_AP_TCP_Client_Init(
 	_esp obj,
@@ -132,7 +140,7 @@ void esp_AP_TCP_Client_Init(
 	
 	rt_kprintf("[Success]\r\n");
 	osDelay(1000);
-	}
+	obj->state=ESP_LINKING;}
 //----------------------------------------------------------------------------------------------------
 void esp_AP_UDP_Init(
 	_esp obj,
@@ -175,7 +183,7 @@ void esp_AP_UDP_Init(
 	
 	rt_kprintf("[Success]\r\n");
 	osDelay(1000);
-	}
+	obj->state=ESP_LINKING;}
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //----------------------------------------------------------------------------------------------------
 void esp_STA_TCP_Client_Init(
@@ -216,13 +224,13 @@ void esp_STA_TCP_Client_Init(
 		esp_print(obj,"AT+CIPMODE=1\r\n");
 		if(rt_sem_take(obj->semaphore_OK,1000) == 0)break;}
 	
-	//rt_kprintf("开始传输\r\n");
-	//esp_print(obj,"AT+CIPSEND\r\n");
-	//osDelay(1000);
+	rt_kprintf("Transmit start\r\n");
+	esp_print(obj,"AT+CIPSEND\r\n");
+	osDelay(1000);
 
 	rt_kprintf("[Success]\r\n");
 	osDelay(1000);
-	}
+	obj->state=ESP_LINKING;}
 //----------------------------------------------------------------------------------------------------
 void esp_STA_TCP_Server_Init(
 	_esp obj,
@@ -262,7 +270,7 @@ void esp_STA_TCP_Server_Init(
 	
 	rt_kprintf("[Success]\r\n");
 	osDelay(1000);
-	}
+	obj->state=ESP_LINKING;}
 //----------------------------------------------------------------------------------------------------
 void esp_STA_UDP_Init(
 	_esp obj,
@@ -303,7 +311,76 @@ void esp_STA_UDP_Init(
 	
 	rt_kprintf("[Success]\r\n");
 	osDelay(1000);
+	obj->state=ESP_LINKING;}
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//----------------------------------------------------------------------------------------------------
+void esp_MQTT_Client_Init(
+	_esp obj,
+	const char* Sname,
+	const char* Spswd,
+	const char* Cip,
+	const char* Cport,
+	const char* mqtt_ID,
+	const char* mqtt_user,
+	const char* mqtt_psw){
+	
+	osDelay(2000);
+		
+	while(1){
+		rt_kprintf("Set WIFI Mode to STA\r\n");
+		esp_print(obj,"AT+CWMODE=1\r\n");
+		if(rt_sem_take(obj->semaphore_OK,1000) == 0)break;}
+	
+	rt_kprintf("Reset\r\n");
+	esp_print(obj,"AT+RST\r\n");
+	osDelay(2000);
+	
+	while(1){
+		rt_kprintf("Join the WIFI\r\n");
+		esp_print(obj,"AT+CWJAP=\"%s\",\"%s\"\r\n",Sname,Spswd);
+		if(rt_sem_take(obj->semaphore_OK,5000) == 0)break;}
+		
+	while(1){
+		rt_kprintf("MUX is 0\r\n");
+		esp_print(obj,"AT+CIPMUX=0\r\n");
+		if(rt_sem_take(obj->semaphore_OK,1000) == 0)break;}
+	
+	while(1){
+		rt_kprintf("Set MQTT as %s-%s-%s\r\n",mqtt_ID,mqtt_user,mqtt_psw);
+		esp_print(obj,"AT+MQTTUSERCFG=0,1,\"%s\",\"%s\",\"s\",0,0,\"\"\r\n",mqtt_ID,mqtt_user,mqtt_psw);
+		if(rt_sem_take(obj->semaphore_OK,5000) == 0)break;}
+	
+	while(1){
+		rt_kprintf("Link MQTT as %s-%s\r\n",Cip,Cport);
+		esp_print(obj,"AT+MQTTCONN=0,\"%s\",%s,0\r\n",Cip,Cport);
+		if(rt_sem_take(obj->semaphore_OK,5000) == 0)break;}
+
+	rt_kprintf("[Success]\r\n");
+	osDelay(1000);
+	obj->state=ESP_LINKING;}
+//----------------------------------------------------------------------------------------------------	
+void esp_MQTT_PUSH(
+	_esp obj,
+	const char* title,
+	const char* msg){
+
+	
+	while(1){
+		esp_print(obj,"AT+MQTTPUB=0,\"%s\",\"%s\",0,0\r\n",title,msg);
+		if(rt_sem_take(obj->semaphore_OK,5000) == 0)break;}
 	}
+//----------------------------------------------------------------------------------------------------	
+void esp_MQTT_SUB(
+	_esp obj,
+	const char* title){
+	while(1){
+		esp_print(obj,"AT+MQTTSUB=0,\"%s\",1\r\n",title);
+		if(rt_sem_take(obj->semaphore_OK,1000) == 0)break;}
+	}
+//----------------------------------------------------------------------------------------------------		
+u32 parseMQTTMessage(_esp obj,const char *str){
+    return sscanf(str, "+MQTTSUBRECV:0,\"%[^\"]\",%u,%[^\n]", obj->title, &obj->value, obj->msg);
+}
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //----------------------------------------------------------------------------------------------------
 //	常用
