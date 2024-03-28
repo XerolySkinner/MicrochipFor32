@@ -137,6 +137,12 @@ void esp_MQTT_SUB(
 	_esp obj,
 	const char* title);
 
+void bsp_MQTT_msgpush(
+	_esp obj,
+	int enu,int group,short value);
+
+void bsp_MQTT_Init(void);
+
 u32 parseMQTTMessage(_esp obj,const char *str);
 //----------------------------------------------------------------------------------------------------
 int esp_print(_esp obj,const char* format, ...);

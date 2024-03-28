@@ -32,6 +32,7 @@
 
   */
 #include "bsp_ESP8266.h"
+#include "vartable.h"
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //----------------------------------------------------------------------------------------------------
 //	函数
@@ -59,6 +60,7 @@ _esp esp_create(u8 (*transmit)(u8*,u32)){
 //----------------------------------------------------------------------------------------------------
 u8 esp_Callback(_esp obj,const char* str,u32 limit){
 	if(findSubstring(str,"OK\r\n",limit) != NULL)rt_sem_release(obj->semaphore_OK);
+	if(findSubstring(str,"+MQTTDISCONNECTED",limit) != NULL)reboots();
 	return obj->state;}
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //----------------------------------------------------------------------------------------------------
@@ -377,6 +379,27 @@ void esp_MQTT_SUB(
 		esp_print(obj,"AT+MQTTSUB=0,\"%s\",1\r\n",title);
 		if(rt_sem_take(obj->semaphore_OK,1000) == 0)break;}
 	}
+//----------------------------------------------------------------------------------------------------		
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//--------------------------------------------------------------------------------------------------
+extern _esp wire_Eye;
+
+void bsp_MQTT_Init(void){
+	u8 list[128]={0};
+	for(u32 i=0;i<Reg_ENUM_SIZE;i++){
+		rt_kprintf("[%d/%d]",i,i<Reg_PAGE_SIZE?0:1);
+		sprintf((char*)list,"%d/%d",i,i<Reg_PAGE_SIZE?0:1);
+		esp_MQTT_SUB(wire_Eye,(const char*)list);}
+	rt_kprintf("\r\nLOAD SUCCESS!\r\n");}
+
+void bsp_MQTT_msgpush(_esp obj,int enu,int group,short value){
+	static char str[32]={0};
+	static char val[32]={0};
+	sprintf(str,"%d/%d",enu,group);
+	sprintf(val,"%hd",value);
+	esp_MQTT_PUSH(obj,str,val);
+	//rt_kprintf("%s-%s\r\n",str,val);
+	return;}
 //----------------------------------------------------------------------------------------------------		
 u32 parseMQTTMessage(_esp obj,const char *str){
     return sscanf(str, "+MQTTSUBRECV:0,\"%[^\"]\",%u,%[^\n]", obj->title, &obj->value, obj->msg);
