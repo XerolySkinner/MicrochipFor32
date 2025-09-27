@@ -56,8 +56,8 @@ float bsp_Position_PID::PID(float temp) {
 	lasterror = thisError;
 
 	if (result_H == result_L)return result;
-	if (result >= result_H)result == result_H;
-	else if (result <= result_L)result == result_L;
+	if (result >= result_H)result = result_H;
+	else if (result <= result_L)result = result_L;
 	return result;
 }
 //----------------------------------------------------------------------------------------------------
@@ -84,8 +84,8 @@ float bsp_Increment_PID::PID(float temp) {
 	result += increment;			//上次结果叠加增量
 
 	if (result_H == result_L)return result;
-	if (result >= result_H)result == result_H;
-	else if (result <= result_L)result == result_L;
+	if (result >= result_H)result = result_H;
+	else if (result <= result_L)result = result_L;
 	return result;}
 //----------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------
@@ -162,8 +162,8 @@ bsp_Position_PID::bsp_Position_PID(
 	bsp_Position_PID::Kd = Kd;
 	bsp_Position_PID::integral = 0;
 	bsp_Position_PID::result = 0;
-	bsp_Position_PID::result_H = 0;
-	bsp_Position_PID::result_L = 0;
+	bsp_Position_PID::result_H = result_H;
+	bsp_Position_PID::result_L = result_L;
 }
 //----------------------------------------------------------------------------------------------------
 bsp_Position_PID::~bsp_Position_PID(void) {}
@@ -199,8 +199,8 @@ bsp_Increment_PID::bsp_Increment_PID(
 	bsp_Increment_PID::Ki = Ki;
 	bsp_Increment_PID::Kd = Kd;
 	bsp_Increment_PID::result = 0;
-	bsp_Increment_PID::result_H = 0;
-	bsp_Increment_PID::result_L = 0;
+	bsp_Increment_PID::result_H = result_H;
+	bsp_Increment_PID::result_L = result_L;
 }
 //----------------------------------------------------------------------------------------------------
 bsp_Increment_PID::~bsp_Increment_PID(void) {}
